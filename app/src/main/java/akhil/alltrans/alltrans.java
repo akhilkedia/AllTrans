@@ -6,12 +6,8 @@ package akhil.alltrans;
 
 import android.app.Application;
 import android.content.Context;
-import android.os.Environment;
 import android.widget.TextView;
 
-import com.karumi.dexter.Dexter;
-
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.util.HashMap;
@@ -29,7 +25,8 @@ import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 public class alltrans implements IXposedHookLoadPackage {
     public static final Semaphore cacheAccess = new Semaphore(1, true);
     public static XC_MethodReplacement newHook = new HookHandler();
-    public static HashMap<String, String> cache = null;
+    public static HashMap<String, String> cache = new HashMap<String, String>();
+    public static Context context;
 
     public static boolean FindEnglish(String abc) {
         boolean isEnglish = true;
@@ -59,21 +56,6 @@ public class alltrans implements IXposedHookLoadPackage {
             return;
         XposedBridge.log("AllTrans: In Package " + lpparam.packageName);
 
-
-        File folder = new File(Environment.getExternalStorageDirectory() + "/AllTrans");
-        File cacheFile = new File(folder, lpparam.packageName);
-        if (cacheFile.exists()) {
-            ObjectInputStream s = new ObjectInputStream(new FileInputStream(cacheFile));
-            cacheAccess.acquireUninterruptibly();
-            cache = (HashMap<String, String>) s.readObject();
-            cacheAccess.release();
-            s.close();
-        } else {
-            cacheAccess.acquireUninterruptibly();
-            cache = new HashMap<String, String>(10000);
-            cacheAccess.release();
-        }
-
         appOnCreateHook appOnCreateHook = new appOnCreateHook();
         findAndHookMethod(Application.class, "onCreate", appOnCreateHook);
 
@@ -89,15 +71,29 @@ public class alltrans implements IXposedHookLoadPackage {
 class appOnCreateHook extends XC_MethodHook {
     @Override
     protected void beforeHookedMethod(MethodHookParam methodHookParam) {
+        XposedBridge.log("AllTrans: in OnCreate of Application");
+        Application application = (Application) methodHookParam.thisObject;
+        alltrans.context = application.getApplicationContext();
+
+        try {
+            FileInputStream fileInputStream = alltrans.context.openFileInput("AllTransCache");
+            ObjectInputStream s = new ObjectInputStream(fileInputStream);
+            alltrans.cacheAccess.acquireUninterruptibly();
+            alltrans.cache = (HashMap<String, String>) s.readObject();
+            alltrans.cacheAccess.release();
+            s.close();
+        } catch (Exception e) {
+            alltrans.cacheAccess.acquireUninterruptibly();
+            alltrans.cache = new HashMap<String, String>(10000);
+            alltrans.cacheAccess.release();
+        }
+
+        MyActivityLifecycleCallbacks myActivityLifecycleCallbacks = new MyActivityLifecycleCallbacks();
+        application.registerActivityLifecycleCallbacks(myActivityLifecycleCallbacks);
     }
 
     @Override
     protected void afterHookedMethod(MethodHookParam methodHookParam) {
-        XposedBridge.log("AllTrans: in OnCreate of Application");
-        Application application = (Application) methodHookParam.thisObject;
-        Context context = application.getApplicationContext();
-        Dexter.initialize(context);
-        MyActivityLifecycleCallbacks myActivityLifecycleCallbacks = new MyActivityLifecycleCallbacks();
-        application.registerActivityLifecycleCallbacks(myActivityLifecycleCallbacks);
+
     }
 }
