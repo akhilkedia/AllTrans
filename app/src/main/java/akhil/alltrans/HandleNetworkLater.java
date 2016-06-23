@@ -34,6 +34,9 @@ public class HandleNetworkLater implements Callback {
             XposedBridge.log("AllTrans: Got request result as : " + result);
             translatedString = result.substring(result.toString().indexOf('>') + 1, result.toString().lastIndexOf('<'));
             translatedString = StringEscape.XMLUnescape(translatedString);
+            alltrans.cacheAccess.acquireUninterruptibly();
+            alltrans.cache.put(stringToBeTrans, translatedString);
+            alltrans.cacheAccess.release();
             XposedBridge.log("AllTrans: In HandleNetworkLater, setting: " + stringToBeTrans + " to :" + translatedString);
 
         } catch (java.io.IOException e) {
@@ -46,9 +49,9 @@ public class HandleNetworkLater implements Callback {
             new Handler(Looper.getMainLooper()).post(new Runnable() {
                 @Override
                 public void run() {
-                    unhookMethod(methodHookParam.method, alltrans.newhook);
+                    unhookMethod(methodHookParam.method, alltrans.newHook);
                     tv.setText(translatedString);
-                    hookMethod(methodHookParam.method, alltrans.newhook);
+                    hookMethod(methodHookParam.method, alltrans.newHook);
                 }
             });
         }
@@ -64,9 +67,9 @@ public class HandleNetworkLater implements Callback {
         new Handler(Looper.getMainLooper()).post(new Runnable() {
             @Override
             public void run() {
-                unhookMethod(methodHookParam.method, alltrans.newhook);
+                unhookMethod(methodHookParam.method, alltrans.newHook);
                 tv.setText(translatedString);
-                hookMethod(methodHookParam.method, alltrans.newhook);
+                hookMethod(methodHookParam.method, alltrans.newHook);
             }
         });
     }

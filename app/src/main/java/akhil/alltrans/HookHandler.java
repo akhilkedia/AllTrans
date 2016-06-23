@@ -19,23 +19,39 @@ public class HookHandler extends XC_MethodReplacement {
             String abc = methodHookParam.args[0].toString();
             TextView tv = (TextView) methodHookParam.thisObject;
             //XposedBridge.log("AllTrans: the string recieved is: " + abc);
-            unhookMethod(methodHookParam.method, alltrans.newhook);
             if (!alltrans.FindEnglish(abc)) {
                 XposedBridge.log("AllTrans: Recognized non-english string: " + abc);
+
+                alltrans.cacheAccess.acquireUninterruptibly();
+                if (alltrans.cache.containsKey(abc)) {
+                    XposedBridge.log("AllTrans: found string in cache: " + abc);
+                    String translatedString = alltrans.cache.get(abc);
+                    alltrans.cacheAccess.release();
+                    unhookMethod(methodHookParam.method, alltrans.newHook);
+                    tv.setText(translatedString);
+                    hookMethod(methodHookParam.method, alltrans.newHook);
+                    return null;
+                } else {
+                    alltrans.cacheAccess.release();
+                }
+
                 HandleNetworkLater handleNetworkLater = new HandleNetworkLater();
                 handleNetworkLater.tv = tv;
                 handleNetworkLater.stringToBeTrans = abc;
                 handleNetworkLater.methodHookParam = methodHookParam;
                 HandleNetworkInitial handleNetworkInitial = new HandleNetworkInitial();
                 handleNetworkInitial.handleNetworkLater = handleNetworkLater;
-                unhookMethod(handleNetworkLater.methodHookParam.method, alltrans.newhook);
+
+                unhookMethod(handleNetworkLater.methodHookParam.method, alltrans.newHook);
                 handleNetworkLater.tv.setText(handleNetworkLater.stringToBeTrans);
-                hookMethod(handleNetworkLater.methodHookParam.method, alltrans.newhook);
+                hookMethod(handleNetworkLater.methodHookParam.method, alltrans.newHook);
+
                 handleNetworkInitial.doAll();
             } else {
+                unhookMethod(methodHookParam.method, alltrans.newHook);
                 tv.setText(abc);
+                hookMethod(methodHookParam.method, alltrans.newHook);
             }
-            hookMethod(methodHookParam.method, alltrans.newhook);
         }
         return null;
     }

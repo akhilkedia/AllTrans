@@ -51,6 +51,7 @@ public class HandleNetworkInitial implements Callback {
             OkHttpClient client = new OkHttpClient();
             MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
             RequestBody body = RequestBody.create(mediaType, "grant_type=client_credentials&client_id=alltranstestid1&client_secret=01234567890123456789&scope=http%3A%2F%2Fapi.microsofttranslator.com");
+            //RequestBody body = RequestBody.create(mediaType, "grant_type=client_credentials&client_id=alltranskunal&client_secret=o96DhR3OinA9ABssZ9EYrUsF3TtnmeGAkJT4YWMg&scope=http%3A%2F%2Fapi.microsofttranslator.com");
             Request request = new Request.Builder()
                     .url("https://datamarket.accesscontrol.windows.net/v2/OAuth2-13")
                     .post(body)
@@ -90,9 +91,9 @@ public class HandleNetworkInitial implements Callback {
             new Handler(Looper.getMainLooper()).post(new Runnable() {
                 @Override
                 public void run() {
-                    unhookMethod(handleNetworkLater.methodHookParam.method, alltrans.newhook);
-                    handleNetworkLater.tv.setText(handleNetworkLater.translatedString);
-                    hookMethod(handleNetworkLater.methodHookParam.method, alltrans.newhook);
+                    unhookMethod(handleNetworkLater.methodHookParam.method, alltrans.newHook);
+                    handleNetworkLater.tv.setText(handleNetworkLater.stringToBeTrans);
+                    hookMethod(handleNetworkLater.methodHookParam.method, alltrans.newHook);
                 }
             });
         }

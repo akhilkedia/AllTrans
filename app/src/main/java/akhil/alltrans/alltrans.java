@@ -4,13 +4,18 @@ package akhil.alltrans;
  * Created by akhil on 24/2/16.
  */
 
-import android.content.Context;
+import android.app.Application;
 import android.os.Environment;
 import android.widget.TextView;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.util.HashMap;
+import java.util.concurrent.Semaphore;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
+import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XC_MethodReplacement;
 import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
@@ -19,8 +24,9 @@ import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 
 
 public class alltrans implements IXposedHookLoadPackage {
-    public static XC_MethodReplacement newhook = new HookHandler();
-    public Context mCurrentActivity = null;
+    public static final Semaphore cacheAccess = new Semaphore(1, true);
+    public static XC_MethodReplacement newHook = new HookHandler();
+    public static HashMap<String, String> cache = null;
 
     public static boolean FindEnglish(String abc) {
         boolean isEnglish = true;
@@ -50,28 +56,49 @@ public class alltrans implements IXposedHookLoadPackage {
             return;
         XposedBridge.log("AllTrans: In Package SeoulBus" + lpparam.packageName);
 
+
+        File folder = new File(Environment.getExternalStorageDirectory() + "/AllTrans");
+        String path = folder.getPath();
+        if (!folder.exists() && !folder.mkdirs()) {
+            XposedBridge.log("AllTrans: Cannot Make Directory " + path);
+        } else {
+            XposedBridge.log("AllTrans: Directory already exists" + path);
+        }
+        File cacheFile = new File(folder, lpparam.packageName);
+        if (cacheFile.exists()) {
+            ObjectInputStream s = new ObjectInputStream(new FileInputStream(cacheFile));
+            cacheAccess.acquireUninterruptibly();
+            cache = (HashMap<String, String>) s.readObject();
+            cacheAccess.release();
+            s.close();
+        } else {
+            cacheAccess.acquireUninterruptibly();
+            cache = new HashMap<String, String>(10000);
+            cacheAccess.release();
+        }
+
+        appOnCreateHook appOnCreateHook = new appOnCreateHook();
+        findAndHookMethod(Application.class, "onCreate", appOnCreateHook);
+
         //Hook all Text String methods
-        findAndHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, newhook);
+        findAndHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, newHook);
         //findAndHookMethod(TextView.class, "setHint", CharSequence.class, textMethodHook);
         //findAndHookMethod("android.view.GLES20Canvas", null, "drawText", String.class,float.class, float.class, Paint.class, textMethodHook);
 
 
-        File folder = new File(Environment.getExternalStorageDirectory() + "/AllTrans");
+    }
+}
 
-        String path = folder.getPath();
+class appOnCreateHook extends XC_MethodHook {
+    @Override
+    protected void beforeHookedMethod(MethodHookParam methodHookParam) {
+    }
 
-        if (!folder.exists()) {
-            if (!folder.mkdirs()) {
-                XposedBridge.log("AllTrans: Cannot Make Directory " + path);
-            } else {
-                XposedBridge.log("AllTrans: Directory Made " + path);
-            }
-        } else {
-            XposedBridge.log("AllTrans: Directory already exists" + path);
-        }
-        File httpCacheDir = new File(folder, "requestcache");
-        if (!httpCacheDir.exists()) {
-            long httpCacheSize = 50 * 1024 * 1024; // 50 MiB
-        }
+    @Override
+    protected void afterHookedMethod(MethodHookParam methodHookParam) {
+        XposedBridge.log("AllTrans: in OnCreate of Application");
+        Application application = (Application) methodHookParam.thisObject;
+        MyActivityLifecycleCallbacks myActivityLifecycleCallbacks = new MyActivityLifecycleCallbacks();
+        application.registerActivityLifecycleCallbacks(myActivityLifecycleCallbacks);
     }
 }
