@@ -5,8 +5,11 @@ package akhil.alltrans;
  */
 
 import android.app.Application;
+import android.content.Context;
 import android.os.Environment;
 import android.widget.TextView;
+
+import com.karumi.dexter.Dexter;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -54,16 +57,10 @@ public class alltrans implements IXposedHookLoadPackage {
                 && !lpparam.packageName.equals("com.cgv.android.movieapp")
                 && !lpparam.packageName.equals("com.Circusar.MrPizzaAR"))
             return;
-        XposedBridge.log("AllTrans: In Package SeoulBus" + lpparam.packageName);
+        XposedBridge.log("AllTrans: In Package " + lpparam.packageName);
 
 
         File folder = new File(Environment.getExternalStorageDirectory() + "/AllTrans");
-        String path = folder.getPath();
-        if (!folder.exists() && !folder.mkdirs()) {
-            XposedBridge.log("AllTrans: Cannot Make Directory " + path);
-        } else {
-            XposedBridge.log("AllTrans: Directory already exists" + path);
-        }
         File cacheFile = new File(folder, lpparam.packageName);
         if (cacheFile.exists()) {
             ObjectInputStream s = new ObjectInputStream(new FileInputStream(cacheFile));
@@ -98,6 +95,8 @@ class appOnCreateHook extends XC_MethodHook {
     protected void afterHookedMethod(MethodHookParam methodHookParam) {
         XposedBridge.log("AllTrans: in OnCreate of Application");
         Application application = (Application) methodHookParam.thisObject;
+        Context context = application.getApplicationContext();
+        Dexter.initialize(context);
         MyActivityLifecycleCallbacks myActivityLifecycleCallbacks = new MyActivityLifecycleCallbacks();
         application.registerActivityLifecycleCallbacks(myActivityLifecycleCallbacks);
     }

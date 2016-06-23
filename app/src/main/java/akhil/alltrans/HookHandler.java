@@ -24,8 +24,8 @@ public class HookHandler extends XC_MethodReplacement {
 
                 alltrans.cacheAccess.acquireUninterruptibly();
                 if (alltrans.cache.containsKey(abc)) {
-                    XposedBridge.log("AllTrans: found string in cache: " + abc);
                     String translatedString = alltrans.cache.get(abc);
+                    XposedBridge.log("AllTrans: found string in cache: " + abc + " as " + translatedString);
                     alltrans.cacheAccess.release();
                     unhookMethod(methodHookParam.method, alltrans.newHook);
                     tv.setText(translatedString);

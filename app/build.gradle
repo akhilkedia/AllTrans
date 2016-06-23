@@ -24,12 +24,16 @@ repositories {
     maven {
         url "http://dl.bintray.com/rovo89/de.robv.android.xposed"
     }
+    maven { url "https://jitpack.io" }
 }
 
 dependencies {
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
+
+    compile 'com.karumi:dexter:2.2.2'
+
     provided 'de.robv.android.xposed:api:82'
     provided 'de.robv.android.xposed:api:82:sources'
 }
