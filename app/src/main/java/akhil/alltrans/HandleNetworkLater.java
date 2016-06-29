@@ -2,14 +2,12 @@ package akhil.alltrans;
 
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.widget.TextView;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
 
 import de.robv.android.xposed.XC_MethodHook;
-import de.robv.android.xposed.XposedBridge;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
@@ -17,9 +15,7 @@ import okhttp3.Response;
 import static de.robv.android.xposed.XposedBridge.hookMethod;
 import static de.robv.android.xposed.XposedBridge.unhookMethod;
 
-/**
- * Created by akhil on 13/6/16.
- */
+
 public class HandleNetworkLater implements Callback {
     public TextView tv;
     public String stringToBeTrans;
@@ -31,27 +27,34 @@ public class HandleNetworkLater implements Callback {
         try {
             String result = response.body().string();
             response.body().close();
-            XposedBridge.log("AllTrans: Got request result as : " + result);
+
+            Log.i("AllTrans", "AllTrans: Got request result as : " + result);
             translatedString = result.substring(result.toString().indexOf('>') + 1, result.toString().lastIndexOf('<'));
             translatedString = StringEscape.XMLUnescape(translatedString);
+
             alltrans.cacheAccess.acquireUninterruptibly();
             alltrans.cache.put(stringToBeTrans, translatedString);
             alltrans.cacheAccess.release();
-            XposedBridge.log("AllTrans: In HandleNetworkLater, setting: " + stringToBeTrans + " to :" + translatedString);
+
+            Log.i("AllTrans", "AllTrans: In HandleNetworkLater, setting: " + stringToBeTrans + " to :" + translatedString);
 
         } catch (java.io.IOException e) {
-            StringWriter sw = new StringWriter();
-            PrintWriter pw = new PrintWriter(sw);
-            e.printStackTrace(pw);
-            XposedBridge.log("AllTrans: Got error in getting translation as : " + sw.toString());
+            Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
             translatedString = stringToBeTrans;
         } finally {
+//            try {
+//                Thread.sleep(5000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
             new Handler(Looper.getMainLooper()).post(new Runnable() {
                 @Override
                 public void run() {
+                    alltrans.hookAccess.acquireUninterruptibly();
                     unhookMethod(methodHookParam.method, alltrans.newHook);
                     tv.setText(translatedString);
                     hookMethod(methodHookParam.method, alltrans.newHook);
+                    alltrans.hookAccess.release();
                 }
             });
         }
@@ -59,17 +62,17 @@ public class HandleNetworkLater implements Callback {
 
     @Override
     public void onFailure(Call call, IOException e) {
-        StringWriter sw = new StringWriter();
-        PrintWriter pw = new PrintWriter(sw);
-        e.printStackTrace(pw);
-        XposedBridge.log("AllTrans: Got error in getting translation as : " + sw.toString());
+        Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
+
         translatedString = stringToBeTrans;
         new Handler(Looper.getMainLooper()).post(new Runnable() {
             @Override
             public void run() {
+                alltrans.hookAccess.acquireUninterruptibly();
                 unhookMethod(methodHookParam.method, alltrans.newHook);
                 tv.setText(translatedString);
                 hookMethod(methodHookParam.method, alltrans.newHook);
+                alltrans.hookAccess.release();
             }
         });
     }

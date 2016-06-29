@@ -3,13 +3,10 @@ package akhil.alltrans;
 import android.app.Activity;
 import android.app.Application;
 import android.os.Bundle;
+import android.util.Log;
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
-import java.io.PrintWriter;
-import java.io.StringWriter;
-
-import de.robv.android.xposed.XposedBridge;
 
 /**
  * Created by akhil on 23/6/16.
@@ -43,7 +40,7 @@ public class MyActivityLifecycleCallbacks implements Application.ActivityLifecyc
     @Override
     public void onActivityDestroyed(Activity activity) {
         try {
-            XposedBridge.log("AllTrans: trying to write cache");
+            Log.i("AllTrans", "AllTrans: trying to write cache");
             FileOutputStream fileOutputStream = alltrans.context.openFileOutput("AllTransCache", 0);
             ObjectOutputStream s = new ObjectOutputStream(fileOutputStream);
             alltrans.cacheAccess.acquireUninterruptibly();
@@ -51,10 +48,7 @@ public class MyActivityLifecycleCallbacks implements Application.ActivityLifecyc
             alltrans.cacheAccess.release();
 
         } catch (Exception e) {
-            StringWriter sw = new StringWriter();
-            PrintWriter pw = new PrintWriter(sw);
-            e.printStackTrace(pw);
-            XposedBridge.log("AllTrans: Got error in onActivityDestroyed: " + sw.toString());
+            Log.e("AllTrans", "AllTrans: Got error in onActivityDestroyed: " + Log.getStackTraceString(e));
         }
 
     }

@@ -2,17 +2,15 @@ package akhil.alltrans;
 
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
 import java.net.URLEncoder;
 import java.util.concurrent.Semaphore;
 
-import de.robv.android.xposed.XposedBridge;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.MediaType;
@@ -37,8 +35,7 @@ public class HandleNetworkInitial implements Callback {
         available.acquireUninterruptibly();
         long time = System.currentTimeMillis();
         if (time > lastExpireTime) {
-            XposedBridge.log("AllTrans: Entering get new token for string : " + handleNetworkLater.stringToBeTrans);
-            //XposedBridge.log("AllTrans: Number of people holding the lock is : " + lock.getHoldCount());
+            Log.i("AllTrans", "AllTrans: Entering get new token for string : " + handleNetworkLater.stringToBeTrans);
             getNewToken();
         } else {
             available.release();
@@ -62,10 +59,7 @@ public class HandleNetworkInitial implements Callback {
             client.newCall(request).enqueue(this);
 
         } catch (Exception e) {
-            StringWriter sw = new StringWriter();
-            PrintWriter pw = new PrintWriter(sw);
-            e.printStackTrace(pw);
-            XposedBridge.log("AllTrans: Got error in getting new token as : " + sw.toString());
+            Log.e("AllTrans", "AllTrans: Got error in getting new token as : " + Log.getStackTraceString(e));
         }
     }
 
@@ -84,16 +78,15 @@ public class HandleNetworkInitial implements Callback {
 
             client.newCall(request).enqueue(handleNetworkLater);
         } catch (java.io.IOException e) {
-            StringWriter sw = new StringWriter();
-            PrintWriter pw = new PrintWriter(sw);
-            e.printStackTrace(pw);
-            XposedBridge.log("AllTrans: Got error in getting translation as : " + sw.toString());
+            Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
             new Handler(Looper.getMainLooper()).post(new Runnable() {
                 @Override
                 public void run() {
+                    alltrans.hookAccess.acquireUninterruptibly();
                     unhookMethod(handleNetworkLater.methodHookParam.method, alltrans.newHook);
                     handleNetworkLater.tv.setText(handleNetworkLater.stringToBeTrans);
                     hookMethod(handleNetworkLater.methodHookParam.method, alltrans.newHook);
+                    alltrans.hookAccess.release();
                 }
             });
         }
@@ -103,17 +96,14 @@ public class HandleNetworkInitial implements Callback {
         try {
             String result = response.body().string();
             response.body().close();
-            XposedBridge.log("AllTrans: Got request result as : " + result);
+            Log.i("AllTrans", "AllTrans: Got request result as : " + result);
             JsonParser jsonparser = new JsonParser();
             JsonObject jsonobject = jsonparser.parse(result).getAsJsonObject();
             userCredentials = jsonobject.get("access_token").getAsString();
-            XposedBridge.log("AllTrans: Set User Credentials as : " + userCredentials);
+            Log.i("AllTrans", "AllTrans: Set User Credentials as : " + userCredentials);
             lastExpireTime = System.currentTimeMillis() + 550000;
         } catch (java.io.IOException e) {
-            StringWriter sw = new StringWriter();
-            PrintWriter pw = new PrintWriter(sw);
-            e.printStackTrace(pw);
-            XposedBridge.log("AllTrans: Got error in getting token as : " + sw.toString());
+            Log.e("AllTrans", "AllTrans: Got error in getting token as : " + Log.getStackTraceString(e));
         } finally {
             available.release();
             doInBackground();
@@ -122,10 +112,7 @@ public class HandleNetworkInitial implements Callback {
 
     @Override
     public void onFailure(Call call, IOException e) {
-        StringWriter sw = new StringWriter();
-        PrintWriter pw = new PrintWriter(sw);
-        e.printStackTrace(pw);
-        XposedBridge.log("AllTrans: Got error in getting token as : " + sw.toString());
+        Log.e("AllTrans", "AllTrans: Got error in getting token as : " + Log.getStackTraceString(e));
         available.release();
         doInBackground();
     }
