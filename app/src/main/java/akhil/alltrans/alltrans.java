@@ -1,8 +1,5 @@
 package akhil.alltrans;
 
-/**
- * Created by akhil on 24/2/16.
- */
 
 import android.app.Application;
 import android.content.Context;
@@ -61,8 +58,11 @@ public class alltrans implements IXposedHookLoadPackage {
 
         //Hook all Text String methods
         findAndHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, newHook);
-        //findAndHookMethod(TextView.class, "setHint", CharSequence.class, textMethodHook);
+        findAndHookMethod(TextView.class, "setHint", CharSequence.class, newHook);
         //findAndHookMethod("android.view.GLES20Canvas", null, "drawText", String.class,float.class, float.class, Paint.class, textMethodHook);
+        //findAndHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class,float.class, float.class, Paint.class, newHook);
+        //findAndHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, newHook);
+        //findAndHookMethod(Canvas.class, "drawText", String.class, int.class, int.class,float.class, float.class, Paint.class, newHook);
 
 
     }
