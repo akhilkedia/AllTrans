@@ -9,19 +9,18 @@ import com.google.gson.JsonParser;
 
 import java.io.IOException;
 import java.net.URLEncoder;
+import java.util.Collections;
 import java.util.concurrent.Semaphore;
 
 import okhttp3.Call;
 import okhttp3.Callback;
+import okhttp3.ConnectionSpec;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-/**
- * Created by akhil on 13/6/16.
- */
 public class HandleNetworkInitial implements Callback {
     private static String userCredentials;
     private static long lastExpireTime;
@@ -64,7 +63,7 @@ public class HandleNetworkInitial implements Callback {
             String baseURL = "http://api.microsofttranslator.com/v2/Http.svc/Translate?text=";
             String languageURL = "&from=ko&to=en";
             String fullURL = baseURL + URLEncoder.encode(handleNetworkLater.stringToBeTrans, "UTF-8") + languageURL;
-            OkHttpClient client = new OkHttpClient();
+            OkHttpClient client = new OkHttpClient.Builder().connectionSpecs(Collections.singletonList(ConnectionSpec.CLEARTEXT)).build();
 
             Request request = new Request.Builder()
                     .url(fullURL)
@@ -76,12 +75,14 @@ public class HandleNetworkInitial implements Callback {
             client.newCall(request).enqueue(handleNetworkLater);
         } catch (java.io.IOException e) {
             Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
-            new Handler(Looper.getMainLooper()).post(new Runnable() {
-                @Override
-                public void run() {
-                    SetTextHookHandler.callOriginalMethod(handleNetworkLater.methodHookParam, handleNetworkLater.stringToBeTrans);
-                }
-            });
+            if (!handleNetworkLater.methodHookParam.method.getName().equals("drawText")) {
+                new Handler(Looper.getMainLooper()).post(new Runnable() {
+                    @Override
+                    public void run() {
+                        SetTextHookHandler.callOriginalMethod(handleNetworkLater.methodHookParam, handleNetworkLater.stringToBeTrans);
+                    }
+                });
+            }
         }
     }
 

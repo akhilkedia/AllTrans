@@ -3,12 +3,18 @@ package akhil.alltrans;
 
 import android.app.Application;
 import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.Semaphore;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
+import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XC_MethodReplacement;
 import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
@@ -48,9 +54,11 @@ public class alltrans implements IXposedHookLoadPackage {
                 && !lpparam.packageName.equals("com.dgfood.info")
                 && !lpparam.packageName.equals("com.cgv.android.movieapp")
                 && !lpparam.packageName.equals("com.wooricard.smartapp")
-                && !lpparam.packageName.equals("com.google.android.apps.messaging")
-                && !lpparam.packageName.equals("com.Circusar.MrPizzaAR"))
+                && !lpparam.packageName.equals("com.google.android.talk")
+                && !lpparam.packageName.equals("com.ebay.global.gmarket")
+                && !lpparam.packageName.equals("com.ktcs.whowho"))
             return;
+        //Android System Webview - com.google.android.webview
         XposedBridge.log("AllTrans: In Package " + lpparam.packageName);
 
         appOnCreateHookHandler appOnCreateHookHandler = new appOnCreateHookHandler();
@@ -59,10 +67,27 @@ public class alltrans implements IXposedHookLoadPackage {
         //Hook all Text String methods
         findAndHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, newHook);
         findAndHookMethod(TextView.class, "setHint", CharSequence.class, newHook);
-        //findAndHookMethod("android.view.GLES20Canvas", null, "drawText", String.class,float.class, float.class, Paint.class, textMethodHook);
-        //findAndHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class,float.class, float.class, Paint.class, newHook);
-        //findAndHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, newHook);
-        //findAndHookMethod(Canvas.class, "drawText", String.class, int.class, int.class,float.class, float.class, Paint.class, newHook);
+
+        findAndHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewHookHandler());
+        findAndHookMethod(WebView.class, "loadUrl", String.class, Map.class, new XC_MethodHook() {
+            @Override
+            protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
+                XposedBridge.log("AllTrans: we are in loadurl with headers!");
+            }
+        });
+//        findAndHookMethod(WebView.class, "loadData", String.class, String.class, String.class, new XC_MethodHook() {
+//            @Override protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
+//                XposedBridge.log("we are in loadData!");
+//            }});
+//        findAndHookMethod(WebView.class, "loadDataWithBaseURL", String.class, String.class, String.class, String.class, String.class, new XC_MethodHook() {
+//            @Override protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
+//                XposedBridge.log("we are in loadData!");
+//            }});
+
+
+        findAndHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, newHook);
+        findAndHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, newHook);
+        findAndHookMethod(Canvas.class, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, newHook);
 
 
     }

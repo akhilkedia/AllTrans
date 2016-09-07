@@ -1,5 +1,6 @@
 package akhil.alltrans;
 
+import android.graphics.Paint;
 import android.text.AlteredCharSequence;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
@@ -17,6 +18,8 @@ import static de.robv.android.xposed.XposedBridge.unhookMethod;
 
 
 public class SetTextHookHandler extends XC_MethodReplacement {
+    public MethodHookParam methodHookParam;
+
     public static void callOriginalMethod(MethodHookParam methodHookParam, CharSequence translatedString) {
         alltrans.hookAccess.acquireUninterruptibly();
         unhookMethod(methodHookParam.method, alltrans.newHook);
@@ -24,7 +27,7 @@ public class SetTextHookHandler extends XC_MethodReplacement {
         mymethod.setAccessible(true);
         Object[] myargs = methodHookParam.args;
 
-        if ((mymethod.getName() == "setText") || (mymethod.getName() == "drawText")) {
+        if (mymethod.getName().equals("setText") || mymethod.getName().equals("drawText")) {
             //if((mymethod.getName()=="setText")) {
             if (myargs[0].getClass().equals(AlteredCharSequence.class)) {
                 myargs[0] = AlteredCharSequence.make(translatedString, null, 0, 0);
@@ -45,17 +48,19 @@ public class SetTextHookHandler extends XC_MethodReplacement {
             } else {
                 myargs[0] = new SpannableStringBuilder(translatedString);
             }
-        } else if (mymethod.getName() == "setHint") {
+        } else if (mymethod.getName().equals("setHint")) {
             myargs[0] = TextUtils.stringOrSpannedString(translatedString);
+        } else {
+            myargs[0] = new SpannableStringBuilder(translatedString);
         }
-//        if(mymethod.getName()=="drawText"){
-//            if(myargs[1].getClass().equals(int.class)){
-//                int start = 0;
-//                int end = translatedString.length();
-//                myargs[1] = start;
-//                myargs[2] = end;
-//            }
-//        }
+
+        if (mymethod.getName().equals("drawText")) {
+            myargs[myargs.length - 1] = copyPaint((Paint) myargs[myargs.length - 1]);
+            if (myargs[1].getClass().equals(int.class)) {
+                myargs[1] = 0;
+                myargs[2] = translatedString.length();
+            }
+        }
 
         try {
             Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " Invoking original function " + methodHookParam.method.getName() + " and setting text to " + myargs[0].toString());
@@ -67,8 +72,19 @@ public class SetTextHookHandler extends XC_MethodReplacement {
         alltrans.hookAccess.release();
     }
 
+    public static Paint copyPaint(Paint paint) {
+        //Todo: Copy more values from paint
+        Paint newPaint = new Paint();
+        Paint myPaint = new Paint();
+        myPaint.setTextSize(paint.getTextSize());
+        myPaint.setColor(paint.getColor());
+
+        return myPaint;
+    }
+
     @Override
-    protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
+    protected Object replaceHookedMethod(MethodHookParam mHookParam) throws Throwable {
+        methodHookParam = mHookParam;
         if (methodHookParam.args[0] != null) {
             String abc = methodHookParam.args[0].toString();
 
@@ -78,22 +94,15 @@ public class SetTextHookHandler extends XC_MethodReplacement {
                 }
 
                 Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + abc);
-
                 HandleNetworkLater handleNetworkLater = new HandleNetworkLater();
                 handleNetworkLater.stringToBeTrans = abc;
                 handleNetworkLater.methodHookParam = methodHookParam;
                 HandleNetworkInitial handleNetworkInitial = new HandleNetworkInitial();
                 handleNetworkInitial.handleNetworkLater = handleNetworkLater;
 
-                //if(!methodHookParam.method.getName().equals("drawText")) {
-//                try {
-//                    Thread.sleep(500);
-//                    callOriginalMethod(methodHookParam, abc);
-//                } catch (InterruptedException e) {
-//                   e.printStackTrace();
-//                }
-                callOriginalMethod(methodHookParam, abc);
-                // }
+                if (!methodHookParam.method.getName().equals("drawText")) {
+                    callOriginalMethod(methodHookParam, abc);
+                }
 
                 alltrans.cacheAccess.acquireUninterruptibly();
                 if (alltrans.cache.containsKey(abc)) {
@@ -104,6 +113,9 @@ public class SetTextHookHandler extends XC_MethodReplacement {
                     return null;
                 } else {
                     alltrans.cacheAccess.release();
+                    if (methodHookParam.method.getName().equals("drawText")) {
+                        callOriginalMethod(methodHookParam, abc);
+                    }
                 }
 
                 handleNetworkInitial.doAll();

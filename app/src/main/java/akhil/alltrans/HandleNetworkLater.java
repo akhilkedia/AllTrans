@@ -15,6 +15,7 @@ import okhttp3.Response;
 public class HandleNetworkLater implements Callback {
     public String stringToBeTrans;
     public String translatedString;
+    public String methodName;
     XC_MethodHook.MethodHookParam methodHookParam;
 
     @Override
@@ -24,7 +25,7 @@ public class HandleNetworkLater implements Callback {
             response.body().close();
 
             Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Got request result as : " + result);
-            translatedString = result.substring(result.toString().indexOf('>') + 1, result.toString().lastIndexOf('<'));
+            translatedString = result.substring(result.indexOf('>') + 1, result.lastIndexOf('<'));
             translatedString = StringEscape.XMLUnescape(translatedString);
 
             alltrans.cacheAccess.acquireUninterruptibly();
@@ -42,12 +43,15 @@ public class HandleNetworkLater implements Callback {
 //            } catch (InterruptedException e) {
 //                e.printStackTrace();
 //            }
-            new Handler(Looper.getMainLooper()).post(new Runnable() {
-                @Override
-                public void run() {
-                    SetTextHookHandler.callOriginalMethod(methodHookParam, translatedString);
-                }
-            });
+
+            if (!methodHookParam.method.getName().equals("drawText")) {
+                new Handler(Looper.getMainLooper()).post(new Runnable() {
+                    @Override
+                    public void run() {
+                        SetTextHookHandler.callOriginalMethod(methodHookParam, translatedString);
+                    }
+                });
+            }
         }
     }
 
@@ -55,11 +59,14 @@ public class HandleNetworkLater implements Callback {
     public void onFailure(Call call, IOException e) {
         Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
         translatedString = stringToBeTrans;
-        new Handler(Looper.getMainLooper()).post(new Runnable() {
-            @Override
-            public void run() {
-                SetTextHookHandler.callOriginalMethod(methodHookParam, translatedString);
-            }
-        });
+
+        if (!methodHookParam.method.getName().equals("drawText")) {
+            new Handler(Looper.getMainLooper()).post(new Runnable() {
+                @Override
+                public void run() {
+                    SetTextHookHandler.callOriginalMethod(methodHookParam, translatedString);
+                }
+            });
+        }
     }
 }
