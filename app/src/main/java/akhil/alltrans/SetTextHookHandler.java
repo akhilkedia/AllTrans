@@ -17,10 +17,21 @@ import static de.robv.android.xposed.XposedBridge.hookMethod;
 import static de.robv.android.xposed.XposedBridge.unhookMethod;
 
 
-public class SetTextHookHandler extends XC_MethodReplacement {
-    public MethodHookParam methodHookParam;
+public class SetTextHookHandler extends XC_MethodReplacement implements OriginalCallable {
 
-    public static void callOriginalMethod(MethodHookParam methodHookParam, CharSequence translatedString) {
+    public static Paint copyPaint(Paint paint) {
+        //Todo: Copy more values from paint
+        Paint newPaint = new Paint();
+        Paint myPaint = new Paint();
+        myPaint.setTextSize(paint.getTextSize());
+        myPaint.setColor(paint.getColor());
+
+        return myPaint;
+    }
+
+    public void callOriginalMethod(CharSequence translatedString, Object userData) {
+
+        MethodHookParam methodHookParam = (MethodHookParam) userData;
         alltrans.hookAccess.acquireUninterruptibly();
         unhookMethod(methodHookParam.method, alltrans.newHook);
         Method mymethod = (Method) methodHookParam.method;
@@ -72,55 +83,47 @@ public class SetTextHookHandler extends XC_MethodReplacement {
         alltrans.hookAccess.release();
     }
 
-    public static Paint copyPaint(Paint paint) {
-        //Todo: Copy more values from paint
-        Paint newPaint = new Paint();
-        Paint myPaint = new Paint();
-        myPaint.setTextSize(paint.getTextSize());
-        myPaint.setColor(paint.getColor());
-
-        return myPaint;
-    }
-
     @Override
-    protected Object replaceHookedMethod(MethodHookParam mHookParam) throws Throwable {
-        methodHookParam = mHookParam;
+    protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
         if (methodHookParam.args[0] != null) {
-            String abc = methodHookParam.args[0].toString();
+            String stringArgs = methodHookParam.args[0].toString();
 
-            if (!alltrans.FindEnglish(abc)) {
+            if (!alltrans.FindEnglish(stringArgs)) {
                 if (methodHookParam.method.getName().equals("drawText")) {
                     Log.i("AllTrans", "AllTrans: Canvas: Found string for canvas drawText : " + methodHookParam.args[0].toString());
                 }
 
-                Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + abc);
-                HandleNetworkLater handleNetworkLater = new HandleNetworkLater();
-                handleNetworkLater.stringToBeTrans = abc;
-                handleNetworkLater.methodHookParam = methodHookParam;
-                HandleNetworkInitial handleNetworkInitial = new HandleNetworkInitial();
-                handleNetworkInitial.handleNetworkLater = handleNetworkLater;
+                Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
+                GetTranslate getTranslate = new GetTranslate();
+                getTranslate.stringToBeTrans = stringArgs;
+                getTranslate.originalCallable = this;
+                getTranslate.userData = methodHookParam;
+                getTranslate.canCallOriginal = !methodHookParam.method.getName().equals("drawText");
+
+                GetTranslateToken getTranslateToken = new GetTranslateToken();
+                getTranslateToken.getTranslate = getTranslate;
 
                 if (!methodHookParam.method.getName().equals("drawText")) {
-                    callOriginalMethod(methodHookParam, abc);
+                    callOriginalMethod(stringArgs, methodHookParam);
                 }
 
                 alltrans.cacheAccess.acquireUninterruptibly();
-                if (alltrans.cache.containsKey(abc)) {
-                    String translatedString = alltrans.cache.get(abc);
-                    Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " found string in cache: " + abc + " as " + translatedString);
+                if (alltrans.cache.containsKey(stringArgs)) {
+                    String translatedString = alltrans.cache.get(stringArgs);
+                    Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
                     alltrans.cacheAccess.release();
-                    callOriginalMethod(methodHookParam, translatedString);
+                    callOriginalMethod(translatedString, methodHookParam);
                     return null;
                 } else {
                     alltrans.cacheAccess.release();
                     if (methodHookParam.method.getName().equals("drawText")) {
-                        callOriginalMethod(methodHookParam, abc);
+                        callOriginalMethod(stringArgs, methodHookParam);
                     }
                 }
 
-                handleNetworkInitial.doAll();
+                getTranslateToken.doAll();
             } else {
-                callOriginalMethod(methodHookParam, abc);
+                callOriginalMethod(stringArgs, methodHookParam);
             }
         }
         return null;

@@ -21,17 +21,17 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class HandleNetworkInitial implements Callback {
+public class GetTranslateToken implements Callback {
     private static String userCredentials;
     private static long lastExpireTime;
     private final Semaphore available = new Semaphore(1, true);
-    public HandleNetworkLater handleNetworkLater;
+    public GetTranslate getTranslate;
 
     public void doAll() {
         available.acquireUninterruptibly();
         long time = System.currentTimeMillis();
         if (time > lastExpireTime) {
-            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Entering get new token for string : " + handleNetworkLater.stringToBeTrans);
+            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Entering get new token for string : " + getTranslate.stringToBeTrans);
             getNewToken();
         } else {
             available.release();
@@ -62,7 +62,7 @@ public class HandleNetworkInitial implements Callback {
         try {
             String baseURL = "http://api.microsofttranslator.com/v2/Http.svc/Translate?text=";
             String languageURL = "&from=ko&to=en";
-            String fullURL = baseURL + URLEncoder.encode(handleNetworkLater.stringToBeTrans, "UTF-8") + languageURL;
+            String fullURL = baseURL + URLEncoder.encode(getTranslate.stringToBeTrans, "UTF-8") + languageURL;
             OkHttpClient client = new OkHttpClient.Builder().connectionSpecs(Collections.singletonList(ConnectionSpec.CLEARTEXT)).build();
 
             Request request = new Request.Builder()
@@ -71,15 +71,15 @@ public class HandleNetworkInitial implements Callback {
                     .addHeader("authorization", "Bearer " + userCredentials)
                     .build();
 
-            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Enqueing Request for new transaltion for : " + handleNetworkLater.stringToBeTrans);
-            client.newCall(request).enqueue(handleNetworkLater);
+            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Enqueing Request for new transaltion for : " + getTranslate.stringToBeTrans);
+            client.newCall(request).enqueue(getTranslate);
         } catch (java.io.IOException e) {
             Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
-            if (!handleNetworkLater.methodHookParam.method.getName().equals("drawText")) {
+            if (getTranslate.canCallOriginal) {
                 new Handler(Looper.getMainLooper()).post(new Runnable() {
                     @Override
                     public void run() {
-                        SetTextHookHandler.callOriginalMethod(handleNetworkLater.methodHookParam, handleNetworkLater.stringToBeTrans);
+                        getTranslate.originalCallable.callOriginalMethod(getTranslate.stringToBeTrans, getTranslate.userData);
                     }
                 });
             }

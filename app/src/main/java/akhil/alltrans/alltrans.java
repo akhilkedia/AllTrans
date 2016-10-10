@@ -3,8 +3,6 @@ package akhil.alltrans;
 
 import android.app.Application;
 import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Paint;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
@@ -85,9 +83,9 @@ public class alltrans implements IXposedHookLoadPackage {
 //            }});
 
 
-        findAndHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, newHook);
-        findAndHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, newHook);
-        findAndHookMethod(Canvas.class, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, newHook);
+        //findAndHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, newHook);
+        //findAndHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, newHook);
+        //findAndHookMethod(Canvas.class, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, newHook);
 
 
     }
