@@ -33,4 +33,6 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
     provided 'de.robv.android.xposed:api:82'
     provided 'de.robv.android.xposed:api:82:sources'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:preference-v14:23.4.0'
 }

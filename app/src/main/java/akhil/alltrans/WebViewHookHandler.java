@@ -60,6 +60,9 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
         webView = (WebView) methodHookParam.args[0];
         webView.addJavascriptInterface(this, "injectedObject");
 
+        String script1 = "console.log(\" AllTrans HTMLCODE \");console.log(document.body.outerHTML)";
+        webView.evaluateJavascript(script1, null);
+
         String script = "function getAllTextNodes() {\n" +
                 "    var result = [];\n" +
                 "    var ignore = {\n" +
@@ -95,6 +98,8 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
                 "        \tinjectedObject.showlog(all[i].nodeValue);\n" +
                 "}";
 
+
+        //Insert debug statements to see why it cant get to showlog
         webView.evaluateJavascript(script, null);
     }
 

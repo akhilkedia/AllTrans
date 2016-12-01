@@ -14,6 +14,7 @@ import java.util.concurrent.Semaphore;
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XC_MethodReplacement;
+import de.robv.android.xposed.XSharedPreferences;
 import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
@@ -43,19 +44,12 @@ public class alltrans implements IXposedHookLoadPackage {
 
     public void handleLoadPackage(final LoadPackageParam lpparam) throws Throwable {
 
-        //Check Package is SeoulBus
-        if (!lpparam.packageName.equals("com.astroframe.seoulbus")
-                && !lpparam.packageName.equals("com.nhn.android.nmap")
-                && !lpparam.packageName.equals("com.kakao.taxi")
-                && !lpparam.packageName.equals("com.fineapp.yogiyo")
-                && !lpparam.packageName.equals("com.thezumapp.and")
-                && !lpparam.packageName.equals("com.dgfood.info")
-                && !lpparam.packageName.equals("com.cgv.android.movieapp")
-                && !lpparam.packageName.equals("com.wooricard.smartapp")
-                && !lpparam.packageName.equals("com.google.android.talk")
-                && !lpparam.packageName.equals("com.ebay.global.gmarket")
-                && !lpparam.packageName.equals("com.ktcs.whowho"))
+        XSharedPreferences pref = new XSharedPreferences(alltrans.class.getPackage().getName(), "AllTransPref");
+        pref.makeWorldReadable();
+        pref.reload();
+        if (!pref.getBoolean(lpparam.packageName, false))
             return;
+
         //Android System Webview - com.google.android.webview
         XposedBridge.log("AllTrans: In Package " + lpparam.packageName);
 
