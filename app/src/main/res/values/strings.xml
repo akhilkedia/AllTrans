@@ -2,5 +2,6 @@
     <string name="app_name">AllTrans</string>
     <string name="prefFileName">AllTransPref</string>
     <string name="defaultToLanguage">en</string>
+    <string name="globalPrefFile">AllTransPref</string>
     <integer name="defaultDelay">0</integer>
 </resources>

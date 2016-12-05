@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Translate Settings">
+
+        <ListPreference
+            android:defaultValue="ko"
+            android:entries="@array/languageNames"
+            android:entryValues="@array/languageCodes"
+            android:key="globalTranslateFromLanguage"
+            android:title="Translate From Language" />
+        <ListPreference
+            android:defaultValue="en"
+            android:entries="@array/languageNames"
+            android:entryValues="@array/languageCodes"
+            android:key="globalTranslateToLanguage"
+            android:title="Translate To Language" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Parts of App to Translate">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="globalSetText"
+            android:summaryOff="Not Translating Text written using Set Text. Turn on to enable."
+            android:summaryOn="Translating Text written using Set Text - Safe. Turn off to disable."
+            android:title="Translate SetText" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="globalSetHint"
+            android:summaryOff="Not Translating Text written using Set Hint. Turn on to enable."
+            android:summaryOn="Translating Text written using Set Hint - Safe. Turn off to disable."
+            android:title="Translate SetHint" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="globalLoadURL"
+            android:summaryOff="Not Translating Text in WebViews. Turn on to enable."
+            android:summaryOn="Translating Text inside WebView - Safe, May Not Work Always. Turn off to disable."
+            android:title="Translate WebViews" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="globalDrawText"
+            android:summaryOff="Not aggressively translating Text in drawText. Use when all above fails. Turn on to enable."
+            android:summaryOn="Aggressively translating Text in drawText - Expimental, May Not Work Always. Turn off to disable."
+            android:title="Translate DrawText" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Other Settings">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="globalCache"
+            android:summaryOff="Not saving translations offline, resulting in slower translate and higher data - But may work for more apps. Turn on to save translations."
+            android:summaryOn="Saving translations offline to speed up translate and use data. Turn off to disable if your app doesnt start."
+            android:title="Use Caching" />
+        <EditTextPreference
+            android:defaultValue="@integer/defaultDelay"
+            android:key="globalDelay"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Set the time in milliseconds to wait before translating. Default Value is 0, set to 1000-5000 if the translated app is crashing.  "
+            android:title="Delay Before Translating" />
+    </PreferenceCategory>
+</PreferenceScreen>

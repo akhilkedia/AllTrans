@@ -8,6 +8,8 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,7 +35,7 @@ import static android.content.Context.MODE_WORLD_READABLE;
 public class AppListFragment extends Fragment {
 
     public static SharedPreferences settings;
-    public static Context context;
+    public static FragmentActivity context;
 
     public AppListFragment() {
     }
@@ -54,7 +56,7 @@ public class AppListFragment extends Fragment {
         context = this.getActivity();
 
 
-        settings = this.getActivity().getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
+        settings = this.getActivity().getSharedPreferences(getString(R.string.globalPrefFile), MODE_WORLD_READABLE);
         SharedPreferences.Editor editor = settings.edit();
         editor.putBoolean("com.astroframe.seoulbus", true);
         editor.putBoolean("com.nhn.android.nmap", true);
@@ -72,10 +74,11 @@ public class AppListFragment extends Fragment {
         final ListView listview = (ListView) getView().findViewById(R.id.AppsList);
 
 
+
         final ArrayList<String> list = new ArrayList<String>();
         final PackageManager pm = this.getActivity().getPackageManager();
 //get a list of installed apps.
-        List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
+        final List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
         Collections.sort(packages, new Comparator<ApplicationInfo>() {
             public int compare(ApplicationInfo a, ApplicationInfo b) {
                 String labela = pm.getApplicationLabel(a).toString().toLowerCase();
@@ -92,20 +95,18 @@ public class AppListFragment extends Fragment {
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, final View view,
-                                    int position, long id) {
-                final String item = (String) parent.getItemAtPosition(position);
-                view.animate().setDuration(2000).alpha(0)
-                        .withEndAction(new Runnable() {
-                            @Override
-                            public void run() {
-                                list.remove(item);
-                                adapter.notifyDataSetChanged();
-                                view.setAlpha(1);
-                            }
-                        });
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                ApplicationInfo curApp = (ApplicationInfo) parent.getItemAtPosition(position);
+                Log.i("Akhil", curApp.packageName);
+                LocalPreferenceFragment localPreferenceFragment = new LocalPreferenceFragment();
+                localPreferenceFragment.applicationInfo = curApp;
+                context.getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.toReplace, localPreferenceFragment)
+                        .addToBackStack(null)
+                        .commit();
             }
         });
+
     }
 
     private class StableArrayAdapter extends ArrayAdapter<ApplicationInfo> {
