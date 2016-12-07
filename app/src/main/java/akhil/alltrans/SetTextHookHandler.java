@@ -31,7 +31,9 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
         return myPaint;
     }
 
-    public static boolean FindEnglish(String abc) {
+    public static boolean isNotWhiteSpace(String abc) {
+        if (abc == null || "".equals(abc))
+            return false;
 //        boolean isEnglish = true;
 //        char c;
 //        int val;
@@ -43,7 +45,7 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
 //            }
 //        }
 //        return isEnglish;
-        return abc.matches("^\\s*$");
+        return !abc.matches("^\\s*$");
     }
 
     public void callOriginalMethod(CharSequence translatedString, Object userData) {
@@ -54,6 +56,7 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
         Method mymethod = (Method) methodHookParam.method;
         mymethod.setAccessible(true);
         Object[] myargs = methodHookParam.args;
+
 
         if (mymethod.getName().equals("setText") || mymethod.getName().equals("drawText")) {
             //if((mymethod.getName()=="setText")) {
@@ -105,7 +108,7 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
         if (methodHookParam.args[0] != null) {
             String stringArgs = methodHookParam.args[0].toString();
 
-            if (FindEnglish(stringArgs)) {
+            if (isNotWhiteSpace(stringArgs)) {
                 if (methodHookParam.method.getName().equals("drawText")) {
                     Log.i("AllTrans", "AllTrans: Canvas: Found string for canvas drawText : " + methodHookParam.args[0].toString());
                 }
@@ -131,12 +134,17 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
                     alltrans.cacheAccess.release();
                     final String finalString = translatedString;
                     final MethodHookParam finalMethodHookParam = methodHookParam;
-                    new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            callOriginalMethod(finalString, finalMethodHookParam);
-                        }
-                    }, PreferenceList.Delay);
+
+                    if (methodHookParam.method.getName().equals("drawText")) {
+                        callOriginalMethod(finalString, finalMethodHookParam);
+                    } else {
+                        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                callOriginalMethod(finalString, finalMethodHookParam);
+                            }
+                        }, PreferenceList.Delay);
+                    }
                     return null;
                 } else {
                     alltrans.cacheAccess.release();

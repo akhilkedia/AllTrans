@@ -6,6 +6,13 @@
         android:summaryOff="Using Global Settings for this app. Turn on to change settings only for this app."
         android:summaryOn="Using Local Settings for this app. Turn off to use Global Settings."
         android:title="OverRide Global Settings" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="clearCache"
+        android:persistent="false"
+        android:summary="Click the above to clear the app's translate cache. Use this after changing to/from languages, or if the app does not start."
+        android:summaryOff="Click the above to clear the app's translate cache. Use this after changing to/from languages, or if the app does not start."
+        android:title="Click to clear Translation Cache" />
     <PreferenceCategory android:title="Translate Settings">
 
         <ListPreference

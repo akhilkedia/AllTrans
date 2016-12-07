@@ -19,6 +19,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 .commit();
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {

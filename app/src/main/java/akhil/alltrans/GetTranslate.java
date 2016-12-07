@@ -32,6 +32,7 @@ public class GetTranslate implements Callback {
             if (PreferenceList.Caching) {
                 alltrans.cacheAccess.acquireUninterruptibly();
                 alltrans.cache.put(stringToBeTrans, translatedString);
+                alltrans.cache.put(translatedString, translatedString);
                 alltrans.cacheAccess.release();
             }
 
@@ -49,12 +50,15 @@ public class GetTranslate implements Callback {
 //            }
 
             Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " In GetTranslate calling callOriginalMethod with argument - " + translatedString);
-            new Handler(Looper.getMainLooper()).post(new Runnable() {
-                @Override
-                public void run() {
-                    originalCallable.callOriginalMethod(translatedString, userData);
-                }
-            });
+
+            if (canCallOriginal) {
+                new Handler(Looper.getMainLooper()).post(new Runnable() {
+                    @Override
+                    public void run() {
+                        originalCallable.callOriginalMethod(translatedString, userData);
+                    }
+                });
+            }
         }
     }
 

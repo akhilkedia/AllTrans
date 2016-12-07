@@ -87,20 +87,20 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
                 "}\n" +
                 "\n" +
                 "all = getAllTextNodes();\n" +
-                "\n" +
-                "function isASCII(str) {\n" +
-                "    return /^[\\x00-\\xFF]*$/.test(str);\n" +
-                "}\n" +
+
                 "\n" +
                 "for (var i = 0, max = all.length; i < max; i++) {\n" +
                 "    if (all[i].nodeValue.trim() != '')\n" +
-                "    \tif(!isASCII(all[i].nodeValue))\n" +
-                "        \tinjectedObject.showlog(all[i].nodeValue);\n" +
+                "        injectedObject.showlog(all[i].nodeValue);\n" +
                 "}";
 
 
         //Insert debug statements to see why it cant get to showlog
         webView.evaluateJavascript(script, null);
+//        "\n" +
+//                "function isASCII(str) {\n" +
+//                "    return /^[\\x00-\\xFF]*$/.test(str);\n" +
+//                "}\n" +
     }
 
     @JavascriptInterface
@@ -114,30 +114,33 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
         getTranslate.userData = stringArgs;
         getTranslate.canCallOriginal = false;
 
-        GetTranslateToken getTranslateToken = new GetTranslateToken();
-        getTranslateToken.getTranslate = getTranslate;
+        if (SetTextHookHandler.isNotWhiteSpace(getTranslate.stringToBeTrans)) {
 
-        if (PreferenceList.Caching) {
-            alltrans.cacheAccess.acquireUninterruptibly();
-            if (alltrans.cache.containsKey(stringArgs)) {
-                final String translatedString = alltrans.cache.get(stringArgs);
-                Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
-                alltrans.cacheAccess.release();
+            GetTranslateToken getTranslateToken = new GetTranslateToken();
+            getTranslateToken.getTranslate = getTranslate;
 
-                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        callOriginalMethod(translatedString, stringArgs);
-                    }
-                }, PreferenceList.Delay);
+            if (PreferenceList.Caching) {
+                alltrans.cacheAccess.acquireUninterruptibly();
+                if (alltrans.cache.containsKey(stringArgs)) {
+                    final String translatedString = alltrans.cache.get(stringArgs);
+                    Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
+                    alltrans.cacheAccess.release();
 
-                return;
-            } else {
-                alltrans.cacheAccess.release();
+                    new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            callOriginalMethod(translatedString, stringArgs);
+                        }
+                    }, PreferenceList.Delay);
+
+                    return;
+                } else {
+                    alltrans.cacheAccess.release();
+                }
             }
+
+            getTranslateToken.doAll();
+
         }
-
-        getTranslateToken.doAll();
-
     }
 }
