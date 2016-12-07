@@ -1,10 +1,12 @@
 package akhil.alltrans;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -15,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -36,6 +39,8 @@ public class AppListFragment extends Fragment {
 
     public static SharedPreferences settings;
     public static FragmentActivity context;
+    public static ListView listview;
+
 
     public AppListFragment() {
     }
@@ -68,29 +73,15 @@ public class AppListFragment extends Fragment {
         editor.putBoolean("com.ebay.global.gmarket", true);
         editor.putBoolean("com.foodfly.gcm", true);
         editor.putBoolean("com.ktcs.whowho", true);
-        editor.remove("EnabledApps");
+        editor.putString("ClientID", "alltranstestid1");
+        editor.putString("ClientSecret", "01234567890123456789");
         editor.commit();
 
-        final ListView listview = (ListView) getView().findViewById(R.id.AppsList);
+        listview = (ListView) getView().findViewById(R.id.AppsList);
 
+        new PrepareAdapter().execute();
 
-
-        final ArrayList<String> list = new ArrayList<String>();
-        final PackageManager pm = this.getActivity().getPackageManager();
-//get a list of installed apps.
-        final List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
-        Collections.sort(packages, new Comparator<ApplicationInfo>() {
-            public int compare(ApplicationInfo a, ApplicationInfo b) {
-                String labela = pm.getApplicationLabel(a).toString().toLowerCase();
-                String labelb = pm.getApplicationLabel(b).toString().toLowerCase();
-                return labela.compareTo(labelb);
-            }
-        });
-
-
-        final StableArrayAdapter adapter = new StableArrayAdapter(getActivity(), android.R.layout.simple_list_item_multiple_choice, packages);
         listview.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
-        listview.setAdapter(adapter);
         listview.setNestedScrollingEnabled(true);
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -158,9 +149,84 @@ public class AppListFragment extends Fragment {
             ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
             imageView.setImageDrawable(icon);
 
+            CheckBox checkBox = (CheckBox) rowView.findViewById(R.id.checkBox);
+            checkBox.setTag(position);
+            System.out.println("For package " + packageName + " ");
+            if (settings.contains(packageName)) {
+                checkBox.setChecked(true);
+            }
+
+            checkBox.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    CheckBox checkBox1 = (CheckBox) v;
+                    if (checkBox1.isChecked()) {
+                        checkBox1.getTag();
+                        int position = (Integer) checkBox1.getTag();
+                        Log.i("AllTrans", "AllTrans: CheckBox clicked!" + values.get(position).packageName);
+                        SharedPreferences.Editor editor = settings.edit();
+                        editor.putBoolean(values.get(position).packageName, true);
+                        editor.commit();
+                    } else {
+                        checkBox1.getTag();
+                        int position = (Integer) checkBox1.getTag();
+                        Log.i("AllTrans", "AllTrans: CheckBox clicked!" + values.get(position).packageName);
+                        if (settings.contains(values.get(position).packageName)) {
+                            SharedPreferences.Editor editor = settings.edit();
+                            editor.remove(values.get(position).packageName);
+                            editor.commit();
+                        }
+                    }
+                }
+            });
+
             return rowView;
         }
 
+    }
+
+    private class PrepareAdapter extends AsyncTask<Void, Void, StableArrayAdapter> {
+        ProgressDialog dialog;
+
+        @Override
+        protected void onPreExecute() {
+            dialog = new ProgressDialog(AppListFragment.context);
+            dialog.setMessage("Loading List of Applications - Please Wait");
+            dialog.setIndeterminate(true);
+            dialog.setCancelable(false);
+            dialog.show();
+        }
+
+        /* (non-Javadoc)
+         * @see android.os.AsyncTask#doInBackground(Params[])
+         */
+        @Override
+        protected StableArrayAdapter doInBackground(Void... params) {
+            final ArrayList<String> list = new ArrayList<String>();
+            final PackageManager pm = AppListFragment.context.getPackageManager();
+            //get a list of installed apps.
+            final List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
+            Collections.sort(packages, new Comparator<ApplicationInfo>() {
+                public int compare(ApplicationInfo a, ApplicationInfo b) {
+                    if (settings.contains(a.packageName) && !settings.contains(b.packageName))
+                        return -1;
+                    if (!settings.contains(a.packageName) && settings.contains(b.packageName))
+                        return 1;
+                    String labela = pm.getApplicationLabel(a).toString().toLowerCase();
+                    String labelb = pm.getApplicationLabel(b).toString().toLowerCase();
+                    return labela.compareTo(labelb);
+                }
+            });
+
+
+            final StableArrayAdapter adapter = new StableArrayAdapter(getActivity(), android.R.layout.simple_list_item_multiple_choice, packages);
+            return adapter;
+        }
+
+        protected void onPostExecute(StableArrayAdapter adapter) {
+            AppListFragment.listview.setAdapter(adapter);
+            dialog.dismiss();
+        }
     }
 }
 

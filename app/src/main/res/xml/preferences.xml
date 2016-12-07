@@ -4,7 +4,7 @@
 
     <SwitchPreference
         android:defaultValue="true"
-        android:key="globalEnabled"
+        android:key="Enabled"
         android:summary="Turn off to completely disable this module"
         android:summaryOff="Module is turned off, no apps will be translated. Turn on to start using auto-translate!"
         android:summaryOn="Module is turned on, selected apps will be translated. Turn off to completely disable this module."
@@ -13,14 +13,14 @@
 
         <EditTextPreference
             android:defaultValue="Enter Your Microsoft Client ID"
-            android:key="globalClientID"
+            android:key="ClientID"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:summary="Enter the Client ID for using Microsoft Azure DataMarket API for translation"
             android:title="Microsoft Translate Client ID" />
         <EditTextPreference
             android:defaultValue="Enter Your Microsoft Client Secret"
-            android:key="globalClientSecret"
+            android:key="ClientSecret"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:summary="Enter the Client Secret for using Microsoft Azure DataMarket API for translation"
@@ -29,13 +29,15 @@
             android:defaultValue="ko"
             android:entries="@array/languageNames"
             android:entryValues="@array/languageCodes"
-            android:key="globalTranslateFromLanguage"
+            android:key="TranslateFromLanguage"
+            android:summary="Language the app is originally in."
             android:title="Translate From Language" />
         <ListPreference
             android:defaultValue="en"
             android:entries="@array/languageNames"
             android:entryValues="@array/languageCodes"
-            android:key="globalTranslateToLanguage"
+            android:key="TranslateToLanguage"
+            android:summary="Language you want the app to be translate into."
             android:title="Translate To Language" />
 
     </PreferenceCategory>
@@ -43,25 +45,25 @@
 
         <SwitchPreference
             android:defaultValue="true"
-            android:key="globalSetText"
+            android:key="SetText"
             android:summaryOff="Not Translating Text written using Set Text. Turn on to enable."
             android:summaryOn="Translating Text written using Set Text - Safe. Turn off to disable."
             android:title="Translate SetText" />
         <SwitchPreference
             android:defaultValue="true"
-            android:key="globalSetHint"
+            android:key="SetHint"
             android:summaryOff="Not Translating Text written using Set Hint. Turn on to enable."
             android:summaryOn="Translating Text written using Set Hint - Safe. Turn off to disable."
             android:title="Translate SetHint" />
         <SwitchPreference
             android:defaultValue="true"
-            android:key="globalLoadURL"
+            android:key="LoadURL"
             android:summaryOff="Not Translating Text in WebViews. Turn on to enable."
             android:summaryOn="Translating Text inside WebView - Safe, May Not Work Always. Turn off to disable."
             android:title="Translate WebViews" />
         <SwitchPreference
             android:defaultValue="false"
-            android:key="globalDrawText"
+            android:key="DrawText"
             android:summaryOff="Not aggressively translating Text in drawText. Use when all above fails. Turn on to enable."
             android:summaryOn="Aggressively translating Text in drawText - Expimental, May Not Work Always. Turn off to disable."
             android:title="Translate DrawText" />
@@ -70,16 +72,16 @@
 
         <SwitchPreference
             android:defaultValue="true"
-            android:key="globalCache"
+            android:key="Cache"
             android:summaryOff="Not saving translations offline, resulting in slower translate and higher data - But may work for more apps. Turn on to save translations."
             android:summaryOn="Saving translations offline to speed up translate and use data. Turn off to disable if your app doesnt start."
             android:title="Use Caching" />
         <EditTextPreference
             android:defaultValue="@integer/defaultDelay"
-            android:key="globalDelay"
+            android:key="Delay"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:summary="Set the time in milliseconds to wait before translating. Default Value is 0, set to 1000-5000 if the translated app is crashing.  "
+            android:summary="Set the time in milliseconds to wait before translating. Default Value is 0, set to 1000-5000 if the translated app is crashing."
             android:title="Delay Before Translating" />
     </PreferenceCategory>
 </PreferenceScreen>

@@ -13,7 +13,7 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
     public MethodHookParam methodHookParam;
     public WebView webView;
 
-    public void callOriginalMethod(CharSequence translatedString, Object userData) {
+    public void callOriginalMethod(final CharSequence translatedString, final Object userData) {
         String stringToBeTrans = (String) userData;
         String script = "function getAllTextNodes() {\n" +
                 "    var result = [];\n" +
@@ -117,22 +117,24 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
         GetTranslateToken getTranslateToken = new GetTranslateToken();
         getTranslateToken.getTranslate = getTranslate;
 
-        alltrans.cacheAccess.acquireUninterruptibly();
-        if (alltrans.cache.containsKey(stringArgs)) {
-            final String translatedString = alltrans.cache.get(stringArgs);
-            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
-            alltrans.cacheAccess.release();
+        if (PreferenceList.Caching) {
+            alltrans.cacheAccess.acquireUninterruptibly();
+            if (alltrans.cache.containsKey(stringArgs)) {
+                final String translatedString = alltrans.cache.get(stringArgs);
+                Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
+                alltrans.cacheAccess.release();
 
-            new Handler(Looper.getMainLooper()).post(new Runnable() {
-                @Override
-                public void run() {
-                    callOriginalMethod(translatedString, stringArgs);
-                }
-            });
+                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        callOriginalMethod(translatedString, stringArgs);
+                    }
+                }, PreferenceList.Delay);
 
-            return;
-        } else {
-            alltrans.cacheAccess.release();
+                return;
+            } else {
+                alltrans.cacheAccess.release();
+            }
         }
 
         getTranslateToken.doAll();

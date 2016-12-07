@@ -2,5 +2,5 @@ package akhil.alltrans;
 
 
 public interface OriginalCallable {
-    void callOriginalMethod(CharSequence translatedString, Object userData);
+    void callOriginalMethod(final CharSequence translatedString, final Object userData);
 }

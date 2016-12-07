@@ -1,6 +1,7 @@
 package akhil.alltrans;
 
 import android.app.Application;
+import android.util.Log;
 
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
@@ -16,25 +17,25 @@ class appOnCreateHookHandler extends XC_MethodHook {
         Application application = (Application) methodHookParam.thisObject;
         alltrans.context = application.getApplicationContext();
 
-        try {
-            FileInputStream fileInputStream = alltrans.context.openFileInput("AllTransCache");
-            ObjectInputStream s = new ObjectInputStream(fileInputStream);
-            alltrans.cacheAccess.acquireUninterruptibly();
-            alltrans.cache = (HashMap<String, String>) s.readObject();
-            alltrans.cacheAccess.release();
-            s.close();
-        } catch (Exception e) {
-            alltrans.cacheAccess.acquireUninterruptibly();
-            alltrans.cache = new HashMap<String, String>(10000);
-            alltrans.cacheAccess.release();
+        if (PreferenceList.Caching) {
+            try {
+                FileInputStream fileInputStream = alltrans.context.openFileInput("AllTransCache");
+                ObjectInputStream s = new ObjectInputStream(fileInputStream);
+                alltrans.cacheAccess.acquireUninterruptibly();
+                alltrans.cache = (HashMap<String, String>) s.readObject();
+                alltrans.cacheAccess.release();
+                Log.i("AllTrans", "AllTrans: Successfully read old cache");
+                s.close();
+            } catch (Exception e) {
+                Log.e("AllTrans", "AllTrans: Got error in reading cache " + Log.getStackTraceString(e));
+                alltrans.cacheAccess.acquireUninterruptibly();
+                alltrans.cache = new HashMap<String, String>(10000);
+                alltrans.cacheAccess.release();
+            }
         }
 
         MyActivityLifecycleCallbacks myActivityLifecycleCallbacks = new MyActivityLifecycleCallbacks();
         application.registerActivityLifecycleCallbacks(myActivityLifecycleCallbacks);
     }
 
-    @Override
-    protected void afterHookedMethod(MethodHookParam methodHookParam) {
-
-    }
 }

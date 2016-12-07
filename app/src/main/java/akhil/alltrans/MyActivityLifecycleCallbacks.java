@@ -39,16 +39,18 @@ public class MyActivityLifecycleCallbacks implements Application.ActivityLifecyc
 
     @Override
     public void onActivityDestroyed(Activity activity) {
-        try {
-            Log.i("AllTrans", "AllTrans: trying to write cache");
-            FileOutputStream fileOutputStream = alltrans.context.openFileOutput("AllTransCache", 0);
-            ObjectOutputStream s = new ObjectOutputStream(fileOutputStream);
-            alltrans.cacheAccess.acquireUninterruptibly();
-            s.writeObject(alltrans.cache);
-            alltrans.cacheAccess.release();
+        if (PreferenceList.Caching) {
+            try {
+                Log.i("AllTrans", "AllTrans: trying to write cache");
+                FileOutputStream fileOutputStream = alltrans.context.openFileOutput("AllTransCache", 0);
+                ObjectOutputStream s = new ObjectOutputStream(fileOutputStream);
+                alltrans.cacheAccess.acquireUninterruptibly();
+                s.writeObject(alltrans.cache);
+                alltrans.cacheAccess.release();
 
-        } catch (Exception e) {
-            Log.e("AllTrans", "AllTrans: Got error in onActivityDestroyed: " + Log.getStackTraceString(e));
+            } catch (Exception e) {
+                Log.e("AllTrans", "AllTrans: Got error in onActivityDestroyed: " + Log.getStackTraceString(e));
+            }
         }
 
     }

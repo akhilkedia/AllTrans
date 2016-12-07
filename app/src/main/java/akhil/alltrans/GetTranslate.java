@@ -25,12 +25,15 @@ public class GetTranslate implements Callback {
             response.body().close();
 
             Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Got request result as : " + result);
+            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " In GetTranslate, setting: " + stringToBeTrans + "got response as " + result);
             translatedString = result.substring(result.indexOf('>') + 1, result.lastIndexOf('<'));
             translatedString = StringEscape.XMLUnescape(translatedString);
 
-            alltrans.cacheAccess.acquireUninterruptibly();
-            alltrans.cache.put(stringToBeTrans, translatedString);
-            alltrans.cacheAccess.release();
+            if (PreferenceList.Caching) {
+                alltrans.cacheAccess.acquireUninterruptibly();
+                alltrans.cache.put(stringToBeTrans, translatedString);
+                alltrans.cacheAccess.release();
+            }
 
             Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " In GetTranslate, setting: " + stringToBeTrans + " to :" + translatedString);
 
@@ -39,7 +42,8 @@ public class GetTranslate implements Callback {
             translatedString = stringToBeTrans;
         } finally {
 //            try {
-//                Thread.sleep(5000);
+//                if(PreferenceList.Delay>0)
+//                    Thread.sleep(PreferenceList.Delay);
 //            } catch (InterruptedException e) {
 //                e.printStackTrace();
 //            }
@@ -60,12 +64,12 @@ public class GetTranslate implements Callback {
         translatedString = stringToBeTrans;
 
         if (canCallOriginal) {
-            new Handler(Looper.getMainLooper()).post(new Runnable() {
+            new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     originalCallable.callOriginalMethod(translatedString, userData);
                 }
-            });
+            }, PreferenceList.Delay);
         }
     }
 }

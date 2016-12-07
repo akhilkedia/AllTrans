@@ -1,6 +1,8 @@
 package akhil.alltrans;
 
 import android.graphics.Paint;
+import android.os.Handler;
+import android.os.Looper;
 import android.text.AlteredCharSequence;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
@@ -27,6 +29,21 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
         myPaint.setColor(paint.getColor());
 
         return myPaint;
+    }
+
+    public static boolean FindEnglish(String abc) {
+//        boolean isEnglish = true;
+//        char c;
+//        int val;
+//        for (int i = 0; i < abc.length(); i++) {
+//            val = abc.charAt(i);
+//            if (val > 256) {
+//                isEnglish = false;
+//                break;
+//            }
+//        }
+//        return isEnglish;
+        return abc.matches("^\\s*$");
     }
 
     public void callOriginalMethod(CharSequence translatedString, Object userData) {
@@ -88,7 +105,7 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
         if (methodHookParam.args[0] != null) {
             String stringArgs = methodHookParam.args[0].toString();
 
-            if (!alltrans.FindEnglish(stringArgs)) {
+            if (FindEnglish(stringArgs)) {
                 if (methodHookParam.method.getName().equals("drawText")) {
                     Log.i("AllTrans", "AllTrans: Canvas: Found string for canvas drawText : " + methodHookParam.args[0].toString());
                 }
@@ -108,11 +125,18 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
                 }
 
                 alltrans.cacheAccess.acquireUninterruptibly();
-                if (alltrans.cache.containsKey(stringArgs)) {
+                if (PreferenceList.Caching && alltrans.cache.containsKey(stringArgs)) {
                     String translatedString = alltrans.cache.get(stringArgs);
                     Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
                     alltrans.cacheAccess.release();
-                    callOriginalMethod(translatedString, methodHookParam);
+                    final String finalString = translatedString;
+                    final MethodHookParam finalMethodHookParam = methodHookParam;
+                    new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            callOriginalMethod(finalString, finalMethodHookParam);
+                        }
+                    }, PreferenceList.Delay);
                     return null;
                 } else {
                     alltrans.cacheAccess.release();
