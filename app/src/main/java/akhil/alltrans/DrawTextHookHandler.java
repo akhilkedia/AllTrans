@@ -20,9 +20,11 @@ import de.robv.android.xposed.XC_MethodReplacement;
 import static de.robv.android.xposed.XposedBridge.hookMethod;
 import static de.robv.android.xposed.XposedBridge.unhookMethod;
 
+/**
+ * Created by akhil on 8/12/16.
+ */
 
-public class SetTextHookHandler extends XC_MethodReplacement implements OriginalCallable {
-
+public class DrawTextHookHandler extends XC_MethodReplacement implements OriginalCallable {
 
     /**
      * Sets the text size for a Paint object so a given string of text will be a
@@ -64,23 +66,6 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
         myPaint.setColor(paint.getColor());
         setTextSizeForWidth(myPaint, paint.getTextSize(), canvas.getWidth(), text);
         return myPaint;
-    }
-
-    public static boolean isNotWhiteSpace(String abc) {
-        if (abc == null || "".equals(abc))
-            return false;
-        return !abc.matches("^\\s*$");
-        //        boolean isEnglish = true;
-//        char c;
-//        int val;
-//        for (int i = 0; i < abc.length(); i++) {
-//            val = abc.charAt(i);
-//            if (val > 256) {
-//                isEnglish = false;
-//                break;
-//            }
-//        }
-//        return isEnglish;
     }
 
     public void callOriginalMethod(CharSequence translatedString, Object userData) {
@@ -145,7 +130,7 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
         if (methodHookParam.args[0] != null) {
             String stringArgs = methodHookParam.args[0].toString();
 
-            if (isNotWhiteSpace(stringArgs)) {
+            if (SetTextHookHandler.isNotWhiteSpace(stringArgs)) {
                 if (methodHookParam.method.getName().equals("drawText")) {
                     Log.i("AllTrans", "AllTrans: Canvas: Found string for canvas drawText : " + methodHookParam.args[0].toString());
                 }

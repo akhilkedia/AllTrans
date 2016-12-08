@@ -38,25 +38,25 @@
             android:key="SetText"
             android:summaryOff="Not Translating Text written using Set Text. Turn on to enable."
             android:summaryOn="Translating Text written using Set Text - Safe. Turn off to disable."
-            android:title="Translate SetText" />
+            android:title="Translate Normal Text" />
         <SwitchPreference
             android:defaultValue="true"
             android:key="SetHint"
             android:summaryOff="Not Translating Text written using Set Hint. Turn on to enable."
             android:summaryOn="Translating Text written using Set Hint - Safe. Turn off to disable."
-            android:title="Translate SetHint" />
+            android:title="Translate Text Hints (Gray-Coloured Suggestions) in Text Boxes" />
         <SwitchPreference
             android:defaultValue="true"
             android:key="LoadURL"
             android:summaryOff="Not Translating Text in WebViews. Turn on to enable."
             android:summaryOn="Translating Text inside WebView - Safe, May Not Work Always. Turn off to disable."
-            android:title="Translate WebViews" />
+            android:title="Translate Text in Web Pages inside Apps" />
         <SwitchPreference
             android:defaultValue="false"
             android:key="DrawText"
             android:summaryOff="Not aggressively translating Text in drawText. Use when all above fails. Turn on to enable."
             android:summaryOn="Aggressively translating Text in drawText - Expimental, May Not Work Always. Turn off to disable."
-            android:title="Translate DrawText" />
+            android:title="Aggressive Mode" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Other Settings">
 
