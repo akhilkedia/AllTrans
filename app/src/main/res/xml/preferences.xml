@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <SwitchPreference
@@ -8,23 +9,16 @@
         android:summary="Turn off to completely disable this module"
         android:summaryOff="Module is turned off, no apps will be translated. Turn on to start using auto-translate!"
         android:summaryOn="Module is turned on, selected apps will be translated. Turn off to completely disable this module."
-        android:title="Master On/Off" />
+        app:title="@string/master_on_off" />
     <PreferenceCategory android:title="Translate Settings">
 
         <EditTextPreference
-            android:defaultValue="Enter Your Microsoft Client ID"
-            android:key="ClientID"
+            android:defaultValue="Enter Your Microsoft Subscription Key"
+            android:key="SubscriptionKey"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:summary="Enter the Client ID for using Microsoft Azure DataMarket API for translation"
-            android:title="Microsoft Translate Client ID" />
-        <EditTextPreference
-            android:defaultValue="Enter Your Microsoft Client Secret"
-            android:key="ClientSecret"
-            android:selectAllOnFocus="true"
-            android:singleLine="true"
-            android:summary="Enter the Client Secret for using Microsoft Azure DataMarket API for translation"
-            android:title="Microsoft Translate Client Secret" />
+            android:summary="Enter the Subscription Key for Microsoft Azure Translation API"
+            android:title="Microsoft Azure Translate Subscription Key" />
         <ListPreference
             android:defaultValue="ko"
             android:entries="@array/languageNames"
@@ -65,7 +59,7 @@
             android:defaultValue="false"
             android:key="DrawText"
             android:summaryOff="Not aggressively translating Text in drawText. Use when all above fails. Turn on to enable."
-            android:summaryOn="Aggressively translating Text in drawText - Expimental, May Not Work Always. Turn off to disable."
+            android:summaryOn="Aggressively translating Text in drawText - Experimental, May Not Work Always. Turn off to disable."
             android:title="Aggressive Mode" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Other Settings">
@@ -74,7 +68,7 @@
             android:defaultValue="true"
             android:key="Cache"
             android:summaryOff="Not saving translations offline, resulting in slower translate and higher data - But may work for more apps. Turn on to save translations."
-            android:summaryOn="Saving translations offline to speed up translate and use data. Turn off to disable if your app doesnt start."
+            android:summaryOn="Saving translations offline to speed up translate and use data. Turn off to disable if your app doesn't start."
             android:title="Use Caching" />
         <EditTextPreference
             android:defaultValue="@integer/defaultDelay"

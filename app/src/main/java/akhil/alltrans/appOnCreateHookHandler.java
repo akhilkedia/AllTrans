@@ -22,6 +22,7 @@ class appOnCreateHookHandler extends XC_MethodHook {
                 FileInputStream fileInputStream = alltrans.context.openFileInput("AllTransCache");
                 ObjectInputStream s = new ObjectInputStream(fileInputStream);
                 alltrans.cacheAccess.acquireUninterruptibly();
+                //noinspection unchecked
                 alltrans.cache = (HashMap<String, String>) s.readObject();
                 alltrans.cacheAccess.release();
                 Log.i("AllTrans", "AllTrans: Successfully read old cache");
@@ -29,7 +30,7 @@ class appOnCreateHookHandler extends XC_MethodHook {
             } catch (Exception e) {
                 Log.e("AllTrans", "AllTrans: Got error in reading cache " + Log.getStackTraceString(e));
                 alltrans.cacheAccess.acquireUninterruptibly();
-                alltrans.cache = new HashMap<String, String>(10000);
+                alltrans.cache = new HashMap<>(10000);
                 alltrans.cacheAccess.release();
             }
         }

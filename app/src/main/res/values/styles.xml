@@ -10,7 +10,7 @@
     </style>
 
 
-    <style name="SettingsTheme" parent="Theme.AppCompat.NoActionBar"></style>
+    <style name="SettingsTheme" parent="Theme.AppCompat.NoActionBar" />
 
     <style name="MyActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/white</item>

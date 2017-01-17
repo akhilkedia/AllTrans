@@ -4,9 +4,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.Collections;
@@ -21,9 +18,9 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class GetTranslateToken implements Callback {
+class GetTranslateToken implements Callback {
     private static String userCredentials;
-    private static long lastExpireTime;
+    private static long lastExpireTime = 0;
     private final Semaphore available = new Semaphore(1, true);
     public GetTranslate getTranslate;
 
@@ -39,16 +36,19 @@ public class GetTranslateToken implements Callback {
         }
     }
 
-    public void getNewToken() {
+    private void getNewToken() {
         try {
             OkHttpClient client = new OkHttpClient();
-            MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
-            RequestBody body = RequestBody.create(mediaType, "grant_type=client_credentials&client_id=" + PreferenceList.ClientID + "&client_secret=" + PreferenceList.ClientSecret + "&scope=http%3A%2F%2Fapi.microsofttranslator.com");
+            MediaType mediaType = MediaType.parse("application/jwt");
+            RequestBody body = RequestBody.create(mediaType, "");
+
             Request request = new Request.Builder()
-                    .url("https://datamarket.accesscontrol.windows.net/v2/OAuth2-13")
+                    .url("https://api.cognitive.microsoft.com/sts/v1.0/issueToken")
                     .post(body)
-                    .addHeader("content-type", "application/x-www-form-urlencoded")
-                    .addHeader("cache-control", "no-cache")
+                    .addHeader("Ocp-Apim-Subscription-Key", PreferenceList.SubscriptionKey)
+                    .addHeader("Cache-Control", "no-cache")
+                    .addHeader("Content-Type", "application/json")
+                    .addHeader("Accept", "application/jwt")
                     .build();
 
             client.newCall(request).enqueue(this);
@@ -58,7 +58,7 @@ public class GetTranslateToken implements Callback {
         }
     }
 
-    public void doInBackground() {
+    private void doInBackground() {
         try {
             String baseURL = "http://api.microsofttranslator.com/v2/Http.svc/Translate?text=";
             String languageURL = "&from=" + PreferenceList.TranslateFromLanguage + "&to=" + PreferenceList.TranslateToLanguage;
@@ -71,7 +71,7 @@ public class GetTranslateToken implements Callback {
                     .addHeader("authorization", "Bearer " + userCredentials)
                     .build();
 
-            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Enqueing Request for new transaltion for : " + getTranslate.stringToBeTrans);
+            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Enqueuing Request for new translation for : " + getTranslate.stringToBeTrans);
             client.newCall(request).enqueue(getTranslate);
         } catch (java.io.IOException e) {
             Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
@@ -91,9 +91,7 @@ public class GetTranslateToken implements Callback {
             String result = response.body().string();
             response.body().close();
             Log.i("AllTrans", "AllTrans: Got request result as : " + result);
-            JsonParser jsonparser = new JsonParser();
-            JsonObject jsonobject = jsonparser.parse(result).getAsJsonObject();
-            userCredentials = jsonobject.get("access_token").getAsString();
+            userCredentials = result;
             Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Set User Credentials as : " + userCredentials);
             lastExpireTime = System.currentTimeMillis() + 550000;
         } catch (java.io.IOException e) {

@@ -13,10 +13,10 @@ import okhttp3.Response;
 
 public class GetTranslate implements Callback {
     public String stringToBeTrans;
-    public String translatedString;
     public OriginalCallable originalCallable;
     public boolean canCallOriginal;
     public Object userData;
+    private String translatedString;
 
     @Override
     public void onResponse(Call call, Response response) {

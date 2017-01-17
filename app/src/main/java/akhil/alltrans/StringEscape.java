@@ -1,22 +1,22 @@
 package akhil.alltrans;
 
-public class StringEscape {
+class StringEscape {
     public static String XMLUnescape(String s) {
-        String retval = s.replaceAll("&amp;", "&");
-        retval = retval.replaceAll("&quot;", "\"");
-        retval = retval.replaceAll("&apos;", "'");
-        retval = retval.replaceAll("&lt;", "<");
-        retval = retval.replaceAll("&gt;", ">");
-        retval = retval.replaceAll("&#xD;", "\r");
-        retval = retval.replaceAll("&#xA;", "\n");
+        String retVal = s.replaceAll("&amp;", "&");
+        retVal = retVal.replaceAll("&quot;", "\"");
+        retVal = retVal.replaceAll("&apos;", "'");
+        retVal = retVal.replaceAll("&lt;", "<");
+        retVal = retVal.replaceAll("&gt;", ">");
+        retVal = retVal.replaceAll("&#xD;", "\r");
+        retVal = retVal.replaceAll("&#xA;", "\n");
 
-        retval = retval.replaceAll("&amp;", "&");
-        retval = retval.replaceAll("&quot;", "\"");
-        retval = retval.replaceAll("&apos;", "'");
-        retval = retval.replaceAll("&lt;", "<");
-        retval = retval.replaceAll("&gt;", ">");
-        retval = retval.replaceAll("&#xD;", "\r");
-        retval = retval.replaceAll("&#xA;", "\n");
-        return retval;
+        retVal = retVal.replaceAll("&amp;", "&");
+        retVal = retVal.replaceAll("&quot;", "\"");
+        retVal = retVal.replaceAll("&apos;", "'");
+        retVal = retVal.replaceAll("&lt;", "<");
+        retVal = retVal.replaceAll("&gt;", ">");
+        retVal = retVal.replaceAll("&#xD;", "\r");
+        retVal = retVal.replaceAll("&#xA;", "\n");
+        return retVal;
     }
 }

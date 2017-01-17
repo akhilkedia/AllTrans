@@ -1,15 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "akhil.alltrans"
         minSdkVersion 21
-        targetSdkVersion 22
+        //noinspection OldTargetApi
+        targetSdkVersion 23
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
     }
     buildTypes {
         release {
@@ -28,11 +29,12 @@ repositories {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.4.0'
+    provided 'de.robv.android.xposed:api:81:sources'
+    compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
-    provided 'de.robv.android.xposed:api:82'
-    provided 'de.robv.android.xposed:api:82:sources'
-    compile 'com.android.support:design:23.4.0'
-    compile 'com.android.support:preference-v14:23.4.0'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.android.support:preference-v14:25.1.0'
+    compile 'com.android.support:support-v4:25.1.0'
+    provided 'de.robv.android.xposed:api:81'
 }

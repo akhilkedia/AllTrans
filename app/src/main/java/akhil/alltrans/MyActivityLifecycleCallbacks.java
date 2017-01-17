@@ -8,10 +8,7 @@ import android.util.Log;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 
-/**
- * Created by akhil on 23/6/16.
- */
-public class MyActivityLifecycleCallbacks implements Application.ActivityLifecycleCallbacks {
+class MyActivityLifecycleCallbacks implements Application.ActivityLifecycleCallbacks {
 
     @Override
     public void onActivityCreated(Activity activity, Bundle savedInstanceState) {

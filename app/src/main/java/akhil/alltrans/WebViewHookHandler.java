@@ -10,8 +10,7 @@ import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedBridge;
 
 public class WebViewHookHandler extends XC_MethodHook implements OriginalCallable {
-    public MethodHookParam methodHookParam;
-    public WebView webView;
+    private WebView webView;
 
     public void callOriginalMethod(final CharSequence translatedString, final Object userData) {
         String stringToBeTrans = (String) userData;
@@ -56,8 +55,7 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
     protected void afterHookedMethod(XC_MethodHook.MethodHookParam mParam) throws Throwable {
         XposedBridge.log("AllTrans: we are in onPageFinished!");
 
-        methodHookParam = mParam;
-        webView = (WebView) methodHookParam.args[0];
+        webView = (WebView) mParam.args[0];
         webView.addJavascriptInterface(this, "injectedObject");
 
         String script1 = "console.log(\" AllTrans HTMLCODE \");console.log(document.body.outerHTML)";
@@ -91,11 +89,11 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
                 "\n" +
                 "for (var i = 0, max = all.length; i < max; i++) {\n" +
                 "    if (all[i].nodeValue.trim() != '')\n" +
-                "        injectedObject.showlog(all[i].nodeValue);\n" +
+                "        injectedObject.showLog(all[i].nodeValue);\n" +
                 "}";
 
 
-        //Insert debug statements to see why it cant get to showlog
+        //Insert debug statements to see why it cant get to showLog
         webView.evaluateJavascript(script, null);
 //        "\n" +
 //                "function isASCII(str) {\n" +
@@ -103,8 +101,9 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
 //                "}\n" +
     }
 
+    @SuppressWarnings("unused")
     @JavascriptInterface
-    public void showlog(final String stringArgs) {
+    public void showLog(final String stringArgs) {
         Log.i("AllTrans", "AllTrans: in WebView Showlog " + stringArgs);
         Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
 

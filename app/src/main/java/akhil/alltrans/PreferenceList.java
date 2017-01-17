@@ -2,13 +2,8 @@ package akhil.alltrans;
 
 import de.robv.android.xposed.XSharedPreferences;
 
-/**
- * Created by akhil on 5/12/16.
- */
-
-public class PreferenceList {
-    public static String ClientID;
-    public static String ClientSecret;
+class PreferenceList {
+    public static String SubscriptionKey;
     public static String TranslateFromLanguage;
     public static String TranslateToLanguage;
 
@@ -21,8 +16,7 @@ public class PreferenceList {
     public static int Delay;
 
     public static void getPref(XSharedPreferences gPref, XSharedPreferences lPref) {
-        ClientID = gPref.getString("ClientID", "");
-        ClientSecret = gPref.getString("ClientSecret", "");
+        SubscriptionKey = gPref.getString("SubscriptionKey", "");
 
         if (lPref.contains("OverRide")) {
             if (lPref.getBoolean("OverRide", false))

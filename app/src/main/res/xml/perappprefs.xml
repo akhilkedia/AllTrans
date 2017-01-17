@@ -55,7 +55,7 @@
             android:defaultValue="false"
             android:key="DrawText"
             android:summaryOff="Not aggressively translating Text in drawText. Use when all above fails. Turn on to enable."
-            android:summaryOn="Aggressively translating Text in drawText - Expimental, May Not Work Always. Turn off to disable."
+            android:summaryOn="Aggressively translating Text in drawText - Experimental, May Not Work Always. Turn off to disable."
             android:title="Aggressive Mode" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Other Settings">
@@ -64,7 +64,7 @@
             android:defaultValue="true"
             android:key="Cache"
             android:summaryOff="Not saving translations offline, resulting in slower translate and higher data - But may work for more apps. Turn on to save translations."
-            android:summaryOn="Saving translations offline to speed up translate and use data. Turn off to disable if your app doesnt start."
+            android:summaryOn="Saving translations offline to speed up translate and use data. Turn off to disable if your app doesn't start."
             android:title="Use Caching" />
         <EditTextPreference
             android:defaultValue="@integer/defaultDelay"

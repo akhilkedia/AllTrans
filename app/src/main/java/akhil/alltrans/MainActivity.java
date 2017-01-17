@@ -4,11 +4,9 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
-import android.widget.SimpleCursorAdapter;
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
-    public static String TAG = "alltrans";
-    SimpleCursorAdapter mAdapter;
+    //public static String TAG = "alltrans";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +18,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 
-        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 switch (tab.getPosition()) {
@@ -32,6 +30,11 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                     case 1:
                         getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.toReplace, new GlobalPreferencesFragment())
+                                .commit();
+                        break;
+                    case 2:
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.toReplace, new BlankFragment())
                                 .commit();
                         break;
                 }

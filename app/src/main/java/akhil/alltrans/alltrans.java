@@ -1,6 +1,7 @@
 package akhil.alltrans;
 
 
+import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -27,8 +28,10 @@ import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 public class alltrans implements IXposedHookLoadPackage {
     public static final Semaphore cacheAccess = new Semaphore(1, true);
     public static final Semaphore hookAccess = new Semaphore(1, true);
-    public static XC_MethodReplacement newHook = new SetTextHookHandler();
-    public static HashMap<String, String> cache = new HashMap<String, String>();
+    public static final XC_MethodReplacement setTextHook = new SetTextHookHandler();
+    private static final XC_MethodReplacement drawTextHook = new DrawTextHookHandler();
+    public static HashMap<String, String> cache = new HashMap<>();
+    @SuppressLint("StaticFieldLeak")
     public static Context context;
 
 
@@ -49,7 +52,7 @@ public class alltrans implements IXposedHookLoadPackage {
         PreferenceList.getPref(globalPref, localPref);
 
 
-        //Android System Webview - com.google.android.webview
+        //Android System WebView - com.google.android.webview
         XposedBridge.log("AllTrans: In Package " + lpparam.packageName);
 
         appOnCreateHookHandler appOnCreateHookHandler = new appOnCreateHookHandler();
@@ -57,9 +60,9 @@ public class alltrans implements IXposedHookLoadPackage {
 
         //Hook all Text String methods
         if (PreferenceList.SetText)
-            findAndHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, newHook);
+            findAndHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, setTextHook);
         if (PreferenceList.SetHint)
-        findAndHookMethod(TextView.class, "setHint", CharSequence.class, newHook);
+            findAndHookMethod(TextView.class, "setHint", CharSequence.class, setTextHook);
 
         if (PreferenceList.LoadURL) {
             findAndHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewHookHandler());
@@ -80,9 +83,9 @@ public class alltrans implements IXposedHookLoadPackage {
 //            }});
 
         if (PreferenceList.DrawText) {
-            findAndHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, newHook);
-            findAndHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, newHook);
-            findAndHookMethod(Canvas.class, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, newHook);
+            findAndHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, drawTextHook);
+            findAndHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, drawTextHook);
+            findAndHookMethod(Canvas.class, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, drawTextHook);
         }
 
 
