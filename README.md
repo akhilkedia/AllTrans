@@ -12,19 +12,19 @@ This is something similar to the way Google Translate works in Chrome.
 ##ScreenShots
 Below are some screenshots of AllTrans translating apps from Korean to English
 
-![](./screenshots/Joint1S.PNG)
+![](./screenshots/Joint1S.png)
 
-![](./screenshots/Joint2S.PNG)
+![](./screenshots/Joint2S.png)
 
-![](./screenshots/Joint3S.PNG)
+![](./screenshots/Joint3S.png)
 
 Below are some of the screenshots of AllTrans app
 
-![](./screenshots/Screen1S.PNG)
+![](./screenshots/Screen1S.png)
 
-![](./screenshots/Screen2S.PNG)
+![](./screenshots/Screen2S.png)
 
-![](./screenshots/Screen3S.PNG)
+![](./screenshots/Screen3S.png)
 
 ## How to install AllTrans
 1. This application requires android version 5.0 or later (Android Lollipop or later - so far MarshMallow and Nougat).
