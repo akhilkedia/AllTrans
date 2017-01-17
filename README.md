@@ -1,5 +1,5 @@
 # ![AllTrans](./app/src/main/res/mipmap-hdpi/ic_launcher.png)AllTrans - Completely Translate Apps
-## à la Chrome translation of webpages, but for Android apps
+à la Chrome translation of webpages, but for Android apps
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
@@ -8,6 +8,17 @@ It replaces **all text in an app** in a language from one language to another at
 Say for example an app is in German. A user selects the app name, and the required language conversion (say German to English).
 Then whenever the user uses the required app, all the text, **ANYWHERE** in the app, are replaced by their English equivalents.
 This is something similar to the way Google Translate works in Chrome.
+
+##ScreenShots
+Below are some screenshots of AllTrans translating apps from Korean to English
+![]:(./screenshots/Joint1S.png)
+![]:(./screenshots/Joint2S.png)
+![]:(./screenshots/Joint3S.png)
+
+Below are some of the screenshots of AllTrans app
+![]:(./screenshots/Screen1S.png)
+![]:(./screenshots/Screen2S.png)
+![]:(./screenshots/Screen3S.png)
 
 ## How to install AllTrans
 1. This application requires android version 5.0 or later (Android Lollipop or later - so far MarshMallow and Nougat).
