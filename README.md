@@ -33,9 +33,9 @@ Below are some of the screenshots of AllTrans app
 4. Build this project and install the produced AllTrans apk.
 
 ## How to use AllTrans
-1. In "Global Settings" tab, tap "Microsoft Azure Translate Subscription Key", input the key from below.
+1. Launch AllTrans app. In "Global Settings" tab, tap "Microsoft Azure Translate Subscription Key", input the key from below.
 2. Choose the "Translate from Language" and "Translate to Language".
-2. In the "Apps to Translate" tab, find the app you want to translate, click the checkbox next to it.
+3. In the "Apps to Translate" tab, find the app you want to translate, click the checkbox next to it.
 
 ## How to sign up for Microsoft Azure Translate
 1. Sign up for a Microsoft Azure account.
