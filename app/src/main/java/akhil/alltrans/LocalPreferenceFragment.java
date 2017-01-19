@@ -21,8 +21,10 @@ package akhil.alltrans;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.os.Bundle;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceFragmentCompat;
 import android.support.v7.preference.PreferenceManager;
@@ -40,16 +42,33 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
 
     @Override
     public void onCreatePreferences(Bundle bundle, String rootKey) {
+        SharedPreferences settings = this.getActivity().getSharedPreferences(getString(R.string.globalPrefFile), MODE_WORLD_READABLE);
+        Boolean enabledYandex = settings.getBoolean("EnableYandex", false);
         PreferenceManager preferenceManager = getPreferenceManager();
         preferenceManager.setSharedPreferencesName(applicationInfo.packageName);
         preferenceManager.setSharedPreferencesMode(MODE_WORLD_READABLE);
         addPreferencesFromResource(R.xml.perappprefs);
+
+        if (enabledYandex) {
+            ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
+            translateFromLanguage.setEntries(R.array.languageNamesYandex);
+            translateFromLanguage.setEntryValues(R.array.languageCodesYandex);
+            ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
+            translateToLanguage.setEntries(R.array.languageNamesYandex);
+            translateToLanguage.setEntryValues(R.array.languageCodesYandex);
+        } else {
+            ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
+            translateFromLanguage.setEntries(R.array.languageNames);
+            translateFromLanguage.setEntryValues(R.array.languageCodes);
+            ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
+            translateToLanguage.setEntries(R.array.languageNames);
+            translateToLanguage.setEntryValues(R.array.languageCodes);
+        }
+
         Preference pref = findPreference("clearCache");
-        //RecyclerView v = getListView();
         pref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
-
                 try {
                     Process su = Runtime.getRuntime().exec("su");
                     DataOutputStream outputStream = new DataOutputStream(su.getOutputStream());

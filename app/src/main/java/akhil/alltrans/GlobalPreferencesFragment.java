@@ -45,6 +45,8 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
             ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
             translateToLanguage.setEntries(R.array.languageNamesYandex);
             translateToLanguage.setEntryValues(R.array.languageCodesYandex);
+            Preference subscriptionKey = findPreference("SubscriptionKey");
+            subscriptionKey.setTitle("Enter Yandex Translate Subscription Key");
         }
         enableYandex.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
@@ -56,6 +58,8 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
                     ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
                     translateToLanguage.setEntries(R.array.languageNamesYandex);
                     translateToLanguage.setEntryValues(R.array.languageCodesYandex);
+                    Preference subscriptionKey = findPreference("SubscriptionKey");
+                    subscriptionKey.setTitle("Enter Yandex Translate Subscription Key");
                 } else {
                     ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
                     translateFromLanguage.setEntries(R.array.languageNames);
@@ -63,6 +67,8 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
                     ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
                     translateToLanguage.setEntries(R.array.languageNames);
                     translateToLanguage.setEntryValues(R.array.languageCodes);
+                    Preference subscriptionKey = findPreference("SubscriptionKey");
+                    subscriptionKey.setTitle("Enter Microsoft Translate Subscription Key");
                 }
                 return true;
             }
