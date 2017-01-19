@@ -20,6 +20,9 @@
 package akhil.alltrans;
 
 import android.os.Bundle;
+import android.support.v14.preference.SwitchPreference;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceFragmentCompat;
 import android.support.v7.preference.PreferenceManager;
 
@@ -34,6 +37,35 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
         preferenceManager.setSharedPreferencesName(getString(R.string.globalPrefFile));
         preferenceManager.setSharedPreferencesMode(MODE_WORLD_READABLE);
         addPreferencesFromResource(R.xml.preferences);
-
+        SwitchPreference enableYandex = (SwitchPreference) findPreference("EnableYandex");
+        if (enableYandex.isChecked()) {
+            ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
+            translateFromLanguage.setEntries(R.array.languageNamesYandex);
+            translateFromLanguage.setEntryValues(R.array.languageCodesYandex);
+            ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
+            translateToLanguage.setEntries(R.array.languageNamesYandex);
+            translateToLanguage.setEntryValues(R.array.languageCodesYandex);
+        }
+        enableYandex.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                if ((Boolean) newValue) {
+                    ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
+                    translateFromLanguage.setEntries(R.array.languageNamesYandex);
+                    translateFromLanguage.setEntryValues(R.array.languageCodesYandex);
+                    ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
+                    translateToLanguage.setEntries(R.array.languageNamesYandex);
+                    translateToLanguage.setEntryValues(R.array.languageCodesYandex);
+                } else {
+                    ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
+                    translateFromLanguage.setEntries(R.array.languageNames);
+                    translateFromLanguage.setEntryValues(R.array.languageCodes);
+                    ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
+                    translateToLanguage.setEntries(R.array.languageNames);
+                    translateToLanguage.setEntryValues(R.array.languageCodes);
+                }
+                return true;
+            }
+        });
     }
 }

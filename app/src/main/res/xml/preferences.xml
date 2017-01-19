@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -12,13 +31,20 @@
         app:title="@string/master_on_off" />
     <PreferenceCategory android:title="Translate Settings">
 
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="EnableYandex"
+            android:summary="Turn on to use Yandex Translation instead of Microsoft"
+            android:summaryOff="Currently using Microsoft Azure Translation. Turn on to use Yandex Translation"
+            android:summaryOn="Currently using Yandex Translation. Turn off to use Microsoft Azure Translation"
+            android:title="Use Yandex instead of Microsoft" />
         <EditTextPreference
-            android:defaultValue="Enter Your Microsoft Subscription Key"
+            android:defaultValue="Enter Your Microsoft or Yandex Subscription Key"
             android:key="SubscriptionKey"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:summary="Enter the Subscription Key for Microsoft Azure Translation API"
-            android:title="Microsoft Azure Translate Subscription Key" />
+            android:summary="Enter the Subscription Key for Microsoft Azure or Yandex Translation API, whichever is enabled above"
+            android:title="Microsoft / Yandex Subscription Key" />
         <ListPreference
             android:defaultValue="ko"
             android:entries="@array/languageNames"

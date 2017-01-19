@@ -83,19 +83,36 @@ class GetTranslateToken implements Callback {
 
     private void doInBackground() {
         try {
-            String baseURL = "http://api.microsofttranslator.com/v2/Http.svc/Translate?text=";
-            String languageURL = "&from=" + PreferenceList.TranslateFromLanguage + "&to=" + PreferenceList.TranslateToLanguage;
-            String fullURL = baseURL + URLEncoder.encode(getTranslate.stringToBeTrans, "UTF-8") + languageURL;
-            OkHttpClient client = new OkHttpClient.Builder().connectionSpecs(Collections.singletonList(ConnectionSpec.CLEARTEXT)).build();
+            if (PreferenceList.EnableYandex == true) {
+                String baseURL = "https://translate.yandex.net/api/v1.5/tr/translate?";
+                String keyURL = "key=" + PreferenceList.SubscriptionKey;
+                String textURL = "&text=" + URLEncoder.encode(getTranslate.stringToBeTrans, "UTF-8");
+                String languageURL = "&lang=" + PreferenceList.TranslateFromLanguage + "-" + PreferenceList.TranslateToLanguage;
+                String fullURL = baseURL + keyURL + textURL + languageURL;
+                OkHttpClient client = new OkHttpClient.Builder().build();
 
-            Request request = new Request.Builder()
-                    .url(fullURL)
-                    .get()
-                    .addHeader("authorization", "Bearer " + userCredentials)
-                    .build();
+                Request request = new Request.Builder()
+                        .url(fullURL)
+                        .get()
+                        .build();
 
-            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Enqueuing Request for new translation for : " + getTranslate.stringToBeTrans);
-            client.newCall(request).enqueue(getTranslate);
+                Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Enqueuing Request for new translation for : " + getTranslate.stringToBeTrans);
+                client.newCall(request).enqueue(getTranslate);
+            } else {
+                String baseURL = "http://api.microsofttranslator.com/v2/Http.svc/Translate?text=";
+                String languageURL = "&from=" + PreferenceList.TranslateFromLanguage + "&to=" + PreferenceList.TranslateToLanguage;
+                String fullURL = baseURL + URLEncoder.encode(getTranslate.stringToBeTrans, "UTF-8") + languageURL;
+                OkHttpClient client = new OkHttpClient.Builder().connectionSpecs(Collections.singletonList(ConnectionSpec.CLEARTEXT)).build();
+
+                Request request = new Request.Builder()
+                        .url(fullURL)
+                        .get()
+                        .addHeader("authorization", "Bearer " + userCredentials)
+                        .build();
+
+                Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Enqueuing Request for new translation for : " + getTranslate.stringToBeTrans);
+                client.newCall(request).enqueue(getTranslate);
+            }
         } catch (java.io.IOException e) {
             Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
             if (getTranslate.canCallOriginal) {

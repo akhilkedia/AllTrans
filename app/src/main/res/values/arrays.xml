@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
 <resources>
     <string-array name="languageCodes">
         <item>af</item>
@@ -110,4 +129,190 @@
         <item>Welsh</item>
         <item>Yucatec Maya</item>
     </string-array>
+    <string-array name="languageCodesYandex">
+        <item>af</item>
+        <item>am</item>
+        <item>ar</item>
+        <item>az</item>
+        <item>ba</item>
+        <item>be</item>
+        <item>bg</item>
+        <item>bn</item>
+        <item>bs</item>
+        <item>ca</item>
+        <item>ceb</item>
+        <item>cs</item>
+        <item>cy</item>
+        <item>da</item>
+        <item>de</item>
+        <item>el</item>
+        <item>en</item>
+        <item>eo</item>
+        <item>es</item>
+        <item>et</item>
+        <item>eu</item>
+        <item>fa</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>ga</item>
+        <item>gd</item>
+        <item>gl</item>
+        <item>gu</item>
+        <item>he</item>
+        <item>hi</item>
+        <item>hr</item>
+        <item>ht</item>
+        <item>hu</item>
+        <item>hy</item>
+        <item>id</item>
+        <item>is</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>jv</item>
+        <item>ka</item>
+        <item>kk</item>
+        <item>kn</item>
+        <item>ko</item>
+        <item>ky</item>
+        <item>la</item>
+        <item>lb</item>
+        <item>lt</item>
+        <item>lv</item>
+        <item>mg</item>
+        <item>mhr</item>
+        <item>mi</item>
+        <item>mk</item>
+        <item>ml</item>
+        <item>mn</item>
+        <item>mr</item>
+        <item>mrj</item>
+        <item>ms</item>
+        <item>mt</item>
+        <item>ne</item>
+        <item>nl</item>
+        <item>no</item>
+        <item>pa</item>
+        <item>pap</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>si</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>sq</item>
+        <item>sr</item>
+        <item>su</item>
+        <item>sv</item>
+        <item>sw</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>tg</item>
+        <item>th</item>
+        <item>tl</item>
+        <item>tr</item>
+        <item>tt</item>
+        <item>udm</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>uz</item>
+        <item>vi</item>
+        <item>xh</item>
+        <item>yi</item>
+        <item>zh</item>
+    </string-array>
+    <string-array name="languageNamesYandex">
+        <item>Afrikaans</item>
+        <item>Amharic</item>
+        <item>Arabic</item>
+        <item>Azerbaijani</item>
+        <item>Bashkir</item>
+        <item>Belarusian</item>
+        <item>Bulgarian</item>
+        <item>Bengali</item>
+        <item>Bosnian</item>
+        <item>Catalan</item>
+        <item>Cebuano</item>
+        <item>Czech</item>
+        <item>Welsh</item>
+        <item>Danish</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>English</item>
+        <item>Esperanto</item>
+        <item>Spanish</item>
+        <item>Estonian</item>
+        <item>Basque</item>
+        <item>Persian</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>Irish</item>
+        <item>Scottish Gaelic</item>
+        <item>Galician</item>
+        <item>Gujarati</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Croatian</item>
+        <item>Haitian</item>
+        <item>Hungarian</item>
+        <item>Armenian</item>
+        <item>Indonesian</item>
+        <item>Icelandic</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Javanese</item>
+        <item>Georgian</item>
+        <item>Kazakh</item>
+        <item>Kannada</item>
+        <item>Korean</item>
+        <item>Kyrgyz</item>
+        <item>Latin</item>
+        <item>Luxembourgish</item>
+        <item>Lithuanian</item>
+        <item>Latvian</item>
+        <item>Malagasy</item>
+        <item>Mari</item>
+        <item>Maori</item>
+        <item>Macedonian</item>
+        <item>Malayalam</item>
+        <item>Mongolian</item>
+        <item>Marathi</item>
+        <item>Hill Mari</item>
+        <item>Malay</item>
+        <item>Maltese</item>
+        <item>Nepali</item>
+        <item>Dutch</item>
+        <item>Norwegian</item>
+        <item>Punjabi</item>
+        <item>Papiamento</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Sinhalese</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Albanian</item>
+        <item>Serbian</item>
+        <item>Sundanese</item>
+        <item>Swedish</item>
+        <item>Swahili</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Tajik</item>
+        <item>Thai</item>
+        <item>Tagalog</item>
+        <item>Turkish</item>
+        <item>Tatar</item>
+        <item>Udmurt</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+        <item>Uzbek</item>
+        <item>Vietnamese</item>
+        <item>Xhosa</item>
+        <item>Yiddish</item>
+        <item>Chinese</item>
+    </string-array>
+    >
+
 </resources>
