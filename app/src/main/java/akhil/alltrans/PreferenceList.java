@@ -25,6 +25,7 @@ class PreferenceList {
     public static String SubscriptionKey;
     public static String TranslateFromLanguage;
     public static String TranslateToLanguage;
+    public static boolean EnableYandex;
 
     public static boolean SetText;
     public static boolean SetHint;
@@ -36,6 +37,7 @@ class PreferenceList {
 
     public static void getPref(XSharedPreferences gPref, XSharedPreferences lPref) {
         SubscriptionKey = gPref.getString("SubscriptionKey", "");
+        EnableYandex = gPref.getBoolean("EnableYandex", false);
 
         if (lPref.contains("OverRide")) {
             if (lPref.getBoolean("OverRide", false))

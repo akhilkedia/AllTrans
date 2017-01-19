@@ -44,14 +44,18 @@ class GetTranslateToken implements Callback {
     public GetTranslate getTranslate;
 
     public void doAll() {
-        available.acquireUninterruptibly();
-        long time = System.currentTimeMillis();
-        if (time > lastExpireTime) {
-            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Entering get new token for string : " + getTranslate.stringToBeTrans);
-            getNewToken();
-        } else {
-            available.release();
+        if(PreferenceList.EnableYandex==true)
             doInBackground();
+        else {
+            available.acquireUninterruptibly();
+            long time = System.currentTimeMillis();
+            if (time > lastExpireTime) {
+                Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Entering get new token for string : " + getTranslate.stringToBeTrans);
+                getNewToken();
+            } else {
+                available.release();
+                doInBackground();
+            }
         }
     }
 

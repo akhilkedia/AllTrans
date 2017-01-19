@@ -77,16 +77,16 @@ public class AppListFragment extends Fragment {
         //noinspection deprecation,deprecation
         settings = this.getActivity().getSharedPreferences(getString(R.string.globalPrefFile), MODE_WORLD_READABLE);
 //        SharedPreferences.Editor editor = settings.edit();
-////        editor.putBoolean("com.astroframe.seoulbus", true);
-////        editor.putBoolean("com.nhn.android.nmap", true);
-////        editor.putBoolean("com.kakao.taxi", true);
-////        editor.putBoolean("com.fineapp.yogiyo", true);
-////        editor.putBoolean("com.cgv.android.movieapp", true);
-////        editor.putBoolean("com.wooricard.smartapp", true);
-////        editor.putBoolean("com.google.android.talk", true);
-////        editor.putBoolean("com.ebay.global.gmarket", true);
-////        editor.putBoolean("com.foodfly.gcm", true);
-////        editor.putBoolean("com.ktcs.whowho", true);
+//        editor.putBoolean("com.astroframe.seoulbus", true);
+//        editor.putBoolean("com.nhn.android.nmap", true);
+//        editor.putBoolean("com.kakao.taxi", true);
+//        editor.putBoolean("com.fineapp.yogiyo", true);
+//        editor.putBoolean("com.cgv.android.movieapp", true);
+//        editor.putBoolean("com.wooricard.smartapp", true);
+//        editor.putBoolean("com.google.android.talk", true);
+//        editor.putBoolean("com.ebay.global.gmarket", true);
+//        editor.putBoolean("com.foodfly.gcm", true);
+//        editor.putBoolean("com.ktcs.whowho", true);
 //        editor.putString("SubscriptionKey", "65044997b4194b8f8c181a15166fcb46");
 //        editor.apply();
 

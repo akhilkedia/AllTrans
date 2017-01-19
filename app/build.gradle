@@ -24,7 +24,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "de.akhil.alltrans"
+        applicationId "akhil.alltrans"
         minSdkVersion 21
         //noinspection OldTargetApi
         targetSdkVersion 23
