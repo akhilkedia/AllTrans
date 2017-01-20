@@ -56,7 +56,7 @@ Go to the ﻿Keys ﻿option and copy your subscription key to access the service
 ## TroubleShooting
 1. If the app get stuck on loading the first time after you start translating, open AllTrans, click on the app in "Apps to translate" tab, and in "Other Settings" fill in "Delay Before Translating" to 2000.
 2. If the app used to translate fine, but stopped loading, open AllTrans, click on the app in "Apps to translate" tab, and click on "Click to Clear Translation Cache".
-3. If the app is not being translated, open AllTrans, click on the app in "Apps to translate" tab, and enable "Aggresive Mode". Also check your Microsoft Subscription Key is correct.
+3. If the app is not being translated, open AllTrans, click on the app in "Apps to translate" tab, and enable "Aggressive Mode". Also check your Microsoft Subscription Key is correct.
 
 ## License
 This program is AllTrans

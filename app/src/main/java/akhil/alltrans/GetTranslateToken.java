@@ -44,7 +44,7 @@ class GetTranslateToken implements Callback {
     public GetTranslate getTranslate;
 
     public void doAll() {
-        if(PreferenceList.EnableYandex==true)
+        if (PreferenceList.EnableYandex)
             doInBackground();
         else {
             available.acquireUninterruptibly();
@@ -83,7 +83,7 @@ class GetTranslateToken implements Callback {
 
     private void doInBackground() {
         try {
-            if (PreferenceList.EnableYandex == true) {
+            if (PreferenceList.EnableYandex) {
                 String baseURL = "https://translate.yandex.net/api/v1.5/tr/translate?";
                 String keyURL = "key=" + PreferenceList.SubscriptionKey;
                 String textURL = "&text=" + URLEncoder.encode(getTranslate.stringToBeTrans, "UTF-8");

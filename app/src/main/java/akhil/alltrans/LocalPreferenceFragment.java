@@ -42,7 +42,7 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
 
     @Override
     public void onCreatePreferences(Bundle bundle, String rootKey) {
-        SharedPreferences settings = this.getActivity().getSharedPreferences(getString(R.string.globalPrefFile), MODE_WORLD_READABLE);
+        @SuppressLint("WorldReadableFiles") SharedPreferences settings = this.getActivity().getSharedPreferences(getString(R.string.globalPrefFile), MODE_WORLD_READABLE);
         Boolean enabledYandex = settings.getBoolean("EnableYandex", false);
         PreferenceManager preferenceManager = getPreferenceManager();
         preferenceManager.setSharedPreferencesName(applicationInfo.packageName);
