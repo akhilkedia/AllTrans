@@ -55,7 +55,6 @@ public class alltrans implements IXposedHookLoadPackage {
 
 
     public void handleLoadPackage(final LoadPackageParam lpparam) throws Throwable {
-
         XSharedPreferences globalPref = new XSharedPreferences(alltrans.class.getPackage().getName(), "AllTransPref");
         globalPref.makeWorldReadable();
         globalPref.reload();

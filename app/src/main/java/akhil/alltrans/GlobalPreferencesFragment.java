@@ -21,10 +21,12 @@ package akhil.alltrans;
 
 import android.os.Bundle;
 import android.support.v14.preference.SwitchPreference;
+import android.support.v7.preference.EditTextPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceFragmentCompat;
 import android.support.v7.preference.PreferenceManager;
+import android.util.Log;
 
 import static android.content.Context.MODE_WORLD_READABLE;
 
@@ -37,7 +39,12 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
         preferenceManager.setSharedPreferencesName(getString(R.string.globalPrefFile));
         preferenceManager.setSharedPreferencesMode(MODE_WORLD_READABLE);
         addPreferencesFromResource(R.xml.preferences);
+
         SwitchPreference enableYandex = (SwitchPreference) findPreference("EnableYandex");
+        String subscriptionKey1 = getPreferenceManager().getSharedPreferences().getString("SubscriptionKey","Enter");
+        if(subscriptionKey1.startsWith("Enter"))
+            enableYandex.setChecked(true);
+
         if (enableYandex.isChecked()) {
             ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
             translateFromLanguage.setEntries(R.array.languageNamesYandex);
@@ -48,6 +55,7 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
             Preference subscriptionKey = findPreference("SubscriptionKey");
             subscriptionKey.setTitle("Enter Yandex Translate Subscription Key");
         }
+
         enableYandex.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
