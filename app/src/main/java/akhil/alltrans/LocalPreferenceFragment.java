@@ -88,14 +88,14 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
                     su.waitFor();
                 } catch (Exception e) {
                     Context context = preference.getContext();
-                    CharSequence text = "Some Error. Could not erase cache!";
+                    CharSequence text = getString(R.string.clear_cache_error);
                     int duration = Toast.LENGTH_SHORT;
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
                 }
 
                 Context context = preference.getContext();
-                CharSequence text = "Translate Cache for this app has been erased!";
+                CharSequence text = getString(R.string.clear_cache_success);
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();

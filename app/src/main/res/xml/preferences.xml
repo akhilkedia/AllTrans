@@ -21,87 +21,87 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
     <SwitchPreference
         android:defaultValue="true"
         android:key="Enabled"
-        android:summary="Turn off to completely disable this module"
-        android:summaryOff="Module is turned off, no apps will be translated. Turn on to start using auto-translate!"
-        android:summaryOn="Module is turned on, selected apps will be translated. Turn off to completely disable this module."
+        android:summary="@string/master_on_off_summary"
+        android:summaryOff="@string/master_on_off_summary_off"
+        android:summaryOn="@string/master_on_off_summary_on"
         app:title="@string/master_on_off" />
-    <PreferenceCategory android:title="Translate Settings">
+
+    <PreferenceCategory android:title="@string/pref_cat_translate_settings">
 
         <SwitchPreference
             android:defaultValue="false"
             android:key="EnableYandex"
-            android:summary="Turn on to use Yandex Translation instead of Microsoft"
-            android:summaryOff="Currently using Microsoft Azure Translation. Turn on to use Yandex Translation"
-            android:summaryOn="Currently using Yandex Translation. Turn off to use Microsoft Azure Translation"
-            android:title="Use Yandex instead of Microsoft" />
+            android:summary="@string/enable_yandex_summary"
+            android:summaryOff="@string/enable_yandex_summary_off"
+            android:summaryOn="@string/enable_yandex_summary_on"
+            android:title="@string/enable_yandex" />
         <EditTextPreference
-            android:defaultValue="Enter Your Microsoft or Yandex Subscription Key"
+            android:defaultValue="@string/subKey_defaultValue"
             android:key="SubscriptionKey"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:summary="Enter the Subscription Key for Microsoft Azure or Yandex Translation API, whichever is enabled above"
-            android:title="Microsoft / Yandex Subscription Key" />
+            android:summary="@string/subKey_summary"
+            android:title="@string/subKey" />
         <ListPreference
             android:defaultValue="ko"
             android:entries="@array/languageNames"
             android:entryValues="@array/languageCodes"
             android:key="TranslateFromLanguage"
-            android:summary="Language the app is originally in."
-            android:title="Translate From Language" />
+            android:summary="@string/transFrom_summary"
+            android:title="@string/transFrom" />
         <ListPreference
             android:defaultValue="en"
             android:entries="@array/languageNames"
             android:entryValues="@array/languageCodes"
             android:key="TranslateToLanguage"
-            android:summary="Language you want the app to be translate into."
-            android:title="Translate To Language" />
+            android:summary="@string/transTo_summary"
+            android:title="@string/transTo" />
 
     </PreferenceCategory>
-    <PreferenceCategory android:title="Parts of App to Translate">
+    <PreferenceCategory android:title="@string/pref_cat_parts_of_app">
 
         <SwitchPreference
             android:defaultValue="true"
             android:key="SetText"
-            android:summaryOff="Not Translating Text written using Set Text. Turn on to enable."
-            android:summaryOn="Translating Text written using Set Text - Safe. Turn off to disable."
-            android:title="Translate Normal Text" />
+            android:summaryOff="@string/setText_summary_off"
+            android:summaryOn="@string/setText_summary_on"
+            android:title="@string/setText" />
         <SwitchPreference
             android:defaultValue="true"
             android:key="SetHint"
-            android:summaryOff="Not Translating Text written using Set Hint. Turn on to enable."
-            android:summaryOn="Translating Text written using Set Hint - Safe. Turn off to disable."
-            android:title="Translate Text Hints (Gray-Coloured Suggestions) in Text Boxes" />
+            android:summaryOff="@string/setHint_summary_off"
+            android:summaryOn="@string/setHint_summary_on"
+            android:title="@string/setHint" />
         <SwitchPreference
             android:defaultValue="true"
             android:key="LoadURL"
-            android:summaryOff="Not Translating Text in WebViews. Turn on to enable."
-            android:summaryOn="Translating Text inside WebView - Safe, May Not Work Always. Turn off to disable."
-            android:title="Translate Text in Web Pages inside Apps" />
+            android:summaryOff="@string/webView_summary_off"
+            android:summaryOn="@string/webView_summary_on"
+            android:title="@string/webView" />
         <SwitchPreference
             android:defaultValue="false"
             android:key="DrawText"
-            android:summaryOff="Not aggressively translating Text in drawText. Use when all above fails. Turn on to enable."
-            android:summaryOn="Aggressively translating Text in drawText - Experimental, May Not Work Always. Turn off to disable."
-            android:title="Aggressive Mode" />
+            android:summaryOff="@string/drawText_summary_off"
+            android:summaryOn="@string/drawText_summary_on"
+            android:title="@string/drawText" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="Other Settings">
+    <PreferenceCategory android:title="@string/pref_cat_other_settings">
 
         <SwitchPreference
             android:defaultValue="true"
             android:key="Cache"
-            android:summaryOff="Not saving translations offline, resulting in slower translate and higher data - But may work for more apps. Turn on to save translations."
-            android:summaryOn="Saving translations offline to speed up translate and use data. Turn off to disable if your app doesn't start."
-            android:title="Use Caching" />
+            android:summaryOff="@string/caching_summary_off"
+            android:summaryOn="@string/caching_summary_on"
+            android:title="@string/caching" />
         <EditTextPreference
             android:defaultValue="@integer/defaultDelay"
             android:key="Delay"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:summary="Set the time in milliseconds to wait before translating. Default Value is 0, set to 1000-5000 if the translated app is crashing."
-            android:title="Delay Before Translating" />
+            android:summary="@string/delay_summary"
+            android:title="@string/delay" />
     </PreferenceCategory>
 </PreferenceScreen>

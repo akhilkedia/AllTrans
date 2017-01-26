@@ -22,6 +22,7 @@ package akhil.alltrans;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
@@ -34,6 +35,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.toReplace, new AppListFragment())
                 .commit();
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.titleBar);
+        toolbar.setTitle(getString(R.string.app_name) + " - " + getString(R.string.translate_anywhere));
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 

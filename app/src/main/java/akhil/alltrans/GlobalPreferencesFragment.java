@@ -40,7 +40,7 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
 
         SwitchPreference enableYandex = (SwitchPreference) findPreference("EnableYandex");
         String subscriptionKey1 = getPreferenceManager().getSharedPreferences().getString("SubscriptionKey","Enter");
-        if(subscriptionKey1.startsWith("Enter"))
+        if (subscriptionKey1.startsWith("Enter") || subscriptionKey1.equals(getString(R.string.subKey_defaultValue)))
             enableYandex.setChecked(true);
 
         if (enableYandex.isChecked()) {
@@ -51,7 +51,7 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
             translateToLanguage.setEntries(R.array.languageNamesYandex);
             translateToLanguage.setEntryValues(R.array.languageCodesYandex);
             Preference subscriptionKey = findPreference("SubscriptionKey");
-            subscriptionKey.setTitle("Enter Yandex Translate Subscription Key");
+            subscriptionKey.setTitle(getString(R.string.subKey_yandex));
         }
 
         enableYandex.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
@@ -65,7 +65,7 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
                     translateToLanguage.setEntries(R.array.languageNamesYandex);
                     translateToLanguage.setEntryValues(R.array.languageCodesYandex);
                     Preference subscriptionKey = findPreference("SubscriptionKey");
-                    subscriptionKey.setTitle("Enter Yandex Translate Subscription Key");
+                    subscriptionKey.setTitle(getString(R.string.subKey_yandex));
                 } else {
                     ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
                     translateFromLanguage.setEntries(R.array.languageNames);
@@ -74,7 +74,7 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
                     translateToLanguage.setEntries(R.array.languageNames);
                     translateToLanguage.setEntryValues(R.array.languageCodes);
                     Preference subscriptionKey = findPreference("SubscriptionKey");
-                    subscriptionKey.setTitle("Enter Microsoft Translate Subscription Key");
+                    subscriptionKey.setTitle(getString(R.string.subKey_micro));
                 }
                 return true;
             }

@@ -224,7 +224,7 @@ public class AppListFragment extends Fragment {
         @Override
         protected void onPreExecute() {
             dialog = new ProgressDialog(context);
-            dialog.setMessage("Loading List of Applications - Please Wait");
+            dialog.setMessage(getString(R.string.loading));
             dialog.setIndeterminate(true);
             dialog.setCancelable(false);
             dialog.show();

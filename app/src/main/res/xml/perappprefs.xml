@@ -1,77 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <SwitchPreference
         android:defaultValue="false"
         android:key="OverRide"
-        android:summaryOff="Using Global Settings for this app. Turn on to change settings only for this app."
-        android:summaryOn="Using Local Settings for this app. Turn off to use Global Settings."
-        android:title="OverRide Global Settings" />
+        android:summaryOff="@string/overRide_global_summary_off"
+        android:summaryOn="@string/overRide_global_summary_on"
+        android:title="@string/overRide_global" />
     <SwitchPreference
         android:defaultValue="false"
         android:key="clearCache"
         android:persistent="false"
-        android:summary="Click the above to clear the app's translate cache. Use this after changing to/from languages, or if the app does not start."
-        android:summaryOff="Click the above to clear the app's translate cache. Use this after changing to/from languages, or if the app does not start."
-        android:title="Click to clear Translation Cache" />
-    <PreferenceCategory android:title="Translate Settings">
+        android:summary="@string/clear_cache_summary"
+        android:summaryOff="@string/clear_cache_summary"
+        android:title="@string/clear_cache" />
+
+    <PreferenceCategory android:title="@string/pref_cat_translate_settings">
 
         <ListPreference
             android:defaultValue="ko"
             android:entries="@array/languageNames"
             android:entryValues="@array/languageCodes"
             android:key="TranslateFromLanguage"
-            android:summary="Language the app is originally in."
-            android:title="Translate From Language" />
+            android:summary="@string/transFrom_summary"
+            android:title="@string/transFrom" />
         <ListPreference
             android:defaultValue="en"
             android:entries="@array/languageNames"
             android:entryValues="@array/languageCodes"
             android:key="TranslateToLanguage"
-            android:summary="Language you want the app to be translate into."
-            android:title="Translate To Language" />
+            android:summary="@string/transTo_summary"
+            android:title="@string/transTo" />
 
     </PreferenceCategory>
-    <PreferenceCategory android:title="Parts of App to Translate">
+    <PreferenceCategory android:title="@string/pref_cat_parts_of_app">
 
         <SwitchPreference
             android:defaultValue="true"
             android:key="SetText"
-            android:summaryOff="Not Translating Text written using Set Text. Turn on to enable."
-            android:summaryOn="Translating Text written using Set Text - Safe. Turn off to disable."
-            android:title="Translate Normal Text" />
+            android:summaryOff="@string/setText_summary_off"
+            android:summaryOn="@string/setText_summary_on"
+            android:title="@string/setText" />
         <SwitchPreference
             android:defaultValue="true"
             android:key="SetHint"
-            android:summaryOff="Not Translating Text written using Set Hint. Turn on to enable."
-            android:summaryOn="Translating Text written using Set Hint - Safe. Turn off to disable."
-            android:title="Translate Text Hints (Gray-Coloured Suggestions) in Text Boxes" />
+            android:summaryOff="@string/setHint_summary_off"
+            android:summaryOn="@string/setHint_summary_on"
+            android:title="@string/setHint" />
         <SwitchPreference
             android:defaultValue="true"
             android:key="LoadURL"
-            android:summaryOff="Not Translating Text in WebViews. Turn on to enable."
-            android:summaryOn="Translating Text inside WebView - Safe, May Not Work Always. Turn off to disable."
-            android:title="Translate Text in Web Pages inside Apps" />
+            android:summaryOff="@string/webView_summary_off"
+            android:summaryOn="@string/webView_summary_on"
+            android:title="@string/webView" />
         <SwitchPreference
             android:defaultValue="false"
             android:key="DrawText"
-            android:summaryOff="Not aggressively translating Text in drawText. Use when all above fails. Turn on to enable."
-            android:summaryOn="Aggressively translating Text in drawText - Experimental, May Not Work Always. Turn off to disable."
-            android:title="Aggressive Mode" />
+            android:summaryOff="@string/drawText_summary_off"
+            android:summaryOn="@string/drawText_summary_on"
+            android:title="@string/drawText" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="Other Settings">
+    <PreferenceCategory android:title="@string/pref_cat_other_settings">
 
         <SwitchPreference
             android:defaultValue="true"
             android:key="Cache"
-            android:summaryOff="Not saving translations offline, resulting in slower translate and higher data - But may work for more apps. Turn on to save translations."
-            android:summaryOn="Saving translations offline to speed up translate and use data. Turn off to disable if your app doesn't start."
-            android:title="Use Caching" />
+            android:summaryOff="@string/caching_summary_off"
+            android:summaryOn="@string/caching_summary_on"
+            android:title="@string/caching" />
         <EditTextPreference
             android:defaultValue="@integer/defaultDelay"
             android:key="Delay"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:summary="Set the time in milliseconds to wait before translating. Default Value is 0, set to 1000-5000 if the translated app is crashing.  "
-            android:title="Delay Before Translating" />
+            android:summary="@string/delay_summary"
+            android:title="@string/delay" />
     </PreferenceCategory>
 </PreferenceScreen>
