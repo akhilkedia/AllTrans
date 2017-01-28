@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Uygulamalar - listesi yükleniyor lütfen bekleyin"</string>
+    <string name="clear_cache_error">"Bazı hata. Çeviri önbelleğini temizleyemedi."</string>
+    <string name="clear_cache_success">"Bu app silinmiş için önbellek çevirmek!"</string>
+	<string name="how_to_use">"UYGULAMAYI KULLANMAK NASIL
+
+Bu uygulama Microsoft veya Yandex Translate anahtarından kayıt gerektirir.
+Yandex Translate daha fazla dil desteği, bir çok daha kolay kayıt işlemi vardır ve hayır kredi kartı gerektirir.
+Microsoft Translate daha iyi sonuçlar verir, ama kaydolmak için bir kredi kartı gerektirir. (Ama merak etme, hiçbir şey-ecek var olmak ücret.)
+
+1. Yandex kullanmak istiyorsanız başka Microsoft kullanmak için devre dışı genel ayarlar sekmesinde, Yandex kullanmak yerine Microsoft etkin.
+1. Genel Ayarlar sekmesi, Microsoft/Yandex abone ücreti anahtar girin dokunun, girdi karşılık gelen anahtar (aşağıdan talimatlara bakın).
+2. seçin dil tercüme ve çeviri.
+3. Translate sekmesine Apps, bulmak istediğiniz çevirmek, yanındaki onay kutusunu tıklatın app. Onay kutusunu görünür değilse, manzara moduna telefonunuzu ters döndürmeyi deneyin.
+4. kapatıp çevrilmiş istediğiniz app - tercüme edilmelidir!
+
+Uyarı - bazı uygulamalar yakın güç. Sorun giderme bölümüne bakın.
+
+ALMAK İÇİN YANDEX ÇEVİRMEK NASIL ABONE ÜCRETİ ANAHTAR
+
+1. gitgidmek Yandex Web sitesi - https://tech.yandex.com/keys/get/?service=trnsl
+2. zaten bir hesabınız yoksa, sicil ve işaret yukarıya için yeni bir hesap'ı tıklatın.
+3. oturum açtıktan sonra yukarı, kullanıcı sözleşmesini kabul ve API anahtarı al'ı tıklatın.
+4. başarılı bir şekilde senin anahtar aldık! Trnsl.1.1.201701 gibi bir şey...
+
+ALMAK İÇİN MICROSOFT AZURE ÇEVİRMEK NASIL ABONE ÜCRETİ ANAHTAR
+
+1. işaret yukarıya için a Microsoft Azure rapor vası http://azure.com
+
+2. sonra bir hesabınız varsa, http://portal.azure.com masmavi portalında oturum açın
+
+3. Microsoft çevirmen API abonelik masmavi hesabınıza ekleyin.
+Ödeme bir abonelik seçin. Bir kredi kartı gerektirir, ama merak etme, hiçbir şey tahsil edilecektir.
+Seçin + yeni seçeneği.
+İstihbarat hizmetleri seçin.
+Bilişsel Hizmetleri API'ları seçin.
+API türü seçeneğini seçin.
+Metin Çeviri'yi seçin
+Fiyatlandırma katmanı bölümünde ücretsiz Katmanı (F0) seçin
+Kalan formu doldurun ve Oluştur düğmesine basın.
+
+4. kimlik doğrulama anahtarı almak.
+Tüm kaynaklara bakın ve Microsoft çevirmen için abone API seçin.
+Anahtarları seçeneğine gidin ve servise erişmek için abonelik anahtarınızı kopyalamak.
+Abonelik anahtar 321dcba gibi bir şey...
+
+SORUN GİDERME
+
+1. Eğer yok app tercüme, Microsoft/Yandex abone ücreti anahtar doğru olduğunu denetleyin.
+2. Eğer çeviri başladıktan sonra ilk kez yükleme tercüme app gücü kapatır/gets şaşırıp kalmış, app Apps sekmesini tercüme ve diğer ayarları daha önce gecikme çeviri 2000'e doldurmak için tıklayın.
+3. Eğer tercüme app iş para cezası, ama şimdi başlatılırken takılıyorum, sekmesini tercüme etmek Apps app tıklayın ve tıkırtı üstünde için kullanılan için çeviri önbelleği Temizle'yi tıklatın.
+4. Eğer app bazı bölümleri tercüme değil, sekmesini tercüme etmek Apps app tıklayın ve agresif modunu etkinleştirin.
+5. Eğer app gücü kapatır hala, çeviri bu app için devre dışı bırakmak ve bana destek iş parçacığında XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878 üzerinde ulaşın
+"</string>
+    <string name="translate_anywhere">"Bir yere çevirmek"</string>
+    <string name="apps_to_translate">"Çevirmek için apps"</string>
+    <string name="global_settings">"Genel ayarlar"</string>
+    <string name="instructions">"Talimatları"</string>
+    <string name="pref_cat_translate_settings">"Ayarları çevirmek"</string>
+    <string name="pref_cat_parts_of_app">"App çevirmek için parçaları"</string>
+    <string name="pref_cat_other_settings">"Diğer ayarları"</string>
+    <string name="master_on_off">"Master açık/kapalı"</string>
+    <string name="master_on_off_summary">"Tamamen bu modül devre dışı bırakmak için devre dışı"</string>
+    <string name="master_on_off_summary_off">"Modül devre dışı bırakılmış, hiçbir apps tercüme edilecektir. Çevirmek başlangıç kullanma üstünde-e doğru auto-çevir!"</string>
+    <string name="master_on_off_summary_on">"Modül açık, seçili apps tercüme edilecektir. Tamamen bu modül devre dışı bırakmak için devre dışı."</string>
+    <string name="enable_yandex">"Yandex Microsoft yerine kullanın"</string>
+    <string name="enable_yandex_summary">"Yandex çeviri Microsoft yerine kullanmak için açmak"</string>
+    <string name="enable_yandex_summary_off">"Microsoft Azure çeviri kullanmakta. Yandex çeviri kullanmak için açın."</string>
+    <string name="enable_yandex_summary_on">"Yandex çeviri kullanmakta. Microsoft Azure çevirisi kullanmak devre dışı bırakın."</string>
+    <string name="subKey">"Microsoft / Yandex abonelik anahtar"</string>
+    <string name="subKey_micro">"Microsoft abone ücreti anahtar"</string>
+    <string name="subKey_yandex">"Yandex abonelik anahtar"</string>
+    <string name="subKey_summary">"Microsoft Azure veya Yandex çeviri API, abone ücreti anahtar girin hangisi yukarıda etkin"</string>
+    <string name="subKey_defaultValue">"Microsoft veya Yandex abone ücreti anahtar girin"</string>
+    <string name="transFrom">"Dilinden tercüme"</string>
+    <string name="transFrom_summary">"Dil app başlangıçta olan."</string>
+    <string name="transTo">"Çeviri"</string>
+    <string name="transTo_summary">"Dil app olmak içine çevirmek istiyorum."</string>
+    <string name="setText">"Normal metin çevirme"</string>
+    <string name="setText_summary_off">"Çeviri ayarla metin kullanılarak yazılmış metin değil. Etkinleştirmek için açın."</string>
+    <string name="setText_summary_on">"Ayarla metin - güvenli kullanılarak yazılmış metin çevirme. Devre dışı bırakmak için devre dışı."</string>
+    <string name="setHint">"Metin kutularındaki metin İpuçları (gri renkli öneriler) çevirmek"</string>
+    <string name="setHint_summary_off">"Çeviri ayarla ipucu kullanarak yazılı metin değil. Etkinleştirmek için açın."</string>
+    <string name="setHint_summary_on">"Metin ayarla ipucu - güvenli kullanma yazılı çeviri. Devre dışı bırakmak için devre dışı."</string>
+    <string name="webView">"Web sayfaları Apps içinde metin çevirme"</string>
+    <string name="webView_summary_off">"WebViews Metin Çeviri değil. Etkinleştirmek için açın."</string>
+    <string name="webView_summary_on">"Metin çevirme WebView içinde - güvenli, her zaman çalışmayabilir. Devre dışı bırakmak için devre dışı."</string>
+    <string name="drawText">"Katı mod"</string>
+    <string name="drawText_summary_off">"Değil agresif drawText içinde metin çevirme. Tüm yukarıda başarısız olduğunda kullanın. Etkinleştirmek için açın."</string>
+    <string name="drawText_summary_on">"Agresif drawText - metin çevirme deneysel, olabilir iş her zaman değil. Devre dışı bırakmak için devre dışı."</string>
+    <string name="caching">"Önbellekte depolama özelliğini kullanarak"</string>
+    <string name="caching_summary_off">"Daha yavaş sonuçlanan değil çeviriler çevrimdışı, tercüme ve daha yüksek veri - ancak daha fazla apps için çalışabilir. Tarih için çevirileri kapatın."</string>
+    <string name="caching_summary_on">"Hızlandırmak için çevrimdışı çeviriler tasarruf çevirmek ve verileri kullanabilirsiniz. Senin app başlamazsa devre dışı bırakmak için devre dışı."</string>
+    <string name="delay">"Çeviri önce gecikme"</string>
+    <string name="delay_summary">"Çeviri önce beklenecek milisaniye cinsinden saatini ayarlayın. Varsayılan değer eğer tercüme app gürültüyle çarpmak 1000-5000 olarak ayarlayın 0 ' dır."</string>
+    <string name="overRide_global">"Genel ayarları geçersiz kıl"</string>
+    <string name="overRide_global_summary_off">"Genel ayarlar bu app. çevirmek için bu app sadece ayarlarını değiştirmek için kullanma."</string>
+    <string name="overRide_global_summary_on">"Yerel ayarları genel ayarlarını kullanmak için kapalı bu app. çevirmek için kullanıyor."</string>
+    <string name="clear_cache">"Çeviri önbelleğini temizlemek için tıklatın"</string>
+    <string name="clear_cache_summary">"Tıklayın yukarıda belgili tanımlık app temizlemek için önbellek çevirmek 's. Bu değiştirme/diller, dan sonra kullanın ya da belgili tanımlık app does değil başlamak."</string>
+    <string name="Afrikaans_yandex">"Afrikaner"</string>
+    <string name="Amharic_yandex">"Amharca"</string>
+    <string name="Arabic_yandex">"Arapça"</string>
+    <string name="Azerbaijani_yandex">"Azerbaycan"</string>
+    <string name="Bashkir_yandex">"Başkurt"</string>
+    <string name="Belarusian_yandex">"Beyaz Rusça"</string>
+    <string name="Bulgarian_yandex">"Bulgarca"</string>
+    <string name="Bengali_yandex">"Bengali"</string>
+    <string name="Bosnian_yandex">"Boşnakça"</string>
+    <string name="Catalan_yandex">"Katalanca"</string>
+    <string name="Cebuano_yandex">"Sebuanca"</string>
+    <string name="Czech_yandex">"Çekçe"</string>
+    <string name="Welsh_yandex">"Galce"</string>
+    <string name="Danish_yandex">"Danca"</string>
+    <string name="German_yandex">"Almanca"</string>
+    <string name="Greek_yandex">"Yunanca"</string>
+    <string name="English_yandex">"İngilizce"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"İspanyolca"</string>
+    <string name="Estonian_yandex">"Estonca"</string>
+    <string name="Basque_yandex">"Bask dili"</string>
+    <string name="Persian_yandex">"Farsça"</string>
+    <string name="Finnish_yandex">"Fince"</string>
+    <string name="French_yandex">"Fransızca"</string>
+    <string name="Irish_yandex">"İrlanda dili"</string>
+    <string name="Scottish_Gaelic_yandex">"Kırım Tatarca"</string>
+    <string name="Galician_yandex">"Galiçya lehçesi"</string>
+    <string name="Gujarati_yandex">"Gucerat dili"</string>
+    <string name="Hebrew_yandex">"İbranice"</string>
+    <string name="Hindi_yandex">"Hintçe"</string>
+    <string name="Croatian_yandex">"Hırvatça"</string>
+    <string name="Haitian_yandex">"Haiti"</string>
+    <string name="Hungarian_yandex">"Macarca"</string>
+    <string name="Armenian_yandex">"Ermenice"</string>
+    <string name="Indonesian_yandex">"Endonezya dili"</string>
+    <string name="Icelandic_yandex">"İzlanda dili"</string>
+    <string name="Italian_yandex">"İtalyanca"</string>
+    <string name="Japanese_yandex">"Japonca"</string>
+    <string name="Javanese_yandex">"Cava"</string>
+    <string name="Georgian_yandex">"Gürcüce"</string>
+    <string name="Kazakh_yandex">"Kazakça"</string>
+    <string name="Kannada_yandex">"Kannada dili"</string>
+    <string name="Korean_yandex">"Kore dili"</string>
+    <string name="Kyrgyz_yandex">"Kırgızca"</string>
+    <string name="Latin_yandex">"Latin"</string>
+    <string name="Luxembourgish_yandex">"Lüksemburg dili"</string>
+    <string name="Lithuanian_yandex">"Litvanca"</string>
+    <string name="Latvian_yandex">"Letonca"</string>
+    <string name="Malagasy_yandex">"Madagaskar"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maori dili"</string>
+    <string name="Macedonian_yandex">"Makedonya"</string>
+    <string name="Malayalam_yandex">"Malayalam dili"</string>
+    <string name="Mongolian_yandex">"Moğolca"</string>
+    <string name="Marathi_yandex">"Marathi"</string>
+    <string name="Hill_Mari_yandex">"Hill Mari"</string>
+    <string name="Malay_yandex">"Malay dili"</string>
+    <string name="Maltese_yandex">"Malta dili"</string>
+    <string name="Nepali_yandex">"Nepal dili"</string>
+    <string name="Dutch_yandex">"Hollanda dili"</string>
+    <string name="Norwegian_yandex">"Norveç dili"</string>
+    <string name="Punjabi_yandex">"Pencap dili"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Lehçe"</string>
+    <string name="Portuguese_yandex">"Portekizce"</string>
+    <string name="Romanian_yandex">"Rumence"</string>
+    <string name="Russian_yandex">"Rusça"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Slovakça"</string>
+    <string name="Slovenian_yandex">"Slovence"</string>
+    <string name="Albanian_yandex">"Arnavutça"</string>
+    <string name="Serbian_yandex">"Sırp"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"İsveç dili"</string>
+    <string name="Swahili_yandex">"Svahili dili"</string>
+    <string name="Tamil_yandex">"Tamil dili"</string>
+    <string name="Telugu_yandex">"Telugu dili"</string>
+    <string name="Tajik_yandex">"Tacik dili"</string>
+    <string name="Thai_yandex">"Tay dili"</string>
+    <string name="Tagalog_yandex">""Tagalog""</string>
+    <string name="Turkish_yandex">"Türkçe"</string>
+    <string name="Tatar_yandex">"Tatarca"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Ukrayna dili"</string>
+    <string name="Urdu_yandex">"Urduca"</string>
+    <string name="Uzbek_yandex">"Özbek"</string>
+    <string name="Vietnamese_yandex">"Vietnam dili"</string>
+    <string name="Xhosa_yandex">"Zosa dili"</string>
+    <string name="Yiddish_yandex">"Yidiş"</string>
+    <string name="Chinese_yandex">"Çince"</string>
+    <string name="Afrikaans_micro">"Afrikaner"</string>
+    <string name="Arabic_micro">"Arapça"</string>
+    <string name="Bosnian_Latin_micro">"Boşnakça Latin"</string>
+    <string name="Bulgarian_micro">"Bulgarca"</string>
+    <string name="Catalan_micro">"Katalanca"</string>
+    <string name="Chinese_Simplified_micro">"Basitleştirilmiş Çince"</string>
+    <string name="Chinese_Traditional_micro">"Geleneksel Çince"</string>
+    <string name="Croatian_micro">"Hırvatça"</string>
+    <string name="Czech_micro">"Çekçe"</string>
+    <string name="Danish_micro">"Danca"</string>
+    <string name="Dutch_micro">"Hollanda dili"</string>
+    <string name="English_micro">"İngilizce"</string>
+    <string name="Estonian_micro">"Estonca"</string>
+    <string name="Finnish_micro">"Fince"</string>
+    <string name="French_micro">"Fransızca"</string>
+    <string name="German_micro">"Almanca"</string>
+    <string name="Greek_micro">"Yunanca"</string>
+    <string name="Haitian_Creole_micro">"Haitice"</string>
+    <string name="Hebrew_micro">"İbranice"</string>
+    <string name="Hindi_micro">"Hintçe"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Macarca"</string>
+    <string name="Indonesian_micro">"Endonezya dili"</string>
+    <string name="Italian_micro">"İtalyanca"</string>
+    <string name="Japanese_micro">"Japonca"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Kore dili"</string>
+    <string name="Latvian_micro">"Letonca"</string>
+    <string name="Lithuanian_micro">"Litvanca"</string>
+    <string name="Malay_micro">"Malay dili"</string>
+    <string name="Maltese_micro">"Malta dili"</string>
+    <string name="Norwegian_micro">"Norveç dili"</string>
+    <string name="Persian_micro">"Farsça"</string>
+    <string name="Polish_micro">"Lehçe"</string>
+    <string name="Portuguese_micro">"Portekizce"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Rumence"</string>
+    <string name="Russian_micro">"Rusça"</string>
+    <string name="Serbian_Cyrillic_micro">"Sırpça"</string>
+    <string name="Serbian_Latin_micro">"Sırp Latin"</string>
+    <string name="Slovak_micro">"Slovakça"</string>
+    <string name="Slovenian_micro">"Slovence"</string>
+    <string name="Spanish_micro">"İspanyolca"</string>
+    <string name="Swedish_micro">"İsveç dili"</string>
+    <string name="Thai_micro">"Tay dili"</string>
+    <string name="Turkish_micro">"Türkçe"</string>
+    <string name="Ukrainian_micro">"Ukrayna dili"</string>
+    <string name="Urdu_micro">"Urduca"</string>
+    <string name="Vietnamese_micro">"Vietnam dili"</string>
+    <string name="Welsh_micro">"Galce"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

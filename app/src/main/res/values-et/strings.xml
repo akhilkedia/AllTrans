@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Lastinimekirja taotluse - Palun oodake"</string>
+    <string name="clear_cache_error">"Mõni viga. Tõlge vahemälu ei suutnud selgeks!"</string>
+    <string name="clear_cache_success">"Vahemälu tõlkida, sest see app on kustutatud!"</string>
+	<string name="how_to_use">"KASUTAMISE TAOTLUS
+
+See rakendus nõuab registreerimist võti Microsoft või Yandex Tõlgi.
+Yandex Tõlgi toetab mitut keelt, on palju lihtsam registreerimisprotsess ja nr krediitkaart on vaja.
+Microsoft Translate annab paremaid tulemusi, kuid nõuab krediitkaardi logida. (Aga ärge muretsege, midagi saab maksta.)
+
+1. Global Settings vahelehel luba kasutada Yandex asemel Microsoft, kui soovite kasutada Yandex, muidu keelata kasutada Microsoft.
+1. globaalne seaded tab, toksake sisestage Microsoft/Yandex märkimise aluse, sisend vastavat klahvi (vt altpoolt).
+2. Valige selle tõlkida keelest ja keelde tõlkida.
+3. Tõlgi vahekaardi rakendustes Leidke rakendus soovite tõlkida, klõpsake kõrval olev märkeruut. Kui märkeruutu ei kuvata, proovige pöörleva telefoni külili maastikul režiimi.
+4. Sulgege ja taaskäivitage rakendus tõlgitud - tuleb ümber arvestada!
+
+Hoiatus - olla sunniti tihe. Jaotisest vigade otsimine.
+
+KUIDAS SAADA YANDEX TÕLKIDA MÄRKIMISE ALUSE
+
+1. Mine veebilehe Yandex - https://tech.yandex.com/keys/get/?service=trnsl
+2. Kui teil pole veel kontot, klõpsake nuppu register ja märk uue konto.
+3. pärast allakirjutamist, lepivad kokku, et lepingu ja klõpsake nuppu saada API võti.
+4. olete edukalt saanud võti! See on midagi trnsl.1.1.201701...
+
+KUIDAS SAADA MICROSOFTI AZURE TÕLKIDA MÄRKIMISE ALUSE
+
+1. registreeru Microsoft Azure kontole aadressil http://azure.com
+
+2. pärast seda, kui teil on konto, logige Azure portaali aadressil http://portal.azure.com
+
+3. tellimuse Microsoft Translator API lisada Azure konto.
+Valige põlvkondadevahelisel tellimus. On vaja krediitkaarti, kuid ärge muretsege, midagi tuleb maksta.
+Valige + uus võimalus.
+Valige luure teenuste loetelu.
+Valige kognitiivse teenused APIs.
+API tüüp raadionuppu.
+Valige teksti tõlge
+Valige jaotises hindade taseme tasuta tasand (F0)
+Täitke ülejäänud vorm ning vajutage nuppu Loo.
+
+4. laadida autentimise võti.
+Olete liitunud Microsoft Translator API valige kõik ressurssides.
+Minge suvandi abil ja kopeerida registreerimisvõtme teenusega.
+Kordustellimuste võtmega on midagi 321dcba...
+
+TÕRKEOTSING
+
+1. Kui ükski rakendus on tõlkimisel, kontrollige Microsoft/Yandex registreerimisvõtme on õige.
+2. Kui tõlgitud rakendus sulgub/saab ummikus peale esimest korda pärast seda, kui te alustada tõlkimisest, klõpsake rakenduse rakendustes tõlkida vahekaarti, ja muud sätted täitke viivitus enne tõlkimise 2000.
+3. Kui tõlgitud app kasutada töötavat, kuid nüüd alates ei jõua, klõpsake rakenduse rakendustes tõlkida vahekaarti, ja kliki klõpsake Tühjenda tõlge.
+4. Kui mõni rakenduse osa pole on tõlgitud, klõpsa rakenduse rakendustes tõlkida vahekaarti ja agressiivse režiimi.
+5. Kui rakendus ikka jõu sulgub, tõlge selle rakenduse keelata ja minuga tugi teemat XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878 kohta
+"</string>
+    <string name="translate_anywhere">"Tõlkida kõikjal"</string>
+    <string name="apps_to_translate">"Rakenduste tõlkida"</string>
+    <string name="global_settings">"Globaalsätted"</string>
+    <string name="instructions">"Juhised"</string>
+    <string name="pref_cat_translate_settings">"Tõlkida seaded"</string>
+    <string name="pref_cat_parts_of_app">"Osad tõlkida appi"</string>
+    <string name="pref_cat_other_settings">"Muud sätted"</string>
+    <string name="master_on_off">"Lülitada Master"</string>
+    <string name="master_on_off_summary">"Täiesti keelata selle mooduli välja lülitada"</string>
+    <string name="master_on_off_summary_off">"Moodul on sisse lülitatud, ei apps tõlgib. Omakorda edasi start kasutades/auto-tõlkida!"</string>
+    <string name="master_on_off_summary_on">"Moodul on sisse lülitatud, tõlgib valitud rakendusi. Täiesti keelata selle mooduli välja lülitada."</string>
+    <string name="enable_yandex">"Kasutada Yandex asemel Microsoft"</string>
+    <string name="enable_yandex_summary">"Kasutada Yandex tõlke asemel Microsoft sisselülitamine"</string>
+    <string name="enable_yandex_summary_off">"Kasutatava rakenduse Microsoft Azure tõlge. Lülitage sisse kasutage Yandex tõlge."</string>
+    <string name="enable_yandex_summary_on">"Praegu kasutavad Yandex tõlge. Lülitada, et kasutada Microsoft Azure tõlke."</string>
+    <string name="subKey">"Microsoft / Yandex märkimise aluse"</string>
+    <string name="subKey_micro">"Microsofti tellimuse võti"</string>
+    <string name="subKey_yandex">"Yandex märkimise aluse"</string>
+    <string name="subKey_summary">"Sisestage registreerimisvõtme Microsoft Azure või Yandex tõlkimine API, kumb on lubatud eespool"</string>
+    <string name="subKey_defaultValue">"Sisestage oma Microsofti või Yandex märkimise aluse"</string>
+    <string name="transFrom">"Keelest tõlkida"</string>
+    <string name="transFrom_summary">"Keele rakendus on algselt."</string>
+    <string name="transTo">"Tõlgi keelde"</string>
+    <string name="transTo_summary">"Keel tuleb tõlkida rakenduse."</string>
+    <string name="setText">"Tavalise teksti tõlkimine"</string>
+    <string name="setText_summary_off">"Ole tõlkimise kirjutatud teksti abil seada. Lubamiseks lülitage sisse."</string>
+    <string name="setText_summary_on">"Tõlgib teksti kirjutada, kasutades määrata teksti - Seif. Välja lülitada välja lülitada."</string>
+    <string name="setHint">"Tõlkida tekstiväljade teksti vihjeid (Hall värvi ettepanekud)"</string>
+    <string name="setHint_summary_off">"Ole tõlkimise kirjutatud teksti kasutades määrata vihje. Lubamiseks lülitage sisse."</string>
+    <string name="setHint_summary_on">"Tõlgib teksti kirjutada, kasutades määrata vihje - Seif. Välja lülitada välja lülitada."</string>
+    <string name="webView">"Teksti sees rakendusi veebilehtede tõlkimine"</string>
+    <string name="webView_summary_off">"Ole tõlgib teksti WebViews. Lubamiseks lülitage sisse."</string>
+    <string name="webView_summary_on">"Tõlgib teksti sees WebView - Seif, ei pruugi alati. Välja lülitada välja lülitada."</string>
+    <string name="drawText">"Töösse"</string>
+    <string name="drawText_summary_off">"Lisage ohjeldamatult tõlgib teksti drawText. Kui kõik eespool ei kasuta. Lubamiseks lülitage sisse."</string>
+    <string name="drawText_summary_on">"Agressiivselt tõlgib teksti drawText - eksperimentaalne, võib mitte töö alati. Välja lülitada välja lülitada."</string>
+    <string name="caching">"Kasutada vahemällu"</string>
+    <string name="caching_summary_off">"Ei Salvesta tõlked ühenduseta režiimis, tulemuseks aeglasemalt tõlkida ja suurem andmeid - kuid võib töötada muid rakendusi. Salvesta tõlked omakorda edasi."</string>
+    <string name="caching_summary_on">"Salvestamine tõlked ühenduseta kiirendamiseks tõlkida ja andmeid kasutada. Välja lülitada välja lülitada kui teie app ei käivitu."</string>
+    <string name="delay">"Viivitus enne tõlkimise"</string>
+    <string name="delay_summary">"Seadke enne tõlkimise ootab millisekundites. Vaikimisi väärtus on 0, kui tõlgitud rakenduse krahh väärtuseks 1000 – 5000."</string>
+    <string name="overRide_global">"Globaalne alistamine"</string>
+    <string name="overRide_global_summary_off">"Kasutades Globaalsätted selles u omakorda ainult selle rakenduse sätete muutmine."</string>
+    <string name="overRide_global_summary_on">"Kasutades kohalikud sätted selles u omakorda välja Global seadete."</string>
+    <string name="clear_cache">"Tühjendage vahemälu tõlge"</string>
+    <string name="clear_cache_summary">"Kliki eespool selge rakendus on tõlkida vahemälu. Kasutage seda pärast muutuvad/tekst, või kui rakendus ei käivitu."</string>
+    <string name="Afrikaans_yandex">"Afrikaani"</string>
+    <string name="Amharic_yandex">"Amhari"</string>
+    <string name="Arabic_yandex">"Araabia"</string>
+    <string name="Azerbaijani_yandex">"Aserbaidžaani"</string>
+    <string name="Bashkir_yandex">"Baškiiri"</string>
+    <string name="Belarusian_yandex">"Valgevene"</string>
+    <string name="Bulgarian_yandex">"Bulgaaria"</string>
+    <string name="Bengali_yandex">"Bengali"</string>
+    <string name="Bosnian_yandex">"Bosnia"</string>
+    <string name="Catalan_yandex">"Katalaani"</string>
+    <string name="Cebuano_yandex">"Lingid siia"</string>
+    <string name="Czech_yandex">"Tšehhi"</string>
+    <string name="Welsh_yandex">"Kõmri"</string>
+    <string name="Danish_yandex">"Taani"</string>
+    <string name="German_yandex">"Saksa"</string>
+    <string name="Greek_yandex">"Kreeka"</string>
+    <string name="English_yandex">"Inglise"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Hispaania"</string>
+    <string name="Estonian_yandex">"Eesti"</string>
+    <string name="Basque_yandex">"Baski"</string>
+    <string name="Persian_yandex">"Pärsia"</string>
+    <string name="Finnish_yandex">"Soome"</string>
+    <string name="French_yandex">"Prantsuse"</string>
+    <string name="Irish_yandex">"Iiri"</string>
+    <string name="Scottish_Gaelic_yandex">"Šoti gaeli"</string>
+    <string name="Galician_yandex">"Galeegi"</string>
+    <string name="Gujarati_yandex">"Gudžarati"</string>
+    <string name="Hebrew_yandex">"Heebrea"</string>
+    <string name="Hindi_yandex">"Hindi"</string>
+    <string name="Croatian_yandex">"Horvaadi"</string>
+    <string name="Haitian_yandex">"Haiti"</string>
+    <string name="Hungarian_yandex">"Ungari"</string>
+    <string name="Armenian_yandex">"Armeenia"</string>
+    <string name="Indonesian_yandex">"Indoneesia"</string>
+    <string name="Icelandic_yandex">"Islandi"</string>
+    <string name="Italian_yandex">"Itaalia"</string>
+    <string name="Japanese_yandex">"Jaapani"</string>
+    <string name="Javanese_yandex">"Jaava"</string>
+    <string name="Georgian_yandex">"Gruusia"</string>
+    <string name="Kazakh_yandex">"Kasahhi"</string>
+    <string name="Kannada_yandex">"Kannada"</string>
+    <string name="Korean_yandex">"Korea"</string>
+    <string name="Kyrgyz_yandex">"Kirgiisi"</string>
+    <string name="Latin_yandex">"Ladina"</string>
+    <string name="Luxembourgish_yandex">"Luksemburgi"</string>
+    <string name="Lithuanian_yandex">"Leedu"</string>
+    <string name="Latvian_yandex">"Läti"</string>
+    <string name="Malagasy_yandex">"Madagaskari"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maoori"</string>
+    <string name="Macedonian_yandex">"Makedoonia"</string>
+    <string name="Malayalam_yandex">"Malajalami"</string>
+    <string name="Mongolian_yandex">"Mongoli"</string>
+    <string name="Marathi_yandex">"Marathi"</string>
+    <string name="Hill_Mari_yandex">"Mäe Mari"</string>
+    <string name="Malay_yandex">"Malai"</string>
+    <string name="Maltese_yandex">"Malta"</string>
+    <string name="Nepali_yandex">"Nepaali"</string>
+    <string name="Dutch_yandex">"Hollandi"</string>
+    <string name="Norwegian_yandex">"Norra"</string>
+    <string name="Punjabi_yandex">"Pandžabi"</string>
+    <string name="Papiamento_yandex">"Keel"</string>
+    <string name="Polish_yandex">"Poola"</string>
+    <string name="Portuguese_yandex">"Portugali"</string>
+    <string name="Romanian_yandex">"Rumeenia"</string>
+    <string name="Russian_yandex">"Vene"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Slovaki"</string>
+    <string name="Slovenian_yandex">"Sloveeni"</string>
+    <string name="Albanian_yandex">"Albaania"</string>
+    <string name="Serbian_yandex">"Serbia"</string>
+    <string name="Sundanese_yandex">"Sunda"</string>
+    <string name="Swedish_yandex">"Rootsi"</string>
+    <string name="Swahili_yandex">"Suahiili"</string>
+    <string name="Tamil_yandex">"Tamili"</string>
+    <string name="Telugu_yandex">"Telugu"</string>
+    <string name="Tajik_yandex">"Tadžiki"</string>
+    <string name="Thai_yandex">"Tai"</string>
+    <string name="Tagalog_yandex">"Tagalogi"</string>
+    <string name="Turkish_yandex">"Türgi"</string>
+    <string name="Tatar_yandex">"Tatari"</string>
+    <string name="Udmurt_yandex">"Udmurdi"</string>
+    <string name="Ukrainian_yandex">"Ukraina"</string>
+    <string name="Urdu_yandex">"Urdu"</string>
+    <string name="Uzbek_yandex">"Usbeki"</string>
+    <string name="Vietnamese_yandex">"Vietnami"</string>
+    <string name="Xhosa_yandex">"Koosa"</string>
+    <string name="Yiddish_yandex">"Jidiši"</string>
+    <string name="Chinese_yandex">"Hiina"</string>
+    <string name="Afrikaans_micro">"Afrikaani"</string>
+    <string name="Arabic_micro">"Araabia"</string>
+    <string name="Bosnian_Latin_micro">"Bosnia Ladina"</string>
+    <string name="Bulgarian_micro">"Bulgaaria"</string>
+    <string name="Catalan_micro">"Katalaani"</string>
+    <string name="Chinese_Simplified_micro">"Lihtsustatud hiina"</string>
+    <string name="Chinese_Traditional_micro">"Traditsiooniline hiina"</string>
+    <string name="Croatian_micro">"Horvaadi"</string>
+    <string name="Czech_micro">"Tšehhi"</string>
+    <string name="Danish_micro">"Taani"</string>
+    <string name="Dutch_micro">"Hollandi"</string>
+    <string name="English_micro">"Inglise"</string>
+    <string name="Estonian_micro">"Eesti"</string>
+    <string name="Finnish_micro">"Soome"</string>
+    <string name="French_micro">"Prantsuse"</string>
+    <string name="German_micro">"Saksa"</string>
+    <string name="Greek_micro">"Kreeka"</string>
+    <string name="Haitian_Creole_micro">"Haiti kreooli"</string>
+    <string name="Hebrew_micro">"Heebrea"</string>
+    <string name="Hindi_micro">"Hindi"</string>
+    <string name="Hmong_Daw_micro">"Hispaania"</string>
+    <string name="Hungarian_micro">"Ungari"</string>
+    <string name="Indonesian_micro">"Indoneesia"</string>
+    <string name="Italian_micro">"Itaalia"</string>
+    <string name="Japanese_micro">"Jaapani"</string>
+    <string name="Kiswahili_micro">"Suahiili"</string>
+    <string name="Klingon_micro">"Klingoni"</string>
+    <string name="Klingon_pIqaD_micro">"Klingoni pIqaD"</string>
+    <string name="Korean_micro">"Korea"</string>
+    <string name="Latvian_micro">"Läti"</string>
+    <string name="Lithuanian_micro">"Leedu"</string>
+    <string name="Malay_micro">"Malai"</string>
+    <string name="Maltese_micro">"Malta"</string>
+    <string name="Norwegian_micro">"Norra"</string>
+    <string name="Persian_micro">"Pärsia"</string>
+    <string name="Polish_micro">"Poola"</string>
+    <string name="Portuguese_micro">"Portugali"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaros Otomi"</string>
+    <string name="Romanian_micro">"Rumeenia"</string>
+    <string name="Russian_micro">"Vene"</string>
+    <string name="Serbian_Cyrillic_micro">"Serbia"</string>
+    <string name="Serbian_Latin_micro">"Serbia keel Ladina tähestikus"</string>
+    <string name="Slovak_micro">"Slovaki"</string>
+    <string name="Slovenian_micro">"Sloveeni"</string>
+    <string name="Spanish_micro">"Hispaania"</string>
+    <string name="Swedish_micro">"Rootsi"</string>
+    <string name="Thai_micro">"Tai"</string>
+    <string name="Turkish_micro">"Türgi"</string>
+    <string name="Ukrainian_micro">"Ukraina"</string>
+    <string name="Urdu_micro">"Urdu"</string>
+    <string name="Vietnamese_micro">"Vietnami"</string>
+    <string name="Welsh_micro">"Kõmri"</string>
+    <string name="Yucatec_Maya_micro">"Maaja"</string>
+</resources>

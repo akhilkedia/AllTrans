@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Laai tans lys van aansoeke - wag asseblief"</string>
+    <string name="clear_cache_error">"Sommige fout. Kon nie duidelik vertaling kas!"</string>
+    <string name="clear_cache_success">"Vertaal Cache vir hierdie toepassing is gewis!"</string>
+	<string name="how_to_use">"HOE GEBRUIK DIE AANSOEK
+
+Hierdie toepassing vereis dat jy inteken vir 'n sleutel van Microsoft of Yandex Translate.
+Yandex Translate ondersteun meer tale, het 'n veel makliker intekening proses en vereis geen KREDIETKAART.
+Microsoft Translate gee beter resultate, maar vereis 'n kredietkaart om in te teken. (Maar moenie bekommerd wees nie, niks sal gehef word.)
+
+1. in globale opsiesduimgids, aktiveer gebruik Yandex in plaas van Microsoft as jy wil gebruik Yandex, anders deaktiveer gebruik Microsoft.
+1. in globale opsiesduimgids, tik tik Microsoft/Yandex intekengeld sleutel, die ooreenstemmende sleutel insette (sien instruksies van onder).
+2. Kies die vertaal van taal en om taal vertaal.
+3. in die toepassings na Translate-oortjie, vind die toepassing wat jy wil vertaal, klik die merkblokkie langs dit. As die merkblokkie nie sigbaar is nie, probeer jou foon sywaarts draai in landskap modus.
+4. sluit en herbegin die program wat jy wil hê dat vertaalde - dit vertaal moet word!
+
+WAARSKUWING - sommige toepassings sluit dalk dwing. Sien die probleemoplossing artikel.
+
+HOE KRY YANDEX VERTAAL INTEKENGELD SLEUTEL
+
+1. gaan na Yandex webwerf - https://tech.yandex.com/keys/get/?service=trnsl
+2. as jy nie reeds 'n rekening, klik op register en advertensie op vir 'n nuwe rekening.
+3. na ondertekening up, stem die gebruiker ooreenkoms en kry API-sleutel geklik.
+4. jy het suksesvol jou sleutel ontvang! Dit is iets soos trnsl.1.1.201701...
+
+HOE OM MICROSOFT BLOU VERTAAL INTEKENGELD SLEUTEL
+
+1. teken vir 'n Microsoft Azure rekening by http://azure.com
+
+2. nadat jy 'n rekening het nie, teken in die diepste portaal by http://portal.azure.com
+
+3. Voeg 'n Microsoft vertaler API intekening na jou diepste rekening.
+Kies 'n pay-as-you-go inskrywing. Benodig 'n kredietkaart, maar moenie bekommerd wees nie, niks sal gehef word.
+Kies die + nuwe opsie.
+Kies intelligensie uit die lys van dienste.
+Kies kognitiewe dienste API's gereël.
+Kies die API tipe opsie.
+Kies teks vertaling
+In die pryse vlak artikel, kies die gratis vlak (F0)
+Vul die res van die vorm, en druk die skep-knoppie.
+
+4. herwin jou outentisering sleutel.
+Gaan na alle hulpbronne en die Microsoft vertaler API jy ingeteken te kies.
+Gaan na die sleutels opsie en kopieer jou subskripsie sleutel vir toegang tot die diens.
+Die intekengeld sleutel is iets soos 321dcba...
+
+PROBLEEMOPLOSSING
+
+1. Indien no-toepassing is vertaal word, kontroleer jou Microsoft/Yandex intekengeld sleutel is korrek.
+2. as die vertaalde toepassing krag sluit/kry vas op laai die eerste keer nadat jy begin vertaling, klik op die app in toepassings om oortjie vertaal, en in ander instellings vul vertraging voor vertaling 2000.
+3. as die vertaalde app gebruik om werk goed, maar nou kry vasklou te begin, klik op die app in toepassings te vertaal oortjie en klik op klik om duidelike vertaling Cache.
+4. Indien sommige dele van die app is nie vertaal word nie, klik op die app in toepassings te vertaal tab, en aggressiewe modus aktiveer.
+5. Indien die toepassing steeds krag sluit, versper vertaling vir hierdie toepassing en kontak my op die ondersteuning garing op XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Vertaal enige plek"</string>
+    <string name="apps_to_translate">"Toepassings om te vertaal"</string>
+    <string name="global_settings">"Globale opsies"</string>
+    <string name="instructions">"Instruksies"</string>
+    <string name="pref_cat_translate_settings">"Vertaal instellings"</string>
+    <string name="pref_cat_parts_of_app">"Dele van toepassing om te vertaal"</string>
+    <string name="pref_cat_other_settings">"Ander instellings"</string>
+    <string name="master_on_off">"Meester op/af"</string>
+    <string name="master_on_off_summary">"Skakel af heeltemal versper hierdie module"</string>
+    <string name="master_on_off_summary_off">"Module afgeskakel, geen toepassings sal vertaal word. Skakel aan begin met Outo-vertaal!"</string>
+    <string name="master_on_off_summary_on">"Module aangeskakel, geselekteerde toepassings sal vertaal word. Skakel af heeltemal versper hierdie module."</string>
+    <string name="enable_yandex">"Gebruik Yandex in plaas van Microsoft"</string>
+    <string name="enable_yandex_summary">"Skakel gebruik Yandex vertaling in plaas van Microsoft"</string>
+    <string name="enable_yandex_summary_off">"Tans gebruik Microsoft blou vertaling. Skakel Yandex vertaling gebruik."</string>
+    <string name="enable_yandex_summary_on">"Gebruik tans Yandex vertaling. Skakel af na gebruik Microsoft blou vertaling."</string>
+    <string name="subKey">"Microsoft / Yandex intekengeld sleutel"</string>
+    <string name="subKey_micro">"Microsoft intekengeld sleutel"</string>
+    <string name="subKey_yandex">"Yandex intekengeld sleutel"</string>
+    <string name="subKey_summary">"Tik die intekengeld sleutel vir Microsoft Azure of Yandex vertaling API, ookal hierbo is geaktiveer"</string>
+    <string name="subKey_defaultValue">"Tik jou Microsoft of Yandex intekengeld sleutel"</string>
+    <string name="transFrom">"Vertaal uit taal"</string>
+    <string name="transFrom_summary">"Taal die app is oorspronklik."</string>
+    <string name="transTo">"Vertaal na taal"</string>
+    <string name="transTo_summary">"Taal jy wil die toepassing word in te vertaal."</string>
+    <string name="setText">"Gewone teks vertaal"</string>
+    <string name="setText_summary_off">"Nie vertaling teks geskryf stel teks gebruik. Skakel te aktiveer."</string>
+    <string name="setText_summary_on">"Vertaling teks geskryf gebruik stel teks - veilig. Skakel af te deaktiveer."</string>
+    <string name="setHint">"Vertaal teks wenke (grys-gekleurde voorstelle) in blokkies"</string>
+    <string name="setHint_summary_off">"Nie vertaling teks geskryf gebruik stel wenk. Skakel te aktiveer."</string>
+    <string name="setHint_summary_on">"Vertaling teks geskryf gebruik stel wenk - veilig. Skakel af te deaktiveer."</string>
+    <string name="webView">"Vertaal teks op webbladsye binne toepassings"</string>
+    <string name="webView_summary_off">"Vertaling nie teks in WebViews. Skakel te aktiveer."</string>
+    <string name="webView_summary_on">"Vertaling teks binne-in WebView - slot, mag nie werk altyd. Skakel af te deaktiveer."</string>
+    <string name="drawText">"Aggressiewe modus"</string>
+    <string name="drawText_summary_off">"Vertaling nie aggressief teks in drawText. Gebruik wanneer al bogenoemde versuim. Skakel te aktiveer."</string>
+    <string name="drawText_summary_on">"Aggressief vertaling teks in drawText - eksperimentele, mag nie werk altyd. Skakel af te deaktiveer."</string>
+    <string name="caching">"Gebruik Kasberging"</string>
+    <string name="caching_summary_off">"Nie spaar vertalings ongekoppel, wat lei tot stadiger vertaal en hoër data - maar kan werk vir meer toepassings. Draai op te stoor vertalings."</string>
+    <string name="caching_summary_on">"Stoor vertalings vanlyn te bespoedig vertaal en data gebruik. Skakel deaktiveer as jou toepassing begin nie."</string>
+    <string name="delay">"Vertraging voor vertaling"</string>
+    <string name="delay_summary">"Stel die tyd in millisekondes wag voordat vertaling. Verstek waarde is 0, stel om 1000 – 5000 as die vertaalde toepassing is gekraak."</string>
+    <string name="overRide_global">"Globale instellings oorheers"</string>
+    <string name="overRide_global_summary_off">"Met behulp van globale instellings vir hierdie toepassing draai op om instellings slegs vir hierdie toepassing te verander."</string>
+    <string name="overRide_global_summary_on">"Met behulp van plaaslike instellings vir hierdie toepassing draai af na globale instellings gebruik."</string>
+    <string name="clear_cache">"Klik om vertaling kasgeheue skoon te maak"</string>
+    <string name="clear_cache_summary">"Klik die bogenoemde om die app se kas vertaal. Gebruik dit nadat verander na/van tale, of indien die toepassing begin nie."</string>
+    <string name="Afrikaans_yandex">"Afrikaans"</string>
+    <string name="Amharic_yandex">"Amharies"</string>
+    <string name="Arabic_yandex">"Arabies"</string>
+    <string name="Azerbaijani_yandex">"Azerbaijani"</string>
+    <string name="Bashkir_yandex">"Bashkir"</string>
+    <string name="Belarusian_yandex">"Belarussiese"</string>
+    <string name="Bulgarian_yandex">"Bulgaarse"</string>
+    <string name="Bengali_yandex">"Bengali"</string>
+    <string name="Bosnian_yandex">"Bosniese"</string>
+    <string name="Catalan_yandex">"Katalonië"</string>
+    <string name="Cebuano_yandex">"Cebuano"</string>
+    <string name="Czech_yandex">"Tsjeggië"</string>
+    <string name="Welsh_yandex">"Walliese"</string>
+    <string name="Danish_yandex">"Deens"</string>
+    <string name="German_yandex">"Duitse"</string>
+    <string name="Greek_yandex">"Grieks"</string>
+    <string name="English_yandex">"Engels"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Spaans"</string>
+    <string name="Estonian_yandex">"Estoniaanse"</string>
+    <string name="Basque_yandex">"Baskeland"</string>
+    <string name="Persian_yandex">"Persiese"</string>
+    <string name="Finnish_yandex">"Finse"</string>
+    <string name="French_yandex">"Franse"</string>
+    <string name="Irish_yandex">"Ierse"</string>
+    <string name="Scottish_Gaelic_yandex">"Skotte Gaelic"</string>
+    <string name="Galician_yandex">"Galicies"</string>
+    <string name="Gujarati_yandex">"Goedjarati"</string>
+    <string name="Hebrew_yandex">"Hebreeus"</string>
+    <string name="Hindi_yandex">"Hindi"</string>
+    <string name="Croatian_yandex">"Kroatiese"</string>
+    <string name="Haitian_yandex">"Haitian"</string>
+    <string name="Hungarian_yandex">"Hongaars"</string>
+    <string name="Armenian_yandex">"Armeense"</string>
+    <string name="Indonesian_yandex">"Indonesiese"</string>
+    <string name="Icelandic_yandex">"Yslandse"</string>
+    <string name="Italian_yandex">"Italiaans"</string>
+    <string name="Japanese_yandex">"Japannese"</string>
+    <string name="Javanese_yandex">"Javaanse"</string>
+    <string name="Georgian_yandex">"Georgiaanse"</string>
+    <string name="Kazakh_yandex">"Kazak"</string>
+    <string name="Kannada_yandex">"Kannada"</string>
+    <string name="Korean_yandex">"Koreaanse"</string>
+    <string name="Kyrgyz_yandex">"Kirgiese"</string>
+    <string name="Latin_yandex">"Latyn"</string>
+    <string name="Luxembourgish_yandex">"Luxembourgish"</string>
+    <string name="Lithuanian_yandex">"Litause"</string>
+    <string name="Latvian_yandex">"Lettiese"</string>
+    <string name="Malagasy_yandex">"Malagasy"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maori"</string>
+    <string name="Macedonian_yandex">"Masedoniese"</string>
+    <string name="Malayalam_yandex">"Malajalam"</string>
+    <string name="Mongolian_yandex">"Mongoolse"</string>
+    <string name="Marathi_yandex">"Marathi"</string>
+    <string name="Hill_Mari_yandex">"Hill Mari"</string>
+    <string name="Malay_yandex">"Maleisiese"</string>
+    <string name="Maltese_yandex">"Maltese"</string>
+    <string name="Nepali_yandex">"Nepali"</string>
+    <string name="Dutch_yandex">"Hollands"</string>
+    <string name="Norwegian_yandex">"Noorweegse"</string>
+    <string name="Punjabi_yandex">"Punjabi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Pools"</string>
+    <string name="Portuguese_yandex">"Portugese"</string>
+    <string name="Romanian_yandex">"Roemeense"</string>
+    <string name="Russian_yandex">"Russiese"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Slowakye"</string>
+    <string name="Slovenian_yandex">"Sloweense"</string>
+    <string name="Albanian_yandex">"Albaniese"</string>
+    <string name="Serbian_yandex">"Serwiese"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"Sweeds"</string>
+    <string name="Swahili_yandex">"Swahili"</string>
+    <string name="Tamil_yandex">"Tamil"</string>
+    <string name="Telugu_yandex">"Teloegoe"</string>
+    <string name="Tajik_yandex">"Tajik"</string>
+    <string name="Thai_yandex">"Thai"</string>
+    <string name="Tagalog_yandex">"Tagalog"</string>
+    <string name="Turkish_yandex">"Turkse"</string>
+    <string name="Tatar_yandex">"Tataar"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Oekraïense"</string>
+    <string name="Urdu_yandex">"Oerdoe"</string>
+    <string name="Uzbek_yandex">"Oesbeekse"</string>
+    <string name="Vietnamese_yandex">"Viëtnamese"</string>
+    <string name="Xhosa_yandex">"Xhosa"</string>
+    <string name="Yiddish_yandex">"Jiddisj"</string>
+    <string name="Chinese_yandex">"Chinees"</string>
+    <string name="Afrikaans_micro">"Afrikaans"</string>
+    <string name="Arabic_micro">"Arabies"</string>
+    <string name="Bosnian_Latin_micro">"Bosnies (Latyn)"</string>
+    <string name="Bulgarian_micro">"Bulgaarse"</string>
+    <string name="Catalan_micro">"Katalonië"</string>
+    <string name="Chinese_Simplified_micro">"Vereenvoudigde Chinees"</string>
+    <string name="Chinese_Traditional_micro">"Tradisionele Chinees"</string>
+    <string name="Croatian_micro">"Kroatiese"</string>
+    <string name="Czech_micro">"Tsjeggië"</string>
+    <string name="Danish_micro">"Deens"</string>
+    <string name="Dutch_micro">"Hollands"</string>
+    <string name="English_micro">"Engels"</string>
+    <string name="Estonian_micro">"Estoniaanse"</string>
+    <string name="Finnish_micro">"Finse"</string>
+    <string name="French_micro">"Franse"</string>
+    <string name="German_micro">"Duitse"</string>
+    <string name="Greek_micro">"Grieks"</string>
+    <string name="Haitian_Creole_micro">"Haïti Kreools"</string>
+    <string name="Hebrew_micro">"Hebreeus"</string>
+    <string name="Hindi_micro">"Hindi"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Hongaars"</string>
+    <string name="Indonesian_micro">"Indonesiese"</string>
+    <string name="Italian_micro">"Italiaans"</string>
+    <string name="Japanese_micro">"Japannese"</string>
+    <string name="Kiswahili_micro">"KiSwahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Koreaanse"</string>
+    <string name="Latvian_micro">"Lettiese"</string>
+    <string name="Lithuanian_micro">"Litause"</string>
+    <string name="Malay_micro">"Maleisiese"</string>
+    <string name="Maltese_micro">"Maltese"</string>
+    <string name="Norwegian_micro">"Noorweegse"</string>
+    <string name="Persian_micro">"Persiese"</string>
+    <string name="Polish_micro">"Pools"</string>
+    <string name="Portuguese_micro">"Portugese"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Roemeense"</string>
+    <string name="Russian_micro">"Russiese"</string>
+    <string name="Serbian_Cyrillic_micro">"Serwiese Cyrillies"</string>
+    <string name="Serbian_Latin_micro">"Serbian Latyn"</string>
+    <string name="Slovak_micro">"Slowakye"</string>
+    <string name="Slovenian_micro">"Sloweense"</string>
+    <string name="Spanish_micro">"Spaans"</string>
+    <string name="Swedish_micro">"Sweeds"</string>
+    <string name="Thai_micro">"Thai"</string>
+    <string name="Turkish_micro">"Turkse"</string>
+    <string name="Ukrainian_micro">"Oekraïense"</string>
+    <string name="Urdu_micro">"Oerdoe"</string>
+    <string name="Vietnamese_micro">"Viëtnamese"</string>
+    <string name="Welsh_micro">"Walliese"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

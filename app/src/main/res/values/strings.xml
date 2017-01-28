@@ -20,12 +20,12 @@
 <resources>
     <integer name="defaultDelay">0</integer>
 
-    <string name="app_name">AllTrans</string>
-    <string name="loading">Loading List of Applications - Please Wait</string>
-    <string name="clear_cache_error">Some Error. Could not clear translation cache!</string>
-    <string name="clear_cache_success">Translate Cache for this app has been erased!</string>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Loading List of Applications - Please Wait"</string>
+    <string name="clear_cache_error">"Some Error. Could not clear translation cache!"</string>
+    <string name="clear_cache_success">"Translate Cache for this app has been erased!"</string>
 
-    <string name="how_to_use">HOW TO USE THE APPLICATION
+    <string name="how_to_use">"HOW TO USE THE APPLICATION
 
 This application requires you to sign up for a key from Microsoft or Yandex Translate.
 Yandex Translate supports more languages, has a much easier signup process, and requires NO CREDIT CARD.
@@ -76,242 +76,243 @@ TROUBLESHOOTING
 3. If the translated app used to work fine, but now get stuck on starting, click on the app in &quot;Apps to translate&quot; tab, and click on &quot;Click to Clear Translation Cache&quot;.
 4. If some parts of the app are not being translated, click on the app in &quot;Apps to translate&quot; tab, and enable &quot;Aggressive Mode&quot;.
 5. If the app still Force Closes, disable translation for this app and contact me on the support thread on XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-</string>
+"</string>
 
 
     <!-- activity_main toolbar -->
-    <string name="translate_anywhere">Translate Anywhere</string>
-    <string name="apps_to_translate">Apps to Translate</string>
-    <string name="global_settings">Global Settings</string>
-    <string name="instructions">Instructions</string>
+    <string name="translate_anywhere">"Translate Anywhere"</string>
+    <string name="apps_to_translate">"Apps to Translate"</string>
+    <string name="global_settings">"Global Settings"</string>
+    <string name="instructions">"Instructions"</string>
 
 
     <!-- Global Preferences -->
 
     <!-- Preference Categories -->
-    <string name="pref_cat_translate_settings">Translate Settings</string>
-    <string name="pref_cat_parts_of_app">Parts of App to Translate</string>
-    <string name="pref_cat_other_settings">Other Settings</string>
+    <string name="pref_cat_translate_settings">"Translate Settings"</string>
+    <string name="pref_cat_parts_of_app">"Parts of App to Translate"</string>
+    <string name="pref_cat_other_settings">"Other Settings"</string>
 
     <!-- master on off -->
-    <string name="master_on_off">Master On/Off</string>
-    <string name="master_on_off_summary">Turn off to completely disable this module</string>
-    <string name="master_on_off_summary_off">Module is turned off, no apps will be translated. Turn on to start using auto-translate!</string>
-    <string name="master_on_off_summary_on">Module is turned on, selected apps will be translated. Turn off to completely disable this module.</string>
+    <string name="master_on_off">"Master On/Off"</string>
+    <string name="master_on_off_summary">"Turn off to completely disable this module"</string>
+    <string name="master_on_off_summary_off">"Module is turned off, no apps will be translated. Turn on to start using auto-translate!"</string>
+    <string name="master_on_off_summary_on">"Module is turned on, selected apps will be translated. Turn off to completely disable this module."</string>
 
 
     <!-- Categories Translate Settings -->
     <!-- enable_yandex -->
-    <string name="enable_yandex">Use Yandex instead of Microsoft</string>
-    <string name="enable_yandex_summary">Turn on to use Yandex Translation instead of Microsoft</string>
-    <string name="enable_yandex_summary_off">Currently using Microsoft Azure Translation. Turn on to use Yandex Translation.</string>
-    <string name="enable_yandex_summary_on">Currently using Yandex Translation. Turn off to use Microsoft Azure Translation.</string>
+    <string name="enable_yandex">"Use Yandex instead of Microsoft"</string>
+    <string name="enable_yandex_summary">"Turn on to use Yandex Translation instead of Microsoft"</string>
+    <string name="enable_yandex_summary_off">"Currently using Microsoft Azure Translation. Turn on to use Yandex Translation."</string>
+    <string name="enable_yandex_summary_on">"Currently using Yandex Translation. Turn off to use Microsoft Azure Translation."</string>
 
     <!--subscription key -->
-    <string name="subKey">Microsoft / Yandex Subscription Key</string>
-    <string name="subKey_micro">Microsoft Subscription Key</string>
-    <string name="subKey_yandex">Yandex Subscription Key</string>
-    <string name="subKey_summary">Enter the Subscription Key for Microsoft Azure or Yandex Translation API, whichever is enabled above</string>
-    <string name="subKey_defaultValue">Enter Your Microsoft or Yandex Subscription Key</string>
+    <string name="subKey">"Microsoft / Yandex Subscription Key"</string>
+    <string name="subKey_micro">"Microsoft Subscription Key"</string>
+    <string name="subKey_yandex">"Yandex Subscription Key"</string>
+    <string name="subKey_summary">"Enter the Subscription Key for Microsoft Azure or Yandex Translation API, whichever is enabled above"</string>
+    <string name="subKey_defaultValue">"Enter Your Microsoft or Yandex Subscription Key"</string>
 
     <!--Translate From -->
-    <string name="transFrom">Translate From Language</string>
-    <string name="transFrom_summary">Language the app is originally in.</string>
+    <string name="transFrom">"Translate From Language"</string>
+    <string name="transFrom_summary">"Language the app is originally in."</string>
 
     <!--Translate To -->
-    <string name="transTo">Translate To Language</string>
-    <string name="transTo_summary">Language you want the app to be translate into.</string>
+    <string name="transTo">"Translate To Language"</string>
+    <string name="transTo_summary">"Language you want the app to be translate into."</string>
 
 
     <!-- Categories Parts of Apps -->
     <!-- setText -->
-    <string name="setText">Translate Normal Text</string>
-    <string name="setText_summary_off">Not Translating Text written using Set Text. Turn on to enable.</string>
-    <string name="setText_summary_on">Translating Text written using Set Text - Safe. Turn off to disable.</string>
+    <string name="setText">"Translate Normal Text"</string>
+    <string name="setText_summary_off">"Not Translating Text written using Set Text. Turn on to enable."</string>
+    <string name="setText_summary_on">"Translating Text written using Set Text - Safe. Turn off to disable."</string>
 
     <!-- setHint -->
-    <string name="setHint">Translate Text Hints (Gray-Coloured Suggestions) in Text Boxes</string>
-    <string name="setHint_summary_off">Not Translating Text written using Set Hint. Turn on to enable.</string>
-    <string name="setHint_summary_on">Translating Text written using Set Hint - Safe. Turn off to disable.</string>
+    <string name="setHint">"Translate Text Hints (Gray-Coloured Suggestions) in Text Boxes"</string>
+    <string name="setHint_summary_off">"Not Translating Text written using Set Hint. Turn on to enable."</string>
+    <string name="setHint_summary_on">"Translating Text written using Set Hint - Safe. Turn off to disable."</string>
 
     <!-- webView -->
-    <string name="webView">Translate Text in Web Pages inside Apps</string>
-    <string name="webView_summary_off">Not Translating Text in WebViews. Turn on to enable.</string>
-    <string name="webView_summary_on">Translating Text inside WebView - Safe, May Not Work Always. Turn off to disable.</string>
+    <string name="webView">"Translate Text in Web Pages inside Apps"</string>
+    <string name="webView_summary_off">"Not Translating Text in WebViews. Turn on to enable."</string>
+    <string name="webView_summary_on">"Translating Text inside WebView - Safe, May Not Work Always. Turn off to disable."</string>
 
     <!-- drawText -->
-    <string name="drawText">Aggressive Mode</string>
-    <string name="drawText_summary_off">Not aggressively translating Text in drawText. Use when all above fails. Turn on to enable.</string>
-    <string name="drawText_summary_on">Aggressively translating Text in drawText - Experimental, May Not Work Always. Turn off to disable.</string>
+    <string name="drawText">"Aggressive Mode"</string>
+    <string name="drawText_summary_off">"Not aggressively translating Text in drawText. Use when all above fails. Turn on to enable."</string>
+    <string name="drawText_summary_on">"Aggressively translating Text in drawText - Experimental, May Not Work Always. Turn off to disable."</string>
 
 
     <!-- Categories Other Settings -->
     <!-- caching -->
-    <string name="caching">Use Caching</string>
-    <string name="caching_summary_off">Not saving translations offline, resulting in slower translate and higher data - But may work for more apps. Turn on to save translations.</string>
-    <string name="caching_summary_on">Saving translations offline to speed up translate and use data. Turn off to disable if your app doesn&apos;t start.</string>
+    <string name="caching">"Use Caching"</string>
+    <string name="caching_summary_off">"Not saving translations offline, resulting in slower translate and higher data - But may work for more apps. Turn on to save translations."</string>
+    <string name="caching_summary_on">"Saving translations offline to speed up translate and use data. Turn off to disable if your app doesn&apos;t start."</string>
 
     <!-- delay -->
-    <string name="delay">Delay Before Translating</string>
-    <string name="delay_summary">Set the time in milliseconds to wait before translating. Default Value is 0, set to 1000–5000 if the translated app is crashing.</string>
+    <string name="delay">"Delay Before Translating"</string>
+    <string name="delay_summary">"Set the time in milliseconds to wait before translating. Default Value is 0, set to 1000–5000 if the translated app is crashing."</string>
 
 
     <!-- Per App Preferences -->
     <!-- overRide Global -->
-    <string name="overRide_global">OverRide Global Settings</string>
-    <string name="overRide_global_summary_off">Using Global Settings for this app. Turn on to change settings only for this app.</string>
-    <string name="overRide_global_summary_on">Using Local Settings for this app. Turn off to use Global Settings.</string>
+    <string name="overRide_global">"OverRide Global Settings"</string>
+    <string name="overRide_global_summary_off">"Using Global Settings for this app. Turn on to change settings only for this app."</string>
+    <string name="overRide_global_summary_on">"Using Local Settings for this app. Turn off to use Global Settings."</string>
 
     <!-- clear cache -->
-    <string name="clear_cache">Click to clear Translation Cache</string>
-    <string name="clear_cache_summary">Click the above to clear the app&apos;s translate cache. Use this after changing to/from languages, or if the app does not start.</string>
+    <string name="clear_cache">"Click to clear Translation Cache"</string>
+    <string name="clear_cache_summary">"Click the above to clear the app&apos;s translate cache. Use this after changing to/from languages, or if the app does not start."</string>
 
 
     <!--- Yandex Language Names -->
-    <string name="Afrikaans_yandex">Afrikaans</string>
-    <string name="Amharic_yandex">Amharic</string>
-    <string name="Arabic_yandex">Arabic</string>
-    <string name="Azerbaijani_yandex">Azerbaijani</string>
-    <string name="Bashkir_yandex">Bashkir</string>
-    <string name="Belarusian_yandex">Belarusian</string>
-    <string name="Bulgarian_yandex">Bulgarian</string>
-    <string name="Bengali_yandex">Bengali</string>
-    <string name="Bosnian_yandex">Bosnian</string>
-    <string name="Catalan_yandex">Catalan</string>
-    <string name="Cebuano_yandex">Cebuano</string>
-    <string name="Czech_yandex">Czech</string>
-    <string name="Welsh_yandex">Welsh</string>
-    <string name="Danish_yandex">Danish</string>
-    <string name="German_yandex">German</string>
-    <string name="Greek_yandex">Greek</string>
-    <string name="English_yandex">English</string>
-    <string name="Esperanto_yandex">Esperanto</string>
-    <string name="Spanish_yandex">Spanish</string>
-    <string name="Estonian_yandex">Estonian</string>
-    <string name="Basque_yandex">Basque</string>
-    <string name="Persian_yandex">Persian</string>
-    <string name="Finnish_yandex">Finnish</string>
-    <string name="French_yandex">French</string>
-    <string name="Irish_yandex">Irish</string>
-    <string name="Scottish_Gaelic_yandex">Scottish Gaelic</string>
-    <string name="Galician_yandex">Galician</string>
-    <string name="Gujarati_yandex">Gujarati</string>
-    <string name="Hebrew_yandex">Hebrew</string>
-    <string name="Hindi_yandex">Hindi</string>
-    <string name="Croatian_yandex">Croatian</string>
-    <string name="Haitian_yandex">Haitian</string>
-    <string name="Hungarian_yandex">Hungarian</string>
-    <string name="Armenian_yandex">Armenian</string>
-    <string name="Indonesian_yandex">Indonesian</string>
-    <string name="Icelandic_yandex">Icelandic</string>
-    <string name="Italian_yandex">Italian</string>
-    <string name="Japanese_yandex">Japanese</string>
-    <string name="Javanese_yandex">Javanese</string>
-    <string name="Georgian_yandex">Georgian</string>
-    <string name="Kazakh_yandex">Kazakh</string>
-    <string name="Kannada_yandex">Kannada</string>
-    <string name="Korean_yandex">Korean</string>
-    <string name="Kyrgyz_yandex">Kyrgyz</string>
-    <string name="Latin_yandex">Latin</string>
-    <string name="Luxembourgish_yandex">Luxembourgish</string>
-    <string name="Lithuanian_yandex">Lithuanian</string>
-    <string name="Latvian_yandex">Latvian</string>
-    <string name="Malagasy_yandex">Malagasy</string>
-    <string name="Mari_yandex">Mari</string>
-    <string name="Maori_yandex">Maori</string>
-    <string name="Macedonian_yandex">Macedonian</string>
-    <string name="Malayalam_yandex">Malayalam</string>
-    <string name="Mongolian_yandex">Mongolian</string>
-    <string name="Marathi_yandex">Marathi</string>
-    <string name="Hill_Mari_yandex">Hill Mari</string>
-    <string name="Malay_yandex">Malay</string>
-    <string name="Maltese_yandex">Maltese</string>
-    <string name="Nepali_yandex">Nepali</string>
-    <string name="Dutch_yandex">Dutch</string>
-    <string name="Norwegian_yandex">Norwegian</string>
-    <string name="Punjabi_yandex">Punjabi</string>
-    <string name="Papiamento_yandex">Papiamento</string>
-    <string name="Polish_yandex">Polish</string>
-    <string name="Portuguese_yandex">Portuguese</string>
-    <string name="Romanian_yandex">Romanian</string>
-    <string name="Russian_yandex">Russian</string>
-    <string name="Sinhalese_yandex">Sinhalese</string>
-    <string name="Slovak_yandex">Slovak</string>
-    <string name="Slovenian_yandex">Slovenian</string>
-    <string name="Albanian_yandex">Albanian</string>
-    <string name="Serbian_yandex">Serbian</string>
-    <string name="Sundanese_yandex">Sundanese</string>
-    <string name="Swedish_yandex">Swedish</string>
-    <string name="Swahili_yandex">Swahili</string>
-    <string name="Tamil_yandex">Tamil</string>
-    <string name="Telugu_yandex">Telugu</string>
-    <string name="Tajik_yandex">Tajik</string>
-    <string name="Thai_yandex">Thai</string>
-    <string name="Tagalog_yandex">Tagalog</string>
-    <string name="Turkish_yandex">Turkish</string>
-    <string name="Tatar_yandex">Tatar</string>
-    <string name="Udmurt_yandex">Udmurt</string>
-    <string name="Ukrainian_yandex">Ukrainian</string>
-    <string name="Urdu_yandex">Urdu</string>
-    <string name="Uzbek_yandex">Uzbek</string>
-    <string name="Vietnamese_yandex">Vietnamese</string>
-    <string name="Xhosa_yandex">Xhosa</string>
-    <string name="Yiddish_yandex">Yiddish</string>
-    <string name="Chinese_yandex">Chinese</string>
+    <string name="Afrikaans_yandex">"Afrikaans"</string>
+    <string name="Amharic_yandex">"Amharic"</string>
+    <string name="Arabic_yandex">"Arabic"</string>
+    <string name="Azerbaijani_yandex">"Azerbaijani"</string>
+    <string name="Bashkir_yandex">"Bashkir"</string>
+    <string name="Belarusian_yandex">"Belarusian"</string>
+    <string name="Bulgarian_yandex">"Bulgarian"</string>
+    <string name="Bengali_yandex">"Bengali"</string>
+    <string name="Bosnian_yandex">"Bosnian"</string>
+    <string name="Catalan_yandex">"Catalan"</string>
+    <string name="Cebuano_yandex">"Cebuano"</string>
+    <string name="Czech_yandex">"Czech"</string>
+    <string name="Welsh_yandex">"Welsh"</string>
+    <string name="Danish_yandex">"Danish"</string>
+    <string name="German_yandex">"German"</string>
+    <string name="Greek_yandex">"Greek"</string>
+    <string name="English_yandex">"English"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Spanish"</string>
+    <string name="Estonian_yandex">"Estonian"</string>
+    <string name="Basque_yandex">"Basque"</string>
+    <string name="Persian_yandex">"Persian"</string>
+    <string name="Finnish_yandex">"Finnish"</string>
+    <string name="French_yandex">"French"</string>
+    <string name="Irish_yandex">"Irish"</string>
+    <string name="Scottish_Gaelic_yandex">"Scottish Gaelic"</string>
+    <string name="Galician_yandex">"Galician"</string>
+    <string name="Gujarati_yandex">"Gujarati"</string>
+    <string name="Hebrew_yandex">"Hebrew"</string>
+    <string name="Hindi_yandex">"Hindi"</string>
+    <string name="Croatian_yandex">"Croatian"</string>
+    <string name="Haitian_yandex">"Haitian"</string>
+    <string name="Hungarian_yandex">"Hungarian"</string>
+    <string name="Armenian_yandex">"Armenian"</string>
+    <string name="Indonesian_yandex">"Indonesian"</string>
+    <string name="Icelandic_yandex">"Icelandic"</string>
+    <string name="Italian_yandex">"Italian"</string>
+    <string name="Japanese_yandex">"Japanese"</string>
+    <string name="Javanese_yandex">"Javanese"</string>
+    <string name="Georgian_yandex">"Georgian"</string>
+    <string name="Kazakh_yandex">"Kazakh"</string>
+    <string name="Kannada_yandex">"Kannada"</string>
+    <string name="Korean_yandex">"Korean"</string>
+    <string name="Kyrgyz_yandex">"Kyrgyz"</string>
+    <string name="Latin_yandex">"Latin"</string>
+    <string name="Luxembourgish_yandex">"Luxembourgish"</string>
+    <string name="Lithuanian_yandex">"Lithuanian"</string>
+    <string name="Latvian_yandex">"Latvian"</string>
+    <string name="Malagasy_yandex">"Malagasy"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maori"</string>
+    <string name="Macedonian_yandex">"Macedonian"</string>
+    <string name="Malayalam_yandex">"Malayalam"</string>
+    <string name="Mongolian_yandex">"Mongolian"</string>
+    <string name="Marathi_yandex">"Marathi"</string>
+    <string name="Hill_Mari_yandex">"Hill Mari"</string>
+    <string name="Malay_yandex">"Malay"</string>
+    <string name="Maltese_yandex">"Maltese"</string>
+    <string name="Nepali_yandex">"Nepali"</string>
+    <string name="Dutch_yandex">"Dutch"</string>
+    <string name="Norwegian_yandex">"Norwegian"</string>
+    <string name="Punjabi_yandex">"Punjabi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Polish"</string>
+    <string name="Portuguese_yandex">"Portuguese"</string>
+    <string name="Romanian_yandex">"Romanian"</string>
+    <string name="Russian_yandex">"Russian"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Slovak"</string>
+    <string name="Slovenian_yandex">"Slovenian"</string>
+    <string name="Albanian_yandex">"Albanian"</string>
+    <string name="Serbian_yandex">"Serbian"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"Swedish"</string>
+    <string name="Swahili_yandex">"Swahili"</string>
+    <string name="Tamil_yandex">"Tamil"</string>
+    <string name="Telugu_yandex">"Telugu"</string>
+    <string name="Tajik_yandex">"Tajik"</string>
+    <string name="Thai_yandex">"Thai"</string>
+    <string name="Tagalog_yandex">"Tagalog"</string>
+    <string name="Turkish_yandex">"Turkish"</string>
+    <string name="Tatar_yandex">"Tatar"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Ukrainian"</string>
+    <string name="Urdu_yandex">"Urdu"</string>
+    <string name="Uzbek_yandex">"Uzbek"</string>
+    <string name="Vietnamese_yandex">"Vietnamese"</string>
+    <string name="Xhosa_yandex">"Xhosa"</string>
+    <string name="Yiddish_yandex">"Yiddish"</string>
+    <string name="Chinese_yandex">"Chinese"</string>
 
 
     <!-- Microsoft Language Names -->
-    <string name="Afrikaans_micro">Afrikaans</string>
-    <string name="Arabic_micro">Arabic</string>
-    <string name="Bosnian_Latin_micro">Bosnian Latin</string>
-    <string name="Bulgarian_micro">Bulgarian</string>
-    <string name="Catalan_micro">Catalan</string>
-    <string name="Chinese_Simplified_micro">Chinese Simplified</string>
-    <string name="Chinese_Traditional_micro">Chinese Traditional</string>
-    <string name="Croatian_micro">Croatian</string>
-    <string name="Czech_micro">Czech</string>
-    <string name="Danish_micro">Danish</string>
-    <string name="Dutch_micro">Dutch</string>
-    <string name="English_micro">English</string>
-    <string name="Estonian_micro">Estonian</string>
-    <string name="Finnish_micro">Finnish</string>
-    <string name="French_micro">French</string>
-    <string name="German_micro">German</string>
-    <string name="Greek_micro">Greek</string>
-    <string name="Haitian_Creole_micro">Haitian Creole</string>
-    <string name="Hebrew_micro">Hebrew</string>
-    <string name="Hindi_micro">Hindi</string>
-    <string name="Hmong_Daw_micro">Hmong Daw</string>
-    <string name="Hungarian_micro">Hungarian</string>
-    <string name="Indonesian_micro">Indonesian</string>
-    <string name="Italian_micro">Italian</string>
-    <string name="Japanese_micro">Japanese</string>
-    <string name="Kiswahili_micro">Kiswahili</string>
-    <string name="Klingon_micro">Klingon</string>
-    <string name="Klingon_pIqaD_micro">Klingon pIqaD</string>
-    <string name="Korean_micro">Korean</string>
-    <string name="Latvian_micro">Latvian</string>
-    <string name="Lithuanian_micro">Lithuanian</string>
-    <string name="Malay_micro">Malay</string>
-    <string name="Maltese_micro">Maltese</string>
-    <string name="Norwegian_micro">Norwegian</string>
-    <string name="Persian_micro">Persian</string>
-    <string name="Polish_micro">Polish</string>
-    <string name="Portuguese_micro">Portuguese</string>
-    <string name="Queretaro_Otomi_micro">Queretaro Otomi</string>
-    <string name="Romanian_micro">Romanian</string>
-    <string name="Russian_micro">Russian</string>
-    <string name="Serbian_Cyrillic_micro">Serbian Cyrillic</string>
-    <string name="Serbian_Latin_micro">Serbian Latin</string>
-    <string name="Slovak_micro">Slovak</string>
-    <string name="Slovenian_micro">Slovenian</string>
-    <string name="Spanish_micro">Spanish</string>
-    <string name="Swedish_micro">Swedish</string>
-    <string name="Thai_micro">Thai</string>
-    <string name="Turkish_micro">Turkish</string>
-    <string name="Ukrainian_micro">Ukrainian</string>
-    <string name="Urdu_micro">Urdu</string>
-    <string name="Vietnamese_micro">Vietnamese</string>
-    <string name="Welsh_micro">Welsh</string>
-    <string name="Yucatec_Maya_micro">Yucatec Maya</string>
+    <string name="Afrikaans_micro">"Afrikaans"</string>
+    <string name="Arabic_micro">"Arabic"</string>
+    <string name="Bosnian_Latin_micro">"Bosnian Latin"</string>
+    <string name="Bulgarian_micro">"Bulgarian"</string>
+    <string name="Catalan_micro">"Catalan"</string>
+    <string name="Chinese_Simplified_micro">"Chinese Simplified"</string>
+    <string name="Chinese_Traditional_micro">"Chinese Traditional"</string>
+    <string name="Croatian_micro">"Croatian"</string>
+    <string name="Czech_micro">"Czech"</string>
+    <string name="Danish_micro">"Danish"</string>
+    <string name="Dutch_micro">"Dutch"</string>
+    <string name="English_micro">"English"</string>
+    <string name="Estonian_micro">"Estonian"</string>
+    <string name="Finnish_micro">"Finnish"</string>
+    <string name="French_micro">"French"</string>
+    <string name="German_micro">"German"</string>
+    <string name="Greek_micro">"Greek"</string>
+    <string name="Haitian_Creole_micro">"Haitian Creole"</string>
+    <string name="Hebrew_micro">"Hebrew"</string>
+    <string name="Hindi_micro">"Hindi"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Hungarian"</string>
+    <string name="Indonesian_micro">"Indonesian"</string>
+    <string name="Italian_micro">"Italian"</string>
+    <string name="Japanese_micro">"Japanese"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Korean"</string>
+    <string name="Latvian_micro">"Latvian"</string>
+    <string name="Lithuanian_micro">"Lithuanian"</string>
+    <string name="Malay_micro">"Malay"</string>
+    <string name="Maltese_micro">"Maltese"</string>
+    <string name="Norwegian_micro">"Norwegian"</string>
+    <string name="Persian_micro">"Persian"</string>
+    <string name="Polish_micro">"Polish"</string>
+    <string name="Portuguese_micro">"Portuguese"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Romanian"</string>
+    <string name="Russian_micro">"Russian"</string>
+    <string name="Serbian_Cyrillic_micro">"Serbian Cyrillic"</string>
+    <string name="Serbian_Latin_micro">"Serbian Latin"</string>
+    <string name="Slovak_micro">"Slovak"</string>
+    <string name="Slovenian_micro">"Slovenian"</string>
+    <string name="Spanish_micro">"Spanish"</string>
+    <string name="Swedish_micro">"Swedish"</string>
+    <string name="Thai_micro">"Thai"</string>
+    <string name="Turkish_micro">"Turkish"</string>
+    <string name="Ukrainian_micro">"Ukrainian"</string>
+    <string name="Urdu_micro">"Urdu"</string>
+    <string name="Vietnamese_micro">"Vietnamese"</string>
+    <string name="Welsh_micro">"Welsh"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+    "
 </resources>

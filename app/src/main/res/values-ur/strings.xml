@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"اللٹرنس"</string>
+    <string name="loading">"فہرست لوڈ کر رہا ہے کی ایپلی کیشنز - براہ مہربانی انتظار کریں"</string>
+    <string name="clear_cache_error">"کچھ نقص ہیں ۔ ترجمہ کیسہ صاف نہیں کر سکا!"</string>
+    <string name="clear_cache_success">"یہ ایپ مٹا دی گئی ہے اس لئے کیسہ ترجمہ!"</string>
+	<string name="how_to_use">"ایپلی کیشن کو استعمال کرنے کا طریقہ
+
+یہ ایپلی کیشن آپ Microsoft یا yandex کی ترجمہ سے ایک کلید کے لیے سائن اپ کرنے کی ضرورت ہے ۔
+Yandex کی ترجمہ زیادہ زبانوں کی حمایت کرتا ہے، ایک بہت آسان سائن اپ پراسس ہے، اور کوئی کریڈٹ کارڈ کی ضرورت ہے ۔
+Microsoft ترجمہ بہتر نتائج فراہم کرتا ہے، لیکن سائن اپ کے لیے ایک کریڈٹ کارڈ کی ضرورت ہے ۔ (مگر پریشان مت ہوں، کچھ نہیں ہوگا چارج.)
+
+1 ۔ آپ اگر چاہتے ہیں تو yandex کی کا استعمال Microsoft استعمال کرنے کے لئے کسی اور کو غیر فعال ہمہ گیر سیٹنگیں ٹیب میں Microsoft کی بجائے استعمال yandex کی اہل ہے ۔
+1 ۔ میں ہمہ گیر سیٹنگیں ٹیب، Microsoft/yandex کی رکنیت کلید داخل کریں پر ٹیپ کریں، متعلقہ کلید ان پٹ (ہدایات نیچے سے دیکھیں) ۔
+2. منتخب زبان سے ترجمہ اور زبان کا ترجمہ ہے ۔
+3. میں اطلاقات ترجمہ جدول کے لیے اپلی کیشن کا ترجمہ، سے اگلا پڑتال خانہ پر کلک کرنا چاہتے تلاش کریں ۔ پڑتال خانہ مرئی نہیں ہیں تو sideways باری ہے آپ کے فون کو افقی انداز موڈ میں گھومنے کی کوشش کریں ۔
+4 ۔ بند کریں اور ترجمہ حسب اپلی کیشن پھر شروع کریں - یہ ترجمہ ہونا چاہیے!
+
+تنبیہ - کچھ اطلاقات قریبی مجبور ہو سکتا ہے ۔ ازالہ سیکشن دیکھیں ۔
+
+کس طرح کلید کی رکنیت حاصل کرنے کے لئے ترجمہ YANDEX کی
+
+1. go yandex کی ویب سائٹ - https://tech.yandex.com/keys/get/?service=trnsl
+2. اگر آپ پہلے ہی ایک اکاؤنٹ نہیں ہے، رجسٹر اور سائن اپ کے لیے ایک نیا اکاؤنٹ پر کلک کریں ۔
+3. بعد دستخط کر، صارف سے متعلق معاہدے پر متفق ہیں اور API کلید حاصل کریں پر کلک کریں ۔
+4 ۔ آپ نے کامیابی سے آپ کی چابی وصول کی ہے! یہ کچھ trnsl.1.1.201701 پسند ہے...
+
+کس طرح کلید کی رکنیت حاصل کرنے کے لئے MICROSOFT AZURE کا ترجمہ
+
+1. http://azure.com پر ایک Microsoft Azure اکاؤنٹ کے لئے سائن اپ کریں
+
+2. بعد آپ کو ایک اکاؤنٹ ہے، http://portal.azure.com میں Azure پورٹل میں سائن ان
+
+3 ۔ آپ Azure اکاؤنٹ کے لیے ایک Microsoft مترجم API کی رکنیت شامل کریں ۔
+ایک pay-as-you-go رکنیت کا انتخاب کریں ۔ کریڈٹ کارڈ کی ضرورت ہوگی، لیکن فکر نہ کرو، کچھ بھی نہیں چارج کیا جائے گا ۔
++ نئی منتخب کریں اختیار ہے ۔
+انٹیلی جنس سروسز کی فہرست سے منتخب کریں ۔
+APIs ادراکی خدمات منتخب کریں ۔
+API قسم وہ اختیار منتخب کریں ۔
+منتخب متن کا ترجمہ
+مفت درجے (F0) درجے کی قیمتوں کا تعین کے سیکشن میں، منتخب کریں
+باقی فارم کے باہر بھرنے اور بنائیں بٹن دبائیں ۔
+
+4 ۔ آپ کی تصدیق کی کلید بازیافت کریں ۔
+تمام وسائل کو جانا اور Microsoft مترجم آپ اپنایا API منتخب کریں ۔
+چابیاں کے اختیار پر جائیں اور سروس تک رسائی کے لیے آپ رکنیت کی چابی نقل کریں ۔
+رکنیت کی کلید 321dcba کی طرح کچھ ہے...
+
+ازالہ نقص کاری
+
+1 ۔ اگر کوئی اپلی کیشن کا ترجمہ کیا جا رہا ہے، پڑتال کریں آپ Microsoft/yandex کی رکنیت کلید صحیح ہے ۔
+2 ۔ اگر ترجمہ اپلی کیشن فورس بغير بند کرديتا ہے/ہو جاتا ہے آپ کا ترجمہ شروع کرنے کے بعد پہلی بار لوڈ کر رہا ہے پر پھنس، جدول کا ترجمہ، اور دیگر ترتیبات میں تاخیر سے پہلے ترجمہ کرنے کا 2000 کو بھرنے اطلاقات میں اپلی کیشن پر کلک کریں ۔
+3 ۔ اگر ترجمہ اپلی کیشن ٹھیک ہے، کام لیکن اب شروع کرنے پر پھنس جاؤ، اطلاقات جدول کا ترجمہ کرنے کے لئے میں اپلی کیشن پر کلک کریں، اور پر کلک کیا تو واضح ترجمہ کیسہ کرنا پر کلک کریں ۔
+4 ۔ اگر اپلی کیشن کے کچھ حصوں کا ترجمہ نہیں کی جا رہی ہیں، اطلاقات جدول کا ترجمہ کرنے کے لئے میں اپلی کیشن پر کلک کریں، اور جارحانہ موڈ اہل بنائیں ۔
+5 ۔ اگر اپلی کیشن اب بھی فوج کو بند کرتا ہے، ترجمہ اس اپلی کیشن کے لئے نااہل اور مجھ پر حمایت ڈورا اد - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878 پر رابطہ کریں
+"</string>
+    <string name="translate_anywhere">"کسی بھی جگہ کا ترجمہ کریں."</string>
+    <string name="apps_to_translate">"اطلاقات کا ترجمہ کرنے کے لئے"</string>
+    <string name="global_settings">"ہمہ گیر سیٹنگیں"</string>
+    <string name="instructions">"ہدایات"</string>
+    <string name="pref_cat_translate_settings">"ترتیبات کا ترجمہ کریں."</string>
+    <string name="pref_cat_parts_of_app">"ترجمہ کے لیے اپلی کیشن کے حصے"</string>
+    <string name="pref_cat_other_settings">"دیگر سیٹنگیں"</string>
+    <string name="master_on_off">"ماسٹر آن/آف"</string>
+    <string name="master_on_off_summary">"اس ماڈیول کو مکمل طور پر نااہل کرنے کے لیے آف کریں"</string>
+    <string name="master_on_off_summary_off">"ماڈیول آف کر دیا گیا ہے، کوئی ایپس ترجمہ کیا جائے گا ۔ باری شروع کا استعمال کرتے ہوئے پر خودکار-ترجمہ!"</string>
+    <string name="master_on_off_summary_on">"ماڈیول پر دیا ہے، منتخب اطلاقات ترجمہ کیا جائے گا ۔ اس ماڈیول کو مکمل طور پر نااہل کرنے کے لیے آف کریں ۔"</string>
+    <string name="enable_yandex">"Yandex کی بجائے Microsoft استعمال کریں"</string>
+    <string name="enable_yandex_summary">"Microsoft کی بجائے yandex کی ترجمہ استعمال کرنے کے لئے آن کریں"</string>
+    <string name="enable_yandex_summary_off">"فی الحال مائیکروسافٹ Azure ترجمہ استعمال کرتے ہوئے ۔ Yandex کی کے ترجمہ کو استعمال کرنے کے لئے آن کریں ۔"</string>
+    <string name="enable_yandex_summary_on">"فی الحال yandex کی ترجمہ استعمال کرتے ہوئے ۔ Microsoft Azure ترجمہ استعمال کرنا بند کریں ۔"</string>
+    <string name="subKey">"Microsoft / yandex کی رکنیت کلید"</string>
+    <string name="subKey_micro">"Microsoft رکنیت کلید"</string>
+    <string name="subKey_yandex">"Yandex کی رکنیت کلید"</string>
+    <string name="subKey_summary">"Microsoft Azure یا yandex کی ترجمہ API, کے لئے رکنیت کے لیے کلید داخل کریں جو بھی اوپر فعال ہے"</string>
+    <string name="subKey_defaultValue">"آپ Microsoft یا yandex کی رکنیت کلید داخل کریں"</string>
+    <string name="transFrom">"زبان سے ترجمہ"</string>
+    <string name="transFrom_summary">"زبان اپلی کیشن اصل میں ہے ۔"</string>
+    <string name="transTo">"زبان کا ترجمہ کریں."</string>
+    <string name="transTo_summary">"زبان ہو میں ترجمہ کے لیے اپلی کیشن آپ چاہیں ۔"</string>
+    <string name="setText">"عام متن کا ترجمہ کریں."</string>
+    <string name="setText_summary_off">"نہ ترجمہ متن سیٹ استعمال کرتے ہوئے لکھا متن ۔ اہل بنانے کے لیے آن کریں ۔"</string>
+    <string name="setText_summary_on">"تحریری متن - محفوظ سیٹ کا استعمال کرتے ہوئے متن کا ترجمہ ہے ۔ نااہل کرنے کے لیے آف کریں ۔"</string>
+    <string name="setHint">"متن خانوں میں متن اشارے (خاکستری رنگ تجاویز نہیں) کا ترجمہ کریں."</string>
+    <string name="setHint_summary_off">"نہیں ترجمہ اشارہ سیٹ کا استعمال کرتے ہوئے لکھا گیا متن ۔ اہل بنانے کے لیے آن کریں ۔"</string>
+    <string name="setHint_summary_on">"اشارہ - محفوظ سیٹ کا استعمال کرتے ہوئے تحریری متن کا ترجمہ ہے ۔ نااہل کرنے کے لیے آف کریں ۔"</string>
+    <string name="webView">"متن میں اطلاقات کے اندر ویب صفحات کا ترجمہ کریں."</string>
+    <string name="webView_summary_off">"ویبویوس میں متن ترجمہ نہیں ہے ۔ اہل بنانے کے لیے آن کریں ۔"</string>
+    <string name="webView_summary_on">"متن کا ترجمہ ویب منظر کے اندر - سیف، ہو نہ کام ہمیشہ ۔ نااہل کرنے کے لیے آف کریں ۔"</string>
+    <string name="drawText">"جارحانہ موڈ"</string>
+    <string name="drawText_summary_off">"ڈراوٹی میں متن کا ترجمہ نہیں جارحانہ ہے ۔ سب سے زیادہ ناکام رہتا جب استعمال کریں ۔ اہل بنانے کے لیے آن کریں ۔"</string>
+    <string name="drawText_summary_on">"جارحانہ انداز میں ڈراوٹی - متن کا ترجمہ تجرباتی، ہو نہ کام ہمیشہ ۔ نااہل کرنے کے لیے آف کریں ۔"</string>
+    <string name="caching">"کیسہ کاری استعمال کریں"</string>
+    <string name="caching_summary_off">"نہ ترجمہ محفوظ آف لائن، ترجمہ سست جس کے نتیجے میں اور زیادہ ڈیٹا - زیادہ اطلاقات کے لئے کام کرے ۔ کرنے کے لئے ترجمہ محفوظ کریں ۔"</string>
+    <string name="caching_summary_on">"آف لائن ترجمے تیز کرنے کے لیے محفوظ کرنے کا ترجمہ اور کوائف استعمال کریں ۔ اگر آپ اپلی کیشن شروع نہیں ہے کو غیر فعال کرنے کو آف کریں ۔"</string>
+    <string name="delay">"ترجمہ سے پہلے تاخیر"</string>
+    <string name="delay_summary">"ترجمہ سے پہلے انتظار کرنے کے لئے, milliseconds میں وقت مقرر ہے ۔ طے شدہ قدر 0، ترجمہ ایپ کی جانب ٹوٹتے ہوئے ہے تو 1000-5000 کے لیے سیٹ ہے ۔"</string>
+    <string name="overRide_global">"ہمہ گیر سیٹنگیں زیر کریں"</string>
+    <string name="overRide_global_summary_off">"ہمہ گیر سیٹنگیں اس ہيںعام کے لئے باری پر صرف اس اپلی کیشن کے لیے سیٹنگیں تبدیل کرنے کے لیے استعمال کرتے ہوئے ۔"</string>
+    <string name="overRide_global_summary_on">"مقامی ترتیبات اس ہيںعام کے لئے باری بند ہمہ گیر سیٹنگیں استعمال کرنے کے لئے استعمال کرتے ہوئے ۔"</string>
+    <string name="clear_cache">"ترجمہ کیسہ صاف کرنے کے لیے کلک کریں"</string>
+    <string name="clear_cache_summary">"مندرجہ بالا اپلی کیشن کو صاف کرنے کے لیے کلک کریں کیسہ ترجمہ کی ۔ زبانوں سے تبدیل کرنے کے بعد اس کا استعمال یا تو اپلی کیشن شروع نہیں ۔"</string>
+    <string name="Afrikaans_yandex">"افريکانز"</string>
+    <string name="Amharic_yandex">"امہري زبان"</string>
+    <string name="Arabic_yandex">"عربی"</string>
+    <string name="Azerbaijani_yandex">"آذر بائیجان"</string>
+    <string name="Bashkir_yandex">"طرح"</string>
+    <string name="Belarusian_yandex">"بيلارشين"</string>
+    <string name="Bulgarian_yandex">"بلگيرين"</string>
+    <string name="Bengali_yandex">"بنگالی"</string>
+    <string name="Bosnian_yandex">"بوسنين"</string>
+    <string name="Catalan_yandex">"کٹالن"</string>
+    <string name="Cebuano_yandex">"کیبوانو"</string>
+    <string name="Czech_yandex">"کزکھ"</string>
+    <string name="Welsh_yandex">"ويلش"</string>
+    <string name="Danish_yandex">"ڈينش"</string>
+    <string name="German_yandex">"جرمن"</string>
+    <string name="Greek_yandex">"يونانی"</string>
+    <string name="English_yandex">"انگريزی"</string>
+    <string name="Esperanto_yandex">"ايسپرانٹو"</string>
+    <string name="Spanish_yandex">"سپينش"</string>
+    <string name="Estonian_yandex">"اسٹونين"</string>
+    <string name="Basque_yandex">"باسيق"</string>
+    <string name="Persian_yandex">"فارسی"</string>
+    <string name="Finnish_yandex">"فنش"</string>
+    <string name="French_yandex">"فرنچ"</string>
+    <string name="Irish_yandex">"آئرش"</string>
+    <string name="Scottish_Gaelic_yandex">"سکاٹش اسکاٹ لینڈی"</string>
+    <string name="Galician_yandex">"گالاکيئن"</string>
+    <string name="Gujarati_yandex">"گجراتی"</string>
+    <string name="Hebrew_yandex">"اسرائيلی"</string>
+    <string name="Hindi_yandex">"ہندی"</string>
+    <string name="Croatian_yandex">"کروٹيئن"</string>
+    <string name="Haitian_yandex">"ہیٹی"</string>
+    <string name="Hungarian_yandex">"ہنگرين"</string>
+    <string name="Armenian_yandex">"ارمنين"</string>
+    <string name="Indonesian_yandex">"انڈونيشين"</string>
+    <string name="Icelandic_yandex">"آئسلينڈک"</string>
+    <string name="Italian_yandex">"اطالوی"</string>
+    <string name="Japanese_yandex">"جاپانی"</string>
+    <string name="Javanese_yandex">"جاوی"</string>
+    <string name="Georgian_yandex">"جورجين"</string>
+    <string name="Kazakh_yandex">"کازکھ"</string>
+    <string name="Kannada_yandex">"کاناڈا"</string>
+    <string name="Korean_yandex">"کوريئن"</string>
+    <string name="Kyrgyz_yandex">"کائرگز"</string>
+    <string name="Latin_yandex">"لاطینی"</string>
+    <string name="Luxembourgish_yandex">"لگزمبرگی"</string>
+    <string name="Lithuanian_yandex">"لتھونيئن"</string>
+    <string name="Latvian_yandex">"لاتوين"</string>
+    <string name="Malagasy_yandex">"مالاگعسی"</string>
+    <string name="Mari_yandex">"ماڑی"</string>
+    <string name="Maori_yandex">"ماؤری"</string>
+    <string name="Macedonian_yandex">"سرب"</string>
+    <string name="Malayalam_yandex">"مالايلم"</string>
+    <string name="Mongolian_yandex">"مونگوليئن"</string>
+    <string name="Marathi_yandex">"مراٹھی"</string>
+    <string name="Hill_Mari_yandex">"ہل ماڑی"</string>
+    <string name="Malay_yandex">"مالے"</string>
+    <string name="Maltese_yandex">"مالٹيز"</string>
+    <string name="Nepali_yandex">"نیپالی"</string>
+    <string name="Dutch_yandex">"ڈچ"</string>
+    <string name="Norwegian_yandex">"نارويجين"</string>
+    <string name="Punjabi_yandex">"پنجابی"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"پولش"</string>
+    <string name="Portuguese_yandex">"پرتگال"</string>
+    <string name="Romanian_yandex">"رومانيئن"</string>
+    <string name="Russian_yandex">"رشئن"</string>
+    <string name="Sinhalese_yandex">"سنھالي زبان"</string>
+    <string name="Slovak_yandex">"سلووک"</string>
+    <string name="Slovenian_yandex">"سلووينيئن"</string>
+    <string name="Albanian_yandex">"البينيئن"</string>
+    <string name="Serbian_yandex">"سربيئن"</string>
+    <string name="Sundanese_yandex">"سندانیسی"</string>
+    <string name="Swedish_yandex">"سؤڈش"</string>
+    <string name="Swahili_yandex">"سؤاہلی"</string>
+    <string name="Tamil_yandex">"تامل"</string>
+    <string name="Telugu_yandex">"تيلگو"</string>
+    <string name="Tajik_yandex">"تاجک"</string>
+    <string name="Thai_yandex">"تھائ"</string>
+    <string name="Tagalog_yandex">"ٹیگا لوگ"</string>
+    <string name="Turkish_yandex">"ترکش"</string>
+    <string name="Tatar_yandex">"ٹاٹر"</string>
+    <string name="Udmurt_yandex">"یودمرٹ"</string>
+    <string name="Ukrainian_yandex">"يوکرينيئن"</string>
+    <string name="Urdu_yandex">"اردو"</string>
+    <string name="Uzbek_yandex">"ازبيک"</string>
+    <string name="Vietnamese_yandex">"ويتناميز"</string>
+    <string name="Xhosa_yandex">"ایکسہوسا"</string>
+    <string name="Yiddish_yandex">"یدش"</string>
+    <string name="Chinese_yandex">"چائنيز"</string>
+    <string name="Afrikaans_micro">"افريکانز"</string>
+    <string name="Arabic_micro">"عربی"</string>
+    <string name="Bosnian_Latin_micro">"بوسنیائی لاطینی"</string>
+    <string name="Bulgarian_micro">"بلگيرين"</string>
+    <string name="Catalan_micro">"کٹالن"</string>
+    <string name="Chinese_Simplified_micro">"آسان چائنيز"</string>
+    <string name="Chinese_Traditional_micro">"ثقافتی چائنيز"</string>
+    <string name="Croatian_micro">"کروٹيئن"</string>
+    <string name="Czech_micro">"کزکھ"</string>
+    <string name="Danish_micro">"ڈينش"</string>
+    <string name="Dutch_micro">"ڈچ"</string>
+    <string name="English_micro">"انگريزی"</string>
+    <string name="Estonian_micro">"اسٹونين"</string>
+    <string name="Finnish_micro">"فنش"</string>
+    <string name="French_micro">"فرنچ"</string>
+    <string name="German_micro">"جرمن"</string>
+    <string name="Greek_micro">"يونانی"</string>
+    <string name="Haitian_Creole_micro">"ہيتيئن کريول"</string>
+    <string name="Hebrew_micro">"اسرائيلی"</string>
+    <string name="Hindi_micro">"ہندی"</string>
+    <string name="Hmong_Daw_micro">"ہمونگ Daw"</string>
+    <string name="Hungarian_micro">"ہنگرين"</string>
+    <string name="Indonesian_micro">"انڈونيشين"</string>
+    <string name="Italian_micro">"اطالوی"</string>
+    <string name="Japanese_micro">"جاپانی"</string>
+    <string name="Kiswahili_micro">"سواحلی"</string>
+    <string name="Klingon_micro">"کلنگاون"</string>
+    <string name="Klingon_pIqaD_micro">"کلنگاون پاقاڈ"</string>
+    <string name="Korean_micro">"کوريئن"</string>
+    <string name="Latvian_micro">"لاتوين"</string>
+    <string name="Lithuanian_micro">"لتھونيئن"</string>
+    <string name="Malay_micro">"مالے"</string>
+    <string name="Maltese_micro">"مالٹيز"</string>
+    <string name="Norwegian_micro">"نارويجين"</string>
+    <string name="Persian_micro">"فارسی"</string>
+    <string name="Polish_micro">"پولش"</string>
+    <string name="Portuguese_micro">"پرتگال"</string>
+    <string name="Queretaro_Otomi_micro">"قوریٹآرو اوٹوما"</string>
+    <string name="Romanian_micro">"رومانيئن"</string>
+    <string name="Russian_micro">"رشئن"</string>
+    <string name="Serbian_Cyrillic_micro">"سربیائی سیریلیائی"</string>
+    <string name="Serbian_Latin_micro">"سربیائی لاطینی"</string>
+    <string name="Slovak_micro">"سلووک"</string>
+    <string name="Slovenian_micro">"سلووينيئن"</string>
+    <string name="Spanish_micro">"سپينش"</string>
+    <string name="Swedish_micro">"سؤڈش"</string>
+    <string name="Thai_micro">"تھائ"</string>
+    <string name="Turkish_micro">"ترکش"</string>
+    <string name="Ukrainian_micro">"يوکرينيئن"</string>
+    <string name="Urdu_micro">"اردو"</string>
+    <string name="Vietnamese_micro">"ويتناميز"</string>
+    <string name="Welsh_micro">"ويلش"</string>
+    <string name="Yucatec_Maya_micro">"یوکاٹیک مایا"</string>
+</resources>

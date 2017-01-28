@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"アプリケーションの一覧の読み込み中は、お待ちをください。"</string>
+    <string name="clear_cache_error">"いくつかのエラーです。変換キャッシュをクリアできませんでした!"</string>
+    <string name="clear_cache_success">"このアプリが消去されているために、キャッシュを変換!"</string>
+	<string name="how_to_use">"アプリケーションを使用するには、方法
+
+このアプリケーションは、マイクロソフトまたは Yandex 翻訳からキーにサインアップする必要があります。
+Yandex 翻訳より多くの言語をサポートしている、はるかに簡単にサインアップ プロセスには、いいえクレジット カードが必要です。
+マイクロソフト翻訳はより良い結果を与えるが、サインアップするクレジット カードが必要です。(しかし、何も心配しないで起訴)。
+
+1. グローバル設定タブで Yandex を使用して、Microsoft を使用して他を無効にする場合は代わりに、マイクロソフトの Yandex の使用を有効にします。
+1. グローバル設定タブで Microsoft/Yandex サブスクリプション キーの入力をタップし、入力対応するキー (下からの指示を参照してください)。
+2. 選択、言語から翻訳、言語への変換します。
+3. 翻訳タブにアプリ、それの横にあるチェック ボックスをクリックして、変換するアプリを見つけます。チェック ボックスが表示されない場合は、横向きに横にあなたの携帯電話を回転させてみてください。
+4 を閉じ、翻訳アプリを再起動 - それは翻訳されるべきである!
+
+警告 - いくつかのアプリが強制終了します。トラブルシューティングのセクションを参照してください。
+
+YANDEX がサブスクリプション キーを変換を取得する方法
+
+1. Yandex サイトへ https://tech.yandex.com/keys/get/?service=trnsl
+2 アカウントがない場合は、新しいアカウントの登録し、ログインをクリックします。
+3. 署名した後まで、ユーザー契約に同意するをクリックして、API キーを取得をクリックします。
+4. あなたのキーを受信しました!それは trnsl.1.1.201701 のようなものです.
+
+どのように取得する MICROSOFT AZURE サブスクリプション キーを翻訳
+
+1. http://azure.com で Microsoft Azure アカウントにサインアップします。
+
+2. アカウント取得したら、http://portal.azure.com で Azure ポータルにサインインします。
+
+3. Azure アカウントに Microsoft Translator API サブスクリプションを追加します。
+従量課金制のサブスクリプションを選択します。クレジット カードが必要になりますが、心配しないで、何もが課金されます。
++ 新しいを選択オプション。
+サービスの一覧から、情報を選択します。
+認知サービス Api を選択します。
+API の種類] オプションを選択します。
+選択したテキストの翻訳
+価格層では、無料の層 (F0) を選択します。
+フォームの残りの部分に記入し、作成ボタンを押します。
+
+4. 認証キーを取得します。
+すべてのリソースに移動しを購読して Microsoft Translator API を選択します。
+キーのオプションに移動し、サービスにアクセスするサブスクリプション キーをコピーします。
+サブスクリプション キーは、321dcba のようなものです.
+
+トラブルシューティング
+
+1 アプリが翻訳されていない場合は、Microsoft/Yandex のキーコードが正しいことを確認します。
+2. 翻訳アプリ強制終了/取得、翻訳開始後初めて読み込むときに引っかかって、翻訳タブ、およびその他の設定で 2000年に変換する前に遅延を入力するアプリでアプリをクリックします。
+3. 翻訳アプリを使用し、正常に動作が今開始にはまり、翻訳タブ、アプリでアプリをクリックしてクリックして翻訳キャッシュのクリアをクリックします。
+4. アプリのいくつかの部分が翻訳されていない場合タブを変換するアプリでアプリをクリックし、積極的なモードを有効にします。
+5. 場合アプリはまだ強制終了、このアプリのための翻訳を無効にしてサポート スレッド XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878 で私に連絡
+"</string>
+    <string name="translate_anywhere">"どこを翻訳します。"</string>
+    <string name="apps_to_translate">"翻訳するアプリ"</string>
+    <string name="global_settings">"グローバル設定"</string>
+    <string name="instructions">"指示"</string>
+    <string name="pref_cat_translate_settings">"設定に変換します。"</string>
+    <string name="pref_cat_parts_of_app">"翻訳するアプリの部分"</string>
+    <string name="pref_cat_other_settings">"その他の設定"</string>
+    <string name="master_on_off">"オン/オフ"</string>
+    <string name="master_on_off_summary">"このモジュールを完全に無効にするをオフに"</string>
+    <string name="master_on_off_summary_off">"モジュールがオフになっている、アプリは変換されません。電源自動翻訳を使用して開始に!"</string>
+    <string name="master_on_off_summary_on">"モジュールがオン、選択したアプリが変換されます。このモジュールを完全に無効にするをオフにします。"</string>
+    <string name="enable_yandex">"代わりに、マイクロソフト Yandex を使用します。"</string>
+    <string name="enable_yandex_summary">"オンにすると、Microsoft ではなく Yandex 翻訳を使用"</string>
+    <string name="enable_yandex_summary_off">"現在、Microsoft Azure 翻訳を使用してください。Yandex の翻訳を使用するをオンにします。"</string>
+    <string name="enable_yandex_summary_on">"Yandex の翻訳を使用して現在。マイクロソフト Azure の翻訳を使用するオフにします。"</string>
+    <string name="subKey">"マイクロソフト/Yandex サブスクリプション キー"</string>
+    <string name="subKey_micro">"Microsoft サブスクリプション キー"</string>
+    <string name="subKey_yandex">"Yandex サブスクリプション キー"</string>
+    <string name="subKey_summary">"Microsoft Azure または Yandex 翻訳 API のサブスクリプション キーを入力上記のどちらかが有効な"</string>
+    <string name="subKey_defaultValue">"マイクロソフトまたは Yandex サブスクリプション キーを入力します。"</string>
+    <string name="transFrom">"言語から翻訳します。"</string>
+    <string name="transFrom_summary">"言語アプリはもともとです。"</string>
+    <string name="transTo">"言語への翻訳します。"</string>
+    <string name="transTo_summary">"言語に翻訳するアプリが欲しい。"</string>
+    <string name="setText">"通常のテキストを翻訳します。"</string>
+    <string name="setText_summary_off">"翻訳テキストではなくテキストの設定を使用して記述します。有効にするをオンにします。"</string>
+    <string name="setText_summary_on">"テキスト - 安全な設定を使用して記述されたテキストの翻訳。無効にするをオフにします。"</string>
+    <string name="setHint">"テキスト ボックス内のテキスト ヒント (グレー色の提案) を翻訳します。"</string>
+    <string name="setHint_summary_off">"翻訳テキストではなく設定のヒントを使用して書かれました。有効にするをオンにします。"</string>
+    <string name="setHint_summary_on">"設定のヒント - 安全を使用して書かれたテキストを翻訳します。無効にするをオフにします。"</string>
+    <string name="webView">"アプリ内の Web ページ内のテキストを翻訳します。"</string>
+    <string name="webView_summary_off">"Web 表示でテキストを変換しません。有効にするをオンにします。"</string>
+    <string name="webView_summary_on">"テキストの翻訳 WebView - 内部安全が常に動作しません。無効にするをオフにします。"</string>
+    <string name="drawText">"アグレッシブ モード"</string>
+    <string name="drawText_summary_off">"ない積極的に drawText でテキストを翻訳します。とき上記のすべてが失敗した場合に使用します。有効にするをオンにします。"</string>
+    <string name="drawText_summary_on">"DrawText - の翻訳テキストが積極的に実験的な可能性があります作業常にではありません。無効にするをオフにします。"</string>
+    <string name="caching">"キャッシュを使用"</string>
+    <string name="caching_summary_off">"しないで保存、オフラインの翻訳翻訳遅い結果と高いデータ - より多くのアプリケーションのために働く可能性があります。翻訳保存に回します。"</string>
+    <string name="caching_summary_on">"スピードアップするオフラインの翻訳を保存変換し、データを使用します。アプリが起動しない場合を無効にするをオフにします。"</string>
+    <string name="delay">"翻訳前に、の遅延"</string>
+    <string name="delay_summary">"翻訳する前に待機するミリ秒単位の時間を設定します。既定値は 0、翻訳アプリがクラッシュする場合は 1000-5000 に設定です。"</string>
+    <string name="overRide_global">"グローバル設定をオーバーライドします。"</string>
+    <string name="overRide_global_summary_off">"このアプリ ターンのだけこのアプリの設定を変更するにグローバル設定を使用します。"</string>
+    <string name="overRide_global_summary_on">"グローバル設定を使用するこのアプリ ターンのオフのローカル設定を使用します。"</string>
+    <string name="clear_cache">"変換キャッシュをオフにします"</string>
+    <string name="clear_cache_summary">"アプリをオフにするためには、上記をクリックしてには、キャッシュを翻訳します。/の言語からを変更した後を使用して、このアプリが起動しない場合、または。"</string>
+    <string name="Afrikaans_yandex">"アフリカーンス語"</string>
+    <string name="Amharic_yandex">"アムハラ語"</string>
+    <string name="Arabic_yandex">"アラビア語"</string>
+    <string name="Azerbaijani_yandex">"アゼルバイジャン"</string>
+    <string name="Bashkir_yandex">"バシキール語"</string>
+    <string name="Belarusian_yandex">"ベラルーシ語"</string>
+    <string name="Bulgarian_yandex">"ブルガリア語"</string>
+    <string name="Bengali_yandex">"ベンガル語"</string>
+    <string name="Bosnian_yandex">"ボスニア語"</string>
+    <string name="Catalan_yandex">"カタロニア語"</string>
+    <string name="Cebuano_yandex">"セブアノ語"</string>
+    <string name="Czech_yandex">"チェコ語"</string>
+    <string name="Welsh_yandex">"ウェールズ語"</string>
+    <string name="Danish_yandex">"デンマーク語"</string>
+    <string name="German_yandex">"ドイツ語"</string>
+    <string name="Greek_yandex">"ギリシャ語"</string>
+    <string name="English_yandex">"英語"</string>
+    <string name="Esperanto_yandex">"エスペラント語"</string>
+    <string name="Spanish_yandex">"スペイン語"</string>
+    <string name="Estonian_yandex">"エストニア語"</string>
+    <string name="Basque_yandex">"バスク語"</string>
+    <string name="Persian_yandex">"ペルシャ語"</string>
+    <string name="Finnish_yandex">"フィンランド語"</string>
+    <string name="French_yandex">"フランス語"</string>
+    <string name="Irish_yandex">"アイルランド語"</string>
+    <string name="Scottish_Gaelic_yandex">"スコットランド ・ ゲール語"</string>
+    <string name="Galician_yandex">"ガリシア語"</string>
+    <string name="Gujarati_yandex">"グジャラート語"</string>
+    <string name="Hebrew_yandex">"ヘブライ語"</string>
+    <string name="Hindi_yandex">"ヒンディー語"</string>
+    <string name="Croatian_yandex">"クロアチア語"</string>
+    <string name="Haitian_yandex">"ハイチ"</string>
+    <string name="Hungarian_yandex">"ハンガリー語"</string>
+    <string name="Armenian_yandex">"アルメニア語"</string>
+    <string name="Indonesian_yandex">"インドネシア語"</string>
+    <string name="Icelandic_yandex">"アイスランド語"</string>
+    <string name="Italian_yandex">"イタリア語"</string>
+    <string name="Japanese_yandex">"日本語"</string>
+    <string name="Javanese_yandex">"ジャワ語"</string>
+    <string name="Georgian_yandex">"グルジア語"</string>
+    <string name="Kazakh_yandex">"カザフ語"</string>
+    <string name="Kannada_yandex">"カナラ語"</string>
+    <string name="Korean_yandex">"韓国語"</string>
+    <string name="Kyrgyz_yandex">"キルギス語"</string>
+    <string name="Latin_yandex">"ラテン語"</string>
+    <string name="Luxembourgish_yandex">"ルクセンブルク語"</string>
+    <string name="Lithuanian_yandex">"リトアニア語"</string>
+    <string name="Latvian_yandex">"ラトビア語"</string>
+    <string name="Malagasy_yandex">"マダガスカル"</string>
+    <string name="Mari_yandex">"マリ"</string>
+    <string name="Maori_yandex">"マオリ語"</string>
+    <string name="Macedonian_yandex">"マケドニアの"</string>
+    <string name="Malayalam_yandex">"マラヤラム語"</string>
+    <string name="Mongolian_yandex">"モンゴル語"</string>
+    <string name="Marathi_yandex">"マラーティー語"</string>
+    <string name="Hill_Mari_yandex">"丘マリ"</string>
+    <string name="Malay_yandex">"マレー語"</string>
+    <string name="Maltese_yandex">"マルタ語"</string>
+    <string name="Nepali_yandex">"ネパール語"</string>
+    <string name="Dutch_yandex">"オランダ語"</string>
+    <string name="Norwegian_yandex">"ノルウェー語"</string>
+    <string name="Punjabi_yandex">"パンジャブ語"</string>
+    <string name="Papiamento_yandex">"パピアメント語"</string>
+    <string name="Polish_yandex">"ポーランド語"</string>
+    <string name="Portuguese_yandex">"ポルトガル語"</string>
+    <string name="Romanian_yandex">"ルーマニア語"</string>
+    <string name="Russian_yandex">"ロシア語"</string>
+    <string name="Sinhalese_yandex">"シンハラ語"</string>
+    <string name="Slovak_yandex">"スロバキア語"</string>
+    <string name="Slovenian_yandex">"スロベニア語"</string>
+    <string name="Albanian_yandex">"アルバニア語"</string>
+    <string name="Serbian_yandex">"セルビア語"</string>
+    <string name="Sundanese_yandex">"スンダ語"</string>
+    <string name="Swedish_yandex">"スウェーデン語"</string>
+    <string name="Swahili_yandex">"スワヒリ語"</string>
+    <string name="Tamil_yandex">"タミール語"</string>
+    <string name="Telugu_yandex">"テルグ語"</string>
+    <string name="Tajik_yandex">"タジク語"</string>
+    <string name="Thai_yandex">"タイ語"</string>
+    <string name="Tagalog_yandex">"タガログ語"</string>
+    <string name="Turkish_yandex">"トルコ語"</string>
+    <string name="Tatar_yandex">"タタール語"</string>
+    <string name="Udmurt_yandex">"ウドムルト語"</string>
+    <string name="Ukrainian_yandex">"ウクライナ語"</string>
+    <string name="Urdu_yandex">"ウルドゥ語"</string>
+    <string name="Uzbek_yandex">"ウズベク語"</string>
+    <string name="Vietnamese_yandex">"ベトナム語"</string>
+    <string name="Xhosa_yandex">"コサ語"</string>
+    <string name="Yiddish_yandex">"イディッシュ語"</string>
+    <string name="Chinese_yandex">"中国語"</string>
+    <string name="Afrikaans_micro">"アフリカーンス語"</string>
+    <string name="Arabic_micro">"アラビア語"</string>
+    <string name="Bosnian_Latin_micro">"ボスニア語ラテン語"</string>
+    <string name="Bulgarian_micro">"ブルガリア語"</string>
+    <string name="Catalan_micro">"カタロニア語"</string>
+    <string name="Chinese_Simplified_micro">"簡体字中国語"</string>
+    <string name="Chinese_Traditional_micro">"繁体字中国語"</string>
+    <string name="Croatian_micro">"クロアチア語"</string>
+    <string name="Czech_micro">"チェコ語"</string>
+    <string name="Danish_micro">"デンマーク語"</string>
+    <string name="Dutch_micro">"オランダ語"</string>
+    <string name="English_micro">"英語"</string>
+    <string name="Estonian_micro">"エストニア語"</string>
+    <string name="Finnish_micro">"フィンランド語"</string>
+    <string name="French_micro">"フランス語"</string>
+    <string name="German_micro">"ドイツ語"</string>
+    <string name="Greek_micro">"ギリシャ語"</string>
+    <string name="Haitian_Creole_micro">"ハイチ語"</string>
+    <string name="Hebrew_micro">"ヘブライ語"</string>
+    <string name="Hindi_micro">"ヒンディー語"</string>
+    <string name="Hmong_Daw_micro">"もん族 Daw"</string>
+    <string name="Hungarian_micro">"ハンガリー語"</string>
+    <string name="Indonesian_micro">"インドネシア語"</string>
+    <string name="Italian_micro">"イタリア語"</string>
+    <string name="Japanese_micro">"日本語"</string>
+    <string name="Kiswahili_micro">"スワヒリ語"</string>
+    <string name="Klingon_micro">"クリンゴン語"</string>
+    <string name="Klingon_pIqaD_micro">"クリンゴン pIqaD"</string>
+    <string name="Korean_micro">"韓国語"</string>
+    <string name="Latvian_micro">"ラトビア語"</string>
+    <string name="Lithuanian_micro">"リトアニア語"</string>
+    <string name="Malay_micro">"マレー語"</string>
+    <string name="Maltese_micro">"マルタ語"</string>
+    <string name="Norwegian_micro">"ノルウェー語"</string>
+    <string name="Persian_micro">"ペルシャ語"</string>
+    <string name="Polish_micro">"ポーランド語"</string>
+    <string name="Portuguese_micro">"ポルトガル語"</string>
+    <string name="Queretaro_Otomi_micro">"ケレタロ大富"</string>
+    <string name="Romanian_micro">"ルーマニア語"</string>
+    <string name="Russian_micro">"ロシア語"</string>
+    <string name="Serbian_Cyrillic_micro">"セルビアのキりル文字"</string>
+    <string name="Serbian_Latin_micro">"セルビア語ラテン語"</string>
+    <string name="Slovak_micro">"スロバキア語"</string>
+    <string name="Slovenian_micro">"スロベニア語"</string>
+    <string name="Spanish_micro">"スペイン語"</string>
+    <string name="Swedish_micro">"スウェーデン語"</string>
+    <string name="Thai_micro">"タイ語"</string>
+    <string name="Turkish_micro">"トルコ語"</string>
+    <string name="Ukrainian_micro">"ウクライナ語"</string>
+    <string name="Urdu_micro">"ウルドゥ語"</string>
+    <string name="Vietnamese_micro">"ベトナム語"</string>
+    <string name="Welsh_micro">"ウェールズ語"</string>
+    <string name="Yucatec_Maya_micro">"ユカテク語マヤ"</string>
+</resources>

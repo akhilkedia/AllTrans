@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Chaje lis nan aplikasyon pou - Tanpri ret tann"</string>
+    <string name="clear_cache_error">"Kèk erè. Te kapab pa t ' konprann tradiksyon kache!"</string>
+    <string name="clear_cache_success">"Tradwi kache pou app sa a ki te effacés!"</string>
+	<string name="how_to_use">"KIJAN POU YO ITILIZE APLIKASYON
+
+Aplikasyon sa a mande ou pou l siyen pou yon kle Microsoft oubyen Yandex Définition.
+Yandex Définition sipòte lang plis, gen yon gwo pi fasil inscription pwosesis ak egzije pou pa kat kredi.
+Microsoft Définition bay pi bon rezilta, men, mande yon kat kredi pou enskri. (Men, bat kò ou, pa gen anyen yo va akize.)
+
+1. nan onglet Global nòmal, pèmèt itilize Yandex olye de Microsoft si ou vle sèvi ak Yandex, se lòt enfim pou itilize Microsoft.
+1. nan onglet Global nòmal, frape antre Microsoft/Yandex abònman kle, D' korespondan kle a (gade sa pou nou fè depi anba).
+2. chwazi a tradwi nan lang ak tradwi pou lang.
+3. nan pou Définition onglet Applications, jwenn app a ou vle pou tradwi, klike à tou pre l. Si à la pa apab wè, eseye rotation detravè telefòn ou antre nan jaden flè mòd.
+4. fèmen ak rekòmanse app a ou vle traduit - li ta dwe ke!
+
+AVÈTI - applications kèk fòs tou pwe. Gade seksyon Dépannage a.
+
+KIJAN POU FÈ YANDEX TRADWI ABÒNMAN KLE
+
+1. ale sit entènèt Yandex - https://tech.yandex.com/keys/get/?service=trnsl
+2. Si ou pa gen deja tou, klike register epi siy leve pou yon kont.
+3. Apre yo siyen leve kanpe, yo dakò pou moun kap itilize li an kontra ak klike jwenn API kle.
+4. ou te resevwa anpil siksè kle ou! Sa se yon bagay tankou trnsl.1.1.201701...
+
+KIJAN POU PRAN BLE MICROSOFT TRADWI ABÒNMAN KLE
+
+1. ka siyen yon kont Microsoft Azure nan http://azure.com
+
+2. Apre ou bezwen konnen, siyen nan ki anfas yon bèl Portal, Arizona nan http://portal.azure.com
+
+3. ajoute yon abònman Microsoft tradiktè API anfas yon bèl kont anbank ou.
+Chwazi yon abònman paiement. Yo pral mande pou yon kat kredi, men, pa bay tèt li pwoblèm, pa gen anyen ap chaje.
+Fè chwa a + nouvo opsyon.
+Fè chwa entèlijans nan lis sèvis.
+Fè chwa APIs entelektyèl sèvis.
+API tip yon opsyon pou chwazi.
+Fè chwa tradiksyon tèks
+Nan seksyon Prix Niveau, fè chwa lib Niveau (F0)
+Ranpli lòt fòm, ak lapwès bouton Créer la.
+
+4. rekipere kle D' ou.
+Ale nan tout resous yo epi chwazi a Microsoft tradiktè API ou souscrit pou yo.
+Ale nan yon kle opsyon yo ak copie ou abònman kle pou jwenn sèvis la.
+Abònman kle a se yon bagay tankou 321dcba...
+
+DÉPANNAGE
+
+1. Si pa gen app te ke, Tyeke kle abònman Microsoft/Yandex ou kòrèk.
+2. Si traduit app fòs se/pare a te kole nan chaje premye fwa a, apre ou konmanse traduction, klike sou app nan Applications tradwi onglet yo, ak nan lòt nòmal kont li nan delè devan Traduction pou lane 2000.
+3. Si app traduit a te itilize pou travay byen, men, koulye a bloke sou kòmanse, klike sou app nan Applications pou tradwi onglet ak klike sou klike pou konnen tradiksyon kache.
+4. Si gen kèk pati nan app a pa te ke, klike sou app nan Applications pou tradwi onglet pèmèt mòd agresif.
+5. Si app a toujou fòs ap fèmen nan dat, enfim tradiksyon pou app sa a e kontak m' sou sipò fil sou XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Tradwi kote"</string>
+    <string name="apps_to_translate">"Applications pou tradwi"</string>
+    <string name="global_settings">"Dantèl mondyal"</string>
+    <string name="instructions">"Sa pou nou fè"</string>
+    <string name="pref_cat_translate_settings">"Tradwi nòmal"</string>
+    <string name="pref_cat_parts_of_app">"Pati nan App pou tradwi"</string>
+    <string name="pref_cat_other_settings">"Lòt nòmal"</string>
+    <string name="master_on_off">"Mèt sou/wete"</string>
+    <string name="master_on_off_summary">"Fèmen pou nèt rann enfim modile sa a"</string>
+    <string name="master_on_off_summary_off">"Modile yo vin, applications pa pral ke. Vire sou kòmanse w ap itilize oto-tradwi!"</string>
+    <string name="master_on_off_summary_on">"Modile yo vin, a ke sélectionné applications. Fèmen pou nèt rann enfim modile sa a."</string>
+    <string name="enable_yandex">"Sèvi ak Yandex olye de Microsoft"</string>
+    <string name="enable_yandex_summary">"Vire sou kote pou yo itilize Yandex tradiksyon olye de Microsoft"</string>
+    <string name="enable_yandex_summary_off">"Aktyèlman ap itilize tradiksyon ble Microsoft. Vire sou kote pou yo itilize Yandex tradiksyon."</string>
+    <string name="enable_yandex_summary_on">"Aktyèlman ap itilize Yandex tradiksyon. Fèmen pou itilize tradiksyon ble Microsoft."</string>
+    <string name="subKey">"Microsoft / Yandex abònman kle"</string>
+    <string name="subKey_micro">"Microsoft abònman kle"</string>
+    <string name="subKey_yandex">"Yandex abònman kle"</string>
+    <string name="subKey_summary">"Antre kle abònman a pou Microsoft Azure oubyen Yandex tradiksyon API, kèlkelanswa pèmèt pi wo pase"</string>
+    <string name="subKey_defaultValue">"Antre Microsoft w lan oswa Yandex abònman kle"</string>
+    <string name="transFrom">"Tradwi nan lang"</string>
+    <string name="transFrom_summary">"Lang app a été nan."</string>
+    <string name="transTo">"Tradwi pou lang"</string>
+    <string name="transTo_summary">"Lang ou vle app pou fè tradwi."</string>
+    <string name="setText">"Tradwi tèks nòmal"</string>
+    <string name="setText_summary_off">"Pa Traduction tèks ekri itilize tèks etabli. Vire sou kote pou pèmèt Ameriken."</string>
+    <string name="setText_summary_on">"Traduction tèks ekri itilize etabli tèks - sekirite. Fèmen pou rann enfim."</string>
+    <string name="setHint">"Tradwi tèks sijesyon (Gray-koulè sigjesyon) nan tèks bwat yo"</string>
+    <string name="setHint_summary_off">"Pa Traduction tèks ekri itilize etabli Conseil. Vire sou kote pou pèmèt Ameriken."</string>
+    <string name="setHint_summary_on">"Traduction tèks ekri itilize etabli Conseil - sekirite. Fèmen pou rann enfim."</string>
+    <string name="webView">"Tradwi tèks nan paj entènèt anndan Applications"</string>
+    <string name="webView_summary_off">"Pa Traduction tèks nan WebViews. Vire sou kote pou pèmèt Ameriken."</string>
+    <string name="webView_summary_on">"Traduction tèks anndan WebView - k'ap sove, yo gen dwa pa mache toujou. Fèmen pou rann enfim."</string>
+    <string name="drawText">"Agresif mòd"</string>
+    <string name="drawText_summary_off">"Pa antandi traduction tèks nan drawText. Sèvi ak lè tout pi wo pase tonbe. Vire sou kote pou pèmèt Ameriken."</string>
+    <string name="drawText_summary_on">"Traduction antandi tèks nan drawText - sperimantal, pou pat travay toujou. Fèmen pou rann enfim."</string>
+    <string name="caching">"Sèvi ak en"</string>
+    <string name="caching_summary_off">"Pa enregistrement tradiksyon hors, tradwi sa plus ak pi wo done - men ka travay pou plis applications. Vire sou pou sove tradiksyon."</string>
+    <string name="caching_summary_on">"Enregistrement tradiksyon hors pou li pwese tradwi ak epi itilize enfòmasyon. Fèmen pou rann enfim si app ou pa kòmanse."</string>
+    <string name="delay">"Mete anreta devan Traduction"</string>
+    <string name="delay_summary">"Mete lè a nan millisecondes pou ret tann devan traduction. Valè defo se 0, li etabli pou 1000-5000 si se traduit app a."</string>
+    <string name="overRide_global">"Remplacer mondyal nòmal"</string>
+    <string name="overRide_global_summary_off">"W ap itilize Global nòmal pou sa a app. vire sou pou chanje dantèl sèlman pou app sa a."</string>
+    <string name="overRide_global_summary_on">"W ap itilize lokal nòmal pou sa a app. vire sou pou yo itilize Global nòmal."</string>
+    <string name="clear_cache">"Sur pou kache tradiksyon"</string>
+    <string name="clear_cache_summary">"CI-dessus pou la app Sur la tradwi kache. Itilize sa apwè yo te chanje pou/nan lang, oubyen si app a pa estat."</string>
+    <string name="Afrikaans_yandex">"Afrikaans"</string>
+    <string name="Amharic_yandex">"Amharique"</string>
+    <string name="Arabic_yandex">"Arabik"</string>
+    <string name="Azerbaijani_yandex">"Azèbadjanè"</string>
+    <string name="Bashkir_yandex">"Bashkir"</string>
+    <string name="Belarusian_yandex">"Biélorusse"</string>
+    <string name="Bulgarian_yandex">"Bilgari"</string>
+    <string name="Bengali_yandex">"Bengali"</string>
+    <string name="Bosnian_yandex">"Bosnyen"</string>
+    <string name="Catalan_yandex">"Catalan"</string>
+    <string name="Cebuano_yandex">"Cebuano"</string>
+    <string name="Czech_yandex">"Tchekoslovaki"</string>
+    <string name="Welsh_yandex">"Welsh"</string>
+    <string name="Danish_yandex">"Danwa"</string>
+    <string name="German_yandex">"Alman"</string>
+    <string name="Greek_yandex">"Grèk"</string>
+    <string name="English_yandex">"Angle"</string>
+    <string name="Esperanto_yandex">"L'"</string>
+    <string name="Spanish_yandex">"Panyòl"</string>
+    <string name="Estonian_yandex">"Estoni"</string>
+    <string name="Basque_yandex">"Basque"</string>
+    <string name="Persian_yandex">"Pèsyann"</string>
+    <string name="Finnish_yandex">"Fenlandè"</string>
+    <string name="French_yandex">"Fwansè"</string>
+    <string name="Irish_yandex">"Ilandè"</string>
+    <string name="Scottish_Gaelic_yandex">"Palman Scottish Gaelèk"</string>
+    <string name="Galician_yandex">"Galicien"</string>
+    <string name="Gujarati_yandex">"Goudjarati"</string>
+    <string name="Hebrew_yandex">"Ebre"</string>
+    <string name="Hindi_yandex">"Lang peyi Lend"</string>
+    <string name="Croatian_yandex">"Kwoasyen"</string>
+    <string name="Haitian_yandex">"Ayisyen an"</string>
+    <string name="Hungarian_yandex">"Ongaryen"</string>
+    <string name="Armenian_yandex">"Ameni"</string>
+    <string name="Indonesian_yandex">"Endonezi"</string>
+    <string name="Icelandic_yandex">"Langues"</string>
+    <string name="Italian_yandex">"Italyen"</string>
+    <string name="Japanese_yandex">"Japonè"</string>
+    <string name="Javanese_yandex">"Javanese"</string>
+    <string name="Georgian_yandex">"Jòjyen"</string>
+    <string name="Kazakh_yandex">"Kazakh"</string>
+    <string name="Kannada_yandex">"Kannara"</string>
+    <string name="Korean_yandex">"Koreyen"</string>
+    <string name="Kyrgyz_yandex">"Kirghize"</string>
+    <string name="Latin_yandex">"Latin"</string>
+    <string name="Luxembourgish_yandex">"""</string>
+    <string name="Lithuanian_yandex">"Lituanien"</string>
+    <string name="Latvian_yandex">"Lettonie"</string>
+    <string name="Malagasy_yandex">"Malgache"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maori"</string>
+    <string name="Macedonian_yandex">"Masedonyen"</string>
+    <string name="Malayalam_yandex">"Malayalam"</string>
+    <string name="Mongolian_yandex">"Mongole"</string>
+    <string name="Marathi_yandex">"Marathi"</string>
+    <string name="Hill_Mari_yandex">"Hill Mari"</string>
+    <string name="Malay_yandex">"Malais"</string>
+    <string name="Maltese_yandex">"Malte"</string>
+    <string name="Nepali_yandex">"Népalais"</string>
+    <string name="Dutch_yandex">"Olandè"</string>
+    <string name="Norwegian_yandex">"Nòvejyen"</string>
+    <string name="Punjabi_yandex">"Pendjab"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Lapolòy"</string>
+    <string name="Portuguese_yandex">"Pòtigè"</string>
+    <string name="Romanian_yandex">"Romanyen"</string>
+    <string name="Russian_yandex">"Wis"</string>
+    <string name="Sinhalese_yandex">"Lès"</string>
+    <string name="Slovak_yandex">"Slovaki"</string>
+    <string name="Slovenian_yandex">"Sloveni"</string>
+    <string name="Albanian_yandex">"Albanyen"</string>
+    <string name="Serbian_yandex">"Sèb"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"Syedwa"</string>
+    <string name="Swahili_yandex">"Swahili"</string>
+    <string name="Tamil_yandex">"Tamil"</string>
+    <string name="Telugu_yandex">"Télougou"</string>
+    <string name="Tajik_yandex">"Tadjikistan"</string>
+    <string name="Thai_yandex">"Pon zanmitay Tayilandè"</string>
+    <string name="Tagalog_yandex">"Tagalòg"</string>
+    <string name="Turkish_yandex">"Tik"</string>
+    <string name="Tatar_yandex">"Tatar"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Ikrenyen"</string>
+    <string name="Urdu_yandex">"Oudou"</string>
+    <string name="Uzbek_yandex">"Uzbek"</string>
+    <string name="Vietnamese_yandex">"Vyètnamyen"</string>
+    <string name="Xhosa_yandex">"Xhosa"</string>
+    <string name="Yiddish_yandex">"Yiddish"</string>
+    <string name="Chinese_yandex">"Chinwa"</string>
+    <string name="Afrikaans_micro">"Afrikaans"</string>
+    <string name="Arabic_micro">"Arabik"</string>
+    <string name="Bosnian_Latin_micro">"Latin Bosnyen"</string>
+    <string name="Bulgarian_micro">"Bilgari"</string>
+    <string name="Catalan_micro">"Catalan"</string>
+    <string name="Chinese_Simplified_micro">"Chinwa senplifye"</string>
+    <string name="Chinese_Traditional_micro">"Chinwa tradisyonèl"</string>
+    <string name="Croatian_micro">"Kwoasyen"</string>
+    <string name="Czech_micro">"Tchekoslovaki"</string>
+    <string name="Danish_micro">"Danwa"</string>
+    <string name="Dutch_micro">"Olandè"</string>
+    <string name="English_micro">"Angle"</string>
+    <string name="Estonian_micro">"Estoni"</string>
+    <string name="Finnish_micro">"Fenlandè"</string>
+    <string name="French_micro">"Fwansè"</string>
+    <string name="German_micro">"Alman"</string>
+    <string name="Greek_micro">"Grèk"</string>
+    <string name="Haitian_Creole_micro">"Kreyòl Ayisyen"</string>
+    <string name="Hebrew_micro">"Ebre"</string>
+    <string name="Hindi_micro">"Lang peyi Lend"</string>
+    <string name="Hmong_Daw_micro">"Montayn Hmong Daw"</string>
+    <string name="Hungarian_micro">"Ongaryen"</string>
+    <string name="Indonesian_micro">"Endonezi"</string>
+    <string name="Italian_micro">"Italyen"</string>
+    <string name="Japanese_micro">"Japonè"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Koreyen"</string>
+    <string name="Latvian_micro">"Lettonie"</string>
+    <string name="Lithuanian_micro">"Lituanien"</string>
+    <string name="Malay_micro">"Malais"</string>
+    <string name="Maltese_micro">"Malte"</string>
+    <string name="Norwegian_micro">"Nòvejyen"</string>
+    <string name="Persian_micro">"Pèsyann"</string>
+    <string name="Polish_micro">"Lapolòy"</string>
+    <string name="Portuguese_micro">"Pòtigè"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Romanyen"</string>
+    <string name="Russian_micro">"Wis"</string>
+    <string name="Serbian_Cyrillic_micro">"Lettre Sèb"</string>
+    <string name="Serbian_Latin_micro">"Latin Sèb"</string>
+    <string name="Slovak_micro">"Slovaki"</string>
+    <string name="Slovenian_micro">"Sloveni"</string>
+    <string name="Spanish_micro">"Panyòl"</string>
+    <string name="Swedish_micro">"Syedwa"</string>
+    <string name="Thai_micro">"Pon zanmitay Tayilandè"</string>
+    <string name="Turkish_micro">"Tik"</string>
+    <string name="Ukrainian_micro">"Ikrenyen"</string>
+    <string name="Urdu_micro">"Oudou"</string>
+    <string name="Vietnamese_micro">"Vyètnamyen"</string>
+    <string name="Welsh_micro">"Welsh"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

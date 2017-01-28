@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Liste der Anwendungen - wird geladen, bitte warten"</string>
+    <string name="clear_cache_error">"Einige Fehler. Übersetzung-Cache konnten nicht gelöscht werden!"</string>
+    <string name="clear_cache_success">"Übersetzen Sie Cache für diese app gelöscht wurde!"</string>
+	<string name="how_to_use">"GEWUSST WIE: VERWENDEN SIE DIE ANWENDUNG
+
+Diese Anwendung erfordert, dass Sie für einen Schlüssel von Microsoft oder Yandex Translate anmelden.
+Yandex Translate unterstützt mehrere Sprachen, hat ein viel einfacher Anmeldevorgang und erfordert keine Kreditkarte.
+Microsoft Translate gibt bessere Ergebnisse, aber erfordert eine Kreditkarte zu registrieren. (Aber keine Sorge, nichts wird sein berechnet.)
+
+(1) in der Registerkarte "globale Einstellungen" verwenden Yandex anstelle von Microsoft aktivieren Sie möchten Sie verwenden, Yandex, sonst zu deaktivieren, um Microsoft zu verwenden.
+(1) in der Registerkarte "globale Einstellungen" tippen Sie auf Microsoft/Yandex Abonnement-Schlüssel eingeben, geben Sie die entsprechende Taste (siehe Anleitung unten).
+2. Wählen Sie die Sprache zu übersetzen und in Sprache übersetzt.
+(3) in den Apps zur Registerkarte "übersetzen" finden Sie die app zu übersetzen, klicken Sie auf das Kontrollkästchen neben dem gewünschten. Wenn das Kontrollkästchen nicht angezeigt wird, versuchen Sie, Ihr Telefon seitwärts ins Querformat drehen.
+(4) schließen und starten Sie die app, die übersetzt werden soll - es sollte übersetzt werden!
+
+Achtung - einige Anwendungen möglicherweise enger zwingen. Siehe Abschnitt zur Fehlerbehebung.
+
+WIE MAN ÜBERSETZEN YANDEX ABONNEMENTSCHLÜSSEL
+
+1. gehen Sie auf Yandex Website - https://tech.yandex.com/keys/get/?service=trnsl
+(2) Wenn Sie bereits ein Konto haben, klicken Sie auf registrieren und melden sich für ein neues Konto.
+(3) nach der Unterzeichnung, der allgemeinen Geschäftsbedingungen einverstanden Sie und klicken Sie API-Schlüssel zu erhalten.
+4. Sie haben erfolgreich Ihre Schlüssel erhalten! Es ist so etwas wie trnsl.1.1.201701...
+
+WIE KOMMT MAN ZU MICROSOFT AZURE ÜBERSETZEN ABONNEMENTSCHLÜSSEL
+
+1. Melden Sie sich für einen Microsoft Azure Account bei http://azure.com
+
+2. Nachdem Sie ein Konto haben, melden Sie sich bei der Azure Portal unter http://portal.azure.com
+
+(3) ein Microsoft Translator API-Abonnement zu Ihrem Azure Konto hinzufügen.
+Wählen Sie ein nutzungsbasiertes Abonnement. Benötigen Sie eine Kreditkarte, aber keine Sorge, nichts berechnet werden.
+Wählen Sie das "+" neue Option.
+Wählen Sie Intelligenz aus der Liste der Dienste.
+Wählen Sie kognitive Services-APIs.
+API-Typ die Option.
+Wählen Sie die Übersetzung des Textes
+Wählen Sie im Abschnitt Preise Tier das kostenlose Kontingent (F0)
+Füllen Sie den Rest des Formulars, und drücken Sie die Schaltfläche "erstellen".
+
+4. rufen Sie Ihre Authentifizierungs-Schlüssel.
+Gehen Sie auf alle Ressourcen, und wählen Sie Microsoft Translator API, die Sie abonniert haben.
+Gehen Sie auf die Option Schlüssel und kopieren Sie Ihren Abonnementschlüssel auf den Dienst zuzugreifen.
+Die Abonnementschlüssel ist so etwas wie 321dcba...
+
+FEHLERBEHEBUNG
+
+(1) Wenn keine app übersetzt wird, überprüfen Sie, dass Ihre Microsoft/Yandex Abonnementschlüssel korrekt ist.
+(2) wenn die übersetzten app Kraft schließt/bekommt beim Laden zum ersten Mal stecken, nachdem Sie mit der Übersetzung beginnen, klicken Sie auf die app Apps zu übersetzen Registerkarte, und andere Einstellungen ausfüllen bei der Verzögerung vor der Übersetzung bis 2000.
+(3) wenn die übersetzten app funktionieren, aber jetzt stecken am Start, klicken auf die app in Apps, Registerkarte "zu übersetzen, und klicken auf klicken Sie auf Cache löschen Übersetzung.
+4. wenn einige Teile der app nicht übersetzt sind, klicken Sie auf die app in Apps, Registerkarte "zu übersetzen, und aktivieren Sie Aggressive Mode.
+5. wenn die app Kraft schließt noch, deaktivieren Sie Übersetzung für diese app und kontaktieren Sie mich auf der Support-Thread auf XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Überall zu übersetzen"</string>
+    <string name="apps_to_translate">"Apps zu übersetzen"</string>
+    <string name="global_settings">"Globale Einstellungen"</string>
+    <string name="instructions">"Anweisungen"</string>
+    <string name="pref_cat_translate_settings">"Einstellungen zu übersetzen"</string>
+    <string name="pref_cat_parts_of_app">"Teile der App zu übersetzen"</string>
+    <string name="pref_cat_other_settings">"Andere Einstellungen"</string>
+    <string name="master_on_off">"Master an/aus"</string>
+    <string name="master_on_off_summary">"Deaktivieren Sie, um dieses Modul vollständig zu deaktivieren"</string>
+    <string name="master_on_off_summary_off">"Modul ist ausgeschaltet, keine apps übersetzt werden. Schalten Sie auf Start mit automatische Übersetzung!"</string>
+    <string name="master_on_off_summary_on">"Modul aktiviert ist, werden ausgewählte apps übersetzt. Deaktivieren Sie dieses Modul vollständig zu deaktivieren."</string>
+    <string name="enable_yandex">"Yandex anstelle von Microsoft verwenden"</string>
+    <string name="enable_yandex_summary">"Yandex Übersetzung anstelle von Microsoft verwenden einschalten"</string>
+    <string name="enable_yandex_summary_off">"Derzeit verwenden Microsoft Azure Übersetzung. Schalten Sie, um Yandex Übersetzung zu verwenden."</string>
+    <string name="enable_yandex_summary_on">"Derzeit verwenden Yandex Übersetzung. Deaktivieren Sie Microsoft Azure Übersetzungen verwenden."</string>
+    <string name="subKey">"Microsoft / Yandex Abonnementschlüssel"</string>
+    <string name="subKey_micro">"Microsoft Abonnementschlüssel"</string>
+    <string name="subKey_yandex">"Yandex Abonnementschlüssel"</string>
+    <string name="subKey_summary">"Geben Sie den Abonnementschlüssel für Microsoft Azure oder Yandex Übersetzung API, welches oben aktiviert ist"</string>
+    <string name="subKey_defaultValue">"Geben Sie Ihre Microsoft oder Yandex Abonnementschlüssel"</string>
+    <string name="transFrom">"Von Sprache zu übersetzen"</string>
+    <string name="transFrom_summary">"Sprache der app ist in der Originalfassung."</string>
+    <string name="transTo">"Sprache übersetzen"</string>
+    <string name="transTo_summary">"Sprache der app zu übersetzen sein sollen."</string>
+    <string name="setText">"Normalen Text übersetzen"</string>
+    <string name="setText_summary_off">"Nicht übersetzen Text mithilfe von Set Text geschrieben. Schalten Sie um zu ermöglichen."</string>
+    <string name="setText_summary_on">"Übersetzen von Text mithilfe von Set Text - Safe geschrieben. Schalten Sie um zu deaktivieren."</string>
+    <string name="setHint">"Übersetzen von Texthinweisen (grau gefärbten Vorschläge) in Textfeldern"</string>
+    <string name="setHint_summary_off">"Nicht übersetzen Text geschrieben mit Hinweis gesetzt. Schalten Sie um zu ermöglichen."</string>
+    <string name="setHint_summary_on">"Übersetzen von Text mithilfe von Set Tipp - Safe geschrieben. Schalten Sie um zu deaktivieren."</string>
+    <string name="webView">"Übersetzen von Text in Webseiten in Apps"</string>
+    <string name="webView_summary_off">"Text in WebViews übersetzen nicht. Schalten Sie um zu ermöglichen."</string>
+    <string name="webView_summary_on">"Übersetzen von Text in WebView - Safe, funktioniert nicht immer. Schalten Sie um zu deaktivieren."</string>
+    <string name="drawText">"Aggressive Mode"</string>
+    <string name="drawText_summary_off">"Nicht aggressiv übersetzen von Text in DrawText. Verwendung als alle oben schlägt fehl. Schalten Sie um zu ermöglichen."</string>
+    <string name="drawText_summary_on">"Aggressiv übersetzen von Text in DrawText - experimentelle, kann nicht arbeiten immer. Schalten Sie um zu deaktivieren."</string>
+    <string name="caching">"Zwischenspeichern"</string>
+    <string name="caching_summary_off">"Nicht sparen Übersetzungen offline, was langsamer zu übersetzen und höhere Daten - aber auch für weitere apps arbeiten. Schalten Sie auf zu sparen Übersetzungen."</string>
+    <string name="caching_summary_on">"Rettende Übersetzungen offline zu beschleunigen, übersetzen und Nutzungsdaten. Schalten Sie um zu deaktivieren, wenn die app nicht starten."</string>
+    <string name="delay">"Verzögerung vor der Übersetzung"</string>
+    <string name="delay_summary">"Stellen Sie die Zeit in Millisekunden zu warten, bevor Sie übersetzen. Standardwert ist 0, auf 1000 – 5000 festgelegt, wenn die übersetzten app abstürzt."</string>
+    <string name="overRide_global">"Globale Einstellungen außer Kraft setzen"</string>
+    <string name="overRide_global_summary_off">"Verwenden Globaleinstellungen für diese App Turn auf Einstellungen nur für diese app."</string>
+    <string name="overRide_global_summary_on">"Mit lokalen Einstellungen für diese App Turn off, Globaleinstellungen zu verwenden."</string>
+    <string name="clear_cache">"Übersetzung-Cache deaktivieren"</string>
+    <string name="clear_cache_summary">"Klicken Sie oben auf die app löschen des Cache übersetzen. Verwenden Sie diese Option nach dem Wechsel von/nach Sprachen, oder wenn die Anwendung nicht gestartet wird."</string>
+    <string name="Afrikaans_yandex">"Afrikaans"</string>
+    <string name="Amharic_yandex">"Amharisch"</string>
+    <string name="Arabic_yandex">"Arabisch"</string>
+    <string name="Azerbaijani_yandex">"Aserbaidschanische"</string>
+    <string name="Bashkir_yandex">"Baschkirische"</string>
+    <string name="Belarusian_yandex">"Belarussisch"</string>
+    <string name="Bulgarian_yandex">"Bulgarisch"</string>
+    <string name="Bengali_yandex">"Bengali"</string>
+    <string name="Bosnian_yandex">"Bosnisch"</string>
+    <string name="Catalan_yandex">"Katalanisch"</string>
+    <string name="Cebuano_yandex">"Cebuano"</string>
+    <string name="Czech_yandex">"Tschechisch"</string>
+    <string name="Welsh_yandex">"Walisisch"</string>
+    <string name="Danish_yandex">"Dänisch"</string>
+    <string name="German_yandex">"Deutsch"</string>
+    <string name="Greek_yandex">"Griechisch"</string>
+    <string name="English_yandex">"Englisch"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Spanisch"</string>
+    <string name="Estonian_yandex">"Estnisch"</string>
+    <string name="Basque_yandex">"Baskisch"</string>
+    <string name="Persian_yandex">"Persisch"</string>
+    <string name="Finnish_yandex">"Finnisch"</string>
+    <string name="French_yandex">"Französisch"</string>
+    <string name="Irish_yandex">"Irisch"</string>
+    <string name="Scottish_Gaelic_yandex">"Schottisch-Gälisch"</string>
+    <string name="Galician_yandex">"Galizisch"</string>
+    <string name="Gujarati_yandex">"Gujarati"</string>
+    <string name="Hebrew_yandex">"Hebräisch"</string>
+    <string name="Hindi_yandex">"Hindi"</string>
+    <string name="Croatian_yandex">"Kroatisch"</string>
+    <string name="Haitian_yandex">"Haitianische"</string>
+    <string name="Hungarian_yandex">"Ungarisch"</string>
+    <string name="Armenian_yandex">"Armenisch"</string>
+    <string name="Indonesian_yandex">"Indonesisch"</string>
+    <string name="Icelandic_yandex">"Isländisch"</string>
+    <string name="Italian_yandex">"Italienisch"</string>
+    <string name="Japanese_yandex">"Japanisch"</string>
+    <string name="Javanese_yandex">"Javanese"</string>
+    <string name="Georgian_yandex">"Georgisch"</string>
+    <string name="Kazakh_yandex">"Kasachisch"</string>
+    <string name="Kannada_yandex">"Kannada"</string>
+    <string name="Korean_yandex">"Koreanisch"</string>
+    <string name="Kyrgyz_yandex">"Kirgisisch"</string>
+    <string name="Latin_yandex">"Latein"</string>
+    <string name="Luxembourgish_yandex">"Luxemburgische"</string>
+    <string name="Lithuanian_yandex">"Litauisch"</string>
+    <string name="Latvian_yandex">"Lettisch"</string>
+    <string name="Malagasy_yandex">"Madagassische"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maori"</string>
+    <string name="Macedonian_yandex">"Mazedonische"</string>
+    <string name="Malayalam_yandex">"Malayalam"</string>
+    <string name="Mongolian_yandex">"Mongolisch"</string>
+    <string name="Marathi_yandex">"Marathi"</string>
+    <string name="Hill_Mari_yandex">"Berg-Mari"</string>
+    <string name="Malay_yandex">"Malaiisch"</string>
+    <string name="Maltese_yandex">"Maltesisch"</string>
+    <string name="Nepali_yandex">"Nepali"</string>
+    <string name="Dutch_yandex">"Holländisch"</string>
+    <string name="Norwegian_yandex">"Norwegisch"</string>
+    <string name="Punjabi_yandex">"Punjabi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Polnisch"</string>
+    <string name="Portuguese_yandex">"Portugiesisch"</string>
+    <string name="Romanian_yandex">"Rumänisch"</string>
+    <string name="Russian_yandex">"Russisch"</string>
+    <string name="Sinhalese_yandex">"Singhalesisch"</string>
+    <string name="Slovak_yandex">"Slowakisch"</string>
+    <string name="Slovenian_yandex">"Slowenisch"</string>
+    <string name="Albanian_yandex">"Albanisch"</string>
+    <string name="Serbian_yandex">"Serbisch"</string>
+    <string name="Sundanese_yandex">"Sundanesische"</string>
+    <string name="Swedish_yandex">"Schwedisch"</string>
+    <string name="Swahili_yandex">"Swahili"</string>
+    <string name="Tamil_yandex">"Tamil"</string>
+    <string name="Telugu_yandex">"Telugu"</string>
+    <string name="Tajik_yandex">"Tadschikisch"</string>
+    <string name="Thai_yandex">"Thailändisch"</string>
+    <string name="Tagalog_yandex">"Tagalog"</string>
+    <string name="Turkish_yandex">"Türkisch"</string>
+    <string name="Tatar_yandex">"Tatarisch"</string>
+    <string name="Udmurt_yandex">"Udmurtische"</string>
+    <string name="Ukrainian_yandex">"Ukrainisch"</string>
+    <string name="Urdu_yandex">"Urdu"</string>
+    <string name="Uzbek_yandex">"Usbekisch"</string>
+    <string name="Vietnamese_yandex">"Vietnamesisch"</string>
+    <string name="Xhosa_yandex">"Xhosa"</string>
+    <string name="Yiddish_yandex">"Jiddisch"</string>
+    <string name="Chinese_yandex">"Chinesisch"</string>
+    <string name="Afrikaans_micro">"Afrikaans"</string>
+    <string name="Arabic_micro">"Arabisch"</string>
+    <string name="Bosnian_Latin_micro">"Bosnische Latein"</string>
+    <string name="Bulgarian_micro">"Bulgarisch"</string>
+    <string name="Catalan_micro">"Katalanisch"</string>
+    <string name="Chinese_Simplified_micro">"Chinesisch (Vereinfacht)"</string>
+    <string name="Chinese_Traditional_micro">"Chinesisch (Traditionell)"</string>
+    <string name="Croatian_micro">"Kroatisch"</string>
+    <string name="Czech_micro">"Tschechisch"</string>
+    <string name="Danish_micro">"Dänisch"</string>
+    <string name="Dutch_micro">"Holländisch"</string>
+    <string name="English_micro">"Englisch"</string>
+    <string name="Estonian_micro">"Estnisch"</string>
+    <string name="Finnish_micro">"Finnisch"</string>
+    <string name="French_micro">"Französisch"</string>
+    <string name="German_micro">"Deutsch"</string>
+    <string name="Greek_micro">"Griechisch"</string>
+    <string name="Haitian_Creole_micro">"Haitianisch"</string>
+    <string name="Hebrew_micro">"Hebräisch"</string>
+    <string name="Hindi_micro">"Hindi"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Ungarisch"</string>
+    <string name="Indonesian_micro">"Indonesisch"</string>
+    <string name="Italian_micro">"Italienisch"</string>
+    <string name="Japanese_micro">"Japanisch"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingonisch"</string>
+    <string name="Klingon_pIqaD_micro">"Klingonische pIqaD"</string>
+    <string name="Korean_micro">"Koreanisch"</string>
+    <string name="Latvian_micro">"Lettisch"</string>
+    <string name="Lithuanian_micro">"Litauisch"</string>
+    <string name="Malay_micro">"Malaiisch"</string>
+    <string name="Maltese_micro">"Maltesisch"</string>
+    <string name="Norwegian_micro">"Norwegisch"</string>
+    <string name="Persian_micro">"Persisch"</string>
+    <string name="Polish_micro">"Polnisch"</string>
+    <string name="Portuguese_micro">"Portugiesisch"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Rumänisch"</string>
+    <string name="Russian_micro">"Russisch"</string>
+    <string name="Serbian_Cyrillic_micro">"Serbisches kyrillisches"</string>
+    <string name="Serbian_Latin_micro">"Serbischen Latein"</string>
+    <string name="Slovak_micro">"Slowakisch"</string>
+    <string name="Slovenian_micro">"Slowenisch"</string>
+    <string name="Spanish_micro">"Spanisch"</string>
+    <string name="Swedish_micro">"Schwedisch"</string>
+    <string name="Thai_micro">"Thailändisch"</string>
+    <string name="Turkish_micro">"Türkisch"</string>
+    <string name="Ukrainian_micro">"Ukrainisch"</string>
+    <string name="Urdu_micro">"Urdu"</string>
+    <string name="Vietnamese_micro">"Vietnamesisch"</string>
+    <string name="Welsh_micro">"Walisisch"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

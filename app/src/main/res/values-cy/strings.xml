@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Wrthi'n llwytho rhestr o geisiadau-Arhoswch"</string>
+    <string name="clear_cache_error">"Rhai gwallau. Gallai Nid clirio storfa'r cyfieithu!"</string>
+    <string name="clear_cache_success">"Gyfieithu Cache ar gyfer yr ap hwn wedi'i ddileu!"</string>
+	<string name="how_to_use">"SUT I DDEFNYDDIO Y CAIS
+
+Mae'r cais hwn yn ei gwneud yn ofynnol i chi gofrestru ar gyfer allweddol gan Microsoft neu Yandex Translate.
+Mae Yandex Translate cefnogi mwy o ieithoedd, mae proses gofrestru llawer haws a gofyn am gerdyn credyd Nid oes.
+Mae Microsoft Translate yn rhoi gwell canlyniadau, ond gofyn am gerdyn credyd i ymuno. (Ond peidiwch â phoeni, fydd dim byd yn codi.)
+
+1. mewn tab gosodiadau byd-eang, yn galluogi defnyddio Yandex yn hytrach na Microsoft os ydych am ddefnyddio Yandex, analluogi arall i ddefnyddio Microsoft.
+1. mewn tab gosodiadau byd-eang, tarwch tanysgrifiad Microsoft/Yandex Rhowch allweddol, mewnbwn allweddol cyfatebol (gweler cyfarwyddiadau islaw).
+2. dewis y gyfieithu o'r iaith a chyfieithu i iaith.
+3. yn yr apiau i'r Translate tab, canfod ap y dymunwch ei gyfieithu, cliciwch y blwch ticio wrth ei ymyl. Os nad yw'r blwch yn weladwy, geisio cylchdroi eich ffôn i'r ochr i'r modd tirwedd.
+4. cau ac ailgychwyn yr ap rydych chi am gyfieithu-dylid cyfieithu'r!
+
+RHYBUDD-gallai rhai apiau rym yn agos. Gweler adran datrys problemau.
+
+SUT I GAEL YANDEX GYFIEITHU ALLWEDDOL TANYSGRIFIAD
+
+1. Ewch i wefan Yandex-https://tech.yandex.com/keys/get/?service=trnsl
+2. Os nad ydych wedi cyfrif, cliciwch gofrestr ac arwyddion ar gyfer cyfrif newydd.
+3. ar ôl arwyddo i fyny, cytuno i gytundeb y defnyddiwr a chlicio gael allwedd API.
+4. rydych wedi cael eich allwedd llwyddiannus! Mae'n rhywbeth fel trnsl.1.1.201701...
+
+SUT I GAEL MICROSOFT AZURE GYFIEITHU ALLWEDDOL TANYSGRIFIAD
+
+1. Cofrestrwch ar gyfer cyfrif Microsoft Azure ar http://azure.com
+
+2. ar ôl gennych gyfrif, yn mewngofnodi i borth Azure ar http://portal.azure.com
+
+3. Ychwanegwch y tanysgrifiad Microsoft Translator API i'ch Cyfrif Azure.
+Dewis tanysgrifiad fesurydd. Bydd angen cerdyn credyd, ond peidiwch â phoeni, codir dim.
+Dewiswch y + newydd opsiwn.
+Dewiswch deallusrwydd o'r rhestr o wasanaethau.
+Dewiswch APIs gwasanaethau gwybyddol.
+Dewiswch yr opsiwn API math.
+Dewiswch cyfieithu testun
+Yn adran y prisiau haen, dewiswch yr haen am ddim (F0)
+Llenwch weddill y ffurflen, a phwyso'r botwm creu.
+
+4. adfer eich allwedd dilysu.
+Ewch i'r holl adnoddau a dewiswch y Microsoft Translator API a Roedd rydych chi wedi tanysgrifio i.
+Ewch i'r opsiwn allweddi a copïo allwedd eich tanysgrifiad i gael mynediad at y gwasanaeth.
+Yr allwedd tanysgrifiad yw rhywbeth fel 321dcba...
+
+DATRYS PROBLEMAU
+
+1. Os yw unrhyw app yn cael ei gyfieithu, gwirio allwedd eich tanysgrifiad Microsoft/Yandex yn gywir.
+2. Os cadwodd ap wedi'i gyfieithu rym yn dod i ben/cael ar llwytho y tro cyntaf ar ôl i chi ddechrau cyfieithu, cliciwch ar yr ap yn apiau i gyfieithu tab, ac mewn lleoliadau eraill yn llenwi oedi cyn troi i 2000.
+3. Os Defnyddiodd ap wedi'i gyfieithu i weithio'n iawn, ond erbyn hyn yn mynd yn sownd ar ddechrau, cliciwch ar yr ap yn apiau i gyfieithu tab a cliciwch ar cliciwch storfa cyfieithu clir.
+4. os yn rhai rhannau o'r ap nid cael eu cyfieithu, cliciwch ar yr ap yn apiau i gyfieithu tab, a galluogi modd ymosodol.
+5. os mae ap dal i rym yn cau, analluogi cyfieithu app hwn a gysylltu â mi ar y llinyn cymorth ar XDA-https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Gyfieithu unrhyw le"</string>
+    <string name="apps_to_translate">"Apiau i gyfieithu"</string>
+    <string name="global_settings">"Gosodiadau cyffredin"</string>
+    <string name="instructions">"Cyfarwyddiadau"</string>
+    <string name="pref_cat_translate_settings">"Drosi lleoliadau"</string>
+    <string name="pref_cat_parts_of_app">"Rhannau o'r ap i gyfieithu"</string>
+    <string name="pref_cat_other_settings">"Lleoliadau eraill"</string>
+    <string name="master_on_off">"Meistr/diffodd"</string>
+    <string name="master_on_off_summary">"Diffodd i analluogi y modiwl hwn yn llwyr"</string>
+    <string name="master_on_off_summary_off">"Mae modiwl wedi'i ddiffodd, bydd unrhyw apiau yn cael eu cyfieithu. Troi ymlaen i ddechrau defnyddio Awto-gyfieithu!"</string>
+    <string name="master_on_off_summary_on">"Mae'r modiwl ar waith, bydd apiau dan sylw gael eu cyfieithu. Diffodd i analluogi y modiwl hwn yn llwyr."</string>
+    <string name="enable_yandex">"Defnyddio Yandex yn hytrach na Microsoft"</string>
+    <string name="enable_yandex_summary">"Droi i ddefnyddio cyfieithu Yandex yn lle Microsoft"</string>
+    <string name="enable_yandex_summary_off">"Ar hyn o bryd gan ddefnyddio Microsoft Azure cyfieithu. Galluogi i ddefnyddio cyfieithiad Yandex."</string>
+    <string name="enable_yandex_summary_on">"Ar hyn o bryd gan ddefnyddio cyfieithiad Yandex. Diffodd i ddefnyddio Microsoft Azure cyfieithu."</string>
+    <string name="subKey">"Microsoft / Yandex tanysgrifiad allweddol"</string>
+    <string name="subKey_micro">"Allweddol tanysgrifiad Microsoft"</string>
+    <string name="subKey_yandex">"Yandex tanysgrifiad allweddol"</string>
+    <string name="subKey_summary">"Rhowch yr allwedd tanysgrifiad ar gyfer Microsoft Azure neu API cyfieithu Yandex, pa un bynnag yw galluogi uchod"</string>
+    <string name="subKey_defaultValue">"Rhowch eich Microsoft neu Yandex tanysgrifiad allweddol"</string>
+    <string name="transFrom">"Gyfieithu o'r iaith"</string>
+    <string name="transFrom_summary">"Iaith yr ap yn wreiddiol."</string>
+    <string name="transTo">"Cyfieithu i iaith"</string>
+    <string name="transTo_summary">"Ydych am yr ap i gael ei gyfieithu i'r iaith."</string>
+    <string name="setText">"Gyfieithu testun arferol"</string>
+    <string name="setText_summary_off">"Nid gyfieithu testun ysgrifenedig gan ddefnyddio testun gosod. Rhoi ar waith i alluogi."</string>
+    <string name="setText_summary_on">"Cyfieithu testun ysgrifenedig gan ddefnyddio testun gosod-diogel. Diffodd i analluogi."</string>
+    <string name="setHint">"Cyfieithu testun awgrymiadau (lliw Gray awgrymiadau) mewn blychau testun"</string>
+    <string name="setHint_summary_off">"Nid gyfieithu testun ysgrifenedig gan ddefnyddio awgrym gosod. Rhoi ar waith i alluogi."</string>
+    <string name="setHint_summary_on">"Cyfieithu testun ysgrifenedig gan ddefnyddio gosod awgrym-diogel. Diffodd i analluogi."</string>
+    <string name="webView">"Gyfieithu testun mewn tudalennau gwe tu mewn apiau"</string>
+    <string name="webView_summary_off">"Nid yw cyfieithu testun yn WebViews. Rhoi ar waith i alluogi."</string>
+    <string name="webView_summary_on">"Cyfieithu testun tu mewn WebView-diogel, efallai ddim yn gweithio bob amser. Diffodd i analluogi."</string>
+    <string name="drawText">"Modd ymosodol"</string>
+    <string name="drawText_summary_off">"Nid ymosodol cyfieithu testun yn drawText. Defnyddio pan uchod yn methu. Rhoi ar waith i alluogi."</string>
+    <string name="drawText_summary_on">"Cyfieithu testun ymosodol yn drawText-arbrofol, gall gwaith bob amser. Diffodd i analluogi."</string>
+    <string name="caching">"Defnyddio ' caching '"</string>
+    <string name="caching_summary_off">"Nid arbed cyfieithiadau all-lein, gan arwain at arafach gyfieithu a data uwch-ond efallai y bydd yn gweithio ar gyfer mwy o apps. Droi ar i arbed cyfieithiadau."</string>
+    <string name="caching_summary_on">"Arbed cyfieithiadau all-lein i gyflymu'r gyfieithu a defnyddio data. Diffodd i analluogi os nad yw eich app yn dechrau."</string>
+    <string name="delay">"Oedi cyn troi"</string>
+    <string name="delay_summary">"Gosod amser yn milieiliad aros cyn cyfieithu. Gwerth diofyn yn 0, gosod i 1000 – 5000 os yw ap wedi'i gyfieithu yn chwalu."</string>
+    <string name="overRide_global">"Diystyru'r gosodiadau byd-eang"</string>
+    <string name="overRide_global_summary_off">"Defnyddio gosodiadau byd-eang ar gyfer hwn app. tro ar i newid y gosodiadau ar gyfer yr ap hwn yn unig."</string>
+    <string name="overRide_global_summary_on">"Defnyddio gosodiadau lleol ar gyfer hwn app. troi oddi ar i ddefnyddio'r gosodiadau byd-eang."</string>
+    <string name="clear_cache">"Cliciwch i glirio'r storfa cyfieithu"</string>
+    <string name="clear_cache_summary">"Cliciwch uchod i egluro yr ap i gyfieithu storfa. Defnyddio hyn ar ôl newid i'r/o'r ieithoedd, neu os nad yw yr ap yn dechrau."</string>
+    <string name="Afrikaans_yandex">"Afrikaans"</string>
+    <string name="Amharic_yandex">"Amharic"</string>
+    <string name="Arabic_yandex">"Arabeg"</string>
+    <string name="Azerbaijani_yandex">"Azerbaijani"</string>
+    <string name="Bashkir_yandex">"Bashkir"</string>
+    <string name="Belarusian_yandex">"Belarwseg"</string>
+    <string name="Bulgarian_yandex">"Bwlgareg"</string>
+    <string name="Bengali_yandex">"Bengaleg"</string>
+    <string name="Bosnian_yandex">"Bosnieg"</string>
+    <string name="Catalan_yandex">"Catalaneg"</string>
+    <string name="Cebuano_yandex">"Cebuano"</string>
+    <string name="Czech_yandex">"Tsieceg"</string>
+    <string name="Welsh_yandex">"Cymraeg"</string>
+    <string name="Danish_yandex">"Daneg"</string>
+    <string name="German_yandex">"Almaeneg"</string>
+    <string name="Greek_yandex">"Iaith Groeg"</string>
+    <string name="English_yandex">"Saesneg"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Sbaeneg"</string>
+    <string name="Estonian_yandex">"Estoneg"</string>
+    <string name="Basque_yandex">"Basgeg"</string>
+    <string name="Persian_yandex">"Perseg"</string>
+    <string name="Finnish_yandex">"Ffineg"</string>
+    <string name="French_yandex">"Ffrangeg"</string>
+    <string name="Irish_yandex">"Gwyddeleg"</string>
+    <string name="Scottish_Gaelic_yandex">"Gaeleg yr Alban"</string>
+    <string name="Galician_yandex">"Galisieg"</string>
+    <string name="Gujarati_yandex">"Gujarati"</string>
+    <string name="Hebrew_yandex">"Hebraeg"</string>
+    <string name="Hindi_yandex">"Hindi"</string>
+    <string name="Croatian_yandex">"Croateg"</string>
+    <string name="Haitian_yandex">"Haitian"</string>
+    <string name="Hungarian_yandex">"Hwngareg"</string>
+    <string name="Armenian_yandex">"Armeneg"</string>
+    <string name="Indonesian_yandex">"Indoneseg"</string>
+    <string name="Icelandic_yandex">"Islandeg"</string>
+    <string name="Italian_yandex">"Eidaleg"</string>
+    <string name="Japanese_yandex">"Siapaneeg"</string>
+    <string name="Javanese_yandex">"Javanese"</string>
+    <string name="Georgian_yandex">"Georgeg"</string>
+    <string name="Kazakh_yandex">"Casacheg"</string>
+    <string name="Kannada_yandex">"Kannada"</string>
+    <string name="Korean_yandex">"Corëeg"</string>
+    <string name="Kyrgyz_yandex">"Cyrgyseg"</string>
+    <string name="Latin_yandex">"Lladin"</string>
+    <string name="Luxembourgish_yandex">"Luxembourgish"</string>
+    <string name="Lithuanian_yandex">"Lithwaneg"</string>
+    <string name="Latvian_yandex">"Latfeg"</string>
+    <string name="Malagasy_yandex">"Malagasy"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maori"</string>
+    <string name="Macedonian_yandex">"Macedoneg"</string>
+    <string name="Malayalam_yandex">"Malayalam"</string>
+    <string name="Mongolian_yandex">"Mongoleg"</string>
+    <string name="Marathi_yandex">"Marathi"</string>
+    <string name="Hill_Mari_yandex">"Hill Mari"</string>
+    <string name="Malay_yandex">"Maleieg"</string>
+    <string name="Maltese_yandex">"Malteg"</string>
+    <string name="Nepali_yandex">"Ymwneud â"</string>
+    <string name="Dutch_yandex">"Iseldireg"</string>
+    <string name="Norwegian_yandex">"Norwyeeg"</string>
+    <string name="Punjabi_yandex">"Punjabi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Pwyleg"</string>
+    <string name="Portuguese_yandex">"Portiwgeeg"</string>
+    <string name="Romanian_yandex">"Rwmaneg"</string>
+    <string name="Russian_yandex">"Rwsieg"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Slofaceg"</string>
+    <string name="Slovenian_yandex">"Slofeneg"</string>
+    <string name="Albanian_yandex">"Albaneg"</string>
+    <string name="Serbian_yandex">"Serbeg"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"Swedeg"</string>
+    <string name="Swahili_yandex">"Swahili"</string>
+    <string name="Tamil_yandex">"Tamileg"</string>
+    <string name="Telugu_yandex">"Telugu"</string>
+    <string name="Tajik_yandex">"Tajik"</string>
+    <string name="Thai_yandex">"Thai"</string>
+    <string name="Tagalog_yandex">"Tagalog"</string>
+    <string name="Turkish_yandex">"Twrceg"</string>
+    <string name="Tatar_yandex">"Tatar"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Wrceineg"</string>
+    <string name="Urdu_yandex">"Wrdw"</string>
+    <string name="Uzbek_yandex">"Uzbek"</string>
+    <string name="Vietnamese_yandex">"Fietnameg"</string>
+    <string name="Xhosa_yandex">"Xhosa"</string>
+    <string name="Yiddish_yandex">"Iddeweg"</string>
+    <string name="Chinese_yandex">"Tsieinëeg"</string>
+    <string name="Afrikaans_micro">"Afrikaans"</string>
+    <string name="Arabic_micro">"Arabeg"</string>
+    <string name="Bosnian_Latin_micro">"Lladin Bosnia"</string>
+    <string name="Bulgarian_micro">"Bwlgareg"</string>
+    <string name="Catalan_micro">"Catalaneg"</string>
+    <string name="Chinese_Simplified_micro">"Tsieinëeg (wedi ei symyleiddio)"</string>
+    <string name="Chinese_Traditional_micro">"Tsieinëeg (traddodiadol)"</string>
+    <string name="Croatian_micro">"Croateg"</string>
+    <string name="Czech_micro">"Tsieceg"</string>
+    <string name="Danish_micro">"Daneg"</string>
+    <string name="Dutch_micro">"Iseldireg"</string>
+    <string name="English_micro">"Saesneg"</string>
+    <string name="Estonian_micro">"Estoneg"</string>
+    <string name="Finnish_micro">"Ffineg"</string>
+    <string name="French_micro">"Ffrangeg"</string>
+    <string name="German_micro">"Almaeneg"</string>
+    <string name="Greek_micro">"Iaith Groeg"</string>
+    <string name="Haitian_Creole_micro">"Creol Haiti"</string>
+    <string name="Hebrew_micro">"Hebraeg"</string>
+    <string name="Hindi_micro">"Hindi"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Hwngareg"</string>
+    <string name="Indonesian_micro">"Indoneseg"</string>
+    <string name="Italian_micro">"Eidaleg"</string>
+    <string name="Japanese_micro">"Siapaneeg"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Corëeg"</string>
+    <string name="Latvian_micro">"Latfeg"</string>
+    <string name="Lithuanian_micro">"Lithwaneg"</string>
+    <string name="Malay_micro">"Maleieg"</string>
+    <string name="Maltese_micro">"Malteg"</string>
+    <string name="Norwegian_micro">"Norwyeeg"</string>
+    <string name="Persian_micro">"Perseg"</string>
+    <string name="Polish_micro">"Pwyleg"</string>
+    <string name="Portuguese_micro">"Portiwgeeg"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Rwmaneg"</string>
+    <string name="Russian_micro">"Rwsieg"</string>
+    <string name="Serbian_Cyrillic_micro">"Cyrilig Serbia"</string>
+    <string name="Serbian_Latin_micro">"Lladin Serbia"</string>
+    <string name="Slovak_micro">"Slofaceg"</string>
+    <string name="Slovenian_micro">"Slofeneg"</string>
+    <string name="Spanish_micro">"Sbaeneg"</string>
+    <string name="Swedish_micro">"Swedeg"</string>
+    <string name="Thai_micro">"Thai"</string>
+    <string name="Turkish_micro">"Twrceg"</string>
+    <string name="Ukrainian_micro">"Wrceineg"</string>
+    <string name="Urdu_micro">"Wrdw"</string>
+    <string name="Vietnamese_micro">"Fietnameg"</string>
+    <string name="Welsh_micro">"Cymraeg"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Carregant la llista d'aplicacions - si us plau espera"</string>
+    <string name="clear_cache_error">"Algun Error. No podria aclarir l'amagatall de traducció!"</string>
+    <string name="clear_cache_success">"Traduir la memòria cau per a aquest app ha desaparegut!"</string>
+	<string name="how_to_use">"COM UTILITZAR L'APLICACIÓ
+
+Aquesta aplicació requereix registrar-se per a una clau de Microsoft o traductor Yandex.
+Yandex Translate suporta més idiomes, té un procés signup molt més fàcil i requereix cap targeta de crèdit.
+Microsoft Translate dóna millors resultats, però requereix una targeta de crèdit per inscriure's. (Però no et preocupis, res serà carregada.)
+
+1. en la pestanya de configuració Global, permetre utilitzar Yandex en comptes de microsuau si voleu utilitzar Yandex, més d'impossibilitar per utilitzar Microsoft.
+1. en la pestanya de configuració Global, premeu entrar clau de subscripció Microsoft/Yandex, introduïu la clau corresponent (vegeu les instruccions de sota).
+2. Trieu la traduir de l'idioma i traduir a la llengua.
+3. en els Apps al tabulador de traductor, trobar l'aplicació que voleu traduir, feu clic a la casella. Si la casella de selecció no és visible, proveu girant lateralment el seu telèfon a mode de paisatge.
+4. tancar i reiniciar l'aplicació que voleu traduccions translated - cal traduir!
+
+Advertència: alguns apps podria forçar a prop. Vegeu la secció solució de problemes.
+
+COM ACONSEGUIR YANDEX TRADUIR CLAU DE SUBSCRIPCIÓ
+
+1. aneu a Yandex web - https://tech.yandex.com/keys/get/?service=trnsl
+2. si no teniu un compte, feu clic a registre i signar cap amunt per un compte nou.
+3. després de signar cap amunt, d'acord amb l'acord d'usuari i feu clic a obtenir clau d'API.
+4. han rebut correctament la clau! És alguna cosa com trnsl.1.1.201701...
+
+COM ACONSEGUIR MICROSOFT AZURE TRADUIR CLAU DE SUBSCRIPCIÓ
+
+1. inscrigui's per un compte de Microsoft Azure a http://azure.com
+
+2. després de vostè té un compte, inicieu la sessió al portal blaves a http://portal.azure.com
+
+3. afegir una subscripció Microsoft traductor API al compte Azure.
+Trieu una subscripció comprin. Es requereix una targeta de crèdit, però no et preocupis, res no es carregarà.
+Seleccioneu el + nou opció.
+Seleccioneu la intel·ligència de la llista de serveis.
+Seleccioni serveis cognitiva APIs.
+Seleccioneu l'opció de tipus API.
+Seleccioneu la traducció de textos
+A la secció de nivell de preus, seleccioneu la graderia lliure (F0)
+Empleneu la resta de la forma i premeu el botó Crea.
+
+4. recuperar la clau d'autenticació.
+Anar a tots els recursos i seleccioneu l'API de traductor de Microsoft que subscrit.
+Anar a l'opció tecles i copiar la clau de subscripció per accedir al servei.
+La clau de subscripció és alguna cosa com 321dcba...
+
+RESOLUCIÓ DE PROBLEMES
+
+1. si s'està traduint cap app, comproveu que la clau de subscripció Microsoft/Yandex és correcta.
+2. si l'app traduït força tanca/aconsegueix encallat en carregar la primera vegada després que comenci a traduir, feu clic a l'app en aplicacions traduir tabulador, i en altres escenes omplir en retard abans de traduir a 2000.
+3. si l'aplicació traduït utilitzat funcionen bé, però ara es queda bloquejat en començar, feu clic a l'app en aplicacions traduir tabulador, i fan clic a feu clic a buida la memòria cau traducció.
+4. si algunes parts de l'app no s'estan traduint, feu clic a l'app en aplicacions traduir tabulador i activar el Mode agressiu.
+5. si l'app encara es tanca força, impossibilitar traducció aquest app i en contacte amb mi en el fil de suport en XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Traduir a qualsevol lloc"</string>
+    <string name="apps_to_translate">"Apps per traduir"</string>
+    <string name="global_settings">"Configuració global"</string>
+    <string name="instructions">"Instruccions"</string>
+    <string name="pref_cat_translate_settings">"Traduir la configuració"</string>
+    <string name="pref_cat_parts_of_app">"Parts d'App per traduir"</string>
+    <string name="pref_cat_other_settings">"Altres escenes"</string>
+    <string name="master_on_off">"Mestre On/Off"</string>
+    <string name="master_on_off_summary">"Apagar completament impossibilitar aquest mòdul"</string>
+    <string name="master_on_off_summary_off">"Mòdul s'apaga, es traduiran cap apps. Al seu torn a començament utilitzant auto-traduir!"</string>
+    <string name="master_on_off_summary_on">"Mòdul s'engega, es traduiran apps seleccionats. Apagar completament impossibilitar aquest mòdul."</string>
+    <string name="enable_yandex">"Ús Yandex en comptes de microsuau"</string>
+    <string name="enable_yandex_summary">"Engegar utilitzar Yandex traducció en lloc de Microsoft"</string>
+    <string name="enable_yandex_summary_off">"Actualment utilitzant Microsoft Azure traducció. Engegar utilitzar Yandex traducció."</string>
+    <string name="enable_yandex_summary_on">"Actualment utilitzant Yandex traducció. Girar-se d'utilitzar Microsoft Azure traducció."</string>
+    <string name="subKey">"Microsoft / clau de subscripció Yandex"</string>
+    <string name="subKey_micro">"Clau de subscripció Microsoft"</string>
+    <string name="subKey_yandex">"Yandex clau de subscripció"</string>
+    <string name="subKey_summary">"Introdueixi la clau de subscripció per a Microsoft Azure o Yandex API de traducció, que està habilitat per sobre"</string>
+    <string name="subKey_defaultValue">"Introdueixi el seu Microsoft o clau de subscripció Yandex"</string>
+    <string name="transFrom">"Traduir del llenguatge"</string>
+    <string name="transFrom_summary">"Llengua l'app és originalment."</string>
+    <string name="transTo">"Traduir a la llengua"</string>
+    <string name="transTo_summary">"Idioma en que què voleu ser traduir a l'app."</string>
+    <string name="setText">"Traduir Normal Text"</string>
+    <string name="setText_summary_off">"No traduir Text escrit utilitzant Text conjunt. Activar per permetre."</string>
+    <string name="setText_summary_on">"Traduir Text escrit utilitzant Text conjunt - caixa forta. Girar-se d'impossibilitar."</string>
+    <string name="setHint">"Traduir Text suggeriments (color gris suggeriments) en quadres de Text"</string>
+    <string name="setHint_summary_off">"No traduir Text escrit utilitzant conjunt pista. Activar per permetre."</string>
+    <string name="setHint_summary_on">"Traduir Text escrit utilitzant la pista posar - caixa forta. Girar-se d'impossibilitar."</string>
+    <string name="webView">"Traduir Text en pàgines Web dins d'Apps"</string>
+    <string name="webView_summary_off">"No traduir Text a WebViews. Activar per permetre."</string>
+    <string name="webView_summary_on">"Traduir Text dins de la visualització web - segur, pot no funcionar sempre. Girar-se d'impossibilitar."</string>
+    <string name="drawText">"Mode agressiu"</string>
+    <string name="drawText_summary_off">"No agressiva traduir Text a drawText. Ús quan tot damunt suspensos. Activar per permetre."</string>
+    <string name="drawText_summary_on">"Agressivament traduir Text a drawText - Experimental, pot no treballar sempre. Girar-se d'impossibilitar."</string>
+    <string name="caching">"Ús de la memòria cau"</string>
+    <string name="caching_summary_off">"No estalvi traduccions fora de línia, ocasionant més lent traduir i les dades més altes - però pot funcionar perquè més apps. Al seu torn per salvar les traduccions."</string>
+    <string name="caching_summary_on">"Traduccions fora de línia d'estalvi per accelerar traduir i utilitzar les dades. Desviar-se per a deshabilitar si no comença el seu app."</string>
+    <string name="delay">"Retard abans de traduir"</string>
+    <string name="delay_summary">"Posar el temps en milisegons per esperar abans de traduir. Valor per defecte és 0, situat a 1000 – 5000 si traduït l'app s'està estavellant."</string>
+    <string name="overRide_global">"Ignora la configuració Global"</string>
+    <string name="overRide_global_summary_off">"Utilitzant la configuració Global per a aquest app. al seu torn en canviar escenes només per a aquest app."</string>
+    <string name="overRide_global_summary_on">"Amb la configuració Local per a aquest app. al seu torn fora d'utilitzar la configuració Global."</string>
+    <string name="clear_cache">"Clic per aclarir l'amagatall de traducció"</string>
+    <string name="clear_cache_summary">"Feu clic damunt d'aclarir l'app de traduir la memòria cau. Utilitzar això després de canviar a/des de llengües, o si no s'inicia l'app."</string>
+    <string name="Afrikaans_yandex">"Afrikaans"</string>
+    <string name="Amharic_yandex">"Amhàric"</string>
+    <string name="Arabic_yandex">"Àrab"</string>
+    <string name="Azerbaijani_yandex">"L'Azerbaidjan"</string>
+    <string name="Bashkir_yandex">"Baixkir"</string>
+    <string name="Belarusian_yandex">"Bielorús"</string>
+    <string name="Bulgarian_yandex">"Búlgar"</string>
+    <string name="Bengali_yandex">"Bengalí"</string>
+    <string name="Bosnian_yandex">"Bosnià"</string>
+    <string name="Catalan_yandex">"Català"</string>
+    <string name="Cebuano_yandex">"Cebuà"</string>
+    <string name="Czech_yandex">"Txeca"</string>
+    <string name="Welsh_yandex">"Gal·lès"</string>
+    <string name="Danish_yandex">"Danès"</string>
+    <string name="German_yandex">"Alemany"</string>
+    <string name="Greek_yandex">"Grec"</string>
+    <string name="English_yandex">"Anglès"</string>
+    <string name="Esperanto_yandex">"L'esperanto"</string>
+    <string name="Spanish_yandex">"Castellà"</string>
+    <string name="Estonian_yandex">"Estonià"</string>
+    <string name="Basque_yandex">"Basc"</string>
+    <string name="Persian_yandex">"Persa"</string>
+    <string name="Finnish_yandex">"Finlandesa"</string>
+    <string name="French_yandex">"Francès"</string>
+    <string name="Irish_yandex">"Irlandès"</string>
+    <string name="Scottish_Gaelic_yandex">"Gaèlic escocès"</string>
+    <string name="Galician_yandex">"Gallec"</string>
+    <string name="Gujarati_yandex">"Gujarati"</string>
+    <string name="Hebrew_yandex">"Hebreu"</string>
+    <string name="Hindi_yandex">"Hindi"</string>
+    <string name="Croatian_yandex">"Croat"</string>
+    <string name="Haitian_yandex">"Haití"</string>
+    <string name="Hungarian_yandex">"Hongarès"</string>
+    <string name="Armenian_yandex">"Armeni"</string>
+    <string name="Indonesian_yandex">"Indonèsia"</string>
+    <string name="Icelandic_yandex">"Islandès"</string>
+    <string name="Italian_yandex">"Italià"</string>
+    <string name="Japanese_yandex">"Japonès"</string>
+    <string name="Javanese_yandex">"Javanès"</string>
+    <string name="Georgian_yandex">"Georgià"</string>
+    <string name="Kazakh_yandex">"Kazakh"</string>
+    <string name="Kannada_yandex">"Kannada"</string>
+    <string name="Korean_yandex">"Coreà"</string>
+    <string name="Kyrgyz_yandex">"Kirguís"</string>
+    <string name="Latin_yandex">"Llatí"</string>
+    <string name="Luxembourgish_yandex">"Luxemburguès"</string>
+    <string name="Lithuanian_yandex">"Lituà"</string>
+    <string name="Latvian_yandex">"Letònia"</string>
+    <string name="Malagasy_yandex">"Malgaix"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maori"</string>
+    <string name="Macedonian_yandex">"Macedònia"</string>
+    <string name="Malayalam_yandex">"Malayalam"</string>
+    <string name="Mongolian_yandex">"Mongol"</string>
+    <string name="Marathi_yandex">"Marathi"</string>
+    <string name="Hill_Mari_yandex">"Hill Mari"</string>
+    <string name="Malay_yandex">"Malai"</string>
+    <string name="Maltese_yandex">"Maltès"</string>
+    <string name="Nepali_yandex">"Nepalès"</string>
+    <string name="Dutch_yandex">"Neerlandès"</string>
+    <string name="Norwegian_yandex">"Noruec"</string>
+    <string name="Punjabi_yandex">"Panjabi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Polonès"</string>
+    <string name="Portuguese_yandex">"Portuguès"</string>
+    <string name="Romanian_yandex">"Romanès"</string>
+    <string name="Russian_yandex">"Rus"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Eslovac"</string>
+    <string name="Slovenian_yandex">"Eslovè"</string>
+    <string name="Albanian_yandex">"Albanès"</string>
+    <string name="Serbian_yandex">"Serbi"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"Suec"</string>
+    <string name="Swahili_yandex">"Swahili"</string>
+    <string name="Tamil_yandex">"Tàmil"</string>
+    <string name="Telugu_yandex">"Telugu"</string>
+    <string name="Tajik_yandex">"Tadjik"</string>
+    <string name="Thai_yandex">"Tailandès"</string>
+    <string name="Tagalog_yandex">"Tagal"</string>
+    <string name="Turkish_yandex">"Turc"</string>
+    <string name="Tatar_yandex">"Tàtar"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Ucraïnès"</string>
+    <string name="Urdu_yandex">"Urdú"</string>
+    <string name="Uzbek_yandex">"Uzbek"</string>
+    <string name="Vietnamese_yandex">"Vietnamita"</string>
+    <string name="Xhosa_yandex">"Xosa"</string>
+    <string name="Yiddish_yandex">"Jiddisch"</string>
+    <string name="Chinese_yandex">"Xinès"</string>
+    <string name="Afrikaans_micro">"Afrikaans"</string>
+    <string name="Arabic_micro">"Àrab"</string>
+    <string name="Bosnian_Latin_micro">"Llatí bosnià"</string>
+    <string name="Bulgarian_micro">"Búlgar"</string>
+    <string name="Catalan_micro">"Català"</string>
+    <string name="Chinese_Simplified_micro">"Xinès simplificat"</string>
+    <string name="Chinese_Traditional_micro">"Xinès tradicional"</string>
+    <string name="Croatian_micro">"Croat"</string>
+    <string name="Czech_micro">"Txeca"</string>
+    <string name="Danish_micro">"Danès"</string>
+    <string name="Dutch_micro">"Neerlandès"</string>
+    <string name="English_micro">"Anglès"</string>
+    <string name="Estonian_micro">"Estonià"</string>
+    <string name="Finnish_micro">"Finlandesa"</string>
+    <string name="French_micro">"Francès"</string>
+    <string name="German_micro">"Alemany"</string>
+    <string name="Greek_micro">"Grec"</string>
+    <string name="Haitian_Creole_micro">"Crioll haitià"</string>
+    <string name="Hebrew_micro">"Hebreu"</string>
+    <string name="Hindi_micro">"Hindi"</string>
+    <string name="Hmong_Daw_micro">"Ètnia hmong que Daw"</string>
+    <string name="Hungarian_micro">"Hongarès"</string>
+    <string name="Indonesian_micro">"Indonèsia"</string>
+    <string name="Italian_micro">"Italià"</string>
+    <string name="Japanese_micro">"Japonès"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Coreà"</string>
+    <string name="Latvian_micro">"Letònia"</string>
+    <string name="Lithuanian_micro">"Lituà"</string>
+    <string name="Malay_micro">"Malai"</string>
+    <string name="Maltese_micro">"Maltès"</string>
+    <string name="Norwegian_micro">"Noruec"</string>
+    <string name="Persian_micro">"Persa"</string>
+    <string name="Polish_micro">"Polonès"</string>
+    <string name="Portuguese_micro">"Portuguès"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro otomí"</string>
+    <string name="Romanian_micro">"Romanès"</string>
+    <string name="Russian_micro">"Rus"</string>
+    <string name="Serbian_Cyrillic_micro">"Serbi"</string>
+    <string name="Serbian_Latin_micro">"Serbi llatí"</string>
+    <string name="Slovak_micro">"Eslovac"</string>
+    <string name="Slovenian_micro">"Eslovè"</string>
+    <string name="Spanish_micro">"Castellà"</string>
+    <string name="Swedish_micro">"Suec"</string>
+    <string name="Thai_micro">"Tailandès"</string>
+    <string name="Turkish_micro">"Turc"</string>
+    <string name="Ukrainian_micro">"Ucraïnès"</string>
+    <string name="Urdu_micro">"Urdú"</string>
+    <string name="Vietnamese_micro">"Vietnamita"</string>
+    <string name="Welsh_micro">"Gal·lès"</string>
+    <string name="Yucatec_Maya_micro">"Del segle XVI Maya"</string>
+</resources>

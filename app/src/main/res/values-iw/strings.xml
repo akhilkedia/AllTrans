@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"טעינת רשימת יישומים - נא המתן"</string>
+    <string name="clear_cache_error">"איזה שגיאה. לא היתה אפשרות לנקות את תרגום המטמון!"</string>
+    <string name="clear_cache_success">"לתרגם את מטמון עבור יישום זה נמחק!"</string>
+	<string name="how_to_use">"כיצד להשתמש ביישום
+
+יישום זה דורש ממך להירשם לקבלת מפתח מ- Microsoft או יאנדקס תרגם.
+יאנדקס תרגם תומך שפות נוספות, יש תהליך הרבה יותר קל ההצטרפות, והוא דורש כרטיס אשראי. לא.
+תרגם Microsoft נותנת תוצאה טובה יותר, אך דורש כרטיס אשראי כדי להירשם. (אבל אל תדאג, שום דבר לא יהיה מחויב.)
+
+1. בכרטיסייה ' הגדרות כלליות ', מאפשרים להשתמש יאנדקס במקום מיקרוסופט אם ברצונך להשתמש יאנדקס, אחרת לבטל ללא השימוש ב- Microsoft.
+1. בכרטיסייה ' הגדרות כלליות ', הקש על הזן מפתח מנוי Microsoft/יאנדקס, קלט על המקש המתאים (ראה הוראות מלמטה).
+2. בחר לתרגם משפה ולתרגם לשפה.
+3. היישומים ללשונית תרגם, למצוא את היישום שברצונך לתרגם, לחץ על תיבת הסימון שלצידו. אם תיבת הסימון אינה גלויה, נסה לסובב את הטלפון שלך לצדדים למצב נוף.
+4. סגור והפעל מחדש את היישום שאתה רוצה מתורגמים - זה צריך להיות מתורגם!
+
+אזהרה - כמה אפליקציות שעלול לדחוק מקרוב. עיין בסעיף פתרון בעיות.
+
+איך להגיע יאנדקס לתרגם את המנוי מפתח
+
+1. ללכת לאתר יאנדקס - https://tech.yandex.com/keys/get/?service=trnsl
+2. אם עדיין אין לך חשבון, לחץ על רישום סימן למעלה בשביל חשבון חדש.
+3. לאחר חתימת למעלה, להסכים הסכם המשתמש ולחץ על לקבל מפתח API.
+4. בהצלחה קיבלת את המפתח שלך! . זה משהו כמו trnsl.1.1.201701...
+
+איך להגיע התכלת של MICROSOFT לתרגם את המנוי מפתח
+
+1. להירשם לקבלת חשבון Microsoft תכלת-http://azure.com
+
+2. לאחר, יש לך חשבון לחתום לתוך הפורטל תכולים-http://portal.azure.com
+
+3. להוסיף את מנוי Microsoft תרגום API לחשבונך תכולים.
+בחר מנוי לפי. ידרוש כרטיס אשראי, אבל אל תדאג, שום דבר לא יחויב.
+בחר + חדש אפשרות.
+בחר המודיעין מתוך הרשימה של שירותים.
+בחר APIs שירותי קוגניטיבית.
+בחר באפשרות סוג API.
+בחר תרגום טקסט
+במקטע תמחור מהשכבה, בחר הרמה חינם (F0)
+ממלאים את שאר הטופס, ולחץ על לחצן צור.
+
+4. לאחזר את המפתח של האימות.
+עבור כל המשאבים ובחר API תרגום של Microsoft, אתה מנוי.
+פתח את האפשרות מקשי ו להעתיק את מפתח המנוי שלך כדי לגשת לשירות.
+המפתח המנוי הוא משהו כמו 321dcba...
+
+פתרון בעיות
+
+1. אם אין app המתורגם, בדוק שאת מפתח מנוי Microsoft/יאנדקס שלך נכונה.
+2. אם האפליקציה המתורגמת כוח נסגרת/מקבל תקוע על טעינת בפעם הראשונה לאחר התחלת לתרגם, לחץ על היישום ביישומים כדי לתרגם את הכרטיסיה, ולמלא בהגדרות אחרות עיכוב לפני לתרגם ל- 2000.
+3. אם האפליקציה המתורגמת נהגה לעבוד. בסדר, אבל עכשיו נתקע החל על, לחץ על היישום ביישומים לתרגם את הכרטיסיה, לחץ על לחץ כדי ברור תרגום המטמון.
+4. אם חלקים מסוימים של האפליקציה לא מתורגם, לחץ על היישום ביישומים לתרגם את הכרטיסיה, ולאפשר מצב אגרסיבי.
+5. אם היישום עדיין כוח נסגרת, בטל את תרגום עבור יישום זה, ליצור איתי קשר על חוט תמיכה ב- XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"לתרגם לשום מקום"</string>
+    <string name="apps_to_translate">"יישומים כדי לתרגם"</string>
+    <string name="global_settings">"הגדרות כלליות"</string>
+    <string name="instructions">"הוראות"</string>
+    <string name="pref_cat_translate_settings">"לתרגם את הגדרות"</string>
+    <string name="pref_cat_parts_of_app">"חלקים של App כדי לתרגם"</string>
+    <string name="pref_cat_other_settings">"הגדרות אחרות"</string>
+    <string name="master_on_off">"מאסטר!"</string>
+    <string name="master_on_off_summary">"כבה לבטל לחלוטין את מודול זה"</string>
+    <string name="master_on_off_summary_off">"מודול כבויה, אין apps יתורגמו. הפעל על התחלה באמצעות-תרגום אוטומטי!"</string>
+    <string name="master_on_off_summary_on">"מודול מופעלת, אפליקציות נבחרות יתורגמו. כבה לבטל לחלוטין את מודול זה."</string>
+    <string name="enable_yandex">"השתמש יאנדקס במקום Microsoft"</string>
+    <string name="enable_yandex_summary">"הפעל כדי להשתמש בתרגום יאנדקס במקום מיקרוסופט"</string>
+    <string name="enable_yandex_summary_off">"כיום באמצעות Microsoft Azure תרגום. הפעל להשתמש יאנדקס תרגום."</string>
+    <string name="enable_yandex_summary_on">"משתמש כעת יאנדקס תרגום. כבה לשימוש Microsoft Azure תרגום."</string>
+    <string name="subKey">"מיקרוסופט / מפתח מנוי יאנדקס"</string>
+    <string name="subKey_micro">"מנוי Microsoft מפתח"</string>
+    <string name="subKey_yandex">"יאנדקס מנוי מפתח"</string>
+    <string name="subKey_summary">"הזן את המפתח מנוי התכלת של Microsoft או יאנדקס תרגום API, לפי המוקדם מביניהם מופעלת מעל"</string>
+    <string name="subKey_defaultValue">"הזן את Microsoft או מפתח מנוי יאנדקס"</string>
+    <string name="transFrom">"תרגום משפה לשפה"</string>
+    <string name="transFrom_summary">"שפת היישום הוא במקור."</string>
+    <string name="transTo">"לתרגם שפה"</string>
+    <string name="transTo_summary">"השפה שהרצויה האפליקציה ניתן לתרגם."</string>
+    <string name="setText">"לתרגם טקסט רגיל"</string>
+    <string name="setText_summary_off">"לא לתרגם טקסט שנכתב באמצעות טקסט מוגדר. הפעל כדי לאפשר."</string>
+    <string name="setText_summary_on">"תרגום טקסט שנכתב באמצעות הגדרת טקסט - כספת. בטל כדי לבטל."</string>
+    <string name="setHint">"לתרגם טקסט רמזים (הצעות בצבע אפור) בתיבות טקסט"</string>
+    <string name="setHint_summary_off">"לא לתרגם טקסט שנכתב באמצעות הגדרת רמז. הפעל כדי לאפשר."</string>
+    <string name="setHint_summary_on">"תרגום טקסט שנכתב באמצעות הגדרת רמז - כספת. בטל כדי לבטל."</string>
+    <string name="webView">"לתרגם טקסט בדפי אינטרנט בתוך אפליקציות"</string>
+    <string name="webView_summary_off">"לא מתרגם טקסט בתצוגות אינטרנט של... הפעל כדי לאפשר."</string>
+    <string name="webView_summary_on">"תרגום טקסט בתוך תצוגת אינטרנט - כספת, לא יפעלו תמיד. בטל כדי לבטל."</string>
+    <string name="drawText">"מצב אגרסיבי"</string>
+    <string name="drawText_summary_off">"לא באגרסיביות תרגום טקסט ב- drawText. שימוש כאשר כולם מעל נכשל. הפעל כדי לאפשר."</string>
+    <string name="drawText_summary_on">"באגרסיביות תרגום טקסט ב- drawText - ניסיוני, עלול לא לעבוד תמיד. בטל כדי לבטל."</string>
+    <string name="caching">"להשתמש באחסון במטמון"</string>
+    <string name="caching_summary_off">"לא שמירת תרגומים במצב לא מקוון, וכתוצאה מכך לאט יותר לתרגם נתונים גבוה יותר - אך ייתכן לעבוד עבור אפליקציות נוספות. פונים על מנת להציל את התרגומים."</string>
+    <string name="caching_summary_on">"שמירת תרגומים במצב לא מקוון כדי להגביר את מהירות לתרגם ולהשתמש נתונים. בטל כדי לבטל אם האפליקציה שלך לא מתחיל."</string>
+    <string name="delay">"משך ההשהיה לפני. לתרגום"</string>
+    <string name="delay_summary">"להגדיר את הזמן אלפיות השניה להמתנה לפני. לתרגום. ערך ברירת המחדל הוא 0, קבע כ 1000-5000 אם מתורגם האפליקציה קורסת."</string>
+    <string name="overRide_global">"גוברות על הגדרות כלליות"</string>
+    <string name="overRide_global_summary_off">"באמצעות הגדרות כלליות עבור app. זה התור לשינוי הגדרות רק עבור יישום זה."</string>
+    <string name="overRide_global_summary_on">"באמצעות הגדרות מקומיות עבור app. הזה, להפוך להשתמש הגדרות כלליות."</string>
+    <string name="clear_cache">"לחץ כדי לנקות את מטמון תרגום"</string>
+    <string name="clear_cache_summary">"לחץ על האמור לעיל כדי לנקות את היישום של מתרגמים מטמון. להשתמש בזה לאחר שינוי בין שפות, או אם היישום אינו מופעל."</string>
+    <string name="Afrikaans_yandex">"אפריקאנס"</string>
+    <string name="Amharic_yandex">"אמהרית"</string>
+    <string name="Arabic_yandex">"ערבית"</string>
+    <string name="Azerbaijani_yandex">"אזרביג'אן"</string>
+    <string name="Bashkir_yandex">"באשקיר"</string>
+    <string name="Belarusian_yandex">"בלרוסית"</string>
+    <string name="Bulgarian_yandex">"בולגרית"</string>
+    <string name="Bengali_yandex">"בנגלית"</string>
+    <string name="Bosnian_yandex">"בוסנית"</string>
+    <string name="Catalan_yandex">"קטלונית"</string>
+    <string name="Cebuano_yandex">"Cebuano"</string>
+    <string name="Czech_yandex">"צ\'כית"</string>
+    <string name="Welsh_yandex">"וולשית"</string>
+    <string name="Danish_yandex">"דנית"</string>
+    <string name="German_yandex">"גרמנית"</string>
+    <string name="Greek_yandex">"יוונית"</string>
+    <string name="English_yandex">"אנגלית"</string>
+    <string name="Esperanto_yandex">"אספרנטו"</string>
+    <string name="Spanish_yandex">"ספרדית"</string>
+    <string name="Estonian_yandex">"אסטונית"</string>
+    <string name="Basque_yandex">"בסקית"</string>
+    <string name="Persian_yandex">"פרסית"</string>
+    <string name="Finnish_yandex">"פינית"</string>
+    <string name="French_yandex">"צרפתית"</string>
+    <string name="Irish_yandex">"אירית"</string>
+    <string name="Scottish_Gaelic_yandex">"גאלית סקוטית"</string>
+    <string name="Galician_yandex">"גליציאנית"</string>
+    <string name="Gujarati_yandex">"גוג\'ארטי"</string>
+    <string name="Hebrew_yandex">"עברית"</string>
+    <string name="Hindi_yandex">"הינדי"</string>
+    <string name="Croatian_yandex">"קרואטית"</string>
+    <string name="Haitian_yandex">"האיטי"</string>
+    <string name="Hungarian_yandex">"הונגרית"</string>
+    <string name="Armenian_yandex">"ארמנית"</string>
+    <string name="Indonesian_yandex">"אינדונזית"</string>
+    <string name="Icelandic_yandex">"איסלנדית"</string>
+    <string name="Italian_yandex">"איטלקית"</string>
+    <string name="Japanese_yandex">"יפנית"</string>
+    <string name="Javanese_yandex">"יאווה"</string>
+    <string name="Georgian_yandex">"גרוזינית"</string>
+    <string name="Kazakh_yandex">"קזאחית"</string>
+    <string name="Kannada_yandex">"קנאדה"</string>
+    <string name="Korean_yandex">"קוריאנית"</string>
+    <string name="Kyrgyz_yandex">"קירגיזית"</string>
+    <string name="Latin_yandex">"לטינית"</string>
+    <string name="Luxembourgish_yandex">"לוקסמבורגית"</string>
+    <string name="Lithuanian_yandex">"ליטאית"</string>
+    <string name="Latvian_yandex">"לטבית"</string>
+    <string name="Malagasy_yandex">"מלגשית"</string>
+    <string name="Mari_yandex">"מרי"</string>
+    <string name="Maori_yandex">"מאורית"</string>
+    <string name="Macedonian_yandex">"מקדונית"</string>
+    <string name="Malayalam_yandex">"מליאלאם"</string>
+    <string name="Mongolian_yandex">"מונגולית"</string>
+    <string name="Marathi_yandex">"מאראתי"</string>
+    <string name="Hill_Mari_yandex">"מארי היל"</string>
+    <string name="Malay_yandex">"מלאית"</string>
+    <string name="Maltese_yandex">"מלטית"</string>
+    <string name="Nepali_yandex">"נפאלית"</string>
+    <string name="Dutch_yandex">"הולנדית"</string>
+    <string name="Norwegian_yandex">"נורווגית"</string>
+    <string name="Punjabi_yandex">"פנג\'בית"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"פולנית"</string>
+    <string name="Portuguese_yandex">"פורטוגזית"</string>
+    <string name="Romanian_yandex">"רומנית"</string>
+    <string name="Russian_yandex">"רוסית"</string>
+    <string name="Sinhalese_yandex">"ציילוני"</string>
+    <string name="Slovak_yandex">"סלובקית"</string>
+    <string name="Slovenian_yandex">"סלובנית"</string>
+    <string name="Albanian_yandex">"אלבנית"</string>
+    <string name="Serbian_yandex">"סרבית"</string>
+    <string name="Sundanese_yandex">"סודניות"</string>
+    <string name="Swedish_yandex">"שוודית"</string>
+    <string name="Swahili_yandex">"סוואהילי"</string>
+    <string name="Tamil_yandex">"טמילית"</string>
+    <string name="Telugu_yandex">"טלוגו"</string>
+    <string name="Tajik_yandex">"הטג'יקית"</string>
+    <string name="Thai_yandex">"תאילנדית"</string>
+    <string name="Tagalog_yandex">"טגלוג"</string>
+    <string name="Turkish_yandex">"טורקית"</string>
+    <string name="Tatar_yandex">"טטארית"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"אוקראינית"</string>
+    <string name="Urdu_yandex">"אורדו"</string>
+    <string name="Uzbek_yandex">"אוזבקית"</string>
+    <string name="Vietnamese_yandex">"וייטנאמית"</string>
+    <string name="Xhosa_yandex">"קוזה"</string>
+    <string name="Yiddish_yandex">"יידיש"</string>
+    <string name="Chinese_yandex">"סינית"</string>
+    <string name="Afrikaans_micro">"אפריקאנס"</string>
+    <string name="Arabic_micro">"ערבית"</string>
+    <string name="Bosnian_Latin_micro">"בוסנית הלטינית"</string>
+    <string name="Bulgarian_micro">"בולגרית"</string>
+    <string name="Catalan_micro">"קטלונית"</string>
+    <string name="Chinese_Simplified_micro">"סינית פשוטה"</string>
+    <string name="Chinese_Traditional_micro">"סינית מסורתית"</string>
+    <string name="Croatian_micro">"קרואטית"</string>
+    <string name="Czech_micro">"צ\'כית"</string>
+    <string name="Danish_micro">"דנית"</string>
+    <string name="Dutch_micro">"הולנדית"</string>
+    <string name="English_micro">"אנגלית"</string>
+    <string name="Estonian_micro">"אסטונית"</string>
+    <string name="Finnish_micro">"פינית"</string>
+    <string name="French_micro">"צרפתית"</string>
+    <string name="German_micro">"גרמנית"</string>
+    <string name="Greek_micro">"יוונית"</string>
+    <string name="Haitian_Creole_micro">"האיטית"</string>
+    <string name="Hebrew_micro">"עברית"</string>
+    <string name="Hindi_micro">"הינדי"</string>
+    <string name="Hmong_Daw_micro">"המונג דאו"</string>
+    <string name="Hungarian_micro">"הונגרית"</string>
+    <string name="Indonesian_micro">"אינדונזית"</string>
+    <string name="Italian_micro">"איטלקית"</string>
+    <string name="Japanese_micro">"יפנית"</string>
+    <string name="Kiswahili_micro">"בסווהילי"</string>
+    <string name="Klingon_micro">"קלינגונית"</string>
+    <string name="Klingon_pIqaD_micro">"PIqaD קלינגוני"</string>
+    <string name="Korean_micro">"קוריאנית"</string>
+    <string name="Latvian_micro">"לטבית"</string>
+    <string name="Lithuanian_micro">"ליטאית"</string>
+    <string name="Malay_micro">"מלאית"</string>
+    <string name="Maltese_micro">"מלטית"</string>
+    <string name="Norwegian_micro">"נורווגית"</string>
+    <string name="Persian_micro">"פרסית"</string>
+    <string name="Polish_micro">"פולנית"</string>
+    <string name="Portuguese_micro">"פורטוגזית"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"רומנית"</string>
+    <string name="Russian_micro">"רוסית"</string>
+    <string name="Serbian_Cyrillic_micro">"סרבית קירילית"</string>
+    <string name="Serbian_Latin_micro">"סרבית לטינית"</string>
+    <string name="Slovak_micro">"סלובקית"</string>
+    <string name="Slovenian_micro">"סלובנית"</string>
+    <string name="Spanish_micro">"ספרדית"</string>
+    <string name="Swedish_micro">"שוודית"</string>
+    <string name="Thai_micro">"תאילנדית"</string>
+    <string name="Turkish_micro">"טורקית"</string>
+    <string name="Ukrainian_micro">"אוקראינית"</string>
+    <string name="Urdu_micro">"אורדו"</string>
+    <string name="Vietnamese_micro">"וייטנאמית"</string>
+    <string name="Welsh_micro">"וולשית"</string>
+    <string name="Yucatec_Maya_micro">"מאיה Yucatec"</string>
+</resources>

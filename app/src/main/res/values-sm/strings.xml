@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Utaina o le lisi o talosaga - faamolemole faatali"</string>
+    <string name="clear_cache_error">"O nisi mea sese. Mafai ona le manino faaliliuga cache!"</string>
+    <string name="clear_cache_success">"Faaliliu Cache mo le polokalama lenei o le ua soloiesea!"</string>
+	<string name="how_to_use">"AUALA E FAAAOGA AI LE FAAAOGAAGA
+
+E manaomia e lenei talosaga e saini ai mo se ki mai le Microsoft po o Yandex faaliliu.
+Yandex faaliliu e lagolagoina isi gagana, ua se tele faigofie signup faagasologa, ma e manaomia ai le kata o le leai.
+Microsoft Translate tuuina mai e sili atu ona taunuuga, ae e manaomia ai se kata e saini ai. (Ae aua le popole, o le a leai se mea le piliina.)
+
+1. i le faailoga o le faatulagaga o le lalolagi atoa, e mafai ai ona Yandex e faaaoga nai lo le Microsoft pe afai e te manao e faaaogaina Yandex, tape le isi mea e faaaoga i le Microsoft.
+1. i le faailoga o le faatulagaga o le lalolagi atoa, oomi le ta i totonu Microsoft/Yandex lesitala autu, ta i totonu le ki talafeagai (tagai i le faatonuga mai i lalo).
+2. filifili le faaliliu mai gagana ma faaliliuina i le gagana.
+3. i le polokalama i le faailoga o le faaliliu, e maua le polokalama o le e te manao e faaliliu, kiliki le pusafaasao i autafa. Afai e le o vaaia le pusafaasao, taumafai e faasolosolo lau telefoni autafa i tulaga o le laufanua.
+4. tapuni ma toe amata le polokalama o le e manao faaliliuina - ona tatau ona faaliliuina i ai!
+
+LAPATAIGA - nisi polokalama ono faamalosia vavalalata. Tagai i le vaega o le Troubleshooting.
+
+AUALA E MAUA AI NA FAALILIU AI E YANDEX AUTU O LE TOTOGI O LE MEKASINI
+
+1. o le alu i le uepisaite o le Yandex - https://tech.yandex.com/keys/get/?service=trnsl
+2. Afai aua ua i ai se faitotoa, kiliki le masini ta faatau ma saini ai mo se faitotoa fou.
+3. ina ua uma ona sainia i luga, malie i le maliega a le tagata faaaoga ma kiliki le maua le ki o le API.
+4. o le a e maua manuia lau ki! O se mea e pei o le trnsl.1.1.201701...
+
+AUALA E MAUA AI NA FAALILIU AI E MICROSOFT AZURE AUTU O LE TOTOGI O LE MEKASINI
+
+1. saini mo se faitotoa o le Microsoft Azure i le http://azure.com
+
+2. a uma ona e i ai se faitotoa, saini i totonu o le Faitotoa a ifo i http://portal.azure.com
+
+3. faaopoopo se lesitala Microsoft faaliliutusi API i lau faitotoa ifo.
+Filifili se lesitala pay-as-you-go. O le a manaomia ai se kata fai faatau, ae aua le popole, e leai se mea o le a piliina.
+Filifili le + fou le filifiliga.
+Filifili le atamai mai le lisi o auaunaga.
+Filifili le APIs o le tautua malosi o le mafaufau.
+Filifili le vaega o le ituaiga o le API.
+Filifili le Faaliliuga o le anotusi
+I le vaega o le tau o le Tier, filifili le Tier saoloto (F0)
+Faatumu le vaega o totoe o le fomu, ma oomi le faamau o le fatu.
+
+4. toe aumai lau ki o le faamaoniga.
+Alu i punaoa uma ma filifili le API tagata faaliliu Microsoft e lesitala i.
+Alu i le filifiliga o le ki ma kopi o le ki o lau lesitala e maua ai le auaunaga.
+O le ki o le totogi o le mekasini o se mea e pei 321dcba...
+
+FESOASOANIGA
+
+1. Afai e leai se polokalama ua faaliliuina, siaki lau ki o le totogi o le mekasini o le Microsoft/Yandex o le sao.
+2. Afai o le polokalama o le faaliliuina malosiaga tapuni/oo e mau i le utaina o le taimi muamua ina ua uma ona e amata faaliliu, kiliki i le app i polokalama e faaliliu ai le faailoga, ma i isi nofoaga faatumu faatuai a o lei faaliliuina e 2000.
+3. Afai na faaaoga e le polokalama o le faaliliuina e galuega lelei, ae o nei mau i le amataina o, kiliki i luga o le app i polokalama e faaliliu ai le faailoga, ma kiliki i le kiliki i Cache manino o le faaliliuga.
+4. Afai e ua faaliliuina nisi o vaega o le polokalama o le, kiliki i luga o le app i polokalama e faaliliu ai le faailoga, ma mafai ai faiga saua.
+5. pe le polokalama lava malosiaga tapunia, tape le faaliliuga mo lenei polokalama ma faafesootai mai au i le manoa o le lagolago i le XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Faaliliu se mea"</string>
+    <string name="apps_to_translate">"Polokalama e faaliliu"</string>
+    <string name="global_settings">"Faatulagaga o le lalolagi atoa"</string>
+    <string name="instructions">"Faatonuga"</string>
+    <string name="pref_cat_translate_settings">"Faaliliu le faatulagaga"</string>
+    <string name="pref_cat_parts_of_app">"O vaega o le polokalama e faaliliu"</string>
+    <string name="pref_cat_other_settings">"Isi faatulagaga"</string>
+    <string name="master_on_off">"Matai i luga/ese"</string>
+    <string name="master_on_off_summary">"Tape e tape atoatoa lenei Motula"</string>
+    <string name="master_on_off_summary_off">"Motula e liliu, leai se polokalama o le a faaliliuina. Liliu atu i ai e amata faaaoga auto-faaliliu!"</string>
+    <string name="master_on_off_summary_on">"Motula ua liliu i le, o le a faaliliuina polokalama ua filifilia. Tape e tape atoatoa lenei Motula."</string>
+    <string name="enable_yandex">"Yandex o le faaaoga nai lo le Microsoft"</string>
+    <string name="enable_yandex_summary">"Liliu atu i luga i le Faaliliuga o le Yandex e faaaoga nai lo le Microsoft"</string>
+    <string name="enable_yandex_summary_off">"O loo e faaaogaina Microsoft Azure faaliliuga. Liliu atu i luga i le Faaliliuga o le Yandex e faaaoga."</string>
+    <string name="enable_yandex_summary_on">"O loo e faaaogaina Yandex faaliliuga. Tape e faaaoga Microsoft Azure faaliliuga."</string>
+    <string name="subKey">"Microsoft / ki o le totogi o le mekasini o le Yandex"</string>
+    <string name="subKey_micro">"Ki o le Microsoft lesitala"</string>
+    <string name="subKey_yandex">"Ki o le totogi o le mekasini o le Yandex"</string>
+    <string name="subKey_summary">"Ta i totonu le ki o le lesitala mo le Microsoft Azure po o Yandex faaliliuga API, po o fea e mafai ona i luga"</string>
+    <string name="subKey_defaultValue">"Ta i totonu lou Microsoft po o ki o le totogi o le mekasini o le Yandex"</string>
+    <string name="transFrom">"Faaliliu mai gagana"</string>
+    <string name="transFrom_summary">"Gagana le polokalama e muai i."</string>
+    <string name="transTo">"Faaliliuina i le gagana"</string>
+    <string name="transTo_summary">"E te manao i le polokalama e ona faaliliu i le gagana."</string>
+    <string name="setText">"Upu masani faaliliu"</string>
+    <string name="setText_summary_off">"Le faaliliuina o tusiga o le faaaogaina o anotusi o le seti. Ki e mafai ai."</string>
+    <string name="setText_summary_on">"O le faaliliuina o tusiga o le faaaogaina o seti anotusi - saogalemu. Tape e tape."</string>
+    <string name="setHint">"Faaliliu le tusiga motugaafa fesoasoani e tautuaina (faaefuefu-Coloured fautuaga) i pusa o faaupuga"</string>
+    <string name="setHint_summary_off">"Le faaliliuina o tusiga o le faaaogaina o le seti i le faaiteite. Ki e mafai ai."</string>
+    <string name="setHint_summary_on">"O le faaliliuina o tusiga o le faaaogaina o seti faaiteite - saogalemu. Tape e tape."</string>
+    <string name="webView">"Faaliliu le tusiga i le itulau o le Uepi i totonu o le polokalama"</string>
+    <string name="webView_summary_off">"Faaliliu le tusiga i le WebViews. Ki e mafai ai."</string>
+    <string name="webView_summary_on">"Faaliliuina o tusiga i totonu o le WebView - saogalemu, atonu e le aoga lava. Tape e tape."</string>
+    <string name="drawText">"Faiga saua"</string>
+    <string name="drawText_summary_off">"Ma le faamalosi le faaliliuina o tusiga i le drawText. Faaaoga pe a uma atu i luga ua toilalo. Ki e mafai ai."</string>
+    <string name="drawText_summary_on">"Ma le faamalosi o le faaliliuina o tusiga i le drawText - Experimental, atonu le galuega o taimi uma. Tape e tape."</string>
+    <string name="caching">"Faaaoga Caching"</string>
+    <string name="caching_summary_off">"Le Faaola faaliliuga faaaogaina ai le Initoneti, ma iu ai i telegese faaliliu ma faamatalaga maualuga - ae e mafai ona galulue mo polokalama sili atu. Liliu atu i ai vagana o faaliliuga."</string>
+    <string name="caching_summary_on">"Faaola le faaliliuga e faaaogaina ai le Initoneti e faatelevave ai e faaliliu ma faaaoga ai faamatalaga. Tape e tape pe afai e le amata lau polokalama."</string>
+    <string name="delay">"O le faatuai a o lei faaliliuina"</string>
+    <string name="delay_summary">"Seti le taimi i le milliseconds e faatali ona faatoa faaliliuina. O le tulaga faatauaina o le Tiumasani o 0, seti i le 1000 – 5000 afai ua faaletonu le polokalama o le faaliliuina."</string>
+    <string name="overRide_global">"O le suia o le faatulagaga o le lalolagi atoa"</string>
+    <string name="overRide_global_summary_off">"Faaaogaina o faatulagaga o le lalolagi atoa mo lenei app. liliu i e suia le faatulagaga na mo lenei polokalama."</string>
+    <string name="overRide_global_summary_on">"Faaaogaina o nofoaga i le lotoifale mo lenei app. liliu ese e faaaoga faatulagaga o le lalolagi atoa."</string>
+    <string name="clear_cache">"Kiliki e kilia faaliliuga Cache"</string>
+    <string name="clear_cache_summary">"Kiliki i luga e kilia ai le polokalama o le a faaliliu cache. Faaaogaina o lenei ina ua maea le suia e/mai gagana, po o le i amata le polokalama."</string>
+    <string name="Afrikaans_yandex">"Tagata Aferika"</string>
+    <string name="Amharic_yandex">"Amharic"</string>
+    <string name="Arabic_yandex">"Arapi"</string>
+    <string name="Azerbaijani_yandex">"Azerbaijani"</string>
+    <string name="Bashkir_yandex">"Bashkir"</string>
+    <string name="Belarusian_yandex">"Tagata Pelarusa"</string>
+    <string name="Bulgarian_yandex">"Tagata Pulukaria"</string>
+    <string name="Bengali_yandex">"Penekali"</string>
+    <string name="Bosnian_yandex">"Tagata Posenia"</string>
+    <string name="Catalan_yandex">"Katalani"</string>
+    <string name="Cebuano_yandex">"Sepuano"</string>
+    <string name="Czech_yandex">"Siekisolovakia"</string>
+    <string name="Welsh_yandex">"Uelese"</string>
+    <string name="Danish_yandex">"Tenimaka"</string>
+    <string name="German_yandex">"Siamani"</string>
+    <string name="Greek_yandex">"Eleni"</string>
+    <string name="English_yandex">"Igilisi"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Sipaniolo"</string>
+    <string name="Estonian_yandex">"Tagata Esetonia"</string>
+    <string name="Basque_yandex">"Paseki"</string>
+    <string name="Persian_yandex">"Peresia"</string>
+    <string name="Finnish_yandex">"Finelani"</string>
+    <string name="French_yandex">"Farani"</string>
+    <string name="Irish_yandex">"Aialani"</string>
+    <string name="Scottish_Gaelic_yandex">"FaaSikotilani Gaelic"</string>
+    <string name="Galician_yandex">"Tagata Eperu"</string>
+    <string name="Gujarati_yandex">"Kuatarati"</string>
+    <string name="Hebrew_yandex">"Eperu"</string>
+    <string name="Hindi_yandex">"Initu"</string>
+    <string name="Croatian_yandex">"Tagata Koroasia"</string>
+    <string name="Haitian_yandex">"Haiti"</string>
+    <string name="Hungarian_yandex">"Hanikeri"</string>
+    <string name="Armenian_yandex">"Aremania"</string>
+    <string name="Indonesian_yandex">"Initonesia"</string>
+    <string name="Icelandic_yandex">"Iselani"</string>
+    <string name="Italian_yandex">"Italia"</string>
+    <string name="Japanese_yandex">"Iapani"</string>
+    <string name="Javanese_yandex">"Tavanisi"</string>
+    <string name="Georgian_yandex">"Faasiaosiana"</string>
+    <string name="Kazakh_yandex">"Kasa"</string>
+    <string name="Kannada_yandex">"Kanata"</string>
+    <string name="Korean_yandex">"Korea"</string>
+    <string name="Kyrgyz_yandex">"Kirisi"</string>
+    <string name="Latin_yandex">"Latina"</string>
+    <string name="Luxembourgish_yandex">"Luxembourgish"</string>
+    <string name="Lithuanian_yandex">"Tagata Lituania"</string>
+    <string name="Latvian_yandex">"Tagata Lativia"</string>
+    <string name="Malagasy_yandex">"Malagasy"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maoli"</string>
+    <string name="Macedonian_yandex">"Tagata Masetoni"</string>
+    <string name="Malayalam_yandex">"Meleialama"</string>
+    <string name="Mongolian_yandex">"Tagata Monokolia"</string>
+    <string name="Marathi_yandex">"Marati"</string>
+    <string name="Hill_Mari_yandex">"Mauga Mari"</string>
+    <string name="Malay_yandex">"Gagana Meleisia"</string>
+    <string name="Maltese_yandex">"Tagata Malata"</string>
+    <string name="Nepali_yandex">"Nepali"</string>
+    <string name="Dutch_yandex">"Take"</string>
+    <string name="Norwegian_yandex">"Nouei"</string>
+    <string name="Punjabi_yandex">"Tagata Punitapi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Polani"</string>
+    <string name="Portuguese_yandex">"Potukale"</string>
+    <string name="Romanian_yandex">"Romania"</string>
+    <string name="Russian_yandex">"Rusia"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Solovakia"</string>
+    <string name="Slovenian_yandex">"Solovenia"</string>
+    <string name="Albanian_yandex">"Alepania"</string>
+    <string name="Serbian_yandex">"Tagata Serepia"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"Suetena"</string>
+    <string name="Swahili_yandex">"Suaili"</string>
+    <string name="Tamil_yandex">"Tamil"</string>
+    <string name="Telugu_yandex">"Teluku"</string>
+    <string name="Tajik_yandex">"Tajik"</string>
+    <string name="Thai_yandex">"Taialani"</string>
+    <string name="Tagalog_yandex">"Takaloka"</string>
+    <string name="Turkish_yandex">"A Take"</string>
+    <string name="Tatar_yandex">"Tata"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Iukureini"</string>
+    <string name="Urdu_yandex">"Urdu"</string>
+    <string name="Uzbek_yandex">"Usipeka"</string>
+    <string name="Vietnamese_yandex">"Viatename"</string>
+    <string name="Xhosa_yandex">"Sousa"</string>
+    <string name="Yiddish_yandex">"Yiddish"</string>
+    <string name="Chinese_yandex">"Saina"</string>
+    <string name="Afrikaans_micro">"Tagata Aferika"</string>
+    <string name="Arabic_micro">"Arapi"</string>
+    <string name="Bosnian_Latin_micro">"Tagata Posenia Latina"</string>
+    <string name="Bulgarian_micro">"Tagata Pulukaria"</string>
+    <string name="Catalan_micro">"Katalani"</string>
+    <string name="Chinese_Simplified_micro">"Faafaigofie e Saina"</string>
+    <string name="Chinese_Traditional_micro">"Saina"</string>
+    <string name="Croatian_micro">"Tagata Koroasia"</string>
+    <string name="Czech_micro">"Siekisolovakia"</string>
+    <string name="Danish_micro">"Tenimaka"</string>
+    <string name="Dutch_micro">"Take"</string>
+    <string name="English_micro">"Igilisi"</string>
+    <string name="Estonian_micro">"Tagata Esetonia"</string>
+    <string name="Finnish_micro">"Finelani"</string>
+    <string name="French_micro">"Farani"</string>
+    <string name="German_micro">"Siamani"</string>
+    <string name="Greek_micro">"Eleni"</string>
+    <string name="Haitian_Creole_micro">"Haiti Creole"</string>
+    <string name="Hebrew_micro">"Eperu"</string>
+    <string name="Hindi_micro">"Initu"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Hanikeri"</string>
+    <string name="Indonesian_micro">"Initonesia"</string>
+    <string name="Italian_micro">"Italia"</string>
+    <string name="Japanese_micro">"Iapani"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Korea"</string>
+    <string name="Latvian_micro">"Tagata Lativia"</string>
+    <string name="Lithuanian_micro">"Tagata Lituania"</string>
+    <string name="Malay_micro">"Gagana Meleisia"</string>
+    <string name="Maltese_micro">"Tagata Malata"</string>
+    <string name="Norwegian_micro">"Nouei"</string>
+    <string name="Persian_micro">"Peresia"</string>
+    <string name="Polish_micro">"Polani"</string>
+    <string name="Portuguese_micro">"Potukale"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Romania"</string>
+    <string name="Russian_micro">"Rusia"</string>
+    <string name="Serbian_Cyrillic_micro">"Faaserepia"</string>
+    <string name="Serbian_Latin_micro">"Tagata Serepia Latina"</string>
+    <string name="Slovak_micro">"Solovakia"</string>
+    <string name="Slovenian_micro">"Solovenia"</string>
+    <string name="Spanish_micro">"Sipaniolo"</string>
+    <string name="Swedish_micro">"Suetena"</string>
+    <string name="Thai_micro">"Taialani"</string>
+    <string name="Turkish_micro">"A Take"</string>
+    <string name="Ukrainian_micro">"Iukureini"</string>
+    <string name="Urdu_micro">"Urdu"</string>
+    <string name="Vietnamese_micro">"Viatename"</string>
+    <string name="Welsh_micro">"Uelese"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

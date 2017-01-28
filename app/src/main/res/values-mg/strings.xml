@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Fanokafana ny Lisitry ny fomba Fampiharana - andraso Kely Azafady"</string>
+    <string name="clear_cache_error">"Tsy Fetezana sasany. Afaka mazava fandikana cache!"</string>
+    <string name="clear_cache_success">"Handika Cache fa voafafa ny application ity!"</string>
+	<string name="how_to_use">"AHOANA NO FOMBA AMPIASANA NY FAMPIHARANA
+
+Izany fampiharana izany dia mitaky anao mba hisoratra anarana ho an' ny iray manan-danja avy amin' i Microsoft na Mandika ny Yandex.
+Manohana ny fiteny maromaro kokoa Mandika ny Yandex, dia be mora signup dingana ary mitaky KARATRA fiantohana avy ANY amin' ny TSY.
+Manome tsaratsara kokoa ireo vokatra Microsoft Translate, saingy mitaky ny karatra mba hisoratra anarana. (Saingy aza manahy, ho na inona na inona andraikitra.)
+
+1. ao amin' ny Sehatra maneran-Tany onglet, fahafahana Hampiasa Yandex fa tsy Microsoft raha toa ianao ka mampiasa Yandex, mankarary hafa hampiasa Microsoft.
+1. ao amin' ny Sehatra maneran-Tany onglet, kasiho Hiditra Microsoft/Yandex Famandrihana manan-Danja, mampiditra ireo ny fanalahidy mifandraika amin' izany (jereo etsy ambany amin' ny Toromarika).
+2. misafidy ny Handika avy amin' ny Fiteny sy Handika fiteny.
+3. ao amin' ny Application mba Mandika onglet, mahita ny application tianao mba handika teny, tsindrio ny checkbox eo akaikin' izany. Raha ny checkbox dia tsy hita maso, miezaka rotating findainao sideways amin' ny fomba fanaovana Endritany.
+4. akaiky ary averina velomina indray ny rafibaovao nadika tianao - tokony handikana izany!
+
+FAMPITANDREMANA - applications Sasany mety hanery akaiky. Jereo ny fizarana Troubleshooting.
+
+NY FOMBA MBA HAHAZOANA YANDEX HANDIKA TENY MANAN-DANJA NY FAMANDRIHANA
+
+1. mandeha any am-Tranonkalan' ny Yandex - https://tech.yandex.com/keys/get/?service=trnsl
+2. raha tsy efa ny fitantarana, tsindrio hisoratra anarana sy famantarana niakatra ho an' ny tantara iray vaovao.
+3. taorian' ny sonia eo ambony, manaiky ny Fifanarahana ny Mpampiasa ary tsindrio Mahazo API manan-Danja.
+4. amim-pahombiazana nandray ny manan-danja izany! Izany no zavatra toy trnsl.1.1.201701...
+
+NY FOMBA HAKA MICROSOFT AZURE HANDIKA TENY MANAN-DANJA NY FAMANDRIHANA
+
+1. hisoratra anarana ho an' ny tantara iray Microsoft Azure amin' ny http://azure.com
+
+2. rehefa manana kaonty ianao, dia hanao sonia eo amin' ny varavarana fidirana ho an' ny Azure amin' ny http://portal.azure.com
+
+3. ampio ny famandrihana API mpandika Teny Microsoft ny kaonty Azure.
+Misafidy ny famandrihana pay-as-you-go. Mitaky ny karatra, anefa aza manahy, dia ho nandoa na inona na inona.
+Safidio ny + Vaovao safidy.
+Safidio ny faharanitan-Tsaina ao amin' ny lisitr' ireo fotoam-pivavahana.
+Safidio ny sampan-Draharahan' ny Cognitive APIs.
+Safidio ny Karazana API safidy.
+Safidio ny Fandikana ny Lahatsoratra
+Ao amin' ny fizarana Ambany Pricing, safidio ny Fianarana Malalaka (F0)
+Fenoy ny ambin' ilay taratasy, ary tsindrio ny bokotra Create.
+
+4. haka ny fanamarinana manan-danja.
+Any amin' ireo Loharano Rehetra ary safidio ny Microsoft mpandika Teny API subscribed ho anao.
+Handeha any amin' ny Fanalahidin' ny safidy ary adikao ny fanalahidy famandrihana mba hidirana ao amin' ny asa fanompoana.
+Ny fanalahidy famandrihana dia zavatra toy 321dcba...
+
+AMIN' NY TSY FAHATOMOMBANANA
+
+1. raha toa ka tsy misy application dia adika, hamarino ny Microsoft/Yandex Famandrihana Fanalahidy dia marina.
+2. raha tafahitsoka amin' ny fanokafana ny fotoana voalohany taorian' ny ianao nanomboka nandika ny application nadika Hery Faranan'/fanontanina, tsindrio ny application ao amin' ny Application mba handika teny onglet, ary amin' ny toe-Javatra Hafa fenoy hatak' Andro Alohan' ny Fandikana ny 2000.
+3. raha toa ka ampiasaina ny application nadika mba hiasa salama, saingy ankehitriny tafahitsoka amin' ny manomboka, tsindrio ny application ao amin' ny Application mba handika teny onglet ary tsindrio eo amin' ny Tsindrio ny Cache ny fandikan-Teny Mazava.
+4. raha ireo ampahany sasany ao amin' ny application dia tsy adika, tsindrio ao amin' ny application ao amin' ny Application mba handika teny onglet, ary manome fahafahana Masiaka ny fomba Fanaovana.
+5. raha mbola ny application Faranan' Hery, turn fandikan-teny an' ity application ary manatona ahy amin' ny tady ny fanohanana amin' ny XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Handika teny na aiza na Aiza"</string>
+    <string name="apps_to_translate">"Applications handika teny"</string>
+    <string name="global_settings">"Sehatra maneran-tany"</string>
+    <string name="instructions">"Torolalana"</string>
+    <string name="pref_cat_translate_settings">"Handika ny toe-javatra Misy"</string>
+    <string name="pref_cat_parts_of_app">"Ampahany amin' ny Application handika teny"</string>
+    <string name="pref_cat_other_settings">"Sehatra hafa"</string>
+    <string name="master_on_off">"Mpampianatra Amin' ny/Hiala"</string>
+    <string name="master_on_off_summary">"Vonoy ny turn tanteraka ity module"</string>
+    <string name="master_on_off_summary_off">"Module no nitodika, tsy applications dia ho voadika. Hitodika any amin' ny fampiasana ny fanombohana auto-handika!"</string>
+    <string name="master_on_off_summary_on">"Dia nitodika tany amin' ny module, dia ho voadika applications voafantina. Vonoy ny turn tanteraka izany module."</string>
+    <string name="enable_yandex">"Mampiasa Yandex fa tsy Microsoft"</string>
+    <string name="enable_yandex_summary">"Areheto ny mampiasa Yandex Fandikana fa tsy Microsoft"</string>
+    <string name="enable_yandex_summary_off">"Amin' izao fotoana izao ny fampiasana Microsoft Azure Fandikana. Areheto mampiasa Yandex fandikan-Teny."</string>
+    <string name="enable_yandex_summary_on">"Amin' izao fotoana izao ny fampiasana Yandex fandikan-Teny. Vonoy ny hampiasa Microsoft Azure Fandikana."</string>
+    <string name="subKey">"Microsoft / Yandex Famandrihana manan-Danja"</string>
+    <string name="subKey_micro">"Manan-Danja ny Famandrihana Microsoft"</string>
+    <string name="subKey_yandex">"Manan-Danja ny Famandrihana Yandex"</string>
+    <string name="subKey_summary">"Miditra ny Fanalahidy Famandrihana Microsoft Azure na Yandex Fandikana API, dia nanome fahafahana ambony ambanin'"</string>
+    <string name="subKey_defaultValue">"Miditra Ny Microsoft na Yandex Famandrihana manan-Danja"</string>
+    <string name="transFrom">"Handika avy Amin' ny Fiteny"</string>
+    <string name="transFrom_summary">"Dia tany am-piandohana amin' ny fitenin' ny application."</string>
+    <string name="transTo">"Handika Fiteny"</string>
+    <string name="transTo_summary">"Azonao atao ny application ho handika teny amin' ny fiteny."</string>
+    <string name="setText">"Handika Lahatsoratra ara-dalàna."</string>
+    <string name="setText_summary_off">"Tsy Nandika ny Lahatsoratra voasoratra amin' ny alalan' ny fampiasana ny Lahatsoratry ny Hametraka. Hitodika any ny fahafahana."</string>
+    <string name="setText_summary_on">"Fandikana ny Lahatsoratra voasoratra ny fampiasana Hametraka Lahatsoratra - toerana azo Antoka. Vonoy ny mankarary."</string>
+    <string name="setHint">"Handika Lahatsoratra ao amin' ny Lahatsoratry ny Boaty ny Fanorotoroana (Sosokevitra loko Volombatolalaka-Coloured)"</string>
+    <string name="setHint_summary_off">"Tsy Nandika ny Lahatsoratra voasoratra ny fampiasana Hametraka Fanorotoroana. Hitodika any ny fahafahana."</string>
+    <string name="setHint_summary_on">"Fandikana ny Lahatsoratra voasoratra ny fampiasana Hametraka Fanorotoroana - toerana azo Antoka. Vonoy ny mankarary."</string>
+    <string name="webView">"Handika Lahatsoratra ao amin' ny Pejin-Tranonkala ao anatiny Applications"</string>
+    <string name="webView_summary_off">"Tsy Nandika ny Lahatsoratra ao amin' ny WebViews. Hitodika any ny fahafahana."</string>
+    <string name="webView_summary_on">"Fandikana ny Lahatsoratra ao anatin' ny WebView - toerana azo Antoka, Mety Tsy Miasa Foana. Vonoy ny mankarary."</string>
+    <string name="drawText">"Ny Fomba masiaka"</string>
+    <string name="drawText_summary_off">"Tsy masiaka fandikana ny Lahatsoratra ao amin' ny drawText. Fampiasana rehefa rehetra etsy ambony tsy. Hitodika any ny fahafahana."</string>
+    <string name="drawText_summary_on">"Fandikana ny Lahatsoratra ao amin' ny drawText - masiaka Experimental, Mety Tsy Asa Foana. Vonoy ny mankarary."</string>
+    <string name="caching">"Mampiasa ny Caching"</string>
+    <string name="caching_summary_off">"Tsy ny famonjena dikanteny internet intsony aza, izay niafara tamin' slower handika sy ambony kokoa ny tahirin-kevitra - Kanefa afaka miara-miasa ho an' ny application bebe kokoa. Hitodika any amin' ny afa-tsy fandikan-teny."</string>
+    <string name="caching_summary_on">"Dikanteny famonjena ny internet intsony aza ny ataon' handika sy hampiasa ny tahirin-kevitra. Vonoy ny turn raha tsy hanomboka ny application."</string>
+    <string name="delay">"Hatak' andro Alohan' ny fandikan-Teny"</string>
+    <string name="delay_summary">"Nametraka ny fotoana ao amin' ny milliseconds ny miandry alohan' ny fandikana. Manan-Danja miseho ho azy dia 0, hametraka ny 1000 – 5000 raha ilay ny application voadika."</string>
+    <string name="overRide_global">"Hanaisotra ny Sehatra maneran-Tany"</string>
+    <string name="overRide_global_summary_off">"Fampiasana Sehatra maneran-Tany ho an' ity app. Anjara amin' ny hanova ny toe-javatra fotsiny ihany ho an' ny application ity."</string>
+    <string name="overRide_global_summary_on">"Mampiasa toe-javatra Misy eo an-Toerana ho an' ity app. Anjara hiala hampiasa ny Sehatra maneran-Tany."</string>
+    <string name="clear_cache">"Tsindrio ny mazava Fandikana Cache"</string>
+    <string name="clear_cache_summary">"Tsindrio ny ambony mba mazava ny application ny handika teny cache. Ampiasao ity aorian' ny fanovana ny/avy amin' ny fiteny, na raha toa ka tsy hanomboka ny application."</string>
+    <string name="Afrikaans_yandex">"Teny Afrikaans"</string>
+    <string name="Amharic_yandex">"Amarika"</string>
+    <string name="Arabic_yandex">"Arabo"</string>
+    <string name="Azerbaijani_yandex">"Azerbaijani"</string>
+    <string name="Bashkir_yandex">"Bashkir"</string>
+    <string name="Belarusian_yandex">"Belarosianina"</string>
+    <string name="Bulgarian_yandex">"Biolgarianina"</string>
+    <string name="Bengali_yandex">"Bengali"</string>
+    <string name="Bosnian_yandex">"Bosniaka"</string>
+    <string name="Catalan_yandex">"Katalana"</string>
+    <string name="Cebuano_yandex">"Seboanô"</string>
+    <string name="Czech_yandex">"Tseky"</string>
+    <string name="Welsh_yandex">"Galoà"</string>
+    <string name="Danish_yandex">"Danoa"</string>
+    <string name="German_yandex">"Alemà"</string>
+    <string name="Greek_yandex">"Grika"</string>
+    <string name="English_yandex">"Anglisy"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Espaniôla"</string>
+    <string name="Estonian_yandex">"Estonianina"</string>
+    <string name="Basque_yandex">"Baska"</string>
+    <string name="Persian_yandex">"Persiana"</string>
+    <string name="Finnish_yandex">"Finlandey"</string>
+    <string name="French_yandex">"Frantsay"</string>
+    <string name="Irish_yandex">"Irlandey"</string>
+    <string name="Scottish_Gaelic_yandex">"Gaélique Scottish"</string>
+    <string name="Galician_yandex">"Gaelisianina"</string>
+    <string name="Gujarati_yandex">"Gojarati"</string>
+    <string name="Hebrew_yandex">"Hebreo"</string>
+    <string name="Hindi_yandex">"Hindou"</string>
+    <string name="Croatian_yandex">"Kroaty."</string>
+    <string name="Haitian_yandex">"Haïti Mba"</string>
+    <string name="Hungarian_yandex">"Haongrianina"</string>
+    <string name="Armenian_yandex">"Armenianina"</string>
+    <string name="Indonesian_yandex">"Indonezianina"</string>
+    <string name="Icelandic_yandex">"Islandey"</string>
+    <string name="Italian_yandex">"Italiana"</string>
+    <string name="Japanese_yandex">"Japoney"</string>
+    <string name="Javanese_yandex">"Javanese"</string>
+    <string name="Georgian_yandex">"Zaorizianina"</string>
+    <string name="Kazakh_yandex">"Kazaky"</string>
+    <string name="Kannada_yandex">"Kannada"</string>
+    <string name="Korean_yandex">"Kôreana"</string>
+    <string name="Kyrgyz_yandex">"Kyrgyz"</string>
+    <string name="Latin_yandex">"Latina"</string>
+    <string name="Luxembourgish_yandex">"Luxembourgish"</string>
+    <string name="Lithuanian_yandex">"Litoanianina"</string>
+    <string name="Latvian_yandex">"Fiteny letôniana dia Mpitsara"</string>
+    <string name="Malagasy_yandex">"Malagasy"</string>
+    <string name="Mari_yandex">"Dia"</string>
+    <string name="Maori_yandex">"Maori"</string>
+    <string name="Macedonian_yandex">"Masedonianina"</string>
+    <string name="Malayalam_yandex">"Malayalam"</string>
+    <string name="Mongolian_yandex">"Môngôly"</string>
+    <string name="Marathi_yandex">"Marathi"</string>
+    <string name="Hill_Mari_yandex">"Havoana Dia"</string>
+    <string name="Malay_yandex">"Malay"</string>
+    <string name="Maltese_yandex">"Maltezy"</string>
+    <string name="Nepali_yandex">"Nepali"</string>
+    <string name="Dutch_yandex">"Fiteny Holandey"</string>
+    <string name="Norwegian_yandex">"Norvezianina"</string>
+    <string name="Punjabi_yandex">"Panjabi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Poloney"</string>
+    <string name="Portuguese_yandex">"Pôrtogey"</string>
+    <string name="Romanian_yandex">"Romanianina"</string>
+    <string name="Russian_yandex">"Rosianina"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Slôvaky"</string>
+    <string name="Slovenian_yandex">"Silôveniana"</string>
+    <string name="Albanian_yandex">"Albanianina"</string>
+    <string name="Serbian_yandex">"Serba."</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"Soedoa"</string>
+    <string name="Swahili_yandex">"Swahili"</string>
+    <string name="Tamil_yandex">"Tamily"</string>
+    <string name="Telugu_yandex">"Telogoa"</string>
+    <string name="Tajik_yandex">"Tajik"</string>
+    <string name="Thai_yandex">"Tailandey"</string>
+    <string name="Tagalog_yandex">"Tagalogy"</string>
+    <string name="Turkish_yandex">"Turquie"</string>
+    <string name="Tatar_yandex">"Tantara"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Okireniana"</string>
+    <string name="Urdu_yandex">"Ourdou"</string>
+    <string name="Uzbek_yandex">"Ozbeky"</string>
+    <string name="Vietnamese_yandex">"Vietnamianina"</string>
+    <string name="Xhosa_yandex">"Xhosa"</string>
+    <string name="Yiddish_yandex">"Yiddish"</string>
+    <string name="Chinese_yandex">"Sinoa"</string>
+    <string name="Afrikaans_micro">"Teny Afrikaans"</string>
+    <string name="Arabic_micro">"Arabo"</string>
+    <string name="Bosnian_Latin_micro">"Bosniaka Latina"</string>
+    <string name="Bulgarian_micro">"Biolgarianina"</string>
+    <string name="Catalan_micro">"Katalana"</string>
+    <string name="Chinese_Simplified_micro">"Sinoa Notsorina"</string>
+    <string name="Chinese_Traditional_micro">"Sinoa nentin-Drazana"</string>
+    <string name="Croatian_micro">"Kroaty."</string>
+    <string name="Czech_micro">"Tseky"</string>
+    <string name="Danish_micro">"Danoa"</string>
+    <string name="Dutch_micro">"Fiteny Holandey"</string>
+    <string name="English_micro">"Anglisy"</string>
+    <string name="Estonian_micro">"Estonianina"</string>
+    <string name="Finnish_micro">"Finlandey"</string>
+    <string name="French_micro">"Frantsay"</string>
+    <string name="German_micro">"Alemà"</string>
+    <string name="Greek_micro">"Grika"</string>
+    <string name="Haitian_Creole_micro">"Kiriola"</string>
+    <string name="Hebrew_micro">"Hebreo"</string>
+    <string name="Hindi_micro">"Hindou"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Haongrianina"</string>
+    <string name="Indonesian_micro">"Indonezianina"</string>
+    <string name="Italian_micro">"Italiana"</string>
+    <string name="Japanese_micro">"Japoney"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Kôreana"</string>
+    <string name="Latvian_micro">"Fiteny letôniana dia Mpitsara"</string>
+    <string name="Lithuanian_micro">"Litoanianina"</string>
+    <string name="Malay_micro">"Malay"</string>
+    <string name="Maltese_micro">"Maltezy"</string>
+    <string name="Norwegian_micro">"Norvezianina"</string>
+    <string name="Persian_micro">"Persiana"</string>
+    <string name="Polish_micro">"Poloney"</string>
+    <string name="Portuguese_micro">"Pôrtogey"</string>
+    <string name="Queretaro_Otomi_micro">"Any Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Romanianina"</string>
+    <string name="Russian_micro">"Rosianina"</string>
+    <string name="Serbian_Cyrillic_micro">"Serbianina Sirilika"</string>
+    <string name="Serbian_Latin_micro">"Latina serba."</string>
+    <string name="Slovak_micro">"Slôvaky"</string>
+    <string name="Slovenian_micro">"Silôveniana"</string>
+    <string name="Spanish_micro">"Espaniôla"</string>
+    <string name="Swedish_micro">"Soedoa"</string>
+    <string name="Thai_micro">"Tailandey"</string>
+    <string name="Turkish_micro">"Turquie"</string>
+    <string name="Ukrainian_micro">"Okireniana"</string>
+    <string name="Urdu_micro">"Ourdou"</string>
+    <string name="Vietnamese_micro">"Vietnamianina"</string>
+    <string name="Welsh_micro">"Galoà"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

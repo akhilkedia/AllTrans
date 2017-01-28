@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Lista tat-tagħbija ta ' applikazzjonijiet - jekk jogħġbok stenna"</string>
+    <string name="clear_cache_error">"Xi żball. Ma setax ċara tal-cache traduzzjoni!"</string>
+    <string name="clear_cache_success">"Tittraduċi Cache għall dan app ma tħassritx!"</string>
+	<string name="how_to_use">"KIF TUŻA L-APPLIKAZZJONI
+
+Din l-applikazzjoni jeħtieġ tabbona għal tast minn Microsoft jew Yandex Translate.
+Yandex Translate jaċċetta l-aktar lingwi, tkun ħafna aktar faċli signup proċess, u teħtieġ l-karta tal-kreditu Nru.
+Translate tal-Microsoft tagħti riżultati aħjar, iżda jeħtieġ a karta tal-kreditu li tidħol. (Imma taqtax qalbek, xejn ma se jkun mitlub.)
+
+1. fit-tab ta ' l-issettjar globali, jippermettu l-użu Yandex minflok Microsoft jekk tixtieq tuża Yandex, inkella itfi jużaw Microsoft.
+1. fit-tab ta ' l-issettjar globali, tektek jidħol tal-Microsoft/Yandex sottoskrizzjoni, input il-kodiċi korrispondenti (ara l-istruzzjonijiet minn isfel).
+2. Agħżel l-jittraduċi minn lingwa u jittraduċi għal-lingwa.
+3. fl-applikazzjonijiet biex Translate tab, isibu l-app inti tixtieq tittraduċi, ikklikkja l-kaxxa fejn timmarka ħdejh. Jekk il-kaxxa fejn timmarka mhux viżibbli, ipprova li jduru tat-telefown tiegħek laġenba jidħol f ' modalità pajsaġġ.
+4. Agħlaq u rristartja l-app inti tixtieq tradotta – li għandhom jiġu tradotti!
+
+TWISSIJA - xi applikazzjonijiet jista fis-seħħ mill-qrib. Ara t-Taqsima Troubleshooting.
+
+KIF TIKSEB YANDEX JITTRADUĊI TAS-SOTTOSKRIZZJONI
+
+1. Mur fil-websajt tal-Yandex - https://tech.yandex.com/keys/get/?service=trnsl
+2. jekk m ' għandekx għalfejn diġà kont, ikklikkja reġistru u sinjal sa għal kont ġdid.
+3. wara l-iffirmar sal, jaqblu li l-Ftehim ta ' l-utent u ikklikkja Ikseb API ċavetta.
+4. b ' suċċess irċevejt kodiċi tiegħek! Huwa xi ħaġa simili trnsl.1.1.201701...
+
+KIF TIKSEB MICROSOFT AZURE JITTRADUĊI TAS-SOTTOSKRIZZJONI
+
+1. Irreġistra għal kont tal-Microsoft Azure fuq http://azure.com
+
+2. wara li għandek kont, jiffirmaw fil-portal Azure fuq http://portal.azure.com
+
+3. Żid l-Microsoft traslatore API abbonament tiegħek kont Azure.
+Tagħżel abbonament pay-as-you-go. Se jeħtieġu a karta ta ' kreditu, imma taqtax qalbek, xejn irid jitħallas.
+Agħżel il- + ġodda l-għażla.
+Agħżel intelliġenza mil-lista ta ' servizzi.
+Agħżel APIs servizzi konjittiva.
+Agħżel l-għażla tat-tip API.
+Agħżel it-traduzzjoni tat-test
+Fit-Taqsima tat-tieni saff tal-prezzijiet, agħżel l-indana ħielsa (F0)
+Jimla l-kumplament tal-forma, u agħfas il-buttuna Oħloq.
+
+4. kodiċi tal-awtentikar tiegħek jirkupra.
+Mur tar-riżorsi kollha u agħżel l-API traslatore Microsoft inti sottoskritti.
+Mur l-għażla ta ' ċwievet u l-kopja tiegħek tas-sottoskrizzjoni biex jaċċessa s-servizz.
+-Tas-sottoskrizzjoni hija xi ħaġa simili 321dcba...
+
+FITTEX SOLUZZJONI
+
+1. jekk l-ebda app huwa li jkunu tradotti, iċċekkja tiegħek tas-sottoskrizzjoni tal-Microsoft/Yandex hija korretta.
+2. jekk l-app tradotta seħħ jagħlaq/iġib mwaħħla fuq l-ewwel darba wara li tistartja jittraduċi tat-tagħbija, ikklikkja fuq l-app fl-applikazzjonijiet biex tittraduċi tab, u f'postijiet oħra jimlew dewmien qabel jittraduċi għall-2000.
+3. jekk l-app tradotta użati biex jaħdmu multa, imma issa ġib mwaħħla fuq tal-bidu, ikklikkja fuq l-app fl-applikazzjonijiet biex tittraduċi tab, u ikklikkja fuq Ikklikkja biex ċara traduzzjoni Cache.
+4. jekk xi partijiet tal-app huma mhux qed tradotti, ikklikkja fuq l-app fl-applikazzjonijiet biex tittraduċi tab, u jippermetti modalità aggressiv.
+5. jekk l-app li jkunu għadhom fis-seħħ jagħlaq, itfi traduzzjoni għal dan app u tikkuntattjani fuq il-ħajta tas-sostenn dwar XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Tittraduċi kullimkien"</string>
+    <string name="apps_to_translate">"Applikazzjonijiet biex tittraduċi"</string>
+    <string name="global_settings">"Issettjar globali"</string>
+    <string name="instructions">"L-istruzzjonijiet"</string>
+    <string name="pref_cat_translate_settings">"Jittraduċi l-issettjar"</string>
+    <string name="pref_cat_parts_of_app">"Partijiet ta ' App biex tittraduċi"</string>
+    <string name="pref_cat_other_settings">"Issettjar ieħor"</string>
+    <string name="master_on_off">"Kaptan mixgħul/mitfi"</string>
+    <string name="master_on_off_summary">"Titfi kompletament tiddiżattiva dan il-modulu"</string>
+    <string name="master_on_off_summary_off">"Il-modulu huwa mitfi, l-ebda applikazzjonijiet se jiġu tradotti. Iduru fuq bl-użu ta ' bidu auto-jittraduċi!"</string>
+    <string name="master_on_off_summary_on">"Il-modulu hu mixgħul, applikazzjonijiet magħżula se jiġu tradotti. Titfi kompletament tiddiżattiva dan il-modulu."</string>
+    <string name="enable_yandex">"Użu Yandex minflok tal-Microsoft"</string>
+    <string name="enable_yandex_summary">"Tixgħel biex jużaw it-traduzzjoni Yandex minflok tal-Microsoft"</string>
+    <string name="enable_yandex_summary_off">"Bħalissa qed juża traduzzjoni Azure tal-Microsoft. Ixgħel li juża traduzzjoni ta ' Yandex."</string>
+    <string name="enable_yandex_summary_on">"Bħalissa qed juża traduzzjoni ta ' Yandex. Itfi li juża traduzzjoni Azure tal-Microsoft."</string>
+    <string name="subKey">"Microsoft / Yandex tas-sottoskrizzjoni"</string>
+    <string name="subKey_micro">"Microsoft tas-sottoskrizzjoni"</string>
+    <string name="subKey_yandex">"Yandex tas-sottoskrizzjoni"</string>
+    <string name="subKey_summary">"Jidħol fis-sottoskrizzjoni għall-Microsoft Azure jew Yandex API traduzzjoni, liema minnhom hija attivata hawn fuq"</string>
+    <string name="subKey_defaultValue">"Ikteb tiegħek Microsoft jew l-Yandex tas-sottoskrizzjoni"</string>
+    <string name="transFrom">"Tittraduċi minn lingwa"</string>
+    <string name="transFrom_summary">"Lingwa-app qed oriġinarjament."</string>
+    <string name="transTo">"Jittraduċi għal-lingwa"</string>
+    <string name="transTo_summary">"Il-lingwa li tixtieq l-app biex ikunu jittraduċi fis."</string>
+    <string name="setText">"Tittraduċi test normali"</string>
+    <string name="setText_summary_off">"Ma jittraduċi test bl-użu ta ' test stabbiliti bil-miktub. Tixgħel biex jgħinu."</string>
+    <string name="setText_summary_on">"Jittraduċi t-test bil-miktub bl-użu stabbilit test - salvi. Itfi iwaqqaf."</string>
+    <string name="setHint">"Tittraduċi test suġġerimenti (suġġerimenti ta ' kulur griż) fil-kaxxi tat-test"</string>
+    <string name="setHint_summary_off">"Ma jittraduċi test miktub bl-użu stabbilit ħjiel. Tixgħel biex jgħinu."</string>
+    <string name="setHint_summary_on">"Jittraduċi t-test bil-miktub bl-użu stabbilit ħjiel - salvi. Itfi iwaqqaf."</string>
+    <string name="webView">"It-test fil-paġni tal-Web ġewwa applikazzjonijiet tittraduċi"</string>
+    <string name="webView_summary_off">"Ma jittraduċi it-test fl-WebViews. Tixgħel biex jgħinu."</string>
+    <string name="webView_summary_on">"Jittraduċi test ġewwa WebView - salvi, jistgħu ma jaħdmux dejjem. Itfi iwaqqaf."</string>
+    <string name="drawText">"Modalità aggressiva"</string>
+    <string name="drawText_summary_off">"Jittraduċi prezzijiet ma aggressivament it-test fl-drawText. Użu meta kollha hawn fuq tonqos. Tixgħel biex jgħinu."</string>
+    <string name="drawText_summary_on">"Prezzijiet aggressivament jittraduċi test fl-drawText - esperimentali, jistgħu ma xogħol dejjem. Itfi iwaqqaf."</string>
+    <string name="caching">"Użu Caching"</string>
+    <string name="caching_summary_off">"Għandhiex prevja traduzzjonijiet offline, li tirriżulta fl-iktar bil-mod jittraduċi u data ogħla - iżda jistgħu jaħdmu għal applikazzjonijiet aktar. Iduru fuq li ħlief it-traduzzjonijiet."</string>
+    <string name="caching_summary_on">"Issejvjar ta ' traduzzjonijiet offline biex tħaffef jittraduċi u jużaw id-dejta. Itfi tiddiżattiva jekk tiegħek app m ' għandhiex tibda."</string>
+    <string name="delay">"Dewmien qabel jittraduċi"</string>
+    <string name="delay_summary">"Issettja l-ħin f'millisekondi tistenna qabel jittraduċi. Valur tal-mankanza huwa 0, iffissat għal 1000 – 5000 jekk l-app tradotta huwa crashing."</string>
+    <string name="overRide_global">"Tinjora l-issettjar globali"</string>
+    <string name="overRide_global_summary_off">"Bl-użu globali ta ' l-issettjar għal din app. dawra fuq biex tibdel l-issettjar biss għal dan app."</string>
+    <string name="overRide_global_summary_on">"Bl-użu lokali l-issettjar għal din app. dawra barra li Uża l-issettjar globali."</string>
+    <string name="clear_cache">"Ikklikkja biex tnaddaf il-Cache traduzzjoni"</string>
+    <string name="clear_cache_summary">"Ikklikkja hawn fuq biex tnaddaf l-app's jittraduċi tal-cache. Uża dan wara li jinbidlu minn ilsna, jew jekk l-app ma jibda."</string>
+    <string name="Afrikaans_yandex">"Afrikaans"</string>
+    <string name="Amharic_yandex">"Amharic"</string>
+    <string name="Arabic_yandex">"Għarbi"</string>
+    <string name="Azerbaijani_yandex">"Intrapriżi Ażerbajġani"</string>
+    <string name="Bashkir_yandex">"Bashkir"</string>
+    <string name="Belarusian_yandex">"Belarussjan"</string>
+    <string name="Bulgarian_yandex">"Bulgaru"</string>
+    <string name="Bengali_yandex">"Bengali"</string>
+    <string name="Bosnian_yandex">"Bożnijan"</string>
+    <string name="Catalan_yandex">"Katalan"</string>
+    <string name="Cebuano_yandex">"Cebuano"</string>
+    <string name="Czech_yandex">"Ċeka"</string>
+    <string name="Welsh_yandex">"Welsh"</string>
+    <string name="Danish_yandex">"Daniż"</string>
+    <string name="German_yandex">"Ġermaniż"</string>
+    <string name="Greek_yandex">"Grieg"</string>
+    <string name="English_yandex">"Ingliż"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Spanjol"</string>
+    <string name="Estonian_yandex">"Estonjan"</string>
+    <string name="Basque_yandex">"Bask"</string>
+    <string name="Persian_yandex">"Persjan"</string>
+    <string name="Finnish_yandex">"Fillandiż"</string>
+    <string name="French_yandex">"Franċiż"</string>
+    <string name="Irish_yandex">"Irlandiż"</string>
+    <string name="Scottish_Gaelic_yandex">"Scottish Gaelic"</string>
+    <string name="Galician_yandex">"Galizjan"</string>
+    <string name="Gujarati_yandex">"Gujarat"</string>
+    <string name="Hebrew_yandex">"Lhudi"</string>
+    <string name="Hindi_yandex">"Ħindi"</string>
+    <string name="Croatian_yandex">"Kroat"</string>
+    <string name="Haitian_yandex">"Ħaiti"</string>
+    <string name="Hungarian_yandex">"Ungeriż"</string>
+    <string name="Armenian_yandex">"Armen"</string>
+    <string name="Indonesian_yandex">"Indoneżjan"</string>
+    <string name="Icelandic_yandex">"Iżlandiż"</string>
+    <string name="Italian_yandex">"Taljan"</string>
+    <string name="Japanese_yandex">"Ġappuniż"</string>
+    <string name="Javanese_yandex">"Javanese"</string>
+    <string name="Georgian_yandex">"Ġorġjan"</string>
+    <string name="Kazakh_yandex">"Każak"</string>
+    <string name="Kannada_yandex">"Kannada"</string>
+    <string name="Korean_yandex">"Korejan"</string>
+    <string name="Kyrgyz_yandex">"Kirġiż"</string>
+    <string name="Latin_yandex">"Latina"</string>
+    <string name="Luxembourgish_yandex">"Luxembourgish"</string>
+    <string name="Lithuanian_yandex">"Litwan"</string>
+    <string name="Latvian_yandex">"Latvjan"</string>
+    <string name="Malagasy_yandex">"Tal-Madagaskar"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maori"</string>
+    <string name="Macedonian_yandex">"Prevvista"</string>
+    <string name="Malayalam_yandex">"Malayalam"</string>
+    <string name="Mongolian_yandex">"Mongoljan"</string>
+    <string name="Marathi_yandex">"Marati"</string>
+    <string name="Hill_Mari_yandex">"Hill Mari"</string>
+    <string name="Malay_yandex">"Mależjan"</string>
+    <string name="Maltese_yandex">"Malti"</string>
+    <string name="Nepali_yandex">"Nepali"</string>
+    <string name="Dutch_yandex">"Olandiż"</string>
+    <string name="Norwegian_yandex">"Norveġjan"</string>
+    <string name="Punjabi_yandex">"Punġabi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Pollak"</string>
+    <string name="Portuguese_yandex">"Portugiż"</string>
+    <string name="Romanian_yandex">"Rumen"</string>
+    <string name="Russian_yandex">"Russu"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Slovakk"</string>
+    <string name="Slovenian_yandex">"Sloven"</string>
+    <string name="Albanian_yandex">"Albaniż"</string>
+    <string name="Serbian_yandex">"Serbjan"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"Svediż"</string>
+    <string name="Swahili_yandex">"Swaħilli"</string>
+    <string name="Tamil_yandex">"Tamil"</string>
+    <string name="Telugu_yandex">"Telug"</string>
+    <string name="Tajik_yandex">"Taġikistan"</string>
+    <string name="Thai_yandex">"Tajlandiż"</string>
+    <string name="Tagalog_yandex">"Tagalog"</string>
+    <string name="Turkish_yandex">"Tork"</string>
+    <string name="Tatar_yandex">"Tatar"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Ukren"</string>
+    <string name="Urdu_yandex">"Urdu"</string>
+    <string name="Uzbek_yandex">"Użbeki"</string>
+    <string name="Vietnamese_yandex">"Vjetnamiż"</string>
+    <string name="Xhosa_yandex">"Xhosa"</string>
+    <string name="Yiddish_yandex">"Yiddish"</string>
+    <string name="Chinese_yandex">"Ċiniż"</string>
+    <string name="Afrikaans_micro">"Afrikaans"</string>
+    <string name="Arabic_micro">"Għarbi"</string>
+    <string name="Bosnian_Latin_micro">"Bosnjan Latina"</string>
+    <string name="Bulgarian_micro">"Bulgaru"</string>
+    <string name="Catalan_micro">"Katalan"</string>
+    <string name="Chinese_Simplified_micro">"Ċiniż Issimplifikat"</string>
+    <string name="Chinese_Traditional_micro">"Ċiniż Tradizzjonali"</string>
+    <string name="Croatian_micro">"Kroat"</string>
+    <string name="Czech_micro">"Ċeka"</string>
+    <string name="Danish_micro">"Daniż"</string>
+    <string name="Dutch_micro">"Olandiż"</string>
+    <string name="English_micro">"Ingliż"</string>
+    <string name="Estonian_micro">"Estonjan"</string>
+    <string name="Finnish_micro">"Fillandiż"</string>
+    <string name="French_micro">"Franċiż"</string>
+    <string name="German_micro">"Ġermaniż"</string>
+    <string name="Greek_micro">"Grieg"</string>
+    <string name="Haitian_Creole_micro">"Ħajtjan (Krejol)"</string>
+    <string name="Hebrew_micro">"Lhudi"</string>
+    <string name="Hindi_micro">"Ħindi"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Ungeriż"</string>
+    <string name="Indonesian_micro">"Indoneżjan"</string>
+    <string name="Italian_micro">"Taljan"</string>
+    <string name="Japanese_micro">"Ġappuniż"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Korejan"</string>
+    <string name="Latvian_micro">"Latvjan"</string>
+    <string name="Lithuanian_micro">"Litwan"</string>
+    <string name="Malay_micro">"Mależjan"</string>
+    <string name="Maltese_micro">"Malti"</string>
+    <string name="Norwegian_micro">"Norveġjan"</string>
+    <string name="Persian_micro">"Persjan"</string>
+    <string name="Polish_micro">"Pollak"</string>
+    <string name="Portuguese_micro">"Portugiż"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Rumen"</string>
+    <string name="Russian_micro">"Russu"</string>
+    <string name="Serbian_Cyrillic_micro">"Cyrillic Serbi"</string>
+    <string name="Serbian_Latin_micro">"Latina Serbi"</string>
+    <string name="Slovak_micro">"Slovakk"</string>
+    <string name="Slovenian_micro">"Sloven"</string>
+    <string name="Spanish_micro">"Spanjol"</string>
+    <string name="Swedish_micro">"Svediż"</string>
+    <string name="Thai_micro">"Tajlandiż"</string>
+    <string name="Turkish_micro">"Tork"</string>
+    <string name="Ukrainian_micro">"Ukren"</string>
+    <string name="Urdu_micro">"Urdu"</string>
+    <string name="Vietnamese_micro">"Vjetnamiż"</string>
+    <string name="Welsh_micro">"Welsh"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

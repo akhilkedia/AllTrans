@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Načítání seznamu aplikací - čekejte prosím"</string>
+    <string name="clear_cache_error">"Nějaká chyba. Nelze vymazat mezipaměť překlad!"</string>
+    <string name="clear_cache_success">"Přeložit Cache pro tato aplikace byla smazána!"</string>
+	<string name="how_to_use">"JAK POUŽÍVAT APLIKACI
+
+Tato aplikace vyžaduje, můžete se přihlásit na klíč od společnosti Microsoft nebo Yandex přeložit.
+Yandex překladač podporuje více jazyků, má mnohem jednodušší proces registrace a vyžaduje ne kreditní kartu.
+Microsoft Translate dává lepší výsledky, ale vyžaduje kreditní kartu zaregistrovat. (Ale nebojte se, nic nebude účtován.)
+
+1. na kartě globální nastavení povolte používat Yandex namísto Microsoft, pokud chcete použít Yandex, jinak zakázat používat Microsoft.
+1. na kartě globální nastavení klepněte na klávesu Enter předplatné Microsoft/Yandex, zadejte odpovídající klíč (viz pokyny z níže).
+2. klepněte přeložit z jazyka a přeložit do jazyka.
+3. v aplikace přeložit kartu vyhledejte aplikaci, kterou chcete převést, klepněte na zaškrtávací políčko vedle ní. Pokud zaškrtávací políčko se nezobrazuje, zkuste otočení telefonu bokem do režimu na šířku.
+4. Ukončete a restartujte aplikaci, kterou chcete přeložit - mělo být přeloženo!
+
+Upozornění - některé aplikace může vynutit zavření. Naleznete v části Poradce při potížích.
+
+JAK ZÍSKAT YANDEX PŘELOŽIT PŘEDPLATNÉ KEY
+
+1. Přejít na webové stránky Yandex - https://tech.yandex.com/keys/get/?service=trnsl
+2. Pokud již nemáte účet, klepněte na tlačítko registrovat a přihlásit se k novému účtu.
+3. po podpisu nahoru, dohodnout na smlouvu s uživatelem a klepněte na tlačítko získat API klíč.
+4. jste úspěšně obdrželi váš klíč! Je to něco jako trnsl.1.1.201701...
+
+JAK ZÍSKAT MICROSOFT AZURE PŘELOŽIT PŘEDPLATNÉ KEY
+
+1. přihlásit se na účet Microsoft Azure na http://azure.com
+
+2. Jakmile máte účet, přihlášení do portálu Azure na http://portal.azure.com
+
+3. Přidejte do účtu Azure předplatné Microsoft Translator API.
+Zvolte předplatné s průběžnými platbami. Budou vyžadovat platební kartu, ale nebojte, nestrhne žádná.
+Vyberte + Nová možnost.
+Ze seznamu služeb vyberte inteligenci.
+Vyberte rozhraní API kognitivních služeb.
+Vyberte volbu typu rozhraní API.
+Vyberte Text překlad
+V části cenová úroveň vyberte úroveň Free (F0)
+Vyplňte zbytek formuláře a stiskněte tlačítko vytvořit.
+
+4. získat ověřovací klíč.
+Přejít na všechny zdroje a vyberte Microsoft Translator API odebíráte.
+Přejděte na možnost klíče a zkopírujte klíč předplatného pro přístup k službě.
+Klíč odběru je něco jako 321dcba...
+
+PORADCE PŘI POTÍŽÍCH
+
+1. je-li žádná aplikace je překládán, podívejte se na klíč předplatné Microsoft/Yandex je správná.
+2. je-li přeložený aplikace síly zavře/dostane přilepená na načítání poprvé po spuštění převodu, klikněte na aplikace v aplikacích přeložit kartu a v Other Settings vyplňte zpoždění před překladem do roku 2000.
+3. Pokud přeložený aplikace funguje dobře, ale teď uvíznou na spuštění, klepněte na aplikace v aplikacích přeložit kartu a klepněte na klepnutím vymazat Cache překlad.
+4. je-li některé části aplikace nejsou přeloženy, klikněte na aplikace v aplikacích přeložit kartu a povolit agresivní režim.
+5. je-li aplikace stále síla zavře, zakázat překlad pro tuto aplikaci a kontaktujte mě na podpůrném procesu na XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Přeložit, kdekoli"</string>
+    <string name="apps_to_translate">"Aplikace k překladu"</string>
+    <string name="global_settings">"Globální nastavení"</string>
+    <string name="instructions">"Instrukce"</string>
+    <string name="pref_cat_translate_settings">"Nastavení překladače"</string>
+    <string name="pref_cat_parts_of_app">"Části aplikace k překladu"</string>
+    <string name="pref_cat_other_settings">"Další nastavení"</string>
+    <string name="master_on_off">"Master zapnuto/vypnuto"</string>
+    <string name="master_on_off_summary">"Vypnout zcela zakázat tento modul"</string>
+    <string name="master_on_off_summary_off">"Modul je vypnutý, žádná aplikace budou přeloženy. Obrátit na start pomocí automatického přeložit!"</string>
+    <string name="master_on_off_summary_on">"Modul je zapnuta, budou přeloženy vybrané aplikace. Vypněte zcela zakázat tento modul."</string>
+    <string name="enable_yandex">"Místo Microsoft použít Yandex"</string>
+    <string name="enable_yandex_summary">"Zapnout místo Microsoft použít překlad Yandex"</string>
+    <string name="enable_yandex_summary_off">"V současné době pomocí Microsoft Azure překlad. Zapněte použít překlad Yandex."</string>
+    <string name="enable_yandex_summary_on">"V současné době pomocí Yandex překlad. Vypněte použití Microsoft Azure překlad."</string>
+    <string name="subKey">"Microsoft / Yandex předplatné Key"</string>
+    <string name="subKey_micro">"Předplatné Microsoft klíč"</string>
+    <string name="subKey_yandex">"Yandex předplatné klíč"</string>
+    <string name="subKey_summary">"Zadejte klíč předplatné Microsoft Azure nebo Yandex Translation API, podle toho, co je povoleno nad"</string>
+    <string name="subKey_defaultValue">"Zadejte Microsoft nebo klíč odběru Yandex"</string>
+    <string name="transFrom">"Překládat z jazyka"</string>
+    <string name="transFrom_summary">"Jazyk aplikace je původně v."</string>
+    <string name="transTo">"Přeložit do jazyka"</string>
+    <string name="transTo_summary">"Jazyk, který má aplikace přeložit do."</string>
+    <string name="setText">"Normální Text přeložit"</string>
+    <string name="setText_summary_off">"Není překlad Text napsaný pomocí nastavení textu. Zapněte povolit."</string>
+    <string name="setText_summary_on">"Překládání textu pomocí nastavení textu - bezpečný. Vypněte zakázat."</string>
+    <string name="setHint">"Přeložit Text tipy (šedá barevné návrhy) v textových polích"</string>
+    <string name="setHint_summary_off">"Není překlad Text napsaný pomocí nastavení nápovědy. Zapněte povolit."</string>
+    <string name="setHint_summary_on">"Překlad textu napsané pomocí nastavení nápovědy - bezpečný. Vypněte zakázat."</string>
+    <string name="webView">"Přeložit Text na webových stránkách uvnitř aplikace"</string>
+    <string name="webView_summary_off">"Není překlad textu v WebView. Zapněte povolit."</string>
+    <string name="webView_summary_on">"Překlad textu uvnitř webového zobrazení - bezpečné, nemusí fungovat vždy. Vypněte zakázat."</string>
+    <string name="drawText">"Agresivní režim"</string>
+    <string name="drawText_summary_off">"Bezohledně překlad textu v drawText. Používat při víc než selže. Zapněte povolit."</string>
+    <string name="drawText_summary_on">"Agresivně překlad textu v drawText - experimentální, možná práce vždy. Vypněte zakázat."</string>
+    <string name="caching">"Použít mezipaměť"</string>
+    <string name="caching_summary_off">"Není ukládání překladů do režimu offline, což má za následek pomalejší přeložit a vyšší - ale může fungovat pro další aplikace. Přejděte na Uložit překlady."</string>
+    <string name="caching_summary_on">"Ukládání offline překlady pro urychlení přeložit a používat data. Vypněte zakázat, pokud se aplikace nespustí."</string>
+    <string name="delay">"Zpoždění před překladem"</string>
+    <string name="delay_summary">"Nastavte čas v milisekundách čekání před překladem. Výchozí hodnota je 0, nastavte na 1000 – 5000, pokud přeložený aplikace padá."</string>
+    <string name="overRide_global">"Přepsat globální nastavení"</string>
+    <string name="overRide_global_summary_off">"Pomocí globální nastavení pro tato app. Turn na změnit nastavení pouze pro tuto aplikaci."</string>
+    <string name="overRide_global_summary_on">"Pomocí místní nastavení pro tato app. Turn off použít globální nastavení."</string>
+    <string name="clear_cache">"Klepnutím zrušte zaškrtnutí políčka překlad Cache"</string>
+    <string name="clear_cache_summary">"Klikněte na výše uvedené vymazat aplikace je přeložit cache. Použít po změně do/z jazyků, nebo pokud aplikace není spuštěna."</string>
+    <string name="Afrikaans_yandex">"Afrikánština"</string>
+    <string name="Amharic_yandex">"Amharština"</string>
+    <string name="Arabic_yandex">"Arabština"</string>
+    <string name="Azerbaijani_yandex">"Ázerbájdžánský"</string>
+    <string name="Bashkir_yandex">"Baškirština"</string>
+    <string name="Belarusian_yandex">"Běloruština"</string>
+    <string name="Bulgarian_yandex">"Bulharština"</string>
+    <string name="Bengali_yandex">"Bengálština"</string>
+    <string name="Bosnian_yandex">"Bosenština"</string>
+    <string name="Catalan_yandex">"Katalánština"</string>
+    <string name="Cebuano_yandex">"Cebuano"</string>
+    <string name="Czech_yandex">"Čeština"</string>
+    <string name="Welsh_yandex">"Velština"</string>
+    <string name="Danish_yandex">"Dánština"</string>
+    <string name="German_yandex">"Němčina"</string>
+    <string name="Greek_yandex">"Řečtina"</string>
+    <string name="English_yandex">"Angličtina"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Španělština"</string>
+    <string name="Estonian_yandex">"Estonština"</string>
+    <string name="Basque_yandex">"Baskičtina"</string>
+    <string name="Persian_yandex">"Perština"</string>
+    <string name="Finnish_yandex">"Finština"</string>
+    <string name="French_yandex">"Francouzština"</string>
+    <string name="Irish_yandex">"Irština"</string>
+    <string name="Scottish_Gaelic_yandex">"Skotská gaelština"</string>
+    <string name="Galician_yandex">"Galicijština"</string>
+    <string name="Gujarati_yandex">"Gudžarátština"</string>
+    <string name="Hebrew_yandex">"Hebrejština"</string>
+    <string name="Hindi_yandex">"Hindština"</string>
+    <string name="Croatian_yandex">"Chorvatština"</string>
+    <string name="Haitian_yandex">"Haitské"</string>
+    <string name="Hungarian_yandex">"Maďarština"</string>
+    <string name="Armenian_yandex">"Arménština"</string>
+    <string name="Indonesian_yandex">"Indonéština"</string>
+    <string name="Icelandic_yandex">"Islandština"</string>
+    <string name="Italian_yandex">"Italština"</string>
+    <string name="Japanese_yandex">"Japonština"</string>
+    <string name="Javanese_yandex">"Javánština"</string>
+    <string name="Georgian_yandex">"Gruzínština"</string>
+    <string name="Kazakh_yandex">"Kazaština"</string>
+    <string name="Kannada_yandex">"Kannadština"</string>
+    <string name="Korean_yandex">"Korejština"</string>
+    <string name="Kyrgyz_yandex">"Kyrgyzština"</string>
+    <string name="Latin_yandex">"Latinka"</string>
+    <string name="Luxembourgish_yandex">"Lucemburština"</string>
+    <string name="Lithuanian_yandex">"Litevština"</string>
+    <string name="Latvian_yandex">"Lotyština"</string>
+    <string name="Malagasy_yandex">"Madagaskarské"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maorština"</string>
+    <string name="Macedonian_yandex">"Makedonština"</string>
+    <string name="Malayalam_yandex">"Malajalámština"</string>
+    <string name="Mongolian_yandex">"Mongolština"</string>
+    <string name="Marathi_yandex">"Maráthština"</string>
+    <string name="Hill_Mari_yandex">"Hill Mari"</string>
+    <string name="Malay_yandex">"Malajština"</string>
+    <string name="Maltese_yandex">"Maltština"</string>
+    <string name="Nepali_yandex">"Nepálština"</string>
+    <string name="Dutch_yandex">"Holandština"</string>
+    <string name="Norwegian_yandex">"Norština"</string>
+    <string name="Punjabi_yandex">"Paňdžábština"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Polština"</string>
+    <string name="Portuguese_yandex">"Portugalština"</string>
+    <string name="Romanian_yandex">"Rumunština"</string>
+    <string name="Russian_yandex">"Ruština"</string>
+    <string name="Sinhalese_yandex">"Sinhálci"</string>
+    <string name="Slovak_yandex">"Slovenština"</string>
+    <string name="Slovenian_yandex">"Slovinština"</string>
+    <string name="Albanian_yandex">"Albánština"</string>
+    <string name="Serbian_yandex">"Srbština"</string>
+    <string name="Sundanese_yandex">"Sundánština"</string>
+    <string name="Swedish_yandex">"Švédština"</string>
+    <string name="Swahili_yandex">"Svahilština"</string>
+    <string name="Tamil_yandex">"Tamilština"</string>
+    <string name="Telugu_yandex">"Telugština"</string>
+    <string name="Tajik_yandex">"Tádžičtina"</string>
+    <string name="Thai_yandex">"Thajština"</string>
+    <string name="Tagalog_yandex">"Tagalog"</string>
+    <string name="Turkish_yandex">"Turečtina"</string>
+    <string name="Tatar_yandex">"Tatarština"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Ukrajinština"</string>
+    <string name="Urdu_yandex">"Urdština"</string>
+    <string name="Uzbek_yandex">"Uzbečtina"</string>
+    <string name="Vietnamese_yandex">"Vietnamština"</string>
+    <string name="Xhosa_yandex">"Xhoština"</string>
+    <string name="Yiddish_yandex">"Jidiš"</string>
+    <string name="Chinese_yandex">"Čínština"</string>
+    <string name="Afrikaans_micro">"Afrikánština"</string>
+    <string name="Arabic_micro">"Arabština"</string>
+    <string name="Bosnian_Latin_micro">"Bosenské Latinské"</string>
+    <string name="Bulgarian_micro">"Bulharština"</string>
+    <string name="Catalan_micro">"Katalánština"</string>
+    <string name="Chinese_Simplified_micro">"Zjednodušená čínština"</string>
+    <string name="Chinese_Traditional_micro">"Tradiční čínština"</string>
+    <string name="Croatian_micro">"Chorvatština"</string>
+    <string name="Czech_micro">"Čeština"</string>
+    <string name="Danish_micro">"Dánština"</string>
+    <string name="Dutch_micro">"Holandština"</string>
+    <string name="English_micro">"Angličtina"</string>
+    <string name="Estonian_micro">"Estonština"</string>
+    <string name="Finnish_micro">"Finština"</string>
+    <string name="French_micro">"Francouzština"</string>
+    <string name="German_micro">"Němčina"</string>
+    <string name="Greek_micro">"Řečtina"</string>
+    <string name="Haitian_Creole_micro">"Haitská kreolština"</string>
+    <string name="Hebrew_micro">"Hebrejština"</string>
+    <string name="Hindi_micro">"Hindština"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Maďarština"</string>
+    <string name="Indonesian_micro">"Indonéština"</string>
+    <string name="Italian_micro">"Italština"</string>
+    <string name="Japanese_micro">"Japonština"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingonská"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Korejština"</string>
+    <string name="Latvian_micro">"Lotyština"</string>
+    <string name="Lithuanian_micro">"Litevština"</string>
+    <string name="Malay_micro">"Malajština"</string>
+    <string name="Maltese_micro">"Maltština"</string>
+    <string name="Norwegian_micro">"Norština"</string>
+    <string name="Persian_micro">"Perština"</string>
+    <string name="Polish_micro">"Polština"</string>
+    <string name="Portuguese_micro">"Portugalština"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Rumunština"</string>
+    <string name="Russian_micro">"Ruština"</string>
+    <string name="Serbian_Cyrillic_micro">"Srbské cyrilici"</string>
+    <string name="Serbian_Latin_micro">"Srbský (latinka)"</string>
+    <string name="Slovak_micro">"Slovenština"</string>
+    <string name="Slovenian_micro">"Slovinština"</string>
+    <string name="Spanish_micro">"Španělština"</string>
+    <string name="Swedish_micro">"Švédština"</string>
+    <string name="Thai_micro">"Thajština"</string>
+    <string name="Turkish_micro">"Turečtina"</string>
+    <string name="Ukrainian_micro">"Ukrajinština"</string>
+    <string name="Urdu_micro">"Urdština"</string>
+    <string name="Vietnamese_micro">"Vietnamština"</string>
+    <string name="Welsh_micro">"Velština"</string>
+    <string name="Yucatec_Maya_micro">"Zájmeno"</string>
+</resources>

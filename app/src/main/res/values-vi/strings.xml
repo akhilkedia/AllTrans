@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Đang tải danh sách ứng dụng - xin vui lòng chờ"</string>
+    <string name="clear_cache_error">"Một số lỗi. Không thể xoá bộ nhớ cache dịch!"</string>
+    <string name="clear_cache_success">"Dịch bộ nhớ Cache cho ứng dụng này đã bị xóa!"</string>
+	<string name="how_to_use">"LÀM THẾ NÀO ĐỂ SỬ DỤNG CÁC ỨNG DỤNG
+
+Ứng dụng này đòi hỏi bạn phải đăng ký một khóa từ Microsoft hoặc Yandex dịch.
+Yandex Translate hỗ trợ nhiều ngôn ngữ, có một quá trình đăng ký dễ dàng hơn nhiều và đòi hỏi không có thẻ tín dụng.
+Microsoft Translate cho kết quả tốt hơn, nhưng yêu cầu một thẻ tín dụng để đăng ký. (Nhưng đừng lo, không có gì sẽ trả.)
+
+1. trong tab cài đặt toàn cầu, cho phép sử dụng Yandex thay vì Microsoft nếu bạn muốn sử dụng Yandex, khác vô hiệu hóa để sử dụng Microsoft.
+1. trong tab cài đặt toàn cầu, khai thác nhập Microsoft/Yandex đăng ký Key, nhập vào phím tương ứng (xem hướng dẫn từ dưới đây).
+2. chọn các dịch từ ngôn ngữ và dịch sang ngôn ngữ.
+3. trong các ứng dụng dịch tab, tìm thấy các ứng dụng mà bạn muốn dịch, nhấp vào hộp kiểm bên cạnh nó. Nếu hộp kiểm không hiển thị, hãy thử xoay nghiêng điện thoại vào cảnh mode.
+4. đóng và khởi động lại ứng dụng bạn muốn dịch - nó nên được dịch!
+
+Cảnh báo - một số ứng dụng có thể ép buộc chặt chẽ. Xem phần giải đáp thắc mắc.
+
+LÀM THẾ NÀO ĐỂ CÓ ĐƯỢC YANDEX DỊCH ĐĂNG KÝ KHÓA
+
+1. go to Yandex Website - https://tech.yandex.com/keys/get/?service=trnsl
+2. nếu bạn chưa có tài khoản, hãy nhấp vào đăng ký và đăng ký một tài khoản mới.
+3. sau khi đăng lên, đồng ý với thỏa thuận sử dụng và click vào Get API Key.
+4. bạn đã nhận thành công của bạn! Đó là một cái gì đó như trnsl.1.1.201701...
+
+LÀM THẾ NÀO ĐỂ CÓ ĐƯỢC MICROSOFT AZURE DỊCH ĐĂNG KÝ KHÓA
+
+1. đăng ký một tài khoản Microsoft Azure tại http://azure.com
+
+2. sau khi bạn có một tài khoản, đăng nhập vào cổng Azure tại http://portal.azure.com
+
+3. thêm một đăng ký Microsoft dịch API của bạn tài khoản Azure.
+Chọn một thuê bao trả. Sẽ yêu cầu một thẻ tín dụng, nhưng đừng lo, không có gì sẽ bị tính phí.
+Chọn + mới tùy chọn.
+Lựa chọn thông minh từ danh sách các dịch vụ.
+Chọn dịch vụ nhận thức API.
+Chọn tùy chọn API loại.
+Chọn văn bản dịch
+Trong phần giá cả Tier, chọn Free Tier (F0)
+Điền vào phần còn lại của mẫu đơn, và bấm nút tạo.
+
+4. lấy chìa khóa xác thực của bạn.
+Đi đến tất cả nguồn lực và chọn Microsoft dịch API bạn đăng ký.
+Đi đến tùy chọn phím và sao chép chìa khóa đăng ký của bạn để truy cập Dịch vụ.
+Đăng ký chính là một cái gì đó như 321dcba...
+
+GIẢI ĐÁP THẮC MẮC
+
+1. nếu không có ứng dụng đang được dịch, kiểm tra khoá đăng ký Microsoft/Yandex của bạn là chính xác.
+2. nếu các ứng dụng dịch quân đóng/bị mắc kẹt trên tải lần đầu tiên sau khi bạn bắt đầu dịch, nhấp vào các ứng dụng trong các ứng dụng dịch tab, và trong các cài đặt khác điền vào sự chậm trễ trước khi dịch đến năm 2000.
+3. nếu các ứng dụng dịch sử dụng để làm việc tốt, nhưng bây giờ gặp khó khăn về việc bắt đầu, bấm vào các ứng dụng trong các ứng dụng dịch tab và click vào bấm vào Clear Cache dịch.
+4. nếu một số phần của ứng dụng đang không được biên dịch, nhấp chuột vào các ứng dụng trong các ứng dụng dịch tab, và cho phép chế độ tích cực.
+5. nếu các ứng dụng vẫn còn hiệu lực đóng cửa, vô hiệu hoá các bản dịch cho các ứng dụng này và liên hệ với tôi trên các chủ đề hỗ trợ trên XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Dịch bất cứ nơi nào"</string>
+    <string name="apps_to_translate">"Các ứng dụng để dịch"</string>
+    <string name="global_settings">"Thiết đặt toàn cầu"</string>
+    <string name="instructions">"Hướng dẫn"</string>
+    <string name="pref_cat_translate_settings">"Dịch thiết lập"</string>
+    <string name="pref_cat_parts_of_app">"Các bộ phận của các ứng dụng để dịch"</string>
+    <string name="pref_cat_other_settings">"Các cài đặt khác"</string>
+    <string name="master_on_off">"Master On/Off"</string>
+    <string name="master_on_off_summary">"Tắt hoàn toàn vô hiệu hóa mô-đun này"</string>
+    <string name="master_on_off_summary_off">"Mô-đun đã được tắt, không ứng dụng sẽ được dịch. Biến trên để bắt đầu sử dụng auto-dịch!"</string>
+    <string name="master_on_off_summary_on">"Mô-đun được bật, các ứng dụng đã chọn sẽ được dịch. Tắt hoàn toàn vô hiệu hóa mô-đun này."</string>
+    <string name="enable_yandex">"Sử dụng Yandex thay vì Microsoft"</string>
+    <string name="enable_yandex_summary">"Bật sử dụng Yandex dịch thay vì Microsoft"</string>
+    <string name="enable_yandex_summary_off">"Hiện đang sử dụng Microsoft Azure dịch. Bật để sử dụng bản dịch của Yandex."</string>
+    <string name="enable_yandex_summary_on">"Hiện đang sử dụng bản dịch của Yandex. Tắt để sử dụng Microsoft Azure dịch."</string>
+    <string name="subKey">"Microsoft / Yandex đăng ký khóa"</string>
+    <string name="subKey_micro">"Microsoft đăng ký khóa"</string>
+    <string name="subKey_yandex">"Yandex đăng ký khóa"</string>
+    <string name="subKey_summary">"Nhập khóa đăng ký cho Microsoft Azure hoặc Yandex Translation API, cho dù được kích hoạt trên"</string>
+    <string name="subKey_defaultValue">"Nhập Microsoft hoặc Yandex đăng ký chìa khóa của bạn"</string>
+    <string name="transFrom">"Dịch từ ngôn ngữ"</string>
+    <string name="transFrom_summary">"Ngôn ngữ ứng dụng là ban đầu."</string>
+    <string name="transTo">"Dịch sang ngôn ngữ"</string>
+    <string name="transTo_summary">"Ngôn ngữ bạn muốn app được dịch sang."</string>
+    <string name="setText">"Dịch văn bản bình thường"</string>
+    <string name="setText_summary_off">"Không dịch văn bản được viết bằng cách sử dụng thiết lập văn bản. Bật để kích hoạt."</string>
+    <string name="setText_summary_on">"Dịch văn bản được viết bằng cách sử dụng thiết lập văn bản - Két an toàn. Tắt để vô hiệu hóa."</string>
+    <string name="setHint">"Dịch văn bản gợi ý (màu xám gợi ý) trong hộp văn bản"</string>
+    <string name="setHint_summary_off">"Không dịch văn bản được viết bằng cách sử dụng các thiết lập gợi ý. Bật để kích hoạt."</string>
+    <string name="setHint_summary_on">"Dịch văn bản được viết bằng cách sử dụng gợi ý Set - Két an toàn. Tắt để vô hiệu hóa."</string>
+    <string name="webView">"Dịch văn bản trong các trang Web bên trong ứng dụng"</string>
+    <string name="webView_summary_off">"Không dịch các văn bản trong WebViews. Bật để kích hoạt."</string>
+    <string name="webView_summary_on">"Dịch văn bản bên trong WebView - Két an toàn, không thể làm việc luôn. Tắt để vô hiệu hóa."</string>
+    <string name="drawText">"Chế độ tích cực"</string>
+    <string name="drawText_summary_off">"Không tích cực dịch văn bản tại drawText. Sử dụng khi tất cả trên thất bại. Bật để kích hoạt."</string>
+    <string name="drawText_summary_on">"Tích cực dịch văn bản trong drawText - thử nghiệm, có thể không làm việc luôn. Tắt để vô hiệu hóa."</string>
+    <string name="caching">"Sử dụng bộ nhớ đệm"</string>
+    <string name="caching_summary_off">"Không phải tiết kiệm dịch gián tuyến, dẫn đến chậm dịch và dữ liệu cao hơn - nhưng có thể làm việc cho nhiều ứng dụng. Rẽ vào để tiết kiệm tham khảo."</string>
+    <string name="caching_summary_on">"Tiết kiệm các bản dịch ngoại tuyến để tăng tốc độ dịch và sử dụng dữ liệu. Tắt để vô hiệu hóa nếu ứng dụng của bạn không bắt đầu."</string>
+    <string name="delay">"Sự chậm trễ trước khi dịch"</string>
+    <string name="delay_summary">"Thiết lập thời gian trong mili giây để chờ đợi trước khi dịch. Giá trị mặc định là 0, đặt 1000-5000 nếu các ứng dụng dịch rơi."</string>
+    <string name="overRide_global">"Ghi đè cài đặt toàn cầu"</string>
+    <string name="overRide_global_summary_off">"Dùng thiết đặt toàn cầu cho các ứng dụng này lần lượt vào để thay đổi cài đặt cho các ứng dụng này."</string>
+    <string name="overRide_global_summary_on">"Sử dụng cài đặt địa phương cho về ứng dụng này lần lượt ra để sử dụng toàn cầu cài đặt."</string>
+    <string name="clear_cache">"Nhấp vào Xóa bộ nhớ Cache dịch"</string>
+    <string name="clear_cache_summary">"Bấm vào ở trên để xóa các ứng dụng của dịch bộ nhớ cache. Sử dụng điều này sau khi thay đổi đến/từ các ngôn ngữ, hoặc nếu các ứng dụng không bắt đầu."</string>
+    <string name="Afrikaans_yandex">"Tiếng Afrikaans"</string>
+    <string name="Amharic_yandex">"Tiếng Amhara"</string>
+    <string name="Arabic_yandex">"Tiếng ả Rập"</string>
+    <string name="Azerbaijani_yandex">"Azerbaijan"</string>
+    <string name="Bashkir_yandex">"Bashkir"</string>
+    <string name="Belarusian_yandex">"Tiếng Belarus"</string>
+    <string name="Bulgarian_yandex">"Tiếng Bulgaria"</string>
+    <string name="Bengali_yandex">"Tiếng Bengali"</string>
+    <string name="Bosnian_yandex">"Bosnia"</string>
+    <string name="Catalan_yandex">"Tiếng Catalan"</string>
+    <string name="Cebuano_yandex">"Tiếng Cebuano"</string>
+    <string name="Czech_yandex">"Séc"</string>
+    <string name="Welsh_yandex">"Tiếng Wales"</string>
+    <string name="Danish_yandex">"Đan Mạch"</string>
+    <string name="German_yandex">"Đức"</string>
+    <string name="Greek_yandex">"Hy Lạp"</string>
+    <string name="English_yandex">"Tiếng Anh"</string>
+    <string name="Esperanto_yandex">"Quốc tế ngữ"</string>
+    <string name="Spanish_yandex">"Tiếng Tây Ban Nha"</string>
+    <string name="Estonian_yandex">"Tiếng Estonia"</string>
+    <string name="Basque_yandex">"Tiếng Basque"</string>
+    <string name="Persian_yandex">"Ba tư"</string>
+    <string name="Finnish_yandex">"Phần Lan"</string>
+    <string name="French_yandex">"Tiếng Pháp"</string>
+    <string name="Irish_yandex">"Ai-Len"</string>
+    <string name="Scottish_Gaelic_yandex">"Scottish Gaelic"</string>
+    <string name="Galician_yandex">"Tiếng Galician"</string>
+    <string name="Gujarati_yandex">"Tiếng Gujarati"</string>
+    <string name="Hebrew_yandex">"Tiếng Hebrew"</string>
+    <string name="Hindi_yandex">"Tiếng Hin-ddi"</string>
+    <string name="Croatian_yandex">"Croatia"</string>
+    <string name="Haitian_yandex">"Haiti"</string>
+    <string name="Hungarian_yandex">"Hungary"</string>
+    <string name="Armenian_yandex">"Tiếng Armenia"</string>
+    <string name="Indonesian_yandex">"Indonesia"</string>
+    <string name="Icelandic_yandex">"Tiếng băng đảo"</string>
+    <string name="Italian_yandex">"Ý"</string>
+    <string name="Japanese_yandex">"Nhật bản"</string>
+    <string name="Javanese_yandex">"Tiếng Java"</string>
+    <string name="Georgian_yandex">"Tiếng Gruzia"</string>
+    <string name="Kazakh_yandex">"Tiếng Kazakh"</string>
+    <string name="Kannada_yandex">"Kannada"</string>
+    <string name="Korean_yandex">"Hàn Quốc"</string>
+    <string name="Kyrgyz_yandex">"Kyrgyzstan"</string>
+    <string name="Latin_yandex">"Tiếng Latinh"</string>
+    <string name="Luxembourgish_yandex">"Tiếng Luxembourg"</string>
+    <string name="Lithuanian_yandex">"Lithuanian"</string>
+    <string name="Latvian_yandex">"Tiếng Latvia"</string>
+    <string name="Malagasy_yandex">"Malagasy"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maori"</string>
+    <string name="Macedonian_yandex">"Tiếng Macedonia"</string>
+    <string name="Malayalam_yandex">"Malayalam"</string>
+    <string name="Mongolian_yandex">"Mông Cổ"</string>
+    <string name="Marathi_yandex">"Tiếng Marathi"</string>
+    <string name="Hill_Mari_yandex">"Hill Mari"</string>
+    <string name="Malay_yandex">"Tiếng Mã lai"</string>
+    <string name="Maltese_yandex">"Xứ Man-tơ"</string>
+    <string name="Nepali_yandex">"Tiếng Nepal"</string>
+    <string name="Dutch_yandex">"Hà Lan"</string>
+    <string name="Norwegian_yandex">"Na Uy"</string>
+    <string name="Punjabi_yandex">"Punjabi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Ba Lan"</string>
+    <string name="Portuguese_yandex">"Tiếng Bồ Đào Nha"</string>
+    <string name="Romanian_yandex">"Rumani"</string>
+    <string name="Russian_yandex">"Nga"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Tiếng Slovak"</string>
+    <string name="Slovenian_yandex">"Tiếng Slovenia"</string>
+    <string name="Albanian_yandex">"Tiếng Albania"</string>
+    <string name="Serbian_yandex">"Serbia"</string>
+    <string name="Sundanese_yandex">"Tiếng Sunda"</string>
+    <string name="Swedish_yandex">"Thụy Điển"</string>
+    <string name="Swahili_yandex">"Tiếng Swahili"</string>
+    <string name="Tamil_yandex">"Tamil"</string>
+    <string name="Telugu_yandex">"Tiếng Telugu"</string>
+    <string name="Tajik_yandex">"Tajikistan"</string>
+    <string name="Thai_yandex">"Thái Lan"</string>
+    <string name="Tagalog_yandex">"Tiếng Tagalog"</string>
+    <string name="Turkish_yandex">"Thổ Nhĩ Kỳ"</string>
+    <string name="Tatar_yandex">"Tiếng Tatar"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Tiếng Ukraina"</string>
+    <string name="Urdu_yandex">"Tiếng Urdu"</string>
+    <string name="Uzbek_yandex">"Tiếng Uzbek"</string>
+    <string name="Vietnamese_yandex">"Việt Nam"</string>
+    <string name="Xhosa_yandex">"Tiếng Xhosa"</string>
+    <string name="Yiddish_yandex">"Tiếng Yiddish"</string>
+    <string name="Chinese_yandex">"Trung Quốc"</string>
+    <string name="Afrikaans_micro">"Tiếng Afrikaans"</string>
+    <string name="Arabic_micro">"Tiếng ả Rập"</string>
+    <string name="Bosnian_Latin_micro">"Bosnia Latin"</string>
+    <string name="Bulgarian_micro">"Tiếng Bulgaria"</string>
+    <string name="Catalan_micro">"Tiếng Catalan"</string>
+    <string name="Chinese_Simplified_micro">"Tiếng Trung giản thể"</string>
+    <string name="Chinese_Traditional_micro">"Trung Quốc truyền thống"</string>
+    <string name="Croatian_micro">"Croatia"</string>
+    <string name="Czech_micro">"Séc"</string>
+    <string name="Danish_micro">"Đan Mạch"</string>
+    <string name="Dutch_micro">"Hà Lan"</string>
+    <string name="English_micro">"Tiếng Anh"</string>
+    <string name="Estonian_micro">"Tiếng Estonia"</string>
+    <string name="Finnish_micro">"Phần Lan"</string>
+    <string name="French_micro">"Tiếng Pháp"</string>
+    <string name="German_micro">"Đức"</string>
+    <string name="Greek_micro">"Hy Lạp"</string>
+    <string name="Haitian_Creole_micro">"Haitian Creole"</string>
+    <string name="Hebrew_micro">"Tiếng Hebrew"</string>
+    <string name="Hindi_micro">"Tiếng Hin-ddi"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Hungary"</string>
+    <string name="Indonesian_micro">"Indonesia"</string>
+    <string name="Italian_micro">"Ý"</string>
+    <string name="Japanese_micro">"Nhật bản"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Hàn Quốc"</string>
+    <string name="Latvian_micro">"Tiếng Latvia"</string>
+    <string name="Lithuanian_micro">"Lithuanian"</string>
+    <string name="Malay_micro">"Tiếng Mã lai"</string>
+    <string name="Maltese_micro">"Xứ Man-tơ"</string>
+    <string name="Norwegian_micro">"Na Uy"</string>
+    <string name="Persian_micro">"Ba tư"</string>
+    <string name="Polish_micro">"Ba Lan"</string>
+    <string name="Portuguese_micro">"Tiếng Bồ Đào Nha"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Rumani"</string>
+    <string name="Russian_micro">"Nga"</string>
+    <string name="Serbian_Cyrillic_micro">"Serbia Cyrillic"</string>
+    <string name="Serbian_Latin_micro">"Serbian Latin"</string>
+    <string name="Slovak_micro">"Tiếng Slovak"</string>
+    <string name="Slovenian_micro">"Tiếng Slovenia"</string>
+    <string name="Spanish_micro">"Tiếng Tây Ban Nha"</string>
+    <string name="Swedish_micro">"Thụy Điển"</string>
+    <string name="Thai_micro">"Thái Lan"</string>
+    <string name="Turkish_micro">"Thổ Nhĩ Kỳ"</string>
+    <string name="Ukrainian_micro">"Tiếng Ukraina"</string>
+    <string name="Urdu_micro">"Tiếng Urdu"</string>
+    <string name="Vietnamese_micro">"Việt Nam"</string>
+    <string name="Welsh_micro">"Tiếng Wales"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

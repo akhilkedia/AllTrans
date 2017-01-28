@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Krovinio aprašo programų - prašome palaukti"</string>
+    <string name="clear_cache_error">"Kai kurios klaidos. Nėra aišku vertimo talpyklos!"</string>
+    <string name="clear_cache_success">"Versti talpyklos, nes ši programa bus ištrinta!"</string>
+	<string name="how_to_use">"KAIP NAUDOTIS PROGRAMA
+
+Ši programa reikalauja užsiregistruoti raktą iš "Microsoft" arba Yandex vertėjas.
+Yandex vertėjas palaikoma daugiau kalbų, turi daug lengviau registracijos procesas ir reikalauja Nr kreditinės kortelės.
+"Microsoft" Translate duoda geresnius rezultatus, tačiau reikalaujama, kad kredito kortelę, kad užsiregistruoti. (Bet nesijaudinkite, nieko bus įkrautas.)
+
+1. Visuotiniai parametrai skirtuką, leidžia naudoti Yandex vietoj "Microsoft" Jei norite naudoti Yandex, kitur uždrausti naudoti "Microsoft".
+1. Visuotiniai parametrai skirtuke, bakstelėkite įveskite "Microsoft" / Yandex prenumeratos mygtuką, įveskite atitinkamą klavišą (žiūrėkite instrukcijas iš apačios).
+2. Pasirinkite ir išversti iš kalbos ir išversti į kalbą.
+3. versti skirtuką programų, raskite programėlę, kurią norite versti, spustelėkite žymimąjį laukelį šalia jo. Jei žymimąjį langelį nesimato, pabandykite sukasi telefoną šonu į kraštovaizdžio režimu.
+4. Uždarykite ir iš naujo paleiskite norimą išversti programą - ji turėtų būti išverstas!
+
+Įspėjimas: kai kurios programos gali priversti uždaryti. Trikčių šalinimo skyriuje.
+
+KAIP GAUTI YANDEX VERSTI PASIRAŠYMO RAKTAS
+
+1. eikite į žemėlapiai svetainėje - https://tech.yandex.com/keys/get/?service=trnsl
+2. Jei dar neturite paskyros, spustelėkite registras ir pasirašyti naują sąskaitą.
+3. pasirašius aukštyn, sutikti su vartotojo sutartimi ir spustelėkite gauti API raktas.
+4. sėkmingai gavote jūsų raktas! Tai kažkas panašaus į trnsl.1.1.201701...
+
+KAIP GAUTI "MICROSOFT" AZURE VERSTI ABONEMENTO RAKTAS
+
+1. Užsiregistruokite į Microsoft Azure sąskaitą http://azure.com
+
+2. po to, kai jūs turite sąskaitą, prisijungti prie Azure portale, esančiame http://portal.azure.com
+
+3. Pridėti Microsoft Translator API prenumerata Azure abonemento.
+Pasirinkite einamųjų įmokų pensinio draudimo prenumeratą. Reikės pateikti kredito kortelę, bet nesijaudinkite, nieko mokėti.
+Pasirinkite + naujas variantas.
+Paslaugų sąraše pasirinkite žvalgybos.
+Pasirinkite pažinimo paslaugų API.
+Pasirinkite parinktį API tipo.
+Pasirinkite teksto vertimas
+Kainų lygio skiltyje pasirinkite nemokamą pakopa (F0)
+Užpildykite likusią formos, ir paspauskite mygtuką kurti.
+
+4. gauti savo autentifikavimo raktą.
+Eikite į visus išteklius ir pasirinkite Microsoft Translator API Jūs užsiregistravote.
+Eikite į parinktį raktus ir kopijuoti jūsų prenumeratos klavišą, Norėdami atidaryti paslaugos.
+Pasirašymo raktas yra kažkas panašaus į 321dcba...
+
+TRIKČIŲ ŠALINIMAS
+
+1. Jei nė viena programėlė yra išverstas, patikrinkite, ar jūsų "Microsoft" / Yandex pasirašymo raktas yra teisingas.
+2. Jei išversti programą galiojančios uždaro/gauna pakimba ant pakrovimo pirmą kartą po to, kai jums pradėti versti, spustelėkite programėlę programėlių versti tab, ir kiti parametrai užpildyti nedelsdamas prieš įgyvendinant 2000.
+3. Jei išversti programą dirbti gerai, bet dabar problemų pradedant, spustelėkite programėlę programėlių versti skirtuką ir spustelėkite spustelėkite išvalyti vertimo talpyklą.
+4. Jei kai kuriose programėlės nėra išversti, spustelėkite programėlę programėlių versti skirtuką ir įjungti taisymo režimas.
+5. Jei programa vis dar galiojančios uždaro, išjungti šią programą vertimas ir susisiekite su manimi dėl paramos siūlais ant XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Išversti bet kur"</string>
+    <string name="apps_to_translate">"Programų išversti"</string>
+    <string name="global_settings">"Visuotiniai parametrai"</string>
+    <string name="instructions">"Instrukcijos"</string>
+    <string name="pref_cat_translate_settings">"Versti parametrai"</string>
+    <string name="pref_cat_parts_of_app">"Dalis programos versti"</string>
+    <string name="pref_cat_other_settings">"Kiti parametrai"</string>
+    <string name="master_on_off">"Meistras įjungimas/išjungimas"</string>
+    <string name="master_on_off_summary">"Norėdami visiškai išjungti šį modulį išjungti"</string>
+    <string name="master_on_off_summary_off">"Modulis yra išjungtas, Nr apps bus išverstas. Kreiptis į pradėti naudojant auto-versti!"</string>
+    <string name="master_on_off_summary_on">"Modulis yra įjungta, pasirinktas programas bus išverstas. Išjungti visiškai išjungti šį modulį."</string>
+    <string name="enable_yandex">"Vietoj "Microsoft" naudoti Yandex"</string>
+    <string name="enable_yandex_summary">"Vietoj "Microsoft" naudoti Yandex vertimo įjungti"</string>
+    <string name="enable_yandex_summary_off">"Šiuo metu naudojate Microsoft Azure vertimas. Įjunkite naudoti Yandex vertimą."</string>
+    <string name="enable_yandex_summary_on">"Šiuo metu naudojant Yandex vertimas. Išjunkite naudoti Microsoft Azure vertimą."</string>
+    <string name="subKey">""Microsoft" / Yandex pasirašymo raktas"</string>
+    <string name="subKey_micro">""Microsoft" abonemento raktas"</string>
+    <string name="subKey_yandex">"Yandex pasirašymo raktas"</string>
+    <string name="subKey_summary">"Įveskite abonemento raktas Microsoft Azure arba Yandex vertimo API, kuris įgalinamas virš"</string>
+    <string name="subKey_defaultValue">"Įveskite savo "Microsoft" arba Yandex pasirašymo raktas"</string>
+    <string name="transFrom">"Išversti iš kalbos"</string>
+    <string name="transFrom_summary">"Kalbos programėlė yra iš pradžių."</string>
+    <string name="transTo">"Išversti į kalbą"</string>
+    <string name="transTo_summary">"Kalbą, kuria norite versti į programėlę."</string>
+    <string name="setText">"Versti įprastą tekstinį"</string>
+    <string name="setText_summary_off">"Nėra vertimo tekstas, parašytas naudojant nustatyti teksto. Įjunkite Norėdami įgalinti."</string>
+    <string name="setText_summary_on">"Versti tekstą parašyta naudojant nustatyti teksto - saugus. Išjungti parinktį Išjungti."</string>
+    <string name="setHint">"Versti tekstą patarimų (pilkos spalvos pasiūlymus) teksto laukuose"</string>
+    <string name="setHint_summary_off">"Nėra vertimo tekstas, parašytas naudojant nustatykite užuominą. Įjunkite Norėdami įgalinti."</string>
+    <string name="setHint_summary_on">"Versti tekstą parašyta naudojant nustatykite užuominą - saugus. Išjungti parinktį Išjungti."</string>
+    <string name="webView">"Išversti tekstą tinklapiuose viduje Apps"</string>
+    <string name="webView_summary_off">"Negalima versti tekstą į WebViews. Įjunkite Norėdami įgalinti."</string>
+    <string name="webView_summary_on">"Versti tekstą viduje rodiniu - saugus, gali veikti visada. Išjungti parinktį Išjungti."</string>
+    <string name="drawText">"Taisymo režimas"</string>
+    <string name="drawText_summary_off">"Įkyriai versti tekstą į drawText. Naudoti kai visi aukščiau nepavyks. Įjunkite Norėdami įgalinti."</string>
+    <string name="drawText_summary_on">"Agresyviai versti tekstą drawText - eksperimentinis, gali ne darbą visada. Išjungti parinktį Išjungti."</string>
+    <string name="caching">"Naudoti sparčiosios atminties"</string>
+    <string name="caching_summary_off">"Ne taupymo vertimai autonomiškai, todėl lėčiau versti ir didesnė duomenų - bet gali veikti daugiau programėlių. Pasukti, schemą Išsaugoti vertimai."</string>
+    <string name="caching_summary_on">"Taupymas vertimai neprisijungus pagreitinti versti ir naudoti duomenis. Išjungti išjungti, jei jūsų programa nepaleidžiama."</string>
+    <string name="delay">"Užlaikymas prieš verčiant"</string>
+    <string name="delay_summary">"Nustatykite laiką milisekundžių prieš verčiant laukti. Numatytoji reikšmė yra 0, nustatytas 1000 – 5000 jei išverstų app yra kritimo."</string>
+    <string name="overRide_global">"Nepaisyti Visuotiniai parametrai"</string>
+    <string name="overRide_global_summary_off">"Naudojant Visuotiniai parametrai šio app. posūkio ant pakeisti tik šios programos nustatymus."</string>
+    <string name="overRide_global_summary_on">"Naudojant vietinių parametrų šio app. įjungti išjungti naudoti Visuotiniai parametrai."</string>
+    <string name="clear_cache">"Paspauskite, jei norite išvalyti talpyklą Vertimas"</string>
+    <string name="clear_cache_summary">"Spustelėkite aukščiau išvalyti app's išversti talpyklos. Naudoti šį pakeitus į/iš kalbų, arba jei programa nepasileidžia."</string>
+    <string name="Afrikaans_yandex">"Būrų"</string>
+    <string name="Amharic_yandex">"Amharų"</string>
+    <string name="Arabic_yandex">"Arabų"</string>
+    <string name="Azerbaijani_yandex">"Azerbaidžaniečių"</string>
+    <string name="Bashkir_yandex">"Baškirų"</string>
+    <string name="Belarusian_yandex">"Baltarusių"</string>
+    <string name="Bulgarian_yandex">"Bulgarų"</string>
+    <string name="Bengali_yandex">"Bengalų"</string>
+    <string name="Bosnian_yandex">"Bosnių"</string>
+    <string name="Catalan_yandex">"Katalonų"</string>
+    <string name="Cebuano_yandex">"Sebuanų"</string>
+    <string name="Czech_yandex">"Čekų"</string>
+    <string name="Welsh_yandex">"Valų"</string>
+    <string name="Danish_yandex">"Danų"</string>
+    <string name="German_yandex">"Vokiečių"</string>
+    <string name="Greek_yandex">"Graikų"</string>
+    <string name="English_yandex">"Anglų"</string>
+    <string name="Esperanto_yandex">"Esperanto kalba"</string>
+    <string name="Spanish_yandex">"Ispanų"</string>
+    <string name="Estonian_yandex">"Estų"</string>
+    <string name="Basque_yandex">"Baskų"</string>
+    <string name="Persian_yandex">"Persų"</string>
+    <string name="Finnish_yandex">"Suomių"</string>
+    <string name="French_yandex">"Prancūzų"</string>
+    <string name="Irish_yandex">"Airių"</string>
+    <string name="Scottish_Gaelic_yandex">"Škotų gėlų kalba"</string>
+    <string name="Galician_yandex">"Galiciečių"</string>
+    <string name="Gujarati_yandex">"Gujarati"</string>
+    <string name="Hebrew_yandex">"Hebrajų"</string>
+    <string name="Hindi_yandex">"Hindi"</string>
+    <string name="Croatian_yandex">"Kroatų"</string>
+    <string name="Haitian_yandex">"Haičio"</string>
+    <string name="Hungarian_yandex">"Vengrų"</string>
+    <string name="Armenian_yandex">"Armėnų"</string>
+    <string name="Indonesian_yandex">"Indoneziečių"</string>
+    <string name="Icelandic_yandex">"Islandų"</string>
+    <string name="Italian_yandex">"Italų"</string>
+    <string name="Japanese_yandex">"Japonų"</string>
+    <string name="Javanese_yandex">"Javos"</string>
+    <string name="Georgian_yandex">"Gruzinų"</string>
+    <string name="Kazakh_yandex">"Kazachų"</string>
+    <string name="Kannada_yandex">"Kanados"</string>
+    <string name="Korean_yandex">"Korėjos"</string>
+    <string name="Kyrgyz_yandex">"Kirgizų"</string>
+    <string name="Latin_yandex">"Lotynų"</string>
+    <string name="Luxembourgish_yandex">"Liuksemburgiečių"</string>
+    <string name="Lithuanian_yandex">"Lietuvių"</string>
+    <string name="Latvian_yandex">"Latvių"</string>
+    <string name="Malagasy_yandex">"Madagaskaro"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maorių"</string>
+    <string name="Macedonian_yandex">"Makedonų"</string>
+    <string name="Malayalam_yandex">"Malajalamiečių"</string>
+    <string name="Mongolian_yandex">"Mongolų"</string>
+    <string name="Marathi_yandex">"Marati"</string>
+    <string name="Hill_Mari_yandex">"Aukštumų marių"</string>
+    <string name="Malay_yandex">"Malajų"</string>
+    <string name="Maltese_yandex">"Maltos"</string>
+    <string name="Nepali_yandex">"Nepalų"</string>
+    <string name="Dutch_yandex">"Olandų"</string>
+    <string name="Norwegian_yandex">"Norvegų"</string>
+    <string name="Punjabi_yandex">"Pandžabi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Lenkų"</string>
+    <string name="Portuguese_yandex">"Portugalų"</string>
+    <string name="Romanian_yandex">"Rumunų"</string>
+    <string name="Russian_yandex">"Rusų"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Slovakų"</string>
+    <string name="Slovenian_yandex">"Slovėnų"</string>
+    <string name="Albanian_yandex">"Albanų"</string>
+    <string name="Serbian_yandex">"Serbų"</string>
+    <string name="Sundanese_yandex">"Sundų"</string>
+    <string name="Swedish_yandex">"Švedų"</string>
+    <string name="Swahili_yandex">"Suvahili"</string>
+    <string name="Tamil_yandex">"Tamilų"</string>
+    <string name="Telugu_yandex">"Telugų"</string>
+    <string name="Tajik_yandex">"Tadžikų"</string>
+    <string name="Thai_yandex">"Tajų"</string>
+    <string name="Tagalog_yandex">"Tagalų"</string>
+    <string name="Turkish_yandex">"Turkų"</string>
+    <string name="Tatar_yandex">"Totorių"</string>
+    <string name="Udmurt_yandex">"Udmurtų"</string>
+    <string name="Ukrainian_yandex">"Ukrainiečių"</string>
+    <string name="Urdu_yandex">"Urdu"</string>
+    <string name="Uzbek_yandex">"Uzbekų"</string>
+    <string name="Vietnamese_yandex">"Vietnamiečių"</string>
+    <string name="Xhosa_yandex">"Khosa"</string>
+    <string name="Yiddish_yandex">"Jidiš kalba"</string>
+    <string name="Chinese_yandex">"Kinų"</string>
+    <string name="Afrikaans_micro">"Būrų"</string>
+    <string name="Arabic_micro">"Arabų"</string>
+    <string name="Bosnian_Latin_micro">"Bosnijos Lotynų"</string>
+    <string name="Bulgarian_micro">"Bulgarų"</string>
+    <string name="Catalan_micro">"Katalonų"</string>
+    <string name="Chinese_Simplified_micro">"Kinų supaprastinta"</string>
+    <string name="Chinese_Traditional_micro">"Kinų tradicinė"</string>
+    <string name="Croatian_micro">"Kroatų"</string>
+    <string name="Czech_micro">"Čekų"</string>
+    <string name="Danish_micro">"Danų"</string>
+    <string name="Dutch_micro">"Olandų"</string>
+    <string name="English_micro">"Anglų"</string>
+    <string name="Estonian_micro">"Estų"</string>
+    <string name="Finnish_micro">"Suomių"</string>
+    <string name="French_micro">"Prancūzų"</string>
+    <string name="German_micro">"Vokiečių"</string>
+    <string name="Greek_micro">"Graikų"</string>
+    <string name="Haitian_Creole_micro">"Haičio kreolų"</string>
+    <string name="Hebrew_micro">"Hebrajų"</string>
+    <string name="Hindi_micro">"Hindi"</string>
+    <string name="Hmong_Daw_micro">"Indoneziečių"</string>
+    <string name="Hungarian_micro">"Vengrų"</string>
+    <string name="Indonesian_micro">"Indoneziečių"</string>
+    <string name="Italian_micro">"Italų"</string>
+    <string name="Japanese_micro">"Japonų"</string>
+    <string name="Kiswahili_micro">"Principai"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Korėjos"</string>
+    <string name="Latvian_micro">"Latvių"</string>
+    <string name="Lithuanian_micro">"Lietuvių"</string>
+    <string name="Malay_micro">"Malajų"</string>
+    <string name="Maltese_micro">"Maltos"</string>
+    <string name="Norwegian_micro">"Norvegų"</string>
+    <string name="Persian_micro">"Persų"</string>
+    <string name="Polish_micro">"Lenkų"</string>
+    <string name="Portuguese_micro">"Portugalų"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Rumunų"</string>
+    <string name="Russian_micro">"Rusų"</string>
+    <string name="Serbian_Cyrillic_micro">"Serbų kirilica"</string>
+    <string name="Serbian_Latin_micro">"Serbų (lotyniška)"</string>
+    <string name="Slovak_micro">"Slovakų"</string>
+    <string name="Slovenian_micro">"Slovėnų"</string>
+    <string name="Spanish_micro">"Ispanų"</string>
+    <string name="Swedish_micro">"Švedų"</string>
+    <string name="Thai_micro">"Tajų"</string>
+    <string name="Turkish_micro">"Turkų"</string>
+    <string name="Ukrainian_micro">"Ukrainiečių"</string>
+    <string name="Urdu_micro">"Urdu"</string>
+    <string name="Vietnamese_micro">"Vietnamiečių"</string>
+    <string name="Welsh_micro">"Valų"</string>
+    <string name="Yucatec_Maya_micro">"Jukatekų majų"</string>
+</resources>

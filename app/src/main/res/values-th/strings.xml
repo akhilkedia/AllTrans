@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"โหลดรายการของโปรแกรมประยุกต์ - กรุณารอสักครู่"</string>
+    <string name="clear_cache_error">"ข้อผิดพลาดบาง ไม่สามารถล้างแคแปล"</string>
+    <string name="clear_cache_success">"แปลแคสำหรับ app นี้ถูกลบ"</string>
+	<string name="how_to_use">"วิธีการใช้โปรแกรมประยุกต์
+
+โปรแกรมนี้จำเป็นต้องลงชื่อสำหรับคีย์จาก Microsoft หรือแปล Yandex
+แปล Yandex สนับสนุนภาษาเพิ่มเติม มีเป็นมากง่ายต่อการลงทะเบียน และต้องไม่มีบัตรเครดิต
+แปลภาษา Microsoft ให้ผลลัพธ์ที่ดีกว่า แต่ต้องใช้บัตรเครดิตเพื่อลงทะเบียน (แต่ไม่ต้องกังวล ไม่มีอะไรจะคิด.)
+
+1. ในแท็บการตั้งค่าสากล เปิดใช้ Yandex แทน Microsoft ถ้าคุณต้องการใช้ Yandex ปิดใช้งานการใช้ Microsoft อื่น
+1. ในแท็บการตั้งค่าสากล แตะป้อนคีย์สมัครสมาชิก Microsoft/Yandex ข้อมูลสำคัญที่เกี่ยวข้อง (โปรดดูคำแนะนำจากด้านล่าง)
+2. เลือกการแปลจากภาษา และแปลภาษา
+3. ในแอปพลิเคชันแท็บแปลภาษา ค้นหาแอพที่คุณต้องการแปล คลิกกล่องกาเครื่องหมายอยู่ถัดจาก ถ้ามองไม่เห็นกล่องกาเครื่องหมาย ลองหมุนไปด้านข้างของโทรศัพท์ในโหมดแนวนอน
+4. ปิด และรีสตาร์ทแอพที่ต้องการแปล - ควรแปล
+
+คำเตือน - บางโปรแกรมอาจบังคับให้ปิด ดูส่วนการแก้ไขปัญหา
+
+วิธีรับ YANDEX แปลคีย์สมัครสมาชิก
+
+1. ไปที่เว็บไซต์ Yandex - https://tech.yandex.com/keys/get/?service=trnsl
+2. ถ้าคุณไม่มีบัญชีผู้ใช้ คลิกลงทะเบียนและลงบัญชีใหม่
+3. หลังจากลงนามขึ้น ยอมรับข้อตกลงผู้ใช้ และคลิกที่คีย์ API ที่ได้รับ
+คุณได้รับคีย์ของคุณเรียบร้อยแล้ว มันเป็นเหมือน trnsl.1.1.201701 ...
+
+วิธีรับ MICROSOFT AZURE แปลคีย์สมัครสมาชิก
+
+1. ลงทะเบียนสำหรับบัญชี Microsoft Azure ที่ http://azure.com
+
+2. หลังจากที่คุณมีบัญชีผู้ใช้ ลงชื่อเข้าใช้พอร์ทัล Azure ที่ http://portal.azure.com
+
+3. เพิ่มการสมัครใช้งาน Microsoft แปล API บัญชี Azure ของคุณ
+เลือกสมัครสมาชิกแบบจ่ายตามจริง จะต้องมีบัตรเครดิต แต่ไม่ต้อง กังวล ไม่มีค่าธรรมเนียม
+เลือก + ใหม่ตัวเลือก
+เลือกข่าวกรองจากรายการของบริการ
+เลือก APIs บริการองค์ความรู้
+เลือกตัวเลือกชนิดของ API
+เลือกแปลข้อความ
+ในส่วนระดับราคา เลือกระดับฟรี (F0)
+กรอกส่วนที่เหลือของแบบฟอร์ม และกดปุ่มสร้าง
+
+4. ดึงกุญแจของคุณ
+ไปยังทรัพยากรทั้งหมด และเลือก API แปล Microsoft ที่คุณได้สมัคร
+ไปที่คีย์ตัวเลือก และคัดลอกคีย์สมัครสมาชิกของคุณเพื่อเข้าถึงบริการ
+คีย์สมัครสมาชิกเป็นเหมือน 321dcba ...
+
+การแก้ไขปัญหา
+
+1. ถ้าเป็นการแปลไม่พ ตรวจสอบหมายเลขสมาชิกของคุณ Microsoft/Yandex ถูกต้อง
+2. ถ้าแอแปลแรงปิด/รับติดในการโหลดครั้งแรกหลังจากที่คุณเริ่มแปล คลิกที่แอแอแปลแท็บ และในการตั้งค่าอื่น ๆ ในการหน่วงเวลาก่อนแปล 2000
+3. ถ้าแอแปลที่ใช้ในการทำงานดี แต่ตอนนี้จมปลักในการเริ่มต้น คลิกที่แอปพลิเคชันการแปลแท็บใน และคลิกที่ คลิกเพื่อล้างแคแปล
+หากไม่มีการแปลบางส่วนของแอพ คลิกที่แอแอแปลแท็บ และเปิดใช้งานโหมดก้าวร้าว
+ถ้าแอยังคงแรงปิด ปิดการแปลสำหรับ app นี้ และติดต่อเราด้ายสนับสนุนบน XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"แปลได้ทุกที่"</string>
+    <string name="apps_to_translate">"แอปพลิเคชันการแปล"</string>
+    <string name="global_settings">"การตั้งค่าสากล"</string>
+    <string name="instructions">"คำแนะนำ"</string>
+    <string name="pref_cat_translate_settings">"การตั้งค่าแปล"</string>
+    <string name="pref_cat_parts_of_app">"ส่วนของ App ในการแปล"</string>
+    <string name="pref_cat_other_settings">"การตั้งค่าอื่น ๆ"</string>
+    <string name="master_on_off">"หลักเปิดปิด"</string>
+    <string name="master_on_off_summary">"ปิดเพื่อปิดโมดูลนี้"</string>
+    <string name="master_on_off_summary_off">"โมดูลที่ถูกปิดใช้งาน ไม่มีแอปพลิเคชันจะถูกแปล เปิดเพื่อเริ่มต้นใช้อัตโนมัติแปล"</string>
+    <string name="master_on_off_summary_on">"เปิดโมดูล แอปที่เลือกจะมีแปล ปิดเพื่อปิดโมดูลนี้"</string>
+    <string name="enable_yandex">"ใช้ Yandex แทน Microsoft"</string>
+    <string name="enable_yandex_summary">"เปิดใช้ Yandex แปลแทน Microsoft"</string>
+    <string name="enable_yandex_summary_off">"กำลังใช้ Microsoft Azure แปล เปิดการใช้แปล Yandex"</string>
+    <string name="enable_yandex_summary_on">"ปัจจุบันใช้แปล Yandex ปิดการใช้ Microsoft Azure แปล"</string>
+    <string name="subKey">"Microsoft เทียบคีย์สมัครสมาชิก Yandex"</string>
+    <string name="subKey_micro">"คีย์สมัครใช้งาน Microsoft"</string>
+    <string name="subKey_yandex">"คีย์สมัครสมาชิก Yandex"</string>
+    <string name="subKey_summary">"ใส่หมายเลขสมาชิกสำหรับ Microsoft Azure หรือ Yandex แปล API แล้วเปิดใช้งานข้างต้น"</string>
+    <string name="subKey_defaultValue">"ป้อนของคุณ Microsoft หรือคีย์สมัครสมาชิก Yandex"</string>
+    <string name="transFrom">"แปลจากภาษา"</string>
+    <string name="transFrom_summary">"นอกจากนี้ภาษาแอเดิมอยู่ใน"</string>
+    <string name="transTo">"แปลภาษา"</string>
+    <string name="transTo_summary">"ภาษาที่คุณต้องการให้แอจะเป็"</string>
+    <string name="setText">"แปลข้อความปกติ"</string>
+    <string name="setText_summary_off">"ไม่แปลข้อความที่เขียนโดยใช้ข้อความที่กำหนด เปิดการเปิดใช้งาน"</string>
+    <string name="setText_summary_on">"การแปลข้อความที่เขียนโดยใช้การตั้งค่าข้อความ - ปลอดภัย ปิดเพื่อปิดใช้งาน"</string>
+    <string name="setHint">"แปลข้อความคำแนะนำ (แนะนำสีเทา) ในกล่องข้อความ"</string>
+    <string name="setHint_summary_off">"ไม่แปลข้อความที่เขียนโดยใช้คำใบ้ที่ตั้ง เปิดการเปิดใช้งาน"</string>
+    <string name="setHint_summary_on">"การแปลข้อความที่เขียนโดยใช้คำใบ้ที่กำหนด - ปลอดภัย ปิดเพื่อปิดใช้งาน"</string>
+    <string name="webView">"แปลข้อความในหน้าเว็บภายในแอป"</string>
+    <string name="webView_summary_off">"ไม่แปลข้อความใน WebViews เปิดการเปิดใช้งาน"</string>
+    <string name="webView_summary_on">"การแปลข้อความภายใน WebView - ปลอดภัย อาจทำงานไม่เสมอกัน ปิดเพื่อปิดใช้งาน"</string>
+    <string name="drawText">"โหมดที่สูง"</string>
+    <string name="drawText_summary_off">"ห้ามแปลข้อความใน drawText ใช้เมื่อข้างต้นทั้งหมดล้มเหลว เปิดการเปิดใช้งาน"</string>
+    <string name="drawText_summary_on">"แปลข้อความอุกอาจใน drawText - ทดลอง อาจไม่ทำงานเสมอ ปิดเพื่อปิดใช้งาน"</string>
+    <string name="caching">"ใช้แค"</string>
+    <string name="caching_summary_off">"ไม่ประหยัดแปลแบบออฟไลน์ แปลผลช้า และ ข้อมูลสูง - แต่อาจทำงานสำหรับแอปเพิ่มเติม เปิดการบันทึกการแปล"</string>
+    <string name="caching_summary_on">"บันทึกแปลแบบออฟไลน์เพื่อเร่งแปล และใช้ข้อมูล ปิดเพื่อปิดใช้งานถ้า app ของคุณไม่เริ่มต้น"</string>
+    <string name="delay">"หน่วงเวลาก่อนที่จะแปล"</string>
+    <string name="delay_summary">"ตั้งค่าเวลาเป็นมิลลิวินาทีในการรอก่อนการแปล ค่าเริ่มต้นคือ 0 ตั้ง 1000 – 5000 ถ้าแอแปลเป็นความล้มเหลว"</string>
+    <string name="overRide_global">"แทนที่การตั้งค่าสากล"</string>
+    <string name="overRide_global_summary_off">"ใช้การตั้งค่าสากลสำหรับแอพโดยนี้บนการเปลี่ยนแปลงการตั้งค่าเฉพาะสำหรับโปรแกรมประยุกต์นี้"</string>
+    <string name="overRide_global_summary_on">"ใช้การตั้งค่าเฉพาะสำหรับแอพโดยนี้ปิดการใช้การตั้งค่าสากล"</string>
+    <string name="clear_cache">"คลิกเพื่อล้างแคชแปล"</string>
+    <string name="clear_cache_summary">"คลิกด้านบนเพื่อล้างแอของแปลแค ใช้ตัวเลือกนี้หลังจากเปลี่ยน จาก ภาษา หรือ ถ้าไม่เริ่มแอ"</string>
+    <string name="Afrikaans_yandex">"อัฟริกัน"</string>
+    <string name="Amharic_yandex">"อัมฮาริก"</string>
+    <string name="Arabic_yandex">"อาหรับ"</string>
+    <string name="Azerbaijani_yandex">"อาเซอร์ไบจัน"</string>
+    <string name="Bashkir_yandex">"บัช"</string>
+    <string name="Belarusian_yandex">"เบลารุส"</string>
+    <string name="Bulgarian_yandex">"เบลเยียม"</string>
+    <string name="Bengali_yandex">"เบนกาลี"</string>
+    <string name="Bosnian_yandex">"บอสเนีย"</string>
+    <string name="Catalan_yandex">"คาตาลัน"</string>
+    <string name="Cebuano_yandex">"ซีบัวโน"</string>
+    <string name="Czech_yandex">"เชก"</string>
+    <string name="Welsh_yandex">"เวลช์"</string>
+    <string name="Danish_yandex">"เดนมาร์ก"</string>
+    <string name="German_yandex">"เยอรมัน"</string>
+    <string name="Greek_yandex">"กรีก"</string>
+    <string name="English_yandex">"อังกฤษ"</string>
+    <string name="Esperanto_yandex">"ภาษาโลก"</string>
+    <string name="Spanish_yandex">"สเปน"</string>
+    <string name="Estonian_yandex">"เอสโทเนีย"</string>
+    <string name="Basque_yandex">"บาส์ก"</string>
+    <string name="Persian_yandex">"เปอร์เซีย"</string>
+    <string name="Finnish_yandex">"ฟินแลนด์"</string>
+    <string name="French_yandex">"ฝรั่งเศส"</string>
+    <string name="Irish_yandex">"ไอริส"</string>
+    <string name="Scottish_Gaelic_yandex">"สกอตภาษาเซลท์สาขาหนึ่ง"</string>
+    <string name="Galician_yandex">"กาลิเชีย"</string>
+    <string name="Gujarati_yandex">"กุจราช"</string>
+    <string name="Hebrew_yandex">"เฮบรู"</string>
+    <string name="Hindi_yandex">"ฮินดี"</string>
+    <string name="Croatian_yandex">"โครเอเชีย"</string>
+    <string name="Haitian_yandex">"เฮติ"</string>
+    <string name="Hungarian_yandex">"ฮังการี"</string>
+    <string name="Armenian_yandex">"อาร์เมเนีย"</string>
+    <string name="Indonesian_yandex">"อินโดนีเซีย"</string>
+    <string name="Icelandic_yandex">"ไอร์แลนด์"</string>
+    <string name="Italian_yandex">"อิตาลี"</string>
+    <string name="Japanese_yandex">"ญี่ปุ่น"</string>
+    <string name="Javanese_yandex">"ชวา"</string>
+    <string name="Georgian_yandex">"จอร์เจีย"</string>
+    <string name="Kazakh_yandex">"คาซัค"</string>
+    <string name="Kannada_yandex">"คันนาดา"</string>
+    <string name="Korean_yandex">"เกาหลี"</string>
+    <string name="Kyrgyz_yandex">"คีร์กีร์"</string>
+    <string name="Latin_yandex">"ละติน"</string>
+    <string name="Luxembourgish_yandex">"ลักเซมเบิร์ก"</string>
+    <string name="Lithuanian_yandex">"ลิธัวเนีย"</string>
+    <string name="Latvian_yandex">"ลัตเวีย"</string>
+    <string name="Malagasy_yandex">"มาดากัสการ์"</string>
+    <string name="Mari_yandex">"มารี"</string>
+    <string name="Maori_yandex">"เมารี"</string>
+    <string name="Macedonian_yandex">"มาซิโดเนีย"</string>
+    <string name="Malayalam_yandex">"มาเลยาลัม"</string>
+    <string name="Mongolian_yandex">"มองโกเลีย"</string>
+    <string name="Marathi_yandex">"มาราติ"</string>
+    <string name="Hill_Mari_yandex">"เขามารี"</string>
+    <string name="Malay_yandex">"มาเลย์"</string>
+    <string name="Maltese_yandex">"มอลเทส"</string>
+    <string name="Nepali_yandex">"เนปาล"</string>
+    <string name="Dutch_yandex">"ดัทช์"</string>
+    <string name="Norwegian_yandex">"นอร์เวย์"</string>
+    <string name="Punjabi_yandex">"ปัญจาบ"</string>
+    <string name="Papiamento_yandex">"วิกิพีเดียสารานุกรมเสรี"</string>
+    <string name="Polish_yandex">"โปแลนด์"</string>
+    <string name="Portuguese_yandex">"โปรตุเกส"</string>
+    <string name="Romanian_yandex">"โรมาเนีย"</string>
+    <string name="Russian_yandex">"รัสเซีย"</string>
+    <string name="Sinhalese_yandex">"สิงหล"</string>
+    <string name="Slovak_yandex">"สโลวัค"</string>
+    <string name="Slovenian_yandex">"สโลวีเนีย"</string>
+    <string name="Albanian_yandex">"อัลบาเนีย"</string>
+    <string name="Serbian_yandex">"เซอร์เบีย"</string>
+    <string name="Sundanese_yandex">"ซุนดา"</string>
+    <string name="Swedish_yandex">"สวีเดน"</string>
+    <string name="Swahili_yandex">"สะวาฮิลี่"</string>
+    <string name="Tamil_yandex">"ทมิฬ"</string>
+    <string name="Telugu_yandex">"เทลูกู"</string>
+    <string name="Tajik_yandex">"ทาจิก"</string>
+    <string name="Thai_yandex">"ไทย"</string>
+    <string name="Tagalog_yandex">"ภาษาตากาล็อก"</string>
+    <string name="Turkish_yandex">"ตุรกี"</string>
+    <string name="Tatar_yandex">"ทาทาร์"</string>
+    <string name="Udmurt_yandex">"อุดมูร์ต"</string>
+    <string name="Ukrainian_yandex">"ยูเครน"</string>
+    <string name="Urdu_yandex">"เออร์ดู"</string>
+    <string name="Uzbek_yandex">"อุซเบค"</string>
+    <string name="Vietnamese_yandex">"เวียดนาม"</string>
+    <string name="Xhosa_yandex">"โซซ่า"</string>
+    <string name="Yiddish_yandex">"ยิว"</string>
+    <string name="Chinese_yandex">"จีน"</string>
+    <string name="Afrikaans_micro">"อัฟริกัน"</string>
+    <string name="Arabic_micro">"อาหรับ"</string>
+    <string name="Bosnian_Latin_micro">"ละตินบอสเนีย"</string>
+    <string name="Bulgarian_micro">"เบลเยียม"</string>
+    <string name="Catalan_micro">"คาตาลัน"</string>
+    <string name="Chinese_Simplified_micro">"จีนประยุกต์"</string>
+    <string name="Chinese_Traditional_micro">"จีนดั้งเดิม"</string>
+    <string name="Croatian_micro">"โครเอเชีย"</string>
+    <string name="Czech_micro">"เชก"</string>
+    <string name="Danish_micro">"เดนมาร์ก"</string>
+    <string name="Dutch_micro">"ดัทช์"</string>
+    <string name="English_micro">"อังกฤษ"</string>
+    <string name="Estonian_micro">"เอสโทเนีย"</string>
+    <string name="Finnish_micro">"ฟินแลนด์"</string>
+    <string name="French_micro">"ฝรั่งเศส"</string>
+    <string name="German_micro">"เยอรมัน"</string>
+    <string name="Greek_micro">"กรีก"</string>
+    <string name="Haitian_Creole_micro">"ชาวเฮติ"</string>
+    <string name="Hebrew_micro">"เฮบรู"</string>
+    <string name="Hindi_micro">"ฮินดี"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"ฮังการี"</string>
+    <string name="Indonesian_micro">"อินโดนีเซีย"</string>
+    <string name="Italian_micro">"อิตาลี"</string>
+    <string name="Japanese_micro">"ญี่ปุ่น"</string>
+    <string name="Kiswahili_micro">"กีสวาฮีลี"</string>
+    <string name="Klingon_micro">"คลิงออน"</string>
+    <string name="Klingon_pIqaD_micro">"คลิงออน pIqaD"</string>
+    <string name="Korean_micro">"เกาหลี"</string>
+    <string name="Latvian_micro">"ลัตเวีย"</string>
+    <string name="Lithuanian_micro">"ลิธัวเนีย"</string>
+    <string name="Malay_micro">"มาเลย์"</string>
+    <string name="Maltese_micro">"มอลเทส"</string>
+    <string name="Norwegian_micro">"นอร์เวย์"</string>
+    <string name="Persian_micro">"เปอร์เซีย"</string>
+    <string name="Polish_micro">"โปแลนด์"</string>
+    <string name="Portuguese_micro">"โปรตุเกส"</string>
+    <string name="Queretaro_Otomi_micro">"คิวเรทาโร Otomi"</string>
+    <string name="Romanian_micro">"โรมาเนีย"</string>
+    <string name="Russian_micro">"รัสเซีย"</string>
+    <string name="Serbian_Cyrillic_micro">"ซิริลลิกเซอร์เบีย"</string>
+    <string name="Serbian_Latin_micro">"ละตินเซอร์เบีย"</string>
+    <string name="Slovak_micro">"สโลวัค"</string>
+    <string name="Slovenian_micro">"สโลวีเนีย"</string>
+    <string name="Spanish_micro">"สเปน"</string>
+    <string name="Swedish_micro">"สวีเดน"</string>
+    <string name="Thai_micro">"ไทย"</string>
+    <string name="Turkish_micro">"ตุรกี"</string>
+    <string name="Ukrainian_micro">"ยูเครน"</string>
+    <string name="Urdu_micro">"เออร์ดู"</string>
+    <string name="Vietnamese_micro">"เวียดนาม"</string>
+    <string name="Welsh_micro">"เวลช์"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

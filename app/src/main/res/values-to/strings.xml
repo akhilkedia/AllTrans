@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Load e lisi 'o e ngaahi polokalama fakakomipiuta - kataki 'o tatali"</string>
+    <string name="clear_cache_error">"Ngaahi fehalaaki. 'Ikai lava ke faka'ata'ata 'a e cache 'o e liliu!"</string>
+    <string name="clear_cache_success">"Liliu lea Cache he kuo tamate'i 'a e app ko 'eni!"</string>
+	<string name="how_to_use">"FOUNGA HONO FAKA'AONGA'I 'O E TOHI KOLE
+
+'Oku fie ma'u 'e he tohi kole ko 'eni ke ke hu ai ki ha me'a mahu'inga mei he Microsoft pe liliu lea 'o e Yandex.
+Liliu lea 'o e Yandex poupou'i 'e he ngaahi lea fakafonua lahi ange, kuo ha fu'u faingofua ange signup e founga, pea 'oku fie ma'u 'e 'ikai CREDIT CARD.
+'Oku 'omi 'e he ngaahi ola lelei ange 'a e Microsoft Translate, ka 'oku fie ma'u 'a e ha kaati fakamo'ua ke hu. (Kae 'oua te ke hoha'a, 'oku 'ikai ha me'a te ke fakatukupaa'i.)
+
+1. 'i he tafa'aki 'o e ngaahi feitu'u fakamamani lahi, faka'ata 'a e faka'aonga'i Yandex kae 'ikai ko e Microsoft kapau te ke fie faka'aonga'i 'a e Yandex, to'o 'a e ha mo ha toe ke ngaue 'aki 'a e Microsoft.
+1. 'i he tafa'aki 'o e ngaahi feitu'u fakamamani lahi, lomi'i 'a e ki ki he Microsoft/Yandex Subscription Enter, fakahu 'a e ngaahi ki 'oku fekau'aki mo ia (vakai ki he ngaahi fakahinohino mei lalo).
+2. fili e liliu mei he lea fakafonua mo e liliu ki he lea fakafonua.
+3. ma'u 'i he e Apps ki he tafa'aki 'o e liliu lea, 'a e polokalama 'oku ke fie ma'u ke liliu, lomi'i 'i he puha ke faka'ilonga'i hoko ki ai. Kapau 'oku 'ikai 'asi 'a e fo'i puha, feinga ke fetongitongi 'a e tafa'aki ho'o telefoni ki he mode 'o e funga fonua.
+4. tapuni pea toe kamata 'a e polokalama 'oku ke fie liliu - 'oku totonu ke liliu ia!
+
+FAKATOKANGA - ha apps ala fakamalohi'i vaofi. Vakai ki he konga 'o e toki.
+
+KO E FOUNGA 'OKU LILIU 'E HE YANDEX KE MA'U 'A E MAKASINI KI
+
+1. ko e 'alu ki he uepisaiti 'a e Yandex - https://tech.yandex.com/keys/get/?service=trnsl
+2. Kapau 'oku 'ikai kuo 'osi 'i ai ha'o 'akauni, lomi'i 'i he lesisita mo e faka'ilonga hake ha 'akauni fo'ou.
+3. Hili ho'o hu hake, loto fiemalie ki he aleapau ngaue ki he polokalama pea lomi'i 'i he ma'u 'a e mahu'inga 'o e pe.
+4. kuo lava lelei hono 'oku ke ma'u 'a ho'o ki! Ko ha me'a hange ko e trnsl.1.1.201701 ia...
+
+KO E FOUNGA 'OKU LILIU 'E HE MICROSOFT AZURE KE MA'U 'A E MAKASINI KI
+
+1. ke hu ki ha fakamatala ki he Microsoft Azure 'i he http://azure.com
+
+2. hili ke ma'u ha fakamatala, 'a ia 'oku hu ki he portal ma'olunga 'i he http://portal.azure.com
+
+3. tanaki atu ha totongi pe 'o e tokotaha liliu lea Microsoft ki ho'o 'akauni ma'olunga.
+Fili ha totongi pay-as-you-go. 'E fie ma'u ki ai ha kaati fakamo'ua, kae 'oua te ke hoha'a, 'e fakamahu'inga'i ha me'a.
+Fili e + fo'ou e fili.
+Fili mei he lisi 'o e ngaahi tokoni 'a e poto.
+Fili 'a e APIs Services faka'atamai.
+Fili 'i he fa'ahinga pe.
+Fili 'a e liliu 'o e tohi
+'I he konga 'o e totongi 'o e lelei taha, fili 'a e lelei taha 'a e tau'ataina, 'a e (F0)
+Fakafonu 'a e toenga 'o e fomu, pea lomi'i 'i he Create.
+
+4. 'omi ho'o ki hono fakapapau'i.
+'Alu ki he ngaahi ma'u'anga tokoni kotoa pea fili 'a e pe tokotaha liliu lea Microsoft e koe pee.
+'Alu ki hono fili 'o e ngaahi kii pea hiki ha tatau 'o ho'o makasini ki ke ke hu ki he ngaue tokoni.
+Ko e totongi ko e ki ko ha fa'ahinga me'a hange ko e 321dcba...
+
+FAKALELEI'I HA PALOPALEMA
+
+1. Kapau 'oku lolotonga liliu 'a e 'ikai ha app, vakai'i pe 'oku tonu ho'o Microsoft/Yandex ko e totongi ki.
+2. Kapau ko e liliu 'o e app malohi tapuni/'Oku fihia 'i Louti (loading) e fuofua taimi ia hili ke kamata hono liliu, lomi'i 'i he app 'i he polokalama ke liliu 'a e ngaahi 'ulu'itohi, pea 'i he ngaahi feitu'u kehe fakafonu fakatoloi kimu'a 'i hono liliu 'o e ke 2000.
+3. Lomi'i 'i he kapau 'oku faka'aonga'i 'a e he app liliu ke ngaue lelei, ka he taimi ni fihia 'i he kamata, lomi'i 'i he app 'i he polokalama ke liliu 'a e ngaahi 'ulu'itohi, pea lomi'i 'i he ke Cache mahino 'o e liliu.
+4. Kapau 'oku 'ikai ke liliu ha ngaahi konga 'o e app, lomi'i 'i he app 'i he polokalama ke liliu 'a e ngaahi 'ulu'itohi, mo e fakaehaua ko 'eni 'a e founga 'oku lava ai.
+5. Kapau na'e kei 'a e app faka'osi 'a e fakamalohi'i, to'o 'a e liliu ki he app ko 'eni mo e fetu'utaki kiate au 'i he filo 'o e tokoni 'i he XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Liliu lea ha feitu'u"</string>
+    <string name="apps_to_translate">"Ko e polokalama ki he liliu lea"</string>
+    <string name="global_settings">"Ngaahi feitu'u fakamamani lahi"</string>
+    <string name="instructions">"Ngaahi fakahinohino"</string>
+    <string name="pref_cat_translate_settings">"Liliu e Settings"</string>
+    <string name="pref_cat_parts_of_app">"Ko e ngaahi konga 'o e App ke liliu lea"</string>
+    <string name="pref_cat_other_settings">"Ngaahi tukunga kehe"</string>
+    <string name="master_on_off">"'Eiki 'i/atu"</string>
+    <string name="master_on_off_summary">"Tamate'i ke to'o faka'aufuli 'a e module ko 'eni"</string>
+    <string name="master_on_off_summary_off">"Module 'oku tamate'i, 'ikai apps te ke liliu. Tafoki ki hono faka'aonga'i 'o e kamata auto-liliu!"</string>
+    <string name="master_on_off_summary_on">"'Oku tafoki 'a e module 'i he, 'e liliu 'a e polokalama 'a e fili. Tamate'i ke to'o faka'aufuli 'a e module ko 'eni."</string>
+    <string name="enable_yandex">"Faka'aonga'i 'a e Yandex kae 'ikai ki he Microsoft"</string>
+    <string name="enable_yandex_summary">"Tafoki hono faka'aonga'i 'o e Yandex liliu kae 'ikai ko e Microsoft"</string>
+    <string name="enable_yandex_summary_off">"Lolotonga ngaue 'aki 'a e Microsoft Azure liliu. Tafoki ke faka'aonga'i 'a e liliu 'o e Yandex."</string>
+    <string name="enable_yandex_summary_on">"Lolotonga hono faka'aonga'i 'o e Yandex liliu. Tamate'i ke ngaue 'aki 'a e Microsoft Azure liliu."</string>
+    <string name="subKey">"Ki he Microsoft / ki hono hu mai 'o e Yandex"</string>
+    <string name="subKey_micro">"Ko e totongi ki he Microsoft ki"</string>
+    <string name="subKey_yandex">"Ngaahi makasini 'a e Yandex"</string>
+    <string name="subKey_summary">"Fakahu e mahu'inga 'o e totongi ki he Microsoft Azure pe Yandex liliu pe, ko e fe pe 'iate kinaua malava 'i 'olunga"</string>
+    <string name="subKey_defaultValue">"Fakahu ho'o Microsoft pe e mahu'inga 'o e totongi Yandex"</string>
+    <string name="transFrom">"Liliu mei he lea fakafonua"</string>
+    <string name="transFrom_summary">"'Oku 'uluaki 'i he lea fakafonua e app."</string>
+    <string name="transTo">"Liliu ki he lea fakafonua"</string>
+    <string name="transTo_summary">"Ko e lea fakafonua 'oku ke fie ma'u 'a e app ke ke liliu ki he."</string>
+    <string name="setText">"Liliu 'a e fakamatala angamaheni"</string>
+    <string name="setText_summary_off">"'Ikai hono liliu 'o e fakamatala kuo tohi 'o faka'aonga'i 'a e fakamatala 'oku fokotu'u. Tafoki ke lava ai."</string>
+    <string name="setText_summary_on">"Ko hono liliu 'o e fakamatala kuo tohi 'o faka'aonga'i fokotu'u Text - malu. Tamate'i ke to'o."</string>
+    <string name="setHint">"Liliu 'a e fakamatala tokoni (ngaahi fokotu'u Kulei-Coloured) 'i he ngaahi puha 'o e fakamatala"</string>
+    <string name="setHint_summary_off">"'Ikai hono liliu 'o e fakamatala kuo tohi 'o faka'aonga'i e tokoni 'oku fokotu'u. Tafoki ke lava ai."</string>
+    <string name="setHint_summary_on">"Ko hono liliu 'o e fakamatala kuo tohi 'o faka'aonga'i fokotu'u tokoni - malu. Tamate'i ke to'o."</string>
+    <string name="webView">"Liliu 'o e lea 'i he ngaahi peesi 'o e Uepi ki he loto 'o e polokalama 'a e"</string>
+    <string name="webView_summary_off">"Hono 'ikai ke liliu e fakamatala 'i he WebViews. Tafoki ke lava ai."</string>
+    <string name="webView_summary_on">"Ko hono liliu 'o e tohi 'i he loto 'o e WebView - malu, 'e lava ke 'ikai ngaue ma'u ai pe. Tamate'i ke to'o."</string>
+    <string name="drawText">"Houtamaki Mode"</string>
+    <string name="drawText_summary_off">"'Ikai fefeka hono liliu 'a e fakamatala 'i he drawText. Faka'aonga'i 'i he taimi kotoa pe 'i he 'ikai. Tafoki ke lava ai."</string>
+    <string name="drawText_summary_on">"Fefeka hono liliu 'o e tohi 'i he drawText - Experimental, 'e lava ke 'ikai ngaue ma'u ai pe. Tamate'i ke to'o."</string>
+    <string name="caching">"Faka'aonga'i 'a e Caching"</string>
+    <string name="caching_summary_off">"'Ikai ke seivi e ngaahi liliu lea lava, tupu 'i he slower liliu lea mo e ngaahi fakamatala ma'olunga ange - ka 'oku lava pe ke ngaue ma'a e ngaahi polokalama lahi ange. Kumi 'i he seivi e ngaahi liliu."</string>
+    <string name="caching_summary_on">"Fakahaofi 'a e ngaahi liliu 'o e lava ke vave liliu mo faka'aonga'i 'a e fakamatala. Tamate'i ke to'o 'a e kapau 'oku 'ikai kamata 'a ho'o app."</string>
+    <string name="delay">"Fakatoloi ki mu'a hono liliu"</string>
+    <string name="delay_summary">"Fokotu'u 'a e taimi 'i he milliseconds ko e tatali 'i he 'ao 'o hono liliu 'o e. Tu'unga 'ulungaanga mahu'inga 'o e peesi tu'uma'u ko e 0, 'a ia na'e fokotu'u ki he 1000 – 5000 kapau 'oku 'ikai ai 'a e liliu 'o e app."</string>
+    <string name="overRide_global">"Ko hono liliu 'o e ngaahi feitu'u fakamamani lahi"</string>
+    <string name="overRide_global_summary_off">"Faka'aonga'i fakamamani lahi 'o e ngaahi feitu'u ko 'eni app. liliu 'i ke liliu e ngaahi tukunga pe ki he app ko 'eni."</string>
+    <string name="overRide_global_summary_on">"Faka'aonga'i e ngaahi feitu'u fakalotofonua ki ko 'eni app. liliu atu ke faka'aonga'i 'a e ngaahi feitu'u fakamamani lahi."</string>
+    <string name="clear_cache">"Lomi'i 'i heni ke faka'ata'ata liliu Cache"</string>
+    <string name="clear_cache_summary">"'A e liliu 'e he lomi'i 'i 'olunga ke faka'ata'ata 'a e app Keisi. Faka'aonga'i 'a e me'a ni hili hono liliu ki he/mei he ngaahi lea fakafonua, pe kapau 'oku 'ikai ke kamata 'a e app."</string>
+    <string name="Afrikaans_yandex">"Faka-'Afilikani"</string>
+    <string name="Amharic_yandex">"'Ameliki"</string>
+    <string name="Arabic_yandex">"Faka-'Alepea"</string>
+    <string name="Azerbaijani_yandex">"Manati"</string>
+    <string name="Bashkir_yandex">"Bashkir"</string>
+    <string name="Belarusian_yandex">"Faka-Pelalusi"</string>
+    <string name="Bulgarian_yandex">"Pulukalia"</string>
+    <string name="Bengali_yandex">"Pengikali"</string>
+    <string name="Bosnian_yandex">"Faka-Posinia"</string>
+    <string name="Catalan_yandex">"Faka-Katalana"</string>
+    <string name="Cebuano_yandex">"Sepuano"</string>
+    <string name="Czech_yandex">"Seki"</string>
+    <string name="Welsh_yandex">"Uelesi"</string>
+    <string name="Danish_yandex">"Tenima'ake"</string>
+    <string name="German_yandex">"Siamane"</string>
+    <string name="Greek_yandex">"Lea faka-Kalisi"</string>
+    <string name="English_yandex">"Lea faka-Pilitania"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Lea faka-Sipeini"</string>
+    <string name="Estonian_yandex">"Faka-'Esitonia"</string>
+    <string name="Basque_yandex">"Pasiki"</string>
+    <string name="Persian_yandex">"Peasia"</string>
+    <string name="Finnish_yandex">"Faka-Finileni"</string>
+    <string name="French_yandex">"Falanise"</string>
+    <string name="Irish_yandex">"'Ailani"</string>
+    <string name="Scottish_Gaelic_yandex">"Faka-Sikotilani Keiliki"</string>
+    <string name="Galician_yandex">"Faka-Kelikiani"</string>
+    <string name="Gujarati_yandex">"Faka-Kusalati"</string>
+    <string name="Hebrew_yandex">"Lea faka-Hepeluu"</string>
+    <string name="Hindi_yandex">"Hiniti"</string>
+    <string name="Croatian_yandex">"Faka-Koloesia"</string>
+    <string name="Haitian_yandex">"Haiti"</string>
+    <string name="Hungarian_yandex">"Hungali"</string>
+    <string name="Armenian_yandex">"'Amenia"</string>
+    <string name="Indonesian_yandex">"Faka-'Initonesia"</string>
+    <string name="Icelandic_yandex">"Faka-'Aisileni"</string>
+    <string name="Italian_yandex">"'Itali"</string>
+    <string name="Japanese_yandex">"Siapani"</string>
+    <string name="Javanese_yandex">"Kau Siava"</string>
+    <string name="Georgian_yandex">"Faka-Siosia"</string>
+    <string name="Kazakh_yandex">"Kasaka"</string>
+    <string name="Kannada_yandex">"Kanata"</string>
+    <string name="Korean_yandex">"Kolea"</string>
+    <string name="Kyrgyz_yandex">"Kalakisi"</string>
+    <string name="Latin_yandex">"Lea faka-Latina"</string>
+    <string name="Luxembourgish_yandex">"Luxembourgish"</string>
+    <string name="Lithuanian_yandex">"Faka-Lituenia"</string>
+    <string name="Latvian_yandex">"Faka-Lativia"</string>
+    <string name="Malagasy_yandex">"Malagasy"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Mauli"</string>
+    <string name="Macedonian_yandex">"Faka-Masetonia"</string>
+    <string name="Malayalam_yandex">"Faka-Kelala"</string>
+    <string name="Mongolian_yandex">"Faka-Mongikolia"</string>
+    <string name="Marathi_yandex">"Faka-Mahalasita"</string>
+    <string name="Hill_Mari_yandex">"Mo'unga Mari"</string>
+    <string name="Malay_yandex">"Lea faka-Malesia"</string>
+    <string name="Maltese_yandex">"Faka-Malita"</string>
+    <string name="Nepali_yandex">"Nepali"</string>
+    <string name="Dutch_yandex">"Holani"</string>
+    <string name="Norwegian_yandex">"Noaue"</string>
+    <string name="Punjabi_yandex">"Faka-Punisapi"</string>
+    <string name="Papiamento_yandex">"Papiamenitou"</string>
+    <string name="Polish_yandex">"Faka-Polani"</string>
+    <string name="Portuguese_yandex">"Faka-Potukali"</string>
+    <string name="Romanian_yandex">"Lumenia"</string>
+    <string name="Russian_yandex">"Lusia"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Silovaki"</string>
+    <string name="Slovenian_yandex">"Lea faka-Silovenia"</string>
+    <string name="Albanian_yandex">"Faka-'Alapenia"</string>
+    <string name="Serbian_yandex">"Sepia"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"Faka-Sueteni"</string>
+    <string name="Swahili_yandex">"Faka-Suahili"</string>
+    <string name="Tamil_yandex">"Tamila"</string>
+    <string name="Telugu_yandex">"Teiluku"</string>
+    <string name="Tajik_yandex">"Tajik"</string>
+    <string name="Thai_yandex">"Taileni"</string>
+    <string name="Tagalog_yandex">"Faka-Takaloka"</string>
+    <string name="Turkish_yandex">"Toake"</string>
+    <string name="Tatar_yandex">"Faka-tata"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Faka-'Iukuleini"</string>
+    <string name="Urdu_yandex">"Faka-'Eitu"</string>
+    <string name="Uzbek_yandex">"Faka-'Usupekisitani"</string>
+    <string name="Vietnamese_yandex">"Faka-Vietinemi"</string>
+    <string name="Xhosa_yandex">"Sosa"</string>
+    <string name="Yiddish_yandex">"Yiddish"</string>
+    <string name="Chinese_yandex">"Faka-Siaina"</string>
+    <string name="Afrikaans_micro">"Faka-'Afilikani"</string>
+    <string name="Arabic_micro">"Faka-'Alepea"</string>
+    <string name="Bosnian_Latin_micro">"Latina faka-Posinia"</string>
+    <string name="Bulgarian_micro">"Pulukalia"</string>
+    <string name="Catalan_micro">"Faka-Katalana"</string>
+    <string name="Chinese_Simplified_micro">"Lea faka-Siaina fakafaingofua'i"</string>
+    <string name="Chinese_Traditional_micro">"Faka-Siaina fakafonua"</string>
+    <string name="Croatian_micro">"Faka-Koloesia"</string>
+    <string name="Czech_micro">"Seki"</string>
+    <string name="Danish_micro">"Tenima'ake"</string>
+    <string name="Dutch_micro">"Holani"</string>
+    <string name="English_micro">"Lea faka-Pilitania"</string>
+    <string name="Estonian_micro">"Faka-'Esitonia"</string>
+    <string name="Finnish_micro">"Faka-Finileni"</string>
+    <string name="French_micro">"Falanise"</string>
+    <string name="German_micro">"Siamane"</string>
+    <string name="Greek_micro">"Lea faka-Kalisi"</string>
+    <string name="Haitian_Creole_micro">"Faka-Haiti Keleiola"</string>
+    <string name="Hebrew_micro">"Lea faka-Hepeluu"</string>
+    <string name="Hindi_micro">"Hiniti"</string>
+    <string name="Hmong_Daw_micro">"Heimongi Daw"</string>
+    <string name="Hungarian_micro">"Hungali"</string>
+    <string name="Indonesian_micro">"Faka-'Initonesia"</string>
+    <string name="Italian_micro">"'Itali"</string>
+    <string name="Japanese_micro">"Siapani"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"PIqaD 'o e Klingon"</string>
+    <string name="Korean_micro">"Kolea"</string>
+    <string name="Latvian_micro">"Faka-Lativia"</string>
+    <string name="Lithuanian_micro">"Faka-Lituenia"</string>
+    <string name="Malay_micro">"Lea faka-Malesia"</string>
+    <string name="Maltese_micro">"Faka-Malita"</string>
+    <string name="Norwegian_micro">"Noaue"</string>
+    <string name="Persian_micro">"Peasia"</string>
+    <string name="Polish_micro">"Faka-Polani"</string>
+    <string name="Portuguese_micro">"Faka-Potukali"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Lumenia"</string>
+    <string name="Russian_micro">"Lusia"</string>
+    <string name="Serbian_Cyrillic_micro">"Faka-Siliki Sepia"</string>
+    <string name="Serbian_Latin_micro">"Lea faka-Latina Sepia"</string>
+    <string name="Slovak_micro">"Silovaki"</string>
+    <string name="Slovenian_micro">"Lea faka-Silovenia"</string>
+    <string name="Spanish_micro">"Lea faka-Sipeini"</string>
+    <string name="Swedish_micro">"Faka-Sueteni"</string>
+    <string name="Thai_micro">"Taileni"</string>
+    <string name="Turkish_micro">"Toake"</string>
+    <string name="Ukrainian_micro">"Faka-'Iukuleini"</string>
+    <string name="Urdu_micro">"Faka-'Eitu"</string>
+    <string name="Vietnamese_micro">"Faka-Vietinemi"</string>
+    <string name="Welsh_micro">"Uelesi"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec meia"</string>
+</resources>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Inapakia orodha ya maombi - Tafadhali subiri"</string>
+    <string name="clear_cache_error">"Makosa. Haikuweza Ondoa hifadhi muda tafsiri!"</string>
+    <string name="clear_cache_success">"Kutafsiri Cache kwa programu tumizi hii imekuwa erased!"</string>
+	<string name="how_to_use">"JINSI YA KUTUMIA PROGRAMU TUMIZI
+
+Programu tumizi hii unahitaji kujiandikisha kwa ufunguo kutoka kwa Microsoft au tafsiri ya Yandex.
+Tafsiri ya Yandex inasaidia zaidi lugha, ina mengi rahisi signup utaratibu na inahitaji hakuna kadi ya MKOPO.
+Translate Microsoft hutoa matokeo bora, lakini inahitaji kadi ya mkopo ili kujiandikisha. (Lakini usiwe na wasiwasi, chochote itakuwa kushtakiwa.)
+
+1. katika kichupo cha vipimo vya kimataifa, kuwezesha kutumia Yandex badala ya Microsoft kama unataka kutumia Yandex, mwingine Lemaza kutumia Microsoft.
+1. katika mipangilio ya Global kichupo, Bonyeza Ingiza Microsoft/Yandex michango muhimu, Ingiza ufunguo sambamba (tazama maelekezo kutoka chini).
+2. Chagua ya kutafsiri kutoka lugha na kutafsiri kwa lugha.
+3. katika programu kwa kutafsiri kichupo, kupata programu unayotaka kutafsiri, bofya kisanduku tiki kilicho kando yake. Kama kisanduku tiki ni wazi, jaribu simu yako sideways wa mzunguko katika hali ya mazingira.
+4. Funga na Anza upya programu unayotaka kutafsiriwa - unapaswa kutafsiriwa!
+
+TAHADHARI - baadhi ya programu huenda nguvu karibu. Tazama sehemu ya kutafutatua.
+
+JINSI YA KUPATA YANDEX KUTAFSIRI MICHANGO MUHIMU
+
+1. Nenda kwa tovuti ya Yandex - https://tech.yandex.com/keys/get/?service=trnsl
+2. ikiwa tayari huna akaunti, bofya rejista na ishara juu kwa ajili ya akaunti mpya.
+3. baada ya kusaini juu, kukubaliana makubaliano ya mtumiaji na bofya kupata API muhimu.
+4. kwa ufanisi umepokea ufunguo wako! Ni kitu kama trnsl.1.1.201701...
+
+JINSI YA KUPATA MICROSOFT AZURE KUTAFSIRI MICHANGO MUHIMU
+
+1. kujiandikisha kwa akaunti ya Microsoft Azure katika http://azure.com
+
+2. baada ya una akaunti, Ingia kwenye tovuti Azure katika http://portal.azure.com
+
+3. kuongeza michango API ya Translator ya Microsoft kwa akaunti yako Azure.
+Chagua michango pay-as-you-go. Itahitaji kadi ya mkopo, lakini usijali, chochote atashitakiwa.
+Teua ya + mpya chaguo.
+Teua upelelezi kutoka orodha ya huduma.
+Teua huduma za utambuzi APIs.
+Teua chaguo la aina ya API.
+Teua matini tafsiri
+Katika sehemu ya bei yapendekeza, teua yapendekeza bure (F0)
+Kujaza mapumziko ya fomu, na Bonyeza kitufe cha Unda.
+
+4. kufufua ufunguo wako wa uhalalishaji.
+Nenda kwa rasilimali zote na Teua Microsoft Translator API kujiunga na.
+Nenda kwa chaguo la funguo na Nakili ufunguo wa michango yako kufikia huduma ya.
+Ufunguo wa michango ni kitu kama 321dcba...
+
+UTAFUTAJISHIDA
+
+1. kama hakuna programu ni kuwa tafsiri, kagua ufunguo wako wa michango Microsoft/Yandex ni sahihi.
+2. kama programu ya kutafsiriwa nguvu hufunga/anapata kukwama kwenye upakiaji mara ya kwanza baada ya kuanza kutafsiri, bofya kwenye programu katika programu kutafsiri kichupo, na katika mazingira mengine ujaze kuchelewa kabla ya kutafsiri kwa 2000.
+3. kama programu kutafsiriwa kutumika kwa kazi nzuri, lakini sasa kupata kukwama kwa kuanzia, bonyeza programu katika programu kutafsiri kichupo, na bonyeza Bofya ili wazi tafsiri Cache.
+4. kama baadhi ya sehemu za programu ni unatafsiriwa, bofya kwenye programu katika programu kutafsiri kichupo, na Wezesha hali ya fujo.
+5. kama programu bado nguvu hufunga, Lemaza tafsiri kwa programu tumizi hii na kuwasiliana na mimi kwa thread ya msaada juu ya XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Kutafsiri mahali popote"</string>
+    <string name="apps_to_translate">"Programu kutafsiri"</string>
+    <string name="global_settings">"Mipangilio ya Global"</string>
+    <string name="instructions">"Maelekezo"</string>
+    <string name="pref_cat_translate_settings">"Kutafsiri vipimo"</string>
+    <string name="pref_cat_parts_of_app">"Sehemu ya programu ya kutafsiri"</string>
+    <string name="pref_cat_other_settings">"Vipimo vingine"</string>
+    <string name="master_on_off">"Mama/mbali"</string>
+    <string name="master_on_off_summary">"Zima kabisa kulemaza moduli hii"</string>
+    <string name="master_on_off_summary_off">"Moduli imezimwa, hakuna programu itakuwa tafsiri. Kugeuka juu kuanza kutumia auto-kutafsiri!"</string>
+    <string name="master_on_off_summary_on">"Moduli kimewashwa, programu iliyoteuliwa itakuwa tafsiri. Zima kabisa kulemaza moduli hii."</string>
+    <string name="enable_yandex">"Tumia Yandex badala ya Microsoft"</string>
+    <string name="enable_yandex_summary">"Washa kutumia tafsiri ya Yandex badala ya Microsoft"</string>
+    <string name="enable_yandex_summary_off">"Sasa kwa kutumia Microsoft Azure tafsiri. Washa kutumia tafsiri ya Yandex."</string>
+    <string name="enable_yandex_summary_on">"Sasa kwa kutumia tafsiri ya Yandex. Zima kutumia Microsoft Azure tafsiri."</string>
+    <string name="subKey">"Microsoft / Yandex michango muhimu"</string>
+    <string name="subKey_micro">"Ufunguo wa michango ya Microsoft"</string>
+    <string name="subKey_yandex">"Yandex michango muhimu"</string>
+    <string name="subKey_summary">"Ingiza ufunguo wa michango kwa ajili ya Microsoft Azure au Yandex tafsiri API, namna yoyote ni kuwezeshwa juu"</string>
+    <string name="subKey_defaultValue">"Kuingia yako ya Microsoft au Yandex michango muhimu"</string>
+    <string name="transFrom">"Kutafsiri kutoka lugha"</string>
+    <string name="transFrom_summary">"Lugha ya programu ni awali katika."</string>
+    <string name="transTo">"Kutafsiri kwa lugha"</string>
+    <string name="transTo_summary">"Lugha unayotaka programu kutafsiri katika."</string>
+    <string name="setText">"Kutafsiri matini kawaida"</string>
+    <string name="setText_summary_off">"Si kutafsiri matini iliyoandikwa kutumia kuweka matini. Washa ili kuwezesha."</string>
+    <string name="setText_summary_on">"Kutafsiri matini iliyoandikwa kutumia kuweka matini - salama. Zima kwa kulemaza."</string>
+    <string name="setHint">"Kutafsiri matini mwanga (mapendekezo ya kijivu-rangi) katika vikasha matini"</string>
+    <string name="setHint_summary_off">"Si kutafsiri matini iliyoandikwa kutumia kuweka ladha. Washa ili kuwezesha."</string>
+    <string name="setHint_summary_on">"Kutafsiri matini iliyoandikwa kutumia kuweka Dokezo - salama. Zima kwa kulemaza."</string>
+    <string name="webView">"Kutafsiri matini katika kurasa za wavuti ndani ya programu"</string>
+    <string name="webView_summary_off">"Si kutafsiri matini katika WebViews. Washa ili kuwezesha."</string>
+    <string name="webView_summary_on">"Kutafsiri matini ndani MwonekoWavuti kwenda - salama, haitafanya kazi daima. Zima kwa kulemaza."</string>
+    <string name="drawText">"Hali ya fujo"</string>
+    <string name="drawText_summary_off">"Si dhati kutafsiri matini katika drawText. Matumizi wakati wote juu inashindwa. Washa ili kuwezesha."</string>
+    <string name="drawText_summary_on">"Dhati kutafsiri matini katika drawText - majaribio, huenda si kazi daima. Zima kwa kulemaza."</string>
+    <string name="caching">"Tumia uwekaji kache"</string>
+    <string name="caching_summary_off">"Si kuokoa tafsiri nje ya mtandao, kusababisha polepole kutafsiri na data juu - lakini inaweza kufanya kazi kwa ajili ya programu zaidi. Kurejea kwenye Hifadhi tafsiri."</string>
+    <string name="caching_summary_on">"Kuhifadhi tafsiri nje ya mtandao kwa kasi kutafsiri na kutumia data. Zima kwa kulemaza kama programu yako haina kuanza."</string>
+    <string name="delay">"Kuchelewa kabla ya kutafsiri"</string>
+    <string name="delay_summary">"Kuweka wakati katika milisekunde kusubiri kabla ya kutafsiri. Thamani chaguo-msingi ni 0, kuweka 1000 – 5000 kama programu kutafsiriwa crashing."</string>
+    <string name="overRide_global">"Vinabatilisha mipangilio ya Global"</string>
+    <string name="overRide_global_summary_off">"Kutumia vipimo vya kimataifa kwa App hii kugeuka kwenye kubadili vipimo tu kwa ajili ya programu tumizi hii."</string>
+    <string name="overRide_global_summary_on">"Kutumia mipangizo eneo lako kwa App hii kugeuka mbali kutumia vipimo vya kimataifa."</string>
+    <string name="clear_cache">"Bofya Ondoa hifadhi muda tafsiri"</string>
+    <string name="clear_cache_summary">"Bofya hapo juu ili kuondoa programu ya kutafsiri kirudufu data. Kutumia hii baada ya kubadilisha kwenda/kutoka lugha, au kama programu ya kuanza."</string>
+    <string name="Afrikaans_yandex">"Kiafrikaani"</string>
+    <string name="Amharic_yandex">"Kiamhari"</string>
+    <string name="Arabic_yandex">"Kiarabu"</string>
+    <string name="Azerbaijani_yandex">"Azerbaijani"</string>
+    <string name="Bashkir_yandex">"Bashkir"</string>
+    <string name="Belarusian_yandex">"Kibelarusi"</string>
+    <string name="Bulgarian_yandex">"Kibulgaria"</string>
+    <string name="Bengali_yandex">"Kibengali"</string>
+    <string name="Bosnian_yandex">"Kibosnia"</string>
+    <string name="Catalan_yandex">"Kikatalan"</string>
+    <string name="Cebuano_yandex">"Cebuano"</string>
+    <string name="Czech_yandex">"Kicheki"</string>
+    <string name="Welsh_yandex">"Kiwelshi"</string>
+    <string name="Danish_yandex">"Kidanishi"</string>
+    <string name="German_yandex">"Kijerumani"</string>
+    <string name="Greek_yandex">"Kigiriki"</string>
+    <string name="English_yandex">"Kiingereza"</string>
+    <string name="Esperanto_yandex">"Kiesperanto"</string>
+    <string name="Spanish_yandex">"Kihispania"</string>
+    <string name="Estonian_yandex">"Kiestonia"</string>
+    <string name="Basque_yandex">"Kibaski"</string>
+    <string name="Persian_yandex">"Kipersia"</string>
+    <string name="Finnish_yandex">"Kifinishi"</string>
+    <string name="French_yandex">"Kifaransa"</string>
+    <string name="Irish_yandex">"Kiairishi"</string>
+    <string name="Scottish_Gaelic_yandex">"Kigaelic"</string>
+    <string name="Galician_yandex">"Kigalishia"</string>
+    <string name="Gujarati_yandex">"Kigujarati"</string>
+    <string name="Hebrew_yandex">"Kiebrania"</string>
+    <string name="Hindi_yandex">"Kihindi"</string>
+    <string name="Croatian_yandex">"Kikroashia"</string>
+    <string name="Haitian_yandex">"Ufadhili"</string>
+    <string name="Hungarian_yandex">"Kihangaria"</string>
+    <string name="Armenian_yandex">"Kiarmenia"</string>
+    <string name="Indonesian_yandex">"Kiindoneshia"</string>
+    <string name="Icelandic_yandex">"Kiaisilandi"</string>
+    <string name="Italian_yandex">"Kiitaliano"</string>
+    <string name="Japanese_yandex">"Kijapani"</string>
+    <string name="Javanese_yandex">"Indonesian"</string>
+    <string name="Georgian_yandex">"Kijojia"</string>
+    <string name="Kazakh_yandex">"Kikazakh"</string>
+    <string name="Kannada_yandex">"Kikannada"</string>
+    <string name="Korean_yandex">"Kikorea"</string>
+    <string name="Kyrgyz_yandex">"Kikyrgyz"</string>
+    <string name="Latin_yandex">"Kilatini"</string>
+    <string name="Luxembourgish_yandex">"Luxembourgish"</string>
+    <string name="Lithuanian_yandex">"Kilithuania"</string>
+    <string name="Latvian_yandex">"Kilatvia"</string>
+    <string name="Malagasy_yandex">"Kucha"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Kimaori"</string>
+    <string name="Macedonian_yandex">"Kimasedonia"</string>
+    <string name="Malayalam_yandex">"Kimalayalam"</string>
+    <string name="Mongolian_yandex">"Kimongoli"</string>
+    <string name="Marathi_yandex">"Kimarathi"</string>
+    <string name="Hill_Mari_yandex">"Mari ya kilima"</string>
+    <string name="Malay_yandex">"Kimalay"</string>
+    <string name="Maltese_yandex">"Kimalta"</string>
+    <string name="Nepali_yandex">"Kinepali"</string>
+    <string name="Dutch_yandex">"Kiholanzi"</string>
+    <string name="Norwegian_yandex">"Kinowiji"</string>
+    <string name="Punjabi_yandex">"Kipunjabi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Kipolishi"</string>
+    <string name="Portuguese_yandex">"Kireno"</string>
+    <string name="Romanian_yandex">"Kirumi"</string>
+    <string name="Russian_yandex">"Kirusi"</string>
+    <string name="Sinhalese_yandex">"Gulamuzi"</string>
+    <string name="Slovak_yandex">"Kislovaki"</string>
+    <string name="Slovenian_yandex">"Kislovenia"</string>
+    <string name="Albanian_yandex">"Kialbania"</string>
+    <string name="Serbian_yandex">"Kiserbia"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"Kiswidi"</string>
+    <string name="Swahili_yandex">"Kiswahili"</string>
+    <string name="Tamil_yandex">"Kitamili"</string>
+    <string name="Telugu_yandex">"Kitelugu"</string>
+    <string name="Tajik_yandex">"Tajik"</string>
+    <string name="Thai_yandex">"Kithai"</string>
+    <string name="Tagalog_yandex">"Hariri Tafsiri"</string>
+    <string name="Turkish_yandex">"Kituruki"</string>
+    <string name="Tatar_yandex">"Kitatari"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Kiukreini"</string>
+    <string name="Urdu_yandex">"Kiurdu"</string>
+    <string name="Uzbek_yandex">"Kiuzbeki"</string>
+    <string name="Vietnamese_yandex">"Kivietinamu"</string>
+    <string name="Xhosa_yandex">"Kikosa"</string>
+    <string name="Yiddish_yandex">"Kiyidish"</string>
+    <string name="Chinese_yandex">"Kichina"</string>
+    <string name="Afrikaans_micro">"Kiafrikaani"</string>
+    <string name="Arabic_micro">"Kiarabu"</string>
+    <string name="Bosnian_Latin_micro">"Kilatini ya Kibosnia"</string>
+    <string name="Bulgarian_micro">"Kibulgaria"</string>
+    <string name="Catalan_micro">"Kikatalan"</string>
+    <string name="Chinese_Simplified_micro">"Kichina Rahisi"</string>
+    <string name="Chinese_Traditional_micro">"Kichina cha Zamani"</string>
+    <string name="Croatian_micro">"Kikroashia"</string>
+    <string name="Czech_micro">"Kicheki"</string>
+    <string name="Danish_micro">"Kidanishi"</string>
+    <string name="Dutch_micro">"Kiholanzi"</string>
+    <string name="English_micro">"Kiingereza"</string>
+    <string name="Estonian_micro">"Kiestonia"</string>
+    <string name="Finnish_micro">"Kifinishi"</string>
+    <string name="French_micro">"Kifaransa"</string>
+    <string name="German_micro">"Kijerumani"</string>
+    <string name="Greek_micro">"Kigiriki"</string>
+    <string name="Haitian_Creole_micro">"Kikrioli cha Haiti"</string>
+    <string name="Hebrew_micro">"Kiebrania"</string>
+    <string name="Hindi_micro">"Kihindi"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Kihangaria"</string>
+    <string name="Indonesian_micro">"Kiindoneshia"</string>
+    <string name="Italian_micro">"Kiitaliano"</string>
+    <string name="Japanese_micro">"Kijapani"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Kikorea"</string>
+    <string name="Latvian_micro">"Kilatvia"</string>
+    <string name="Lithuanian_micro">"Kilithuania"</string>
+    <string name="Malay_micro">"Kimalay"</string>
+    <string name="Maltese_micro">"Kimalta"</string>
+    <string name="Norwegian_micro">"Kinowiji"</string>
+    <string name="Persian_micro">"Kipersia"</string>
+    <string name="Polish_micro">"Kipolishi"</string>
+    <string name="Portuguese_micro">"Kireno"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Kirumi"</string>
+    <string name="Russian_micro">"Kirusi"</string>
+    <string name="Serbian_Cyrillic_micro">"Kisirili Kiserbia"</string>
+    <string name="Serbian_Latin_micro">"Kilatini Kiserbia"</string>
+    <string name="Slovak_micro">"Kislovaki"</string>
+    <string name="Slovenian_micro">"Kislovenia"</string>
+    <string name="Spanish_micro">"Kihispania"</string>
+    <string name="Swedish_micro">"Kiswidi"</string>
+    <string name="Thai_micro">"Kithai"</string>
+    <string name="Turkish_micro">"Kituruki"</string>
+    <string name="Ukrainian_micro">"Kiukreini"</string>
+    <string name="Urdu_micro">"Kiurdu"</string>
+    <string name="Vietnamese_micro">"Kivietinamu"</string>
+    <string name="Welsh_micro">"Kiwelshi"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

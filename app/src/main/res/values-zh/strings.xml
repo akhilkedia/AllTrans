@@ -19,22 +19,20 @@
   -->
 
 <resources>
-
-    <string name="globalPrefFile">AllTransPref</string>
-    <string name="app_name">"AllTrans"</string>
-    <string name="loading">"加载列表的应用程序-请稍候"</string>
-    <string name="clear_cache_error">"一些错误。无法清除翻译缓存 ！"</string>
-    <string name="clear_cache_success">"翻译缓存，因为此应用程序已被抹去"！</string>
+	<string name="app_name">"AllTrans"</string>
+	<string name="loading">"正在加载列表的应用程序-请稍候"</string>
+	<string name="clear_cache_error">"一些错误。无法清除翻译缓存 ！"</string>
+	<string name="clear_cache_success">"翻译缓存，因为此应用程序已被抹去 ！"</string>
 	<string name="how_to_use">"如何使用应用程序
 
 此应用程序要求您报名参加从 Microsoft 或 Yandex 翻译的关键。
 Yandex 翻译支持更多的语言，有多容易的注册过程，并且需要没有信用卡。
 微软翻译给出更好的结果，但需要一张信用卡来报名。(但别担心，什么都不会收取.)
 
-1.在"全局设置"选项卡上，启用"使用 Yandex 相反的微软"如果你想要使用 Yandex，否则禁用使用微软。
-1.在"全局设置"选项卡，点击"进入微软/Yandex 订阅键"，输入相应的键 （从下面请参阅说明）。
-2.选择"从语言翻译"和"翻译成语言"。
-3.在"应用程序翻译"选项卡上，找到你想要翻译，请单击它旁边的复选框的应用程序。如果该复选框不可见，请尝试旋转横盘整理您的手机变成风景模式。
+1.在全局设置选项卡，启用使用 Yandex 而不是微软，如果你想要使用 Yandex，否则禁用使用微软。
+1.在全局设置选项卡，点击输入微软/Yandex 订阅键，输入相应的键 （从下面请参阅说明）。
+2.选择从语言翻译和翻译成语言。
+3.在应用程序到翻译选项卡，找到你想要翻译，请单击它旁边的复选框的应用程序。如果该复选框不可见，请尝试旋转横盘整理您的手机变成风景模式。
 4.关闭并重新启动该应用的程序，你想要翻译 — — 它应该被翻译 ！
 
 警告-一些应用程序可能会强制关闭。请参阅疑难解答部分。
@@ -42,9 +40,9 @@ Yandex 翻译支持更多的语言，有多容易的注册过程，并且需要�
 如何获得 YANDEX 翻译订购密钥
 
 1.转到 Yandex 网站-https://tech.yandex.com/keys/get/?service=trnsl
-2.如果你不已经有一个帐户，请单击"注册"，注册一个新帐户。
-3.在签署后向上，同意用户协议，单击"获取 API 密钥"。
-4.你已经顺利收到您的密钥 ！它有点像"trnsl.1.1.201701..."
+2.如果你不已经有一个帐户，单击登记和注册一个新帐户。
+3.在签署后向上，同意用户协议，单击获得 API 密钥。
+4.你已经顺利收到您的密钥 ！它有点像 trnsl.1.1.201701...
 
 如何获得微软 AZURE 翻译订购密钥
 
@@ -65,204 +63,203 @@ Yandex 翻译支持更多的语言，有多容易的注册过程，并且需要�
 4.检索您的身份验证密钥。
 转到所有资源并选择您订阅了微软翻译 API。
 转到键选项并复制您订阅的密钥来访问服务。
-订阅关键是类似于"321dcba..."
+订阅关键是像 321dcba 一样的东西......
 
 疑难解答
 
 1.如果没有应用程序正在翻译，请检查你微软/Yandex 订阅密钥是否正确。
-2.如果翻译的 app 力关闭/获取贴加载启动后第一次翻译，单击该应用程序在"应用程序翻译"选项卡，并在"其他设置"中填写"延迟之前翻译"到 2000 年。
-3.如果翻译应用程序用来做工精细，但现在被卡住启动时，单击该应用程序在"应用程序翻译"选项卡，并单击"单击到明确翻译缓存"。
-4.如果该应用程序的某些部分不正在翻译，请单击该应用程序在"应用程序翻译"选项卡，然后启用"侵略性模式"。
+2.如果翻译的 app 力关闭/获取卡住加载第一次在你开始翻译后，点击应用程序在应用程序翻译选项卡上，并在其他设置中填写延迟之前翻译到 2000 年。
+3.如果翻译应用程序用来做工精细，但现在卡住出发，对该应用程序在应用程序翻译选项卡上，单击，单击单击到明确翻译缓存。
+4.如果不正在翻译部分的应用程序，该应用程序在应用程序翻译选项卡上，单击并启用侵略性模式。
 5.如果应用程序仍然力关闭，禁用此应用程序的翻译和我联系上支持线程上 XDA-https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
 "</string>
-    <string name="translate_anywhere">"翻译任何地方"</string>
-    <string name="apps_to_translate">"应用程序翻译"</string>
-    <string name="global_settings">"全局设置"</string>
-    <string name="instructions">"说明"</string>
-    <string name="pref_cat_translate_settings">"翻译设置"</string>
-    <string name="pref_cat_parts_of_app">"翻译的应用程序部件"</string>
-    <string name="pref_cat_other_settings">"其他设置"</string>
-    <string name="master_on_off">"大师开关"</string>
-    <string name="master_on_off_summary">"关闭要完全禁用此模块"</string>
-    <string name="master_on_off_summary_off">"模块处于关闭状态，没有应用程序将被翻译。转到开始使用自动翻译 ！"</string>
-    <string name="master_on_off_summary_on">"模块处于打开状态，所选的应用程序将被翻译。关掉要完全禁用此模块。</string>
-    <string name="enable_yandex">"而不是 Microsoft 使用 Yandex"</string>
-    <string name="enable_yandex_summary">"打开使用 Yandex 翻译而不是微软"</string>
-    <string name="enable_yandex_summary_off">"当前正在使用微软 Azure 翻译。打开要使用 Yandex 翻译"。</string>
-    <string name="enable_yandex_summary_on">"当前正在使用 Yandex 翻译。关掉使用微软 Azure 翻译。</string>
-    <string name="subKey">"微软 / Yandex 订阅关键"</string>
-    <string name="subKey_micro">"微软订阅钥匙"</string>
-    <string name="subKey_yandex">"Yandex 订阅钥匙"</string>
-    <string name="subKey_summary">"订阅键输入微软 Azure 或 Yandex 翻译 API，准启用以上"</string>
-    <string name="subKey_defaultValue">"输入您的 Microsoft 或 Yandex 订阅关键"</string>
-    <string name="transFrom">"从语言翻译"</string>
-    <string name="transFrom_summary">"应用程序语言是原先在的"。</string>
-    <string name="transTo">"翻译成语言"</string>
-    <string name="transTo_summary">"语言你希望该应用程序将化为"。</string>
-    <string name="setText">"翻译正常文本"</string>
-    <string name="setText_summary_off">"不写使用设置文本的翻译文本。打开要启用"。</string>
-    <string name="setText_summary_on">"翻译文字使用设置文本-安全。关掉要禁用。</string>
-    <string name="setHint">"翻译中的文本框中的文本提示 （灰色色建议）"</string>
-    <string name="setHint_summary_off">"不写使用设置提示的翻译文本。打开要启用"。</string>
-    <string name="setHint_summary_on">"翻译文字使用设置提示-安全。关掉要禁用。</string>
-    <string name="webView">"翻译内部应用程序的 Web 网页中的文本"</string>
-    <string name="webView_summary_off">"在 WebViews 不翻译文本。打开要启用"。</string>
-    <string name="webView_summary_on">"翻译文本内部 web 视图-安全，可能无法工作始终。关掉要禁用。</string>
-    <string name="drawText">"野蛮模式"</string>
-    <string name="drawText_summary_off">"不积极在 drawText 翻译文本。所有上述失败事故时使用。打开要启用"。</string>
-    <string name="drawText_summary_on">"积极地在 drawText-翻译文本实验，可能不工作始终。关掉要禁用。</string>
-    <string name="caching">"使用缓存"</string>
-    <string name="caching_summary_off">"不保存脱机翻译，慢导致翻译和更高的数据-但可能更多的应用程序正常工作。转到保存翻译"。</string>
-    <string name="caching_summary_on">"保存脱机翻译加快了翻译和使用数据。关掉禁用，如果您的应用程序不能启动。</string>
-    <string name="delay">"在翻译之前延迟"</string>
-    <string name="delay_summary">"设置以毫秒为单位，在翻译之前要等待的时间。默认值是 0，设置为 1000年 — — 5000，如果翻译应用程序崩溃。</string>
-    <string name="overRide_global">"重写全局设置"</string>
-    <string name="overRide_global_summary_off">"使用全局设置这个应用程序转上更改设置只为这个应用程序。"</string>
-    <string name="overRide_global_summary_on">"运用本地设置这个应用程序转掉来使用全局设置。</string>
-    <string name="clear_cache">"单击以清除翻译缓存"</string>
-    <string name="clear_cache_summary">"单击上述以清除应用程序的翻译缓存。使用此更改到/从语言后, 或如果该应用程序不能启动。"</string>
-    <string name="Afrikaans_yandex">"南非荷兰语"</string>
-    <string name="Amharic_yandex">"阿姆哈拉语"</string>
-    <string name="Arabic_yandex">"阿拉伯语"</string>
-    <string name="Azerbaijani_yandex">"阿塞拜疆"</string>
-    <string name="Bashkir_yandex">"巴什基尔语"</string>
-    <string name="Belarusian_yandex">"白俄罗斯"</string>
-    <string name="Bulgarian_yandex">"保加利亚"</string>
-    <string name="Bengali_yandex">"孟加拉语"</string>
-    <string name="Bosnian_yandex">"波斯尼亚语"</string>
-    <string name="Catalan_yandex">"加泰罗尼亚语"</string>
-    <string name="Cebuano_yandex">"宿务语"</string>
-    <string name="Czech_yandex">"捷克"</string>
-    <string name="Welsh_yandex">"威尔士"</string>
-    <string name="Danish_yandex">"丹麦"</string>
-    <string name="German_yandex">"德国人"</string>
-    <string name="Greek_yandex">"希腊"</string>
-    <string name="English_yandex">"英语"</string>
-    <string name="Esperanto_yandex">"世界语"</string>
-    <string name="Spanish_yandex">"西班牙语"</string>
-    <string name="Estonian_yandex">"爱沙尼亚"</string>
-    <string name="Basque_yandex">"巴斯克语"</string>
-    <string name="Persian_yandex">"波斯人"</string>
-    <string name="Finnish_yandex">"芬兰"</string>
-    <string name="French_yandex">"法语"</string>
-    <string name="Irish_yandex">"爱尔兰"</string>
-    <string name="Scottish_Gaelic_yandex">"苏格兰盖尔语"</string>
-    <string name="Galician_yandex">"加利西亚"</string>
-    <string name="Gujarati_yandex">"古吉拉特语"</string>
-    <string name="Hebrew_yandex">"希伯来语"</string>
-    <string name="Hindi_yandex">"印地语"</string>
-    <string name="Croatian_yandex">"克罗地亚"</string>
-    <string name="Haitian_yandex">"海天"</string>
-    <string name="Hungarian_yandex">"匈牙利"</string>
-    <string name="Armenian_yandex">"亚美尼亚"</string>
-    <string name="Indonesian_yandex">"印度尼西亚"</string>
-    <string name="Icelandic_yandex">"冰岛"</string>
-    <string name="Italian_yandex">"意大利"</string>
-    <string name="Japanese_yandex">"日本人"</string>
-    <string name="Javanese_yandex">"爪哇人"</string>
-    <string name="Georgian_yandex">"格鲁吉亚"</string>
-    <string name="Kazakh_yandex">"哈萨克"</string>
-    <string name="Kannada_yandex">"卡纳达语"</string>
-    <string name="Korean_yandex">"韩国人"</string>
-    <string name="Kyrgyz_yandex">"吉尔吉斯"</string>
-    <string name="Latin_yandex">"拉丁"</string>
-    <string name="Luxembourgish_yandex">"卢森堡语"</string>
-    <string name="Lithuanian_yandex">"立陶宛"</string>
-    <string name="Latvian_yandex">"拉脱维亚"</string>
-    <string name="Malagasy_yandex">"马达加斯加"</string>
-    <string name="Mari_yandex">"九一八"</string>
-    <string name="Maori_yandex">"毛利人"</string>
-    <string name="Macedonian_yandex">"马其顿"</string>
-    <string name="Malayalam_yandex">"马拉雅拉姆语"</string>
-    <string name="Mongolian_yandex">"蒙古语"</string>
-    <string name="Marathi_yandex">"马拉地语"</string>
-    <string name="Hill_Mari_yandex">"山马里 ·"</string>
-    <string name="Malay_yandex">"马来人"</string>
-    <string name="Maltese_yandex">"马耳他"</string>
-    <string name="Nepali_yandex">"尼泊尔"</string>
-    <string name="Dutch_yandex">"荷兰"</string>
-    <string name="Norwegian_yandex">"挪威"</string>
-    <string name="Punjabi_yandex">"旁遮普语"</string>
-    <string name="Papiamento_yandex">"阿门"</string>
-    <string name="Polish_yandex">"波兰"</string>
-    <string name="Portuguese_yandex">"葡萄牙人"</string>
-    <string name="Romanian_yandex">"罗马尼亚"</string>
-    <string name="Russian_yandex">"俄罗斯"</string>
-    <string name="Sinhalese_yandex">"僧伽罗人"</string>
-    <string name="Slovak_yandex">"斯洛伐克语"</string>
-    <string name="Slovenian_yandex">"斯洛文尼亚语"</string>
-    <string name="Albanian_yandex">"阿尔巴尼亚"</string>
-    <string name="Serbian_yandex">"塞尔维亚"</string>
-    <string name="Sundanese_yandex">"巽他语"</string>
-    <string name="Swedish_yandex">"瑞典语"</string>
-    <string name="Swahili_yandex">"斯瓦希里语"</string>
-    <string name="Tamil_yandex">"泰米尔语"</string>
-    <string name="Telugu_yandex">"泰卢固语"</string>
-    <string name="Tajik_yandex">"塔吉克"</string>
-    <string name="Thai_yandex">"泰"</string>
-    <string name="Tagalog_yandex">"他加禄语"</string>
-    <string name="Turkish_yandex">"土耳其"</string>
-    <string name="Tatar_yandex">"塔塔尔"</string>
-    <string name="Udmurt_yandex">"乌德穆尔特"</string>
-    <string name="Ukrainian_yandex">"乌克兰"</string>
-    <string name="Urdu_yandex">"乌尔都语"</string>
-    <string name="Uzbek_yandex">"乌兹别克语"</string>
-    <string name="Vietnamese_yandex">"越南语"</string>
-    <string name="Xhosa_yandex">"科萨语"</string>
-    <string name="Yiddish_yandex">"意第绪语"</string>
-    <string name="Chinese_yandex">"中国人"</string>
-    <string name="Afrikaans_micro">"南非荷兰语"</string>
-    <string name="Arabic_micro">"阿拉伯语"</string>
-    <string name="Bosnian_Latin_micro">"波斯尼亚拉丁语"</string>
-    <string name="Bulgarian_micro">"保加利亚"</string>
-    <string name="Catalan_micro">"加泰罗尼亚语"</string>
-    <string name="Chinese_Simplified_micro">"简体中文"</string>
-    <string name="Chinese_Traditional_micro">"中国传统"</string>
-    <string name="Croatian_micro">"克罗地亚"</string>
-    <string name="Czech_micro">"捷克"</string>
-    <string name="Danish_micro">"丹麦"</string>
-    <string name="Dutch_micro">"荷兰"</string>
-    <string name="English_micro">"英语"</string>
-    <string name="Estonian_micro">"爱沙尼亚"</string>
-    <string name="Finnish_micro">"芬兰"</string>
-    <string name="French_micro">"法语"</string>
-    <string name="German_micro">"德国人"</string>
-    <string name="Greek_micro">"希腊"</string>
-    <string name="Haitian_Creole_micro">"海地克里奥尔语"</string>
-    <string name="Hebrew_micro">"希伯来语"</string>
-    <string name="Hindi_micro">"印地语"</string>
-    <string name="Hmong_Daw_micro">"苗族 Daw"</string>
-    <string name="Hungarian_micro">"匈牙利"</string>
-    <string name="Indonesian_micro">"印度尼西亚"</string>
-    <string name="Italian_micro">"意大利"</string>
-    <string name="Japanese_micro">"日本人"</string>
-    <string name="Kiswahili_micro">"斯瓦希里语"</string>
-    <string name="Klingon_micro">"克林贡语"</string>
-    <string name="Klingon_pIqaD_micro">"克林贡语 pIqaD"</string>
-    <string name="Korean_micro">"韩国人"</string>
-    <string name="Latvian_micro">"拉脱维亚"</string>
-    <string name="Lithuanian_micro">"立陶宛"</string>
-    <string name="Malay_micro">"马来人"</string>
-    <string name="Maltese_micro">"马耳他"</string>
-    <string name="Norwegian_micro">"挪威"</string>
-    <string name="Persian_micro">"波斯人"</string>
-    <string name="Polish_micro">"波兰"</string>
-    <string name="Portuguese_micro">"葡萄牙人"</string>
-    <string name="Queretaro_Otomi_micro">"克雷塔罗乙巳"</string>
-    <string name="Romanian_micro">"罗马尼亚"</string>
-    <string name="Russian_micro">"俄罗斯"</string>
-    <string name="Serbian_Cyrillic_micro">"塞尔维亚西里尔文"</string>
-    <string name="Serbian_Latin_micro">"塞尔维亚语-拉丁文"</string>
-    <string name="Slovak_micro">"斯洛伐克语"</string>
-    <string name="Slovenian_micro">"斯洛文尼亚语"</string>
-    <string name="Spanish_micro">"西班牙语"</string>
-    <string name="Swedish_micro">"瑞典语"</string>
-    <string name="Thai_micro">"泰"</string>
-    <string name="Turkish_micro">"土耳其"</string>
-    <string name="Ukrainian_micro">"乌克兰"</string>
-    <string name="Urdu_micro">"乌尔都语"</string>
-    <string name="Vietnamese_micro">"越南语"</string>
-    <string name="Welsh_micro">"威尔士"</string>
-    <string name="Yucatec_Maya_micro">"尤卡坦玛雅"</string>
-
+	<string name="translate_anywhere">"翻译任何地方"</string>
+	<string name="apps_to_translate">"翻译的应用程序"</string>
+	<string name="global_settings">"全局设置"</string>
+	<string name="instructions">"说明"</string>
+	<string name="pref_cat_translate_settings">"转换设置"</string>
+	<string name="pref_cat_parts_of_app">"翻译的应用程序的部分"</string>
+	<string name="pref_cat_other_settings">"其他设置"</string>
+	<string name="master_on_off">"主人打开关闭"</string>
+	<string name="master_on_off_summary">"关闭要完全禁用此模块"</string>
+	<string name="master_on_off_summary_off">"模块处于关闭状态，没有应用程序将被翻译。转到开始使用自动翻译 ！"</string>
+	<string name="master_on_off_summary_on">"模块处于打开状态，所选的应用程序将被翻译。关闭要完全禁用此模块。"</string>
+	<string name="enable_yandex">"而不是 Microsoft 使用 Yandex"</string>
+	<string name="enable_yandex_summary">"打开使用 Yandex 翻译而不是微软"</string>
+	<string name="enable_yandex_summary_off">"目前使用微软 Azure 翻译。打开要使用 Yandex 翻译。"</string>
+	<string name="enable_yandex_summary_on">"目前使用 Yandex 翻译。请关闭使用微软 Azure 翻译。"</string>
+	<string name="subKey">"微软 / Yandex 订阅关键"</string>
+	<string name="subKey_micro">"微软订阅的关键"</string>
+	<string name="subKey_yandex">"Yandex 订阅关键"</string>
+	<string name="subKey_summary">"订购密钥输入微软 Azure 或 Yandex 翻译 API，准启用以上"</string>
+	<string name="subKey_defaultValue">"输入您的 Microsoft 或 Yandex 订阅关键"</string>
+	<string name="transFrom">"从语言翻译"</string>
+	<string name="transFrom_summary">"语言应用程序最初是在。"</string>
+	<string name="transTo">"翻译成语言"</string>
+	<string name="transTo_summary">"你想要应用程序转化成语言。"</string>
+	<string name="setText">"翻译正常文本"</string>
+	<string name="setText_summary_off">"不翻译文本使用设置文本编写。打开要启用。"</string>
+	<string name="setText_summary_on">"翻译文字使用设置文本-安全。关闭要禁用。"</string>
+	<string name="setHint">"翻译中的文本框中的文本提示 （灰色色建议）"</string>
+	<string name="setHint_summary_off">"不翻译文字使用设置提示。打开要启用。"</string>
+	<string name="setHint_summary_on">"翻译文字使用设置提示-安全。关闭要禁用。"</string>
+	<string name="webView">"在应用程序内的网页中翻译文本"</string>
+	<string name="webView_summary_off">"在 WebViews 的不翻译文本。打开要启用。"</string>
+	<string name="webView_summary_on">"翻译文本内部 web 视图-安全，可能无法工作始终。关闭要禁用。"</string>
+	<string name="drawText">"侵略性模式"</string>
+	<string name="drawText_summary_off">"在 drawText 不积极翻译文本。所有上述失败事故时使用。打开要启用。"</string>
+	<string name="drawText_summary_on">"积极在 drawText-翻译文本实验，可能不工作始终。关闭要禁用。"</string>
+	<string name="caching">"使用高速缓存"</string>
+	<string name="caching_summary_off">"不保存脱机翻译，慢导致翻译和更高的数据-但可能更多的应用程序正常工作。转到保存翻译。"</string>
+	<string name="caching_summary_on">"保存脱机翻译加快翻译和使用数据。关闭要禁用如果您的应用程序不能启动。"</string>
+	<string name="delay">"翻译前的延迟"</string>
+	<string name="delay_summary">"设置以毫秒为单位，在翻译之前要等待的时间。默认值为 0，设置为 1000年 — — 5000，如果翻译应用程序崩溃。"</string>
+	<string name="overRide_global">"覆盖全局设置"</string>
+	<string name="overRide_global_summary_off">"全局设置打开这个应用程序在使用更改只为这个应用程序的设置。"</string>
+	<string name="overRide_global_summary_on">"使用本地设置这个应用程序打开关闭要使用全局设置。"</string>
+	<string name="clear_cache">"单击以清除翻译缓存"</string>
+	<string name="clear_cache_summary">"单击上面以清除应用程序的翻译缓存。使用此更改到/从语言后, 或如果该应用程序不能启动。"</string>
+	<string name="Afrikaans_yandex">"南非荷兰语"</string>
+	<string name="Amharic_yandex">"阿姆哈拉语"</string>
+	<string name="Arabic_yandex">"阿拉伯语"</string>
+	<string name="Azerbaijani_yandex">"阿塞拜疆"</string>
+	<string name="Bashkir_yandex">"巴什基尔语"</string>
+	<string name="Belarusian_yandex">"比利时语"</string>
+	<string name="Bulgarian_yandex">"保加利亚语"</string>
+	<string name="Bengali_yandex">"孟加拉语"</string>
+	<string name="Bosnian_yandex">"波斯尼亚语"</string>
+	<string name="Catalan_yandex">"加泰隆语"</string>
+	<string name="Cebuano_yandex">"宿务"</string>
+	<string name="Czech_yandex">"捷克语"</string>
+	<string name="Welsh_yandex">"威尔士语"</string>
+	<string name="Danish_yandex">"丹麦语"</string>
+	<string name="German_yandex">"德语"</string>
+	<string name="Greek_yandex">"希腊语"</string>
+	<string name="English_yandex">"英语"</string>
+	<string name="Esperanto_yandex">"世界语"</string>
+	<string name="Spanish_yandex">"西班牙语"</string>
+	<string name="Estonian_yandex">"爱沙尼亚语"</string>
+	<string name="Basque_yandex">"巴士克语"</string>
+	<string name="Persian_yandex">"波斯语"</string>
+	<string name="Finnish_yandex">"芬兰语"</string>
+	<string name="French_yandex">"法语"</string>
+	<string name="Irish_yandex">"爱尔兰语"</string>
+	<string name="Scottish_Gaelic_yandex">"苏格兰盖尔语"</string>
+	<string name="Galician_yandex">"加利西亚语"</string>
+	<string name="Gujarati_yandex">"古吉拉特语"</string>
+	<string name="Hebrew_yandex">"希伯来语"</string>
+	<string name="Hindi_yandex">"印地语"</string>
+	<string name="Croatian_yandex">"克罗地亚语"</string>
+	<string name="Haitian_yandex">"海地"</string>
+	<string name="Hungarian_yandex">"匈牙利语"</string>
+	<string name="Armenian_yandex">"亚美尼亚语"</string>
+	<string name="Indonesian_yandex">"印度尼西亚语"</string>
+	<string name="Icelandic_yandex">"冰岛语"</string>
+	<string name="Italian_yandex">"意大利语"</string>
+	<string name="Japanese_yandex">"日语"</string>
+	<string name="Javanese_yandex">"爪哇"</string>
+	<string name="Georgian_yandex">"乔治亚语"</string>
+	<string name="Kazakh_yandex">"哈萨克语"</string>
+	<string name="Kannada_yandex">"卡纳拉语"</string>
+	<string name="Korean_yandex">"朝鲜语"</string>
+	<string name="Kyrgyz_yandex">"吉尔吉斯语"</string>
+	<string name="Latin_yandex">"拉丁语"</string>
+	<string name="Luxembourgish_yandex">"卢森堡语"</string>
+	<string name="Lithuanian_yandex">"立陶宛语"</string>
+	<string name="Latvian_yandex">"拉脱维亚语"</string>
+	<string name="Malagasy_yandex">"马达加斯加"</string>
+	<string name="Mari_yandex">"马里"</string>
+	<string name="Maori_yandex">"毛利语"</string>
+	<string name="Macedonian_yandex">"马其顿"</string>
+	<string name="Malayalam_yandex">"马拉雅拉姆语"</string>
+	<string name="Mongolian_yandex">"蒙古语"</string>
+	<string name="Marathi_yandex">"马拉地语"</string>
+	<string name="Hill_Mari_yandex">"马里山"</string>
+	<string name="Malay_yandex">"马来语"</string>
+	<string name="Maltese_yandex">"马耳他语"</string>
+	<string name="Nepali_yandex">"尼泊尔语"</string>
+	<string name="Dutch_yandex">"荷兰语"</string>
+	<string name="Norwegian_yandex">"挪威语"</string>
+	<string name="Punjabi_yandex">"旁遮普语"</string>
+	<string name="Papiamento_yandex">"阿门"</string>
+	<string name="Polish_yandex">"波兰语"</string>
+	<string name="Portuguese_yandex">"葡萄牙语"</string>
+	<string name="Romanian_yandex">"罗马尼亚"</string>
+	<string name="Russian_yandex">"俄语"</string>
+	<string name="Sinhalese_yandex">"僧伽罗人"</string>
+	<string name="Slovak_yandex">"斯洛伐克语"</string>
+	<string name="Slovenian_yandex">"斯洛文尼亚语"</string>
+	<string name="Albanian_yandex">"阿尔巴尼亚语"</string>
+	<string name="Serbian_yandex">"塞尔维亚语"</string>
+	<string name="Sundanese_yandex">"巽他语"</string>
+	<string name="Swedish_yandex">"瑞典语"</string>
+	<string name="Swahili_yandex">"斯瓦希里语"</string>
+	<string name="Tamil_yandex">"泰米尔语"</string>
+	<string name="Telugu_yandex">"泰卢固语"</string>
+	<string name="Tajik_yandex">"塔吉克"</string>
+	<string name="Thai_yandex">"泰语"</string>
+	<string name="Tagalog_yandex">"他加禄语"</string>
+	<string name="Turkish_yandex">"土耳其语"</string>
+	<string name="Tatar_yandex">"鞑靼语"</string>
+	<string name="Udmurt_yandex">"乌德穆尔特"</string>
+	<string name="Ukrainian_yandex">"乌克兰语"</string>
+	<string name="Urdu_yandex">"乌都语"</string>
+	<string name="Uzbek_yandex">"乌兹别克语"</string>
+	<string name="Vietnamese_yandex">"越南语"</string>
+	<string name="Xhosa_yandex">"班图语"</string>
+	<string name="Yiddish_yandex">"意第绪语"</string>
+	<string name="Chinese_yandex">"中文"</string>
+	<string name="Afrikaans_micro">"南非荷兰语"</string>
+	<string name="Arabic_micro">"阿拉伯语"</string>
+	<string name="Bosnian_Latin_micro">"波斯尼亚拉丁语"</string>
+	<string name="Bulgarian_micro">"保加利亚语"</string>
+	<string name="Catalan_micro">"加泰隆语"</string>
+	<string name="Chinese_Simplified_micro">"简体中文"</string>
+	<string name="Chinese_Traditional_micro">"繁体中文"</string>
+	<string name="Croatian_micro">"克罗地亚语"</string>
+	<string name="Czech_micro">"捷克语"</string>
+	<string name="Danish_micro">"丹麦语"</string>
+	<string name="Dutch_micro">"荷兰语"</string>
+	<string name="English_micro">"英语"</string>
+	<string name="Estonian_micro">"爱沙尼亚语"</string>
+	<string name="Finnish_micro">"芬兰语"</string>
+	<string name="French_micro">"法语"</string>
+	<string name="German_micro">"德语"</string>
+	<string name="Greek_micro">"希腊语"</string>
+	<string name="Haitian_Creole_micro">"海地克里奥尔语"</string>
+	<string name="Hebrew_micro">"希伯来语"</string>
+	<string name="Hindi_micro">"印地语"</string>
+	<string name="Hmong_Daw_micro">"苗族人昂山"</string>
+	<string name="Hungarian_micro">"匈牙利语"</string>
+	<string name="Indonesian_micro">"印度尼西亚语"</string>
+	<string name="Italian_micro">"意大利语"</string>
+	<string name="Japanese_micro">"日语"</string>
+	<string name="Kiswahili_micro">"斯瓦希里语"</string>
+	<string name="Klingon_micro">"克林贡语"</string>
+	<string name="Klingon_pIqaD_micro">"克林贡语 pIqaD"</string>
+	<string name="Korean_micro">"朝鲜语"</string>
+	<string name="Latvian_micro">"拉脱维亚语"</string>
+	<string name="Lithuanian_micro">"立陶宛语"</string>
+	<string name="Malay_micro">"马来语"</string>
+	<string name="Maltese_micro">"马耳他语"</string>
+	<string name="Norwegian_micro">"挪威语"</string>
+	<string name="Persian_micro">"波斯语"</string>
+	<string name="Polish_micro">"波兰语"</string>
+	<string name="Portuguese_micro">"葡萄牙语"</string>
+	<string name="Queretaro_Otomi_micro">"克雷塔罗乙巳"</string>
+	<string name="Romanian_micro">"罗马尼亚"</string>
+	<string name="Russian_micro">"俄语"</string>
+	<string name="Serbian_Cyrillic_micro">"塞尔维亚西里尔文"</string>
+	<string name="Serbian_Latin_micro">"塞尔维亚语-拉丁文"</string>
+	<string name="Slovak_micro">"斯洛伐克语"</string>
+	<string name="Slovenian_micro">"斯洛文尼亚语"</string>
+	<string name="Spanish_micro">"西班牙语"</string>
+	<string name="Swedish_micro">"瑞典语"</string>
+	<string name="Thai_micro">"泰语"</string>
+	<string name="Turkish_micro">"土耳其语"</string>
+	<string name="Ukrainian_micro">"乌克兰语"</string>
+	<string name="Urdu_micro">"乌都语"</string>
+	<string name="Vietnamese_micro">"越南语"</string>
+	<string name="Welsh_micro">"威尔士语"</string>
+	<string name="Yucatec_Maya_micro">"尤卡坦玛雅"</string>
 </resources>

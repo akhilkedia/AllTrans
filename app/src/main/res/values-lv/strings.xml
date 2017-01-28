@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Programmu - kravas sarakstu, lūdzu, pagaidiet"</string>
+    <string name="clear_cache_error">"Dažas kļūdas. Nav skaidrs tulkošanas kešatmiņu!"</string>
+    <string name="clear_cache_success">"Tulkot Cache, jo šis app ir jāizdzēš!"</string>
+	<string name="how_to_use">"KĀ IZMANTOT LIETOJUMPROGRAMMU
+
+Šai lietojumprogrammai ir nepieciešama atslēga no Microsoft vai Yandex Translate piereģistrēties.
+Yandex Translate atbalsta vairākas valodas, ir daudz vienkāršāku reģistrēšanās process un prasa Nr CREDIT CARD.
+Microsoft Translate dod labākus rezultātus, bet prasa pieteikties kredītkartes. (Bet neuztraucieties, nekas, būs jāmaksā.)
+
+1. jo globālie iestatījumi cilne ļauj izmantot Yandex, nevis Microsoft, izmantot Yandex, cits atspējot lietot Microsoft.
+1. Global Settings tab, pieskarieties Microsoft/Yandex ievadiet atslēga abonements, ievada atbilstošo taustiņu (skatīt instrukcijas no apakšas).
+2. izvēlēties tulkot no valodas un valodas tulkot.
+3. Translate cilnē Apps, atrast app vēlaties tulkot, atzīmējiet izvēles rūtiņu blakus tai. Ja izvēles rūtiņas nav redzams, mēģiniet pagriežot sāniski tālruni ainavas režīmā.
+4. aizvērt un restartēt app jūs vēlaties tulkot - tas būtu jātulko!
+
+BRĪDINĀJUMS - daži apps var piespiest aizvērt. Skatiet sadaļā problēmu novēršana.
+
+KĀ NOKĻŪT YANDEX TULKOT ATSLĒGA ABONEMENTS
+
+1. doties uz Yandex mājas lapā - https://tech.yandex.com/keys/get/?service=trnsl
+2. Ja jums vēl nav konta, noklikšķiniet uz reģistrs un parakstīt jaunu lietotāja kontu.
+3. pēc parakstīšanas līdz, jāpiekrīt lietotāja līgumu un noklikšķiniet uz iegūt API atslēgu.
+4. Jūs veiksmīgi saņēmis jūsu atslēga! Tas ir kaut kas līdzīgs trnsl.1.1.201701...
+
+KĀ IEGŪT MICROSOFT AZURE TULKOT ATSLĒGA ABONEMENTS
+
+1. Reģistrējieties Microsoft Azure kontam pie http://azure.com
+
+2. pēc tam, kad jums ir konts, parakstīt ar debeszils portāla pie http://portal.azure.com
+
+3. pievienot abonējams Microsoft, tulkotājam API debeszils kontā.
+Izvēlieties abonementa pay-as-you-go. Būs nepieciešama kredītkarte, bet neuztraucieties, nekas netiks iekasēta.
+Atlasiet + jauns variants.
+Pakalpojumu sarakstā izvēlieties Intelligence.
+Atlasiet izziņas pakalpojumu API.
+Atlasiet opciju API tips.
+Atlasiet tekstu tulkošana
+Cenu līmeņa sadaļā atlasiet bez otrā līmeņa (F0)
+Atlikušo veidlapu, aizpildiet un nospiediet pogu izveidot.
+
+4. izgūt autentifikācijas atslēgu.
+Iet uz visiem resursiem un atlasiet Microsoft tulkotājs API, uz kurām esat parakstījies.
+Iet uz atslēgas iespēja un kopēt jūsu abonementa taustiņu, lai piekļūtu pakalpojumu.
+Atslēga abonements ir kaut kas līdzīgs 321dcba...
+
+PROBLĒMU NOVĒRŠANA
+
+1. Ja nav app ir tulko, pārbaudiet Microsoft/Yandex abonēšanas atslēga ir pareiza.
+2. Ja tulkoto app spēkā aizver/izpaužas iestrēdzis uz iekraušanas pirmo reizi pēc tam, kad jūs sākat, tulkojot, uzklikšķiniet uz app Apps tab tulkot un citi iestatījumi aizpildiet kavēšanās pirms tulkot līdz 2000.
+3. Ja tulkoto app, kas izmantoti, lai strādā labi, bet tagad iestrēgst pie sākuma, noklikšķiniet uz app Apps tab tulkot un noklikšķiniet uz, noklikšķiniet uz tulkošanas Tīrīt kešatmiņu.
+4. Ja app dažas daļas netiek pārvērstas, noklikšķiniet uz app Apps tab tulkot un iespējot agresīvu režīmu.
+5. Ja app joprojām spēkā aizver, atspējojiet šo app tulkojums un sazinieties ar mani uz atbalstu pavedienu uz XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Tulkot jebkur"</string>
+    <string name="apps_to_translate">"Lai tulkotu Apps"</string>
+    <string name="global_settings">"Globālie iestatījumi"</string>
+    <string name="instructions">"Instrukcijas"</string>
+    <string name="pref_cat_translate_settings">"Tulkot iestatījumus"</string>
+    <string name="pref_cat_parts_of_app">"App, lai tulkotu daļas"</string>
+    <string name="pref_cat_other_settings">"Citus iestatījumus"</string>
+    <string name="master_on_off">"Master ieslēgšana/izslēgšana"</string>
+    <string name="master_on_off_summary">"Izslēgt pilnībā atslēgt šo moduli"</string>
+    <string name="master_on_off_summary_off">"Modulis tiek izslēgts, neviens apps tiks tulkots. Savukārt pie sākuma, izmantojot auto-tulkot!"</string>
+    <string name="master_on_off_summary_on">"Modulis ir ieslēgts, izvēlēto apps tiks tulkots. Izslēgt pilnībā atslēgt šo moduli."</string>
+    <string name="enable_yandex">"Yandex izmantot, nevis Microsoft"</string>
+    <string name="enable_yandex_summary">"Savukārt par izmantot Yandex Translation, nevis Microsoft"</string>
+    <string name="enable_yandex_summary_off">"Pašlaik izmanto Microsoft Azure tulkojumu. Ieslēdziet, lai izmantot Yandex tulkojumu."</string>
+    <string name="enable_yandex_summary_on">"Pašlaik izmanto Yandex tulkojumu. Izmantot Microsoft Azure tulkojums izslēgtu."</string>
+    <string name="subKey">"Microsoft / Yandex atslēga abonements"</string>
+    <string name="subKey_micro">"Microsoft parakstīšanas atslēgas"</string>
+    <string name="subKey_yandex">"Yandex atslēga abonements"</string>
+    <string name="subKey_summary">"Ievadiet atslēga abonements Microsoft Azure vai Yandex Translation API, atkarībā no tā, kura ir aktivizēta iepriekš"</string>
+    <string name="subKey_defaultValue">"Ievadiet savu Microsoft vai Yandex atslēga abonements"</string>
+    <string name="transFrom">"Tulkot no valodas"</string>
+    <string name="transFrom_summary">"Valodas app ir sākotnēji."</string>
+    <string name="transTo">"Tulkot uz valodu"</string>
+    <string name="transTo_summary">"Valodas, ko vēlaties tulkot uz app."</string>
+    <string name="setText">"Parastā teksta tulkošana"</string>
+    <string name="setText_summary_off">"Nevis tulkojot teksts rakstīts, izmantojot iestatīt teksta. Lai ieslēgtu."</string>
+    <string name="setText_summary_on">"Tulkojot tekstu, kas rakstīts, izmantojot iestatīt teksta - Safe. Izslēgt, lai deaktivizētu."</string>
+    <string name="setHint">"Tulkot tekstu mājieni (pelēkajā joslā ieteikumu) tekstlodziņos"</string>
+    <string name="setHint_summary_off">"Nevis tulkojot teksts rakstīts, izmantojot iestatīt atgādinājumu. Lai ieslēgtu."</string>
+    <string name="setHint_summary_on">"Tulkojot tekstu, kas rakstīts, izmantojot iestatīt atgādinājumu - Safe. Izslēgt, lai deaktivizētu."</string>
+    <string name="webView">"Tulkot tekstu pievienošanai Web lappusēs iekšpusē Apps"</string>
+    <string name="webView_summary_off">"Nevar tulkot tekstu WebViews. Lai ieslēgtu."</string>
+    <string name="webView_summary_on">"Tulkojot tekstu iekšpusē Web skats - Safe, nedrīkst strādāt vienmēr. Izslēgt, lai deaktivizētu."</string>
+    <string name="drawText">"Agresīvs režīms"</string>
+    <string name="drawText_summary_off">"Nav agresīvi, tulkojot tekstu, drawText. Izmantot, kad visu iepriekš neizdodas. Lai ieslēgtu."</string>
+    <string name="drawText_summary_on">"Agresīvi, tulkojot tekstu ar drawText - eksperimentālās, iespējams ne darbu vienmēr. Izslēgt, lai deaktivizētu."</string>
+    <string name="caching">"Izmanto kešatmiņas"</string>
+    <string name="caching_summary_off">"Nav saglabāšanas bezsaistē tulkojumus, kā rezultātā lēnāk tulkot un augstāku datu - bet var strādāt vairāk progr. Savukārt uz Saglabāt tulkojumi."</string>
+    <string name="caching_summary_on">"Saglabāšanas bezsaistē tulkojumus paātrināt tulkot un izmantot datus. Izslēgt atslēgt, ja jūsu app nesākas."</string>
+    <string name="delay">"Aizkavi, pirms tulkojot"</string>
+    <string name="delay_summary">"Iestatiet laiku jāgaida pirms tulkojot milisekundēs. Noklusējuma vērtība ir 0, ja tulkoto app crashing iestatīt 1000 – 5000."</string>
+    <string name="overRide_global">"Globālie iestatījumi ignorē"</string>
+    <string name="overRide_global_summary_off">"Izmantojot globālos iestatījumus šai programmai savukārt uz mainīt iestatījumus tikai šo app."</string>
+    <string name="overRide_global_summary_on">"Izmantojot lokālos iestatījumus par šo app. Turn off uz Globālie iestatījumi."</string>
+    <string name="clear_cache">"Noklikšķiniet, lai notīrītu Translation Cache"</string>
+    <string name="clear_cache_summary">"Noklikšķiniet augstāk, lai notīrītu app ir tulkot kešatmiņu. Izmantojiet šo pēc pārejas uz/no valodām, vai arī, ja app nesākas."</string>
+    <string name="Afrikaans_yandex">"Afrikandu"</string>
+    <string name="Amharic_yandex">"Amharu"</string>
+    <string name="Arabic_yandex">"Arābu"</string>
+    <string name="Azerbaijani_yandex">"Azerbaidžāņu"</string>
+    <string name="Bashkir_yandex">"Baškīru"</string>
+    <string name="Belarusian_yandex">"Baltkrievu"</string>
+    <string name="Bulgarian_yandex">"Bulgāru"</string>
+    <string name="Bengali_yandex">"Bengāļu"</string>
+    <string name="Bosnian_yandex">"Bosniešu"</string>
+    <string name="Catalan_yandex">"Kataloniešu"</string>
+    <string name="Cebuano_yandex">"Cebuano"</string>
+    <string name="Czech_yandex">"Čehu"</string>
+    <string name="Welsh_yandex">"Velsiešu"</string>
+    <string name="Danish_yandex">"Dāņu"</string>
+    <string name="German_yandex">"Vācu"</string>
+    <string name="Greek_yandex">"Grieķu"</string>
+    <string name="English_yandex">"Angļu"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Spāņu"</string>
+    <string name="Estonian_yandex">"Igauņu"</string>
+    <string name="Basque_yandex">"Basku"</string>
+    <string name="Persian_yandex">"Persiešu"</string>
+    <string name="Finnish_yandex">"Somu"</string>
+    <string name="French_yandex">"Franču"</string>
+    <string name="Irish_yandex">"Īru"</string>
+    <string name="Scottish_Gaelic_yandex">"Skotu gēlu valoda"</string>
+    <string name="Galician_yandex">"Galisiešu"</string>
+    <string name="Gujarati_yandex">"Gudžaratu"</string>
+    <string name="Hebrew_yandex">"Ivrits"</string>
+    <string name="Hindi_yandex">"Hindi"</string>
+    <string name="Croatian_yandex">"Horvātu"</string>
+    <string name="Haitian_yandex">"Haiti"</string>
+    <string name="Hungarian_yandex">"Ungāru"</string>
+    <string name="Armenian_yandex">"Armēņu"</string>
+    <string name="Indonesian_yandex">"Indonēziešu"</string>
+    <string name="Icelandic_yandex">"Islandiešu"</string>
+    <string name="Italian_yandex">"Itāliešu"</string>
+    <string name="Japanese_yandex">"Japāņu"</string>
+    <string name="Javanese_yandex">"Javas"</string>
+    <string name="Georgian_yandex">"Gruzīnu"</string>
+    <string name="Kazakh_yandex">"Kazahu"</string>
+    <string name="Kannada_yandex">"Kannaru"</string>
+    <string name="Korean_yandex">"Korejiešu"</string>
+    <string name="Kyrgyz_yandex">"Kirgīzu"</string>
+    <string name="Latin_yandex">"Latin"</string>
+    <string name="Luxembourgish_yandex">"Luksemburgiešu"</string>
+    <string name="Lithuanian_yandex">"Lietuviešu"</string>
+    <string name="Latvian_yandex">"Latviešu"</string>
+    <string name="Malagasy_yandex">"Malagasijas"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maoru"</string>
+    <string name="Macedonian_yandex">"Maķedoniešu"</string>
+    <string name="Malayalam_yandex">"Malajalu"</string>
+    <string name="Mongolian_yandex">"Mongoļu"</string>
+    <string name="Marathi_yandex">"Marathu"</string>
+    <string name="Hill_Mari_yandex">"Hill Mari"</string>
+    <string name="Malay_yandex">"Malajiešu"</string>
+    <string name="Maltese_yandex">"Maltiešu"</string>
+    <string name="Nepali_yandex">"Nepali"</string>
+    <string name="Dutch_yandex">"Holandiešu"</string>
+    <string name="Norwegian_yandex">"Norvēģu"</string>
+    <string name="Punjabi_yandex">"Pendžabu"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Poļu"</string>
+    <string name="Portuguese_yandex">"Portugāļu"</string>
+    <string name="Romanian_yandex">"Rumāņu"</string>
+    <string name="Russian_yandex">"Krievu"</string>
+    <string name="Sinhalese_yandex">"Singaliete"</string>
+    <string name="Slovak_yandex">"Slovāku"</string>
+    <string name="Slovenian_yandex">"Slovēņu"</string>
+    <string name="Albanian_yandex">"Albāņu"</string>
+    <string name="Serbian_yandex">"Serbijas"</string>
+    <string name="Sundanese_yandex">"Sundu"</string>
+    <string name="Swedish_yandex">"Zviedru"</string>
+    <string name="Swahili_yandex">"Svahilu"</string>
+    <string name="Tamil_yandex">"Tamilu"</string>
+    <string name="Telugu_yandex">"Telugu"</string>
+    <string name="Tajik_yandex">"Tadžiku"</string>
+    <string name="Thai_yandex">"Taju"</string>
+    <string name="Tagalog_yandex">"Tagalog"</string>
+    <string name="Turkish_yandex">"Turku"</string>
+    <string name="Tatar_yandex">"Tatāru"</string>
+    <string name="Udmurt_yandex">"Udmurti"</string>
+    <string name="Ukrainian_yandex">"Ukraiņu"</string>
+    <string name="Urdu_yandex">"Urdu"</string>
+    <string name="Uzbek_yandex">"Uzbeku"</string>
+    <string name="Vietnamese_yandex">"Vjetnamiešu"</string>
+    <string name="Xhosa_yandex">"Kosu"</string>
+    <string name="Yiddish_yandex">"Jidišs"</string>
+    <string name="Chinese_yandex">"Ķīniešu"</string>
+    <string name="Afrikaans_micro">"Afrikandu"</string>
+    <string name="Arabic_micro">"Arābu"</string>
+    <string name="Bosnian_Latin_micro">"Bosniešu, latīņu"</string>
+    <string name="Bulgarian_micro">"Bulgāru"</string>
+    <string name="Catalan_micro">"Kataloniešu"</string>
+    <string name="Chinese_Simplified_micro">"Ķīniešu vienkāršotā"</string>
+    <string name="Chinese_Traditional_micro">"Ķīniešu tradicionālā"</string>
+    <string name="Croatian_micro">"Horvātu"</string>
+    <string name="Czech_micro">"Čehu"</string>
+    <string name="Danish_micro">"Dāņu"</string>
+    <string name="Dutch_micro">"Holandiešu"</string>
+    <string name="English_micro">"Angļu"</string>
+    <string name="Estonian_micro">"Igauņu"</string>
+    <string name="Finnish_micro">"Somu"</string>
+    <string name="French_micro">"Franču"</string>
+    <string name="German_micro">"Vācu"</string>
+    <string name="Greek_micro">"Grieķu"</string>
+    <string name="Haitian_Creole_micro">"Haiti kreoliete"</string>
+    <string name="Hebrew_micro">"Ivrits"</string>
+    <string name="Hindi_micro">"Hindi"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Ungāru"</string>
+    <string name="Indonesian_micro">"Indonēziešu"</string>
+    <string name="Italian_micro">"Itāliešu"</string>
+    <string name="Japanese_micro">"Japāņu"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Korejiešu"</string>
+    <string name="Latvian_micro">"Latviešu"</string>
+    <string name="Lithuanian_micro">"Lietuviešu"</string>
+    <string name="Malay_micro">"Malajiešu"</string>
+    <string name="Maltese_micro">"Maltiešu"</string>
+    <string name="Norwegian_micro">"Norvēģu"</string>
+    <string name="Persian_micro">"Persiešu"</string>
+    <string name="Polish_micro">"Poļu"</string>
+    <string name="Portuguese_micro">"Portugāļu"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Rumāņu"</string>
+    <string name="Russian_micro">"Krievu"</string>
+    <string name="Serbian_Cyrillic_micro">"Serbu kiriliskā"</string>
+    <string name="Serbian_Latin_micro">"Serbu latīņu"</string>
+    <string name="Slovak_micro">"Slovāku"</string>
+    <string name="Slovenian_micro">"Slovēņu"</string>
+    <string name="Spanish_micro">"Spāņu"</string>
+    <string name="Swedish_micro">"Zviedru"</string>
+    <string name="Thai_micro">"Taju"</string>
+    <string name="Turkish_micro">"Turku"</string>
+    <string name="Ukrainian_micro">"Ukraiņu"</string>
+    <string name="Urdu_micro">"Urdu"</string>
+    <string name="Vietnamese_micro">"Vjetnamiešu"</string>
+    <string name="Welsh_micro">"Velsiešu"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

@@ -19,22 +19,20 @@
   -->
 
 <resources>
-
-    <string name="globalPrefFile">AllTransPref</string>
-    <string name="app_name">"اللترانس"</string>
-    <string name="loading">"تحميل قائمة من التطبيقات--الرجاء الانتظار"</string>
-    <string name="clear_cache_error">"بعض الأخطاء. يمكن أن لا مسح ذاكرة التخزين المؤقت للترجمة! "</string>
-    <string name="clear_cache_success">"ترجمة ذاكرة التخزين المؤقت لهذا التطبيق قد محيت!"</string>
+	<string name="app_name">"اللترانس"</string>
+	<string name="loading">"تحميل قائمة من التطبيقات--الرجاء الانتظار"</string>
+	<string name="clear_cache_error">"بعض الخطأ. لا يمكن مسح الترجمة ذاكرة التخزين المؤقت!"</string>
+	<string name="clear_cache_success">"ترجمة ذاكرة التخزين المؤقت لهذا التطبيق قد تم محوها!"</string>
 	<string name="how_to_use">"كيفية استخدام التطبيق
 
 يتطلب هذا التطبيق يمكنك التسجيل للحصول على مفتاح من Microsoft أو ترجمة Yandex.
 ترجمة ياندكس يدعم أكثر من لغة، وعملية تسجيل أسهل بكثير، ويتطلب "بطاقة الائتمان لا".
 ترجمة مايكروسوفت يعطي نتائج أفضل، ولكن يتطلب بطاقة الائتمان للاشتراك. (ولكن لا تقلق، لن تكون مكلفة.)
 
-1. في علامة التبويب "إعدادات عمومية"، تمكين "استخدام Microsoft بدلاً من ياندكس" إذا كنت ترغب في استخدام ياندكس، وتعطيل آخر استخدام Microsoft.
-1. في علامة التبويب "إعدادات عمومية"، اضغط على "أدخل مفتاح اشتراك Microsoft/ياندكس"، وإدخال المفتاح المطابق (راجع تعليمات من الأسفل).
-2. اختر "ترجمة من اللغة" و "ترجمة إلى اللغة".
-3. في علامة التبويب "تطبيقات لترجمة"، العثور على التطبيق الذي تريد ترجمة، انقر فوق خانة الاختيار المجاورة له. إذا كانت خانة الاختيار غير مرئية، حاول تدوير هاتفك جانبية في الوضع الأفقي.
+1. في علامة التبويب إعدادات عمومية، تمكين "استخدام ياندكس" بدلاً من Microsoft إذا كنت ترغب في استخدام ياندكس، وتعطيل آخر استخدام Microsoft.
+1. في علامة التبويب إعدادات عمومية، اضغط "إدخال مفتاح اشتراك" Microsoft/ياندكس، إدخال المفتاح المطابق (راجع تعليمات من الأسفل).
+2. اختر ترجمة من اللغة وترجمة إلى اللغة.
+3. في التطبيقات للتبويب ترجمة، العثور على التطبيق الذي تريد ترجمة، انقر فوق خانة الاختيار المجاورة له. إذا كانت خانة الاختيار غير مرئية، حاول تدوير هاتفك جانبية في الوضع الأفقي.
 4. قم بإغلاق وإعادة تشغيل التطبيق تريد ترجمتها--ينبغي أن تترجم!
 
 تحذير--بعض تطبيقات قد فرض إغلاق. راجع قسم استكشاف الأخطاء وإصلاحها.
@@ -42,9 +40,9 @@
 كيفية الحصول على ترجمة ياندكس مفتاح الاشتراك
 
 1. انتقل إلى موقع Yandex-https://tech.yandex.com/keys/get/?service=trnsl
-2-إذا لم يكن لديك مسبقاً حساب، انقر فوق "التسجيل" وقم بالتسجيل للحصول على حساب جديد.
-3-وبعد توقيع تصل، والموافقة على "اتفاقية المستخدم" وانقر فوق "الحصول على مفتاح API".
-4-بنجاح تلقي مفتاح الخاص بك! أنها شيء مثل "trnsl.1.1.201701..."
+2-إذا لم يكن لديك مسبقاً حساب، انقر فوق السجل والتوقيع حتى الحصول على حساب جديد.
+3-وبعد توقيع تصل، والموافقة على "اتفاقية المستخدم" وانقر فوق الحصول على مفتاح API.
+4-بنجاح تلقي مفتاح الخاص بك! أنها شيء من هذا القبيل trnsl.1.1.201701...
 
 كيفية ترجمة أزور MICROSOFT للحصول على مفتاح الاشتراك
 
@@ -65,204 +63,203 @@
 4-استرداد مفتاح المصادقة الخاصة بك.
 الذهاب إلى "جميع الموارد" وحدد Microsoft API مترجم اشتراكك.
 انتقل إلى خيار مفاتيح ونسخ مفتاح الاشتراك الخاص بك للوصول إلى الخدمة.
-مفتاح الاشتراك شيء من هذا القبيل "321dcba..."
+مفتاح الاشتراك شيء من هذا القبيل 321dcba...
 
 استكشاف الأخطاء وإصلاحها
 
 1-إذا كان يجري ترجمة لا التطبيق، التحقق من صحة "مفتاح الاشتراك" الخاص بك Microsoft/ياندكس.
-2-إذا كانت القوة يغلق/يحصل عالقاً في تحميل للمرة الأولى بعد بدء تشغيل التطبيق المترجمة ترجمة، انقر فوق التطبيق في تطبيقات "ترجمة" علامة التبويب، وفي "إعدادات أخرى" ملء "تأخير قبل ترجمة" لعام 2000.
-3-إذا كان التطبيق المترجمة المستخدمة للعمل بشكل جيد، ولكن الآن تتعثر عند بدء التشغيل، انقر فوق التطبيق في تطبيقات "ترجمة" علامة التبويب، وانقر فوق "انقر لمسح الترجمة ذاكرة التخزين المؤقت".
-4-إذا لم تجري ترجمة بعض أجزاء من التطبيق، انقر فوق التطبيق في تطبيقات "ترجمة" علامة التبويب، وتمكين وضع "العدوانية".
+2. إذا كان التطبيق المترجمة قوة يغلق/يحصل عالقاً في تحميل للمرة الأولى بعد بدء تشغيل ترجمة، انقر فوق التطبيق في تطبيقات لترجمة التبويب، وفي "إعدادات أخرى" ملء في "تأخير قبل ترجمة" لعام 2000.
+3-في حالة استخدام التطبيق المترجمة تعمل بشكل جيد، ولكن الآن تتعثر على بدء، انقر على التطبيق في تطبيقات لترجمة التبويب، وانقر فوق انقر "مسح ذاكرة التخزين المؤقت في الترجمة".
+4-إذا لم تجري ترجمة بعض أجزاء من التطبيق، انقر فوق التطبيق في تطبيقات لترجمة التبويب، وتمكين "وضع العدوانية".
 5-إذا التطبيق لا يزال "يغلق القوة"، تعطيل ترجمة لهذا التطبيق والاتصال بي على مؤشر ترابط الدعم على الكمبيوتر الكفي-https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
 "</string>
-    <string name="translate_anywhere">"ترجمة في أي مكان"</string>
-    <string name="apps_to_translate">"تطبيقات لترجمة"</string>
-    <string name="global_settings">"إعدادات عمومية"</string>
-    <string name="instructions">"تعليمات"</string>
-    <string name="pref_cat_translate_settings">"ترجمة إعدادات"</string>
-    <string name="pref_cat_parts_of_app">"أجزاء من التطبيق لترجمة"</string>
-    <string name="pref_cat_other_settings">"إعدادات أخرى"</string>
-    <string name="master_on_off">"سيد على/قبالة"</string>
-    <string name="master_on_off_summary">"إيقاف لتعطيل هذه الوحدة النمطية بالكامل"</string>
-    <string name="master_on_off_summary_off">"إيقاف تشغيل الوحدة النمطية، وستتم ترجمة أي تطبيقات. انتقل إلى بداية استخدام السيارات ترجمة! "</string>
-    <string name="master_on_off_summary_on">"يتم تشغيل الوحدة النمطية، وستتم ترجمة تطبيقات مختارة. إيقاف تشغيل لتعطيل هذه الوحدة بشكل كامل ".</string>
-    <string name="enable_yandex">"استخدام ياندكس بدلاً من Microsoft"</string>
-    <string name="enable_yandex_summary">"قم بتشغيل باستخدام" الترجمة ياندكس "بدلاً من Microsoft"</string>
-    <string name="enable_yandex_summary_off">"حاليا باستخدام Microsoft أزور الترجمة. دورة استخدام الترجمة ياندكس ".</string>
-    <string name="enable_yandex_summary_on">"حاليا باستخدام" الترجمة ياندكس ". إيقاف تشغيل استخدام Microsoft أزور الترجمة ".</string>
-    <string name="subKey">"مايكروسوفت/مفتاح الاشتراك ياندكس"</string>
-    <string name="subKey_micro">"اشتراك Microsoft مفتاح"</string>
-    <string name="subKey_yandex">"مفتاح الاشتراك ياندكس"</string>
-    <string name="subKey_summary">"أدخل" مفتاح الاشتراك "لمايكروسوفت أزور أو API ترجمة ياندكس، أيهما هو تمكين أعلاه"</string>
-    <string name="subKey_defaultValue">"أدخل الخاص بك ل Microsoft أو مفتاح الاشتراك ياندكس"</string>
-    <string name="transFrom">"ترجمة من اللغة"</string>
-    <string name="transFrom_summary">"لغة التطبيق أصلاً في".</string>
-    <string name="transTo">"ترجمة إلى اللغة"</string>
-    <string name="transTo_summary">"لغة تريد التطبيق لأن تترجم".</string>
-    <string name="setText">"ترجمة النص العادي"</string>
-    <string name="setText_summary_off">"عدم" ترجمة نص "مكتوب باستخدام" تعيين النص ". قم بتشغيل لتمكين. "</string>
-    <string name="setText_summary_on">"ترجمة نص مكتوب باستخدام" تعيين النص "-صندوق الأمانات. إيقاف تشغيل لتعطيل ".</string>
-    <string name="setHint">"ترجمة النص تلميحات (اقتراحات للون الرمادي) في مربعات النص"</string>
-    <string name="setHint_summary_off">"عدم" ترجمة نص "مكتوب باستخدام" تعيين تلميح ". قم بتشغيل لتمكين. "</string>
-    <string name="setHint_summary_on">"ترجمة نص مكتوب باستخدام" تعيين تلميح "-صندوق الأمانات. إيقاف تشغيل لتعطيل ".</string>
-    <string name="webView">"ترجمة النص في صفحات الويب داخل تطبيقات"</string>
-    <string name="webView_summary_off">"عدم ترجمة النص في طرق عرض ويب. قم بتشغيل لتمكين. "</string>
-    <string name="webView_summary_on">"ترجمة النص داخل طريقة عرض ويب--قد لا تعمل صندوق الأمانات، دائماً. إيقاف تشغيل لتعطيل ".</string>
-    <string name="drawText">وضع "العدوانية"</string>
-    <string name="drawText_summary_off">"لا قوة ترجمة النص في drawText. الاستخدام عند جميع أعلاه فشل. قم بتشغيل لتمكين. "</string>
-    <string name="drawText_summary_on">"قوة ترجمة النص في drawText-تجريبية،" قد لا العمل دائماً ". إيقاف تشغيل لتعطيل ".</string>
-    <string name="caching">"استخدام التخزين المؤقت"</string>
-    <string name="caching_summary_off">"عدم توفير ترجمات غير متصل، مما أدى إلى تباطؤ ترجمة البيانات أعلى-ولكن قد تعمل لتطبيقات أكثر. دورة لحفظ الترجمة ".</string>
-    <string name="caching_summary_on">"توفير ترجمات غير متصل سرعة حتى تترجم واستخدام البيانات. إيقاف تشغيل لتعطيل إذا لم يبدأ تشغيل التطبيق الخاص بك ".</string>
-    <string name="delay">"تأخير قبل ترجمة"</string>
-    <string name="delay_summary">"تعيين الوقت بالمللي ثانية الانتظار قبل ترجمة. القيمة الافتراضية هي 0، تعيين إلى 1000 – 5000 إذا تعطل التطبيق المترجمة ".</string>
-    <string name="overRide_global">"تجاوز إعدادات عمومية"</string>
-    <string name="overRide_global_summary_off">"استخدام" الإعدادات العمومية "لهذا التطبيق بدوره على تغيير الإعدادات فقط لهذا التطبيق."</string>
-    <string name="overRide_global_summary_on">"استخدام" الإعدادات المحلية "لهذا التطبيق بدوره قبالة لاستخدام" إعدادات عمومية "."</string>
-    <string name="clear_cache">"انقر لمسح ذاكرة التخزين المؤقت للترجمة"</string>
-    <string name="clear_cache_summary">"ترجمة ما ورد أعلاه لمسح التطبيق انقر فوق ذاكرة التخزين المؤقت. استخدم هذا بعد تغيير من اللغات، أو إذا لم يتم تشغيل التطبيق. "</string>
-    <string name="Afrikaans_yandex">"الأفريكانية"</string>
-    <string name="Amharic_yandex">"الأمهرية"</string>
-    <string name="Arabic_yandex">"العربية"</string>
-    <string name="Azerbaijani_yandex">"أذربيجان"</string>
-    <string name="Bashkir_yandex">"البشكيرية"</string>
-    <string name="Belarusian_yandex">"بيلاروس"</string>
-    <string name="Bulgarian_yandex">"البلغارية"</string>
-    <string name="Bengali_yandex">"البنغالية"</string>
-    <string name="Bosnian_yandex">"البوسنة"</string>
-    <string name="Catalan_yandex">"كاتالونيا"</string>
-    <string name="Cebuano_yandex">"سيبوانو"</string>
-    <string name="Czech_yandex">"التشيكية"</string>
-    <string name="Welsh_yandex">"ويلز"</string>
-    <string name="Danish_yandex">"الدنماركية"</string>
-    <string name="German_yandex">"الألمانية"</string>
-    <string name="Greek_yandex">"اليونانية"</string>
-    <string name="English_yandex">"اللغة الإنجليزية"</string>
-    <string name="Esperanto_yandex">"الإسبرانتو"</string>
-    <string name="Spanish_yandex">"الإسبانية"</string>
-    <string name="Estonian_yandex">"إستونيا"</string>
-    <string name="Basque_yandex">"الباسك"</string>
-    <string name="Persian_yandex">"الفارسي"</string>
-    <string name="Finnish_yandex">"الفنلندية"</string>
-    <string name="French_yandex">"الفرنسية"</string>
-    <string name="Irish_yandex">"الأيرلندي"</string>
-    <string name="Scottish_Gaelic_yandex">"الغيلية الاسكتلندية"</string>
-    <string name="Galician_yandex">"جليقية"</string>
-    <string name="Gujarati_yandex">"غوجارات"</string>
-    <string name="Hebrew_yandex">"العبرية"</string>
-    <string name="Hindi_yandex">"هندي"</string>
-    <string name="Croatian_yandex">"الكرواتية"</string>
-    <string name="Haitian_yandex">"هايتي"</string>
-    <string name="Hungarian_yandex">"الهنغارية"</string>
-    <string name="Armenian_yandex">"الأرمن"</string>
-    <string name="Indonesian_yandex">"الإندونيسية"</string>
-    <string name="Icelandic_yandex">"أيسلندا"</string>
-    <string name="Italian_yandex">"الإيطالية"</string>
-    <string name="Japanese_yandex">"اليابانية"</string>
-    <string name="Javanese_yandex">"الجاوية"</string>
-    <string name="Georgian_yandex">"جورجيا"</string>
-    <string name="Kazakh_yandex">"كازاخستان"</string>
-    <string name="Kannada_yandex">"لغة كانادا"</string>
-    <string name="Korean_yandex">"الكورية"</string>
-    <string name="Kyrgyz_yandex">"قيرغيزستان"</string>
-    <string name="Latin_yandex">"اللاتيني"</string>
-    <string name="Luxembourgish_yandex">"اللكسمبورجية"</string>
-    <string name="Lithuanian_yandex">"الليتوانية"</string>
-    <string name="Latvian_yandex">"لاتفيا"</string>
-    <string name="Malagasy_yandex">"مدغشقر"</string>
-    <string name="Mari_yandex">"ماري"</string>
-    <string name="Maori_yandex">"ماوري"</string>
-    <string name="Macedonian_yandex">"مقدونيا"</string>
-    <string name="Malayalam_yandex">"المالايالامية"</string>
-    <string name="Mongolian_yandex">"المنغولية"</string>
-    <string name="Marathi_yandex">"المهاراتيه"</string>
-    <string name="Hill_Mari_yandex">"هيل ماري"</string>
-    <string name="Malay_yandex">"الماليزية"</string>
-    <string name="Maltese_yandex">"المالطية"</string>
-    <string name="Nepali_yandex">"النيبالية"</string>
-    <string name="Dutch_yandex">"الهولندية"</string>
-    <string name="Norwegian_yandex">"النرويجية"</string>
-    <string name="Punjabi_yandex">"البنجابية"</string>
-    <string name="Papiamento_yandex">"البابيامينتو"</string>
-    <string name="Polish_yandex">"البولندية"</string>
-    <string name="Portuguese_yandex">"البرتغالية"</string>
-    <string name="Romanian_yandex">"الرومانية"</string>
-    <string name="Russian_yandex">"الروسية"</string>
-    <string name="Sinhalese_yandex">"السنهالية"</string>
-    <string name="Slovak_yandex">"سلوفاكيا"</string>
-    <string name="Slovenian_yandex">"سلوفينيا"</string>
-    <string name="Albanian_yandex">"الألباني"</string>
-    <string name="Serbian_yandex">"الصربية"</string>
-    <string name="Sundanese_yandex">"السونديه"</string>
-    <string name="Swedish_yandex">"السويدي"</string>
-    <string name="Swahili_yandex">"السواحلية"</string>
-    <string name="Tamil_yandex">"التاميل"</string>
-    <string name="Telugu_yandex">"التيلجو"</string>
-    <string name="Tajik_yandex">"الطاجيكية"</string>
-    <string name="Thai_yandex">"تايلاند"</string>
-    <string name="Tagalog_yandex">"التغالوغيه"</string>
-    <string name="Turkish_yandex">"التركي"</string>
-    <string name="Tatar_yandex">"التتار"</string>
-    <string name="Udmurt_yandex">"تترستان"</string>
-    <string name="Ukrainian_yandex">"أوكرانيا"</string>
-    <string name="Urdu_yandex">"الأوردو"</string>
-    <string name="Uzbek_yandex">"أوزبكستان"</string>
-    <string name="Vietnamese_yandex">"الفيتنامية"</string>
-    <string name="Xhosa_yandex">"الاكسهوسيه"</string>
-    <string name="Yiddish_yandex">"الييدية"</string>
-    <string name="Chinese_yandex">"الصينية"</string>
-    <string name="Afrikaans_micro">"الأفريكانية"</string>
-    <string name="Arabic_micro">"العربية"</string>
-    <string name="Bosnian_Latin_micro">"البوسنية اللاتينية"</string>
-    <string name="Bulgarian_micro">"البلغارية"</string>
-    <string name="Catalan_micro">"كاتالونيا"</string>
-    <string name="Chinese_Simplified_micro">"الصينية المبسطة"</string>
-    <string name="Chinese_Traditional_micro">"الصينية التقليدية"</string>
-    <string name="Croatian_micro">"الكرواتية"</string>
-    <string name="Czech_micro">"التشيكية"</string>
-    <string name="Danish_micro">"الدنماركية"</string>
-    <string name="Dutch_micro">"الهولندية"</string>
-    <string name="English_micro">"اللغة الإنجليزية"</string>
-    <string name="Estonian_micro">"إستونيا"</string>
-    <string name="Finnish_micro">"الفنلندية"</string>
-    <string name="French_micro">"الفرنسية"</string>
-    <string name="German_micro">"الألمانية"</string>
-    <string name="Greek_micro">"اليونانية"</string>
-    <string name="Haitian_Creole_micro">"الكريول الهايتية"</string>
-    <string name="Hebrew_micro">"العبرية"</string>
-    <string name="Hindi_micro">"هندي"</string>
-    <string name="Hmong_Daw_micro">"الهمونغ داو"</string>
-    <string name="Hungarian_micro">"الهنغارية"</string>
-    <string name="Indonesian_micro">"الإندونيسية"</string>
-    <string name="Italian_micro">"الإيطالية"</string>
-    <string name="Japanese_micro">"اليابانية"</string>
-    <string name="Kiswahili_micro">"السواحلية"</string>
-    <string name="Klingon_micro">"الكلينجون"</string>
-    <string name="Klingon_pIqaD_micro">"الكلينجون بيقاد"</string>
-    <string name="Korean_micro">"الكورية"</string>
-    <string name="Latvian_micro">"لاتفيا"</string>
-    <string name="Lithuanian_micro">"الليتوانية"</string>
-    <string name="Malay_micro">"الماليزية"</string>
-    <string name="Maltese_micro">"المالطية"</string>
-    <string name="Norwegian_micro">"النرويجية"</string>
-    <string name="Persian_micro">"الفارسي"</string>
-    <string name="Polish_micro">"البولندية"</string>
-    <string name="Portuguese_micro">"البرتغالية"</string>
-    <string name="Queretaro_Otomi_micro">"كويريتارو اوتومي"</string>
-    <string name="Romanian_micro">"الرومانية"</string>
-    <string name="Russian_micro">"الروسية"</string>
-    <string name="Serbian_Cyrillic_micro">"السيريلية الصربية"</string>
-    <string name="Serbian_Latin_micro">"الصربية اللاتينية"</string>
-    <string name="Slovak_micro">"سلوفاكيا"</string>
-    <string name="Slovenian_micro">"سلوفينيا"</string>
-    <string name="Spanish_micro">"الإسبانية"</string>
-    <string name="Swedish_micro">"السويدي"</string>
-    <string name="Thai_micro">"تايلاند"</string>
-    <string name="Turkish_micro">"التركي"</string>
-    <string name="Ukrainian_micro">"أوكرانيا"</string>
-    <string name="Urdu_micro">"الأوردو"</string>
-    <string name="Vietnamese_micro">"الفيتنامية"</string>
-    <string name="Welsh_micro">"ويلز"</string>
-    <string name="Yucatec_Maya_micro">"يوكاتيك مايا"</string>
-
+	<string name="translate_anywhere">"ترجمة في أي مكان"</string>
+	<string name="apps_to_translate">"تطبيقات على ترجمة"</string>
+	<string name="global_settings">"الإعدادات العمومية"</string>
+	<string name="instructions">"تعليمات"</string>
+	<string name="pref_cat_translate_settings">"ترجمة الإعدادات"</string>
+	<string name="pref_cat_parts_of_app">"أجزاء من التطبيق لترجمة"</string>
+	<string name="pref_cat_other_settings">"إعدادات أخرى"</string>
+	<string name="master_on_off">"سيد على/قبالة"</string>
+	<string name="master_on_off_summary">"إيقاف لتعطيل هذه الوحدة النمطية بالكامل"</string>
+	<string name="master_on_off_summary_off">"يتم إيقاف تشغيل الوحدة النمطية، وستتم ترجمة أي تطبيقات. انتقل إلى بداية استخدام السيارات ترجمة!"</string>
+	<string name="master_on_off_summary_on">"يتم تشغيل الوحدة النمطية، وستتم ترجمة تطبيقات مختارة. إيقاف لتعطيل هذه الوحدة بشكل كامل."</string>
+	<string name="enable_yandex">"استخدام ياندكس بدلاً من Microsoft"</string>
+	<string name="enable_yandex_summary">"قم بتشغيل باستخدام "الترجمة ياندكس" بدلاً من Microsoft"</string>
+	<string name="enable_yandex_summary_off">"حاليا باستخدام Microsoft أزور الترجمة. قم بتشغيل استخدام "الترجمة ياندكس"."</string>
+	<string name="enable_yandex_summary_on">"حاليا باستخدام "الترجمة ياندكس". إيقاف استخدام "مايكروسوفت أزور الترجمة"."</string>
+	<string name="subKey">"مايكروسوفت/مفتاح الاشتراك ياندكس"</string>
+	<string name="subKey_micro">"اشتراك Microsoft مفتاح"</string>
+	<string name="subKey_yandex">"مفتاح الاشتراك ياندكس"</string>
+	<string name="subKey_summary">"أدخل "مفتاح الاشتراك" لمايكروسوفت أزور أو API ترجمة ياندكس، أيهما هو تمكين أعلاه"</string>
+	<string name="subKey_defaultValue">"أدخل الخاص بك ل Microsoft أو مفتاح الاشتراك ياندكس"</string>
+	<string name="transFrom">"ترجمة من اللغة"</string>
+	<string name="transFrom_summary">"لغة التطبيق أصلاً."</string>
+	<string name="transTo">"ترجمة إلى اللغة"</string>
+	<string name="transTo_summary">"اللغة التي تريد التطبيق لأن تترجم."</string>
+	<string name="setText">"ترجمة نص عادي"</string>
+	<string name="setText_summary_off">"عدم "ترجمة النص" المكتوب باستخدام "تعيين النص". قم بتشغيل لتمكين."</string>
+	<string name="setText_summary_on">"ترجمة نص مكتوب باستخدام "تعيين النص"-صندوق الأمانات. إيقاف لتعطيل."</string>
+	<string name="setHint">"ترجمة نص تلميحات (اقتراحات للون الرمادي) في مربعات النص"</string>
+	<string name="setHint_summary_off">"عدم "ترجمة النص" المكتوب باستخدام "تعيين تلميح". قم بتشغيل لتمكين."</string>
+	<string name="setHint_summary_on">"ترجمة نص مكتوب باستخدام "تعيين تلميح"-صندوق الأمانات. إيقاف لتعطيل."</string>
+	<string name="webView">"ترجمة النص في صفحات الويب داخل تطبيقات"</string>
+	<string name="webView_summary_off">"عدم ترجمة النص في طرق عرض ويب. قم بتشغيل لتمكين."</string>
+	<string name="webView_summary_on">"ترجمة نص داخل عرض ويب--قد لا تعمل صندوق الأمانات، دائماً. إيقاف لتعطيل."</string>
+	<string name="drawText">"وضع العدوانية"</string>
+	<string name="drawText_summary_off">"لا قوة ترجمة النص في drawText. الاستخدام عند جميع أعلاه فشل. قم بتشغيل لتمكين."</string>
+	<string name="drawText_summary_on">"قوة ترجمة النص في drawText-تجريبية، "قد لا العمل دائماً". إيقاف لتعطيل."</string>
+	<string name="caching">"استخدام التخزين المؤقت"</string>
+	<string name="caching_summary_off">"عدم توفير ترجمات غير متصل، مما أدى إلى تباطؤ ترجمة البيانات أعلى-ولكن قد تعمل لتطبيقات أكثر. دورة لحفظ الترجمات."</string>
+	<string name="caching_summary_on">"توفير الترجمات غير متصل الإسراع في ترجمة واستخدام البيانات. إيقاف لتعطيل إذا لم يبدأ تشغيل التطبيق الخاص بك."</string>
+	<string name="delay">"تأخير قبل ترجمة"</string>
+	<string name="delay_summary">"تعيين الوقت بالمللي ثانية الانتظار قبل ترجمة. القيمة الافتراضية هي 0، تعيين إلى 1000 – 5000 إذا تعطل التطبيق المترجمة."</string>
+	<string name="overRide_global">"تجاوز إعدادات عمومية"</string>
+	<string name="overRide_global_summary_off">"استخدام "الإعدادات العمومية" لهذا التطبيق بدوره على تغيير الإعدادات فقط لهذا التطبيق."</string>
+	<string name="overRide_global_summary_on">"استخدام "الإعدادات المحلية" لهذا التطبيق بدوره قبالة لاستخدام "إعدادات عمومية"."</string>
+	<string name="clear_cache">"انقر لمسح "ذاكرة التخزين المؤقت للترجمة""</string>
+	<string name="clear_cache_summary">"ترجمة ما ورد أعلاه لمسح التطبيق انقر فوق ذاكرة التخزين المؤقت. استخدم هذا بعد تغيير من اللغات، أو إذا لم يتم تشغيل التطبيق."</string>
+	<string name="Afrikaans_yandex">"الأفريقانية"</string>
+	<string name="Amharic_yandex">"لغة أمهرية"</string>
+	<string name="Arabic_yandex">"العربية"</string>
+	<string name="Azerbaijani_yandex">"أذربيجان"</string>
+	<string name="Bashkir_yandex">"البشكيرية"</string>
+	<string name="Belarusian_yandex">"البيلاروسية"</string>
+	<string name="Bulgarian_yandex">"البلغارية"</string>
+	<string name="Bengali_yandex">"البنغالية"</string>
+	<string name="Bosnian_yandex">"البوسنية"</string>
+	<string name="Catalan_yandex">"الكتالانية"</string>
+	<string name="Cebuano_yandex">"سيبوانو"</string>
+	<string name="Czech_yandex">"التشيكية"</string>
+	<string name="Welsh_yandex">"الويلزية"</string>
+	<string name="Danish_yandex">"الدانماركية"</string>
+	<string name="German_yandex">"الألمانية"</string>
+	<string name="Greek_yandex">"اليونانية"</string>
+	<string name="English_yandex">"الإنكليزية"</string>
+	<string name="Esperanto_yandex">"الإسبرانتو"</string>
+	<string name="Spanish_yandex">"الإسبانية"</string>
+	<string name="Estonian_yandex">"الإستونية"</string>
+	<string name="Basque_yandex">"الباسكية"</string>
+	<string name="Persian_yandex">"فارسي"</string>
+	<string name="Finnish_yandex">"الفنلندية"</string>
+	<string name="French_yandex">"الفرنسية"</string>
+	<string name="Irish_yandex">"الأيرلندية"</string>
+	<string name="Scottish_Gaelic_yandex">"الغيلية الاسكتلندية"</string>
+	<string name="Galician_yandex">"الغاليشية"</string>
+	<string name="Gujarati_yandex">"الجوجاراتية"</string>
+	<string name="Hebrew_yandex">"العبرية"</string>
+	<string name="Hindi_yandex">"الهندية"</string>
+	<string name="Croatian_yandex">"الكرواتية"</string>
+	<string name="Haitian_yandex">"هايتي"</string>
+	<string name="Hungarian_yandex">"المجرية"</string>
+	<string name="Armenian_yandex">"الأرمينية"</string>
+	<string name="Indonesian_yandex">"الإندونيسية"</string>
+	<string name="Icelandic_yandex">"الأيسلندية"</string>
+	<string name="Italian_yandex">"الإيطالية"</string>
+	<string name="Japanese_yandex">"اليابانية"</string>
+	<string name="Javanese_yandex">"لغة جاوي"</string>
+	<string name="Georgian_yandex">"الجورجية"</string>
+	<string name="Kazakh_yandex">"الكازاخية"</string>
+	<string name="Kannada_yandex">"الكندية"</string>
+	<string name="Korean_yandex">"الكورية"</string>
+	<string name="Kyrgyz_yandex">"القرقيزية"</string>
+	<string name="Latin_yandex">"اللاتينية"</string>
+	<string name="Luxembourgish_yandex">"اللكسمبورجية"</string>
+	<string name="Lithuanian_yandex">"الليتوانية"</string>
+	<string name="Latvian_yandex">"اللاتفية"</string>
+	<string name="Malagasy_yandex">"مدغشقر"</string>
+	<string name="Mari_yandex">"ماري"</string>
+	<string name="Maori_yandex">"الماوورية"</string>
+	<string name="Macedonian_yandex">"مقدوني"</string>
+	<string name="Malayalam_yandex">"المالايلامية"</string>
+	<string name="Mongolian_yandex">"المنغولية"</string>
+	<string name="Marathi_yandex">"الماراثية"</string>
+	<string name="Hill_Mari_yandex">"ماري هيل"</string>
+	<string name="Malay_yandex">"الماليزية"</string>
+	<string name="Maltese_yandex">"المالطية"</string>
+	<string name="Nepali_yandex">"النيبالية"</string>
+	<string name="Dutch_yandex">"الهولندية"</string>
+	<string name="Norwegian_yandex">"النرويجية ‏"</string>
+	<string name="Punjabi_yandex">"البنجابية"</string>
+	<string name="Papiamento_yandex">"البابيامينتو"</string>
+	<string name="Polish_yandex">"البولندية"</string>
+	<string name="Portuguese_yandex">"البرتغالية"</string>
+	<string name="Romanian_yandex">"الرومانية"</string>
+	<string name="Russian_yandex">"الروسية"</string>
+	<string name="Sinhalese_yandex">"اللغة السنهالية"</string>
+	<string name="Slovak_yandex">"السلوفاكية"</string>
+	<string name="Slovenian_yandex">"السلوفينية"</string>
+	<string name="Albanian_yandex">"الألبانية"</string>
+	<string name="Serbian_yandex">"الصربية"</string>
+	<string name="Sundanese_yandex">"السونديه"</string>
+	<string name="Swedish_yandex">"السويدية"</string>
+	<string name="Swahili_yandex">"السواحلية"</string>
+	<string name="Tamil_yandex">"التاميلية"</string>
+	<string name="Telugu_yandex">"التيلوغية"</string>
+	<string name="Tajik_yandex">"الطاجيكية"</string>
+	<string name="Thai_yandex">"التايلندية"</string>
+	<string name="Tagalog_yandex">"لغة التاجالوج"</string>
+	<string name="Turkish_yandex">"التركية"</string>
+	<string name="Tatar_yandex">"التتارية"</string>
+	<string name="Udmurt_yandex">"تترستان"</string>
+	<string name="Ukrainian_yandex">"الأوكرانية"</string>
+	<string name="Urdu_yandex">"الأوردية"</string>
+	<string name="Uzbek_yandex">"الأوزبكية"</string>
+	<string name="Vietnamese_yandex">"الفيتنامية"</string>
+	<string name="Xhosa_yandex">"زوسا"</string>
+	<string name="Yiddish_yandex">"الييدية"</string>
+	<string name="Chinese_yandex">"الصينية"</string>
+	<string name="Afrikaans_micro">"الأفريقانية"</string>
+	<string name="Arabic_micro">"العربية"</string>
+	<string name="Bosnian_Latin_micro">"اللاتينية البوسنيين"</string>
+	<string name="Bulgarian_micro">"البلغارية"</string>
+	<string name="Catalan_micro">"الكتالانية"</string>
+	<string name="Chinese_Simplified_micro">"الصينية المبسطة"</string>
+	<string name="Chinese_Traditional_micro">"الصينية التقليدية"</string>
+	<string name="Croatian_micro">"الكرواتية"</string>
+	<string name="Czech_micro">"التشيكية"</string>
+	<string name="Danish_micro">"الدانماركية"</string>
+	<string name="Dutch_micro">"الهولندية"</string>
+	<string name="English_micro">"الإنكليزية"</string>
+	<string name="Estonian_micro">"الإستونية"</string>
+	<string name="Finnish_micro">"الفنلندية"</string>
+	<string name="French_micro">"الفرنسية"</string>
+	<string name="German_micro">"الألمانية"</string>
+	<string name="Greek_micro">"اليونانية"</string>
+	<string name="Haitian_Creole_micro">"هايتي"</string>
+	<string name="Hebrew_micro">"العبرية"</string>
+	<string name="Hindi_micro">"الهندية"</string>
+	<string name="Hmong_Daw_micro">"داو الهمونغ"</string>
+	<string name="Hungarian_micro">"المجرية"</string>
+	<string name="Indonesian_micro">"الإندونيسية"</string>
+	<string name="Italian_micro">"الإيطالية"</string>
+	<string name="Japanese_micro">"اليابانية"</string>
+	<string name="Kiswahili_micro">"اللغة السواحيلية"</string>
+	<string name="Klingon_micro">"الكلينجون"</string>
+	<string name="Klingon_pIqaD_micro">"بيقاد الكلينجون"</string>
+	<string name="Korean_micro">"الكورية"</string>
+	<string name="Latvian_micro">"اللاتفية"</string>
+	<string name="Lithuanian_micro">"الليتوانية"</string>
+	<string name="Malay_micro">"الماليزية"</string>
+	<string name="Maltese_micro">"المالطية"</string>
+	<string name="Norwegian_micro">"النرويجية ‏"</string>
+	<string name="Persian_micro">"فارسي"</string>
+	<string name="Polish_micro">"البولندية"</string>
+	<string name="Portuguese_micro">"البرتغالية"</string>
+	<string name="Queretaro_Otomi_micro">"اوتومي كويريتارو"</string>
+	<string name="Romanian_micro">"الرومانية"</string>
+	<string name="Russian_micro">"الروسية"</string>
+	<string name="Serbian_Cyrillic_micro">"اللغة السيريلية الصربية"</string>
+	<string name="Serbian_Latin_micro">"الصربية اللاتينية"</string>
+	<string name="Slovak_micro">"السلوفاكية"</string>
+	<string name="Slovenian_micro">"السلوفينية"</string>
+	<string name="Spanish_micro">"الإسبانية"</string>
+	<string name="Swedish_micro">"السويدية"</string>
+	<string name="Thai_micro">"التايلندية"</string>
+	<string name="Turkish_micro">"التركية"</string>
+	<string name="Ukrainian_micro">"الأوكرانية"</string>
+	<string name="Urdu_micro">"الأوردية"</string>
+	<string name="Vietnamese_micro">"الفيتنامية"</string>
+	<string name="Welsh_micro">"الويلزية"</string>
+	<string name="Yucatec_Maya_micro">"يوكاتيك مايا"</string>
 </resources>

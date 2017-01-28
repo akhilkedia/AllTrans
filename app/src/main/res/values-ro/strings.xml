@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Lista de încărcare de aplicaţii - vă rugăm să aşteptaţi"</string>
+    <string name="clear_cache_error">"Unele erori. Ar putea goli cache-ul de traducere!"</string>
+    <string name="clear_cache_success">"Traduce Cache pentru acest app a fost sters!"</string>
+	<string name="how_to_use">"CUM SĂ UTILIZAŢI APLICAŢIA
+
+Această aplicaţie necesită să vă înscrieţi pentru o cheie de la Microsoft sau Yandex Translate.
+Yandex Translate suportă mai multe limbi, a unui proces mult mai uşor de înscriere şi cere cardul de CREDIT nr.
+Microsoft Translate oferă rezultate mai bune, dar necesită un card de credit la spre semn sus. (Dar nu vă faceţi griji, nimic nu va fi perceput.)
+
+1. în fila Setări globale, permite folosi Yandex în loc de Microsoft în cazul în care doriţi să utilizaţi Yandex, altceva nu fi de acord pentru a utiliza Microsoft.
+1. în fila Setări globale, atingeţi introduceţi Microsoft/Yandex Subscription cheie, tasta corespunzătoare de intrare (a se vedea instrucţiunile de mai jos).
+2. alege traducerea din limba şi traducerea în limba.
+3. în Apps pentru a traduce fila, găsi aplicaţia pe care doriţi să traduceţi, faceţi clic pe caseta de selectare alăturată. În cazul în care caseta de selectare nu este vizibilă, încercaţi rotative lateral telefonul în modul peisaj.
+4. Închideţi şi reporniţi aplicaţia pe care doriţi tradus - it ar trebui să fie tradus!
+
+AVERTIZARE - unele apps ar putea forţa de aproape. Consultaţi secţiunea depanare.
+
+CUM SĂ OBŢINEŢI YANDEX TRANSLATE SUBSCRIPTION CHEIE
+
+1. du-te la site-ul Yandex - https://tech.yandex.com/keys/get/?service=trnsl
+2. în cazul în care nu aveţi deja un cont, faceţi clic pe registru şi semn sus pentru un cont nou.
+3. după semnarea sus, acord cu utilizatorul şi faceţi clic pe obţineţi API-cheie.
+4. aţi primit cu succes cheia! Este ceva de genul trnsl.1.1.201701...
+
+CUM SĂ OBŢINEŢI MICROSOFT AZURE TRADUCE SUBSCRIPTION CHEIE
+
+1. Înscrieţi-vă pentru un cont de Microsoft Azure la http://azure.com
+
+2. dupa ce ai un cont, conectaţi-portalul Azur la http://portal.azure.com
+
+3. adăugaţi un abonament de Microsoft Translator API în contul tău de Azur.
+Alege un abonament pay-as-you-go. Va fi nevoie de un card de credit, dar nu vă faceţi griji, nimic nu va fi perceput.
+Selectaţi + nou opţiune.
+Selectaţi inteligenta din lista de servicii.
+Selectați servicii Cognitive API-uri.
+Selectaţi opţiunea de tip API.
+Selectaţi Text traducere
+În secţiunea nivel de preţuri, selectaţi nivelul gratuit (F0)
+Completaţi restul de formă, şi apăsaţi butonul Create.
+
+4. a se prelua cheia de autentificare.
+Du-te la toate resursele şi selectaţi Microsoft Translator API v-abonat.
+Mergeţi la opţiunea de chei şi copiaţi cheia de abonament pentru a accesa serviciul.
+Subscription cheie este ceva de genul 321dcba...
+
+REZOLVAREA PROBLEMELOR
+
+1. în cazul în care nici un app este traduse, verifica dumneavoastră Microsoft/Yandex Subscription cheie este corectă.
+2. în cazul în care app tradus vigoare închide/devine blocat pe prima dată după începerea traducerea de încărcare, faceţi clic pe aplicaţia în Apps pentru a traduce tab, şi în alte setări umple în întârziere înainte de traducerea la 2000.
+3. în cazul în care app traduse folosite pentru a funcţiona bine, dar acum mă blochez pe incepand, faceţi clic pe aplicaţia în Apps pentru a traduce fila, şi faceţi clic pe faceţi clic pe Clear cache-ul de traducere.
+4. în cazul în care unele părţi ale app nu sunt traduse, faceţi clic pe aplicaţia în Apps pentru a traduce tab, şi permite modul agresiv.
+5. în cazul în care app încă vigoare se închide, dezactivaţi traducere pentru acest app şi contactaţi-mă pe firul de suport pe XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Traduce oriunde"</string>
+    <string name="apps_to_translate">"Apps pentru a traduce"</string>
+    <string name="global_settings">"Parametri globali"</string>
+    <string name="instructions">"Instrucţiuni"</string>
+    <string name="pref_cat_translate_settings">"Traduce setările"</string>
+    <string name="pref_cat_parts_of_app">"Părţi ale App pentru a traduce"</string>
+    <string name="pref_cat_other_settings">"Alte setări"</string>
+    <string name="master_on_off">"Master pornit/oprit"</string>
+    <string name="master_on_off_summary">"Nap off pentru a dezactiva complet acest modul"</string>
+    <string name="master_on_off_summary_off">"Modulul este oprit, nr apps va fi tradus. Rândul său, pe la începutul folosind auto-traduce!"</string>
+    <string name="master_on_off_summary_on">"Modulul este activat, apps selectat va fi tradus. Nap off pentru a dezactiva complet acest modul."</string>
+    <string name="enable_yandex">"Folosi Yandex în loc de Microsoft"</string>
+    <string name="enable_yandex_summary">"Porniţi pentru a folosi Yandex traducere în loc de Microsoft"</string>
+    <string name="enable_yandex_summary_off">"În prezent, folosind Microsoft Azure traducere. Porniţi pentru a folosi Yandex traducere."</string>
+    <string name="enable_yandex_summary_on">"În prezent, folosind Yandex traducere. Opriţi-vă să utilizaţi Microsoft Azure traducere."</string>
+    <string name="subKey">"Microsoft / Yandex Subscription cheie"</string>
+    <string name="subKey_micro">"Microsoft Subscription cheie"</string>
+    <string name="subKey_yandex">"Yandex Subscription cheie"</string>
+    <string name="subKey_summary">"Introduceţi cheia de abonament pentru Microsoft Azure sau Yandex traducere API, oricare dintre acestea este activat de mai sus"</string>
+    <string name="subKey_defaultValue">"Introduceţi Microsoft sau Yandex Subscription cheie"</string>
+    <string name="transFrom">"Traducere din limba"</string>
+    <string name="transFrom_summary">"Limba app este iniţial."</string>
+    <string name="transTo">"Traducerea în limba"</string>
+    <string name="transTo_summary">"Limba in care doriti app se traduce în."</string>
+    <string name="setText">"Traduceţi Normal Text"</string>
+    <string name="setText_summary_off">"Nu traducerea textului scris folosind Set Text. Activare pentru a permite."</string>
+    <string name="setText_summary_on">"Traducerea textului scris folosind Set Text - în condiţii de siguranţă. Nap off pentru a dezactiva."</string>
+    <string name="setHint">"Traduceţi Text indicii (sugestii de culoare gri) în casetele de Text"</string>
+    <string name="setHint_summary_off">"Nu traducerea textului scris folosind Set indiciu. Activare pentru a permite."</string>
+    <string name="setHint_summary_on">"Traducerea textului scris folosind Set sugestie - seif. Nap off pentru a dezactiva."</string>
+    <string name="webView">"Traducerea textului din pagini Web în interiorul Apps"</string>
+    <string name="webView_summary_off">"Nu traducerea textului din WebViews. Activare pentru a permite."</string>
+    <string name="webView_summary_on">"Traducerea textului din interiorul WebView - în condiţii de siguranţă, poate să nu funcţioneze întotdeauna. Nap off pentru a dezactiva."</string>
+    <string name="drawText">"Modul agresiv"</string>
+    <string name="drawText_summary_off">"Nu agresiv traducerea textului în drawText. Utilizarea atunci când toate de mai sus se sustrage. Activare pentru a permite."</string>
+    <string name="drawText_summary_on">"Agresiv traducerea textului în drawText - experimentală, poate nu lucru întotdeauna. Nap off pentru a dezactiva."</string>
+    <string name="caching">"Folosirea Caching"</string>
+    <string name="caching_summary_off">"Nu de economisire traduceri offline, care rezultă în mai lent traduce şi date mai mare - dar poate lucra pentru mai multe aplicaţii. Transforma pe pentru a salva traduceri."</string>
+    <string name="caching_summary_on">"Versuri offline de economisire pentru a accelera traduce şi de a folosi datele. Nap off pentru a dezactiva în cazul în care nu începe app dvs."</string>
+    <string name="delay">"Întârziere înainte de traducerea"</string>
+    <string name="delay_summary">"Setaţi ora în milisecunde să aştepte înainte de traducerea. Valoarea implicită este 0, setat la 1000-5000, în cazul în care app de tradus este crashing."</string>
+    <string name="overRide_global">"Suprascriu setările la nivel mondial"</string>
+    <string name="overRide_global_summary_off">"Utilizarea Global setările pentru this app. Turn pe pentru a modifica setările numai pentru acest app."</string>
+    <string name="overRide_global_summary_on">"Cu setările locale pentru this app. Turn off pentru a utiliza parametri globali."</string>
+    <string name="clear_cache">"Click pentru a goli Cache-traducere"</string>
+    <string name="clear_cache_summary">"Faceţi clic pe cele de mai sus pentru a goli app pe traduce cache. Folos this după schimbarea in/din limbi, sau în cazul în care app nu porneşte."</string>
+    <string name="Afrikaans_yandex">"Afrikaans"</string>
+    <string name="Amharic_yandex">"Amharică"</string>
+    <string name="Arabic_yandex">"Arabă"</string>
+    <string name="Azerbaijani_yandex">"Azerbaijan"</string>
+    <string name="Bashkir_yandex">"Başkiră"</string>
+    <string name="Belarusian_yandex">"Belarusă"</string>
+    <string name="Bulgarian_yandex">"Bulgară"</string>
+    <string name="Bengali_yandex">"Bengali"</string>
+    <string name="Bosnian_yandex">"Bosniacă"</string>
+    <string name="Catalan_yandex">"Catalană"</string>
+    <string name="Cebuano_yandex">"Crystyan"</string>
+    <string name="Czech_yandex">"Cehă"</string>
+    <string name="Welsh_yandex">"Velşă"</string>
+    <string name="Danish_yandex">"Daneză"</string>
+    <string name="German_yandex">"Germană"</string>
+    <string name="Greek_yandex">"Greacă"</string>
+    <string name="English_yandex">"Engleză"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Spaniolă"</string>
+    <string name="Estonian_yandex">"Estonă"</string>
+    <string name="Basque_yandex">"Bască"</string>
+    <string name="Persian_yandex">"Persană"</string>
+    <string name="Finnish_yandex">"Finlandeză"</string>
+    <string name="French_yandex">"Franceză"</string>
+    <string name="Irish_yandex">"Irlandeză"</string>
+    <string name="Scottish_Gaelic_yandex">"Galică scoţiană"</string>
+    <string name="Galician_yandex">"Galiciană"</string>
+    <string name="Gujarati_yandex">"Gujarati"</string>
+    <string name="Hebrew_yandex">"Ebraică"</string>
+    <string name="Hindi_yandex">"Hindi"</string>
+    <string name="Croatian_yandex">"Croată"</string>
+    <string name="Haitian_yandex">"Haitiană"</string>
+    <string name="Hungarian_yandex">"Maghiară"</string>
+    <string name="Armenian_yandex">"Armeană"</string>
+    <string name="Indonesian_yandex">"Indoneziană"</string>
+    <string name="Icelandic_yandex">"Islandeză"</string>
+    <string name="Italian_yandex">"Italiană"</string>
+    <string name="Japanese_yandex">"Japoneză"</string>
+    <string name="Javanese_yandex">"Javaneză"</string>
+    <string name="Georgian_yandex">"Gruzină"</string>
+    <string name="Kazakh_yandex">"Kazahă"</string>
+    <string name="Kannada_yandex">"Kannada"</string>
+    <string name="Korean_yandex">"Coreeană"</string>
+    <string name="Kyrgyz_yandex">"Kirghiză"</string>
+    <string name="Latin_yandex">"Latină"</string>
+    <string name="Luxembourgish_yandex">"Luxemburgheză"</string>
+    <string name="Lithuanian_yandex">"Lituaniană"</string>
+    <string name="Latvian_yandex">"Letonă"</string>
+    <string name="Malagasy_yandex">"Madagascar"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maori"</string>
+    <string name="Macedonian_yandex">"Macedoneană"</string>
+    <string name="Malayalam_yandex">"Malayalam"</string>
+    <string name="Mongolian_yandex">"Mongolă"</string>
+    <string name="Marathi_yandex">"Marathi"</string>
+    <string name="Hill_Mari_yandex">"Dealul Mari"</string>
+    <string name="Malay_yandex">"Malaieză"</string>
+    <string name="Maltese_yandex">"Malteză"</string>
+    <string name="Nepali_yandex">"Nepali"</string>
+    <string name="Dutch_yandex">"Olandeză"</string>
+    <string name="Norwegian_yandex">"Norvegiană"</string>
+    <string name="Punjabi_yandex">"Punjabi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Poloneză"</string>
+    <string name="Portuguese_yandex">"Portugheză"</string>
+    <string name="Romanian_yandex">"Română"</string>
+    <string name="Russian_yandex">"Rusă"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Slovacă"</string>
+    <string name="Slovenian_yandex">"Slovenă"</string>
+    <string name="Albanian_yandex">"Albaneză"</string>
+    <string name="Serbian_yandex">"Sârbă"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"Suedeză"</string>
+    <string name="Swahili_yandex">"Swahili"</string>
+    <string name="Tamil_yandex">"Tamil"</string>
+    <string name="Telugu_yandex">"Telugu"</string>
+    <string name="Tajik_yandex">"Trif"</string>
+    <string name="Thai_yandex">"Thai"</string>
+    <string name="Tagalog_yandex">"Tita"</string>
+    <string name="Turkish_yandex">"Turcă"</string>
+    <string name="Tatar_yandex">"Tătară"</string>
+    <string name="Udmurt_yandex">"Udmurtă"</string>
+    <string name="Ukrainian_yandex">"Ucraineană"</string>
+    <string name="Urdu_yandex">"Urdu"</string>
+    <string name="Uzbek_yandex">"Uzbecă"</string>
+    <string name="Vietnamese_yandex">"Vietnameză"</string>
+    <string name="Xhosa_yandex">"Xhosa"</string>
+    <string name="Yiddish_yandex">"Idiş"</string>
+    <string name="Chinese_yandex">"Chineză"</string>
+    <string name="Afrikaans_micro">"Afrikaans"</string>
+    <string name="Arabic_micro">"Arabă"</string>
+    <string name="Bosnian_Latin_micro">"Bosniacă Latină"</string>
+    <string name="Bulgarian_micro">"Bulgară"</string>
+    <string name="Catalan_micro">"Catalană"</string>
+    <string name="Chinese_Simplified_micro">"Chineză simplificată"</string>
+    <string name="Chinese_Traditional_micro">"Chineză tradiţională"</string>
+    <string name="Croatian_micro">"Croată"</string>
+    <string name="Czech_micro">"Cehă"</string>
+    <string name="Danish_micro">"Daneză"</string>
+    <string name="Dutch_micro">"Olandeză"</string>
+    <string name="English_micro">"Engleză"</string>
+    <string name="Estonian_micro">"Estonă"</string>
+    <string name="Finnish_micro">"Finlandeză"</string>
+    <string name="French_micro">"Franceză"</string>
+    <string name="German_micro">"Germană"</string>
+    <string name="Greek_micro">"Greacă"</string>
+    <string name="Haitian_Creole_micro">"Creolă haitiană"</string>
+    <string name="Hebrew_micro">"Ebraică"</string>
+    <string name="Hindi_micro">"Hindi"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Maghiară"</string>
+    <string name="Indonesian_micro">"Indoneziană"</string>
+    <string name="Italian_micro">"Italiană"</string>
+    <string name="Japanese_micro">"Japoneză"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingoniană"</string>
+    <string name="Klingon_pIqaD_micro">"Klingoniană pIqaD"</string>
+    <string name="Korean_micro">"Coreeană"</string>
+    <string name="Latvian_micro">"Letonă"</string>
+    <string name="Lithuanian_micro">"Lituaniană"</string>
+    <string name="Malay_micro">"Malaieză"</string>
+    <string name="Maltese_micro">"Malteză"</string>
+    <string name="Norwegian_micro">"Norvegiană"</string>
+    <string name="Persian_micro">"Persană"</string>
+    <string name="Polish_micro">"Poloneză"</string>
+    <string name="Portuguese_micro">"Portugheză"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro sono"</string>
+    <string name="Romanian_micro">"Română"</string>
+    <string name="Russian_micro">"Rusă"</string>
+    <string name="Serbian_Cyrillic_micro">"Sârbă-chirilică"</string>
+    <string name="Serbian_Latin_micro">"Sârbă-Latină"</string>
+    <string name="Slovak_micro">"Slovacă"</string>
+    <string name="Slovenian_micro">"Slovenă"</string>
+    <string name="Spanish_micro">"Spaniolă"</string>
+    <string name="Swedish_micro">"Suedeză"</string>
+    <string name="Thai_micro">"Thai"</string>
+    <string name="Turkish_micro">"Turcă"</string>
+    <string name="Ukrainian_micro">"Ucraineană"</string>
+    <string name="Urdu_micro">"Urdu"</string>
+    <string name="Vietnamese_micro">"Vietnameză"</string>
+    <string name="Welsh_micro">"Velşă"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>

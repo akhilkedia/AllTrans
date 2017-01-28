@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"Todotransporte"</string>
+    <string name="loading">"Beetiko'on tsoolol aplicaciones - Béet espere"</string>
+    <string name="clear_cache_error">"Biin ba'alo'. Je'el a despejar le caché traducción!"</string>
+    <string name="clear_cache_success">"Traducir le caché utia'al u táan u ka'anatako'ob ts'o'ok sido borrada!"</string>
+	<string name="how_to_use">"CÓMO UTILIZAR LE KA'ANATAKO'OB
+
+Le ka'anatako'ob k'a'abet utia'al inscribir ti' jump'éel clave ti' Microsoft wa Yandex traducir.
+Traducir Yandex soporta asab t'aano'ob, yaan jump'éel tuukula' registro jach asab ch'a'abil yéetel k'a'abet tarjeta p'aax MA'.
+Microsoft Translate ts'aik ti' ya'ala'al máaxo'ob máano'ob, ba'ale' k'a'abet jump'éel tarjeta p'aax utia'al u inscribir. (Ba'ale' Ma'chen, mixba'al yaan u beel cargado.).
+
+1 ti' le ju'unil tu'ux Configuración Global, permiten utilizar Yandex kúuchil Microsoft wa k'áato' utilizar Yandex, desactivar láak' utia'al u utilizar Microsoft.
+1 ti' le ju'unil tu'ux Configuración Global, pulse tecla suscripción Microsoft leti' Yandex wokol, le clave correspondiente ti' yaan (wilo'obe' le t'aano'ob u kaambal).
+2 elija le traducir ti' le t'aano' ka traducir le t'aano'.
+3 ti' le aplicaciones u béeytal a traducir, kaxtik le ka'anatako'ob u k'áato' traducir, u beetik clic ti' le casilla verificación yiknal leti'. Wa u casilla verificación ma' le visible, trate u girar le sutuchi'ilt'aan ti' le tu'ux u modo ma' chéen óolal.
+4 mak yéetel reinicie yo'olal u k'áato' traducido - k'a'ana'an u traducido!
+
+ADVERTENCIA: Jayp'éel aplicaciones k'a'ana'antal forzar cierre. Consulte le sección solución toop.
+
+CÓMO IN KAXTIK YANDEX TRADUCIR CLAVE SUSCRIPCIÓN
+
+1 xi'iken le ts'ono'oto' web ti' Yandex - https://tech.yandex.com/keys/get/?service=trnsl
+2 wa mina'an teech jump'éel yilaje', beetik clic ti' registro yéetel joronts'íibtaj utia'al ka'anal utia'al jump'éel túumben yilaje'.
+3 ts'o'okok joronts'íibtaj utia'al ka'anal, táan de acuerdo con le usuario yéetel u beetik clic ti' kéen p'áatak clave API.
+4 tech ts'o'ok k'a'am belal u clave! Leti' ba'al bey je'el bix trnsl.1.1.201701...
+
+CÓMO KÉEN P'ÁATAK MICROSOFT AZURE TRADUCIR CLAVE SUSCRIPCIÓN
+
+1 registrar a utia'al jump'éel yilaje' Microsoft Azure ti' http://azure.com
+
+2 ts'o'okok u yaantal jump'éel yilaje', máaxo'ob xoknáalo'obo' ti' le portal ku Azure tu http://portal.azure.com
+
+3 ku ts'áabal jump'éel suscripción API ti' le traductor Microsoft ti' u yilaje' ch'ooj.
+Elegir jump'éel suscripción bo'ol. Requerirá jump'éel tarjeta p'aax, ba'ale' tu Ma'chen, ma' u cargará.
+Seleccionar le + túumben opción.
+Seleccione le tsoolol áantajo'ob na'at.
+Seleccione yéetel cognitivos ti' le API.
+Seleccione le opción bin yano'ob API.
+Seleccione analte'o' traducción
+Ti' le sección nivel u tojol, seleccione le nivel libre (F0).
+Llene u yaalab le formulario yéetel pulse le botón crear.
+
+4 recuperar u clave autenticación.
+Bin tu láakal le nu'ukulo'ob ka seleccione u API le traductor Microsoft tech suscrito ti'.
+Bin u opción claves yéetel copiar le clave suscripción utia'al tsáabaltio'ob áantaj le mayaj.
+Le clave suscripción le ba'al bey 321dcba...
+
+SOLUCIÓN TOOP
+
+1 wa yo'olal ma' u táan traduciendo, verifique u clave suscripción Microsoft leti' Yandex Jach ma'alob.
+2 le ka'anatako'ob traducida muuk' muuts' leti' consigue pegado te' beetiko'on le yáax ka'atéen ka' u traducir, u mentik clic yo'olal ti' aplicaciones utia'al u traducir u ju'unil tu'ux ka ti' uláak' programación Introduzca retardo bey ma' traducir 2000.
+3 wa meyajtiko'ob le ka'anatako'ob traducida ti' funcionan ma'alob, ba'ale' bejla'e' ku atascan ti' le Chúunul, beetik clic yo'olal ti' aplicaciones utia'al u traducir u ju'unil tu'ux ka beetik clic ti' beetik clic ti' Clear Cache u traducción.
+4 wa ma' u táan traduciendo Jayp'éel pak'chaje' le ka'anatako'ob, beetik clic yo'olal ti' aplicaciones utia'al u traducir u ju'unil tu'ux ka activar le modo agresivo.
+5 wa le ka'anatako'ob láayli' fuerza muuts', desactivar u traducción le ka'anatako'ob ka contactar tin yéetel ti' le suumo' bix ti' XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Traducir ti' je'el ba'ax kúuchil"</string>
+    <string name="apps_to_translate">"Aplicaciones utia'al u traducir"</string>
+    <string name="global_settings">"Configuración global"</string>
+    <string name="instructions">"T'aano'ob"</string>
+    <string name="pref_cat_translate_settings">"Traducir u configuración u"</string>
+    <string name="pref_cat_parts_of_app">"Pak'chaje' ti' le ka'anatako'ob utia'al traducir"</string>
+    <string name="pref_cat_other_settings">"La ajustes"</string>
+    <string name="master_on_off">"Master On leti' Off"</string>
+    <string name="master_on_off_summary">"Desactivar utia'al u desactivar completamente le xook"</string>
+    <string name="master_on_off_summary_off">"Xook desactivado, ma' u traducirá aplicaciones. Vuelta in chuun usando kiis - translate!"</string>
+    <string name="master_on_off_summary_on">"Xook u t'ab, ku traducirán le aplicaciones. Desactivar utia'al u desactivar completamente le xook."</string>
+    <string name="enable_yandex">"Búukinta'al Yandex kúuchil Microsoft"</string>
+    <string name="enable_yandex_summary">"Encienda utilizar traducción Yandex kúuchil Microsoft"</string>
+    <string name="enable_yandex_summary_off">"Utilizando traducción Azure u Microsoft. Encenderá utia'al u utilizar le traducción Yandex."</string>
+    <string name="enable_yandex_summary_on">"Utilizando traducción Yandex. Apague utia'al u utilizar le traducción Azure ti' Microsoft."</string>
+    <string name="subKey">"Microsoft leti' clave suscripción Yandex"</string>
+    <string name="subKey_micro">"Clave suscripción Microsoft"</string>
+    <string name="subKey_yandex">"Clave suscripción Yandex"</string>
+    <string name="subKey_summary">"Introduzca le clave suscripción utia'al u Microsoft Azure wa API traducción Yandex, ba'ax ku activa tumen encima u"</string>
+    <string name="subKey_defaultValue">"Escriba u Microsoft wa clave suscripción Yandex"</string>
+    <string name="transFrom">"Traducir ti' le lenguaje"</string>
+    <string name="transFrom_summary">"T'aano' le ka'anatako'ob leti' originalmente en."</string>
+    <string name="transTo">"Traducir le lenguaje"</string>
+    <string name="transTo_summary">"T'aano' desee ti' le ka'anatako'ob utia'al traducir ti'."</string>
+    <string name="setText">"Traducir analte'o' Normal"</string>
+    <string name="setText_summary_off">"Ma' traducción analte'o' ts'íib usando le analte'o' múul. Activar utia'al u activar."</string>
+    <string name="setText_summary_on">"Traducción analte'o' ts'íib usando analte'o' Set ti'-máabeno' ti' seguridad. Desactivar utia'al u desactivar."</string>
+    <string name="setHint">"Traducir analte'o' consejos (sugerencias u boonil gris) tu cuadros analte'o'"</string>
+    <string name="setHint_summary_off">"Ma' traducir analte'o' utilizando u sugerencia u establecer. Activar utia'al u activar."</string>
+    <string name="setHint_summary_on">"Traducción analte'o' ts'íib usando Set pista - máabeno' ti' seguridad. Desactivar utia'al u desactivar."</string>
+    <string name="webView">"Traducir analte'o' ti' páginas Web ichil aplicaciones"</string>
+    <string name="webView_summary_off">"Ma' traducir analte'o' ti' WebViews. Activar utia'al u activar."</string>
+    <string name="webView_summary_on">"Traducir analte'o' ti' WebView ti'-máabeno' ti' seguridad, u páajtal u ma' funcione Mantats'. Desactivar utia'al u desactivar."</string>
+    <string name="drawText">"Modo agresivo"</string>
+    <string name="drawText_summary_off">"Ma' agresivamente traducir analte'o' ti' drawText. Takik ka tuláakal le anterior falla. Activar utia'al u activar."</string>
+    <string name="drawText_summary_on">"Agresivamente, traducir analte'o' ti' drawText - Experimental, je'el ma' meyaj Mantats'. Desactivar utia'al u desactivar."</string>
+    <string name="caching">"Almacenamiento tu caché búukinta'al"</string>
+    <string name="caching_summary_off">"Ma' ooks le traducciones paach internet ichil, ts'áaik tumen resultado asab lento traducir yéetel mayores datos - ba'ale' je'el meyaj utia'al u asab aplicaciones. Tak ooks le traducciones."</string>
+    <string name="caching_summary_on">"Ahorro traducciones offline yo'osal traducir yéetel utilizar datos. Desactivar utia'al u desactivar wa u ka'anatako'ob ma' u Revolución."</string>
+    <string name="delay">"Ku xaantal bey ma' traducir"</string>
+    <string name="delay_summary">"Configurar k'iin ti' milisegundos pa'ta'al bey ma' traducir. Ku predeterminado le 0, ba'ax ku je'ets'el ti' 1000-5000 wa u lúubuk le ka'anatako'ob traducida."</string>
+    <string name="overRide_global">"Invalidar le configuración Global"</string>
+    <string name="overRide_global_summary_off">"Utilizando le configuración Global ti' le giro le bobina ti' utia'al k'ex le configuración chéen utia'al le ka'anatako'ob."</string>
+    <string name="overRide_global_summary_on">"Parámetros locales ti' le giro u bobina u utilizar le configuración Global."</string>
+    <string name="clear_cache">"Beetik clic utia'al u desactivar le caché traducción"</string>
+    <string name="clear_cache_summary">"Beetik clic ka'anal utia'al borrar u app u traducir caché. Utilizar ka' k'ex u t'aano'ob, wa wa yo'olal ma' u Revolución."</string>
+    <string name="Afrikaans_yandex">"Afrikaans"</string>
+    <string name="Amharic_yandex">"Amárico"</string>
+    <string name="Arabic_yandex">"Árabe"</string>
+    <string name="Azerbaijani_yandex">"Azerbaiyán"</string>
+    <string name="Bashkir_yandex">"Baskir"</string>
+    <string name="Belarusian_yandex">"Bielorruso"</string>
+    <string name="Bulgarian_yandex">"Búlgaro"</string>
+    <string name="Bengali_yandex">"Bengalí"</string>
+    <string name="Bosnian_yandex">"Bosnio"</string>
+    <string name="Catalan_yandex">"Xokiko'ob catalan"</string>
+    <string name="Cebuano_yandex">"Cebuano"</string>
+    <string name="Czech_yandex">"Checo"</string>
+    <string name="Welsh_yandex">"Galés"</string>
+    <string name="Danish_yandex">"Danés"</string>
+    <string name="German_yandex">"Alemán"</string>
+    <string name="Greek_yandex">"Griego"</string>
+    <string name="English_yandex">"Ingles"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Káastelan"</string>
+    <string name="Estonian_yandex">"Estonio"</string>
+    <string name="Basque_yandex">"Vasco"</string>
+    <string name="Persian_yandex">"Persa"</string>
+    <string name="Finnish_yandex">"Finlandés"</string>
+    <string name="French_yandex">"Frances"</string>
+    <string name="Irish_yandex">"Irlandés"</string>
+    <string name="Scottish_Gaelic_yandex">"Gaélico escocés"</string>
+    <string name="Galician_yandex">"Gallego"</string>
+    <string name="Gujarati_yandex">"Gujarati"</string>
+    <string name="Hebrew_yandex">"Hebreo"</string>
+    <string name="Hindi_yandex">"Hindi"</string>
+    <string name="Croatian_yandex">"Croata"</string>
+    <string name="Haitian_yandex">"Haití"</string>
+    <string name="Hungarian_yandex">"Húngaro"</string>
+    <string name="Armenian_yandex">"Armenio"</string>
+    <string name="Indonesian_yandex">"Indonesio"</string>
+    <string name="Icelandic_yandex">"Islandés"</string>
+    <string name="Italian_yandex">"Italiano"</string>
+    <string name="Japanese_yandex">"Japones"</string>
+    <string name="Javanese_yandex">"Javanés"</string>
+    <string name="Georgian_yandex">"Georgiano"</string>
+    <string name="Kazakh_yandex">"Kazajo"</string>
+    <string name="Kannada_yandex">"Kannada"</string>
+    <string name="Korean_yandex">"Coreano"</string>
+    <string name="Kyrgyz_yandex">"Kirguizo"</string>
+    <string name="Latin_yandex">"Latina"</string>
+    <string name="Luxembourgish_yandex">"Luxemburgués"</string>
+    <string name="Lithuanian_yandex">"Lituano"</string>
+    <string name="Latvian_yandex">"Letón"</string>
+    <string name="Malagasy_yandex">"Malgache"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maorí"</string>
+    <string name="Macedonian_yandex">"Macedonio"</string>
+    <string name="Malayalam_yandex">"Malayalam"</string>
+    <string name="Mongolian_yandex">"Mongol"</string>
+    <string name="Marathi_yandex">"Marathi"</string>
+    <string name="Hill_Mari_yandex">"Mari colina"</string>
+    <string name="Malay_yandex">"Malayo"</string>
+    <string name="Maltese_yandex">"Maltés"</string>
+    <string name="Nepali_yandex">"Nepali"</string>
+    <string name="Dutch_yandex">"Holandés"</string>
+    <string name="Norwegian_yandex">"Noruego"</string>
+    <string name="Punjabi_yandex">"Punjabí"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Polaco"</string>
+    <string name="Portuguese_yandex">"Portugués"</string>
+    <string name="Romanian_yandex">"Rumano"</string>
+    <string name="Russian_yandex">"Ruso"</string>
+    <string name="Sinhalese_yandex">"Cingalés"</string>
+    <string name="Slovak_yandex">"Eslovaco"</string>
+    <string name="Slovenian_yandex">"Esloveno"</string>
+    <string name="Albanian_yandex">"Albanés"</string>
+    <string name="Serbian_yandex">"Serbio"</string>
+    <string name="Sundanese_yandex">"Sundanés"</string>
+    <string name="Swedish_yandex">"Sueco"</string>
+    <string name="Swahili_yandex">"Swahili"</string>
+    <string name="Tamil_yandex">"Tamil"</string>
+    <string name="Telugu_yandex">"Telugu"</string>
+    <string name="Tajik_yandex">"Tayikistán"</string>
+    <string name="Thai_yandex">"Tailandés"</string>
+    <string name="Tagalog_yandex">"Chino Simplificado"</string>
+    <string name="Turkish_yandex">"Turco"</string>
+    <string name="Tatar_yandex">"Tártaro"</string>
+    <string name="Udmurt_yandex">"Udmurto"</string>
+    <string name="Ukrainian_yandex">"Ucraniano"</string>
+    <string name="Urdu_yandex">"Urdu"</string>
+    <string name="Uzbek_yandex">"Uzbek"</string>
+    <string name="Vietnamese_yandex">"Vietnamita"</string>
+    <string name="Xhosa_yandex">"Xosa"</string>
+    <string name="Yiddish_yandex">"Yiddish"</string>
+    <string name="Chinese_yandex">"Chino"</string>
+    <string name="Afrikaans_micro">"Afrikaans"</string>
+    <string name="Arabic_micro">"Árabe"</string>
+    <string name="Bosnian_Latin_micro">"Latina u Bosnio"</string>
+    <string name="Bulgarian_micro">"Búlgaro"</string>
+    <string name="Catalan_micro">"Xokiko'ob catalan"</string>
+    <string name="Chinese_Simplified_micro">"Chino simplificado"</string>
+    <string name="Chinese_Traditional_micro">"Chino xíiw"</string>
+    <string name="Croatian_micro">"Croata"</string>
+    <string name="Czech_micro">"Checo"</string>
+    <string name="Danish_micro">"Danés"</string>
+    <string name="Dutch_micro">"Holandés"</string>
+    <string name="English_micro">"Ingles"</string>
+    <string name="Estonian_micro">"Estonio"</string>
+    <string name="Finnish_micro">"Finlandés"</string>
+    <string name="French_micro">"Frances"</string>
+    <string name="German_micro">"Alemán"</string>
+    <string name="Greek_micro">"Griego"</string>
+    <string name="Haitian_Creole_micro">"Criollo Haitiano"</string>
+    <string name="Hebrew_micro">"Hebreo"</string>
+    <string name="Hindi_micro">"Hindi"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Húngaro"</string>
+    <string name="Indonesian_micro">"Indonesio"</string>
+    <string name="Italian_micro">"Italiano"</string>
+    <string name="Japanese_micro">"Japones"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Coreano"</string>
+    <string name="Latvian_micro">"Letón"</string>
+    <string name="Lithuanian_micro">"Lituano"</string>
+    <string name="Malay_micro">"Malayo"</string>
+    <string name="Maltese_micro">"Maltés"</string>
+    <string name="Norwegian_micro">"Noruego"</string>
+    <string name="Persian_micro">"Persa"</string>
+    <string name="Polish_micro">"Polaco"</string>
+    <string name="Portuguese_micro">"Portugués"</string>
+    <string name="Queretaro_Otomi_micro">"Otomí u Querétaro"</string>
+    <string name="Romanian_micro">"Rumano"</string>
+    <string name="Russian_micro">"Ruso"</string>
+    <string name="Serbian_Cyrillic_micro">"Cirílico servio"</string>
+    <string name="Serbian_Latin_micro">"Serbio latino"</string>
+    <string name="Slovak_micro">"Eslovaco"</string>
+    <string name="Slovenian_micro">"Esloveno"</string>
+    <string name="Spanish_micro">"Káastelan"</string>
+    <string name="Swedish_micro">"Sueco"</string>
+    <string name="Thai_micro">"Tailandés"</string>
+    <string name="Turkish_micro">"Turco"</string>
+    <string name="Ukrainian_micro">"Ucraniano"</string>
+    <string name="Urdu_micro">"Urdu"</string>
+    <string name="Vietnamese_micro">"Vietnamita"</string>
+    <string name="Welsh_micro">"Galés"</string>
+    <string name="Yucatec_Maya_micro">"Maaya yucateco"</string>
+</resources>

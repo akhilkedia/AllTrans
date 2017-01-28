@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"Faatomoraa i te tabula o te mau faaohiparaa, e tiai rii"</string>
+    <string name="clear_cache_error">"Tahi mau hape. E nehenehe e ore e papu i cache Iritiraa!"</string>
+    <string name="clear_cache_success">"A iriti i Cache no te mea ua tumahia teie faanahoraa!"</string>
+	<string name="how_to_use">"NAHEA I TE FAAOHIPA I TE NO TE FAAOHIPARAA
+
+E titau teie faaohiparaa outou ia no te taviri i te Microsoft e aore ra, i te Yandex Translate.
+Yandex Translate te turu nei i te mau reo e rahi atu a, i te mea ohie ae signup faanahoraa, e e titau te TARETA aita.
+Microsoft Translate e horoa maitai ae o te hopearaa, tera ra, e titau te hoe tareta i te tapao. (Tera ra, eiaha e haapeapea, aore e mea e ia faaue ia.)
+
+1. i roto i te mau ohipa rahi Options, e nehenehe te Yandex a faaohipa i te, eiaha ra te Microsoft mai te mea e hinaaro outou i te faaohipa i te Yandex, ia tupohe atu no te faaohipa i te Microsoft.
+1. i roto i te mau ohipa rahi Options, tairi i te tomo i roto i Microsoft/Yandex niuniu taviri, te faaararaa i te mau taviri tano (a hio i te mau aratairaa i raro nei).
+2. a maiti te iriti mai roto mai i te reo e te iritiraa i te reo.
+3. i roto i te mau faanahoraa no te Translate Options, a ite i te faanahoraa ta outou e hinaaro i te iriti i te, a pata i te checkbox i pihai iho i te reira. Mai te mea e, aita e itehia te checkbox, a tamata i te rotating i te sideways i ta outou niuniu i roto i te huru o te hohoa o te fenua.
+4. a tapiri e te restart i te faanahoraa ta outou e iritihia - e e iritihia te reira!
+
+Faaararaa, i tahi mau faanahoraa ia faahepo i te piri. A hio i te tuhaa Troubleshooting.
+
+NAHEA IA YANDEX IRITI NIUNIU TAVIRI
+
+1. haere i te tahua itenati i te Yandex - https://tech.yandex.com/keys/get/?service=trnsl
+2. mai te mea e aita ta outou e dua na itukutuku, a pata i a tapao ia outou e i te tapao i nia i te hoe aamu i te api.
+3. i muri ae i te tuurimaraa i, te farii nei i te faaauraa a te taata e faaohipa e a pata i nia i te API taviri.
+4. manuia maitai ta outou i farii i te mau taviri ta outou! O te hoe mea mai te trnsl.1.1.201701...
+
+NAHEA IA MICROSOFT AZURE IRITI NIUNIU TAVIRI
+
+1. haere mai no te hoe aamu Microsoft Azure i te http://azure.com
+
+2. i ta outou i te hoe aamu, a tapao i roto i te te portal Azure i te http://portal.azure.com
+
+3. tuu i te hoe niuniu Microsoft taata iriti parau API i roto i to outou aamu Azure.
+A maiti i te hoe niuniu pay-as-you-go. E titau i te hoe tareta, tera ra, eiaha e haapeapea, aore e mea e faaueraa ia.
+A maiti i te + api ravea.
+A maiti i te maramarama no roto mai i te tapura no te mau pureraa.
+A maiti i te APIs i te Cognitive a te Ekalesia.
+A maiti i te mau ravea API i te huru.
+A maiti i te mau parau Iritiraa
+I roto i te tuhaa no te faatomo i te mga, a maiti i te tiama mga (F0)
+Faai i te toea o te api parau, e e haere tiatu i te pitopito Create.
+
+4. e hio i to outou aita i taviri.
+Haere i te mau ravea atoa e e a maiti i te API a iriti parau Microsoft outou e subscribed i te.
+Haere i nia i te ravea i te mau taviri e te nenei i ta outou niuniu taviri no te farii i te taviniraa.
+Te taviri no te niuniu i te hoe mea mai te 321dcba...
+
+TE
+
+1. mai te mea e aita e faanahoraa, o te iritihia, a hio i to outou Microsoft/Yandex niuniu te taviri, o te tia.
+2. mai te mea e te puai hope/e iritihia i roto i te faanahoraa, e ua mau i nia i te faatomoraa i te taime matamua i muri ae i te outou e haamata i te iriti, a pata i nia i te faanahoraa i roto i te mau faanahoraa no te iriti i te Options, e i te i roto i te tahi atu mau ohipa roa i roto i te tiai na mua ae i te iritiraa i te matahiti 2000.
+3. mai te mea e faaohipa i te faanahoraa i te iritihia i te rave i te ohipa maitai, tera ra, i teie nei mau i nia i te haamataraa, a pata i nia i te faanahoraa i roto i te mau faanahoraa no te iriti i te Options e a pata i nia i te a pata i nia i te mea maramarama iritiraa Cache.
+4. mai te mea te tahi mau tuhaa no te faanahoraa aita te reira i te iritihia, a pata i nia i te faanahoraa i roto i te mau faanahoraa no te iriti i te Options, e faatia ia i te huru ino.
+5. mai te mea e faaea noa ra te faanahoraa puai hope, tupohe i te iritiraa i teie faanahoraa e te niuniu mai iau i nia i te taura no te tauturu i nia i te XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+"</string>
+    <string name="translate_anywhere">"Iriti i te mau vahi atoa"</string>
+    <string name="apps_to_translate">"Te mau faanahoraa no te iriti i te"</string>
+    <string name="global_settings">"I te rururaa rahi"</string>
+    <string name="instructions">"Te mau aratairaa"</string>
+    <string name="pref_cat_translate_settings">"Iriti i te mau ohipa"</string>
+    <string name="pref_cat_parts_of_app">"Te mau tuhaa o te faanahoraa no te iriti i te"</string>
+    <string name="pref_cat_other_settings">"Tahi atu mau ohipa"</string>
+    <string name="master_on_off">"Fatu i nia i te/i"</string>
+    <string name="master_on_off_summary">"A tupohe i te tupohe roa i teie module"</string>
+    <string name="master_on_off_summary_off">"Module e ua tupohe, e aita e mau faanahoraa ia iritihia. Fariu atu i te haamataraa i te faaohipa i auto-iriti!"</string>
+    <string name="master_on_off_summary_on">"Module o te fariu atu i nia i te, e iritihia te mau faanahoraa tei maitihia. A tupohe i te tupohe roa i teie module."</string>
+    <string name="enable_yandex">"A faaohipa i te Yandex, eiaha ra te Microsoft"</string>
+    <string name="enable_yandex_summary">"E fariu i nia i te no te faaohipa i te iritiraa i te Yandex, eiaha ra te Microsoft"</string>
+    <string name="enable_yandex_summary_off">"A faaohipa i teie taime i te Microsoft Azure iritiraa. E fariu i nia i te no te faaohipa i te iritiraa o te Yandex."</string>
+    <string name="enable_yandex_summary_on">"I teie taime ma te faaohipa i te iritiraa Yandex. A tupohe i te faaohipa i te Microsoft Azure iritiraa."</string>
+    <string name="subKey">"Microsoft / Yandex niuniu taviri"</string>
+    <string name="subKey_micro">"Te taviri Microsoft niuniu"</string>
+    <string name="subKey_yandex">"Yandex niuniu taviri"</string>
+    <string name="subKey_summary">"Tomo i roto i te niuniu taviri Microsoft Azure e aore ra, i te Yandex iritiraa API, e nehenehe ia au iana i"</string>
+    <string name="subKey_defaultValue">"Tomo i roto i to outou Microsoft e aore ra, i te hoe taviri no te niuniu Yandex"</string>
+    <string name="transFrom">"Iriti mai roto mai i te reo"</string>
+    <string name="transFrom_summary">"Tei o te reo te faanahoraa i roto i te."</string>
+    <string name="transTo">"Iritiraa i te reo"</string>
+    <string name="transTo_summary">"Reo i te mea e, e hinaaro outou i te faanahoraa no te e iriti te reira i roto i te."</string>
+    <string name="setText">"Iriti i te mau parau papai"</string>
+    <string name="setText_summary_off">"Aita te iritiraa papaihia te mau parau ma te faaohipa i te faaite i te parau papai. E fariu i nia i te no te faatia."</string>
+    <string name="setText_summary_on">"No te iriti i te mau parau i papaihia i te faaohipa i te faaite i te parau papai - maitai. A tupohe i te tupohe."</string>
+    <string name="setHint">"Iriti i te mau parau tautururaa (hinahina-Coloured i te mau manao tauturu) i roto i te mau afata no te mau parau papai"</string>
+    <string name="setHint_summary_off">"Aita te iritiraa papaihia te mau parau ma te faaohipa i te faaite i te manao tauturu. E fariu i nia i te no te faatia."</string>
+    <string name="setHint_summary_on">"No te iriti i te mau parau i papaihia i te faaohipa i te haamau i te tauturu - maitai. A tupohe i te tupohe."</string>
+    <string name="webView">"Iriti i te mau parau papai i roto i te itenati i te mau api i roto i te mau faanahoraa"</string>
+    <string name="webView_summary_off">"Aita te iritiraa i roto i te WebViews te parau papai. E fariu i nia i te no te faatia."</string>
+    <string name="webView_summary_on">"Te iritiraa i te mau parau papai i roto i te WebView - maitai, aita ia e tere tamau noa. A tupohe i te tupohe."</string>
+    <string name="drawText">"Huru ino"</string>
+    <string name="drawText_summary_off">"Aita te aggressively iritiraa i te mau parau papai i roto i te drawText. A faaohipa ia atoa i mou. E fariu i nia i te no te faatia."</string>
+    <string name="drawText_summary_on">"Iritiraa aggressively i te papairaa i roto i te drawText - Experimental, e aita te ohipa tamau. A tupohe i te tupohe."</string>
+    <string name="caching">"A faaohipa i te Caching"</string>
+    <string name="caching_summary_off">"Aita Faaora iritiraa offline, noaa i roto i te slower iriti i te e te teitei ae o te parau, tera ra, e ohipa ia no te hau atu i te mau faanahoraa. A fariu i nia i te Faaora iritiraa."</string>
+    <string name="caching_summary_on">"Faaoraraa i te iritiraa i te offline i te mea vitiviti i te iritiraa e i te faaohipa i te mau parau. A tupohe i te tupohe i te mau mai te mea e aita e haamata i ta outou faanahoraa."</string>
+    <string name="delay">"Tiai na mua ae i te iritiraa"</string>
+    <string name="delay_summary">"I te taime i roto i te milliseconds i te tiaturi i na mua ae i te iritiraa. E o te parau o te peu maitai i te 0, i te hora 10: 00 – 5000 mai te mea e o te tairi i te faanahoraa i te iritihia."</string>
+    <string name="overRide_global">"OverRide i te mau ohipa i te rahi"</string>
+    <string name="overRide_global_summary_off">"Ma te faaohipa i te mau ohipa rahi no teie app. i te mau taime i nia i te no te taui i te vahi no teie faanahoraa."</string>
+    <string name="overRide_global_summary_on">"Ma te faaohipa i te mau ohipa no teie app. i te taime i i te faaohipa i te mau ohipa rahi."</string>
+    <string name="clear_cache">"A pata i te haapapu i te iritiraa Cache"</string>
+    <string name="clear_cache_summary">"A pata i nia i te haamaramarama i te faanahoraa o te iriti i te cache. A faaohipa i te reira i muri ae i te tauiraa i te/mai roto mai i te mau reo, e aore ra, mai te mea e aita te haamata."</string>
+    <string name="Afrikaans_yandex">"Afrikaans"</string>
+    <string name="Amharic_yandex">"Amharic"</string>
+    <string name="Arabic_yandex">"Arapia"</string>
+    <string name="Azerbaijani_yandex">"Azerbaijani"</string>
+    <string name="Bashkir_yandex">"Bashkir"</string>
+    <string name="Belarusian_yandex">"Belarusian"</string>
+    <string name="Bulgarian_yandex">"Bulgarian"</string>
+    <string name="Bengali_yandex">"Bengali"</string>
+    <string name="Bosnian_yandex">"Bosnia"</string>
+    <string name="Catalan_yandex">"Catalan"</string>
+    <string name="Cebuano_yandex">"Cebuano"</string>
+    <string name="Czech_yandex">"Czech"</string>
+    <string name="Welsh_yandex">"Welsh"</string>
+    <string name="Danish_yandex">"No Danemaka"</string>
+    <string name="German_yandex">"Heremani"</string>
+    <string name="Greek_yandex">"Heleni"</string>
+    <string name="English_yandex">"Reo peretane"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"Reo paniora"</string>
+    <string name="Estonian_yandex">"Estonian"</string>
+    <string name="Basque_yandex">"Basque"</string>
+    <string name="Persian_yandex">"No Peresia o tei"</string>
+    <string name="Finnish_yandex">"Finelani"</string>
+    <string name="French_yandex">"Reo farani"</string>
+    <string name="Irish_yandex">"E paraparau"</string>
+    <string name="Scottish_Gaelic_yandex">"Scottish Gaelic"</string>
+    <string name="Galician_yandex">"Galician"</string>
+    <string name="Gujarati_yandex">"Gujarati"</string>
+    <string name="Hebrew_yandex">"Reo Hebera"</string>
+    <string name="Hindi_yandex">"Hindi"</string>
+    <string name="Croatian_yandex">"Croatian"</string>
+    <string name="Haitian_yandex">"Haiti"</string>
+    <string name="Hungarian_yandex">"Hungarian"</string>
+    <string name="Armenian_yandex">"Aremenia"</string>
+    <string name="Indonesian_yandex">"Indonesian"</string>
+    <string name="Icelandic_yandex">"Fenua Islande"</string>
+    <string name="Italian_yandex">"Italia"</string>
+    <string name="Japanese_yandex">"Tapone"</string>
+    <string name="Javanese_yandex">"Javanese"</string>
+    <string name="Georgian_yandex">"Georgian"</string>
+    <string name="Kazakh_yandex">"Kazakh"</string>
+    <string name="Kannada_yandex">"Kannada"</string>
+    <string name="Korean_yandex">"Korea"</string>
+    <string name="Kyrgyz_yandex">"Kyrgyz"</string>
+    <string name="Latin_yandex">"Amerika"</string>
+    <string name="Luxembourgish_yandex">"Luxembourgish"</string>
+    <string name="Lithuanian_yandex">"Lithuanian"</string>
+    <string name="Latvian_yandex">"Reo Latvian"</string>
+    <string name="Malagasy_yandex">"Malagasy"</string>
+    <string name="Mari_yandex">"Mari"</string>
+    <string name="Maori_yandex">"Maori"</string>
+    <string name="Macedonian_yandex">"Macedonia"</string>
+    <string name="Malayalam_yandex">"Malayalam"</string>
+    <string name="Mongolian_yandex">"Mongolian"</string>
+    <string name="Marathi_yandex">"Marathi"</string>
+    <string name="Hill_Mari_yandex">"Aivi Mari"</string>
+    <string name="Malay_yandex">"Malay"</string>
+    <string name="Maltese_yandex">"Maltese"</string>
+    <string name="Nepali_yandex">"Nepali"</string>
+    <string name="Dutch_yandex">"Holane"</string>
+    <string name="Norwegian_yandex">"Tuuraa"</string>
+    <string name="Punjabi_yandex">"Punjabi"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"Polonia"</string>
+    <string name="Portuguese_yandex">"Reo potiti"</string>
+    <string name="Romanian_yandex">"Romanian"</string>
+    <string name="Russian_yandex">"Rusia"</string>
+    <string name="Sinhalese_yandex">"Sinhalese"</string>
+    <string name="Slovak_yandex">"Slovak"</string>
+    <string name="Slovenian_yandex">"Reo Slovenia"</string>
+    <string name="Albanian_yandex">"Albanian"</string>
+    <string name="Serbian_yandex">"Serbian"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"Suede"</string>
+    <string name="Swahili_yandex">"Swahili"</string>
+    <string name="Tamil_yandex">"Tamil"</string>
+    <string name="Telugu_yandex">"Telugu"</string>
+    <string name="Tajik_yandex">"Tajik"</string>
+    <string name="Thai_yandex">"Thai"</string>
+    <string name="Tagalog_yandex">"Tagalog"</string>
+    <string name="Turkish_yandex">"Turekia"</string>
+    <string name="Tatar_yandex">"Tatar"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"Ukrainia."</string>
+    <string name="Urdu_yandex">"Urdu"</string>
+    <string name="Uzbek_yandex">"Uzbek"</string>
+    <string name="Vietnamese_yandex">"Anami"</string>
+    <string name="Xhosa_yandex">"Xhosa"</string>
+    <string name="Yiddish_yandex">"Yiddish"</string>
+    <string name="Chinese_yandex">"Tinito"</string>
+    <string name="Afrikaans_micro">"Afrikaans"</string>
+    <string name="Arabic_micro">"Arapia"</string>
+    <string name="Bosnian_Latin_micro">"Bosnia Latino"</string>
+    <string name="Bulgarian_micro">"Bulgarian"</string>
+    <string name="Catalan_micro">"Catalan"</string>
+    <string name="Chinese_Simplified_micro">"Tinito faaohiehia"</string>
+    <string name="Chinese_Traditional_micro">"Tinito e te"</string>
+    <string name="Croatian_micro">"Croatian"</string>
+    <string name="Czech_micro">"Czech"</string>
+    <string name="Danish_micro">"No Danemaka"</string>
+    <string name="Dutch_micro">"Holane"</string>
+    <string name="English_micro">"Reo peretane"</string>
+    <string name="Estonian_micro">"Estonian"</string>
+    <string name="Finnish_micro">"Finelani"</string>
+    <string name="French_micro">"Reo farani"</string>
+    <string name="German_micro">"Heremani"</string>
+    <string name="Greek_micro">"Heleni"</string>
+    <string name="Haitian_Creole_micro">"Kereo no Haiti"</string>
+    <string name="Hebrew_micro">"Reo Hebera"</string>
+    <string name="Hindi_micro">"Hindi"</string>
+    <string name="Hmong_Daw_micro">"Hmong Daw"</string>
+    <string name="Hungarian_micro">"Hungarian"</string>
+    <string name="Indonesian_micro">"Indonesian"</string>
+    <string name="Italian_micro">"Italia"</string>
+    <string name="Japanese_micro">"Tapone"</string>
+    <string name="Kiswahili_micro">"Kiswahili"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"Korea"</string>
+    <string name="Latvian_micro">"Reo Latvian"</string>
+    <string name="Lithuanian_micro">"Lithuanian"</string>
+    <string name="Malay_micro">"Malay"</string>
+    <string name="Maltese_micro">"Maltese"</string>
+    <string name="Norwegian_micro">"Tuuraa"</string>
+    <string name="Persian_micro">"No Peresia o tei"</string>
+    <string name="Polish_micro">"Polonia"</string>
+    <string name="Portuguese_micro">"Reo potiti"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"Romanian"</string>
+    <string name="Russian_micro">"Rusia"</string>
+    <string name="Serbian_Cyrillic_micro">"Serbian Cyrillic"</string>
+    <string name="Serbian_Latin_micro">"Serbian Latino"</string>
+    <string name="Slovak_micro">"Slovak"</string>
+    <string name="Slovenian_micro">"Reo Slovenia"</string>
+    <string name="Spanish_micro">"Reo paniora"</string>
+    <string name="Swedish_micro">"Suede"</string>
+    <string name="Thai_micro">"Thai"</string>
+    <string name="Turkish_micro">"Turekia"</string>
+    <string name="Ukrainian_micro">"Ukrainia."</string>
+    <string name="Urdu_micro">"Urdu"</string>
+    <string name="Vietnamese_micro">"Anami"</string>
+    <string name="Welsh_micro">"Welsh"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec Maya"</string>
+</resources>
