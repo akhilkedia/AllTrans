@@ -28,8 +28,8 @@ android {
         minSdkVersion 21
         //noinspection OldTargetApi
         targetSdkVersion 23
-        versionCode 4
-        versionName "1.1.1"
+        versionCode 5
+        versionName "1.1.2"
     }
     buildTypes {
         release {
@@ -49,12 +49,18 @@ repositories {
 
 dependencies {
     provided 'de.robv.android.xposed:api:81:sources'
-    compile 'com.android.support:appcompat-v7:25.1.0'
+    provided 'de.robv.android.xposed:api:81'
+
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
+
+    compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.android.support:design:25.1.0'
     compile 'com.android.support:preference-v14:25.1.0'
     compile 'com.android.support:support-v4:25.1.0'
     compile 'com.android.support:percent:25.1.0'
-    provided 'de.robv.android.xposed:api:81'
+
+    compile 'com.google.firebase:firebase-core:10.0.1'
+    compile 'com.google.firebase:firebase-crash:10.0.1'
 }
+apply plugin: 'com.google.gms.google-services'

@@ -25,12 +25,15 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
     //public static String TAG = "alltrans";
-
+    private FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         setContentView(R.layout.activity_main);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.toReplace, new AppListFragment())

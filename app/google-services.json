@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "825103961890",
+    "firebase_url": "https://alltrans-b644e.firebaseio.com",
+    "project_id": "alltrans-b644e",
+    "storage_bucket": "alltrans-b644e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825103961890:android:77b0d4ba94b4ecff",
+        "android_client_info": {
+          "package_name": "akhil.alltrans"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825103961890-adsb84b1daipftv48jliru40id1rshgd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "akhil.alltrans",
+            "certificate_hash": "F098530C99B05AF64CF145C91F9A5A721CBFCBB6"
+          }
+        },
+        {
+          "client_id": "825103961890-90ce9gmd85r473jcm92sn8ie54kj0ddt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-m2u9AGgIEatgwyyFrL9DFF-QE9z-NLE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825103961890-90ce9gmd85r473jcm92sn8ie54kj0ddt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

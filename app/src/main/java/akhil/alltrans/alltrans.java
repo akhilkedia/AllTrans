@@ -101,7 +101,7 @@ public class alltrans implements IXposedHookLoadPackage {
             findAndHookMethod(WebView.class, "postUrl", String.class, (new byte[1]).getClass(), new XC_MethodHook() {
                 @Override
                 protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-                    Log.i("AllTrans", "AllTrans: we are in loadurl!");
+                    Log.i("AllTrans", "AllTrans: we are in posturl!");
                 }
             });
             findAndHookMethod(WebView.class, "loadData", String.class, String.class, String.class, new XC_MethodHook() {

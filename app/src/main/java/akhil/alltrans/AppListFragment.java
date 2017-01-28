@@ -43,9 +43,12 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -56,6 +59,7 @@ public class AppListFragment extends Fragment {
     private static SharedPreferences settings;
     private FragmentActivity context;
     private ListView listview;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
 
     public AppListFragment() {
@@ -67,30 +71,49 @@ public class AppListFragment extends Fragment {
         return inflater.inflate(R.layout.apps_list, container, false);
     }
 
+    public void fireBaseAnalytics() {
+        mFirebaseAnalytics.setUserProperty("Enabled", String.valueOf(settings.getBoolean("Enabled", false)));
+        mFirebaseAnalytics.setUserProperty("EnableYandex", String.valueOf(settings.getBoolean("EnableYandex", false)));
+        mFirebaseAnalytics.setUserProperty("TranslateFromLanguage", settings.getString("TranslateFromLanguage", "ko"));
+        mFirebaseAnalytics.setUserProperty("TranslateToLanguage", settings.getString("TranslateToLanguage", "ko"));
+    }
+
+    public void fireBaseEnabledApps(List<ApplicationInfo> packages) {
+        int count = 0;
+        Iterator<ApplicationInfo> iterator = packages.iterator();
+        while (iterator.hasNext()) {
+            ApplicationInfo applicationInfo = iterator.next();
+            if (settings.contains(applicationInfo.packageName))
+                count++;
+            else
+                break;
+        }
+        mFirebaseAnalytics.setUserProperty("NumAppsTranslating", String.valueOf(count));
+    }
     @SuppressLint("WorldReadableFiles")
     @Override
     public void onStart() {
         super.onStart();
         context = this.getActivity();
-
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
 
         //noinspection deprecation,deprecation
         settings = this.getActivity().getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
-        SharedPreferences.Editor editor = settings.edit();
-        editor.putBoolean("com.astroframe.seoulbus", true);
-        editor.putBoolean("com.nhn.android.nmap", true);
-        editor.putBoolean("com.kakao.taxi", true);
-        editor.putBoolean("com.fineapp.yogiyo", true);
-        editor.putBoolean("com.cgv.android.movieapp", true);
-        editor.putBoolean("com.wooricard.smartapp", true);
-        editor.putBoolean("com.google.android.talk", true);
-        editor.putBoolean("com.ebay.global.gmarket", true);
-        editor.putBoolean("com.foodfly.gcm", true);
-        editor.putBoolean("com.ktcs.whowho", true);
-        editor.putString("SubscriptionKey", "65044997b4194b8f8c181a15166fcb46");
-//        editor.putBoolean("EnableYandex", true);
-//        editor.putString("SubscriptionKey", "trnsl.1.1.20170118T002434Z.95dd93bf09dbc8d4.04554b9aac2c1bcfee17ee76bc9979236ea2c2d4");
-        editor.apply();
+//        SharedPreferences.Editor editor = settings.edit();
+//        editor.putBoolean("com.astroframe.seoulbus", true);
+//        editor.putBoolean("com.nhn.android.nmap", true);
+//        editor.putBoolean("com.kakao.taxi", true);
+//        editor.putBoolean("com.fineapp.yogiyo", true);
+//        editor.putBoolean("com.cgv.android.movieapp", true);
+//        editor.putBoolean("com.wooricard.smartapp", true);
+//        editor.putBoolean("com.google.android.talk", true);
+//        editor.putBoolean("com.ebay.global.gmarket", true);
+//        editor.putBoolean("com.foodfly.gcm", true);
+//        editor.putBoolean("com.ktcs.whowho", true);
+//        editor.putString("SubscriptionKey", "65044997b4194b8f8c181a15166fcb46");
+////        editor.putBoolean("EnableYandex", true);
+////        editor.putString("SubscriptionKey", "trnsl.1.1.20170118T002434Z.95dd93bf09dbc8d4.04554b9aac2c1bcfee17ee76bc9979236ea2c2d4");
+//        editor.apply();
 
         //noinspection ConstantConditions
         listview = (ListView) getView().findViewById(R.id.AppsList);
@@ -114,7 +137,7 @@ public class AppListFragment extends Fragment {
                         .commit();
             }
         });
-
+        fireBaseAnalytics();
     }
 
     static class ViewHolder {
@@ -249,6 +272,8 @@ public class AppListFragment extends Fragment {
                     return labelA.compareTo(labelB);
                 }
             });
+            fireBaseEnabledApps(packages);
+
             return new StableArrayAdapter(getActivity(), android.R.layout.simple_list_item_multiple_choice, packages);
         }
 
