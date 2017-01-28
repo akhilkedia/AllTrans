@@ -84,21 +84,41 @@ public class alltrans implements IXposedHookLoadPackage {
 
         if (PreferenceList.LoadURL) {
             findAndHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewHookHandler());
+
+
             findAndHookMethod(WebView.class, "loadUrl", String.class, Map.class, new XC_MethodHook() {
                 @Override
                 protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-                    XposedBridge.log("AllTrans: we are in loadurl with headers!");
+                    Log.i("AllTrans", "AllTrans: we are in loadurl with headers!");
                 }
             });
+            findAndHookMethod(WebView.class, "loadUrl", String.class, new XC_MethodHook() {
+                @Override
+                protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
+                    Log.i("AllTrans", "AllTrans: we are in loadurl!");
+                }
+            });
+            findAndHookMethod(WebView.class, "postUrl", String.class, (new byte[1]).getClass(), new XC_MethodHook() {
+                @Override
+                protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
+                    Log.i("AllTrans", "AllTrans: we are in loadurl!");
+                }
+            });
+            findAndHookMethod(WebView.class, "loadData", String.class, String.class, String.class, new XC_MethodHook() {
+                @Override
+                protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
+                    Log.i("AllTrans", "we are in loadData!");
+                }
+            });
+            findAndHookMethod(WebView.class, "loadDataWithBaseURL", String.class, String.class, String.class, String.class, String.class, new XC_MethodHook() {
+                @Override
+                protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
+                    Log.i("AllTrans", "we are in loadDataWithBaseURL! BaseURL - " + param.args[0] + "MimeType" + param.args[2] + " Data - " + param.args[1]);
+                }
+            });
+
         }
-//        findAndHookMethod(WebView.class, "loadData", String.class, String.class, String.class, new XC_MethodHook() {
-//            @Override protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-//                XposedBridge.log("we are in loadData!");
-//            }});
-//        findAndHookMethod(WebView.class, "loadDataWithBaseURL", String.class, String.class, String.class, String.class, String.class, new XC_MethodHook() {
-//            @Override protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-//                XposedBridge.log("we are in loadData!");
-//            }});
+
 
         if (PreferenceList.DrawText) {
             findAndHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, drawTextHook);

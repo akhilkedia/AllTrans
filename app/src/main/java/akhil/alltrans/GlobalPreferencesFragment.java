@@ -34,7 +34,7 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(Bundle bundle, String rootKey) {
         PreferenceManager preferenceManager = getPreferenceManager();
-        preferenceManager.setSharedPreferencesName(getString(R.string.globalPrefFile));
+        preferenceManager.setSharedPreferencesName("AllTransPref");
         preferenceManager.setSharedPreferencesMode(MODE_WORLD_READABLE);
         addPreferencesFromResource(R.xml.preferences);
 

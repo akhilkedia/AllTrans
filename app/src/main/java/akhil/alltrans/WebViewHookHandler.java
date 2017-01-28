@@ -26,7 +26,6 @@ import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 
 import de.robv.android.xposed.XC_MethodHook;
-import de.robv.android.xposed.XposedBridge;
 
 public class WebViewHookHandler extends XC_MethodHook implements OriginalCallable {
     private WebView webView;
@@ -72,7 +71,7 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
     }
     @Override
     protected void afterHookedMethod(XC_MethodHook.MethodHookParam mParam) throws Throwable {
-        XposedBridge.log("AllTrans: we are in onPageFinished!");
+        Log.i("AllTrans", "AllTrans: we are in onPageFinished!");
 
         webView = (WebView) mParam.args[0];
         webView.addJavascriptInterface(this, "injectedObject");

@@ -75,22 +75,22 @@ public class AppListFragment extends Fragment {
 
 
         //noinspection deprecation,deprecation
-        settings = this.getActivity().getSharedPreferences(getString(R.string.globalPrefFile), MODE_WORLD_READABLE);
-//        SharedPreferences.Editor editor = settings.edit();
-//        editor.putBoolean("com.astroframe.seoulbus", true);
-//        editor.putBoolean("com.nhn.android.nmap", true);
-//        editor.putBoolean("com.kakao.taxi", true);
-//        editor.putBoolean("com.fineapp.yogiyo", true);
-//        editor.putBoolean("com.cgv.android.movieapp", true);
-//        editor.putBoolean("com.wooricard.smartapp", true);
-//        editor.putBoolean("com.google.android.talk", true);
-//        editor.putBoolean("com.ebay.global.gmarket", true);
-//        editor.putBoolean("com.foodfly.gcm", true);
-//        editor.putBoolean("com.ktcs.whowho", true);
-////        editor.putString("SubscriptionKey", "65044997b4194b8f8c181a15166fcb46");
-////        editor.putBoolean("EnableYandex", true);
+        settings = this.getActivity().getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putBoolean("com.astroframe.seoulbus", true);
+        editor.putBoolean("com.nhn.android.nmap", true);
+        editor.putBoolean("com.kakao.taxi", true);
+        editor.putBoolean("com.fineapp.yogiyo", true);
+        editor.putBoolean("com.cgv.android.movieapp", true);
+        editor.putBoolean("com.wooricard.smartapp", true);
+        editor.putBoolean("com.google.android.talk", true);
+        editor.putBoolean("com.ebay.global.gmarket", true);
+        editor.putBoolean("com.foodfly.gcm", true);
+        editor.putBoolean("com.ktcs.whowho", true);
+        editor.putString("SubscriptionKey", "65044997b4194b8f8c181a15166fcb46");
+//        editor.putBoolean("EnableYandex", true);
 //        editor.putString("SubscriptionKey", "trnsl.1.1.20170118T002434Z.95dd93bf09dbc8d4.04554b9aac2c1bcfee17ee76bc9979236ea2c2d4");
-//        editor.apply();
+        editor.apply();
 
         //noinspection ConstantConditions
         listview = (ListView) getView().findViewById(R.id.AppsList);
