@@ -45,6 +45,10 @@ import android.widget.TextView;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -260,7 +264,7 @@ public class AppListFragment extends Fragment {
         protected StableArrayAdapter doInBackground(Void... params) {
             final PackageManager pm = context.getPackageManager();
             //get a list of installed apps.
-            final List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
+            final List<ApplicationInfo> packages = getInstalledApplications(context, PackageManager.GET_META_DATA);
             Collections.sort(packages, new Comparator<ApplicationInfo>() {
                 public int compare(ApplicationInfo a, ApplicationInfo b) {
                     if (settings.contains(a.packageName) && !settings.contains(b.packageName))
@@ -273,13 +277,50 @@ public class AppListFragment extends Fragment {
                 }
             });
             fireBaseEnabledApps(packages);
-
-            return new StableArrayAdapter(getActivity(), android.R.layout.simple_list_item_multiple_choice, packages);
+            if (getActivity() != null)
+                return new StableArrayAdapter(getActivity(), android.R.layout.simple_list_item_multiple_choice, packages);
+            else
+                return null;
         }
 
         protected void onPostExecute(StableArrayAdapter adapter) {
-            listview.setAdapter(adapter);
+            if (adapter != null)
+                listview.setAdapter(adapter);
             dialog.dismiss();
+        }
+
+        protected List<ApplicationInfo> getInstalledApplications(Context context, int flags) {
+            final PackageManager pm = context.getPackageManager();
+            try {
+                return pm.getInstalledApplications(flags);
+            } catch (Exception ignored) {
+                //we don't care why it didn't succeed. We'll do it using an alternative way instead
+            }
+            // use fallback:
+            Process process;
+            List<ApplicationInfo> result = new ArrayList<>();
+            BufferedReader bufferedReader = null;
+            try {
+                process = Runtime.getRuntime().exec("pm list packages");
+                bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                String line;
+                while ((line = bufferedReader.readLine()) != null) {
+                    final String packageName = line.substring(line.indexOf(':') + 1);
+                    final ApplicationInfo applicationInfo = pm.getApplicationInfo(packageName, flags);
+                    result.add(applicationInfo);
+                }
+                process.waitFor();
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                if (bufferedReader != null)
+                    try {
+                        bufferedReader.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+            }
+            return result;
         }
     }
 }

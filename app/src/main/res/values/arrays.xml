@@ -19,7 +19,7 @@
   -->
 
 <resources>
-    <string-array name="languageCodes">
+    <string-array name="languageCodes" translatable="false">
         <item>af</item>
         <item>ar</item>
         <item>bs-Latn</item>
@@ -74,7 +74,7 @@
         <item>cy</item>
         <item>yua</item>
     </string-array>
-    <string-array name="languageNames">
+    <string-array name="languageNames" translatable="false">
         <item>@string/Afrikaans_micro</item>
         <item>@string/Arabic_micro</item>
         <item>@string/Bosnian_Latin_micro</item>
@@ -129,7 +129,7 @@
         <item>@string/Welsh_micro</item>
         <item>@string/Yucatec_Maya_micro</item>
     </string-array>
-    <string-array name="languageCodesYandex">
+    <string-array name="languageCodesYandex" translatable="false">
         <item>af</item>
         <item>am</item>
         <item>ar</item>
@@ -221,7 +221,7 @@
         <item>yi</item>
         <item>zh</item>
     </string-array>
-    <string-array name="languageNamesYandex">
+    <string-array name="languageNamesYandex" translatable="false">
         <item>@string/Afrikaans_yandex</item>
         <item>@string/Amharic_yandex</item>
         <item>@string/Arabic_yandex</item>

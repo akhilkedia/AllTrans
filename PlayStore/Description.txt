@@ -1,0 +1,55 @@
+<u><b>AllTrans - Completely Translate Apps</b></u>
+<br>a la Chrome translation of webpages, but for Android apps.
+<br>
+<br><u><b>What AllTrans does</b></u>
+<br>It replaces <b>all text in an app</b> in a language from one language to another at runtime.
+<br>Say for example an app you want to use is in German, but you know only English.
+<br>Then whenever you open the required app, all the text in the app, <b>anywhere</b>, will be replaced by its English equivalents.
+<br>This is something similar to the way Automatic Translate works in Chrome.
+<br>
+<br><u><b>Requirements</b></u>
+<br>? Android 5.0 or later.
+<br>? <b>Root</b>. If you don¡¯t know what rooting is, this app won¡¯t work for you.
+<br>? <b>Xposed Framework</b> installed and running.
+<br>
+<br><u><b>How to use AllTrans</b></u>
+<br>? In "Global Settings" tab, enable "Use Yandex instead of Microsoft" if you want to use Yandex, else disable to use Microsoft.
+<br>? In "Global Settings" tab, tap "Enter Microsoft/Yandex Subscription Key", input the corresponding key (see Instructions from below).
+<br>? Choose the "Translate from Language" and "Translate to Language".
+<br>? In the "Apps to Translate" tab, find the app you want to translate, click the checkbox next to it.
+<br>? Close and restart the app you want translated - it should be translated!
+<br>
+<br><u><b>WARNING</b></u> - Some apps might force close. See the Troubleshooting section.
+<br>
+<br><u><b>How To Get Yandex Translate Subscription Key</b></u>
+<br>? Go to Yandex Website - https://tech.yandex.com/keys/get/?service=trnsl
+<br>? If you don't already have an account, click "register" and sign up for a new account.
+<br>? After signing up, agree to the User Agreement and click "Get API Key".
+<br>? You have successfully received your key! It's something like "trnsl.1.1.201701......"
+<br>
+<br><u><b>How to sign up for Microsoft Azure Translate</b></u>
+<br>A much more complicated process than Yandex, but gives better translations.
+<br>? Sign up for a Microsoft Azure account at - http://azure.com
+<br>? After you have an account, sign up for a Azure subscription at https://account.windowsazure.com/Subscriptions
+<br>   Choose a "pay-as-you-go" subscription. Will require a credit card, but don¡¯t worry, nothing will be charged.
+<br>? Sign-in to the Azure portal at - http://portal.azure.com
+<br>? Add a Microsoft Translator API subscription to your Azure account. 
+<br>   Select the + New option.
+<br>   Select ?Intelligence? from the list of services.
+<br>   Select ?Cognitive Services APIs?.
+<br>   Select the ?API Type? option.
+<br>?   Select ?Text Translation.
+<br>   In the ?Pricing Tier? section, select the Free Tier (F0).
+<br>   Fill out the rest of the form, and press the ?Create? button.
+<br>? Retrieve your authentication key.
+<br>   Go to ?All Resources? and select the Microsoft Translator API you subscribed to.
+<br>   Go to the ?Keys ?option and copy your subscription key to access the service.
+<br>
+<br>Here's a quick Tutorial with screenshots and videos how to use AllTrans - http://android.gadgethacks.com/how-to/automatically-translate-any-android-app-into-any-language-0176033/
+<br><u><b>TroubleShooting</b></u>
+<br>? If no app is being translated, check your Microsoft/Yandex Subscription Key is correct.
+<br>? If the translated app Force Closes/gets stuck on loading the first time after you start translating, click on the app in "Apps to translate" tab, and in "Other Settings" fill in "Delay Before Translating" to 2000.
+<br>? If the translated app used to work fine, but now get stuck on starting, click on the app in "Apps to translate" tab, and click on "Click to Clear Translation Cache".
+<br>? If some parts of the app are not being translated, click on the app in "Apps to translate" tab, and enable "Aggressive Mode".
+<br>? If the app still Force Closes, disable translation for this app and contact me on the support thread on XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
+<br>
