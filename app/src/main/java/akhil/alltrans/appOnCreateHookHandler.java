@@ -47,7 +47,7 @@ class appOnCreateHookHandler extends XC_MethodHook {
                 Log.i("AllTrans", "AllTrans: Successfully read old cache");
                 s.close();
             } catch (Exception e) {
-                Log.e("AllTrans", "AllTrans: Got error in reading cache " + Log.getStackTraceString(e));
+                Log.i("AllTrans", "AllTrans: Could not read cache ");
                 alltrans.cacheAccess.acquireUninterruptibly();
                 alltrans.cache = new HashMap<>(10000);
                 alltrans.cacheAccess.release();

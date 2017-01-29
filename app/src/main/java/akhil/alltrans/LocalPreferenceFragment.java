@@ -45,6 +45,14 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
         @SuppressLint("WorldReadableFiles") SharedPreferences settings = this.getActivity().getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
         Boolean enabledYandex = settings.getBoolean("EnableYandex", false);
         PreferenceManager preferenceManager = getPreferenceManager();
+        if (applicationInfo == null) {
+            Context context = getContext();
+            CharSequence text = getString(R.string.wut_why_null);
+            int duration = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+            return;
+        }
         preferenceManager.setSharedPreferencesName(applicationInfo.packageName);
         preferenceManager.setSharedPreferencesMode(MODE_WORLD_READABLE);
         addPreferencesFromResource(R.xml.perappprefs);
@@ -104,6 +112,5 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
             }
         });
     }
-
 
 }

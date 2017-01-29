@@ -23,11 +23,14 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.Collections;
 import java.util.concurrent.Semaphore;
 
+import okhttp3.Cache;
+import okhttp3.CacheControl;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.ConnectionSpec;
@@ -38,12 +41,39 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 class GetTranslateToken implements Callback {
+    private static final Semaphore available = new Semaphore(1, true);
     private static String userCredentials;
     private static long lastExpireTime = 0;
-    private final Semaphore available = new Semaphore(1, true);
+    private static OkHttpClient httpsClient;
+    private static OkHttpClient httpClient;
     public GetTranslate getTranslate;
 
+    public static Cache createHttpClientCache() {
+        int cacheSize = 1 * 1024 * 1024; // 1 MiB
+        File cacheDirectory = new File(alltrans.context.getCacheDir(), "AllTransHTTPCache");
+        return new Cache(cacheDirectory, cacheSize);
+    }
+
+    public static Cache createHttpsClientCache() {
+        int cacheSize = 1 * 1024 * 1024; // 1 MiB
+        File cacheDirectory = new File(alltrans.context.getCacheDir(), "AllTransHTTPsCache");
+        return new Cache(cacheDirectory, cacheSize);
+    }
+
     public void doAll() {
+        available.acquireUninterruptibly();
+        if (httpClient == null) {
+            Cache cache = createHttpClientCache();
+            httpClient = new OkHttpClient.Builder()
+                    .cache(cache)
+                    .connectionSpecs(Collections.singletonList(ConnectionSpec.CLEARTEXT)).build();
+        }
+        if (httpsClient == null) {
+            Cache cache = createHttpsClientCache();
+            httpsClient = new OkHttpClient.Builder()
+                    .cache(cache).build();
+        }
+        available.release();
         if (PreferenceList.EnableYandex)
             doInBackground();
         else {
@@ -61,7 +91,6 @@ class GetTranslateToken implements Callback {
 
     private void getNewToken() {
         try {
-            OkHttpClient client = new OkHttpClient();
             MediaType mediaType = MediaType.parse("application/jwt");
             RequestBody body = RequestBody.create(mediaType, "");
 
@@ -69,12 +98,12 @@ class GetTranslateToken implements Callback {
                     .url("https://api.cognitive.microsoft.com/sts/v1.0/issueToken")
                     .post(body)
                     .addHeader("Ocp-Apim-Subscription-Key", PreferenceList.SubscriptionKey)
-                    .addHeader("Cache-Control", "no-cache")
                     .addHeader("Content-Type", "application/json")
                     .addHeader("Accept", "application/jwt")
+                    .cacheControl(CacheControl.FORCE_NETWORK)
                     .build();
 
-            client.newCall(request).enqueue(this);
+            httpsClient.newCall(request).enqueue(this);
 
         } catch (Exception e) {
             Log.e("AllTrans", "AllTrans: Got error in getting new token as : " + Log.getStackTraceString(e));
@@ -89,7 +118,6 @@ class GetTranslateToken implements Callback {
                 String textURL = "&text=" + URLEncoder.encode(getTranslate.stringToBeTrans, "UTF-8");
                 String languageURL = "&lang=" + PreferenceList.TranslateFromLanguage + "-" + PreferenceList.TranslateToLanguage;
                 String fullURL = baseURL + keyURL + textURL + languageURL;
-                OkHttpClient client = new OkHttpClient.Builder().build();
 
                 Request request = new Request.Builder()
                         .url(fullURL)
@@ -97,12 +125,11 @@ class GetTranslateToken implements Callback {
                         .build();
 
                 Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Enqueuing Request for new translation for : " + getTranslate.stringToBeTrans);
-                client.newCall(request).enqueue(getTranslate);
+                httpsClient.newCall(request).enqueue(getTranslate);
             } else {
                 String baseURL = "http://api.microsofttranslator.com/v2/Http.svc/Translate?text=";
                 String languageURL = "&from=" + PreferenceList.TranslateFromLanguage + "&to=" + PreferenceList.TranslateToLanguage;
                 String fullURL = baseURL + URLEncoder.encode(getTranslate.stringToBeTrans, "UTF-8") + languageURL;
-                OkHttpClient client = new OkHttpClient.Builder().connectionSpecs(Collections.singletonList(ConnectionSpec.CLEARTEXT)).build();
 
                 Request request = new Request.Builder()
                         .url(fullURL)
@@ -111,7 +138,7 @@ class GetTranslateToken implements Callback {
                         .build();
 
                 Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Enqueuing Request for new translation for : " + getTranslate.stringToBeTrans);
-                client.newCall(request).enqueue(getTranslate);
+                httpClient.newCall(request).enqueue(getTranslate);
             }
         } catch (java.io.IOException e) {
             Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
@@ -148,4 +175,5 @@ class GetTranslateToken implements Callback {
         available.release();
         doInBackground();
     }
+
 }

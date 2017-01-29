@@ -75,25 +75,6 @@ public class AppListFragment extends Fragment {
         return inflater.inflate(R.layout.apps_list, container, false);
     }
 
-    public void fireBaseAnalytics() {
-        mFirebaseAnalytics.setUserProperty("Enabled", String.valueOf(settings.getBoolean("Enabled", false)));
-        mFirebaseAnalytics.setUserProperty("EnableYandex", String.valueOf(settings.getBoolean("EnableYandex", false)));
-        mFirebaseAnalytics.setUserProperty("TranslateFromLanguage", settings.getString("TranslateFromLanguage", "ko"));
-        mFirebaseAnalytics.setUserProperty("TranslateToLanguage", settings.getString("TranslateToLanguage", "ko"));
-    }
-
-    public void fireBaseEnabledApps(List<ApplicationInfo> packages) {
-        int count = 0;
-        Iterator<ApplicationInfo> iterator = packages.iterator();
-        while (iterator.hasNext()) {
-            ApplicationInfo applicationInfo = iterator.next();
-            if (settings.contains(applicationInfo.packageName))
-                count++;
-            else
-                break;
-        }
-        mFirebaseAnalytics.setUserProperty("NumAppsTranslating", String.valueOf(count));
-    }
     @SuppressLint("WorldReadableFiles")
     @Override
     public void onStart() {
@@ -142,6 +123,26 @@ public class AppListFragment extends Fragment {
             }
         });
         fireBaseAnalytics();
+    }
+
+    public void fireBaseAnalytics() {
+        mFirebaseAnalytics.setUserProperty("Enabled", String.valueOf(settings.getBoolean("Enabled", false)));
+        mFirebaseAnalytics.setUserProperty("EnableYandex", String.valueOf(settings.getBoolean("EnableYandex", false)));
+        mFirebaseAnalytics.setUserProperty("TranslateFromLanguage", settings.getString("TranslateFromLanguage", "ko"));
+        mFirebaseAnalytics.setUserProperty("TranslateToLanguage", settings.getString("TranslateToLanguage", "ko"));
+    }
+
+    public void fireBaseEnabledApps(List<ApplicationInfo> packages) {
+        int count = 0;
+        Iterator<ApplicationInfo> iterator = packages.iterator();
+        while (iterator.hasNext()) {
+            ApplicationInfo applicationInfo = iterator.next();
+            if (settings.contains(applicationInfo.packageName))
+                count++;
+            else
+                break;
+        }
+        mFirebaseAnalytics.setUserProperty("NumAppsTranslating", String.valueOf(count));
     }
 
     static class ViewHolder {
@@ -284,8 +285,9 @@ public class AppListFragment extends Fragment {
         }
 
         protected void onPostExecute(StableArrayAdapter adapter) {
-            if (adapter != null)
-                listview.setAdapter(adapter);
+            if (adapter == null)
+                return;
+            listview.setAdapter(adapter);
             dialog.dismiss();
         }
 
@@ -323,5 +325,6 @@ public class AppListFragment extends Fragment {
             return result;
         }
     }
+
 }
 

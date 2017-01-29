@@ -24,6 +24,7 @@
     <string name="loading">"Loading List of Applications - Please Wait"</string>
     <string name="clear_cache_error">"Some Error. Could not clear translation cache!"</string>
     <string name="clear_cache_success">"Translate Cache for this app has been erased!"</string>
+    <string name="wut_why_null">"Could not load the Per-app preference page. Close and re-open application again."</string>
 
     <string name="how_to_use">"HOW TO USE THE APPLICATION
 
