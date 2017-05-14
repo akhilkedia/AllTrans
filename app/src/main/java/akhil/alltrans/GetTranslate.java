@@ -44,11 +44,20 @@ public class GetTranslate implements Callback {
             response.body().close();
 
             Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " In GetTranslate, setting: " + stringToBeTrans + "got response as " + result);
-            if (PreferenceList.EnableYandex)
-                translatedString = result.substring(result.indexOf("<text>") + 6, result.lastIndexOf("</text>"));
-            else
-                translatedString = result.substring(result.indexOf("<string xmlns=\"http://schemas.microsoft.com/2003/10/Serialization/\">") + 68, result.lastIndexOf("</string"));
+            try {
+                if (PreferenceList.EnableYandex)
+                    translatedString = result.substring(result.indexOf("<text>") + 6, result.lastIndexOf("</text>"));
+                else
+                    translatedString = result.substring(result.indexOf("<string xmlns=\"http://schemas.microsoft.com/2003/10/Serialization/\">") + 68, result.lastIndexOf("</string"));
+            } catch (Exception e) {
+                Log.e("AllTrans", "AllTrans: Got error in getting string from translation as : " + Log.getStackTraceString(e));
+                translatedString = stringToBeTrans;
+            }
             translatedString = StringEscape.XMLUnescape(translatedString);
+
+            if (translatedString == null) {
+                translatedString = "";
+            }
 
             if (PreferenceList.Caching) {
                 alltrans.cacheAccess.acquireUninterruptibly();

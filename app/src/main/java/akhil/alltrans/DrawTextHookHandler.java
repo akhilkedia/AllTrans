@@ -82,8 +82,6 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
     public void callOriginalMethod(CharSequence translatedString, Object userData) {
 
         MethodHookParam methodHookParam = (MethodHookParam) userData;
-        alltrans.hookAccess.acquireUninterruptibly();
-        unhookMethod(methodHookParam.method, alltrans.setTextHook);
         Method myMethod = (Method) methodHookParam.method;
         myMethod.setAccessible(true);
         Object[] myArgs = methodHookParam.args;
@@ -109,13 +107,15 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
             }
 
         Paint tempPaint = (Paint) myArgs[myArgs.length - 1];
-            Canvas tempCanvas = (Canvas) methodHookParam.thisObject;
+        Canvas tempCanvas = (Canvas) methodHookParam.thisObject;
         myArgs[myArgs.length - 1] = copyPaint(tempPaint, tempCanvas, myArgs[0].toString());
         if (myArgs[1].getClass().equals(int.class)) {
             myArgs[1] = 0;
             myArgs[2] = translatedString.length();
-            }
+        }
 
+        alltrans.hookAccess.acquireUninterruptibly();
+        unhookMethod(methodHookParam.method, alltrans.setTextHook);
         try {
             Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " Invoking original function " + methodHookParam.method.getName() + " and setting text to " + myArgs[0].toString());
             myMethod.invoke(methodHookParam.thisObject, myArgs);

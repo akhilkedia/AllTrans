@@ -113,4 +113,10 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
         });
     }
 
+    //TODO: Check this does not mess things up.
+    @Override
+    public void onSaveInstanceState(final Bundle outState) {
+        setTargetFragment(null, -1);
+    }
+
 }

@@ -119,7 +119,7 @@ public class AppListFragment extends Fragment {
                 context.getSupportFragmentManager().beginTransaction()
                         .replace(R.id.toReplace, localPreferenceFragment)
                         .addToBackStack(null)
-                        .commit();
+                        .commitAllowingStateLoss();
             }
         });
         fireBaseAnalytics();
@@ -143,6 +143,12 @@ public class AppListFragment extends Fragment {
                 break;
         }
         mFirebaseAnalytics.setUserProperty("NumAppsTranslating", String.valueOf(count));
+    }
+
+    //TODO: Check this does not mess things up.
+    @Override
+    public void onSaveInstanceState(final Bundle outState) {
+        setTargetFragment(null, -1);
     }
 
     static class ViewHolder {
@@ -325,6 +331,5 @@ public class AppListFragment extends Fragment {
             return result;
         }
     }
-
 }
 

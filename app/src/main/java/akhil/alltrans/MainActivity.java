@@ -37,7 +37,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         setContentView(R.layout.activity_main);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.toReplace, new AppListFragment())
-                .commit();
+                .commitAllowingStateLoss();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.titleBar);
         toolbar.setTitle(getString(R.string.app_name) + " - " + getString(R.string.translate_anywhere));
@@ -51,17 +51,17 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                     case 0:
                         getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.toReplace, new AppListFragment())
-                                .commit();
+                                .commitAllowingStateLoss();
                         break;
                     case 1:
                         getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.toReplace, new GlobalPreferencesFragment())
-                                .commit();
+                                .commitAllowingStateLoss();
                         break;
                     case 2:
                         getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.toReplace, new BlankFragment())
-                                .commit();
+                                .commitAllowingStateLoss();
                         break;
                 }
             }
@@ -86,7 +86,6 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         //startActivity(new Intent(getApplicationContext(), GlobalPreferenceActivity.class));
 
     }
-
 
 }
 
