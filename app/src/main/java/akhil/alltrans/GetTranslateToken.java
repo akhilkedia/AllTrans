@@ -48,14 +48,14 @@ class GetTranslateToken implements Callback {
     private static OkHttpClient httpClient;
     public GetTranslate getTranslate;
 
-    public static Cache createHttpClientCache() {
-        int cacheSize = 1 * 1024 * 1024; // 1 MiB
+    private static Cache createHttpClientCache() {
+        int cacheSize = 1024 * 1024; // 1 MiB
         File cacheDirectory = new File(alltrans.context.getCacheDir(), "AllTransHTTPCache");
         return new Cache(cacheDirectory, cacheSize);
     }
 
-    public static Cache createHttpsClientCache() {
-        int cacheSize = 1 * 1024 * 1024; // 1 MiB
+    private static Cache createHttpsClientCache() {
+        int cacheSize = 1024 * 1024; // 1 MiB
         File cacheDirectory = new File(alltrans.context.getCacheDir(), "AllTransHTTPsCache");
         return new Cache(cacheDirectory, cacheSize);
     }

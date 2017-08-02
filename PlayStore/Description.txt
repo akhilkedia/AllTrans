@@ -9,7 +9,7 @@
 <br>
 <br><u><b>Requirements</b></u>
 <br>? Android 5.0 or later.
-<br>? <b>Root</b>. If you don¡¯t know what rooting is, this app won¡¯t work for you.
+<br>? <b>Root</b>. If you don't know what rooting is, this app won't work for you.
 <br>? <b>Xposed Framework</b> installed and running.
 <br>
 <br><u><b>How to use AllTrans</b></u>
@@ -31,7 +31,7 @@
 <br>A much more complicated process than Yandex, but gives better translations.
 <br>? Sign up for a Microsoft Azure account at - http://azure.com
 <br>? After you have an account, sign up for a Azure subscription at https://account.windowsazure.com/Subscriptions
-<br>   Choose a "pay-as-you-go" subscription. Will require a credit card, but don¡¯t worry, nothing will be charged.
+<br>   Choose a "pay-as-you-go" subscription. Will require a credit card, but donï¿½ï¿½t worry, nothing will be charged.
 <br>? Sign-in to the Azure portal at - http://portal.azure.com
 <br>? Add a Microsoft Translator API subscription to your Azure account. 
 <br>   Select the + New option.

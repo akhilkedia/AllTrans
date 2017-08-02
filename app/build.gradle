@@ -1,3 +1,12 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.23.0'
+    }
+}
 /*
  * Copyright 2017 Akhil Kedia
  * This file is part of AllTrans.
@@ -18,6 +27,7 @@
  */
 
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 25
@@ -25,7 +35,7 @@ android {
 
     defaultConfig {
         applicationId "akhil.alltrans"
-        minSdkVersion 21
+        minSdkVersion 19
         //noinspection OldTargetApi
         targetSdkVersion 23
         versionCode 7
@@ -45,22 +55,26 @@ repositories {
         url "http://dl.bintray.com/rovo89/de.robv.android.xposed"
     }
     maven { url "https://jitpack.io" }
+    maven { url 'https://maven.fabric.io/public' }
 }
 
 dependencies {
     provided 'de.robv.android.xposed:api:81:sources'
     provided 'de.robv.android.xposed:api:81'
 
-    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.google.code.gson:gson:2.7'
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
 
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.android.support:design:25.1.0'
-    compile 'com.android.support:preference-v14:25.1.0'
-    compile 'com.android.support:support-v4:25.1.0'
-    compile 'com.android.support:percent:25.1.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:preference-v14:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:percent:25.3.1'
 
     compile 'com.google.firebase:firebase-core:10.0.1'
     compile 'com.google.firebase:firebase-crash:10.0.1'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
 }
 apply plugin: 'com.google.gms.google-services'

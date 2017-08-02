@@ -25,6 +25,9 @@
     <string name="clear_cache_error">"Some Error. Could not clear translation cache!"</string>
     <string name="clear_cache_success">"Translate Cache for this app has been erased!"</string>
     <string name="wut_why_null">"Could not load the Per-app preference page. Close and re-open application again."</string>
+    <string name="app_icon">"App Icon"</string>
+    <string name="example_application">"Example Application"</string>
+    <string name="description">"Description"</string>
 
     <string name="how_to_use">"HOW TO USE THE APPLICATION
 

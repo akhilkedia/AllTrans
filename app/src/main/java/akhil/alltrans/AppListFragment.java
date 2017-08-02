@@ -40,7 +40,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -52,7 +51,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -62,7 +60,7 @@ public class AppListFragment extends Fragment {
 
     private static SharedPreferences settings;
     private FragmentActivity context;
-    private ListView listview;
+    private NestedScrollingListView listview;
     private FirebaseAnalytics mFirebaseAnalytics;
 
 
@@ -101,11 +99,11 @@ public class AppListFragment extends Fragment {
 //        editor.apply();
 
         //noinspection ConstantConditions
-        listview = (ListView) getView().findViewById(R.id.AppsList);
+        listview = (NestedScrollingListView) getView().findViewById(R.id.AppsList);
 
         new PrepareAdapter().execute();
 
-        listview.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+        listview.setChoiceMode(NestedScrollingListView.CHOICE_MODE_MULTIPLE);
         //TODO: Check what effect this has
         listview.setNestedScrollingEnabled(true);
 
@@ -125,18 +123,16 @@ public class AppListFragment extends Fragment {
         fireBaseAnalytics();
     }
 
-    public void fireBaseAnalytics() {
+    private void fireBaseAnalytics() {
         mFirebaseAnalytics.setUserProperty("Enabled", String.valueOf(settings.getBoolean("Enabled", false)));
         mFirebaseAnalytics.setUserProperty("EnableYandex", String.valueOf(settings.getBoolean("EnableYandex", false)));
         mFirebaseAnalytics.setUserProperty("TranslateFromLanguage", settings.getString("TranslateFromLanguage", "ko"));
         mFirebaseAnalytics.setUserProperty("TranslateToLanguage", settings.getString("TranslateToLanguage", "ko"));
     }
 
-    public void fireBaseEnabledApps(List<ApplicationInfo> packages) {
+    private void fireBaseEnabledApps(List<ApplicationInfo> packages) {
         int count = 0;
-        Iterator<ApplicationInfo> iterator = packages.iterator();
-        while (iterator.hasNext()) {
-            ApplicationInfo applicationInfo = iterator.next();
+        for (ApplicationInfo applicationInfo : packages) {
             if (settings.contains(applicationInfo.packageName))
                 count++;
             else
@@ -271,7 +267,7 @@ public class AppListFragment extends Fragment {
         protected StableArrayAdapter doInBackground(Void... params) {
             final PackageManager pm = context.getPackageManager();
             //get a list of installed apps.
-            final List<ApplicationInfo> packages = getInstalledApplications(context, PackageManager.GET_META_DATA);
+            final List<ApplicationInfo> packages = getInstalledApplications(context);
             Collections.sort(packages, new Comparator<ApplicationInfo>() {
                 public int compare(ApplicationInfo a, ApplicationInfo b) {
                     if (settings.contains(a.packageName) && !settings.contains(b.packageName))
@@ -297,10 +293,10 @@ public class AppListFragment extends Fragment {
             dialog.dismiss();
         }
 
-        protected List<ApplicationInfo> getInstalledApplications(Context context, int flags) {
+        List<ApplicationInfo> getInstalledApplications(Context context) {
             final PackageManager pm = context.getPackageManager();
             try {
-                return pm.getInstalledApplications(flags);
+                return pm.getInstalledApplications(PackageManager.GET_META_DATA);
             } catch (Exception ignored) {
                 //we don't care why it didn't succeed. We'll do it using an alternative way instead
             }
@@ -314,7 +310,7 @@ public class AppListFragment extends Fragment {
                 String line;
                 while ((line = bufferedReader.readLine()) != null) {
                     final String packageName = line.substring(line.indexOf(':') + 1);
-                    final ApplicationInfo applicationInfo = pm.getApplicationInfo(packageName, flags);
+                    final ApplicationInfo applicationInfo = pm.getApplicationInfo(packageName, PackageManager.GET_META_DATA);
                     result.add(applicationInfo);
                 }
                 process.waitFor();
