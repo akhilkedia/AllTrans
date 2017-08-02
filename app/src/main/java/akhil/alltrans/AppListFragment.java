@@ -271,7 +271,7 @@ public class AppListFragment extends Fragment {
         protected StableArrayAdapter doInBackground(Void... params) {
             final PackageManager pm = context.getPackageManager();
             //get a list of installed apps.
-            final List<ApplicationInfo> packages = getInstalledApplications(context, PackageManager.GET_META_DATA);
+            final List<ApplicationInfo> packages = getInstalledApplications(context);
             Collections.sort(packages, new Comparator<ApplicationInfo>() {
                 public int compare(ApplicationInfo a, ApplicationInfo b) {
                     if (settings.contains(a.packageName) && !settings.contains(b.packageName))
@@ -297,10 +297,10 @@ public class AppListFragment extends Fragment {
             dialog.dismiss();
         }
 
-        protected List<ApplicationInfo> getInstalledApplications(Context context, int flags) {
+        protected List<ApplicationInfo> getInstalledApplications(Context context) {
             final PackageManager pm = context.getPackageManager();
             try {
-                return pm.getInstalledApplications(flags);
+                return pm.getInstalledApplications(PackageManager.GET_META_DATA);
             } catch (Exception ignored) {
                 //we don't care why it didn't succeed. We'll do it using an alternative way instead
             }
@@ -314,7 +314,7 @@ public class AppListFragment extends Fragment {
                 String line;
                 while ((line = bufferedReader.readLine()) != null) {
                     final String packageName = line.substring(line.indexOf(':') + 1);
-                    final ApplicationInfo applicationInfo = pm.getApplicationInfo(packageName, flags);
+                    final ApplicationInfo applicationInfo = pm.getApplicationInfo(packageName, PackageManager.GET_META_DATA);
                     result.add(applicationInfo);
                 }
                 process.waitFor();
