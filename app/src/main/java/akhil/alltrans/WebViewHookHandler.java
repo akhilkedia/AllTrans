@@ -57,15 +57,10 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
                 "\n" +
                 "all = getAllTextNodes();\n" +
                 "\n" +
-                "function isASCII(str) {\n" +
-                "    return /^[\\x00-\\xFF]*$/.test(str);\n" +
-                "}\n" +
-                "\n" +
                 "for (var i = 0, max = all.length; i < max; i++) {\n" +
                 "    if (all[i].nodeValue.trim() != '')\n" +
-                "    \tif(!isASCII(all[i].nodeValue))\n" +
-                "    \t\tif(all[i].nodeValue == \"" + stringToBeTrans + "\")\n" +
-                "        \t\tall[i].nodeValue = \"" + translatedString + "\";\n" +
+                "        if(all[i].nodeValue == \"" + stringToBeTrans + "\")\n" +
+                "            all[i].nodeValue = \"" + translatedString + "\";\n" +
                 "}";
         webView.evaluateJavascript(script, null);
     }
@@ -74,7 +69,6 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
         Log.i("AllTrans", "AllTrans: we are in onPageFinished!");
 
         webView = (WebView) mParam.args[0];
-        webView.addJavascriptInterface(this, "injectedObject");
 
         String script1 = "console.log(\" AllTrans HTMLCODE \");console.log(document.body.outerHTML)";
         webView.evaluateJavascript(script1, null);
@@ -129,7 +123,7 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
         getTranslate.stringToBeTrans = stringArgs;
         getTranslate.originalCallable = this;
         getTranslate.userData = stringArgs;
-        getTranslate.canCallOriginal = false;
+        getTranslate.canCallOriginal = true;
 
         if (SetTextHookHandler.isNotWhiteSpace(getTranslate.stringToBeTrans)) {
 

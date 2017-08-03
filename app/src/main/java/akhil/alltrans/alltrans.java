@@ -25,6 +25,7 @@ import android.app.Application;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.util.AttributeSet;
 import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -36,19 +37,21 @@ import java.util.concurrent.Semaphore;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.XC_MethodHook;
-import de.robv.android.xposed.XC_MethodReplacement;
 import de.robv.android.xposed.XSharedPreferences;
 import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
+import static de.robv.android.xposed.XposedHelpers.findAndHookConstructor;
 import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 
 
 public class alltrans implements IXposedHookLoadPackage {
     public static final Semaphore cacheAccess = new Semaphore(1, true);
     public static final Semaphore hookAccess = new Semaphore(1, true);
-    public static final XC_MethodReplacement setTextHook = new SetTextHookHandler();
-    private static final XC_MethodReplacement drawTextHook = new DrawTextHookHandler();
+    public static final SetTextHookHandler setTextHook = new SetTextHookHandler();
+    @SuppressLint("StaticFieldLeak")
+    public static final WebViewHookHandler webViewHookHandler = new WebViewHookHandler();
+    private static final DrawTextHookHandler drawTextHook = new DrawTextHookHandler();
     public static HashMap<String, String> cache = new HashMap<>();
     @SuppressLint("StaticFieldLeak")
     public static Context context;
@@ -73,8 +76,13 @@ public class alltrans implements IXposedHookLoadPackage {
         //Android System WebView - com.google.android.webview
         XposedBridge.log("AllTrans: In Package " + lpparam.packageName);
 
+        // Hook Application onCreate
         appOnCreateHookHandler appOnCreateHookHandler = new appOnCreateHookHandler();
         findAndHookMethod(Application.class, "onCreate", appOnCreateHookHandler);
+
+        //Hook WebView Constructors
+        WebViewOnCreateHookHandler webViewOnCreateHookHandler = new WebViewOnCreateHookHandler();
+        findAndHookConstructor(WebView.class, Context.class, AttributeSet.class, int.class, int.class, Map.class, boolean.class, webViewOnCreateHookHandler);
 
         //Hook all Text String methods
         if (PreferenceList.SetText)
@@ -83,7 +91,7 @@ public class alltrans implements IXposedHookLoadPackage {
             findAndHookMethod(TextView.class, "setHint", CharSequence.class, setTextHook);
 
         if (PreferenceList.LoadURL) {
-            findAndHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewHookHandler());
+            findAndHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, webViewHookHandler);
 
 
             findAndHookMethod(WebView.class, "loadUrl", String.class, Map.class, new XC_MethodHook() {
