@@ -19,6 +19,9 @@
 
 package akhil.alltrans;
 
+import java.io.StringWriter;
+import java.util.Locale;
+
 class StringEscape {
     public static String XMLUnescape(String s) {
         String retVal = s.replaceAll("&amp;", "&");
@@ -37,5 +40,93 @@ class StringEscape {
         retVal = retVal.replaceAll("&#xD;", "\r");
         retVal = retVal.replaceAll("&#xA;", "\n");
         return retVal;
+    }
+
+    // Taken from Apache Commons Lang 2.6 at -
+    // https://commons.apache.org/proper/commons-lang/javadocs/api-2.6/src-html/org/apache/commons/lang/StringEscapeUtils.html#line.146
+    public static String javaScriptEscape(String str) {
+        if (str == null) {
+            return null;
+        }
+
+        StringWriter writer = new StringWriter(str.length() * 2);
+        boolean escapeSingleQuote = true;
+        boolean escapeForwardSlash = true;
+
+        int sz;
+        sz = str.length();
+        for (int i = 0; i < sz; i++) {
+            char ch = str.charAt(i);
+
+            // handle unicode
+            if (ch > 0xfff) {
+                writer.write("\\u" + hex(ch));
+            } else if (ch > 0xff) {
+                writer.write("\\u0" + hex(ch));
+            } else if (ch > 0x7f) {
+                writer.write("\\u00" + hex(ch));
+            } else if (ch < 32) {
+                switch (ch) {
+                    case '\b':
+                        writer.write('\\');
+                        writer.write('b');
+                        break;
+                    case '\n':
+                        writer.write('\\');
+                        writer.write('n');
+                        break;
+                    case '\t':
+                        writer.write('\\');
+                        writer.write('t');
+                        break;
+                    case '\f':
+                        writer.write('\\');
+                        writer.write('f');
+                        break;
+                    case '\r':
+                        writer.write('\\');
+                        writer.write('r');
+                        break;
+                    default:
+                        if (ch > 0xf) {
+                            writer.write("\\u00" + hex(ch));
+                        } else {
+                            writer.write("\\u000" + hex(ch));
+                        }
+                        break;
+                }
+            } else {
+                switch (ch) {
+                    case '\'':
+                        if (escapeSingleQuote) {
+                            writer.write('\\');
+                        }
+                        writer.write('\'');
+                        break;
+                    case '"':
+                        writer.write('\\');
+                        writer.write('"');
+                        break;
+                    case '\\':
+                        writer.write('\\');
+                        writer.write('\\');
+                        break;
+                    case '/':
+                        if (escapeForwardSlash) {
+                            writer.write('\\');
+                        }
+                        writer.write('/');
+                        break;
+                    default:
+                        writer.write(ch);
+                        break;
+                }
+            }
+        }
+        return writer.toString();
+    }
+
+    private static String hex(char ch) {
+        return Integer.toHexString(ch).toUpperCase(Locale.ENGLISH);
     }
 }

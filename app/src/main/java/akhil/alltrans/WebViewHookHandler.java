@@ -23,90 +23,94 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
+import android.webkit.ValueCallback;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import de.robv.android.xposed.XC_MethodHook;
 
 public class WebViewHookHandler extends XC_MethodHook implements OriginalCallable {
-    private WebView webView;
 
     public void callOriginalMethod(final CharSequence translatedString, final Object userData) {
-        String stringToBeTrans = (String) userData;
-        String script = "function getAllTextNodes() {\n" +
-                "    var result = [];\n" +
-                "    var ignore = {\n" +
-                "        \"STYLE\": 0,\n" +
-                "        \"SCRIPT\": 0,\n" +
-                "        \"NOSCRIPT\": 0,\n" +
-                "        \"IFRAME\": 0,\n" +
-                "        \"OBJECT\": 0\n" +
-                "    };\n" +
-                "\n" +
-                "    (function scanSubTree(node) {\n" +
-                "        if (node.tagName in ignore)\n" +
-                "            return;\n" +
-                "        if (node.childNodes.length)\n" +
-                "            for (var i = 0; i < node.childNodes.length; i++)\n" +
-                "                scanSubTree(node.childNodes[i]);\n" +
-                "        else if (node.nodeType == Node.TEXT_NODE)\n" +
-                "            result.push(node);\n" +
-                "    })(document);\n" +
-                "\n" +
-                "    return result;\n" +
+        WebHookUserData webHookUserData = (WebHookUserData) userData;
+        final String originalString = StringEscape.javaScriptEscape(webHookUserData.stringArgs);
+        final String newString = StringEscape.javaScriptEscape(translatedString.toString());
+        WebView webView = webHookUserData.webView;
+        Log.i("AllTrans", "AllTrans: In callOriginalMethod webView. Trying to replace -" + originalString + "-with-" + newString);
+        String script = "function getAllTextNodes(tempDocument) {\n" +
+                " var result = [];\n" +
+                " var ignore = {\n" +
+                "  \"STYLE\": 0,\n" +
+                "  \"SCRIPT\": 0,\n" +
+                "  \"NOSCRIPT\": 0,\n" +
+                "  \"IFRAME\": 0,\n" +
+                "  \"OBJECT\": 0,\n" +
+                " };\n" +
+                " (function scanSubTree(node) {\n" +
+                "  if (node.tagName in ignore) {\n" +
+                "   return;\n" +
+                "  }\n" +
+                "  if (node.childNodes.length) {\n" +
+                "   for (var i = 0; i < node.childNodes.length; i++) {\n" +
+                "    scanSubTree(node.childNodes[i]);\n" +
+                "   }\n" +
+                "  } else if (node.nodeType == 3 || node.nodeType == 1) {\n" +
+                "   result.push(node);\n" +
+                "  }\n" +
+                " })(tempDocument);\n" +
+                " return result;\n" +
                 "}\n" +
                 "\n" +
-                "all = getAllTextNodes();\n" +
+                "function doReplaceAll(all){\n" +
+                " for (var i = 0, max = all.length; i < max; i++) {\n" +
+                "  if (all[i].nodeType == 1 && all[i].childNodes.length == 0) {\n" +
+                "        if (all[i].nodeValue == \"" + originalString + "\") {\n" +
+                "            all[i].nodeValue = \"" + newString + "\";\n" +
+                "        }\n" +
+                "  }\n" +
+                "  else if (all[i].nodeType == 3 && all[i].nodeValue.trim() != '') {\n" +
+                "        if (all[i].nodeValue == \"" + originalString + "\") {\n" +
+                "            all[i].nodeValue = \"" + newString + "\";\n" +
+                "        }\n" +
+                "  }\n" +
+                " }\n" +
+                "}\n" +
                 "\n" +
-                "for (var i = 0, max = all.length; i < max; i++) {\n" +
-                "    if (all[i].nodeValue.trim() != '')\n" +
-                "        if(all[i].nodeValue == \"" + stringToBeTrans + "\")\n" +
-                "            all[i].nodeValue = \"" + translatedString + "\";\n" +
-                "}";
-        webView.evaluateJavascript(script, null);
+                "for (var j = 0; j < window.frames.length; j++) { \n" +
+                " all = getAllTextNodes(window.frames[j].document);\n" +
+                " doReplaceAll(all);\n" +
+                "}\n" +
+                "all = getAllTextNodes(window.document);\n" +
+                "doReplaceAll(all);";
+        webView.evaluateJavascript(script, new ValueCallback<String>() {
+            @Override
+            public void onReceiveValue(String s) {
+                Log.i("AllTrans", "AllTrans: we did replace-" + originalString);
+            }
+        });
     }
     @Override
     protected void afterHookedMethod(XC_MethodHook.MethodHookParam mParam) throws Throwable {
         Log.i("AllTrans", "AllTrans: we are in onPageFinished!");
 
-        webView = (WebView) mParam.args[0];
+        WebView webView = (WebView) mParam.args[0];
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
 
-        String script1 = "console.log(\" AllTrans HTMLCODE \");console.log(document.body.outerHTML)";
+        String scriptFrames = "console.log(\"AllTrans: Frames is \"+window.frames.length)";
+        webView.evaluateJavascript(scriptFrames, null);
+        String script1 = "console.log(\" AllTrans HTMLCODE \");console.log(document.body.outerHTML);";
         webView.evaluateJavascript(script1, null);
 
-        String script = "function getAllTextNodes() {\n" +
-                "    var result = [];\n" +
-                "    var ignore = {\n" +
-                "        \"STYLE\": 0,\n" +
-                "        \"SCRIPT\": 0,\n" +
-                "        \"NOSCRIPT\": 0,\n" +
-                "        \"IFRAME\": 0,\n" +
-                "        \"OBJECT\": 0\n" +
-                "    };\n" +
-                "\n" +
-                "    (function scanSubTree(node) {\n" +
-                "        if (node.tagName in ignore)\n" +
-                "            return;\n" +
-                "        if (node.childNodes.length)\n" +
-                "            for (var i = 0; i < node.childNodes.length; i++)\n" +
-                "                scanSubTree(node.childNodes[i]);\n" +
-                "        else if (node.nodeType == Node.TEXT_NODE)\n" +
-                "            result.push(node);\n" +
-                "    })(document);\n" +
-                "\n" +
-                "    return result;\n" +
-                "}\n" +
-                "\n" +
-                "all = getAllTextNodes();\n" +
-
-                "\n" +
-                "for (var i = 0, max = all.length; i < max; i++) {\n" +
-                "    if (all[i].nodeValue.trim() != '')\n" +
-                "        injectedObject.showLog(all[i].nodeValue);\n" +
-                "}";
-
+        String script = "function getAllTextNodes(e){var l=[],o={STYLE:0,SCRIPT:0,NOSCRIPT:0,IFRAME:0,OBJECT:0};return function e(d){if(!(d.tagName in o))if(d.childNodes.length)for(var n=0;n<d.childNodes.length;n++)e(d.childNodes[n]);else 3!=d.nodeType&&1!=d.nodeType||l.push(d)}(e),l}function doReplaceAll(e){for(var l=0,o=e.length;l<o;l++)1==e[l].nodeType&&0==e[l].childNodes.length?injectedObject.showLog(e[l].nodeValue,webView):3==e[l].nodeType&&\"\"!=e[l].nodeValue.trim()&&injectedObject.showLog(e[l].nodeValue,webView)}console.log(\"AllTrans: JavaScript is Indeed Enabled\");for(var j=0;j<window.frames.length;j++)all=getAllTextNodes(window.frames[j].document),doReplaceAll(all);all=getAllTextNodes(window.document),doReplaceAll(all);";
 
         //Insert debug statements to see why it cant get to showLog
-        webView.evaluateJavascript(script, null);
+        webView.evaluateJavascript(script, new ValueCallback<String>() {
+            @Override
+            public void onReceiveValue(String s) {
+                Log.i("AllTrans", "AllTrans: we did evaluate the Javascript!");
+            }
+        });
 //        "\n" +
 //                "function isASCII(str) {\n" +
 //                "    return /^[\\x00-\\xFF]*$/.test(str);\n" +
@@ -115,14 +119,14 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
 
     @SuppressWarnings("unused")
     @JavascriptInterface
-    public void showLog(final String stringArgs) {
+    public void showLog(final String stringArgs, WebView webView) {
         Log.i("AllTrans", "AllTrans: in WebView Showlog " + stringArgs);
         Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
 
-        GetTranslate getTranslate = new GetTranslate();
+        final GetTranslate getTranslate = new GetTranslate();
         getTranslate.stringToBeTrans = stringArgs;
         getTranslate.originalCallable = this;
-        getTranslate.userData = stringArgs;
+        getTranslate.userData = new WebHookUserData(webView, stringArgs);
         getTranslate.canCallOriginal = true;
 
         if (SetTextHookHandler.isNotWhiteSpace(getTranslate.stringToBeTrans)) {
@@ -140,7 +144,7 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
                     new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            callOriginalMethod(translatedString, stringArgs);
+                            callOriginalMethod(translatedString, getTranslate.userData);
                         }
                     }, PreferenceList.Delay);
 
@@ -149,9 +153,17 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
                     alltrans.cacheAccess.release();
                 }
             }
-
             getTranslateToken.doAll();
-
         }
+    }
+}
+
+class WebHookUserData {
+    public WebView webView;
+    public String stringArgs;
+
+    public WebHookUserData(WebView webViewIn, String stringArgsIn) {
+        webView = webViewIn;
+        stringArgs = stringArgsIn;
     }
 }
