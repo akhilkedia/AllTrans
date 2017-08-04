@@ -37,51 +37,68 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
         final String newString = StringEscape.javaScriptEscape(translatedString.toString());
         WebView webView = webHookUserData.webView;
         Log.i("AllTrans", "AllTrans: In callOriginalMethod webView. Trying to replace -" + originalString + "-with-" + newString);
-        String script = "function getAllTextNodes(tempDocument) {\n" +
-                " var result = [];\n" +
-                " var ignore = {\n" +
-                "  \"STYLE\": 0,\n" +
-                "  \"SCRIPT\": 0,\n" +
-                "  \"NOSCRIPT\": 0,\n" +
-                "  \"IFRAME\": 0,\n" +
-                "  \"OBJECT\": 0,\n" +
-                " };\n" +
-                " (function scanSubTree(node) {\n" +
-                "  if (node.tagName in ignore) {\n" +
-                "   return;\n" +
-                "  }\n" +
-                "  if (node.childNodes.length) {\n" +
-                "   for (var i = 0; i < node.childNodes.length; i++) {\n" +
-                "    scanSubTree(node.childNodes[i]);\n" +
-                "   }\n" +
-                "  } else if (node.nodeType == 3 || node.nodeType == 1) {\n" +
-                "   result.push(node);\n" +
-                "  }\n" +
-                " })(tempDocument);\n" +
-                " return result;\n" +
+        String script = "var AllTransInputTypes = {\n" +
+                "  'button': 0,\n" +
+                "  'reset': 0,\n" +
+                "  'submit': 0,\n" +
+                "  'text': 0,\n" +
+                "  'password': 0,\n" +
+                "  'hidden': 0,\n" +
+                "};\n" +
+                "\n" +
+                "function allTransGetAllTextNodes(tempDocument) {\n" +
+                "  var result = [];\n" +
+                "  var ignore = {\n" +
+                "    'STYLE': 0,\n" +
+                "    'SCRIPT': 0,\n" +
+                "    'NOSCRIPT': 0,\n" +
+                "    'IFRAME': 0,\n" +
+                "    'OBJECT': 0,\n" +
+                "  };\n" +
+                "  (function scanSubTree(node) {\n" +
+                "    if (node.tagName in ignore) {\n" +
+                "      return;\n" +
+                "    }\n" +
+                "    if (node.tagName && node.tagName.toLowerCase() == 'input' && (node.type in AllTransInputTypes)) {\n" +
+                "      result.push(node);\n" +
+                "    }\n" +
+                "    if (node.childNodes.length) {\n" +
+                "      for (var i = 0; i < node.childNodes.length; i++) {\n" +
+                "        scanSubTree(node.childNodes[i]);\n" +
+                "      }\n" +
+                "    } else if (node.nodeType == 3 || node.nodeType == 1) {\n" +
+                "      result.push(node);\n" +
+                "    }\n" +
+                "  })(tempDocument);\n" +
+                "  return result;\n" +
                 "}\n" +
                 "\n" +
-                "function doReplaceAll(all){\n" +
-                " for (var i = 0, max = all.length; i < max; i++) {\n" +
-                "  if (all[i].nodeType == 1 && all[i].childNodes.length == 0) {\n" +
-                "        if (all[i].nodeValue == \"" + originalString + "\") {\n" +
-                "            all[i].nodeValue = \"" + newString + "\";\n" +
-                "        }\n" +
+                "function allTransDoReplaceAll(all) {\n" +
+                "  for (var i = 0, max = all.length; i < max; i++) {\n" +
+                "    if (all[i].nodeType == 1 && all[i].childNodes.length == 0) {\n" +
+                "      if (all[i].nodeValue == \"" + originalString + "\") {\n" +
+                "        all[i].nodeValue = \"" + newString + "\";\n" +
+                "      }\n" +
+                "    } else if (all[i].nodeType == 3 && all[i].nodeValue.trim() != \"\") {\n" +
+                "      if (all[i].nodeValue == \"" + originalString + "\") {\n" +
+                "        all[i].nodeValue = \"" + newString + "\";\n" +
+                "      }\n" +
+                "    }\n" +
+                "    if (all[i].tagName && all[i].tagName.toLowerCase() == 'input' && all[i].type in AllTransInputTypes) {\n" +
+                "      if (all[i].value == \"" + originalString + "\") {\n" +
+                "        all[i].value = \"" + newString + "\";\n" +
+                "      }\n" +
+                "    }\n" +
                 "  }\n" +
-                "  else if (all[i].nodeType == 3 && all[i].nodeValue.trim() != '') {\n" +
-                "        if (all[i].nodeValue == \"" + originalString + "\") {\n" +
-                "            all[i].nodeValue = \"" + newString + "\";\n" +
-                "        }\n" +
-                "  }\n" +
-                " }\n" +
                 "}\n" +
                 "\n" +
-                "for (var j = 0; j < window.frames.length; j++) { \n" +
-                " all = getAllTextNodes(window.frames[j].document);\n" +
-                " doReplaceAll(all);\n" +
+                "for (var j = 0; j < window.frames.length; j++) {\n" +
+                "  all = allTransGetAllTextNodes(window.frames[j].document);\n" +
+                "  allTransDoReplaceAll(all);\n" +
                 "}\n" +
-                "all = getAllTextNodes(window.document);\n" +
-                "doReplaceAll(all);";
+                "\n" +
+                "all = allTransGetAllTextNodes(window.document);\n" +
+                "allTransDoReplaceAll(all);";
         webView.evaluateJavascript(script, new ValueCallback<String>() {
             @Override
             public void onReceiveValue(String s) {
@@ -102,8 +119,64 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
         String script1 = "console.log(\" AllTrans HTMLCODE \");console.log(document.body.outerHTML);";
         webView.evaluateJavascript(script1, null);
 
-        String script = "function getAllTextNodes(e){var l=[],o={STYLE:0,SCRIPT:0,NOSCRIPT:0,IFRAME:0,OBJECT:0};return function e(d){if(!(d.tagName in o))if(d.childNodes.length)for(var n=0;n<d.childNodes.length;n++)e(d.childNodes[n]);else 3!=d.nodeType&&1!=d.nodeType||l.push(d)}(e),l}function doReplaceAll(e){for(var l=0,o=e.length;l<o;l++)1==e[l].nodeType&&0==e[l].childNodes.length?injectedObject.showLog(e[l].nodeValue,webView):3==e[l].nodeType&&\"\"!=e[l].nodeValue.trim()&&injectedObject.showLog(e[l].nodeValue,webView)}console.log(\"AllTrans: JavaScript is Indeed Enabled\");for(var j=0;j<window.frames.length;j++)all=getAllTextNodes(window.frames[j].document),doReplaceAll(all);all=getAllTextNodes(window.document),doReplaceAll(all);";
-
+        String script = "console.log('AllTrans: JavaScript is Indeed Enabled');\n" +
+                "\n" +
+                "var AllTransInputTypes = {\n" +
+                "  'button': 0,\n" +
+                "  'reset': 0,\n" +
+                "  'submit': 0,\n" +
+                "  'text': 0,\n" +
+                "  'password': 0,\n" +
+                "  'hidden': 0,\n" +
+                "};\n" +
+                "\n" +
+                "function allTransGetAllTextNodes(tempDocument) {\n" +
+                "  var result = [];\n" +
+                "  var ignore = {\n" +
+                "    'STYLE': 0,\n" +
+                "    'SCRIPT': 0,\n" +
+                "    'NOSCRIPT': 0,\n" +
+                "    'IFRAME': 0,\n" +
+                "    'OBJECT': 0,\n" +
+                "  };\n" +
+                "  (function scanSubTree(node) {\n" +
+                "    if (node.tagName in ignore) {\n" +
+                "      return;\n" +
+                "    }\n" +
+                "    if (node.tagName && node.tagName.toLowerCase() == 'input' && (node.type in AllTransInputTypes)) {\n" +
+                "      result.push(node);\n" +
+                "    }\n" +
+                "    if (node.childNodes.length) {\n" +
+                "      for (var i = 0; i < node.childNodes.length; i++) {\n" +
+                "        scanSubTree(node.childNodes[i]);\n" +
+                "      }\n" +
+                "    } else if (node.nodeType == 3 || node.nodeType == 1) {\n" +
+                "      result.push(node);\n" +
+                "    }\n" +
+                "  })(tempDocument);\n" +
+                "  return result;\n" +
+                "}\n" +
+                "\n" +
+                "function allTransDoReplaceAll(all) {\n" +
+                "  for (var i = 0, max = all.length; i < max; i++) {\n" +
+                "    if (all[i].nodeType == 1 && all[i].childNodes.length == 0) {\n" +
+                "      injectedObject.showLog(all[i].nodeValue, webView);\n" +
+                "    } else if (all[i].nodeType == 3 && all[i].nodeValue.trim() != '') {\n" +
+                "      injectedObject.showLog(all[i].nodeValue, webView);\n" +
+                "    }\n" +
+                "    if (all[i].tagName && all[i].tagName.toLowerCase() == 'input' && all[i].type in AllTransInputTypes) {\n" +
+                "      injectedObject.showLog(all[i].value, webView);\n" +
+                "    }\n" +
+                "  }\n" +
+                "}\n" +
+                "\n" +
+                "for (var j = 0; j < window.frames.length; j++) {\n" +
+                "  all = allTransGetAllTextNodes(window.frames[j].document);\n" +
+                "  allTransDoReplaceAll(all);\n" +
+                "}\n" +
+                "\n" +
+                "all = allTransGetAllTextNodes(window.document);\n" +
+                "allTransDoReplaceAll(all);";
         //Insert debug statements to see why it cant get to showLog
         webView.evaluateJavascript(script, new ValueCallback<String>() {
             @Override
