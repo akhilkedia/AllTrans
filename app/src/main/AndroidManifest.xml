@@ -43,7 +43,7 @@
             android:value="In-app translations anywhere" />
         <meta-data
             android:name="xposedminversion"
-            android:value="54" />
+            android:value="53" />
 
         <activity android:name=".MainActivity">
             <intent-filter>

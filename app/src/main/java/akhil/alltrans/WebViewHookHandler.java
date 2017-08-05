@@ -19,15 +19,19 @@
 
 package akhil.alltrans;
 
+import android.annotation.SuppressLint;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
-import android.webkit.ValueCallback;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
+import java.io.FileOutputStream;
+
 import de.robv.android.xposed.XC_MethodHook;
+
+import static android.content.Context.MODE_APPEND;
 
 public class WebViewHookHandler extends XC_MethodHook implements OriginalCallable {
 
@@ -99,13 +103,11 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
                 "\n" +
                 "all = allTransGetAllTextNodes(window.document);\n" +
                 "allTransDoReplaceAll(all);";
-        webView.evaluateJavascript(script, new ValueCallback<String>() {
-            @Override
-            public void onReceiveValue(String s) {
-                Log.i("AllTrans", "AllTrans: we did replace-" + originalString);
-            }
-        });
+
+        myEvaluateJavaScript(webView, script);
     }
+
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void afterHookedMethod(XC_MethodHook.MethodHookParam mParam) throws Throwable {
         Log.i("AllTrans", "AllTrans: we are in onPageFinished!");
@@ -115,9 +117,9 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
         webSettings.setJavaScriptEnabled(true);
 
         String scriptFrames = "console.log(\"AllTrans: Frames is \"+window.frames.length)";
-        webView.evaluateJavascript(scriptFrames, null);
-        String script1 = "console.log(\" AllTrans HTMLCODE \");console.log(document.body.outerHTML);";
-        webView.evaluateJavascript(script1, null);
+        myEvaluateJavaScript(webView, scriptFrames);
+        // String script1 = "console.log(\" AllTrans HTMLCode \");injectedObject.WriteHTML(document.body.outerHTML);";
+        // webView.evaluateJavascript(script1, null);
 
         String script = "console.log('AllTrans: JavaScript is Indeed Enabled');\n" +
                 "\n" +
@@ -177,13 +179,8 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
                 "\n" +
                 "all = allTransGetAllTextNodes(window.document);\n" +
                 "allTransDoReplaceAll(all);";
-        //Insert debug statements to see why it cant get to showLog
-        webView.evaluateJavascript(script, new ValueCallback<String>() {
-            @Override
-            public void onReceiveValue(String s) {
-                Log.i("AllTrans", "AllTrans: we did evaluate the Javascript!");
-            }
-        });
+
+        myEvaluateJavaScript(webView, script);
 //        "\n" +
 //                "function isASCII(str) {\n" +
 //                "    return /^[\\x00-\\xFF]*$/.test(str);\n" +
@@ -229,11 +226,33 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
             getTranslateToken.doAll();
         }
     }
+
+    @SuppressWarnings("unused")
+    @JavascriptInterface
+    public void WriteHTML(String html) {
+        try {
+            FileOutputStream fileOutputStream = alltrans.context.openFileOutput("HTMLPage", MODE_APPEND);
+            alltrans.cacheAccess.acquireUninterruptibly();
+            fileOutputStream.write(html.getBytes());
+            fileOutputStream.close();
+            alltrans.cacheAccess.release();
+        } catch (Exception e) {
+            Log.i("AllTrans", "AllTrans: Exception while writing HTML" + e);
+        }
+    }
+
+    private void myEvaluateJavaScript(WebView webView, String script) {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
+            webView.evaluateJavascript(script, null);
+        } else {
+            webView.loadUrl("javascript:" + script);
+        }
+    }
 }
 
 class WebHookUserData {
-    public WebView webView;
-    public String stringArgs;
+    public final WebView webView;
+    public final String stringArgs;
 
     public WebHookUserData(WebView webViewIn, String stringArgsIn) {
         webView = webViewIn;

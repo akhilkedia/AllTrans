@@ -25,8 +25,8 @@ import android.webkit.WebView;
 
 import de.robv.android.xposed.XC_MethodHook;
 
-public class WebViewOnCreateHookHandler extends XC_MethodHook {
-    @SuppressLint("JavascriptInterface")
+class WebViewOnCreateHookHandler extends XC_MethodHook {
+    @SuppressLint({"JavascriptInterface", "AddJavascriptInterface"})
     @Override
     protected void afterHookedMethod(MethodHookParam methodHookParam) {
         Log.i("AllTrans", "AllTrans: we are after webview Constructor!");

@@ -48,11 +48,7 @@ class StringEscape {
         if (str == null) {
             return null;
         }
-
         StringWriter writer = new StringWriter(str.length() * 2);
-        boolean escapeSingleQuote = true;
-        boolean escapeForwardSlash = true;
-
         int sz;
         sz = str.length();
         for (int i = 0; i < sz; i++) {
@@ -98,9 +94,7 @@ class StringEscape {
             } else {
                 switch (ch) {
                     case '\'':
-                        if (escapeSingleQuote) {
-                            writer.write('\\');
-                        }
+                        writer.write('\\');
                         writer.write('\'');
                         break;
                     case '"':
@@ -112,9 +106,7 @@ class StringEscape {
                         writer.write('\\');
                         break;
                     case '/':
-                        if (escapeForwardSlash) {
-                            writer.write('\\');
-                        }
+                        writer.write('\\');
                         writer.write('/');
                         break;
                     default:

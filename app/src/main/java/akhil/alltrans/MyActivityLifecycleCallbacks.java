@@ -59,9 +59,10 @@ class MyActivityLifecycleCallbacks implements Application.ActivityLifecycleCallb
             try {
                 Log.i("AllTrans", "AllTrans: trying to write cache");
                 FileOutputStream fileOutputStream = alltrans.context.openFileOutput("AllTransCache", 0);
-                ObjectOutputStream s = new ObjectOutputStream(fileOutputStream);
+                ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
                 alltrans.cacheAccess.acquireUninterruptibly();
-                s.writeObject(alltrans.cache);
+                objectOutputStream.writeObject(alltrans.cache);
+                objectOutputStream.close();
                 alltrans.cacheAccess.release();
 
             } catch (Exception e) {
