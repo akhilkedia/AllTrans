@@ -26,7 +26,6 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
@@ -66,11 +65,13 @@ public class alltrans implements IXposedHookLoadPackage {
         if (!globalPref.getBoolean(lpparam.packageName, false))
             return;
 
-        Log.i("AllTrans", "in package : " + lpparam.packageName);
+        utils.Debug = globalPref.getBoolean("Debug", false);
+
+        utils.debugLog("in package : " + lpparam.packageName);
         XSharedPreferences localPref = new XSharedPreferences(alltrans.class.getPackage().getName(), lpparam.packageName);
         localPref.makeWorldReadable();
         localPref.reload();
-        PreferenceList.getPref(globalPref, localPref);
+        PreferenceList.getPref(globalPref, localPref, lpparam.packageName);
 
 
         //Android System WebView - com.google.android.webview
@@ -97,31 +98,31 @@ public class alltrans implements IXposedHookLoadPackage {
             findAndHookMethod(WebView.class, "loadUrl", String.class, Map.class, new XC_MethodHook() {
                 @Override
                 protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-                    Log.i("AllTrans", "AllTrans: we are in loadurl with headers!");
+                    utils.debugLog("we are in loadurl with headers!");
                 }
             });
             findAndHookMethod(WebView.class, "loadUrl", String.class, new XC_MethodHook() {
                 @Override
                 protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-                    Log.i("AllTrans", "AllTrans: we are in loadurl!");
+                    utils.debugLog("we are in loadurl!");
                 }
             });
             findAndHookMethod(WebView.class, "postUrl", String.class, (new byte[1]).getClass(), new XC_MethodHook() {
                 @Override
                 protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-                    Log.i("AllTrans", "AllTrans: we are in posturl!");
+                    utils.debugLog("we are in posturl!");
                 }
             });
             findAndHookMethod(WebView.class, "loadData", String.class, String.class, String.class, new XC_MethodHook() {
                 @Override
                 protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-                    Log.i("AllTrans", "we are in loadData!");
+                    utils.debugLog("we are in loadData!");
                 }
             });
             findAndHookMethod(WebView.class, "loadDataWithBaseURL", String.class, String.class, String.class, String.class, String.class, new XC_MethodHook() {
                 @Override
                 protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-                    Log.i("AllTrans", "we are in loadDataWithBaseURL! BaseURL - " + param.args[0] + "MimeType" + param.args[2] + " Data - " + param.args[1]);
+                    utils.debugLog("we are in loadDataWithBaseURL! BaseURL - " + param.args[0] + "MimeType" + param.args[2] + " Data - " + param.args[1]);
                 }
             });
 

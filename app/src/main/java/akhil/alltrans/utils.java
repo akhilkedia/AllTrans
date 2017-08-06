@@ -19,10 +19,20 @@
 
 package akhil.alltrans;
 
+import android.util.Log;
+
 import java.io.StringWriter;
 import java.util.Locale;
 
-class StringEscape {
+class utils {
+    public static boolean Debug;
+
+    public static void debugLog(String str) {
+        if (Debug) {
+            Log.i("AllTrans", "AllTrans: " + str);
+        }
+    }
+
     public static String XMLUnescape(String s) {
         String retVal = s.replaceAll("&amp;", "&");
         retVal = retVal.replaceAll("&quot;", "\"");

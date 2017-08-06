@@ -43,7 +43,7 @@ public class GetTranslate implements Callback {
             String result = response.body().string();
             response.body().close();
 
-            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " In GetTranslate, setting: " + stringToBeTrans + "got response as " + result);
+            utils.debugLog("In Thread " + Thread.currentThread().getId() + " In GetTranslate, setting: " + stringToBeTrans + "got response as " + result);
             try {
                 if (PreferenceList.EnableYandex)
                     translatedString = result.substring(result.indexOf("<text>") + 6, result.lastIndexOf("</text>"));
@@ -53,7 +53,7 @@ public class GetTranslate implements Callback {
                 Log.e("AllTrans", "AllTrans: Got error in getting string from translation as : " + Log.getStackTraceString(e));
                 translatedString = stringToBeTrans;
             }
-            translatedString = StringEscape.XMLUnescape(translatedString);
+            translatedString = utils.XMLUnescape(translatedString);
 
             if (translatedString == null) {
                 translatedString = "";
@@ -66,7 +66,7 @@ public class GetTranslate implements Callback {
                 alltrans.cacheAccess.release();
             }
 
-            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " In GetTranslate, setting: " + stringToBeTrans + " to :" + translatedString);
+            utils.debugLog("In Thread " + Thread.currentThread().getId() + " In GetTranslate, setting: " + stringToBeTrans + " to :" + translatedString);
 
         } catch (java.io.IOException e) {
             Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
@@ -79,7 +79,7 @@ public class GetTranslate implements Callback {
 //                e.printStackTrace();
 //            }
 
-            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " In GetTranslate calling callOriginalMethod with argument - " + translatedString);
+            utils.debugLog("In Thread " + Thread.currentThread().getId() + " In GetTranslate calling callOriginalMethod with argument - " + translatedString);
 
             if (canCallOriginal) {
                 new Handler(Looper.getMainLooper()).post(new Runnable() {

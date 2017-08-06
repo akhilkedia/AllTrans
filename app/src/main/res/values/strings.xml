@@ -18,13 +18,15 @@
   -->
 
 <resources>
-    <integer name="defaultDelay">0</integer>
+    <integer name="default_delay">0</integer>
+    <integer name="default_delay_webview">500</integer>
 
     <string name="app_name">"AllTrans"</string>
     <string name="loading">"Loading List of Applications - Please Wait"</string>
     <string name="clear_cache_error">"Some Error. Could not clear translation cache!"</string>
     <string name="clear_cache_success">"Translate Cache for this app has been erased!"</string>
     <string name="wut_why_null">"Could not load the Per-app preference page. Close and re-open application again."</string>
+
     <string name="app_icon">"App Icon"</string>
     <string name="example_application">"Example Application"</string>
     <string name="description">"Description"</string>
@@ -156,11 +158,32 @@ TROUBLESHOOTING
     <string name="caching_summary_on">"Saving translations offline to speed up translate and use data. Turn off to disable if your app doesn&apos;t start."</string>
 
     <!-- delay -->
-    <string name="delay">"Delay Before Translating"</string>
-    <string name="delay_summary">"Set the time in milliseconds to wait before translating. Default Value is 0, set to 1000–5000 if the translated app is crashing."</string>
+    <string name="delay">"Delay Before Replacing with Translated Text"</string>
+    <string name="delay_summary">"Set the time in milliseconds to wait before replace with translated text. Default Value is 0. Set to 1000–5000 if the translated app is crashing."</string>
+
+    <!-- WebView Delay -->
+    <string name="delay_webview">"Delay Before Starting to Translate WebViews"</string>
+    <string name="delay_webview_summary">"Set the time in milliseconds to wait before starting to translate WebViews. Default Value is 500. Set to 0 to increase translation speed. Set to 3000-5000 if part of web app are not translating."</string>
+
+    <!-- Anonymous Usage and Crash Data -->
+    <string name="analytics">"Send Anonymous Crash and Usage Data"</string>
+    <string name="analytics_summary_off">"Not sending anonymous crash and Usage data. Sending anonymous crash data helps the developer make the app better."</string>
+    <string name="analytics_summary_on">"Sending anonymous crash and usage data. No personal information is transmitted. Anonymous crash data helps the developer make the app better"</string>
+
+    <!-- Anonymous Usage and Crash Data -->
+    <string name="debug">"Advanced : Turn on Debug Mode."</string>
+    <string name="debug_summary_off">"Debug mode is off. Not writing debug data to logcat. Turn this on before sending error reports"</string>
+    <string name="debug_summary_on">"Debug mode is on. Writing logs to logcat. This decreases performance - turn off if not needed."</string>
 
 
     <!-- Per App Preferences -->
+
+    <!-- local on off -->
+    <string name="local_on_off">"Translate This App"</string>
+    <string name="local_on_off_summary">"Turn off to stop translating this app"</string>
+    <string name="local_on_off_summary_off">"This app will not translated. Turn on to start using auto-translate!"</string>
+    <string name="local_on_off_summary_on">"This will be translated. Turn off to completely disable translating this app."</string>
+
     <!-- overRide Global -->
     <string name="overRide_global">"OverRide Global Settings"</string>
     <string name="overRide_global_summary_off">"Using Global Settings for this app. Turn on to change settings only for this app."</string>

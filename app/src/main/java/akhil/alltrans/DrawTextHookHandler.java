@@ -117,7 +117,7 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
         alltrans.hookAccess.acquireUninterruptibly();
         unhookMethod(methodHookParam.method, alltrans.setTextHook);
         try {
-            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " Invoking original function " + methodHookParam.method.getName() + " and setting text to " + myArgs[0].toString());
+            utils.debugLog("In Thread " + Thread.currentThread().getId() + " Invoking original function " + methodHookParam.method.getName() + " and setting text to " + myArgs[0].toString());
             myMethod.invoke(methodHookParam.thisObject, myArgs);
         } catch (Exception e) {
             Log.e("AllTrans", "AllTrans: Got error in invoking method as : " + Log.getStackTraceString(e));
@@ -132,9 +132,9 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
             String stringArgs = methodHookParam.args[0].toString();
 
             if (SetTextHookHandler.isNotWhiteSpace(stringArgs)) {
-                Log.i("AllTrans", "AllTrans: Canvas: Found string for canvas drawText : " + methodHookParam.args[0].toString());
+                utils.debugLog("Canvas: Found string for canvas drawText : " + methodHookParam.args[0].toString());
 
-                Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
+                utils.debugLog("In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
                 GetTranslate getTranslate = new GetTranslate();
                 getTranslate.stringToBeTrans = stringArgs;
                 getTranslate.originalCallable = this;
@@ -147,7 +147,7 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
                 alltrans.cacheAccess.acquireUninterruptibly();
                 if (PreferenceList.Caching && alltrans.cache.containsKey(stringArgs)) {
                     String translatedString = alltrans.cache.get(stringArgs);
-                    Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
+                    utils.debugLog("In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
                     alltrans.cacheAccess.release();
                     callOriginalMethod(translatedString, methodHookParam);
                     return null;

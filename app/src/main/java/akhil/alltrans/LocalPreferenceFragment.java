@@ -36,15 +36,27 @@ import static android.content.Context.MODE_WORLD_READABLE;
 
 public class LocalPreferenceFragment extends PreferenceFragmentCompat {
     public ApplicationInfo applicationInfo;
+    @SuppressLint("WorldReadableFiles")
+    public SharedPreferences settings;
 
     public LocalPreferenceFragment() {
+
     }
 
     @Override
     public void onCreatePreferences(Bundle bundle, String rootKey) {
-        @SuppressLint("WorldReadableFiles") SharedPreferences settings = this.getActivity().getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
-        Boolean enabledYandex = settings.getBoolean("EnableYandex", false);
+        settings = this.getActivity().getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
         PreferenceManager preferenceManager = getPreferenceManager();
+        preferenceManager.setSharedPreferencesName(applicationInfo.packageName);
+        preferenceManager.setSharedPreferencesMode(MODE_WORLD_READABLE);
+
+        utils.debugLog("Is it enabled for package " + applicationInfo.packageName + " answer -" + settings.contains(applicationInfo.packageName));
+        if (settings.contains(applicationInfo.packageName)) {
+            preferenceManager.getSharedPreferences().edit().putBoolean("LocalEnabled", true).commit();
+        } else {
+            preferenceManager.getSharedPreferences().edit().putBoolean("LocalEnabled", false).commit();
+        }
+        Boolean enabledYandex = settings.getBoolean("EnableYandex", false);
         if (applicationInfo == null) {
             Context context = getContext();
             CharSequence text = getString(R.string.wut_why_null);
@@ -53,8 +65,6 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
             toast.show();
             return;
         }
-        preferenceManager.setSharedPreferencesName(applicationInfo.packageName);
-        preferenceManager.setSharedPreferencesMode(MODE_WORLD_READABLE);
         addPreferencesFromResource(R.xml.perappprefs);
 
         if (enabledYandex) {
@@ -73,8 +83,8 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
             translateToLanguage.setEntryValues(R.array.languageCodes);
         }
 
-        Preference pref = findPreference("clearCache");
-        pref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+        Preference clearCache = findPreference("ClearCache");
+        clearCache.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
                 try {
@@ -109,6 +119,23 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
                 toast.show();
 
                 return false;
+            }
+        });
+
+        Preference localEnabled = findPreference("LocalEnabled");
+        localEnabled.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                // do whatever you want with new value
+                boolean localEnabledBool = (boolean) newValue;
+                if (localEnabledBool) {
+                    settings.edit().putBoolean(applicationInfo.packageName, true).apply();
+                } else {
+                    settings.edit().remove(applicationInfo.packageName).apply();
+                }
+                // true to update the state of the Preference with the new value
+                // in case you want to disallow the change return false
+                return true;
             }
         });
     }

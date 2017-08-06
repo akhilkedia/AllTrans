@@ -80,7 +80,7 @@ class GetTranslateToken implements Callback {
             available.acquireUninterruptibly();
             long time = System.currentTimeMillis();
             if (time > lastExpireTime) {
-                Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Entering get new token for string : " + getTranslate.stringToBeTrans);
+                utils.debugLog("In Thread " + Thread.currentThread().getId() + "  Entering get new token for string : " + getTranslate.stringToBeTrans);
                 getNewToken();
             } else {
                 available.release();
@@ -124,7 +124,7 @@ class GetTranslateToken implements Callback {
                         .get()
                         .build();
 
-                Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Enqueuing Request for new translation for : " + getTranslate.stringToBeTrans);
+                utils.debugLog("In Thread " + Thread.currentThread().getId() + "  Enqueuing Request for new translation for : " + getTranslate.stringToBeTrans);
                 httpsClient.newCall(request).enqueue(getTranslate);
             } else {
                 String baseURL = "http://api.microsofttranslator.com/v2/Http.svc/Translate?text=";
@@ -137,7 +137,7 @@ class GetTranslateToken implements Callback {
                         .addHeader("authorization", "Bearer " + userCredentials)
                         .build();
 
-                Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Enqueuing Request for new translation for : " + getTranslate.stringToBeTrans);
+                utils.debugLog("In Thread " + Thread.currentThread().getId() + "  Enqueuing Request for new translation for : " + getTranslate.stringToBeTrans);
                 httpClient.newCall(request).enqueue(getTranslate);
             }
         } catch (java.io.IOException e) {
@@ -157,9 +157,9 @@ class GetTranslateToken implements Callback {
         try {
             String result = response.body().string();
             response.body().close();
-            Log.i("AllTrans", "AllTrans: Got request result as : " + result);
+            utils.debugLog("Got request result as : " + result);
             userCredentials = result;
-            Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + "  Set User Credentials as : " + userCredentials);
+            utils.debugLog("In Thread " + Thread.currentThread().getId() + "  Set User Credentials as : " + userCredentials);
             lastExpireTime = System.currentTimeMillis() + 550000;
         } catch (java.io.IOException e) {
             Log.e("AllTrans", "AllTrans: Got error in getting token as : " + Log.getStackTraceString(e));

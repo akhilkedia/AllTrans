@@ -22,7 +22,6 @@ package akhil.alltrans;
 import android.annotation.SuppressLint;
 import android.os.Handler;
 import android.os.Looper;
-import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -37,10 +36,10 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
 
     public void callOriginalMethod(final CharSequence translatedString, final Object userData) {
         WebHookUserData webHookUserData = (WebHookUserData) userData;
-        final String originalString = StringEscape.javaScriptEscape(webHookUserData.stringArgs);
-        final String newString = StringEscape.javaScriptEscape(translatedString.toString());
+        final String originalString = utils.javaScriptEscape(webHookUserData.stringArgs);
+        final String newString = utils.javaScriptEscape(translatedString.toString());
         WebView webView = webHookUserData.webView;
-        Log.i("AllTrans", "AllTrans: In callOriginalMethod webView. Trying to replace -" + originalString + "-with-" + newString);
+        utils.debugLog("In callOriginalMethod webView. Trying to replace -" + originalString + "-with-" + newString);
         String script = "var AllTransInputTypes = {\n" +
                 "  'button': 0,\n" +
                 "  'reset': 0,\n" +
@@ -110,7 +109,7 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
     @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void afterHookedMethod(XC_MethodHook.MethodHookParam mParam) throws Throwable {
-        Log.i("AllTrans", "AllTrans: we are in onPageFinished!");
+        utils.debugLog("we are in onPageFinished!");
 
         WebView webView = (WebView) mParam.args[0];
         WebSettings webSettings = webView.getSettings();
@@ -124,61 +123,65 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
         String script = "console.log('AllTrans: JavaScript is Indeed Enabled');\n" +
                 "\n" +
                 "var AllTransInputTypes = {\n" +
-                "  'button': 0,\n" +
-                "  'reset': 0,\n" +
-                "  'submit': 0,\n" +
-                "  'text': 0,\n" +
-                "  'password': 0,\n" +
-                "  'hidden': 0,\n" +
+                " 'button': 0,\n" +
+                " 'reset': 0,\n" +
+                " 'submit': 0,\n" +
+                " 'text': 0,\n" +
+                " 'password': 0,\n" +
+                " 'hidden': 0,\n" +
                 "};\n" +
                 "\n" +
                 "function allTransGetAllTextNodes(tempDocument) {\n" +
-                "  var result = [];\n" +
-                "  var ignore = {\n" +
-                "    'STYLE': 0,\n" +
-                "    'SCRIPT': 0,\n" +
-                "    'NOSCRIPT': 0,\n" +
-                "    'IFRAME': 0,\n" +
-                "    'OBJECT': 0,\n" +
-                "  };\n" +
-                "  (function scanSubTree(node) {\n" +
-                "    if (node.tagName in ignore) {\n" +
-                "      return;\n" +
-                "    }\n" +
-                "    if (node.tagName && node.tagName.toLowerCase() == 'input' && (node.type in AllTransInputTypes)) {\n" +
-                "      result.push(node);\n" +
-                "    }\n" +
-                "    if (node.childNodes.length) {\n" +
-                "      for (var i = 0; i < node.childNodes.length; i++) {\n" +
-                "        scanSubTree(node.childNodes[i]);\n" +
-                "      }\n" +
-                "    } else if (node.nodeType == 3 || node.nodeType == 1) {\n" +
-                "      result.push(node);\n" +
-                "    }\n" +
-                "  })(tempDocument);\n" +
-                "  return result;\n" +
+                " var result = [];\n" +
+                " var ignore = {\n" +
+                " 'STYLE': 0,\n" +
+                " 'SCRIPT': 0,\n" +
+                " 'NOSCRIPT': 0,\n" +
+                " 'IFRAME': 0,\n" +
+                " 'OBJECT': 0,\n" +
+                " };\n" +
+                " (function scanSubTree(node) {\n" +
+                " if (node.tagName in ignore) {\n" +
+                " return;\n" +
+                " }\n" +
+                " if (node.tagName && node.tagName.toLowerCase() == 'input' && (node.type in AllTransInputTypes)) {\n" +
+                " result.push(node);\n" +
+                " }\n" +
+                " if (node.childNodes.length) {\n" +
+                " for (var i = 0; i < node.childNodes.length; i++) {\n" +
+                " scanSubTree(node.childNodes[i]);\n" +
+                " }\n" +
+                " } else if (node.nodeType == 3 || node.nodeType == 1) {\n" +
+                " result.push(node);\n" +
+                " }\n" +
+                " })(tempDocument);\n" +
+                " return result;\n" +
                 "}\n" +
                 "\n" +
                 "function allTransDoReplaceAll(all) {\n" +
-                "  for (var i = 0, max = all.length; i < max; i++) {\n" +
-                "    if (all[i].nodeType == 1 && all[i].childNodes.length == 0) {\n" +
-                "      injectedObject.showLog(all[i].nodeValue, webView);\n" +
-                "    } else if (all[i].nodeType == 3 && all[i].nodeValue.trim() != '') {\n" +
-                "      injectedObject.showLog(all[i].nodeValue, webView);\n" +
-                "    }\n" +
-                "    if (all[i].tagName && all[i].tagName.toLowerCase() == 'input' && all[i].type in AllTransInputTypes) {\n" +
-                "      injectedObject.showLog(all[i].value, webView);\n" +
-                "    }\n" +
-                "  }\n" +
+                " for (var i = 0, max = all.length; i < max; i++) {\n" +
+                " if (all[i].nodeType == 1 && all[i].childNodes.length == 0) {\n" +
+                " injectedObject.showLog(all[i].nodeValue, webView);\n" +
+                " } else if (all[i].nodeType == 3 && all[i].nodeValue.trim() != '') {\n" +
+                " injectedObject.showLog(all[i].nodeValue, webView);\n" +
+                " }\n" +
+                " if (all[i].tagName && all[i].tagName.toLowerCase() == 'input' && all[i].type in AllTransInputTypes) {\n" +
+                " injectedObject.showLog(all[i].value, webView);\n" +
+                " }\n" +
+                " }\n" +
                 "}\n" +
                 "\n" +
-                "for (var j = 0; j < window.frames.length; j++) {\n" +
+                "function doAll(){\n" +
+                " for (var j = 0; j < window.frames.length; j++) {\n" +
                 "  all = allTransGetAllTextNodes(window.frames[j].document);\n" +
                 "  allTransDoReplaceAll(all);\n" +
+                " }\n" +
+                "\n" +
+                " all = allTransGetAllTextNodes(window.document);\n" +
+                " allTransDoReplaceAll(all);\n" +
                 "}\n" +
                 "\n" +
-                "all = allTransGetAllTextNodes(window.document);\n" +
-                "allTransDoReplaceAll(all);";
+                "setTimeout(doAll," + PreferenceList.DelayWebView + ");";
 
         myEvaluateJavaScript(webView, script);
 //        "\n" +
@@ -190,8 +193,8 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
     @SuppressWarnings("unused")
     @JavascriptInterface
     public void showLog(final String stringArgs, WebView webView) {
-        Log.i("AllTrans", "AllTrans: in WebView Showlog " + stringArgs);
-        Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
+        utils.debugLog("in WebView Showlog " + stringArgs);
+        utils.debugLog("In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
 
         final GetTranslate getTranslate = new GetTranslate();
         getTranslate.stringToBeTrans = stringArgs;
@@ -208,7 +211,7 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
                 alltrans.cacheAccess.acquireUninterruptibly();
                 if (alltrans.cache.containsKey(stringArgs)) {
                     final String translatedString = alltrans.cache.get(stringArgs);
-                    Log.i("AllTrans", "AllTrans: In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
+                    utils.debugLog("In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
                     alltrans.cacheAccess.release();
 
                     new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
@@ -237,7 +240,7 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
             fileOutputStream.close();
             alltrans.cacheAccess.release();
         } catch (Exception e) {
-            Log.i("AllTrans", "AllTrans: Exception while writing HTML" + e);
+            utils.debugLog("Exception while writing HTML" + e);
         }
     }
 

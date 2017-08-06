@@ -52,6 +52,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="e336747f4e88278275220afe118135844bafc204" />

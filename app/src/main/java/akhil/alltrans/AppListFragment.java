@@ -32,7 +32,6 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -78,10 +77,10 @@ public class AppListFragment extends Fragment {
     public void onStart() {
         super.onStart();
         context = this.getActivity();
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
-
         //noinspection deprecation,deprecation
         settings = this.getActivity().getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
+
 //        SharedPreferences.Editor editor = settings.edit();
 //        editor.putBoolean("com.astroframe.seoulbus", true);
 //        editor.putBoolean("com.nhn.android.nmap", true);
@@ -111,7 +110,7 @@ public class AppListFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 ApplicationInfo curApp = (ApplicationInfo) parent.getItemAtPosition(position);
-                Log.i("Akhil", curApp.packageName);
+                utils.debugLog(curApp.packageName);
                 LocalPreferenceFragment localPreferenceFragment = new LocalPreferenceFragment();
                 localPreferenceFragment.applicationInfo = curApp;
                 context.getSupportFragmentManager().beginTransaction()
@@ -213,7 +212,7 @@ public class AppListFragment extends Fragment {
             viewHolder.imageView.setImageDrawable(icon);
 
             viewHolder.checkBox.setTag(position);
-            System.out.println("For package " + packageName + " ");
+            utils.debugLog("For package " + packageName + " ");
             if (settings.contains(packageName)) {
                 viewHolder.checkBox.setChecked(true);
             } else {
@@ -224,22 +223,20 @@ public class AppListFragment extends Fragment {
                 @Override
                 public void onClick(View v) {
                     CheckBox checkBox1 = (CheckBox) v;
+                    int position = (Integer) checkBox1.getTag();
+                    String packageName = values.get(position).packageName;
+                    utils.debugLog("CheckBox clicked!" + packageName);
+
                     if (checkBox1.isChecked()) {
-                        checkBox1.getTag();
-                        int position = (Integer) checkBox1.getTag();
-                        Log.i("AllTrans", "AllTrans: CheckBox clicked!" + values.get(position).packageName);
-                        SharedPreferences.Editor editor = settings.edit();
-                        editor.putBoolean(values.get(position).packageName, true);
-                        editor.apply();
-                    } else {
-                        checkBox1.getTag();
-                        int position = (Integer) checkBox1.getTag();
-                        Log.i("AllTrans", "AllTrans: CheckBox clicked!" + values.get(position).packageName);
-                        if (settings.contains(values.get(position).packageName)) {
-                            SharedPreferences.Editor editor = settings.edit();
-                            editor.remove(values.get(position).packageName);
-                            editor.apply();
-                        }
+                        settings.edit().putBoolean(packageName, true).apply();
+
+                        SharedPreferences localSettings = context.getSharedPreferences(packageName, MODE_WORLD_READABLE);
+                        localSettings.edit().putBoolean("LocalEnabled", true).apply();
+                    } else if (settings.contains(packageName)) {
+                        settings.edit().remove(packageName).apply();
+
+                        SharedPreferences localSettings = context.getSharedPreferences(packageName, MODE_WORLD_READABLE);
+                        localSettings.edit().putBoolean("LocalEnabled", false).apply();
                     }
                 }
             });

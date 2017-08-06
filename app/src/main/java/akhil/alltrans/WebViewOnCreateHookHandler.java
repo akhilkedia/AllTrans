@@ -20,7 +20,6 @@
 package akhil.alltrans;
 
 import android.annotation.SuppressLint;
-import android.util.Log;
 import android.webkit.WebView;
 
 import de.robv.android.xposed.XC_MethodHook;
@@ -29,7 +28,7 @@ class WebViewOnCreateHookHandler extends XC_MethodHook {
     @SuppressLint({"JavascriptInterface", "AddJavascriptInterface"})
     @Override
     protected void afterHookedMethod(MethodHookParam methodHookParam) {
-        Log.i("AllTrans", "AllTrans: we are after webview Constructor!");
+        utils.debugLog("we are after webview Constructor!");
         ((WebView) methodHookParam.thisObject).addJavascriptInterface(alltrans.webViewHookHandler, "injectedObject");
         ((WebView) methodHookParam.thisObject).addJavascriptInterface(methodHookParam.thisObject, "webView");
     }

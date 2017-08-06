@@ -19,6 +19,7 @@
 
 package akhil.alltrans;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentActivity;
@@ -37,8 +38,16 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        SharedPreferences settings = this.getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
+        utils.Debug = settings.getBoolean("Debug", false);
+
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
-        Fabric.with(this, new Crashlytics());
+        utils.debugLog("Is Debug Logging enabled" + settings.getBoolean("Anon", true));
+        mFirebaseAnalytics.setAnalyticsCollectionEnabled(settings.getBoolean("Anon", true));
+        if (settings.getBoolean("Anon", true)) {
+            Fabric.with(this, new Crashlytics());
+        }
 
         setContentView(R.layout.activity_main);
         getSupportFragmentManager().beginTransaction()

@@ -57,7 +57,7 @@ class MyActivityLifecycleCallbacks implements Application.ActivityLifecycleCallb
     public void onActivityDestroyed(Activity activity) {
         if (PreferenceList.Caching) {
             try {
-                Log.i("AllTrans", "AllTrans: trying to write cache");
+                utils.debugLog("trying to write cache");
                 FileOutputStream fileOutputStream = alltrans.context.openFileOutput("AllTransCache", 0);
                 ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
                 alltrans.cacheAccess.acquireUninterruptibly();

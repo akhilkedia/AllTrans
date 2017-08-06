@@ -21,13 +21,20 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <SwitchPreference
         android:defaultValue="false"
+        android:key="LocalEnabled"
+        android:summary="@string/local_on_off_summary"
+        android:summaryOff="@string/local_on_off_summary_off"
+        android:summaryOn="@string/local_on_off_summary_on"
+        android:title="@string/local_on_off" />
+    <SwitchPreference
+        android:defaultValue="false"
         android:key="OverRide"
         android:summaryOff="@string/overRide_global_summary_off"
         android:summaryOn="@string/overRide_global_summary_on"
         android:title="@string/overRide_global" />
     <SwitchPreference
         android:defaultValue="false"
-        android:key="clearCache"
+        android:key="ClearCache"
         android:persistent="false"
         android:summary="@string/clear_cache_summary"
         android:summaryOff="@string/clear_cache_summary"
@@ -87,11 +94,18 @@
             android:summaryOn="@string/caching_summary_on"
             android:title="@string/caching" />
         <EditTextPreference
-            android:defaultValue="@integer/defaultDelay"
+            android:defaultValue="@integer/default_delay"
             android:key="Delay"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:summary="@string/delay_summary"
             android:title="@string/delay" />
+        <EditTextPreference
+            android:defaultValue="@integer/default_delay_webview"
+            android:key="DelayWebView"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/delay_webview_summary"
+            android:title="@string/delay_webview" />
     </PreferenceCategory>
 </PreferenceScreen>

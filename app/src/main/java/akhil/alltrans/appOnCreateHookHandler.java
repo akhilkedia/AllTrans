@@ -20,7 +20,6 @@
 package akhil.alltrans;
 
 import android.app.Application;
-import android.util.Log;
 
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
@@ -44,10 +43,10 @@ class appOnCreateHookHandler extends XC_MethodHook {
                 //noinspection unchecked
                 alltrans.cache = (HashMap<String, String>) s.readObject();
                 alltrans.cacheAccess.release();
-                Log.i("AllTrans", "AllTrans: Successfully read old cache");
+                utils.debugLog("Successfully read old cache");
                 s.close();
             } catch (Exception e) {
-                Log.i("AllTrans", "AllTrans: Could not read cache ");
+                utils.debugLog("Could not read cache ");
                 alltrans.cacheAccess.acquireUninterruptibly();
                 alltrans.cache = new HashMap<>(10000);
                 alltrans.cacheAccess.release();

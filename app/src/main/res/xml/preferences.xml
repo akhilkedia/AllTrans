@@ -97,11 +97,30 @@
             android:summaryOn="@string/caching_summary_on"
             android:title="@string/caching" />
         <EditTextPreference
-            android:defaultValue="@integer/defaultDelay"
+            android:defaultValue="@integer/default_delay"
             android:key="Delay"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:summary="@string/delay_summary"
             android:title="@string/delay" />
+        <EditTextPreference
+            android:defaultValue="@integer/default_delay_webview"
+            android:key="DelayWebView"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/delay_webview_summary"
+            android:title="@string/delay_webview" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="Anon"
+            android:summaryOff="@string/analytics_summary_off"
+            android:summaryOn="@string/analytics_summary_on"
+            android:title="@string/analytics" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="Debug"
+            android:summaryOff="@string/debug_summary_off"
+            android:summaryOn="@string/debug_summary_on"
+            android:title="@string/debug" />
     </PreferenceCategory>
 </PreferenceScreen>
