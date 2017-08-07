@@ -86,7 +86,7 @@ TROUBLESHOOTING
 
 
     <!-- activity_main toolbar -->
-    <string name="translate_anywhere">"Translate Anywhere"</string>
+    <string name="translate_anywhere">"Translate Everywhere"</string>
     <string name="apps_to_translate">"Apps to Translate"</string>
     <string name="global_settings">"Global Settings"</string>
     <string name="instructions">"Instructions"</string>

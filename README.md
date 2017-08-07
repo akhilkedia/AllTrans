@@ -4,6 +4,8 @@ Like Chrome translation of webpages, but for Android apps.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
+## Table of Contents
+
  * [What AllTrans does](#what-alltrans-does)
  * [ScreenShots and Videos](#screenshots-and-videos)
    + [Below are some screenshots of AllTrans translating apps from Korean to English](#below-are-some-screenshots-of-alltrans-translating-apps-from-korean-to-english)
@@ -99,16 +101,16 @@ If you don't already have an Azure account, sign up for a [Microsoft Azure accou
 2. After you have an account, sign into the [Azure Portal](http://portal.azure.com).
 3. Add a `"Microsoft Translator API Subscription"` to your Azure account.
   1. Choose a `"pay-as-you-go"` subscription. Will require a credit card, but don't worry, nothing will be charged.
-  2. Select the ﻿`"+ New"` ﻿option.
-  3. Select ﻿`"Intelligence﻿"` from the list of services.
-  4. Select ﻿`"Cognitive Services APIs"﻿`.
-  5. Select the ﻿`"API Type"`﻿ option.
-  6. ﻿Select ﻿`"Text Translation"`.
-  7. In the ﻿`"Pricing Tier"`﻿ section, select the `"Free Tier (F0)"`.
-  8. Fill out the rest of the form, and press the ﻿`"Create"﻿` button.
+  2. Select the `"+ New"` option.
+  3. Select `"Intelligence"` from the list of services.
+  4. Select `"Cognitive Services APIs"`.
+  5. Select the `"API Type"` option.
+  6. Select `"Text Translation"`.
+  7. In the `"Pricing Tier"` section, select the `"Free Tier (F0)"`.
+  8. Fill out the rest of the form, and press the `"Create"` button.
 4. Retrieve your `"Authentication Key"`.
-  1. Go to `"﻿All Resources"`﻿ and select the Microsoft Translator API you subscribed to.
-  2. Go to the ﻿`"Keys"` ﻿option and copy your subscription key to access the service.
+  1. Go to `"All Resources"` and select the Microsoft Translator API you subscribed to.
+  2. Go to the `"Keys"` option and copy your subscription key to access the service.
   
 The subscription key is something like `"321dcba...."`
 
