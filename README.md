@@ -1,4 +1,4 @@
-# ![AllTrans](./app/src/main/res/mipmap-hdpi/ic_launcher.png)AllTrans - Completely Translate Apps
+# ![AllTrans](https://raw.githubusercontent.com/akhilkedia/AllTrans/master/app/src/main/res/mipmap-hdpi/ic_launcher.png)AllTrans - Completely Translate Apps
 
 Like Chrome translation of webpages, but for Android apps.
 
@@ -40,23 +40,23 @@ This is something similar to the way Google Translate works in Chrome.
 
 ### Below are some screenshots of AllTrans translating apps from Korean to English
 
-![](./screenshots/Joint1S.png)
+![](https://raw.githubusercontent.com/akhilkedia/AllTrans/master/screenshots/Joint1S.png)
 
-![](./screenshots/Joint2S.png)
+![](https://raw.githubusercontent.com/akhilkedia/AllTrans/master/screenshots/Joint2S.png)
 
-![](./screenshots/Joint3S.png)
+![](https://raw.githubusercontent.com/akhilkedia/AllTrans/master/screenshots/Joint3S.png)
 
 ### Below are some of the screenshots of AllTrans app
 
-![](./screenshots/Screen1S.png)
+![](https://raw.githubusercontent.com/akhilkedia/AllTrans/master/screenshots/Screen1S.png)
 
-![](./screenshots/Screen2S.png)
+![](https://raw.githubusercontent.com/akhilkedia/AllTrans/master/screenshots/Screen2S.png)
 
-![](./screenshots/Screen3S.png)
+![](https://raw.githubusercontent.com/akhilkedia/AllTrans/master/screenshots/Screen3S.png)
 
 ### Videos
 
-A video showing how to use AllTrans by Gadget Hacks on Youtube [https://www.youtube.com/watch?v=sKDtkmISi6k](https://www.youtube.com/watch?v=sKDtkmISi6k)
+A video (in English) showing how to use AllTrans by Gadget Hacks on Youtube [https://www.youtube.com/watch?v=sKDtkmISi6k](https://www.youtube.com/watch?v=sKDtkmISi6k)
 
 [![Alt text](https://img.youtube.com/vi/sKDtkmISi6k/0.jpg)](https://www.youtube.com/watch?v=sKDtkmISi6k)
 
