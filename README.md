@@ -1,6 +1,6 @@
 # ![AllTrans](./app/src/main/res/mipmap-hdpi/ic_launcher.png)AllTrans - Completely Translate Apps
 
-à la Chrome translation of webpages, but for Android apps
+Like Chrome translation of webpages, but for Android apps.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
@@ -16,10 +16,10 @@
  * [TroubleShooting](#troubleshooting)
    + [No app is being translated in any app](#no-app-is-being-translated-in-any-app)
    + [Translated app is stuck in opening screen](#translated-app-is-stuck-in-opening-screen)
-   + [The Translated app is `"Force Close"`](#the-translated-app-is---force-close--)
+   + [The Translated app is Force Close](#the-translated-app-is-force-close)
    + [A particular app is not being translated](#a-particular-app-is-not-being-translated)
    + [A game app is not being translated](#a-game-app-is-not-being-translated)
-   + [If you still have problems like `Force Close` or parts of an app not being translated](#if-you-still-have-problems-like--force-close--or-parts-of-an-app-not-being-translated)
+   + [If you still have problems like Force Close or parts of an app not being translated](#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated)
  * [License](#license)
  
 ## What AllTrans does
@@ -124,7 +124,7 @@ The subscription key is something like `"321dcba...."`
 * Click on the app's name in `"Apps to translate"` tab, and click on `"Click to Clear Translation Cache"`.
 * If this is the first time you started translating this app, click on the app's name in `"Apps to Translate"` tab, and in `"Other Settings"` fill in `"Delay Before Replcaing With Translated Text"` to `2000`.
 
-### The Translated app is `"Force Close"`
+### The Translated app is "Force Close"
 
 * Click on the app's name in `"Apps to Translate"` tab, and in `"Other Settings"` fill in `"Delay Before Replcaing With Translated Text"` to `2000`.
 * Click on the app's name in `"Apps to translate"` tab, and in `"Other Settings"` fill in `"Delay Before Starting to Translate WebViews"` to `2000`.
@@ -138,7 +138,7 @@ The subscription key is something like `"321dcba...."`
 
 * Due to technical limitations, `"AllTrans"` will not work with many games. Nothing can be done about this.
 
-### If you still have problems like `Force Close` or parts of an app not being translated
+### If you still have problems like "Force Close" or parts of an app not being translated
 
 Contact me for support. When you do, I will need atleast the following information - 
 
