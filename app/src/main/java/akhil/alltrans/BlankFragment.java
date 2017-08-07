@@ -22,33 +22,30 @@ package akhil.alltrans;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.text.method.LinkMovementMethod;
-import android.text.util.Linkify;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class BlankFragment extends Fragment {
 
-
     public BlankFragment() {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
+
         String instructions = getString(R.string.how_to_use);
-        textView.setText(instructions);
-        textView.setMovementMethod(LinkMovementMethod.getInstance());
-        Linkify.addLinks(textView, Linkify.WEB_URLS);
-        return textView;
+        NestedScrollingMarkDownView webView = new NestedScrollingMarkDownView(getActivity());
+        webView.setNestedScrollingEnabled(true);
+        webView.loadData(instructions, "text/html; charset=utf-8", "UTF-8");
+
+        return webView;
     }
 
 }
