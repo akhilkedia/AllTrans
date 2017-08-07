@@ -4,6 +4,24 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
+ * [What AllTrans does](#what-alltrans-does)
+ * [ScreenShots and Videos](#screenshots-and-videos)
+   + [Below are some screenshots of AllTrans translating apps from Korean to English](#below-are-some-screenshots-of-alltrans-translating-apps-from-korean-to-english)
+   + [Below are some of the screenshots of AllTrans app](#below-are-some-of-the-screenshots-of-alltrans-app)
+   + [Videos](#videos)
+ * [How to install AllTrans](#how-to-install-alltrans)
+ * [How to use AllTrans](#how-to-use-alltrans)
+ * [How to get Yandex Translate Key](#how-to-get-yandex-translate-key)
+ * [How to get Microsoft Azure Translate Key](#how-to-get-microsoft-azure-translate-key)
+ * [TroubleShooting](#troubleshooting)
+   + [No app is being translated in any app](#no-app-is-being-translated-in-any-app)
+   + [Translated app is stuck in opening screen](#translated-app-is-stuck-in-opening-screen)
+   + [The Translated app is `"Force Close"`](#the-translated-app-is---force-close--)
+   + [A particular app is not being translated](#a-particular-app-is-not-being-translated)
+   + [A game app is not being translated](#a-game-app-is-not-being-translated)
+   + [If you still have problems like `Force Close` or parts of an app not being translated](#if-you-still-have-problems-like--force-close--or-parts-of-an-app-not-being-translated)
+ * [License](#license)
+ 
 ## What AllTrans does
 
 It replaces **all text in an app** in a language from one language to another at runtime.
@@ -14,7 +32,7 @@ Then whenever the user uses the required app, all the text, **ANYWHERE** in the 
 
 This is something similar to the way Google Translate works in Chrome.
 
-__**Note**__ - Due to a technical limitation, this won't work with many games. Nothing can be done about this.
+**Note** - Due to a technical limitation, this won't work with many games. Nothing can be done about this.
 
 ## ScreenShots and Videos
 
@@ -53,7 +71,7 @@ You can also get the latest release of the APK from the [Xposed Module Repositor
 
 ## How to use AllTrans
 
-This application __**requires**__ you to sign up for __**free**__ a key from Microsoft or Yandex Translate. See instructions below on how to get the keys.
+This application **requires** you to sign up for **free** a key from Microsoft or Yandex Translate. See instructions below on how to get the keys.
 
 Yandex Translate supports more languages, has a much easier signup process, and requires **NO CREDIT CARD**.
 
@@ -65,7 +83,7 @@ Microsoft Translate gives **better translations**, but requires a credit card to
 3. In the `"Apps to Translate"` tab, find the app you want to translate, click the checkbox next to it. If the checkbox is not visible, try rotating your phone sideways into LandScape mode.
 4. Close and restart the app you want translated - it should be translated!
 
-## HOW TO GET YANDEX TRANSLATE SUBSCRIPTION KEY
+## How to get Yandex Translate Key
 
 1. Go to [Yandex Translate API Website](https://tech.yandex.com/keys/get/?service=trnsl)
 2. If you don't already have an account, click `"register"` and sign up for a new account.
@@ -74,7 +92,7 @@ Microsoft Translate gives **better translations**, but requires a credit card to
 
 The subscription key is something like `"trnsl.1.1.201701......"`
 
-## How to sign up for Microsoft Azure Translate
+## How to get Microsoft Azure Translate Key
 
 1. Sign up for a Microsoft Azure account.
 If you don't already have an Azure account, sign up for a [Microsoft Azure account](http://azure.com).
