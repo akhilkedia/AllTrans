@@ -2,7 +2,7 @@
 
 Like Chrome translation of webpages, but for Android apps.
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UY6TVJXST724J)
 
 ## Table of Contents
 
@@ -22,6 +22,7 @@ Like Chrome translation of webpages, but for Android apps.
    + [A particular app is not being translated](#a-particular-app-is-not-being-translated)
    + [A game app is not being translated](#a-game-app-is-not-being-translated)
    + [If you still have problems like Force Close or parts of an app not being translated](#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated)
+ * [Donations](#donations)
  * [License](#license)
  
 ## What AllTrans does
