@@ -151,6 +151,11 @@ Contact me for support. When you do, I will need atleast the following informati
 Once you have the above, contact me on the  [XDA support thread](https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878).
 You can also report issues on the  [Project's `Github`](https://github.com/akhilkedia/AllTrans).
 
+## Donations
+If you like this project, buy me a cup of coffee! :) 
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UY6TVJXST724J)
+
 ## License
 
 This program is AllTrans
