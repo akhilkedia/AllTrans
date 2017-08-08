@@ -103,8 +103,8 @@ public class AppListFragment extends Fragment {
         new PrepareAdapter().execute();
 
         listview.setChoiceMode(NestedScrollingListView.CHOICE_MODE_MULTIPLE);
-        //TODO: Check what effect this has
         listview.setNestedScrollingEnabled(true);
+        listview.setFastScrollEnabled(true);
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

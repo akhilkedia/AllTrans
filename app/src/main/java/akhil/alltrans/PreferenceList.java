@@ -35,9 +35,9 @@ class PreferenceList {
     public static boolean Caching;
     public static int Delay;
     public static int DelayWebView;
-    public static boolean Anon;
-    public static boolean Debug;
-    public static boolean LocalEnabled;
+    private static boolean Anon;
+    private static boolean Debug;
+    private static boolean LocalEnabled;
 
     public static void getPref(XSharedPreferences gPref, XSharedPreferences lPref, String packageName) {
         SubscriptionKey = gPref.getString("SubscriptionKey", "");

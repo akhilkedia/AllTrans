@@ -37,7 +37,7 @@ import static android.content.Context.MODE_WORLD_READABLE;
 public class LocalPreferenceFragment extends PreferenceFragmentCompat {
     public ApplicationInfo applicationInfo;
     @SuppressLint("WorldReadableFiles")
-    public SharedPreferences settings;
+    private SharedPreferences settings;
 
     public LocalPreferenceFragment() {
 
@@ -52,9 +52,9 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
 
         utils.debugLog("Is it enabled for package " + applicationInfo.packageName + " answer -" + settings.contains(applicationInfo.packageName));
         if (settings.contains(applicationInfo.packageName)) {
-            preferenceManager.getSharedPreferences().edit().putBoolean("LocalEnabled", true).commit();
+            preferenceManager.getSharedPreferences().edit().putBoolean("LocalEnabled", true).apply();
         } else {
-            preferenceManager.getSharedPreferences().edit().putBoolean("LocalEnabled", false).commit();
+            preferenceManager.getSharedPreferences().edit().putBoolean("LocalEnabled", false).apply();
         }
         Boolean enabledYandex = settings.getBoolean("EnableYandex", false);
         if (applicationInfo == null) {
