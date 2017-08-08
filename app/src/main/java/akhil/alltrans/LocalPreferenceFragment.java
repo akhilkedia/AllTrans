@@ -103,7 +103,14 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
 
                     outputStream.writeBytes("exit\n");
                     outputStream.flush();
+                    outputStream.close();
                     su.waitFor();
+
+                    Context context = preference.getContext();
+                    CharSequence text = getString(R.string.clear_cache_success);
+                    int duration = Toast.LENGTH_SHORT;
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
                 } catch (Exception e) {
                     Context context = preference.getContext();
                     CharSequence text = getString(R.string.clear_cache_error);
@@ -111,12 +118,6 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
                 }
-
-                Context context = preference.getContext();
-                CharSequence text = getString(R.string.clear_cache_success);
-                int duration = Toast.LENGTH_SHORT;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
 
                 return false;
             }
