@@ -23,57 +23,13 @@
     <string name="loading">"Daftar loading aplikasi - harap tunggu"</string>
     <string name="clear_cache_error">"Beberapa Error. Tidak bisa menghapus cache terjemahan!"</string>
     <string name="clear_cache_success">"Terjemahkan Cache untuk aplikasi ini telah dihapus!"</string>
-	<string name="how_to_use">"CARA MENGGUNAKAN APLIKASI
-
-Aplikasi ini mengharuskan Anda untuk mendaftar untuk kunci dari Microsoft atau Yandex terjemahan.
-Yandex Translate mendukung bahasa-bahasa lain, memiliki proses pendaftaran jauh lebih mudah, dan memerlukan tidak ada kartu kredit.
-Microsoft Translate memberikan hasil yang lebih baik, tetapi membutuhkan kartu kredit untuk mendaftar. (Tapi jangan khawatir, tidak ada yang akan dikenakan biaya.)
-
-1. pada tab pengaturan Global, mengaktifkan Yandex menggunakan bukan Microsoft jika Anda ingin menggunakan Yandex, lain menonaktifkan menggunakan Microsoft.
-1. pada tab pengaturan Global, tekan masukkan Microsoft Yandex berlangganan kunci, masukan tombol (Lihat instruksi dari bawah).
-2. Pilih menerjemahkan dari bahasa dan menerjemahkan ke bahasa.
-3. di aplikasi ke Translate tab, menemukan aplikasi yang Anda inginkan untuk menerjemahkan, klik kotak centang di samping itu. Jika kotak centang tidak terlihat, cobalah memutar telepon ke samping ke dalam modus lansekap.
-4. menutup dan restart aplikasi yang Anda inginkan diterjemahkan - itu harus diterjemahkan!
-
-PERINGATAN - beberapa aplikasi mungkin memaksa dekat. Lihat bagian mengatasi masalah.
-
-BAGAIMANA UNTUK MENDAPATKAN YANDEX MENERJEMAHKAN LANGGANAN KUNCI
-
-1. masuk ke Yandex Website - https://tech.yandex.com/keys/get/?service=trnsl
-2. jika Anda belum memiliki akun, klik register dan sign up untuk account baru.
-3. setelah sign up, setuju untuk dalam Perjanjian pengguna dan klik Dapatkan kunci API.
-4. Anda telah berhasil menerima kunci Anda! Itu adalah sesuatu seperti trnsl.1.1.201701...
-
-BAGAIMANA UNTUK MENDAPATKAN MICROSOFT AZURE TERJEMAHKAN LANGGANAN KUNCI
-
-1. sign up untuk account Microsoft Azure di http://azure.com
-
-2. setelah Anda memiliki akun, masuk ke portal Azure di http://portal.azure.com
-
-3. Tambahkan berlangganan Microsoft Translator API ke akun Azure.
-Memilih berlangganan pay-as-you-go. Akan memerlukan kartu kredit, tapi jangan khawatir, tidak akan dikenakan.
-Pilih + baru pilihan.
-Pilih intelijen dari daftar layanan.
-Pilih kognitif Layanan api.
-Pilih opsi API Type.
-Pilih teks terjemahan
-Pada tingkat harga bagian, pilih tingkat gratis (F0)
-Mengisi seluruh formulir, dan tekan tombol Buat.
-
-4. mengambil kunci otentikasi Anda.
-Pergi ke semua sumber daya dan pilih Microsoft Translator API Anda berlangganan.
-Pergi ke pilihan tombol dan menyalin langganan kunci untuk mengakses layanan.
-Tombol berlangganan adalah sesuatu seperti 321dcba...
-
-PEMECAHAN MASALAH
-
-1. jika tidak ada app sedang diterjemahkan, periksa tombol berlangganan Microsoft Yandex benar.
-2. jika diterjemahkan app Force menutup/mendapat terjebak pada loading pertama kalinya setelah Anda mulai menerjemahkan, klik pada aplikasi di aplikasi untuk menerjemahkan tab, dan pengaturan lain mengisi penundaan sebelum menerjemahkan sampai 2000.
-3. jika diterjemahkan app digunakan untuk bekerja dengan baik, tapi sekarang terjebak pada memulai, klik pada aplikasi di Apps untuk menerjemahkan tab, dan klik pada klik untuk Clear Cache terjemahan.
-4. jika beberapa bagian dari aplikasi yang tidak diterjemahkan, klik di app di Apps untuk menerjemahkan tab, dan mengaktifkan Mode agresif.
-5. jika app masih Force menutup, menonaktifkan terjemahan untuk aplikasi ini dan hubungi saya di benang dukungan XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Menerjemahkan mana saja"</string>
+    <string name="backup_pref_error">"Beberapa Error. Bisa tidak backup preferensi! Apakah Anda memberikan akses SuperUser?"</string>
+    <string name="backup_pref_success">"Preferensi telah mundur ke penyimpanan eksternal!"</string>
+    <string name="wut_why_null">"Tidak dapat memuat halaman preferensi Per-app. Menutup dan membuka kembali aplikasi lagi."</string>
+    <string name="app_icon">"Ikon apl"</string>
+    <string name="example_application">"Contoh aplikasi"</string>
+    <string name="description">"Deskripsi"</string>
+    <string name="translate_anywhere">"Menerjemahkan di mana-mana"</string>
     <string name="apps_to_translate">"Apps untuk menerjemahkan"</string>
     <string name="global_settings">"Pengaturan global"</string>
     <string name="instructions">"Petunjuk"</string>
@@ -112,8 +68,20 @@ PEMECAHAN MASALAH
     <string name="caching">"Menggunakan Caching"</string>
     <string name="caching_summary_off">"Tidak menyimpan terjemahan secara offline, mengakibatkan lebih lambat menerjemahkan dan data yang lebih tinggi - tapi mungkin bekerja untuk lebih banyak aplikasi. Belok untuk menyimpan terjemahan."</string>
     <string name="caching_summary_on">"Menyimpan terjemahan secara offline untuk mempercepat menerjemahkan dan menggunakan data. Menonaktifkan untuk menonaktifkan jika aplikasi Anda tidak dimulai."</string>
-    <string name="delay">"Penundaan sebelum menerjemahkan"</string>
-    <string name="delay_summary">"Mengatur waktu dalam milidetik untuk menunggu sebelum menerjemahkan. Nilai default adalah 0, set ke 1000-5000 jika diterjemahkan app menabrak."</string>
+    <string name="delay">"Penundaan sebelum mengganti dengan diterjemahkan teks"</string>
+    <string name="delay_summary">"Mengatur waktu dalam milidetik untuk menunggu sebelum ganti dengan teks diterjemahkan. Nilai default adalah 0. Ditetapkan untuk 1000-5000 jika diterjemahkan app menabrak."</string>
+    <string name="delay_webview">"Penundaan sebelum memulai untuk menerjemahkan WebViews"</string>
+    <string name="delay_webview_summary">"Mengatur waktu dalam milidetik untuk menunggu sebelum memulai untuk menerjemahkan WebViews. Nilai default adalah 500. Set ke 0 untuk meningkatkan kecepatan terjemahan. Ditetapkan untuk 3000-5000 jika bagian dari aplikasi web tidak menerjemahkan."</string>
+    <string name="analytics">"Kirim anonim kecelakaan dan penggunaan Data"</string>
+    <string name="analytics_summary_off">"Tidak mengirimkan anonim kecelakaan dan penggunaan data. Pengiriman data anonim kecelakaan membantu pengembang membuat aplikasi lebih baik."</string>
+    <string name="analytics_summary_on">"Mengirim data kecelakaan dan penggunaan anonim. Tidak ada informasi pribadi ditransmisikan. Data anonim kecelakaan membantu pengembang membuat aplikasi lebih baik"</string>
+    <string name="debug">"Lanjutan: Aktifkan modus Debug."</string>
+    <string name="debug_summary_off">"Debug mode dimatikan. Tidak menulis debug data untuk logcat. Menghidupkan ini sebelum mengirimkan laporan kesalahan"</string>
+    <string name="debug_summary_on">"Debug mode. Menulis log logcat. Ini mengurangi kinerja - mematikan jika tidak diperlukan."</string>
+    <string name="local_on_off">"Menerjemahkan App ini"</string>
+    <string name="local_on_off_summary">"Matikan untuk berhenti menerjemahkan app ini"</string>
+    <string name="local_on_off_summary_off">"Aplikasi ini akan tidak diterjemahkan. Belok ke mulai menggunakan auto-diterjemahkan!"</string>
+    <string name="local_on_off_summary_on">"Ini akan diterjemahkan. Matikan untuk sepenuhnya menonaktifkan menerjemahkan aplikasi ini."</string>
     <string name="overRide_global">"Mengganti pengaturan Global"</string>
     <string name="overRide_global_summary_off">"Menggunakan pengaturan Global untuk app. ini giliran untuk mengubah pengaturan hanya untuk aplikasi ini."</string>
     <string name="overRide_global_summary_on">"Menggunakan pengaturan lokal untuk ini app. Turn off menggunakan pengaturan Global."</string>

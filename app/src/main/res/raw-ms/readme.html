@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">Jadual kandungan</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">Apakah AllTrans</a></li>
+        <li><a href="#videos">Video</a></li>
+        <li><a href="#how-to-use-alltrans">Bagaimana untuk menggunakan AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Bagaimana untuk mendapatkan kunci menterjemah
+            Yandex</a></li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Bagaimana untuk mendapatkan kunci
+            menterjemah Azure Microsoft</a></li>
+        <li><a href="#troubleshooting">Penyelesaian masalah</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">Tiada aplikasi kini sedang
+                    diterjemah dalam mana-mana aplikasi</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">Aplikasi diterjemahkan
+                    terperangkap dalam skrin pembukaan</a></li>
+                <li><a href="#the-translated-app-is-force-close">Aplikasi Translated terletak
+                    berhampiran tentera</a></li>
+                <li><a href="#a-particular-app-is-not-being-translated">Aplikasi tertentu kini
+                    sedang diterjemah</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">Aplikasi permainan kini sedang
+                    diterjemah</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">Jika
+                        anda masih mempunyai masalah seperti tentera yang rapat atau
+                        bahagian-bahagian aplikasi tidak telah diterjemahkan</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">Sumbangan</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">Apakah AllTrans</h2>
+
+    <p>Ia menggantikan <strong>semua teks dalam aplikasi</strong> dalam bahasa dari satu bahasa lain
+        di runtime.</p>
+
+    <p>Katakan sebagai contoh aplikasi adalah dalam Bahasa Jerman. Pengguna memilih nama aplikasi,
+        dan penukaran bahasa yang dikehendaki (katakan Jerman kepada Inggeris).</p>
+
+    <p>Kemudian apabila pengguna menggunakan aplikasi diperlukan, Semua teks,
+        <strong>ANYWHERE</strong> dalam aplikasi, digantikan oleh Bahasa Inggeris mereka setara.</p>
+
+    <p>Ini adalah sesuatu yang serupa dengan cara bekerja Terjemahan Google Chrome.</p>
+
+    <p><strong>Nota</strong> - kerana had teknikal, ini tidak akan bekerja dengan permainan banyak.
+        Apa-apa yang boleh dibuat tentang perkara ini.</p>
+
+    <h2 id="videos">Video
+
+        <p>Video (dalam Bahasa Inggeris) yang menunjukkan bagaimana untuk menggunakan AllTrans oleh
+            alat Hacks Youtube <a href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+        </p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">Bagaimana untuk menggunakan AllTrans</h2>
+
+        <p>Permohonan ini <strong>memerlukan</strong> anda untuk mendaftar untuk
+            <strong>percuma</strong> kekunci dari Microsoft atau terjemahan Yandex. Sila lihat
+            arahan di bawah tentang bagaimana untuk mendapatkan kunci.</p>
+
+        <p>Terjemahan Yandex menyokong lebih banyak bahasa, mempunyai proses yang lebih mudah
+            pendaftaran, dan memerlukan <strong>NO kad kredit</strong>.</p>
+
+        <p>Microsoft Translate memberikan <strong>terjemahan yang lebih baik</strong>, tetapi
+            memerlukan kad kredit untuk mendaftar. (Tetapi jangan risau, tiada apa-apa akan
+            dikenakan.)</p>
+
+        <ol>
+            <li>Pastikan AllTrans aplikasi didayakan dalam pemasang Xposed -> modul.</li>
+            <li>Melancarkan aplikasi AllTrans. Dalam tab "Global tetapan", membolehkan "Menggunakan
+                Yandex instead of Microsoft" Jika anda ingin menggunakan Yandex. Melumpuhkan untuk
+                menggunakan Microsoft.
+            </li>
+            <li>Pilih "Translate dari Bahasa" dan "Terjemah ke bahasa".</li>
+            <li>Di tab "Apl untuk menterjemah", menemui aplikasi yang anda mahu untuk menterjemah,
+                klik kotak semak bersebelahan dengannya. Jika kotak semak segerak yang tidak boleh
+                dilihat, cuba berputar telefon anda ke arah sisi ke mod landskap.
+            </li>
+            <li>Tutup dan mulakan semula aplikasi yang hendak diterjemahkan - ia perlu diterjemah!
+            </li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Bagaimana untuk mendapatkan kunci menterjemah
+            Yandex</h2>
+
+        <ol>
+            <li>Pergi ke <a href="https://tech.yandex.com/keys/get/?service=trnsl">Yandex Terjemah
+                laman web API</a></li>
+            <li>Jika anda tidak mempunyai akaun, klik "Daftar" dan mendaftar untuk akaun baru.</li>
+            <li>Selepas mendaftar, bersetuju dengan perjanjian pengguna dan klik "Dapatkan kunci
+                API".
+            </li>
+            <li>Anda telah berjaya menerima kunci!</li>
+        </ol>
+
+        <p>Kekunci langganan adalah sesuatu seperti "trnsl.1.1.201701..."</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Bagaimana untuk mendapatkan kunci
+            menterjemah Azure Microsoft</h2>
+
+        <ol>
+            <li>Mendaftar untuk akaun Microsoft Azure.<br>Jika anda tidak mempunyai akaun biru,
+                mendaftar untuk <a href="http://azure.com">akaun Microsoft Azure</a>.
+            </li>
+            <li>Selepas anda mempunyai akaun untuk log masuk ke <a href="http://portal.azure.com">Azure
+                Portal</a>.
+            </li>
+            <li>Tambah "Langganan API Microsoft Translator" akaun Hotel.<br>
+                <ol>
+                    <li>Memilih langganan "pay-as-you-go". Memerlukan kad kredit, tetapi jangan
+                        risau, tiada apa-apa akan dikenakan.
+                    </li>
+                    <li>Pilih opsyen "+ baru".</li>
+                    <li>Pilih "Perisikan" daripada Senarai Perkhidmatan.</li>
+                    <li>Pilih "Perkhidmatan kognitif api".</li>
+                    <li>Pilih opsyen "API jenis".</li>
+                    <li>Pilih "Penterjemahan teks".</li>
+                    <li>Dalam bahagian "Harga Tier", pilih yang "percuma Tier (F0)".</li>
+                    <li>Isi borang yang lain, dan tekan butang "Cipta".</li>
+                </ol>
+            </li>
+            <li>Dapatkan "Kunci pengesahan".<br>
+                <ol>
+                    <li>Pergi ke "Semua sumber" dan pilih Microsoft Translator API anda melanggan.
+                    </li>
+                    <li>Pergi ke opsyen "Kunci" dan salinan kunci langganan untuk mengakses
+                        perkhidmatan tersebut.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>Kekunci langganan adalah sesuatu seperti "321dcba..."</p>
+
+
+        <h2 id="troubleshooting">Penyelesaian masalah</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">Tiada aplikasi kini sedang diterjemah dalam
+            mana-mana aplikasi</h3>
+
+        <ul>
+            <li>Jika tiada aplikasi kini sedang diterjemah, semak adalah "AllTrans" telah dibolehkan
+                dalam pemasang Xposed -> modul.
+            </li>
+            <li>Juga menyemak jika anda "Microsoft/Yandex langganan kunci" adalah betul.</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">Aplikasi diterjemahkan terperangkap dalam
+            skrin pembukaan</h3>
+
+        <ul>
+            <li>Klik pada nama apl dalam "Apl untuk menterjemah" tab dan klik pada "klik untuk jelas
+                terjemahan"tempat persembunyian.
+            </li>
+            <li>Jika ini adalah kali pertama anda mula menterjemah aplikasi ini, klik pada nama apl
+                dalam tab "Apl untuk menterjemah", dan "Lain-lain tetapan" isi "Kelewatan sebelum
+                Replcaing dengan diterjemahkan teks" hingga 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">Aplikasi Translated adalah "Tutup tentera"</h3>
+
+        <ul>
+            <li>Klik pada nama apl dalam "Apl untuk menterjemah" tab dan klik pada "klik untuk jelas
+                terjemahan"tempat persembunyian.
+            </li>
+            <li>Klik pada nama apl dalam tab "Apl untuk menterjemah" dan dalam "tetapan lain" isi
+                "Kelewatan sebelum Replcaing dengan diterjemahkan teks" hingga 2000.
+            </li>
+            <li>Klik pada nama apl dalam "Apl untuk menterjemah" tab dan di "Lain-lain tetapan" isi
+                "Kelewatan sebelum bermula untuk menterjemah WebViews" hingga 2000.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">Aplikasi tertentu kini sedang
+            diterjemah</h3>
+
+        <ul>
+            <li>Klik pada nama apl dalam "Apl untuk menterjemah" tab dan di "Lain-lain tetapan" isi
+                "Kelewatan sebelum bermula untuk menterjemah WebViews" hingga 2000.
+            </li>
+            <li>Jika beberapa bahagian apl tersebut masih tidak menjadi diterjemahkan, klik pada
+                nama apl dalam "Apl untuk menterjemah" tab, dan membolehkan "Agresif Mode".
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">Aplikasi permainan kini sedang diterjemah</h3>
+
+        <ul>
+            <li>Disebabkan oleh had teknikal, "AllTrans" tidak akan berfungsi dengan permainan
+                banyak. Apa-apa yang boleh dibuat tentang perkara ini.
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            Jika anda masih mempunyai masalah seperti "Tutup Force" atau bahagian-bahagian aplikasi
+            tidak telah diterjemahkan</h3>
+
+        <p>Hubungi saya untuk sokongan. Apabila anda melakukan, saya memerlukan atleast maklumat
+            berikut-</p>
+
+        <ol>
+            <li>Nama aplikasi, bersama-sama dengan <strong>pautan untuk memuat turun
+                aplikasi</strong> dari beberapa kedai APK seperti Google putar Store, CoolApk, dan
+                lain-lain.
+            </li>
+            <li>Versi Android telefon bimbit anda.</li>
+            <li>"Logcat" yang cuba membuka aplikasi yang memberikan masalah. Anda boleh menggunakan
+                aplikasi secara percuma di kedai mainan ini, seperti <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">ini</a>
+            </li>
+        </ol>
+
+        <p>Sebaik sahaja anda mempunyai di atas, hubungi saya di <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            menyokong thread</a>.<br>Anda juga boleh melaporkan isu-isu di <a
+                href="https://github.com/akhilkedia/AllTrans">Github projek</a>.</p>
+
+
+        <h2 id="donations">Sumbangan</h2>
+
+        <p>Jika anda suka projek ini, beli saya secawan kopi! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

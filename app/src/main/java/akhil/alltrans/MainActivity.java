@@ -75,7 +75,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                         break;
                     case 2:
                         getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.toReplace, new BlankFragment())
+                                .replace(R.id.toReplace, new InstructionsFragment())
                                 .commitAllowingStateLoss();
                         break;
                 }

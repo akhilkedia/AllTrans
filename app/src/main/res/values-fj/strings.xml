@@ -23,57 +23,13 @@
     <string name="loading">"Vakavodoki ni lisi ni Applications - yalovinaka wawa"</string>
     <string name="clear_cache_error">"Eso na cala. Me kakua ni samaka na vakadewa cache!"</string>
     <string name="clear_cache_success">"Vakadewataka na Cache ni sa sa boko laivi na app oqo!"</string>
-	<string name="how_to_use">"NA SALA ME RA VAKAYAGATAKA NA FOMU NI KERE
-
-E gadrevi kemuni mo ni sainitaka e dua na idola mai na Microsoft se na Translate ni Yandex na kerekere oqo.
-Translate ni Yandex tokoni na veivosa tale eso, sa na dua sara rawarawa signup na iwalewale kei na e gadrevi kina na KADI ni dinau ni sega.
-Microsoft Translate solia vei macala vinaka cake, ia e gadrevi kina e dua na kadi ni dinau me ra curu kina. (Ia kakua ni lomaleqa, e dua na ka ena vakaroti.)
-
-1. ena tab ni vuravura raraba na veivanua eso, rawa ni vakayagataka na Yandex sega ni Microsoft kevaka o gadreva mo vakayagataka na Yandex, veivakaleqai tale me ra vakayagataka na Microsoft.
-1. ena tab ni vuravura raraba na veivanua eso, tabaka na vakacuruma na Microsoft/Yandex talevoni idola, vakacuruma na idola ni kena (raica mai ra na idusidusi).
-2. digitaka na vakavakadewa mai na ivosavosa ka vakadewataka na vosa.
-3. ena na Apps dewa ni Translate, raica na app o na vinakata mo vakavakadewa, kiliki ena lomanibai toqai tarava sa. Kevaka e sega ni laurai na ena lomanibai toqai, tovolea na veiveisau talega na nomu talevoni sideways ki na ivakarau ni waicevata.
-4. sogota ka tekivu tale na app o vinakata vakadewataki - me vakadewataki!
-
-Ivakasala ni QAQARAUNI - eso apps me vakasaurarataki voleka. Raica na iwasewase tale eso.
-
-SALA ME RA RAWATA NA YANDEX VAKAVAKADEWA IDOLA NI TALEVONI
-
-1. mo lako ki na mataveilawa ni Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. Kevaka o sega ni sa tiko beka e dua na akaude, kiliki volayaca kei na ivakatakilakila cake me baleta e dua na akaude vou.
-3. ni oti na nomu sainitaka cake, vakadonuya na vakatutu ni vakayagataki ka kiliki ena rawata na API idola.
-4. o sa rawa ni ciqoma na nomu idola! Sa ikoya e dua na ka me vaka na trnsl.1.1.201701...
-
-SALA ME RA RAWATA NA AZURE NI MICROSOFT VAKADEWATAKA IDOLA NI TALEVONI
-
-1. sainitaka e dua na akaude ni Microsoft Azure ena http://azure.com
-
-2. ni oti e tiko vei iko e dua na akaude, sa curu yani ki na tikina nei Azure ena http://portal.azure.com
-
-3. vakuria na dua na ilavelave ni API ni dauvakadewa ni Microsoft ki na nomu akaude ni Azure.
-Digitaka e dua na talevoni pay-as-you-go. Ena gadrevi kina e dua na kadi ni dinau, ia kakua ni lomaleqa, e dua na ka na sauma.
-Digitaka na + vou na digidigi.
-Digitaka na kila mai na lisi ni veiqaravi.
-Digitaka na APIs ni Cognitive na veiqaravi.
-Digitaka na mataqali ni API.
-Digitaka na iVakadewa ni itukutuku
-Ena iwasewase ni kena isau yaco, digitaka na yaco ni galala (F0)
-Vakalewena na vo ni na fomu, ka tabaka na bulukau ni caka.
-
-4. kelia na nomu idola ni vakayagataka.
-Gole ki na ivurevure taucoko ka digitaka na API ni dauvakadewa ni Microsoft o subscribed me.
-Gole ki na na digidigi ni idola ka lavetaka na nomu idola ni talevoni me curu ki na veiqaravi.
-Na idola ni talevoni sai koya e dua na ka me vaka na 321dcba...
-
-LEQA LALAI NI VAKAROROGO
-
-1. Kevaka e sa vakadewataki na app ni sega ni dua, raica sa donu na nomu idola ni talevoni ni Microsoft/Yandex.
-2. Kevaka na app ni vakadewataki na mataivalu tinia/vica tao tu ena vakavodoki tiko ena imatai ni gauna ni oti na nomu tekivu vakadewataka tiko, kiliki ena app ena Apps me ra vakadewataka na bulukau, ka ena veisoqoni tale eso vakalewena tale ni wawa ni bera ni vakadewataki ki na 2000..
-3. ke vakayagataka tiko na app ni vakadewataki ki na cakacaka vinaka, ia sa tao ena tekivu, kiliki ena app ena Apps me vakadewataka na bulukau, ka kiliki ena kiliki me matata na Cache ni vakadewa.
-4. Kevaka sa sega ni vakadewataki na so na vanua na app, kiliki ena app ena Apps me vakadewataka na bulukau, ka rawa kina na ivakarau kaukauwa.
-5. Kevaka e se tikoga na app tinia na mataivalu, veivakaleqai iVakadewa ni app oqo ka veitaratara kei au ena na waniculacula ni veitokoni ena XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Vakadewataka na dua na vanua"</string>
+    <string name="backup_pref_error">"Eso na cala. Rawa sega ni sabaya na vakasaqaqara! O a solia li na SuperUser rawa ni curu?"</string>
+    <string name="backup_pref_success">"Sa mai vakatakalitaka na vakasaqaqara me External Storage!"</string>
+    <string name="wut_why_null">"Rawa sega ni katoni na Per-app ni tabana. Sogota ka dolava tale na ivolakerekere tale."</string>
+    <string name="app_icon">"Ivakatakilakila ni app"</string>
+    <string name="example_application">"Ivakaraitaki ni ivolakerekere"</string>
+    <string name="description">"Ivakamacala"</string>
+    <string name="translate_anywhere">"Vakadewataka ena veivanua kecega"</string>
     <string name="apps_to_translate">"Apps ni vakavakadewa"</string>
     <string name="global_settings">"Vuravura raraba na veivanua eso"</string>
     <string name="instructions">"IDusidusi"</string>
@@ -112,8 +68,20 @@ LEQA LALAI NI VAKAROROGO
     <string name="caching">"Vakayagataka na Caching"</string>
     <string name="caching_summary_off">"Sega ni veivakabulai vakavakadewa Initaneti, yaco kina na slower vakadewataka kei na cecere ni itukutuku - ia e rawa ni cakacaka me baleta na apps vakalevu cake. Vuki kina ka vakavo ga na kena iVakadewa."</string>
     <string name="caching_summary_on">"Vakadewataka na veivakabulai na vakavakadewa Initaneti tu eke me vakatotolotaka ka dau vakayagataka na itukutuku. Bokoca na veivakaleqai kevaka e sega ni tekivu na app ni nomu."</string>
-    <string name="delay">"Wawa ni bera ni vakavakadewa"</string>
-    <string name="delay_summary">"Tuva na kena gauna ena milliseconds me wawa ni bera na kena vakadewataki. Yaga ni sega ni tiko e 0, ka vakarautaka me 1000 – 5000 kevaka sa sega ni cakacaka na app vakadewataki."</string>
+    <string name="delay">"Wawa ni bera ni veisosomitaka kei na vakadewataka na itukutuku"</string>
+    <string name="delay_summary">"Tuva na kena gauna ena milliseconds me wawa ni bera ni vakaisosomitaka ena vakadewataki. Yaga ni sega ni tiko e 0. Vakarautaka ki na 1000 – 5000 kevaka sa sega ni cakacaka na app vakadewataki."</string>
+    <string name="delay_webview">"Wawa ni bera ni tekivu me vakadewataka na WebViews"</string>
+    <string name="delay_webview_summary">"Tuva na kena gauna ena milliseconds me wawa ni bera ni tekivu me vakadewataka na WebViews. Yaga ni sega ni tiko e 500. Vakarautaka ki na 0 me vakalevutaki kina na vakadewa totolo. Vakarautaka ki na 3000-5000 kevaka era sega ni vakadewataki na tiki ni app ni mataveilawa."</string>
+    <string name="analytics">"Vakauta na voca tawakilai kei na itukutuku ni kena vakayagataki"</string>
+    <string name="analytics_summary_off">"Sega ni vakau na tawakilai voca kei na itukutuku ni kena vakayagataki. Vakauta na itukutuku ni voca tawakilai ena vukea na developer cakava vakavinaka cake na app."</string>
+    <string name="analytics_summary_on">"Vakauta na itukutuku tawakilai ni voca kei na kena e vakayagataki. E kaburaki yani na sega ni dua na itukutuku ni tamata yadua. Itukutuku ni voca tawakilai ena vukea na developer cakava vakavinaka cake na app"</string>
+    <string name="debug">"Toso yani ki liu: Gole ena ivakarau ni vakavinakataki."</string>
+    <string name="debug_summary_off">"Debug ivakarau e tani. Sega kina ni vola na itukutuku ni vakavinakataki ki na logcat. Waqaca oqo ni bera ni vakatalai na Ripote ni cala"</string>
+    <string name="debug_summary_on">"Debug ivakarau e ena. Vola na veidutai ki logcat. Oqo lutu na vakatasuasua - bokoca laivi kevaka e sega ni gadrevi."</string>
+    <string name="local_on_off">"Vakadewataka na App oqo"</string>
+    <string name="local_on_off_summary">"Bokoca na me tarova na kena vakadewataki na app oqo"</string>
+    <string name="local_on_off_summary_off">"Ena sega ni vakadewataki na app oqo. Gole yani ki na kena vakayagataki na tekivu auto-vakadewataka!"</string>
+    <string name="local_on_off_summary_on">"Oqo ena vakadewataki. Bokoca me sega sara ga ni veivakaleqai vakadewataka tiko na app oqo."</string>
     <string name="overRide_global">"Uabaleta na ituvaki ni vuravura raraba"</string>
     <string name="overRide_global_summary_off">"Vakayagataka eso ni vuravura raraba oqo app. na gauna ena me veisautaka na vanua duadua ga me baleta na app oqo."</string>
     <string name="overRide_global_summary_on">"Vakayagataka vanua na ituvaki ni oqo app. gole tani me ra vakayagataka na vuravura raraba na veivanua eso."</string>

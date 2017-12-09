@@ -23,56 +23,12 @@
     <string name="loading">"アプリケーションの一覧の読み込み中は、お待ちをください。"</string>
     <string name="clear_cache_error">"いくつかのエラーです。変換キャッシュをクリアできませんでした!"</string>
     <string name="clear_cache_success">"このアプリが消去されているために、キャッシュを変換!"</string>
-	<string name="how_to_use">"アプリケーションを使用するには、方法
-
-このアプリケーションは、マイクロソフトまたは Yandex 翻訳からキーにサインアップする必要があります。
-Yandex 翻訳より多くの言語をサポートしている、はるかに簡単にサインアップ プロセスには、いいえクレジット カードが必要です。
-マイクロソフト翻訳はより良い結果を与えるが、サインアップするクレジット カードが必要です。(しかし、何も心配しないで起訴)。
-
-1. グローバル設定タブで Yandex を使用して、Microsoft を使用して他を無効にする場合は代わりに、マイクロソフトの Yandex の使用を有効にします。
-1. グローバル設定タブで Microsoft/Yandex サブスクリプション キーの入力をタップし、入力対応するキー (下からの指示を参照してください)。
-2. 選択、言語から翻訳、言語への変換します。
-3. 翻訳タブにアプリ、それの横にあるチェック ボックスをクリックして、変換するアプリを見つけます。チェック ボックスが表示されない場合は、横向きに横にあなたの携帯電話を回転させてみてください。
-4 を閉じ、翻訳アプリを再起動 - それは翻訳されるべきである!
-
-警告 - いくつかのアプリが強制終了します。トラブルシューティングのセクションを参照してください。
-
-YANDEX がサブスクリプション キーを変換を取得する方法
-
-1. Yandex サイトへ https://tech.yandex.com/keys/get/?service=trnsl
-2 アカウントがない場合は、新しいアカウントの登録し、ログインをクリックします。
-3. 署名した後まで、ユーザー契約に同意するをクリックして、API キーを取得をクリックします。
-4. あなたのキーを受信しました!それは trnsl.1.1.201701 のようなものです.
-
-どのように取得する MICROSOFT AZURE サブスクリプション キーを翻訳
-
-1. http://azure.com で Microsoft Azure アカウントにサインアップします。
-
-2. アカウント取得したら、http://portal.azure.com で Azure ポータルにサインインします。
-
-3. Azure アカウントに Microsoft Translator API サブスクリプションを追加します。
-従量課金制のサブスクリプションを選択します。クレジット カードが必要になりますが、心配しないで、何もが課金されます。
-+ 新しいを選択オプション。
-サービスの一覧から、情報を選択します。
-認知サービス Api を選択します。
-API の種類] オプションを選択します。
-選択したテキストの翻訳
-価格層では、無料の層 (F0) を選択します。
-フォームの残りの部分に記入し、作成ボタンを押します。
-
-4. 認証キーを取得します。
-すべてのリソースに移動しを購読して Microsoft Translator API を選択します。
-キーのオプションに移動し、サービスにアクセスするサブスクリプション キーをコピーします。
-サブスクリプション キーは、321dcba のようなものです.
-
-トラブルシューティング
-
-1 アプリが翻訳されていない場合は、Microsoft/Yandex のキーコードが正しいことを確認します。
-2. 翻訳アプリ強制終了/取得、翻訳開始後初めて読み込むときに引っかかって、翻訳タブ、およびその他の設定で 2000年に変換する前に遅延を入力するアプリでアプリをクリックします。
-3. 翻訳アプリを使用し、正常に動作が今開始にはまり、翻訳タブ、アプリでアプリをクリックしてクリックして翻訳キャッシュのクリアをクリックします。
-4. アプリのいくつかの部分が翻訳されていない場合タブを変換するアプリでアプリをクリックし、積極的なモードを有効にします。
-5. 場合アプリはまだ強制終了、このアプリのための翻訳を無効にしてサポート スレッド XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878 で私に連絡
-"</string>
+    <string name="backup_pref_error">"いくつかのエラーです。設定をバックアップできませんでした!スーパー ユーザー アクセスを許可するか。"</string>
+    <string name="backup_pref_success">"環境設定は、外部記憶装置にバックアップされている!"</string>
+    <string name="wut_why_null">"あたりアプリ設定ページを読み込むことができません。閉じる、もう一度アプリケーションを再度開きます。"</string>
+    <string name="app_icon">"アプリのアイコン"</string>
+    <string name="example_application">"アプリケーションの例"</string>
+    <string name="description">"説明"</string>
     <string name="translate_anywhere">"どこを翻訳します。"</string>
     <string name="apps_to_translate">"翻訳するアプリ"</string>
     <string name="global_settings">"グローバル設定"</string>
@@ -112,8 +68,20 @@ API の種類] オプションを選択します。
     <string name="caching">"キャッシュを使用"</string>
     <string name="caching_summary_off">"しないで保存、オフラインの翻訳翻訳遅い結果と高いデータ - より多くのアプリケーションのために働く可能性があります。翻訳保存に回します。"</string>
     <string name="caching_summary_on">"スピードアップするオフラインの翻訳を保存変換し、データを使用します。アプリが起動しない場合を無効にするをオフにします。"</string>
-    <string name="delay">"翻訳前に、の遅延"</string>
-    <string name="delay_summary">"翻訳する前に待機するミリ秒単位の時間を設定します。既定値は 0、翻訳アプリがクラッシュする場合は 1000-5000 に設定です。"</string>
+    <string name="delay">"翻訳されたテキストを置き換える前に、の遅延"</string>
+    <string name="delay_summary">"変換されたテキストで置換する前に待機するミリ秒単位の時間を設定します。既定値は 0 です。翻訳アプリがクラッシュする場合 1000-5000 に設定します。"</string>
+    <string name="delay_webview">"Web 表示を翻訳する開始する前に遅延"</string>
+    <string name="delay_webview_summary">"Web 表示を翻訳する開始する前に待機するミリ秒単位の時間を設定します。既定値は 500 です。0 に設定すると、翻訳速度を増加します。Web アプリの一部は翻訳しない場合 3000-5000 に設定します。"</string>
+    <string name="analytics">"匿名のクラッシュおよび使用状況データを送信します。"</string>
+    <string name="analytics_summary_off">"匿名のクラッシュおよび使用状況データを送信しません。良いアプリを作る開発者匿名クラッシュ データを送信することができます。"</string>
+    <string name="analytics_summary_on">"匿名のクラッシュと使用状況データを送信します。個人情報は送信されません。匿名のクラッシュ データはより良いアプリを作る開発者に役立ちます"</string>
+    <string name="debug">"高度: デバッグ モードをオンにします。"</string>
+    <string name="debug_summary_off">"デバッグ モードがオフになっています。Logcat をデバッグ データを書き込んでいません。エラー レポートを送信する前にこれを有効に"</string>
+    <string name="debug_summary_on">"デバッグ モードが存在します。Logcat にログを書き込みます。これは、パフォーマンスが低下 - をオフにする場合は不要。"</string>
+    <string name="local_on_off">"このアプリを翻訳します。"</string>
+    <string name="local_on_off_summary">"このアプリの翻訳を停止するオフします。"</string>
+    <string name="local_on_off_summary_off">"このアプリは変換されません。電源自動翻訳を使用して開始に!"</string>
+    <string name="local_on_off_summary_on">"これが変換されます。完全にこのアプリの翻訳を無効にするをオフにします。"</string>
     <string name="overRide_global">"グローバル設定をオーバーライドします。"</string>
     <string name="overRide_global_summary_off">"このアプリ ターンのだけこのアプリの設定を変更するにグローバル設定を使用します。"</string>
     <string name="overRide_global_summary_on">"グローバル設定を使用するこのアプリ ターンのオフのローカル設定を使用します。"</string>

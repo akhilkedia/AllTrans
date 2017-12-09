@@ -23,57 +23,13 @@
 	<string name="loading">"Cargando lista de aplicaciones - por favor espere"</string>
 	<string name="clear_cache_error">"Algún Error. ¡Podría despejar el caché de traducción!"</string>
 	<string name="clear_cache_success">"¡Traducir el caché para esta aplicación ha sido borrada!"</string>
-	<string name="how_to_use">"CÓMO UTILIZAR LA APLICACIÓN
-
-Esta aplicación requiere para inscribirse en una clave de Microsoft o Yandex traducir.
-Traducir Yandex soporta más idiomas, tiene un proceso de registro mucho más fácil y requiere tarjeta de crédito NO.
-Microsoft Translate da mejores resultados, pero requiere una tarjeta de crédito para inscribirse. (Pero no te preocupes, nada va a ser cargado.)
-
-1. en la ficha Configuración Global, permiten utilizar Yandex en lugar de Microsoft si desea utilizar Yandex, desactivar otra para utilizar Microsoft.
-1. en la ficha Configuración Global, pulse tecla de suscripción de Microsoft/Yandex entrar, la clave correspondiente de entrada (vea las instrucciones de abajo).
-2. Elija el traducir del idioma y traducir a la lengua.
-3. en las aplicaciones que puedes traducir, encontrar la aplicación que desea traducir, haga clic en la casilla de verificación junto a él. Si la casilla de verificación no es visible, trate de girar el teléfono hacia los lados a modo de paisaje.
-4. cierre y reinicie la aplicación que desea traducido - debe ser traducido!
-
-ADVERTENCIA: algunas aplicaciones podrían forzar cierre. Consulte la sección solución de problemas.
-
-CÓMO CONSEGUIR YANDEX TRADUCIR CLAVE DE SUSCRIPCIÓN
-
-1. vaya al sitio web de Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. Si no tienes una cuenta, haga clic en registro y firmar para arriba para una nueva cuenta.
-3. después de firmar para arriba, está de acuerdo con el usuario y haga clic en obtener clave de API.
-¡4. usted ha recibido con éxito su clave! Es algo así como trnsl.1.1.201701...
-
-CÓMO OBTENER MICROSOFT AZURE TRADUCIR CLAVE DE SUSCRIPCIÓN
-
-1. Regístrate para una cuenta de Microsoft Azure en http://azure.com
-
-2. después de tener una cuenta, iniciar sesión en el portal de Azure en http://portal.azure.com
-
-3. agregar una suscripción API del traductor de Microsoft a su cuenta azul.
-Elegir una suscripción de pago. Requerirá una tarjeta de crédito, pero no te preocupes, no se cargará.
-Seleccionar el + nueva opción.
-Seleccione la lista de servicios inteligencia.
-Seleccione servicios cognitivos de la API.
-Seleccione la opción tipo de API.
-Seleccione texto traducción
-En la sección de nivel de precios, seleccione el nivel libre (F0)
-Llene el resto del formulario y pulse el botón crear.
-
-4. recuperar su clave de autenticación.
-Ir a todos los recursos y seleccione la API del traductor de Microsoft usted suscrito a.
-Ir a la opción claves y copiar la clave de suscripción para acceder al servicio.
-La clave de suscripción es algo como 321dcba...
-
-SOLUCIÓN DE PROBLEMAS
-
-1. Si la aplicación no se está traduciendo, verifique su clave de suscripción de Microsoft/Yandex es correcta.
-2. la aplicación traducida fuerza cierra/consigue pegado en cargando la primera vez después de empezar a traducir, haga clic en la aplicación en aplicaciones para traducir la ficha y en otra programación Introduzca retardo antes de traducir a 2000.
-3. Si utiliza la aplicación traducida a funcionan bien, pero ahora se atascan en el inicio, haga clic en la aplicación en aplicaciones para traducir la ficha y haga clic en haga clic en Clear Cache de traducción.
-4. Si no se están traduciendo algunas partes de la aplicación, haga clic en la aplicación en aplicaciones para traducir la ficha y activar el modo agresivo.
-5. Si la aplicación todavía fuerza cierra, desactivar la traducción de esta aplicación y contactar conmigo en el hilo de soporte en XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-	<string name="translate_anywhere">"Traducir en cualquier lugar"</string>
+    <string name="backup_pref_error">"Algún Error. ¡Podría no copia de seguridad de preferencias! ¿Usted otorga acceso de superusuario?"</string>
+    <string name="backup_pref_success">"¡Preferencias han sido respaldadas a almacenamiento externo!"</string>
+    <string name="wut_why_null">"No se pudo cargar la página de preferencia por la aplicación. Cierre y vuelva a abrir la aplicación nuevamente."</string>
+    <string name="app_icon">"Icono de la aplicación"</string>
+    <string name="example_application">"Ejemplo de aplicación"</string>
+    <string name="description">"Descripción"</string>
+    <string name="translate_anywhere">"Traducir en todas partes"</string>
 	<string name="apps_to_translate">"Aplicaciones para traducir"</string>
 	<string name="global_settings">"Configuración global"</string>
 	<string name="instructions">"Instrucciones"</string>
@@ -112,8 +68,20 @@ SOLUCIÓN DE PROBLEMAS
 	<string name="caching">"Almacenamiento en caché de uso"</string>
 	<string name="caching_summary_off">"No guardar las traducciones fuera de línea, dando por resultado más lento traducir y mayores datos - pero puede funcionar para más aplicaciones. Hacia guardar las traducciones."</string>
 	<string name="caching_summary_on">"Ahorro traducciones offline para traducir y utilizar datos. Desactivar para desactivar si su aplicación no se inicia."</string>
-	<string name="delay">"Demora antes de traducir"</string>
-	<string name="delay_summary">"Configurar el tiempo en milisegundos que espera antes de traducir. Valor predeterminado es 0, que se establece en 1000 – 5000 si es que se caiga la aplicación traducida."</string>
+    <string name="delay">"Demora antes de reemplazar con texto traducido"</string>
+    <string name="delay_summary">"Configurar el tiempo en milisegundos que espera antes de sustituir con el texto traducido. Valor predeterminado es 0. Establece en 1000 – 5000 si es que se caiga la aplicación traducida."</string>
+    <string name="delay_webview">"Demora antes de comenzar a traducir WebViews"</string>
+    <string name="delay_webview_summary">"Configurar el tiempo en milisegundos que espera antes de comenzar a traducir WebViews. El valor predeterminado es 500. Establece en 0 para aumentar la velocidad de traducción. Establece en 3000-5000 si no está traduciendo parte de la aplicación web."</string>
+    <string name="analytics">"Envío anónimo accidente y datos de uso"</string>
+    <string name="analytics_summary_off">"No envío anónimo accidente y datos de uso. Enviar datos de accidente anónimo ayuda al desarrollador de la aplicación mejor."</string>
+    <string name="analytics_summary_on">"Envío de datos de accidente y uso anónimos. Ninguna información personal se transmite. Anónimo accidente data ayuda a los desarrolladores mejorar la aplicación"</string>
+    <string name="debug">"Avanzado: Activar modo de depuración."</string>
+    <string name="debug_summary_off">"Debug mode está apagado. No escribir datos de depuración al logcat. Encender antes de enviar informes de errores"</string>
+    <string name="debug_summary_on">"Depuración de modo está activado. Escribir registros en el logcat. Esto disminuye el rendimiento - apagar si no es necesario."</string>
+    <string name="local_on_off">"Traducir esta aplicación"</string>
+    <string name="local_on_off_summary">"Desactivar para dejar de traducir esta aplicación"</string>
+    <string name="local_on_off_summary_off">"Esta aplicación no se traducirán. Vuelta a empezar usando auto-translate!"</string>
+    <string name="local_on_off_summary_on">"Esto se traducirá. Desactivar para desactivar completamente el traducir esta aplicación."</string>
 	<string name="overRide_global">"Invalidar la configuración Global"</string>
 	<string name="overRide_global_summary_off">"Utilizando la configuración Global para este giro de la bobina en para cambiar la configuración sólo para esta aplicación."</string>
 	<string name="overRide_global_summary_on">"Parámetros locales para este giro de la bobina de utilizar la configuración Global."</string>

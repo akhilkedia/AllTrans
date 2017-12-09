@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">Tab sa ki nan liv la</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">Ki AllTrans sa</a></li>
+        <li><a href="#videos">Videyo</a></li>
+        <li><a href="#how-to-use-alltrans">Kijan pou yo itilize AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Kijan pou li ale kle tradwi Yandex</a></li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Kijan pou li ale Microsoft ble
+            tradwi kle</a></li>
+        <li><a href="#troubleshooting">Dépannage</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">Pa app te ke nan nenpòt app</a>
+                </li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">Traduit app kole nan ouvèti
+                    twal metalik</a></li>
+                <li><a href="#the-translated-app-is-force-close">App Traduit a se fòs tou pwe</a>
+                </li>
+                <li><a href="#a-particular-app-is-not-being-translated">Yon patikilye app pa te
+                    ke</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">Yon jwèt app pa te ke</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">Si
+                        ou toujou gen pwoblèm tankou fòs tou pwe oswa pati nan yon app pa te ke</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#donations">Don</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">Ki AllTrans sa</h2>
+
+    <p>Li ranplase <strong>tout tèks nan yon app</strong> nan yon lang nan yon lang a yon lòt nan
+        D'.</p>
+
+    <p>Te di pa egzanp, yon app se nan Almay. Yon kap itilize li an sélectionne app non, ak lang
+        mande konvèsyon (di Alman pou Angle).</p>
+
+    <p>Lè sa a chak fwa moun kap itilize li an itilize app mande l la, tout tèks,
+        <strong>ANYWHERE</strong> nan app a, ap ranplase pa équivalents Anglè yo.</p>
+
+    <p>Sa se yon bagay sanble ak wout la Définition Google travay nan Chrome.</p>
+
+    <p><strong>Nòt</strong> - akòz yon teknik limitasyon tache e serye, sa p ap travay avèk anpil
+        jwèt. Pa ka fè sa.</p>
+
+    <h2 id="videos">Videyo
+
+        <p>Yon videyo (an lang Angle) ki montre kouman pou itilize AllTrans pa Gadget: sou Youtube
+            <a href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+        </p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">Kijan pou yo itilize AllTrans</h2>
+
+        <p>Sa a aplikasyon pou <strong>mande</strong> ou pou yo ka siyen <strong>libète</strong> yon
+            kle Microsoft oubyen Yandex Définition. Gade sa pou nou fè pi ba pase sou kijan pou li
+            ale kle.</p>
+
+        <p>Yandex Définition sipòte lang plis, gen yon gwo pi fasil inscription pwosesis ak egzije
+            pou <strong>pa kat kredi</strong>.</p>
+
+        <p>Microsoft Définition bay <strong>pi bon tradiksyon</strong>, men mande yon kat kredi pou
+            enskri. (Men, bat kò ou, pa gen anyen yo va akize.)</p>
+
+        <ol>
+            <li>Pou pi si AllTrans app pèmèt nan Xposed D'-> Modules.</li>
+            <li>Lanse AllTrans app. Nan onglet "Nòmal Global", pèmèt "Itilize Yandex Etwal
+                Microsoft" si ou vle sèvi ak Yandex. Désactiver pou itilize Microsoft.
+            </li>
+            <li>Chwazi "a tradwi nan lang" ak "Tradwi pou lang".</li>
+            <li>Nan la "Applications pou tradwi" onglet, jwenn app a ou vle pou tradwi, klike à tou
+                pre l. Si à la pa apab wè, eseye rotation detravè telefòn ou antre nan jaden flè
+                mòd.
+            </li>
+            <li>Fèmen ak rekòmanse app a ou vle traduit - li ta dwe ke!</li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Kijan pou li ale kle tradwi Yandex</h2>
+
+        <ol>
+            <li>Ale nan <a href="https://tech.yandex.com/keys/get/?service=trnsl">Yandex tradwi API
+                sit entènèt</a></li>
+            <li>Si ou pa gen deja tou, klike "anrejistre" epi siyen pou yon kont.</li>
+            <li>Apre siyen, yo dakò pou kontra kap itilize li an epi klike "Jwenn API kle".</li>
+            <li>Ou te resevwa anpil siksè kle ou!</li>
+        </ol>
+
+        <p>Abònman kle a se yon bagay tankou "trnsl.1.1.201701..."</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Kijan pou li ale Microsoft ble tradwi
+            kle</h2>
+
+        <ol>
+            <li>Ka siyen pou yon kont Azure Microsoft.<br>Si ou pa gen deja rakonte anfas yon bèl,
+                ka siyen yon <a href="http://azure.com">kont Microsoft ble</a>.
+            </li>
+            <li>Apre sa, ou bezwen konnen, siyen nan a <a href="http://portal.azure.com">Portal
+                ble</a>.
+            </li>
+            <li>Ajoute yon "Microsoft tradiktè API abònman" anfas yon bèl kont anbank ou.<br>
+                <ol>
+                    <li>Chwazi yon abònman "avec". Yo pral mande pou yon kat kredi, men, pa bay tèt
+                        li pwoblèm, pa gen anyen ap chaje.
+                    </li>
+                    <li>Chwazi opsyon "+ nouvo".</li>
+                    <li>Fè chwa "Entèlijans" nan lis sèvis.</li>
+                    <li>Fè chwa "Entelektyèl sèvis APIs".</li>
+                    <li>Fè chwa a opsyon "API tip".</li>
+                    <li>Fè chwa "Tèks tradiksyon".</li>
+                    <li>Nan seksyon "Prix Niveau", fè chwa a "lib Niveau (F0)".</li>
+                    <li>Ranpli lòt fòm, ak lapwès bouton "Créer" la.</li>
+                </ol>
+            </li>
+            <li>Tanta ou "D' kle".<br>
+                <ol>
+                    <li>Ale nan "Tout resous" yo epi chwazi a Microsoft tradiktè API ou souscrit pou
+                        yo.
+                    </li>
+                    <li>Ale nan "Kle" yon opsyon pou ak copie ou abònman kle pou jwenn sèvis la.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>Abònman kle a se yon bagay tankou "321dcba..."</p>
+
+
+        <h2 id="troubleshooting">Dépannage</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">Pa app te ke nan nenpòt app</h3>
+
+        <ul>
+            <li>Si pa gen app te ke, chèk se "AllTrans" pèmèt nan Xposed D'-> Modules.</li>
+            <li>Tou tcheke si ou "Microsoft/Yandex abònman kle" kòrèk.</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">Traduit app kole nan ouvèti twal
+            metalik</h3>
+
+        <ul>
+            <li>Klike sou non app a nan "Applications pou tradwi" onglet, epi klike sou "Klike pou
+                konnen tradiksyon kachèt".
+            </li>
+            <li>Si sa se premye fwa ou te konmanse traduction app sa a, klike sou non app a nan
+                onglet "Applications pou tradwi" ak nan "Lòt nòmal" ranpli nan "Mize devan Replcaing
+                ak ke tèks" pou lane 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">App Traduit a se "Fòs tou pwe"</h3>
+
+        <ul>
+            <li>Klike sou non app a nan "Applications pou tradwi" onglet, epi klike sou "Klike pou
+                konnen tradiksyon kachèt".
+            </li>
+            <li>Klike sou non app a nan onglet "Applications pou tradwi" ak nan "lòt nòmal" ranpli
+                nan "Mize devan Replcaing ak ke tèks" pou lane 2000.
+            </li>
+            <li>Klike sou non app a nan "Applications pou tradwi" onglet, ak nan "Lòt nòmal" kont li
+                nan "Mize devan kòmanse pou tradwi WebViews" pou lane 2000.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">Yon patikilye app pa te ke</h3>
+
+        <ul>
+            <li>Klike sou non app a nan "Applications pou tradwi" onglet, ak nan "Lòt nòmal" kont li
+                nan "Mize devan kòmanse pou tradwi WebViews" pou lane 2000.
+            </li>
+            <li>Si gen kèk pati nan app a ap toujou pa te ke, klike sou non app a nan "Applications
+                pou tradwi" onglet, ak pèmèt "Agresiv mòd".
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">Yon jwèt app pa te ke</h3>
+
+        <ul>
+            <li>Akoz limit teknik, "AllTrans" a pa travay avèk anpil jwèt. Pa ka fè sa.</li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            Si ou toujou gen pwoblèm tankou "Fòs tou pwe" oswa pati nan yon app pa te ke</h3>
+
+        <p>Pran kontak ak m' pou sipò. Lè n' ap fè, mwen p'ap bezwen au enfòmasyon sa a-</p>
+
+        <ol>
+            <li>Men non app a, ansanm ak yon <strong>lyen pou rale dosye app a</strong> nan yon
+                magazen APK tankou Google jwe magazen, CoolApk, etc.
+            </li>
+            <li>Android vèsyon pipiti de youn telefòn ou.</li>
+            <li>Yon "logcat" nou ap eseye pou louvri app ki ban nou pwoblèm. Ou ka sèvi ak
+                applications gratis disponib sou jwèt nan magazen an pou sa, tankou <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">sa
+                    a</a></li>
+        </ol>
+
+        <p>Yon fwa ou gen a CI-dessus, pran kontak ak m' sou an <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA,
+            ki apiye fil</a>.<br>Ou kapab tou rapòte kesyon sou a <a
+                href="https://github.com/akhilkedia/AllTrans">Github pwojè a</a>.</p>
+
+
+        <h2 id="donations">Don</h2>
+
+        <p>Si ou renmen pwojè sa a, achte m' yon tas kafe! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

@@ -28,7 +28,7 @@ import android.widget.Toast;
 import java.io.DataOutputStream;
 
 
-public class BackupSharedPreferences {
+class BackupSharedPreferences {
     public static void backupSharedPreferences(Context context) {
         @SuppressLint("SdCardPath")
         String sharedPath = "/data/data/akhil.alltrans/shared_prefs/";

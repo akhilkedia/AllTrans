@@ -23,57 +23,13 @@
     <string name="loading">"Ładowanie listy aplikacji - proszę czekać"</string>
     <string name="clear_cache_error">"Jakiś błąd. Nie można wyczyścić pamięci podręcznej tłumaczenie!"</string>
     <string name="clear_cache_success">"Tłumaczyć pamięci podręcznej dla tej aplikacji zostało usunięte!"</string>
-	<string name="how_to_use">"JAK UŻYWAĆ APLIKACJI
-
-Ta aplikacja wymaga zarejestrować klucz od Microsoft lub tłumacza Yandex.
-Tłumacza Yandex obsługuje więcej języków, ma dużo łatwiejszy proces rejestracji i wymaga karty kredytowej nr.
-Microsoft Translate daje lepsze wyniki, ale wymaga karty kredytowej, aby się zarejestrować. (Ale nie martw się, nic nie będzie opłata.)
-
-1. w zakładce Ustawienia globalne włączyć użyć Yandex zamiast Microsoft, jeśli chcesz użyć Yandex, jeszcze wyłączyć aby użyć Microsoft.
-1. w karcie globalne ustawienia dotknij wprowadź klucz subskrypcji Microsoft/Yandex, wejście odpowiedni klucz (zobacz instrukcje poniżej).
-2. Wybierz tłumaczenie z języka i tłumaczenie na język.
-3. w aplikacji Tłumacz karta Znajdź aplikację, którą chcesz przetłumaczyć, kliknij pole wyboru obok niego. Jeśli pole wyboru nie jest widoczny, spróbuj, obracając telefon bokiem w orientacji poziomej.
-4. Zamknij i uruchom ponownie aplikację, którą chcesz przetłumaczyć - powinny być przetłumaczone!
-
-Uwaga - Niektóre aplikacje mogą wymusić zamknięcie. Zobacz sekcję Rozwiązywanie problemów.
-
-JAK UZYSKAĆ YANDEX TŁUMACZENIE KLUCZA SUBSKRYPCJI
-
-1. Przejdź do witryny Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. Jeśli nie masz jeszcze konta, kliknij Zarejestruj i zaloguj się na nowe konto.
-3. po podpisaniu w górę, zaakceptować umowę użytkownika i kliknij przycisk Pobierz klucz API.
-4. pomyślnie otrzymałeś klucz! Jest coś takiego trnsl.1.1.201701...
-
-JAK UZYSKAĆ MICROSOFT AZURE TŁUMACZENIE KLUCZA SUBSKRYPCJI
-
-1. Zarejestruj się na konto Microsoft Azure w http://azure.com
-
-2. po utworzeniu konta, zaloguj się do portalu platformy Azure w http://portal.azure.com
-
-3. dodać subskrypcję Microsoft Translator API do konta platformy Azure.
-Wybierz abonament za rzeczywiste użycie. Wymaga karty kredytowej, ale nie martw się, nic nie jest pobierana.
-Wybierz + Nowa opcja.
-Wybierz inteligencji z listy usług.
-Wybierz interfejsy API usług poznawczych.
-Wybierz opcję Typ interfejsu API.
-Wybierz tłumaczenie tekstu
-W sekcji warstwy cenowej wybierz warstwy Bezpłatna (F0)
-Wypełnij pozostałą część formularza i naciśnij przycisk Utwórz.
-
-4. pobrać klucz uwierzytelniania.
-Przejdź do wszystkich zasobów i wybierz Microsoft Translator API, które subskrybujesz.
-Przejdź do opcji kluczy i skopiuj klucz subskrypcji na dostęp do usługi.
-Klucz subskrypcji jest coś w stylu 321dcba...
-
-ROZWIĄZYWANIE PROBLEMÓW
-
-1. Jeśli żadna aplikacja nie jest tłumaczony, sprawdź, czy klucz subskrypcji Microsoft/Yandex jest poprawna.
-2. Jeśli przetłumaczone aplikacji życie zamyka/dostaje zatrzymany na ładowanie po raz pierwszy po uruchomieniu, tłumaczenie, kliknij aplikacji w aplikacji do tłumaczenia kartę i w inne ustawienia wypełnienia w opóźnienie przed tłumaczeniem do 2000.
-3. Jeśli przetłumaczone aplikacja używana do działają dobrze, ale teraz utknąć na uruchamianie, kliknij aplikacji w aplikacji tłumaczenie kartę i kliknij na: kliknij, aby Wyczyść pamięć podręczną tłumaczenie.
-4. Jeśli nie są przetłumaczone niektóre części aplikacji, kliknij na aplikację w aplikacji tłumaczenie kartę i włączyć tryb agresywny.
-5. Jeśli aplikacja nadal życie zamyka, wyłączyć tłumaczenie dla tej aplikacji i skontaktuj się ze mną na wsparcie wątek na XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Tłumaczenie dowolnego miejsca"</string>
+    <string name="backup_pref_error">"Jakiś błąd. Nie można wykonać kopię zapasową preferencji! Czy możesz udzielić dostępu administratora?"</string>
+    <string name="backup_pref_success">"Preferencje zostały skopiowane do pamięci zewnętrznej!"</string>
+    <string name="wut_why_null">"Nie można załadować stronę preferencji na aplikację. Zamknij i ponownie otwórz ponownie aplikację."</string>
+    <string name="app_icon">"Ikonę aplikacji"</string>
+    <string name="example_application">"Przykład zastosowania"</string>
+    <string name="description">"Opis"</string>
+    <string name="translate_anywhere">"Tłumaczyć wszędzie"</string>
     <string name="apps_to_translate">"Aplikacje do przetłumaczenia"</string>
     <string name="global_settings">"Ustawienia globalne"</string>
     <string name="instructions">"Instrukcje"</string>
@@ -112,8 +68,20 @@ ROZWIĄZYWANIE PROBLEMÓW
     <string name="caching">"Używanie buforowania"</string>
     <string name="caching_summary_off">"Nie zapisywanie tłumaczeń w trybie offline, w wyniku wolniej tłumaczyć i wyższe dane - ale może działać więcej aplikacji. Włączyć się do Zapisz tłumaczenia."</string>
     <string name="caching_summary_on">"Zapisywanie tłumaczeń w trybie offline, aby przyspieszyć tłumaczyć i korzystać z danych. Należy wyłączyć, wyłączyć, jeśli nie można uruchomić aplikacji."</string>
-    <string name="delay">"Opóźnienie przed rozpoczęciem tłumaczenia"</string>
-    <string name="delay_summary">"Ustaw czas w milisekundach czekać przed rozpoczęciem tłumaczenia. Wartość domyślna to 0, równa 1000-5000, jeśli przetłumaczone aplikacja ulega awarii."</string>
+    <string name="delay">"Opóźnienie przed wymiana z przetłumaczony tekst"</string>
+    <string name="delay_summary">"Ustaw czas w milisekundach czekać przed Zamień przetłumaczonego tekstu. Wartość domyślna to 0. Zestaw do 1000-5000, jeśli przetłumaczone aplikacja ulega awarii."</string>
+    <string name="delay_webview">"Opóźnienie przed rozpoczęciem tłumaczenie WebViews"</string>
+    <string name="delay_webview_summary">"Ustaw czas w milisekundach, oczekiwania przed rozpoczęciem tłumaczenie WebViews. Wartość domyślna to 500. Ustawiona na 0, aby zwiększyć szybkość tłumaczenia. Zestaw do 3000-5000, jeśli część aplikacji sieci web nie są tłumaczenia."</string>
+    <string name="analytics">"Wyślij anonimowy Crash i dane dotyczące użycia"</string>
+    <string name="analytics_summary_off">"Nie wysyłanie anonimowych awarii i dane użycia. Wysyłanie anonimowych awarii danych pomaga autora ulepszaniu aplikacji."</string>
+    <string name="analytics_summary_on">"Wysyłanie anonimowych awarii i wykorzystanie danych. Żadne informacje osobiste nie są przesyłane. Dane anonimowe awarii pomaga autora ulepszaniu aplikacji"</string>
+    <string name="debug">"Zaawansowane: Włącz tryb debugowania."</string>
+    <string name="debug_summary_off">"Debugowanie jest wyłączone. Bez zapisywania danych debugowania do logcat. Włączyć tę funkcję przed wysyłania raportów o błędach"</string>
+    <string name="debug_summary_on">"Debugowanie jest włączone. Zapisywanie dzienników logcat. To zmniejsza wydajność - Wyłącz Jeśli nie są potrzebne."</string>
+    <string name="local_on_off">"Tłumaczenie tej aplikacji"</string>
+    <string name="local_on_off_summary">"Wyłączyć, aby zatrzymać tłumaczeniu aplikacji"</string>
+    <string name="local_on_off_summary_off">"Ta aplikacja nie będą tłumaczone. Kolei na początku przy użyciu auto tłumaczenie!"</string>
+    <string name="local_on_off_summary_on">"To będą tłumaczone. Należy wyłączyć, aby całkowicie wyłączyć tłumaczenie tej aplikacji."</string>
     <string name="overRide_global">"Zastępują ustawienia globalne"</string>
     <string name="overRide_global_summary_off">"Używać ustawienia globalne dla tej aplikacji Turn na, aby zmienić ustawienia tylko dla tej aplikacji."</string>
     <string name="overRide_global_summary_on">"Przy użyciu ustawienia lokalne dla tej aplikacji Turn off użyciu ustawienia globalne."</string>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">Indholdsfortegnelse</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">Hvad AllTrans betyder</a></li>
+        <li><a href="#videos">Videoer</a></li>
+        <li><a href="#how-to-use-alltrans">Sådan bruges AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Sådan får du Yandex oversætte nøglen</a></li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Hvordan du få Microsoft Azure
+            oversætte nøglen</a></li>
+        <li><a href="#troubleshooting">Fejlfinding</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">Ingen app er ved at blive
+                    oversat i hvilken som helst app</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">Oversatte app er fast i
+                    åbningsskærmen</a></li>
+                <li><a href="#the-translated-app-is-force-close">Oversat app er kraft tæt</a></li>
+                <li><a href="#a-particular-app-is-not-being-translated">En bestemt app er ikke at
+                    blive oversat</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">Et spil app er ikke at blive
+                    oversat</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">Hvis
+                        du stadig har problemer som Force tæt eller dele af en app ikke at blive
+                        oversat</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">Donationer</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">Hvad AllTrans betyder</h2>
+
+    <p>Det erstatter <strong>al tekst i en app</strong> i et sprog fra et sprog til et andet på
+        kørselstidspunktet.</p>
+
+    <p>Sige for eksempel en app er på tysk. En bruger vælger app navn og den ønskede sprog
+        konvertering (sige tysk til engelsk).</p>
+
+    <p>Så når brugeren benytter den krævede app, al tekst, <strong>ANYWHERE</strong> i app, er
+        erstattet af deres engelske ækvivalenter.</p>
+
+    <p>Dette er noget der ligner den måde Google Translate virker i Chrome.</p>
+
+    <p><strong>Bemærk</strong> - på grund af en teknisk begrænsning, ikke vil dette arbejde med
+        mange spil. Intet kan gøres om dette.</p>
+
+    <h2 id="videos">Videoer
+
+        <p>En video (på engelsk), der viser hvordan man bruger AllTrans af Gadget Hacks på Youtube
+            <a href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+        </p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">Sådan bruges AllTrans</h2>
+
+        <p>Dette program <strong>kræver, at</strong> du kan tilmelde dig <strong>gratis</strong> en
+            nøgle fra Microsoft eller Yandex Oversæt. Se vejledning nedenfor om, hvordan du får
+            nøglerne.</p>
+
+        <p>Yandex Oversæt understøtter flere sprog, har en meget lettere tilmeldingsprocessen, og
+            kræver <strong>ingen kreditkort</strong>.</p>
+
+        <p>Microsoft Translate giver <strong>bedre oversættelser</strong>, men kræver et kreditkort
+            til at tilmelde dig. (Men bare rolig, intet vil være opladet.)</p>
+
+        <ol>
+            <li>Kontroller, at AllTrans app er aktiveret i Xposed Installer -> moduler.</li>
+            <li>Starte AllTrans app. Aktiver "Bruge Yandex i stedet for Microsoft" i "Globale
+                indstillinger" fanen, hvis du vil bruge Yandex. Deaktiver bruge Microsoft.
+            </li>
+            <li>Vælg "Oversæt fra sprog" og "Oversætte til sprog".</li>
+            <li>Find den app, du ønsker at oversætte, klik på afkrydsningsfeltet ud for det i fanen
+                "Apps til at oversætte". Hvis afkrydsningsfeltet ikke er synlig, kan du prøve at
+                roterende telefonen sidelæns ind i landskabs-tilstand.
+            </li>
+            <li>Luk og genstart den app, du ønsker oversat - det bør oversættes!</li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Sådan får du Yandex oversætte nøglen</h2>
+
+        <ol>
+            <li>Gå til <a href="https://tech.yandex.com/keys/get/?service=trnsl">Yandex Oversæt API
+                hjemmeside</a></li>
+            <li>Hvis du ikke allerede har en konto, klik på "Registrer" og oprette en ny konto.</li>
+            <li>Efter tilmelding, acceptere brugeraftale og klik på "Få API Key".</li>
+            <li>Du har modtaget din nøgle!</li>
+        </ol>
+
+        <p>Abonnementsnøgle er noget lignende "trnsl.1.1.201701..."</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Hvordan du få Microsoft Azure oversætte
+            nøglen</h2>
+
+        <ol>
+            <li>Tilmeld dig en Microsoft Azure konto.<br>Hvis du ikke allerede har en azurblå konto,
+                oprette en <a href="http://azure.com">Microsoft Azure konto</a>.
+            </li>
+            <li>Når du har en konto, logge ind på <a href="http://portal.azure.com">Azure Portal</a>.
+            </li>
+            <li>Tilføje en "Microsoft Translator API abonnement" din azurblå konto.<br>
+                <ol>
+                    <li>Vælge en "pay-as-you-go" abonnement. Vil kræve et kreditkort, men bare
+                        rolig, intet vil blive opkrævet.
+                    </li>
+                    <li>Vælg indstillingen "+ ny".</li>
+                    <li>Vælg "Intelligens" fra listen over tjenester.</li>
+                    <li>Vælg "Kognitiv tjenester API'er".</li>
+                    <li>Vælg indstillingen "API Type".</li>
+                    <li>Vælg "tekstoversættelse".</li>
+                    <li>Vælg "Gratis Tier (F0)" i afsnittet "Prissætning Tier".</li>
+                    <li>Udfyld resten af formularen, og tryk på knappen "Opret".</li>
+                </ol>
+            </li>
+            <li>Hente dine "godkendelsesnøgle".<br>
+                <ol>
+                    <li>Gå til "Alle sider" og vælg Microsoft Translator API du abonnerer på.</li>
+                    <li>Gå til indstillingen "Nøgler" og kopiere din abonnementsnøgle for at få
+                        adgang til tjenesten.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>Abonnementsnøgle er noget lignende "321dcba..."</p>
+
+
+        <h2 id="troubleshooting">Fejlfinding</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">Ingen app er ved at blive oversat i hvilken
+            som helst app</h3>
+
+        <ul>
+            <li>Hvis ingen app er ved at blive oversat, afkrydsningsfelt er "AllTrans" er aktiveret
+                i Xposed Installer -> moduler.
+            </li>
+            <li>Også tjekke om din "Microsoft/Yandex abonnementsnøgle" er korrekt.</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">Oversatte app er fast i
+            åbningsskærmen</h3>
+
+        <ul>
+            <li>Klik på den app benævne i "Apps til at oversætte" fanen, og klik på "Klik på at
+                klare oversættelse Cache".
+            </li>
+            <li>Hvis dette er første gang, du starter oversætte denne app, klik på den app benævne i
+                "Apps til at oversætte" fanen, og i "Andre indstillinger" udfylde "Forsinkelse før
+                Replcaing med oversat tekst" til 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">Oversat app er "Force tæt"</h3>
+
+        <ul>
+            <li>Klik på den app benævne i "Apps til at oversætte" fanen, og klik på "Klik på at
+                klare oversættelse Cache".
+            </li>
+            <li>Klik på den app benævne i "Apps til at oversætte" fanen, og i "andre indstillinger"
+                udfylde "Forsinkelse før Replcaing med oversat tekst" til 2000.
+            </li>
+            <li>Klik på den app benævne i "Apps til at oversætte" fanen, og i "Andre indstillinger"
+                udfylde "Forsinkelse før begynder at oversætte WebViews" til 2000.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">En bestemt app er ikke at blive
+            oversat</h3>
+
+        <ul>
+            <li>Klik på den app benævne i "Apps til at oversætte" fanen, og i "Andre indstillinger"
+                udfylde "Forsinkelse før begynder at oversætte WebViews" til 2000.
+            </li>
+            <li>Hvis nogle dele af app ikke er stadig at blive oversat, skal du klikke på den app
+                benævne i "Apps til at oversætte" fanen, og aktiverer "Aggressiv tilstand".
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">Et spil app er ikke at blive oversat</h3>
+
+        <ul>
+            <li>På grund af tekniske begrænsninger, vil "AllTrans" ikke arbejde med mange spil.
+                Intet kan gøres om dette.
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            Hvis du stadig har problemer som "Force tæt" eller dele af en app ikke at blive
+            oversat</h3>
+
+        <p>Kontakt mig for støtte. Når du gør det, jeg får brug for atleast følgende
+            oplysninger-</p>
+
+        <ol>
+            <li>Navnet på app, sammen med et <strong>link til at downloade appen</strong> fra nogle
+                APK butik som Google Play Butik, CoolApk, osv.
+            </li>
+            <li>Din telefon Android version.</li>
+            <li>En "logcat" for du forsøger at åbne en app, der giver dig problemer. Du kan bruge
+                apps frit tilgængeligt på Play Butik, som <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">denne</a>
+            </li>
+        </ol>
+
+        <p>Når du har ovenstående, så kontakt mig på <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            støtte tråd</a>.<br>Du kan også rapportere problemer på <a
+                href="https://github.com/akhilkedia/AllTrans">projektets Github</a>.</p>
+
+
+        <h2 id="donations">Donationer</h2>
+
+        <p>Hvis du kan lide dette projekt, købe mig en kop kaffe! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

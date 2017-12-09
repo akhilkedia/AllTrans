@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">Fanoroam-</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">Inona no AllTrans</a></li>
+        <li><a href="#videos">Horonan-tsary</a></li>
+        <li><a href="#how-to-use-alltrans">Ahoana no fomba ampiasana ny AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Fomba Yandex handika Teny manan-Danja</a>
+        </li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Fomba hahazoana Microsoft Azure
+            handika Teny manan-Danja</a></li>
+        <li><a href="#troubleshooting">Amin' ny tsy Fahatomombanana</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">Misy application voadika amin'
+                    ny misy application</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">Application nadika mipetaka
+                    eo amin' ny efijery misokatra</a></li>
+                <li><a href="#the-translated-app-is-force-close">Ny application Translated dia
+                    Akaiky Hery</a></li>
+                <li><a href="#a-particular-app-is-not-being-translated">Ny application manokana tsy
+                    voadika</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">Ny application kilalao tsy
+                    voadika</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">Raha
+                        manana olana toy ny Tafika Akaiky na ny ampahany application adika tsy mbola
+                        ianao</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">Fanomezana</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">Inona no AllTrans</h2>
+
+    <p>Izany dia manolo amin' ny fiteny iray amin' ny fiteny iray hafa amin' ny runtime ny <strong>rehetra
+        lahatsoratra ao amin' ny application</strong> .</p>
+
+    <p>Milaza ohatra dia application tamin' ny teny Alemana. Mifidy ny mpampiasa iray ny anaran' ny
+        application, ary ny fiteny takiana fiovam-po (miteny Alemana amin' ny teny Anglisy).</p>
+
+    <p>Avy eo dia isaky ny mpampiasa mampiasa ny application takiana, ny lahatsoratra rehetra
+        nataony, <strong>ANYWHERE</strong> ao amin' ny application, dia nosoloina tamin' ny alalan'
+        ny equivalents tamin' ny teny Anglisy.</p>
+
+    <p>Izany dia mitovy amin' ny fomba Google Mandika miasa ao amin' ny Chrome.</p>
+
+    <p><strong>Fanamarihana</strong> - noho ny tsy fahatanterahany ara-teknika, izany tsy miasa
+        miaraka amin' ny kilalao maro. Tsy misy zavatra azo atao momba izany.</p>
+
+    <h2 id="videos">Horonan-tsary
+
+        <p>Horonantsary iray (amin' ny teny Anglisy) maneho fomba mampiasa AllTrans amin' ny alalan'
+            ny Hacks Entina amin' ny Youtube <a href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+        </p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">Ahoana no fomba ampiasana ny AllTrans</h2>
+
+        <p>Ity fampiharana dia <strong>mitaky</strong> anao mba hisoratra anarana ho <strong>malalaka</strong>
+            iray manan-danja avy amin' i Microsoft na Mandika ny Yandex. Jereo ny torolalana etsy
+            ambany mikasika ny fomba hahazoana ny fanalahidin' ny.</p>
+
+        <p>Manohana ny fiteny maromaro kokoa Mandika ny Yandex, dia be mora signup dingana ary
+            mitaky <strong>KARATRA fiantohana avy ANY amin' ny TSY</strong>.</p>
+
+        <p>Manome <strong>tsaratsara kokoa ireo dikanteny</strong>Microsoft Translate, saingy mitaky
+            ny karatra mba hisoratra anarana. (Saingy aza manahy, ho na inona na inona andraikitra.)
+        </p>
+
+        <ol>
+            <li>Ataovy izay AllTrans ny application dia nanome fahafahana ao amin' ny Xposed
+                Installer-> Voaloham.
+            </li>
+            <li>Mamelona ny AllTrans ny application. Ao amin' ny "Sehatra maneran-Tany" onglet,
+                fahafahana "Mampiasa Yandex kosa fa i Microsoft" raha toa ianao ka mampiasa ny
+                Yandex. Turn hampiasa Microsoft.
+            </li>
+            <li>Misafidy ny "Handika avy amin' ny Fiteny" sy ny "Fandikana ny Fiteny".</li>
+            <li>Ao amin' ny "Applications mba handika Teny" onglet, mahita ny application tianao mba
+                handika teny, tsindrio ny checkbox eo akaikin' izany. Raha ny checkbox dia tsy hita
+                maso, miezaka rotating findainao sideways amin' ny fomba fanaovana Endritany.
+            </li>
+            <li>Akatony ary averina velomina indray ny rafibaovao nadika tianao - tokony handikana
+                izany!
+            </li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Fomba Yandex handika Teny manan-Danja</h2>
+
+        <ol>
+            <li>Handeha <a href="https://tech.yandex.com/keys/get/?service=trnsl">Yandex</a> handika
+                teny API ny Tranonkala
+            </li>
+            <li>Raha toa ka tsy mbola manana ny fitantarana ianareo dia tsindrio ny "misoratra
+                anarana" ary hisoratra anarana ho an' ny tantara iray vaovao.
+            </li>
+            <li>Taorian' ny fisoratana, dia manaiky ny Fifanarahana ny Mpampiasa ary tsindrio ny hoe
+                "Mahazo API Fanalahidy".
+            </li>
+            <li>Nandray ny fanalahidin' amim-pahombiazana ianao!</li>
+        </ol>
+
+        <p>Ny fanalahidy famandrihana dia toy ny "trnsl.1.1.201701..."</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Fomba hahazoana Microsoft Azure handika
+            Teny manan-Danja</h2>
+
+        <ol>
+            <li>Hisoratra anarana ho an' ny tantara Microsoft Azure.<br>Raha toa ka tsy mbola manana
+                kaonty Azure ianareo, hisoratra anarana ho an' ny <a href="http://azure.com">Microsoft
+                    Azure tantara</a>.
+            </li>
+            <li>Aorian' ny fitantarana, dia midira ao amin' ny <a href="http://portal.azure.com">Varavarana
+                fidirana ho An' ny Azure</a>.
+            </li>
+            <li>Ampidiro ao amin' ny kaonty Azure ny "Microsoft mpandika Teny API Famandrihana".<br>
+                <ol>
+                    <li>Misafidy ny famandrihana "pay-as-you-go". Mitaky ny karatra, anefa aza
+                        manahy, dia ho nandoa na inona na inona.
+                    </li>
+                    <li>Misafidiana ny ihany "+ Vaovao".</li>
+                    <li>Safidio ny "Faharanitan-Tsaina" ao amin' ny lisitr' ireo
+                        fotoam-pivavahana.
+                    </li>
+                    <li>Safidio ny "Cognitive Services APIs".</li>
+                    <li>Safidio ny "API Karazana" safidy.</li>
+                    <li>Safidio ny "Fandikana ny Lahatsoratra".</li>
+                    <li>Ao amin' ny fizarana "Ambany Pricing", safidio ny "Malalaka Ambany (F0)".
+                    </li>
+                    <li>Fenoy ny ambin' ilay taratasy, ary tsindrio ny bokotra hoe "Create".</li>
+                </ol>
+            </li>
+            <li>Haka ny "Fanalahidin' ny Fanamarinana".<br>
+                <ol>
+                    <li>Handeha any amin' ny "Ireo Loharano Rehetra" ary safidio ny Microsoft
+                        mpandika Teny API subscribed ho anao.
+                    </li>
+                    <li>Handeha any amin' ny "Fanalahidy" safidy ary adikao ny fanalahidy
+                        famandrihana mba hidirana ao amin' ny asa fanompoana.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>Ny fanalahidy famandrihana dia toy ny "321dcba..."</p>
+
+
+        <h2 id="troubleshooting">Amin' ny tsy Fahatomombanana</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">Misy application voadika amin' ny misy
+            application</h3>
+
+        <ul>
+            <li>Raha toa ka tsy misy application dia adika, dia hamarino no nahafahan' ny "AllTrans"
+                ao amin' ny Xposed Installer-> Voaloham.
+            </li>
+            <li>Hamarino koa raha ny "Microsoft/Yandex Famandrihana Fanalahidy" dia marina.</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">Application nadika mipetaka eo amin' ny
+            efijery misokatra</h3>
+
+        <ul>
+            <li>Tsindrio eo amin' ny application anarana ao amin' ny "Applications handika teny"
+                onglet, ary tsindrio ny "Tsindrio ny Mazava Fandikana Cache".
+            </li>
+            <li>Raha izany no fotoana voalohany ianao nanomboka nandika ity application, tsindrio ny
+                application anaran' ny onglet "Applications mba handika Teny" ary fenoy "Toe-Javatra
+                Hafa" ao amin' ny "Hatak' Andro Alohan' ny Replcaing miaraka Amin' ny Nandika ny
+                Lahatsoratra" ny 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">Ny application Translated dia "Hery Akaiky"</h3>
+
+        <ul>
+            <li>Tsindrio eo amin' ny application anarana ao amin' ny "Applications handika teny"
+                onglet, ary tsindrio ny "Tsindrio ny Mazava Fandikana Cache".
+            </li>
+            <li>Tsindrio eo amin' ny application anarana ao amin' ny "Applications mba handika Teny"
+                onglet, ary fenoy amin' "Hafa toe-Javatra" "Hatak' Andro Alohan' ny Replcaing
+                miaraka Amin' ny Nandika ny Lahatsoratra" ny 2000.
+            </li>
+            <li>Tsindrio eo amin' ny application anarana ao amin' ny "Applications handika teny"
+                onglet, ary ao anatin' ny "Toe-Javatra Hafa" hameno "Hatak' Andro Alohan' ny
+                Hanombohana ny handika Teny WebViews" mba 2000.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">Ny application manokana tsy voadika</h3>
+
+        <ul>
+            <li>Tsindrio eo amin' ny application anarana ao amin' ny "Applications handika teny"
+                onglet, ary ao anatin' ny "Toe-Javatra Hafa" hameno "Hatak' Andro Alohan' ny
+                Hanombohana ny handika Teny WebViews" mba 2000.
+            </li>
+            <li>Raha toa ka ny application faritra sasany dia mbola tsy adika, tsindrio ny ny
+                application anarana ao amin' ny "Applications handika teny" onglet, sy hanome
+                fahafahana "Fomba Masiaka".
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">Ny application kilalao tsy voadika</h3>
+
+        <ul>
+            <li>Noho ny famerana ara-teknika, "AllTrans" dia tsy mety amin' ny kilalao maro. Tsy
+                misy zavatra azo atao momba izany.
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            Raha manana olana toy ny "Hery Akaiky" na ny ampahany application adika tsy mbola
+            ianao</h3>
+
+        <p>Mifandraisa amin' ny fanohanana ahy. Rehefa manao izany ianao dia mila atleast ity
+            fampahalalana manaraka ity - aho</p>
+
+        <ol>
+            <li>Ny anaran' ny application, miaraka amin' ny <strong>rohy mankany amin' ny sintony ny
+                app</strong> ao amin' ny fivarotana ireo APK toy ny Google Hilalao Fivarotana,
+                CoolApk, sns.
+            </li>
+            <li>Dikanteny Android ny findainao.</li>
+            <li>Ny "logcat" anareo miezaka hanokatra ny application izay manome anao ireo olana.
+                Azonao ampiasaina ny application maimaim eny amin' ny Fivarotana ilay tantara
+                an-Tsehatra izany, toy <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">Ity
+                    iray ity</a></li>
+        </ol>
+
+        <p>Raha vantany vao manana ny etsy ambony ianao dia mifandraisa amin' ny <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            dia manohana kofehy</a>ahy.<br>Afaka hitatitra olana amin' ny <a
+                href="https://github.com/akhilkedia/AllTrans">Github ny Tetik'</a>ihany koa ianao.
+        </p>
+
+
+        <h2 id="donations">Fanomezana</h2>
+
+        <p>Raha toa ianao tia io tetik' asa, nividy ahy kafe iray kaopy! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

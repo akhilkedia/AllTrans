@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">Оглавление</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">Что делает AllTrans</a></li>
+        <li><a href="#videos">Видео</a></li>
+        <li><a href="#how-to-use-alltrans">Как пользоваться AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Как получить ключ перевод Яндекс</a></li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Как получить ключ перевести
+            Microsoft Azure</a></li>
+        <li><a href="#troubleshooting">Устранение неполадок</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">Нет app в настоящее время
+                    переводится в любом приложении</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">Перевод приложения застрял
+                    в открытие экрана</a></li>
+                <li><a href="#the-translated-app-is-force-close">Перевод app закрыт в силу</a></li>
+                <li><a href="#a-particular-app-is-not-being-translated">Особое приложение не
+                    переводится</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">Игра app не переводится</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">Если
+                        вы все еще есть проблемы как силу тесной или частей приложения, не
+                        переводится</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">Пожертвования</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">Что делает AllTrans</h2>
+
+    <p>Он заменяет <strong>весь текст в приложении</strong> на языке с одного языка на другой во
+        время выполнения.</p>
+
+    <p>Скажем, например приложение находится на немецком языке. Пользователь выбирает имя приложения
+        и требуемого языка преобразования (скажем, немецкий на английский).</p>
+
+    <p>Затем каждый раз, когда пользователь использует необходимые приложения, весь текст, <strong>любом</strong>
+        в приложении, заменяются их английские эквиваленты.</p>
+
+    <p>Это нечто похожее на то, что Google Translate работает в Chrome.</p>
+
+    <p><strong>Примечание</strong> - вследствие технических ограничений, это не будет работать со
+        многими играми. Ничто не может быть сделано по этому поводу.</p>
+
+    <h2 id="videos">Видео
+
+        <p>Видео (на английском языке) показывает, как использовать AllTrans, хаки гаджет на Youtube
+            <a href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+        </p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">Как пользоваться AllTrans</h2>
+
+        <p>Это приложение <strong>требует</strong> вам подписаться на <strong>бесплатный</strong>
+            ключ от Microsoft или Yandex перевести. Смотрите инструкции ниже о том, как получить
+            ключи.</p>
+
+        <p>Яндекс перевести поддерживает несколько языков, имеет гораздо проще процесс signup и
+            требует <strong>нет кредитной карты</strong>.</p>
+
+        <p>Перевести Microsoft дает <strong>лучший перевод</strong>, но требует кредитной карты,
+            чтобы зарегистрироваться. (Но не волнуйтесь, ничего не будет взимается.)</p>
+
+        <ol>
+            <li>Убедитесь, что приложение включен в инсталлятор Xposed AllTrans -> модули.</li>
+            <li>Запустите приложение AllTrans. В «Глобальные параметры» на вкладке включите
+                «Использовать Microsoft вместо Яндекс», если вы хотите использовать Яндекс.
+                Отключение использования Microsoft.
+            </li>
+            <li>Выберите «Перевод с языка» и «Перевести на язык».</li>
+            <li>На вкладке «Apps перевести» найти приложение, которое вы хотите перевести,
+                установите флажок рядом с ним. Если этот флажок не отображается, попробуйте
+                повернуть боком ваш телефон в ландшафтный режим.
+            </li>
+            <li>Закройте и перезапустите приложение, которое вы хотите перевод - оно должно быть
+                переведено!
+            </li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Как получить ключ перевод Яндекс</h2>
+
+        <ol>
+            <li>Перейти на <a href="https://tech.yandex.com/keys/get/?service=trnsl">Яндекс перевод
+                веб-сайта API</a></li>
+            <li>Если вам еще нет учетной записи, нажмите кнопку «Регистрация» и подпишитесь на новую
+                учетную запись.
+            </li>
+            <li>После подписания, соглашаетесь с пользовательским соглашением и нажмите кнопку
+                «Получить ключ API».
+            </li>
+            <li>Вы успешно получили ключ!</li>
+        </ol>
+
+        <p>Ключ подписки что-то вроде «trnsl.1.1.201701...»</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Как получить ключ перевести Microsoft
+            Azure</h2>
+
+        <ol>
+            <li>Подпишитесь на учетную запись Microsoft Azure.<br>Если вам еще нет учетной записи
+                Azure, подпишитесь на <a href="http://azure.com">учетную запись Microsoft Azure</a>.
+            </li>
+            <li>После того, как у вас есть счет, войдите на <a href="http://portal.azure.com">Портал
+                Azure</a>.
+            </li>
+            <li>Добавление учетной записи Azure «Microsoft Translator API подписка».<br>
+                <ol>
+                    <li>Выберите подписку на «распределительной». Потребует кредитной карты, но не
+                        волнуйтесь, ничего не взимается.
+                    </li>
+                    <li>Выберите параметр «+ новые».</li>
+                    <li>Выберите в списке услуг «Интеллект».</li>
+                    <li>Выберите «Когнитивная услуг API».</li>
+                    <li>Выберите вариант «API типа».</li>
+                    <li>Выберите «Перевод текстов».</li>
+                    <li>В разделе «Цены уровня» выберите «Свободный уровень (F0)».</li>
+                    <li>Заполните оставшуюся часть формы и нажмите кнопку «Создать».</li>
+                </ol>
+            </li>
+            <li>Получить «Ключ проверки подлинности».<br>
+                <ol>
+                    <li>Перейдите к «Все ресурсы» и выберите Microsoft Translator API, вы
+                        подписались.
+                    </li>
+                    <li>Перейдите к параметру «Ключи» и скопируйте ключ подписки для доступа к
+                        службе.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>Ключ подписки что-то вроде «321dcba...»</p>
+
+
+        <h2 id="troubleshooting">Устранение неполадок</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">Нет app в настоящее время переводится в любом
+            приложении</h3>
+
+        <ul>
+            <li>Если нет app в настоящее время переводится, проверить это «AllTrans» включен в
+                инсталлятор Xposed -> модули.
+            </li>
+            <li>Также проверьте, если ваш «ключ подписки Microsoft/Яндекс» является правильным.</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">Перевод приложения застрял в открытие
+            экрана</h3>
+
+        <ul>
+            <li>Нажмите на название приложения в «Apps перевести» вкладку и нажмите на «Нажмите
+                чтобы очистить кэш перевод».
+            </li>
+            <li>Если это первый раз, вы начали переводить этот app, нажмите на название приложения в
+                вкладку «Apps перевести» и «Прочие настройки» заполните «Задержка перед Replcaing с
+                перевод текста» в 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">App перевод близка «силы»</h3>
+
+        <ul>
+            <li>Нажмите на название приложения в «Apps перевести» вкладку и нажмите на «Нажмите
+                чтобы очистить кэш перевод».
+            </li>
+            <li>Нажмите на название приложения в «Перевести приложения» на вкладке, и в «прочие
+                настройки» заполнить «Задержка перед Replcaing с перевод текста» в 2000 году.
+            </li>
+            <li>Нажмите на название приложения в «Apps перевести» вкладку и в «Прочие настройки»
+                заполните «Задержка перед начиная чтобы перевести WebViews» в 2000 году.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">Особое приложение не переводится</h3>
+
+        <ul>
+            <li>Нажмите на название приложения в «Apps перевести» вкладку и в «Прочие настройки»
+                заполните «Задержка перед начиная чтобы перевести WebViews» в 2000 году.
+            </li>
+            <li>Если некоторые части приложения до сих пор не переводятся, нажмите на название
+                приложения в «Apps перевести» вкладку и включить «Агрессивный режим».
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">Игра app не переводится</h3>
+
+        <ul>
+            <li>Из-за технических ограничений «AllTrans» не будет работать со многими играми. Ничто
+                не может быть сделано по этому поводу.
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            Если у вас все еще есть проблемы как «Закрыть силы» или частей приложения, не
+            переводится</h3>
+
+        <p>Свяжитесь со мной для поддержки. Когда вы это сделаете, будет нужно atleast следующую
+            информацию-</p>
+
+        <ol>
+            <li>Имя приложения, а также <strong>ссылки для загрузки приложения</strong> от некоторых
+                APK магазина Google Play магазин, CoolApk и т.д.
+            </li>
+            <li>Ваш телефон Android версии.</li>
+            <li>«Logcat» вас при попытке открыть приложение, которое дает вам проблемы. Вы можете
+                использовать приложения свободно доступны в магазине Play для этого, как <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">этот</a>
+            </li>
+        </ol>
+
+        <p>После того как вы выше, свяжитесь со мной на <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            поддержки потока</a>.<br>Вы можете также сообщить вопросов о <a
+                href="https://github.com/akhilkedia/AllTrans">проекта на Github</a>.</p>
+
+
+        <h2 id="donations">Пожертвования</h2>
+
+        <p>Если вам нравится этот проект, купите мне выпить чашечку кофе! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

@@ -23,57 +23,13 @@
     <string name="loading">"tetlh loading Applications-DubelmoHchugh loS"</string>
     <string name="clear_cache_error">"'op Qagh. laH wej mughmeH cache Huv!"</string>
     <string name="clear_cache_success">"Cache mugh erased app!"</string>
-	<string name="how_to_use">"CHAY' APPLICATION YILO'
-
-SoHvaD qI' ngaQHa'moHwI'mey vo' microsoft pagh yandex mugh poQ application.
-latlh Hol ngaq, mamej Dov'agh signup mIw vavDajvaD 'ej ghobe' Huch chaw' poQ yandex mugh.
-Dunmo' ghot'e' yInob, 'ach Huch chaw' qI' poQ microsoft Translate. (rejmorgh yIDaQo', tu'lu'bogh Huj.)
-
-1. pa' tab Global Settings, lo' yandex instead of microsoft enable vaj yandex lo', latlh Qotlh microsoft lo' DaneH'a'.
-1. pa' tab Global Settings, 'el microsoft ghap yandex Subscription ngaQHa'moHwI'mey tap, correspond ngaQHa'moHwI'mey input, (Instructions legh vo' below).
-2. DawIvpu' mugh vo' Hol 'ej mugh Hol.
-3. pa' Apps mugh tab, app mugh, next to 'oH checkbox click DaneH'a' vItu'. vaj checkbox 'oHbe' visible, phone sideways jIr vaj LandScape mode 'e' nID.
-4. SoQ 'ej app SoH neH mugh restart-vaj mugh 'oH!
-
-ghuHmoH, 'op apps chaq raD SoQ-. troubleshooting 'ay' legh.
-
-CHAY' SUQ SUBSCRIPTION NGAQHA'MOHWI'MEY MUGH YANDEX
-
-1. Ha' yandex Website-https://tech.yandex.com/keys/get/?service=trnsl
-2. 'IjmeH account ghewmey chonayta' SoH, Suy qachmey 'eb 'ej So'meH qI' click woDDI' chu' account.
-3. qaSpu'DI' qI' woDDI', User Agreement jIQochbe' je Suq api ngaQHa'moHwI'mey click.
-4. ngaQHa'moHwI'mey successfully Hev SoH! vay' trnsl.1.1.201701 rur.
-
-CHAY' SUQ SUBSCRIPTION NGAQHA'MOHWI'MEY MUGH MICROSOFT AZURE
-
-1. qI' microsoft Azure account DeSDu' http://azure.com
-
-2. qaSpu'DI' account Daghaj, qI' vaj Azure portal DeSDu' http://portal.azure.com
-
-3. microsoft mughwI' api subscription chel Azure account.
-wutlh pay-as-you-go subscription. , Huch chaw' poQ 'ach rejmorgh yIDaQo' Huj pagh.
-wIv + chu' DuH.
-[Intelligence vo' chavmoH tetlh. ghaHDaq wIv BERNARDO.
-Cognitive chavmoH apis wIv.
-api Segh DuH wIv.
-bIngDaq ghItlh leghlu' mughmeH wIv
-qaStaHvIS 'ay' 'ay' Tier, tlhab Tier (f0) wIv
-chaw'nIS leS chenmoH 'ej chenmoH button press.
-
-4. ngaQHa'moHwI'mey authentication retrieve.
-ghoS Hoch jo je microsoft mughwI' api subscribed SoH wIv.
-ghoS ngaQHa'moHwI'mey DuH 'ej subscription ngaQHa'moHwI'mey chavmoH naw' copy.
-subscription ngaQHa'moHwI'mey vay' 321dcba rur.
-
-TROUBLESHOOT
-
-1. vaj mugh pagh app, microsoft ghap yandex Subscription ngaQHa'moHwI'mey lugh check.
-2. vaj DuDwI' mugh app raD SoQ ghap Suq wa'DIch Dunqu'mo' qaSpu'DI' mugh SoH start loading, click pa' Apps tab mugh 'ej qaStaHvIS latlh Settings chaw'nIS qaStaHvIS mIm pa' mugh 2000 app.
-3. vaj maj, Qap 'ach DaH Suq DuDwI' starting, click pa' Apps tab mugh app, 'ej click lo' mugh app Click Cache mughmeH HuvchoH.
-4. wej mugh 'op 'ay' app, click pa' Apps tab mugh app, 'ej vaQ Mode enable.
-5. raD SoQ poH'a' app, app mughmeH Qotlh 'ej jIHvaD contact ngaq Surgh xda-https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Anywhere mugh"</string>
+    <string name="backup_pref_error">"'op Qagh. laH wej preferences chach! SuperUser naw' grant SoH?"</string>
+    <string name="backup_pref_success">"Dub preferences External Storage!"</string>
+    <string name="wut_why_null">"laH wej per-app preference page load. SoQ 'ej application jatlhqa' 'elqa'."</string>
+    <string name="app_icon">"app Icon"</string>
+    <string name="example_application">"example Application"</string>
+    <string name="description">"description"</string>
+    <string name="translate_anywhere">"Dat mugh"</string>
     <string name="apps_to_translate">"apps mugh"</string>
     <string name="global_settings">"global Settings"</string>
     <string name="instructions">"instruction"</string>
@@ -112,8 +68,20 @@ TROUBLESHOOT
     <string name="caching">"Caching yIlo'"</string>
     <string name="caching_summary_off">"wej toD mughmeH offline mugh ghot'e' neH slower 'ej veb De'-'ach chaq baj puS apps. tlhe' vItoDmeH mughmeH."</string>
     <string name="caching_summary_on">"mughmeH offline pol speed mugh 'ej De' lo'. tlhe' Qotlh vaj doesn't, qatlh start app."</string>
-    <string name="delay">"pa' mugh mIm"</string>
-    <string name="delay_summary">"[poH reH milliseconds loS pa' mugh. ghaHDaq HIjmeH BERNARDO. default lo'laHghach 0 HIjmeH 1000 – 5000 vaj crashing mugh app."</string>
+    <string name="delay">"mIm ngejtaH bIngDaq ghItlh leghlu' mugh, ngaSwI' yuvtlhe' wIngaQmoHta'DI'"</string>
+    <string name="delay_summary">"[poH reH milliseconds loS pa' ngaSwI' yuvtlhe' wIngaQmoHta'DI' mugh bIngDaq ghItlh leghlu'. ghaHDaq HIjmeH BERNARDO. default lo'laHghach 0. HIjmeH 1000 – 5000 vaj crashing mugh app."</string>
+    <string name="delay_webview">"pa' webviews mugh Starting mIm"</string>
+    <string name="delay_webview_summary">"[poH reH milliseconds pa' webviews mugh starting loS. ghaHDaq HIjmeH BERNARDO. default lo'laHghach 500. HIjmeH 0 mughmeH speed ghur. HIjmeH 3000-5000 vaj wej mugh 'ay' 'ej bebvo' app."</string>
+    <string name="analytics">"Anonymous Crash 'ej Usage De' ngeH"</string>
+    <string name="analytics_summary_off">"wej ngeH anonymous crash 'ej Usage De'. anonymous crash De' ngeH QaH developer app chenmoH net poQbej."</string>
+    <string name="analytics_summary_on">"anonymous crash 'ej usage De' ngeH. Daqvo' De' personal pagh. developer app chenmoH net poQbej QaH anonymous crash De'"</string>
+    <string name="debug">"'Itlh: tlhe' Debug Mode."</string>
+    <string name="debug_summary_off">"debug DoH mode. wej debug De' ghItlh logcat. ghu'vam tlhe' pa' Qagh ja' ngeH"</string>
+    <string name="debug_summary_on">"debug mode. QonoS ghItlh logcat. yIqaw nup-tlhe' ngugh nIS."</string>
+    <string name="local_on_off">"App mugh"</string>
+    <string name="local_on_off_summary">"tlhe' app mugh mev"</string>
+    <string name="local_on_off_summary_off">"wej mugh app. tlhe' lulegh start lo' auto-mugh!"</string>
+    <string name="local_on_off_summary_on">"mugh ghu'vam. tlhe' wabmeyvetlh app mugh Qotlh."</string>
     <string name="overRide_global">"Global Settings ngep"</string>
     <string name="overRide_global_summary_off">"Global Settings lo' tlhe' app. settings neH app wIQaw'laH."</string>
     <string name="overRide_global_summary_on">"lutu'lu'bej Settings DanoHmeH tlhe' app. DoH Global Settings lo'."</string>

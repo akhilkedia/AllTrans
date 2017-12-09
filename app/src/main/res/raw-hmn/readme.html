@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">Cov txheej txheem</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">AllTrans yuav zoo li cas</a></li>
+        <li><a href="#videos">Yeeb yaj duab</a></li>
+        <li><a href="#how-to-use-alltrans">Siv AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Tau pes Yandex yawm sij yuav ua li cas</a>
+        </li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Yuav ua li cas tau Microsoft Azure
+            txhais qhov tseem ceeb</a></li>
+        <li><a href="#troubleshooting">TroubleShooting</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">Tsis app yog muab txhais ua
+                    nyob rau hauv tej app</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">Txhais app nyam yog ib qho
+                    screen qhib</a></li>
+                <li><a href="#the-translated-app-is-force-close">Yog tus Translated app Force
+                    zoo</a></li>
+                <li><a href="#a-particular-app-is-not-being-translated">Ib qho app no tsis tau
+                    txhais</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">Ib app qus no tsis tau txhais</a>
+                </li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">Yog
+                        hais tias koj tseem muaj teeb meem xws li Force zoo los ntawm ib tug app
+                        tsis tau txhais</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">Donations</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">AllTrans yuav zoo li cas</h2>
+
+    <p>Nws tau ntau xyoo <strong>ntawv nyeem tag nrho hauv ib app</strong> ib hom lus los ntawm ib
+        cov lus mus rau lwm tus thaum runtime.</p>
+
+    <p>Hais piv ib app yog German. Ib tug neeg twg yuav xaiv tus lub npe app, thiab cov lus yuav
+        tsum conversion (tej say German rau lus Askiv).</p>
+
+    <p>Ces thaum twg tus neeg siv yuav siv tus cai app, tag nrho cov ntawv nyeem,
+        <strong>ANYWHERE</strong> hauv app, yog los hloov cov lus Askiv kom muaj sib npaug.</p>
+
+    <p>Qhov no yog ib yam zoo rau qhov uas Google Translate ua haujlwm nyob rau hauv Chrome.</p>
+
+    <p><strong>Ceeb toom</strong> - vim kev txwv, qhov no yuav tsis ua hauj lwm nrog ntau ua si.
+        Tsis muaj dab tsi yuav ua tau txog qhov no.</p>
+
+    <h2 id="videos">Yeeb yaj duab
+
+        <p>Lub yees duab (Structured English) uas qhia kev siv AllTrans los Gadget Hacks rau hauv
+            Youtube <a href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+        </p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">Siv AllTrans</h2>
+
+        <p>No thov <strong>kom</strong> koj mus zwm npe <strong>dawb</strong> rau ib qhov tseem ceeb
+            los ntawm Microsoft lossis Yandex Translate. Saib cov lus qhia hauv qab no yuav ua li
+            cas mus rau hauv lub lag luam.</p>
+
+        <p>Yandex Translate txhawb ntau hom lus, muaj cov tau ntau yooj yim signup neej, thiab yuav
+            tsum <strong>tsis muaj CREDIT CARD</strong>.</p>
+
+        <p>Microsoft Translate num <strong>zoo translations</strong>, tiam sis yuav tsum tau ib daim
+            credit card mus zwm npe. (Tiam sis tsis txhob poob siab, tsis muaj dab tsi yuav tau
+            them.)</p>
+
+        <ol>
+            <li>Nco ntsoov app enabled hauv Xposed Installer AllTrans-> Modules.</li>
+            <li>Tua tawm AllTrans app. Nyob rau hauv "Chaw thoob ntiajteb" tab, pab kom "Siv Yandex
+                instead of Microsoft" yog koj xav siv Yandex. Lov tes taw siv Microsoft.
+            </li>
+            <li>Xaiv qhov "Txhais los ntawm lus" thiab "Txhais los lus".</li>
+            <li>Nyob rau hauv lub "Apps los txhais lus" tab, nrhiav qhov app koj xav txhais, nias
+                tus checkbox ntawm nws. Yog tus checkbox yuav tsis pom, ua tiag rotating koj xov toj
+                mus rau hom toj roob hauv pes.
+            </li>
+            <li>Kaw thiab Updated 10/22/07/f.Triplett app tus koj xav txhais - nws yuav tsum tau
+                muab txhais losis siv!
+            </li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Tau pes Yandex yawm sij yuav ua li cas</h2>
+
+        <ol>
+            <li>Mus <a href="https://tech.yandex.com/keys/get/?service=trnsl">Yandex txhais API
+                Website</a></li>
+            <li>Yog hais tias koj tsis tau muaj tus account, nias "rau npe" thiab xee npe rau ib tus
+                account tshiab.
+            </li>
+            <li>Tom qab koj kos, cov neeg siv daim ntawv cog lus pom zoo thiab nias rau "Tau qib API
+                cov".
+            </li>
+            <li>Koj ntse tau txais koj qhov tseem ceeb.</li>
+        </ol>
+
+        <p>Tus yuam sij subscription yog ib yam dab tsi zoo li "trnsl.1.1.201701..."</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Yuav ua li cas tau Microsoft Azure txhais
+            qhov tseem ceeb</h2>
+
+        <ol>
+            <li>Xee npe rau ib tus account Microsoft Azure.<br>Yog hais tias koj tsis tau muaj tus
+                account Azure, zwm npe rau ib <a href="http://azure.com">tus account Microsoft
+                    Azure</a>.
+            </li>
+            <li>Tom qab koj tau ib tug account, kos npe rau hauv qhov <a
+                    href="http://portal.azure.com">Azure Portal</a>.
+            </li>
+            <li>Ntxiv ib "Microsoft lub tshuab txhais lus API Subscription" rau koj tus account
+                Azure.<br>
+                <ol>
+                    <li>Xaiv ib lub subscription "pay-as-you-go". Yuav kom tau credit card, tiam sis
+                        tsis txhob poob siab, tsis muaj dab tsi yuav tau them.
+                    </li>
+                    <li>Xaiv "+ tshiab" qhov.</li>
+                    <li>Xaiv "txoj kev ntse" los ntawm daim ntawv teev cov kev pab.</li>
+                    <li>Xaiv "Kev txawj ntse APIs".</li>
+                    <li>Xaiv "API yam" qhov.</li>
+                    <li>Xaiv "Txhais lus ntawv".</li>
+                    <li>Nyob rau hauv "Pricing Tier", xaiv qhov "dawb Tier (F0)".</li>
+                    <li>Sau kom tag daim ntawv, thiab nias lub pob kom "Tshwmsim".</li>
+                </ol>
+            </li>
+            <li>Retrieve koj "Authentication yawm sij".<br>
+                <ol>
+                    <li>Mus rau qhov "Txhua Resources" thiab xaiv tau ntau Microsoft lub tshuab
+                        txhais lus API koj cuv npe rau.
+                    </li>
+                    <li>Mus rau qhov kev xaiv "Tuav" thiab luam koj cov subscription yuam sij rau
+                        hauv tsev, cov kev pab cuam.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>Tus yuam sij subscription yog ib yam dab tsi zoo li "321dcba..."</p>
+
+
+        <h2 id="troubleshooting">TroubleShooting</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">Tsis app yog muab txhais ua nyob rau hauv tej
+            app</h3>
+
+        <ul>
+            <li>Yog hais tias tsis muaj app yog muab txhais, kos yog "AllTrans" yog enabled hauv
+                Xposed Installer-> Modules.
+            </li>
+            <li>Tseem saib yog koj "Microsoft/Yandex Subscription yuam sij" ntawd puas muaj tseeb.
+            </li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">Txhais app nyam yog ib qho screen
+            qhib</h3>
+
+        <ul>
+            <li>Ndliv lub npe app tus nyob rau hauv "Apps los txhais" tab, thiab nias rau ntawm
+                "Nyem kom meej txhais lus Cache".
+            </li>
+            <li>Yog hais tias qhov no yog thawj zaug koj pib txhais lus no app, nyem qhov ntawm lub
+                npe app tus tab "Apps los txhais lus", thiab "Lwm yam chaw" sau "Qeeb ua ntej
+                Replcaing uas txhais ua phau ntawv" 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">Yog tus Translated app "Force zoo"</h3>
+
+        <ul>
+            <li>Ndliv lub npe app tus nyob rau hauv "Apps los txhais" tab, thiab nias rau ntawm
+                "Nyem kom meej txhais lus Cache".
+            </li>
+            <li>Ndliv lub npe app tus nyob rau hauv "Apps los txhais lus" tab, thiab nyob rau hauv
+                "lwm yam chaw" sau "Qeeb ua ntej Replcaing uas txhais ua phau ntawv" rau 2000.
+            </li>
+            <li>Ndliv lub npe app tus nyob rau hauv "Apps los txhais" tab, thiab nyob rau hauv "Lwm
+                yam chaw" sau "Qeeb ua ntej pib mus pes WebViews" rau 2000.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">Ib qho app no tsis tau txhais</h3>
+
+        <ul>
+            <li>Ndliv lub npe app tus nyob rau hauv "Apps los txhais" tab, thiab nyob rau hauv "Lwm
+                yam chaw" sau "Qeeb ua ntej pib mus pes WebViews" rau 2000.
+            </li>
+            <li>Yog hais tias muaj qee qhov chaw hauv lub yeej tseem tsis tau txhais, nias rau lub
+                npe app tus nyob rau hauv "Apps los txhais" tab, thiab pab kom tau "Hom txhoj puab
+                heev".
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">Ib app qus no tsis tau txhais</h3>
+
+        <ul>
+            <li>Vim muaj kev, "AllTrans" yuav tsis ua hauj lwm nrog ntau yam kev ua si. Tsis muaj
+                dab tsi yuav ua tau txog qhov no.
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            Yog hais tias koj tseem muaj teeb meem xws li "Force zoo" los ntawm ib tug app tsis tau
+            txhais</h3>
+
+        <p>Hu rau kuv them. Thaum koj ua, kuv yuav tau cov lus qhia nram qab no - atleast</p>
+
+        <ol>
+            <li>Lub npe los ntawm tus app, nrog rau ib <strong>qhov txuas mus download tau
+                lub</strong> ntawm tej khw APK xws li cov khoom ua si Google, CoolApk, etc.
+            </li>
+            <li>Koj tus xov tooj version hauv.</li>
+            <li>Ib "logcat" ntawm koj sim qhib lub app uas muab rau koj teeb meem. Koj siv tau nyob
+                dawb do apps rau tom khw ua si rau qhov no, xws li cov <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">no
+                    ib</a></li>
+        </ol>
+
+        <p>Thaum twg koj muaj cov saum no, hu rau kuv ntawm lub <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            txhawb xov</a>.<br>Koj yuav tau qhia txog teeb meem hauv <a
+                href="https://github.com/akhilkedia/AllTrans">lub Project Github</a>.</p>
+
+
+        <h2 id="donations">Donations</h2>
+
+        <p>Yog hais tias koj nyiam qhov project no, yuav kuv ib khob kas fes. :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

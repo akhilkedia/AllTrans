@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">Inhaltsverzeichnis</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">Was bedeutet AllTrans</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#how-to-use-alltrans">Gewusst wie: verwenden Sie AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Gewusst wie: Yandex übersetzen Schlüssel zu
+            bekommen</a></li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Gewusst wie: Microsoft Azure
+            übersetzen Schlüssel zu bekommen</a></li>
+        <li><a href="#troubleshooting">Fehlerbehebung</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">Keine app wird in jeder app
+                    übersetzt</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">Übersetzte app ist im
+                    Eröffnungsbildschirm stecken.</a></li>
+                <li><a href="#the-translated-app-is-force-close">Die app Translated ist Force
+                    Close</a></li>
+                <li><a href="#a-particular-app-is-not-being-translated">Eine bestimmte app wird
+                    nicht übersetzt</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">Eine Spiele-app wird nicht
+                    übersetzt</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">Wenn
+                        Sie immer noch Probleme wie Force Close oder Teile einer app nicht
+                        übersetzt</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">Spenden</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">Was bedeutet AllTrans</h2>
+
+    <p><strong>Der gesamte Text in einer app</strong> in einer Sprache von einer Sprache in eine
+        andere zur Laufzeit ersetzt.</p>
+
+    <p>Sagen Sie zum Beispiel eine app in deutscher Sprache ist. Ein Benutzer wählt den app-Namen
+        und die gewünschte Sprachkonvertierung (sagen Deutsch-Englisch).</p>
+
+    <p>Dann wenn der Benutzer die gewünschte app verwendet, der gesamte Text,
+        <strong>überall</strong> in der app sind ersetzt durch deren englische Entsprechung.</p>
+
+    <p>Dies ist etwas ähnlich wie Google Translate in Chrome funktioniert.</p>
+
+    <p><strong>Hinweis</strong> : aufgrund einer technischen Limitierung, dies mit vielen Spielen
+        funktioniert nicht. Nichts kann dazu tun.</p>
+
+    <h2 id="videos">Videos
+
+        <p>Ein Video (in Englisch) zeigt, wie AllTrans von Gadget Hacks auf Youtube <a
+                href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+            verwenden</p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">Gewusst wie: verwenden Sie AllTrans</h2>
+
+        <p>Diese Anwendung <strong>erfordert</strong> Sie einen Schlüssel von Microsoft oder Yandex
+            Translate <strong>kostenlos</strong> anmelden. Finden Sie die folgenden Anweisungen um
+            den Schlüssel zu bekommen.</p>
+
+        <p>Yandex Translate unterstützt mehrere Sprachen, hat ein viel einfacher Anmeldevorgang und
+            erfordert <strong>keine Kreditkarte</strong>.</p>
+
+        <p>Microsoft Translate gibt <strong>bessere Übersetzungen</strong>, aber erfordert eine
+            Kreditkarte zu registrieren. (Aber keine Sorge, nichts wird sein berechnet.)</p>
+
+        <ol>
+            <li>Stellen Sie sicher, AllTrans app im Xposed Installateur aktiviert ist -> Module.
+            </li>
+            <li>Starten Sie AllTrans-app. "Globaleinstellungen" Registerkarte "aktivieren
+                Sie"Verwenden Yandex Instead Of Microsoft"Yandex verwenden möchten. Deaktivieren, um
+                Microsoft zu verwenden.
+            </li>
+            <li>Wählen Sie "Übersetzen von Sprache" und "Sprache übersetzen".</li>
+            <li>Finden Sie im Reiter "Apps zu übersetzen" die app zu übersetzen, klicken Sie auf das
+                Kontrollkästchen neben dem gewünschten. Wenn das Kontrollkästchen nicht angezeigt
+                wird, versuchen Sie, Ihr Telefon seitwärts ins Querformat drehen.
+            </li>
+            <li>Schließen und starten Sie die app, die übersetzt werden soll - es sollte übersetzt
+                werden!
+            </li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Gewusst wie: Yandex übersetzen Schlüssel zu
+            bekommen</h2>
+
+        <ol>
+            <li>Gehen Sie auf <a href="https://tech.yandex.com/keys/get/?service=trnsl">Yandex API
+                Website übersetzen</a></li>
+            <li>Wenn Sie bereits ein Konto haben, klicken Sie auf "registrieren" und melden Sie sich
+                für ein neues Konto.
+            </li>
+            <li>Verpflichten Sie nach der Anmeldung sich die Benutzervereinbarung und klicken Sie
+                auf "Get API Key".
+            </li>
+            <li>Sie haben erfolgreich Ihre Schlüssel erhalten!</li>
+        </ol>
+
+        <p>Die Abonnementschlüssel ist so etwas wie "trnsl.1.1.201701..."</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Gewusst wie: Microsoft Azure übersetzen
+            Schlüssel zu bekommen</h2>
+
+        <ol>
+            <li>Melden Sie sich für ein Microsoft Azure-Konto.<br>Wenn Sie bereits ein Azure-Konto
+                haben, melden Sie sich für ein <a href="http://azure.com">Microsoft Azure-Konto</a>.
+            </li>
+            <li>Nachdem Sie ein Konto haben, melden Sie sich bei der <a
+                    href="http://portal.azure.com">Azure-Portal</a>.
+            </li>
+            <li>Ein "Microsoft Translator API-Abonnement" zu Ihrem Azure Konto hinzufügen.<br>
+                <ol>
+                    <li>Wählen Sie ein "Pay as you go"-Abo. Benötigen Sie eine Kreditkarte, aber
+                        keine Sorge, nichts berechnet werden.
+                    </li>
+                    <li>Wählen Sie die Option "+ neu".</li>
+                    <li>Wählen Sie "Intelligenz" aus der Liste der Dienste.</li>
+                    <li>Wählen Sie "Kognitive Services-APIs".</li>
+                    <li>Wählen Sie die Option "API".</li>
+                    <li>Wählen Sie "Textübersetzung".</li>
+                    <li>Wählen Sie im Abschnitt "Preise-Tier" der "Free-Tarif (F0)".</li>
+                    <li>Füllen Sie den Rest des Formulars, und drücken Sie die Schaltfläche
+                        "Erstellen".
+                    </li>
+                </ol>
+            </li>
+            <li>Rufen Sie Ihre "Authentifizierungs-Schlüssel".<br>
+                <ol>
+                    <li>Gehen Sie auf "Alle Ressourcen" und wählen Sie Microsoft Translator API, die
+                        Sie abonniert haben.
+                    </li>
+                    <li>Gehen Sie auf die Option "Schlüssel" und kopieren Sie Ihren
+                        Abonnementschlüssel auf den Dienst zuzugreifen.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>Die Abonnementschlüssel ist so etwas wie "321dcba..."</p>
+
+
+        <h2 id="troubleshooting">Fehlerbehebung</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">Keine app wird in jeder app übersetzt</h3>
+
+        <ul>
+            <li>Wenn keine app übersetzt wird, Check ist "AllTrans" in Xposed Installer aktiviert
+                ist -> Module.
+            </li>
+            <li>Auch prüfen Sie, ob Ihre "Microsoft/Yandex Abonnementschlüssel" korrekt ist.</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">Übersetzte app ist im
+            Eröffnungsbildschirm stecken.</h3>
+
+        <ul>
+            <li>Klicken Sie auf den Namen der app im "Apps zu übersetzen" Registerkarte, und klicken
+                Sie auf "Klicken Sie auf Übersetzung Cache löschen".
+            </li>
+            <li>Wenn dies das erste Mal Sie angefangen ist, diese app zu übersetzen, klicken Sie auf
+                den Namen der app auf "Apps zu übersetzen" Registerkarte "und in"Andere
+                Einstellungen"ausfüllen"Verzögerung vor Replcaing mit übersetzt Text"bis 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">Die Translated app ist "Force Close"</h3>
+
+        <ul>
+            <li>Klicken Sie auf den Namen der app im "Apps zu übersetzen" Registerkarte, und klicken
+                Sie auf "Klicken Sie auf Übersetzung Cache löschen".
+            </li>
+            <li>Klicken Sie auf den Namen der app auf "Apps zu übersetzen" Registerkarte "und
+                in"andere Einstellungen"ausfüllen"Verzögerung vor Replcaing mit übersetzt Text"bis
+                2000.
+            </li>
+            <li>Klicken Sie auf den Namen der app im "Apps zu übersetzen" Registerkarte, und unter
+                "Andere Einstellungen" ausfüllen "Verzögerung vor dem Start zu übersetzen WebViews"
+                bis 2000.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">Eine bestimmte app wird nicht
+            übersetzt</h3>
+
+        <ul>
+            <li>Klicken Sie auf den Namen der app im "Apps zu übersetzen" Registerkarte, und unter
+                "Andere Einstellungen" ausfüllen "Verzögerung vor dem Start zu übersetzen WebViews"
+                bis 2000.
+            </li>
+            <li>Wenn einige Teile der app noch nicht übersetzt sind, klicken Sie auf den Namen der
+                app im "Apps zu übersetzen" Registerkarte, und aktivieren Sie "Aggressive Mode".
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">Eine Spiele-app wird nicht übersetzt</h3>
+
+        <ul>
+            <li>Aufgrund technischer Einschränkungen funktioniert nicht "AllTrans" mit vielen
+                spielen. Nichts kann dazu tun.
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            Wenn Sie immer noch Probleme wie "Force Close" oder Teile einer app nicht übersetzt</h3>
+
+        <p>Kontaktieren Sie mich für die Unterstützung. Wenn Sie dies tun, brauche ich mindestens
+            die folgenden Informationen-</p>
+
+        <ol>
+            <li>Der Name der app, zusammen mit einem <strong>Link zum download der app</strong> aus
+                einem APK-Speicher wie Google Play Store, CoolApk, etc..
+            </li>
+            <li>Ihr Handy Android-Version.</li>
+            <li>Ein "Logcat" von euch versucht, die app zu öffnen, die Ihnen Probleme gibt. Frei
+                verfügbaren apps können auf die Play-Shop dafür, wie <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">diese</a>
+                Sie
+            </li>
+        </ol>
+
+        <p>Nachdem Sie die oben genannten haben, kontaktieren Sie mich auf dem <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            Thread zu unterstützen</a>.<br>Sie können auch Probleme auf die <a
+                href="https://github.com/akhilkedia/AllTrans">des Projektes Github</a>melden.</p>
+
+
+        <h2 id="donations">Spenden</h2>
+
+        <p>Wenn Sie dieses Projekt gefällt, Kauf mir eine Tasse Kaffee! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

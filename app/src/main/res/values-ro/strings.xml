@@ -23,57 +23,13 @@
     <string name="loading">"Lista de încărcare de aplicaţii - vă rugăm să aşteptaţi"</string>
     <string name="clear_cache_error">"Unele erori. Ar putea goli cache-ul de traducere!"</string>
     <string name="clear_cache_success">"Traduce Cache pentru acest app a fost sters!"</string>
-	<string name="how_to_use">"CUM SĂ UTILIZAŢI APLICAŢIA
-
-Această aplicaţie necesită să vă înscrieţi pentru o cheie de la Microsoft sau Yandex Translate.
-Yandex Translate suportă mai multe limbi, a unui proces mult mai uşor de înscriere şi cere cardul de CREDIT nr.
-Microsoft Translate oferă rezultate mai bune, dar necesită un card de credit la spre semn sus. (Dar nu vă faceţi griji, nimic nu va fi perceput.)
-
-1. în fila Setări globale, permite folosi Yandex în loc de Microsoft în cazul în care doriţi să utilizaţi Yandex, altceva nu fi de acord pentru a utiliza Microsoft.
-1. în fila Setări globale, atingeţi introduceţi Microsoft/Yandex Subscription cheie, tasta corespunzătoare de intrare (a se vedea instrucţiunile de mai jos).
-2. alege traducerea din limba şi traducerea în limba.
-3. în Apps pentru a traduce fila, găsi aplicaţia pe care doriţi să traduceţi, faceţi clic pe caseta de selectare alăturată. În cazul în care caseta de selectare nu este vizibilă, încercaţi rotative lateral telefonul în modul peisaj.
-4. Închideţi şi reporniţi aplicaţia pe care doriţi tradus - it ar trebui să fie tradus!
-
-AVERTIZARE - unele apps ar putea forţa de aproape. Consultaţi secţiunea depanare.
-
-CUM SĂ OBŢINEŢI YANDEX TRANSLATE SUBSCRIPTION CHEIE
-
-1. du-te la site-ul Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. în cazul în care nu aveţi deja un cont, faceţi clic pe registru şi semn sus pentru un cont nou.
-3. după semnarea sus, acord cu utilizatorul şi faceţi clic pe obţineţi API-cheie.
-4. aţi primit cu succes cheia! Este ceva de genul trnsl.1.1.201701...
-
-CUM SĂ OBŢINEŢI MICROSOFT AZURE TRADUCE SUBSCRIPTION CHEIE
-
-1. Înscrieţi-vă pentru un cont de Microsoft Azure la http://azure.com
-
-2. dupa ce ai un cont, conectaţi-portalul Azur la http://portal.azure.com
-
-3. adăugaţi un abonament de Microsoft Translator API în contul tău de Azur.
-Alege un abonament pay-as-you-go. Va fi nevoie de un card de credit, dar nu vă faceţi griji, nimic nu va fi perceput.
-Selectaţi + nou opţiune.
-Selectaţi inteligenta din lista de servicii.
-Selectați servicii Cognitive API-uri.
-Selectaţi opţiunea de tip API.
-Selectaţi Text traducere
-În secţiunea nivel de preţuri, selectaţi nivelul gratuit (F0)
-Completaţi restul de formă, şi apăsaţi butonul Create.
-
-4. a se prelua cheia de autentificare.
-Du-te la toate resursele şi selectaţi Microsoft Translator API v-abonat.
-Mergeţi la opţiunea de chei şi copiaţi cheia de abonament pentru a accesa serviciul.
-Subscription cheie este ceva de genul 321dcba...
-
-REZOLVAREA PROBLEMELOR
-
-1. în cazul în care nici un app este traduse, verifica dumneavoastră Microsoft/Yandex Subscription cheie este corectă.
-2. în cazul în care app tradus vigoare închide/devine blocat pe prima dată după începerea traducerea de încărcare, faceţi clic pe aplicaţia în Apps pentru a traduce tab, şi în alte setări umple în întârziere înainte de traducerea la 2000.
-3. în cazul în care app traduse folosite pentru a funcţiona bine, dar acum mă blochez pe incepand, faceţi clic pe aplicaţia în Apps pentru a traduce fila, şi faceţi clic pe faceţi clic pe Clear cache-ul de traducere.
-4. în cazul în care unele părţi ale app nu sunt traduse, faceţi clic pe aplicaţia în Apps pentru a traduce tab, şi permite modul agresiv.
-5. în cazul în care app încă vigoare se închide, dezactivaţi traducere pentru acest app şi contactaţi-mă pe firul de suport pe XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Traduce oriunde"</string>
+    <string name="backup_pref_error">"Unele erori. Nu de rezervă preferinţele! A acorda acces SuperUser?"</string>
+    <string name="backup_pref_success">"Preferinţele au fost susţinute la stocare externă!"</string>
+    <string name="wut_why_null">"Nu a putut încărca pagina de preferinţe la-app. Închideți și redeschideți aplicarea din nou."</string>
+    <string name="app_icon">"Pictogramă app"</string>
+    <string name="example_application">"Cererea de exemplu"</string>
+    <string name="description">"Descriere"</string>
+    <string name="translate_anywhere">"Traduce pretutindeni"</string>
     <string name="apps_to_translate">"Apps pentru a traduce"</string>
     <string name="global_settings">"Parametri globali"</string>
     <string name="instructions">"Instrucţiuni"</string>
@@ -112,8 +68,20 @@ REZOLVAREA PROBLEMELOR
     <string name="caching">"Folosirea Caching"</string>
     <string name="caching_summary_off">"Nu de economisire traduceri offline, care rezultă în mai lent traduce şi date mai mare - dar poate lucra pentru mai multe aplicaţii. Transforma pe pentru a salva traduceri."</string>
     <string name="caching_summary_on">"Versuri offline de economisire pentru a accelera traduce şi de a folosi datele. Nap off pentru a dezactiva în cazul în care nu începe app dvs."</string>
-    <string name="delay">"Întârziere înainte de traducerea"</string>
-    <string name="delay_summary">"Setaţi ora în milisecunde să aştepte înainte de traducerea. Valoarea implicită este 0, setat la 1000-5000, în cazul în care app de tradus este crashing."</string>
+    <string name="delay">"Întârziere înainte de înlocuirea cu tradus textul"</string>
+    <string name="delay_summary">"Setaţi ora în milisecunde să aştepte înainte de a înlocui cu textul tradus. Valoarea implicită este 0. Situat la 1000-5000 dacă aplicaţia tradus este crashing."</string>
+    <string name="delay_webview">"Întârziere înainte de a traduce WebViews"</string>
+    <string name="delay_webview_summary">"Setaţi ora în milisecunde să aştepte înainte de a traduce WebViews. Valoarea implicită este 500. Stabilită la 0 pentru a creşte viteza de traducere. Setat la 3000-5000, în cazul în care o parte din web app nu sunt traducerea."</string>
+    <string name="analytics">"Trimite anonime de avarie şi date de utilizare"</string>
+    <string name="analytics_summary_off">"Nu trimite anonime de avarie şi date de utilizare. Trimiterea datelor anonime accident ajută dezvoltator face app mai bine."</string>
+    <string name="analytics_summary_on">"Trimiterea de date anonime de accident şi de utilizare. Nici o informaţie personală este transmis. Anonim accident date ajută dezvoltator face app mai bine"</string>
+    <string name="debug">"Avansate: Activați modul de depanare."</string>
+    <string name="debug_summary_off">"Debug mode este oprit. Nu scrie date de depanare pentru a logcat. Activa acest lucru înainte de a trimite rapoarte de eroare"</string>
+    <string name="debug_summary_on">"Debug mode este pe. Scris jurnalele logcat. Acest lucru scade performanta - nap off dacă nu este necesar."</string>
+    <string name="local_on_off">"Traduce acest App"</string>
+    <string name="local_on_off_summary">"Nap off pentru a opri traducerea acest app"</string>
+    <string name="local_on_off_summary_off">"Acest app nu va traduce. Rândul său, pe la începutul folosind auto-traduce!"</string>
+    <string name="local_on_off_summary_on">"Acest lucru va fi tradus. Nap off pentru a dezactiva complet traducerea acest app."</string>
     <string name="overRide_global">"Suprascriu setările la nivel mondial"</string>
     <string name="overRide_global_summary_off">"Utilizarea Global setările pentru this app. Turn pe pentru a modifica setările numai pentru acest app."</string>
     <string name="overRide_global_summary_on">"Cu setările locale pentru this app. Turn off pentru a utiliza parametri globali."</string>

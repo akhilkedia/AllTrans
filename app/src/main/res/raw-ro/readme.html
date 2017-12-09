@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">Cuprins</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">Ce inseamna AllTrans</a></li>
+        <li><a href="#videos">Clipuri video</a></li>
+        <li><a href="#how-to-use-alltrans">Cum să utilizaţi AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Cum să obţineţi Yandex Translate cheie</a>
+        </li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Cum să obţineţi Microsoft Azure
+            traduce cheie</a></li>
+        <li><a href="#troubleshooting">Rezolvarea problemelor</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">App nu este fiind tradus în
+                    orice app</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">Tradus app este blocat în
+                    deschiderea ecran</a></li>
+                <li><a href="#the-translated-app-is-force-close">App de tradus este aproape de
+                    forţă</a></li>
+                <li><a href="#a-particular-app-is-not-being-translated">O aplicatie special nu este
+                    fiind tradus</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">Un joc app nu este fiind
+                    tradus</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">Dacă
+                        aveţi în continuare probleme cum ar fi Force Close sau părţi ale unui app nu
+                        traduse</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">Donatii</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">Ce inseamna AllTrans</h2>
+
+    <p>Acesta înlocuieşte <strong>tot textul într-un app</strong> într-o limbă, dintr-o limbă în
+        alta în timpul rulării.</p>
+
+    <p>Spune de exemplu un app este în limba germană. Un utilizator selectează numele app, şi de
+        conversie lingvistice necesare (spun Germană-Română).</p>
+
+    <p>Apoi în ori de câte ori utilizatorul foloseşte aplicaţia necesare, tot textul, <strong>oriunde</strong>
+        în aplicaţia, se înlocuieşte cu echivalentele lor de engleză.</p>
+
+    <p>Acest lucru este ceva similar cu modul în care Google Translate funcţionează în Chrome.</p>
+
+    <p><strong>Notă</strong> - datorită unei limitări tehnice, acest lucru nu va funcţiona cu multe
+        jocuri. Nimic nu se poate face despre acest lucru.</p>
+
+    <h2 id="videos">Clipuri video
+
+        <p>Un video (în limba engleză) care arată cum să utilizaţi AllTrans de Gadget Hacks pe
+            Youtube <a href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+        </p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">Cum să utilizaţi AllTrans</h2>
+
+        <p>Această aplicaţie <strong>necesită</strong> să vă înscrieţi pentru
+            <strong>gratuit</strong> o cheie de la Microsoft sau Yandex Translate. Consultaţi
+            instrucţiunile de mai jos despre cum să obţineţi cheile.</p>
+
+        <p>Yandex Translate suportă mai multe limbi, a unui proces mult mai uşor de înscriere şi
+            cere <strong>cardul de CREDIT nr</strong>.</p>
+
+        <p>Microsoft Translate oferă <strong>traduceri mai bună</strong>, dar necesită un card de
+            credit la spre semn sus. (Dar nu vă faceţi griji, nimic nu va fi perceput.)</p>
+
+        <ol>
+            <li>Asiguraţi-vă că AllTrans app is enabled înăuntru a instala Xposed -> module.</li>
+            <li>Lansarea AllTrans app. În fila "Setări globale", permite "Folosi Yandex în loc de
+                Microsoft", dacă doriţi să utilizaţi Yandex. Nu fi de acord să utilizaţi Microsoft.
+            </li>
+            <li>Alege "Traduce din limba" şi "Traducerea în limba".</li>
+            <li>În tab-ul "Apps pentru a traduce", găsi aplicaţia pe care doriţi să traduceţi,
+                faceţi clic pe caseta de selectare alăturată. În cazul în care caseta de selectare
+                nu este vizibilă, încercaţi rotative lateral telefonul în modul peisaj.
+            </li>
+            <li>Închideţi şi reporniţi aplicaţia pe care doriţi tradus - it ar trebui să fie
+                tradus!
+            </li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Cum să obţineţi Yandex Translate cheie</h2>
+
+        <ol>
+            <li>Du-te la <a href="https://tech.yandex.com/keys/get/?service=trnsl">Yandex Translate
+                API site-ul</a></li>
+            <li>Dacă nu aveţi deja un cont, click pe "înregistrare" şi semn sus pentru un cont
+                nou.
+            </li>
+            <li>După semnarea în sus, de acord cu acordul de utilizator şi faceţi clic pe "Obţineţi
+                API-cheie".
+            </li>
+            <li>Aţi primit cu succes cheia!</li>
+        </ol>
+
+        <p>Subscription cheie este ceva de genul "trnsl.1.1.201701..."</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Cum să obţineţi Microsoft Azure traduce
+            cheie</h2>
+
+        <ol>
+            <li>Înscrieţi-vă pentru un cont de Microsoft Azure.<br>Dacă nu aveţi deja un cont
+                azuriu, semn sus pentru un <a href="http://azure.com">cont Microsoft Azure</a>.
+            </li>
+            <li>După ce aveţi un cont, conectaţi-vă la <a href="http://portal.azure.com">Azure
+                Portal</a>.
+            </li>
+            <li>Adauga un "Microsoft Translator API abonament" în contul tău de Azur.<br>
+                <ol>
+                    <li>Alege un abonament "pay-as-you-go". Va fi nevoie de un card de credit, dar
+                        nu vă faceţi griji, nimic nu va fi perceput.
+                    </li>
+                    <li>Selectaţi opţiunea "+ nou".</li>
+                    <li>Selectaţi "Inteligenta" din lista de servicii.</li>
+                    <li>Selectaţi "Cognitive Services API-uri".</li>
+                    <li>Selectaţi opţiunea "API tip".</li>
+                    <li>Selectaţi "Text traducere".</li>
+                    <li>În secţiunea "Preţuri Tier", selectaţi "Free Tier (F0)".</li>
+                    <li>Completaţi restul de formă, şi apăsaţi butonul "Creează".</li>
+                </ol>
+            </li>
+            <li>Prelua cheia"autentificare".<br>
+                <ol>
+                    <li>Du-te la "Toate resursele" şi selectaţi Microsoft Translator API v-abonat.
+                    </li>
+                    <li>Mergeţi la opţiunea "Chei" şi copiaţi cheia de abonament pentru a accesa
+                        serviciul.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>Subscription cheie este ceva de genul "321dcba..."</p>
+
+
+        <h2 id="troubleshooting">Rezolvarea problemelor</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">App nu este fiind tradus în orice app</h3>
+
+        <ul>
+            <li>Dacă nu app este traduse, cecul este "AllTrans" este activată în instala Xposed ->
+                module.
+            </li>
+            <li>De asemenea, verificaţi dacă dumneavoastră "Microsoft/Yandex Subscription cheie"
+                este corectă.
+            </li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">Tradus app este blocat în deschiderea
+            ecran</h3>
+
+        <ul>
+            <li>Faceţi clic pe numele app în "Apps pentru a traduce" tab, şi faceţi clic pe "Click
+                pentru a clar traducere Cache".
+            </li>
+            <li>În cazul în care acest lucru este prima dată când aţi pornit traducerea acest app,
+                faceţi clic pe numele app în tab-ul "Apps pentru a traduce" şi "Alte setări"
+                completati "Întârziere înainte de Replcaing cu tradus textul" până în 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">App de tradus este "Force Close"</h3>
+
+        <ul>
+            <li>Faceţi clic pe numele app în "Apps pentru a traduce" tab, şi faceţi clic pe "Click
+                pentru a clar traducere Cache".
+            </li>
+            <li>Faceţi clic pe numele app în "Apps pentru a traduce" tab, şi în "alte setări"
+                completa "Întârziere înainte de Replcaing cu tradus textul" până în 2000.
+            </li>
+            <li>Faceţi clic pe numele app în "Apps pentru a traduce" tab, şi în "Alte setări"
+                completaţi "Întârziere înainte de a începe să traduce WebViews"-2000.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">O aplicatie special nu este fiind
+            tradus</h3>
+
+        <ul>
+            <li>Faceţi clic pe numele app în "Apps pentru a traduce" tab, şi în "Alte setări"
+                completaţi "Întârziere înainte de a începe să traduce WebViews"-2000.
+            </li>
+            <li>În cazul în care unele părţi ale app încă nu sunt fiind traduse, faceţi clic pe
+                numele app în "Apps pentru a traduce" tab, şi activaţi "Modul agresiv".
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">Un joc app nu este fiind tradus</h3>
+
+        <ul>
+            <li>Din cauza limitărilor tehnice, "AllTrans" nu va funcţiona cu multe jocuri. Nimic nu
+                se poate face despre acest lucru.
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            Dacă aveţi în continuare probleme cum ar fi "Force Close" sau părţi ale unui app nu
+            traduse</h3>
+
+        <p>Contactaţi-mă pentru sprijin. Atunci când faci, voi avea nevoie de atleast următoarele
+            informaţii-</p>
+
+        <ol>
+            <li>Numele app, împreună cu un <strong>link pentru a descărca aplicaţia de</strong> la
+                unele APK magazin Google Play Store, CoolApk, etc.
+            </li>
+            <li>Versiune Android telefonul dvs.</li>
+            <li>Un "logcat" a te încercarea de a deschide app care vă oferă probleme. Puteţi utiliza
+                aplicaţii disponibile gratuit pe Play Store pentru acest lucru, cum ar fi <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">aceasta</a>
+            </li>
+        </ol>
+
+        <p>Odată ce aţi mai sus, contactati-ma pe <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            susţine firul</a>.<br>De asemenea, puteţi raporta probleme pe <a
+                href="https://github.com/akhilkedia/AllTrans">Github proiectului</a>.</p>
+
+
+        <h2 id="donations">Donatii</h2>
+
+        <p>Dacă vă place acest proiect, cumpara-mi o ceaşcă de cafea! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

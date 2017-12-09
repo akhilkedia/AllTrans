@@ -23,56 +23,12 @@
     <string name="loading">"Laden van de lijst van toepassingen - een moment geduld A.u.b."</string>
     <string name="clear_cache_error">"Sommige fout. Kan niet cache van vertaling!"</string>
     <string name="clear_cache_success">"Translate Cache voor dit app is gewist!"</string>
-	<string name="how_to_use">"HET GEBRUIK VAN DE TOEPASSING
-
-Deze toepassing moet u zich aanmelden voor een sleutel van Microsoft of Yandex vertalen.
-Yandex vertalen meer talen ondersteunt, heeft een veel gemakkelijker signup proces en vereist geen creditcard.
-Microsoft Translate geeft betere resultaten, maar vereist een creditcard aan te melden. (Maar maak je geen zorgen, niets zal in rekening gebracht.)
-
-1. in het lusje van de globale instellingen, Yandex gebruiken in plaats van Microsoft inschakelen als u wilt inschakelen Yandex gebruiken, anders uitschakelen voor het gebruik van Microsoft.
-1. in het lusje van de globale instellingen, tik op Microsoft/Yandex abonnement sleutel invoeren, het invoeren van de bijbehorende sleutel (zie instructies hieronder).
-2. Kies de vertalen uit taal en vertalen naar taal.
-3. in de Apps naar Vertaal tabblad, app die u wilt vertalen, klikt u op het selectievakje naast het te vinden. Als het selectievakje niet zichtbaar is, probeer de telefoon zijwaarts draaien in LandScape-modus.
-4. Sluit en herstart de app die u vertaalde wilt-het moet worden vertaald!
-
-WAARSCHUWING - sommige apps zou kunnen dwingen sluiten. Zie de sectie problemen oplossen.
-
-HOE OM YANDEX VERTALEN QUOTISATIE TOONSOORT
-
-1. Ga naar Yandex Website - https://tech.yandex.com/keys/get/?service=trnsl
-2. Als u niet al een account hebt, klikt u op register en teken omhoog voor een nieuwe account.
-3. na het ondertekenen omhoog, ga akkoord met de gebruikersovereenkomst en klik op API-sleutel krijgen.
-4. u hebt met succes ontvangen uw sleutel! Het is zoiets als trnsl.1.1.201701...
-
-HOE OM MICROSOFT AZURE VERTALEN QUOTISATIE TOONSOORT
-
-1. Meld u aan voor een account van Microsoft Azure op http://azure.com
-
-2. Nadat je een account hebt, meld je aan bij de Azure portal op http://portal.azure.com
-
-3. Voeg een Microsoft Translator API-abonnement aan uw Azure account.
-Kies een "pay-as-you-go" abonnement. Een creditcard zal vergen, maar maak je geen zorgen, niets zal worden in rekening gebracht.
-Selecteer de + nieuwe optie.
-Intelligentie selecteren in de lijst met services.
-Selecteer cognitieve Services API's.
-Selecteer de optie Type van API.
-Selecteer tekstvertaling
-Selecteer in de sectie van de prijzen laag, de gratis Tier (F0)
-Vul de rest van het formulier, en druk op de knop maken.
-
-4. ophalen van uw verificatiesleutel.
-Ga naar alle bronnen en selecteer het Microsoft Translator API u geabonneerd.
-Ga naar de optie van de sleutels en kopieer de sleutel van uw abonnement om toegang tot de dienst.
-De verdeelsleutel is zoiets als 321dcba...
-
-PROBLEEMOPLOSSING
-
-1. als geen app wordt vertaald, Controleer dat uw Microsoft/Yandex quotisatie toonsoort juist is.
-2. als de vertaalde app Force sluit/krijgt stuc voor het laden van de eerste keer nadat u bent begonnen met het vertalen, klikt u op de app in Apps om te vertalen van tabblad, en overige instellingen invullen vertraging voordat vertalen naar 2000.
-3. Indien de vertaalde app gebruikt werken prima, maar nu vast komen te zitten over het starten, klik op de app in Apps om te vertalen van tabblad en klik op Klik op Clear Cache van de vertaling.
-4. als sommige delen van de app zijn niet vertaald, klik op de app in Apps om te vertalen van tabblad en agressieve modus inschakelen.
-5. als de app nog kracht wordt gesloten, vertaling voor dit app uitschakelen en contact met mij op de draad van de steun op XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
+    <string name="backup_pref_error">"Sommige fout. Konden niet backup-kopie voorkeuren! U supergebruiker toegang verlenen?"</string>
+    <string name="backup_pref_success">"Voorkeuren zijn een back-up naar externe opslag!"</string>
+    <string name="wut_why_null">"De Voorkeurpagina Per-app kan niet worden geladen. Sluit en heropen toepassing opnieuw."</string>
+    <string name="app_icon">"App pictogram"</string>
+    <string name="example_application">"Voorbeeldapplicatie"</string>
+    <string name="description">"Beschrijving"</string>
     <string name="translate_anywhere">"Translate overal"</string>
     <string name="apps_to_translate">"Apps om te vertalen"</string>
     <string name="global_settings">"Globale instellingen"</string>
@@ -112,8 +68,20 @@ PROBLEEMOPLOSSING
     <string name="caching">"Gebruik Caching"</string>
     <string name="caching_summary_off">"Niet opslaan van vertalingen off line, wat resulteert in langzamer vertalen en hogere gegevens - maar kan werken voor meer apps. Zet bij save vertalingen."</string>
     <string name="caching_summary_on">"Vertalingen off line opslaan als u sneller wilt vertalen en gebruiken van gegevens. Uitschakelen uit te schakelen als uw app start niet."</string>
-    <string name="delay">"Vertraging voordat het vertalen"</string>
-    <string name="delay_summary">"Stel de tijd in milliseconden dat moet worden gewacht voordat het vertalen. Standaardwaarde is 0, ingesteld op 1000-5000 als de vertaalde app loopt."</string>
+    <string name="delay">"Vertragingstijd voordat vervangen tekst vertaalde"</string>
+    <string name="delay_summary">"Stel de tijd in milliseconden die gewacht moet worden vervangen door de vertaalde tekst. Standaardwaarde is 0. Als de vertaalde app verplettert ingesteld op 1000-5000."</string>
+    <string name="delay_webview">"Vertraging voordat u begint met het vertalen van WebViews"</string>
+    <string name="delay_webview_summary">"Stel de tijd in milliseconden te wachten voordat u begint met het vertalen van WebViews. Standaardwaarde is 500. Ingesteld op 0 om de vertaling snelheid verhogen. Als onderdeel van web app niet vertaalt ingesteld op 3000-5000."</string>
+    <string name="analytics">"Stuur anonieme Crash en gebruiksgegevens"</string>
+    <string name="analytics_summary_off">"Niet verzenden van anonieme crash en gebruiksgegevens. Verzenden van anonieme ongevallengegevens helpt de ontwikkelaar van de app beter maken."</string>
+    <string name="analytics_summary_on">"Het verzenden van anonieme gegevens van de crash en gebruik. Geen persoonlijke informatie is doorgegeven. Anonieme ongevallengegevens helpt de ontwikkelaar van de app beter maken"</string>
+    <string name="debug">"Geavanceerd: Debugmodus inschakelen."</string>
+    <string name="debug_summary_off">"Debug modus is uitgeschakeld. Niet het schrijven van debug gegevens naar logcat. Dit inschakelen voordat u foutenrapporten verzendt"</string>
+    <string name="debug_summary_on">"Debug modus is ingeschakeld. Het schrijven van logboeken naar logcat. Dit vermindert de prestaties - uitschakelen zo niet nodig."</string>
+    <string name="local_on_off">"Vertalen van deze App"</string>
+    <string name="local_on_off_summary">"Om te stoppen met het vertalen van deze app uitschakelen"</string>
+    <string name="local_on_off_summary_off">"Dit app zal niet vertaald. Draai aan de start met behulp van de auto-translate!"</string>
+    <string name="local_on_off_summary_on">"Dit zal worden vertaald. Zwenking vandoor volledig om onbruikbaar te vertalen van deze app."</string>
     <string name="overRide_global">"Globale instellingen overschrijven"</string>
     <string name="overRide_global_summary_off">"Gebruik globale instellingen voor deze app. beurt op instellingen alleen voor dit app wijzigen."</string>
     <string name="overRide_global_summary_on">"Met behulp van lokale instellingen voor deze app. beurt af om globale instellingen te gebruiken."</string>

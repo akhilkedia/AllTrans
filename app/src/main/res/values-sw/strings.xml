@@ -23,57 +23,13 @@
     <string name="loading">"Inapakia orodha ya maombi - Tafadhali subiri"</string>
     <string name="clear_cache_error">"Makosa. Haikuweza Ondoa hifadhi muda tafsiri!"</string>
     <string name="clear_cache_success">"Kutafsiri Cache kwa programu tumizi hii imekuwa erased!"</string>
-	<string name="how_to_use">"JINSI YA KUTUMIA PROGRAMU TUMIZI
-
-Programu tumizi hii unahitaji kujiandikisha kwa ufunguo kutoka kwa Microsoft au tafsiri ya Yandex.
-Tafsiri ya Yandex inasaidia zaidi lugha, ina mengi rahisi signup utaratibu na inahitaji hakuna kadi ya MKOPO.
-Translate Microsoft hutoa matokeo bora, lakini inahitaji kadi ya mkopo ili kujiandikisha. (Lakini usiwe na wasiwasi, chochote itakuwa kushtakiwa.)
-
-1. katika kichupo cha vipimo vya kimataifa, kuwezesha kutumia Yandex badala ya Microsoft kama unataka kutumia Yandex, mwingine Lemaza kutumia Microsoft.
-1. katika mipangilio ya Global kichupo, Bonyeza Ingiza Microsoft/Yandex michango muhimu, Ingiza ufunguo sambamba (tazama maelekezo kutoka chini).
-2. Chagua ya kutafsiri kutoka lugha na kutafsiri kwa lugha.
-3. katika programu kwa kutafsiri kichupo, kupata programu unayotaka kutafsiri, bofya kisanduku tiki kilicho kando yake. Kama kisanduku tiki ni wazi, jaribu simu yako sideways wa mzunguko katika hali ya mazingira.
-4. Funga na Anza upya programu unayotaka kutafsiriwa - unapaswa kutafsiriwa!
-
-TAHADHARI - baadhi ya programu huenda nguvu karibu. Tazama sehemu ya kutafutatua.
-
-JINSI YA KUPATA YANDEX KUTAFSIRI MICHANGO MUHIMU
-
-1. Nenda kwa tovuti ya Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. ikiwa tayari huna akaunti, bofya rejista na ishara juu kwa ajili ya akaunti mpya.
-3. baada ya kusaini juu, kukubaliana makubaliano ya mtumiaji na bofya kupata API muhimu.
-4. kwa ufanisi umepokea ufunguo wako! Ni kitu kama trnsl.1.1.201701...
-
-JINSI YA KUPATA MICROSOFT AZURE KUTAFSIRI MICHANGO MUHIMU
-
-1. kujiandikisha kwa akaunti ya Microsoft Azure katika http://azure.com
-
-2. baada ya una akaunti, Ingia kwenye tovuti Azure katika http://portal.azure.com
-
-3. kuongeza michango API ya Translator ya Microsoft kwa akaunti yako Azure.
-Chagua michango pay-as-you-go. Itahitaji kadi ya mkopo, lakini usijali, chochote atashitakiwa.
-Teua ya + mpya chaguo.
-Teua upelelezi kutoka orodha ya huduma.
-Teua huduma za utambuzi APIs.
-Teua chaguo la aina ya API.
-Teua matini tafsiri
-Katika sehemu ya bei yapendekeza, teua yapendekeza bure (F0)
-Kujaza mapumziko ya fomu, na Bonyeza kitufe cha Unda.
-
-4. kufufua ufunguo wako wa uhalalishaji.
-Nenda kwa rasilimali zote na Teua Microsoft Translator API kujiunga na.
-Nenda kwa chaguo la funguo na Nakili ufunguo wa michango yako kufikia huduma ya.
-Ufunguo wa michango ni kitu kama 321dcba...
-
-UTAFUTAJISHIDA
-
-1. kama hakuna programu ni kuwa tafsiri, kagua ufunguo wako wa michango Microsoft/Yandex ni sahihi.
-2. kama programu ya kutafsiriwa nguvu hufunga/anapata kukwama kwenye upakiaji mara ya kwanza baada ya kuanza kutafsiri, bofya kwenye programu katika programu kutafsiri kichupo, na katika mazingira mengine ujaze kuchelewa kabla ya kutafsiri kwa 2000.
-3. kama programu kutafsiriwa kutumika kwa kazi nzuri, lakini sasa kupata kukwama kwa kuanzia, bonyeza programu katika programu kutafsiri kichupo, na bonyeza Bofya ili wazi tafsiri Cache.
-4. kama baadhi ya sehemu za programu ni unatafsiriwa, bofya kwenye programu katika programu kutafsiri kichupo, na Wezesha hali ya fujo.
-5. kama programu bado nguvu hufunga, Lemaza tafsiri kwa programu tumizi hii na kuwasiliana na mimi kwa thread ya msaada juu ya XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Kutafsiri mahali popote"</string>
+    <string name="backup_pref_error">"Makosa. Haikuweza chelezo mapendeleo! Je, unaweza kutoa ufikivu SuperUser?"</string>
+    <string name="backup_pref_success">"Mapendeleo zimechelezwa kwa hifadhi ya nje!"</string>
+    <string name="wut_why_null">"Haikuweza kupakia programu ya kwa upendeleo ukurasa. Kufunga na kufungua upya maombi tena."</string>
+    <string name="app_icon">"Ikoni ya programu-tumizi"</string>
+    <string name="example_application">"Maombi ya mfano"</string>
+    <string name="description">"Maelezo"</string>
+    <string name="translate_anywhere">"Kutafsiri kila mahali"</string>
     <string name="apps_to_translate">"Programu kutafsiri"</string>
     <string name="global_settings">"Mipangilio ya Global"</string>
     <string name="instructions">"Maelekezo"</string>
@@ -112,8 +68,20 @@ UTAFUTAJISHIDA
     <string name="caching">"Tumia uwekaji kache"</string>
     <string name="caching_summary_off">"Si kuokoa tafsiri nje ya mtandao, kusababisha polepole kutafsiri na data juu - lakini inaweza kufanya kazi kwa ajili ya programu zaidi. Kurejea kwenye Hifadhi tafsiri."</string>
     <string name="caching_summary_on">"Kuhifadhi tafsiri nje ya mtandao kwa kasi kutafsiri na kutumia data. Zima kwa kulemaza kama programu yako haina kuanza."</string>
-    <string name="delay">"Kuchelewa kabla ya kutafsiri"</string>
-    <string name="delay_summary">"Kuweka wakati katika milisekunde kusubiri kabla ya kutafsiri. Thamani chaguo-msingi ni 0, kuweka 1000 – 5000 kama programu kutafsiriwa crashing."</string>
+    <string name="delay">"Kuchelewa kabla ya kubadilisha na tafsiri matini"</string>
+    <string name="delay_summary">"Kuweka wakati katika milisekunde kusubiri kabla ya Badilisha na matini kutafsiriwa. Thamani chaguo-msingi ni 0. Kuweka 1000 – 5000 kama programu kutafsiriwa crashing."</string>
+    <string name="delay_webview">"Kuchelewa kabla ya kuanza kutafsiri WebViews"</string>
+    <string name="delay_webview_summary">"Kuweka wakati katika milisekunde kusubiri kabla ya kuanza kutafsiri WebViews. Thamani chaguo-msingi ni 500. Kuweka 0 kuongeza kasi ya tafsiri. Seti ya 3000-5000 kama sehemu ya programu tumizi ya wavuti ni kutafsiri."</string>
+    <string name="analytics">"Tuma ajali bila majina na matumizi Data"</string>
+    <string name="analytics_summary_off">"Si kutuma ajali bila majina na matumizi data. Kutuma data za ajali bila majina husaidia developer kuboresha programu."</string>
+    <string name="analytics_summary_on">"Kutuma data bila majina ya ajali na matumizi. Hakuna taarifa ya kibinafsi ni zinaa. Ajali bila majina ya data husaidia developer kuboresha programu ya"</string>
+    <string name="debug">"Pevu: Kurejea kwenye hali ya utatuaji."</string>
+    <string name="debug_summary_off">"Rekebisha hali ni mbali. Si kuandika data kuhusu marekebisho logcat. Washa hii kabla ya kutuma taarifa za kosa"</string>
+    <string name="debug_summary_on">"Rekebisha hali ni juu. Kuandika kumbukumbu kwa logcat. Hii hupunguza utendaji - zima kama si zinahitajika."</string>
+    <string name="local_on_off">"Kutafsiri programu tumizi hii"</string>
+    <string name="local_on_off_summary">"Zima kuacha kutafsiri programu tumizi hii"</string>
+    <string name="local_on_off_summary_off">"Programu tumizi hii si kutafsiriwa. Kugeuka juu kuanza kutumia auto-kutafsiri!"</string>
+    <string name="local_on_off_summary_on">"Hii itakuwa tafsiri. Zima kabisa kulemaza kutafsiri programu tumizi hii."</string>
     <string name="overRide_global">"Vinabatilisha mipangilio ya Global"</string>
     <string name="overRide_global_summary_off">"Kutumia vipimo vya kimataifa kwa App hii kugeuka kwenye kubadili vipimo tu kwa ajili ya programu tumizi hii."</string>
     <string name="overRide_global_summary_on">"Kutumia mipangizo eneo lako kwa App hii kugeuka mbali kutumia vipimo vya kimataifa."</string>

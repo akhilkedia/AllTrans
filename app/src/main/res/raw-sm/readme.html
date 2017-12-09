@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">O anotusi o</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">Mea e faia e AllTrans</a></li>
+        <li><a href="#videos">Vitio</a></li>
+        <li><a href="#how-to-use-alltrans">Auala e faaaoga ai AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Auala e maua ai ki o le faaliliu o Yandex</a>
+        </li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Pe faapefea ona maua ki e faaliliu
+            le Microsoft o Azure</a></li>
+        <li><a href="#troubleshooting">Fesoasoaniga</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">E leai se polokalama ua
+                    faaliliuina i soo se polokalama</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">Polokalama o le faaliliuina
+                    o paulia i le lau o le amata</a></li>
+                <li><a href="#the-translated-app-is-force-close">O le polokalama o le faaliliuina ua
+                    vavalalata malosiaga</a></li>
+                <li><a href="#a-particular-app-is-not-being-translated">Ua faaliliuina le se
+                    polokalama faapitoa</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">Ua faaliliuina le se polokalama o
+                    taaloga</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">Afai
+                        e i ai pea faafitauli pei o malosiaga vavalalata po o vaega o se polokalama
+                        o le faaliliuina</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">Foai</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">Mea e faia e AllTrans</h2>
+
+    <p>Ua suia ai <strong>anotusi uma i se polokalama</strong> i se gagana mai se tasi gagana i le
+        isi i le runtime.</p>
+
+    <p>Fai mai mo se faataitaiga o se polokalama i Siamani. Se tagata faaaoga e filifilia ia le igoa
+        o le polokalama, ma le liua o le gagana na manaomia (fai mai Siamani i le Igilisi).</p>
+
+    <p>Lea soo se taimi lava e faaaoga e le tagata e faaaogaina le polokalama o le manaomia, le
+        anotusi uma, <strong>ANYWHERE</strong> i le app, ua suia i latou ituaiga faaPeretania.</p>
+
+    <p>O se mea faapena i le ala e galue Google faaliliu i le Chrome.</p>
+
+    <p><strong>Manatua</strong> - ona o se tapulaa faaenisinia, lenei le galuega ma le tele o
+        taaloga. E leai se mea e mafai ona faia lenei mea.</p>
+
+    <h2 id="videos">Vitio
+
+        <p>Se vitio (i le Igilisi) e faaalia ai le auala e faaaoga ai AllTrans e ala i le Gadget
+            Hacks i le Youtube <a href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+        </p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">Auala e faaaoga ai AllTrans</h2>
+
+        <p>O lenei faaaogaaga e <strong>manaomia ai</strong> e saini ai mo <strong>saoloto</strong>
+            se ki mai le Microsoft po o Yandex faaliliu. Tagai i faatonuga o i lalo i le auala e
+            maua ai le ki.</p>
+
+        <p>Yandex faaliliu e lagolagoina isi gagana, ua se tele faigofie signup faagasologa, ma e
+            manaomia ai le <strong>kata o le leai</strong>.</p>
+
+        <p>Microsoft Translate tuuina mai e <strong>sili atu le lelei o le faaliliuga</strong>, ae e
+            manaomia ai se kata e saini ai. (Ae aua le popole, o le a leai se mea le piliina.)</p>
+
+        <ol>
+            <li>Ia mautinoa o AllTrans o le polokalama o le a mafai i Installer o le Xposed-> le
+                polokalama.
+            </li>
+            <li>Faalauiloa le polokalama o le AllTrans. I le faailoga o le "O le faatulagaga o le
+                lalolagi", e mafai ai ona "Faaaoga Yandex faafitauli.ae o Microsoft" Afai e te manao
+                e faaaoga le Yandex. Tape le faaaogaina ai le Microsoft.
+            </li>
+            <li>Filifili le "Faaliliu mai gagana" ma le "Faaliliuina i le gagana".</li>
+            <li>I le faailoga o le "Polokalama e faaliliu" ai, e maua le polokalama o le e te manao
+                e faaliliu, kiliki le pusafaasao i autafa. Afai e le o vaaia le pusafaasao, taumafai
+                e faasolosolo lau telefoni autafa i tulaga o le laufanua.
+            </li>
+            <li>Tapuni ma toe amata le polokalama o le e manao faaliliuina - ona tatau ona
+                faaliliuina i ai!
+            </li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Auala e maua ai ki o le faaliliu o Yandex</h2>
+
+        <ol>
+            <li>Alu i le <a href="https://tech.yandex.com/keys/get/?service=trnsl">Yandex faaliliu
+                API uepisaite</a></li>
+            <li>Afai e te ua i ai se faitotoa, kiliki le "lesitala" ma saini ai mo se faitotoa
+                fou.
+            </li>
+            <li>Ina ua maea le lesitalaina, malie i le maliega a le tagata faaaoga ma kiliki le
+                "Maua o ki o le API".
+            </li>
+            <li>Ua e maua manuia lau ki!</li>
+        </ol>
+
+        <p>O le ki o le totogi o le mekasini o se mea e pei o le "trnsl.1.1.201701..."</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Pe faapefea ona maua ki e faaliliu le
+            Microsoft o Azure</h2>
+
+        <ol>
+            <li>Saini mo se faitotoa o le Microsoft Azure.<br>Afai o aua ua i ai se faitotoa ifo,
+                saini mo se <a href="http://azure.com">faitotoa o le Microsoft Azure</a>.
+            </li>
+            <li>Ina ua uma ona e i ai se faitotoa, saini i totonu o le <a
+                    href="http://portal.azure.com">Faitotoa a le Azure</a>.
+            </li>
+            <li>Faaopoopo se "Microsoft faaliliutusi API lesitala" i lau faitotoa ifo.<br>
+                <ol>
+                    <li>Filifili se lesitala o le "pay-as-you-go". O le a manaomia ai se kata fai
+                        faatau, ae aua le popole, e leai se mea o le a piliina.
+                    </li>
+                    <li>Filifili le vaega o le "+ fou".</li>
+                    <li>Filifili le "Malamalama" mai le lisi o auaunaga.</li>
+                    <li>Filifili le "Malosi o le mafaufau o le auaunaga APIs".</li>
+                    <li>Filifili le vaega o le "Ituaiga o le API".</li>
+                    <li>Filifili le "Faaliliuga o le anotusi".</li>
+                    <li>I le vaega o le "Tau Tier", filifili le "saoloto Tier (F0)".</li>
+                    <li>Faatumu le vaega o totoe o le fomu, ma oomi le faamau o le "Fatu".</li>
+                </ol>
+            </li>
+            <li>Toe aumai lau "ki o le faamaoniga o le".<br>
+                <ol>
+                    <li>Alu i "Uma punaoa" ma filifili le API tagata faaliliu Microsoft e lesitala
+                        i.
+                    </li>
+                    <li>Alu i le "Ki o le" filifiliga ma kopi o le ki o lau lesitala e maua ai le
+                        auaunaga.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>O le ki o le totogi o le mekasini o se mea e pei o le "321dcba..."</p>
+
+
+        <h2 id="troubleshooting">Fesoasoaniga</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">E leai se polokalama ua faaliliuina i soo se
+            polokalama</h3>
+
+        <ul>
+            <li>Afai e leai se polokalama ua faaliliuina, siaki o le e mafai ona "AllTrans" i Xposed
+                Installer-> i le polokalama.
+            </li>
+            <li>Siaki foi pe afai e sao lou "Microsoft/Yandex lesitala le ki".</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">Polokalama o le faaliliuina o paulia i le
+            lau o le amata</h3>
+
+        <ul>
+            <li>Kiliki i le igoa o le a le polokalama i le "Polokalama e faaliliu" faailoga, ma
+                kiliki i le "Kiliki e manino faaliliuga Cache".
+            </li>
+            <li>Afai o le taimi muamua na amata ona faaliliuina le polokalama lenei, kiliki i le
+                igoa o le a le polokalama i le "Polokalama e faaliliu" o le faailoga, ma faatumu o
+                le "Isi faatulagaga" i "Faatuai a o lei Replcaing ma faaliliuina ai anotusi" e 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">O le polokalama o le faaliliuina ua "Malosiaga
+            mamae"</h3>
+
+        <ul>
+            <li>Kiliki i le igoa o le a le polokalama i le "Polokalama e faaliliu" faailoga, ma
+                kiliki i le "Kiliki e manino faaliliuga Cache".
+            </li>
+            <li>Kiliki i le igoa o le a le polokalama i le "Polokalama e faaliliu" o le faailoga, ma
+                faatumu i "Faatuai a o lei Replcaing ma faaliliuina ai anotusi" i "isi faatulagaga"
+                e 2000.
+            </li>
+            <li>Kiliki i le igoa o le a le polokalama i le "Polokalama e faaliliu" faailoga, ma i le
+                "O le faatulagaga o le isi" faatumu "Faatuai a o lei amataina e faaliliu WebViews" e
+                2000.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">Ua faaliliuina le se polokalama
+            faapitoa</h3>
+
+        <ul>
+            <li>Kiliki i le igoa o le a le polokalama i le "Polokalama e faaliliu" faailoga, ma i le
+                "O le faatulagaga o le isi" faatumu "Faatuai a o lei amataina e faaliliu WebViews" e
+                2000.
+            </li>
+            <li>Afai o nisi o vaega o le polokalama o loo pea le faaliliuina, kiliki i le igoa o le
+                a le polokalama i le "Polokalama e faaliliu" faailoga, ma mafai ai ona "Faiga saua".
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">Ua faaliliuina le se polokalama o taaloga</h3>
+
+        <ul>
+            <li>Ona o le tapulaa faaenisinia, a le galulue "AllTrans" i le tele o taaloga. E leai se
+                mea e mafai ona faia lenei mea.
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            Afai e i ai pea faafitauli e pei o le "Malosiaga vavalalata" po o le vaega o se
+            polokalama o le faaliliuina</h3>
+
+        <p>Faafesootai ia te au mo le fesoasoani. A e faia, o le a ou manaomia le atleast o le
+            faamatalaga lenei-</p>
+
+        <ol>
+            <li>Le igoa o le polokalama, faatasi ai ma se <strong>sootaga e sii mai le
+                polokalama</strong> mai le faleoloa o nisi APK pei o Google Play Store, CoolApk, ma
+                isi mea faapena.
+            </li>
+            <li>Lomiga Android o lau telefoni.</li>
+            <li>Se "logcat" o e taumafai e tatala le polokalama lea e maua ai ni faafitauli. E mafai
+                ona faaaoga polokalama o loo maua fua i le Play Store mo lenei mea, e pei o <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">lenei</a>
+            </li>
+        </ol>
+
+        <p>O le taimi lava e i ai i luga, e faafesootai mai au i luga o le <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            lagolago filo</a>.<br>E mafai foi ona e lipoti faafitauli i luga o le <a
+                href="https://github.com/akhilkedia/AllTrans">Github o le galuega faatino</a>.</p>
+
+
+        <h2 id="donations">Foai</h2>
+
+        <p>Afai e te fiafia i lenei galuega faatino, faatauina mai ia te au se ipu kofe! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

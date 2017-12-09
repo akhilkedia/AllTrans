@@ -1,8 +1,11 @@
-[//]: # (https://stackedit.io/editor# to convert to HTML)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UY6TVJXST724J)
+
 ## Table of Contents
 
  * [What AllTrans does](#what-alltrans-does)
- * [Videos](#videos)
+ * [ScreenShots and Videos](#screenshots-and-videos)
+   + [Below are some screenshots of AllTrans translating apps from Korean to English](#below-are-some-screenshots-of-alltrans-translating-apps-from-korean-to-english)
+   + [Videos](#videos)
  * [How to use AllTrans](#how-to-use-alltrans)
  * [How to get Yandex Translate Key](#how-to-get-yandex-translate-key)
  * [How to get Microsoft Azure Translate Key](#how-to-get-microsoft-azure-translate-key)
@@ -13,6 +16,7 @@
    + [A particular app is not being translated](#a-particular-app-is-not-being-translated)
    + [A game app is not being translated](#a-game-app-is-not-being-translated)
    + [If you still have problems like Force Close or parts of an app not being translated](#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated)
+ * [Donations](#donations)
  
 ## What AllTrans does
 
@@ -26,7 +30,17 @@ This is something similar to the way Google Translate works in Chrome.
 
 **Note** - Due to a technical limitation, this won't work with many games. Nothing can be done about this.
 
-## Videos
+## ScreenShots and Videos
+
+### Below are some screenshots of AllTrans translating apps from Korean to English
+
+![](https://raw.githubusercontent.com/akhilkedia/AllTrans/master/screenshots/Joint1S.png)
+
+![](https://raw.githubusercontent.com/akhilkedia/AllTrans/master/screenshots/Joint2S.png)
+
+![](https://raw.githubusercontent.com/akhilkedia/AllTrans/master/screenshots/Joint3S.png)
+
+### Videos
 
 A video (in English) showing how to use AllTrans by Gadget Hacks on Youtube [https://www.youtube.com/watch?v=sKDtkmISi6k](https://www.youtube.com/watch?v=sKDtkmISi6k)
 
@@ -90,6 +104,7 @@ The subscription key is something like "321dcba...."
 
 ### The Translated app is "Force Close"
 
+* Click on the app's name in "Apps to translate" tab, and click on "Click to Clear Translation Cache".
 * Click on the app's name in "Apps to Translate" tab, and in "Other Settings" fill in "Delay Before Replcaing With Translated Text" to 2000.
 * Click on the app's name in "Apps to translate" tab, and in "Other Settings" fill in "Delay Before Starting to Translate WebViews" to 2000.
 
@@ -112,3 +127,8 @@ Contact me for support. When you do, I will need atleast the following informati
 
 Once you have the above, contact me on the  [XDA support thread](https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878).
 You can also report issues on the  [Project's Github](https://github.com/akhilkedia/AllTrans).
+
+## Donations
+If you like this project, buy me a cup of coffee! :) 
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UY6TVJXST724J)

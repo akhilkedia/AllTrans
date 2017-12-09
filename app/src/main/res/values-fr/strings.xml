@@ -23,57 +23,13 @@
     <string name="loading">"Chargement de la liste des Applications - Veuillez patienter"</string>
     <string name="clear_cache_error">"Une erreur. Pouvait pas effacer cache de traduction !"</string>
     <string name="clear_cache_success">"Définition de Cache pour ce soft a été effacé !"</string>
-	<string name="how_to_use">"COMMENT UTILISER L’APPLICATION
-
-Cette application nécessite de vous inscrire pour une clé de Microsoft ou Traduisez Yandex.
-Yandex Traduisez prend en charge plusieurs langues, possède un processus beaucoup plus facile de s’inscrire et nécessite aucune carte de crédit.
-Translate Microsoft donne de meilleurs résultats, mais requiert une carte de crédit pour vous inscrire. (Mais ne vous inquiétez pas, rien ne sera facturé.)
-
-1. dansl ' onglet Paramètres globaux, activez utiliser Yandex au lieu de Microsoft si vous souhaitez utiliser Yandex, sinon désactiver pour utiliser Microsoft.
-1. dansl ' onglet Paramètres globaux, cliquez sur entrer la clé de Microsoft/Yandex abonnement, entrée la clé correspondante (voir Instructions d’en bas).
-2. Choisissez la traduction du langage et traduire dans la langue.
-3. dans les applications à onglet Traduisez, recherchez l’application que vous souhaitez traduire, cliquez sur la case à cocher à côté de lui. Si la case à cocher n’est pas visible, essayez de tourner sur le côté, votre téléphone en mode paysage.
-4. Fermez et redémarrez l’application souhaitée traduit - il devrait être traduit !
-
-ATTENTION - certaines applications pourraient forcer étroites. Consultez la section dépannage.
-
-COMMENT OBTENIR YANDEX TRADUIRE CLÉ D’ABONNEMENT
-
-1. aller sur le site Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. Si vous n’avez déjà un compte, cliquez sur Registre et signe pour un nouveau compte.
-3. après la signature en hausse, acceptez le contrat d’utilisateur et cliquez sur obtenir la clé API.
-4. vous avez reçu avec succès votre clé ! C’est quelque chose comme trnsl.1.1.201701...
-
-COMMENT OBTENIR MICROSOFT AZURE TRADUIRE CLÉ D’ABONNEMENT
-
-1. Inscrivez-vous à un compte Microsoft Azure à http://azure.com
-
-2. après que vous avez un compte, ouvrez une session au portail Azure à http://portal.azure.com
-
-3. Ajouter un abonnement Microsoft Translator API à votre compte Azure.
-Choisissez un abonnement prépayé. Il faudra une carte de crédit, mais ne vous inquiétez pas, rien ne sera facturé.
-Sélectionnez la + nouvelle option.
-Sélectionnez Intelligence dans la liste des services.
-Sélectionnez Services cognitifs API.
-Sélectionnez l’option Type d’API.
-Sélectionnez la traduction du texte
-Dans la section niveau de prix, sélectionnez le niveau gratuit (F0)
-Remplir le reste du formulaire et appuyez sur le bouton créer.
-
-4. récupérer votre clé d’authentification.
-Aller à toutes les ressources, puis sélectionnez Microsoft Translator API vous souscrit un abonnement.
-Allez à l’option touches et copier votre clé d’abonnement pour accéder au service.
-La clé d’abonnement est quelque chose comme 321dcba...
-
-DÉPANNAGE
-
-1. Si aucune application n’est en cours de traduction, vérifiez que votre clé d’abonnement Microsoft/Yandex est correcte.
-2. si l’application traduite Force ferme/obtient bloqué sur chargement la première fois après le démarrage de traduction, cliquez sur l’application dans les applications de traduire onglet et dans les autres milieux remplir en retard avant de traduire à 2000.
-3. si l’application traduite utilisé pour fonctionnent très bien, mais maintenant coincé sur le démarrage, cliquez sur l’application dans les applications de traduction onglet et cliquez sur Cliquez pour vider le Cache en traduction.
-4. si certaines parties de l’application ne sont pas traduits, cliquez sur l’application dans les applications de traduction onglet et activer le Mode agressif.
-5. si l’app toujours Force se ferme, désactiver la traduction pour ce soft et me contacter sur le soutien thread sur XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Traduire n’importe où"</string>
+    <string name="backup_pref_error">"Une erreur. Pouvait pas sauvegarder les préférences ! Vous accordez l’accès superutilisateur ?"</string>
+    <string name="backup_pref_success">"Préférences ont été sauvegardées sur le stockage externe !"</string>
+    <string name="wut_why_null">"Pas pu charger la page de préférences pour app. Fermez et rouvrez application à nouveau."</string>
+    <string name="app_icon">"Icône de l’application"</string>
+    <string name="example_application">"Exemple d’Application"</string>
+    <string name="description">"Description"</string>
+    <string name="translate_anywhere">"Définition de partout"</string>
     <string name="apps_to_translate">"Apps pour traduire"</string>
     <string name="global_settings">"Paramètres globaux"</string>
     <string name="instructions">"Instructions"</string>
@@ -112,8 +68,20 @@ DÉPANNAGE
     <string name="caching">"Mise en cache"</string>
     <string name="caching_summary_off">"Pas sauver les traductions en mode hors connexion, ce qui entraîne plus lentement traduire et données plus élevées - mais peut fonctionner pour des applications plus. Tourner sur pour enregistrer les traductions."</string>
     <string name="caching_summary_on">"Enregistrer les traductions en mode hors connexion pour accélérer le processus, traduire et utiliser les données. Désactiver pour désactiver si votre application ne démarre pas."</string>
-    <string name="delay">"Délai avant de traduire"</string>
-    <string name="delay_summary">"Définir la durée en millisecondes à attendre avant de traduire. Valeur par défaut est 0, la valeur 1000 – 5000 si l’app traduit se bloque."</string>
+    <string name="delay">"Délai avant que remplaçant par le texte traduit"</string>
+    <string name="delay_summary">"Définir la durée en millisecondes à attendre avant de remplacer par le texte traduit. Valeur par défaut est 0. Si l’application traduite se bloque la valeur 1000-5000."</string>
+    <string name="delay_webview">"Délai avant de commencer à traduire WebViews"</string>
+    <string name="delay_webview_summary">"Définir la durée en millisecondes à attendre avant de commencer à traduire WebViews. Valeur par défaut est 500. La valeur 0 pour augmenter la vitesse de translation. Si la partie de l’application web n’est pas traduire la valeur 3000-5000."</string>
+    <string name="analytics">"Envoi anonyme Crash et données d’utilisation"</string>
+    <string name="analytics_summary_off">"N’envoie ne pas de crash anonyme et données d’utilisation. Envoi de données d’accident anonyme aide le développeur améliorer l’application."</string>
+    <string name="analytics_summary_on">"Envoi des données anonymes de crash et son utilisation. Aucune information personnelle n’est transmise. Données d’accident anonyme aident le développeur de l’app mieux"</string>
+    <string name="debug">"Avancé : Activer le Mode Debug."</string>
+    <string name="debug_summary_off">"Debug mode est désactivé. Ne pas écrire les données de débogage à logcat. Activer ceci avant d’envoyer des rapports d’erreurs"</string>
+    <string name="debug_summary_on">"Debug mode est activé. Écriture de journaux à logcat. Cela diminue la performance - désactiver si n’est pas nécessaire."</string>
+    <string name="local_on_off">"Traduire ce soft"</string>
+    <string name="local_on_off_summary">"S’éteindre pour arrêter de traduire ce soft"</string>
+    <string name="local_on_off_summary_off">"Ce soft ne seront pas traduites. Tourner au démarrage à l’aide automatique-traduire !"</string>
+    <string name="local_on_off_summary_on">"Cela se traduira. Désactiver pour désactiver complètement la traduction de ce soft."</string>
     <string name="overRide_global">"Substituer des paramètres globaux"</string>
     <string name="overRide_global_summary_off">"En utilisant les paramètres globaux pour cette App tour sur pour modifier les paramètres uniquement pour cette application."</string>
     <string name="overRide_global_summary_on">"En utilisant les paramètres locaux pour cette App tour hors d’utiliser les paramètres globaux."</string>

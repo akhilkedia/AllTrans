@@ -2,7 +2,7 @@
 
 Like Chrome translation of webpages, but for Android apps.
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UY6TVJXST724J)
+[![LicenseGPLv3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UY6TVJXST724J)
 
 ## Table of Contents
 
@@ -129,6 +129,7 @@ The subscription key is something like `"321dcba...."`
 
 ### The Translated app is "Force Close"
 
+* Click on the app's name in `"Apps to translate"` tab, and click on `"Click to Clear Translation Cache"`.
 * Click on the app's name in `"Apps to Translate"` tab, and in `"Other Settings"` fill in `"Delay Before Replcaing With Translated Text"` to `2000`.
 * Click on the app's name in `"Apps to translate"` tab, and in `"Other Settings"` fill in `"Delay Before Starting to Translate WebViews"` to `2000`.
 

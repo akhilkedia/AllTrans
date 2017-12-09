@@ -23,57 +23,13 @@
     <string name="loading">"Đang tải danh sách ứng dụng - xin vui lòng chờ"</string>
     <string name="clear_cache_error">"Một số lỗi. Không thể xoá bộ nhớ cache dịch!"</string>
     <string name="clear_cache_success">"Dịch bộ nhớ Cache cho ứng dụng này đã bị xóa!"</string>
-	<string name="how_to_use">"LÀM THẾ NÀO ĐỂ SỬ DỤNG CÁC ỨNG DỤNG
-
-Ứng dụng này đòi hỏi bạn phải đăng ký một khóa từ Microsoft hoặc Yandex dịch.
-Yandex Translate hỗ trợ nhiều ngôn ngữ, có một quá trình đăng ký dễ dàng hơn nhiều và đòi hỏi không có thẻ tín dụng.
-Microsoft Translate cho kết quả tốt hơn, nhưng yêu cầu một thẻ tín dụng để đăng ký. (Nhưng đừng lo, không có gì sẽ trả.)
-
-1. trong tab cài đặt toàn cầu, cho phép sử dụng Yandex thay vì Microsoft nếu bạn muốn sử dụng Yandex, khác vô hiệu hóa để sử dụng Microsoft.
-1. trong tab cài đặt toàn cầu, khai thác nhập Microsoft/Yandex đăng ký Key, nhập vào phím tương ứng (xem hướng dẫn từ dưới đây).
-2. chọn các dịch từ ngôn ngữ và dịch sang ngôn ngữ.
-3. trong các ứng dụng dịch tab, tìm thấy các ứng dụng mà bạn muốn dịch, nhấp vào hộp kiểm bên cạnh nó. Nếu hộp kiểm không hiển thị, hãy thử xoay nghiêng điện thoại vào cảnh mode.
-4. đóng và khởi động lại ứng dụng bạn muốn dịch - nó nên được dịch!
-
-Cảnh báo - một số ứng dụng có thể ép buộc chặt chẽ. Xem phần giải đáp thắc mắc.
-
-LÀM THẾ NÀO ĐỂ CÓ ĐƯỢC YANDEX DỊCH ĐĂNG KÝ KHÓA
-
-1. go to Yandex Website - https://tech.yandex.com/keys/get/?service=trnsl
-2. nếu bạn chưa có tài khoản, hãy nhấp vào đăng ký và đăng ký một tài khoản mới.
-3. sau khi đăng lên, đồng ý với thỏa thuận sử dụng và click vào Get API Key.
-4. bạn đã nhận thành công của bạn! Đó là một cái gì đó như trnsl.1.1.201701...
-
-LÀM THẾ NÀO ĐỂ CÓ ĐƯỢC MICROSOFT AZURE DỊCH ĐĂNG KÝ KHÓA
-
-1. đăng ký một tài khoản Microsoft Azure tại http://azure.com
-
-2. sau khi bạn có một tài khoản, đăng nhập vào cổng Azure tại http://portal.azure.com
-
-3. thêm một đăng ký Microsoft dịch API của bạn tài khoản Azure.
-Chọn một thuê bao trả. Sẽ yêu cầu một thẻ tín dụng, nhưng đừng lo, không có gì sẽ bị tính phí.
-Chọn + mới tùy chọn.
-Lựa chọn thông minh từ danh sách các dịch vụ.
-Chọn dịch vụ nhận thức API.
-Chọn tùy chọn API loại.
-Chọn văn bản dịch
-Trong phần giá cả Tier, chọn Free Tier (F0)
-Điền vào phần còn lại của mẫu đơn, và bấm nút tạo.
-
-4. lấy chìa khóa xác thực của bạn.
-Đi đến tất cả nguồn lực và chọn Microsoft dịch API bạn đăng ký.
-Đi đến tùy chọn phím và sao chép chìa khóa đăng ký của bạn để truy cập Dịch vụ.
-Đăng ký chính là một cái gì đó như 321dcba...
-
-GIẢI ĐÁP THẮC MẮC
-
-1. nếu không có ứng dụng đang được dịch, kiểm tra khoá đăng ký Microsoft/Yandex của bạn là chính xác.
-2. nếu các ứng dụng dịch quân đóng/bị mắc kẹt trên tải lần đầu tiên sau khi bạn bắt đầu dịch, nhấp vào các ứng dụng trong các ứng dụng dịch tab, và trong các cài đặt khác điền vào sự chậm trễ trước khi dịch đến năm 2000.
-3. nếu các ứng dụng dịch sử dụng để làm việc tốt, nhưng bây giờ gặp khó khăn về việc bắt đầu, bấm vào các ứng dụng trong các ứng dụng dịch tab và click vào bấm vào Clear Cache dịch.
-4. nếu một số phần của ứng dụng đang không được biên dịch, nhấp chuột vào các ứng dụng trong các ứng dụng dịch tab, và cho phép chế độ tích cực.
-5. nếu các ứng dụng vẫn còn hiệu lực đóng cửa, vô hiệu hoá các bản dịch cho các ứng dụng này và liên hệ với tôi trên các chủ đề hỗ trợ trên XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Dịch bất cứ nơi nào"</string>
+    <string name="backup_pref_error">"Một số lỗi. Không backup ưu đãi! Bạn đã cấp quyền truy cập siêu người dùng?"</string>
+    <string name="backup_pref_success">"Ưu đãi đã được sao lưu để lưu trữ bên ngoài!"</string>
+    <string name="wut_why_null">"Không thể nạp trang sở thích của mỗi ứng dụng. Đóng và mở lại ứng dụng một lần nữa."</string>
+    <string name="app_icon">"Biểu tượng ứng dụng"</string>
+    <string name="example_application">"Ví dụ ứng dụng"</string>
+    <string name="description">"Mô tả"</string>
+    <string name="translate_anywhere">"Dịch ở khắp mọi nơi"</string>
     <string name="apps_to_translate">"Các ứng dụng để dịch"</string>
     <string name="global_settings">"Thiết đặt toàn cầu"</string>
     <string name="instructions">"Hướng dẫn"</string>
@@ -112,8 +68,20 @@ GIẢI ĐÁP THẮC MẮC
     <string name="caching">"Sử dụng bộ nhớ đệm"</string>
     <string name="caching_summary_off">"Không phải tiết kiệm dịch gián tuyến, dẫn đến chậm dịch và dữ liệu cao hơn - nhưng có thể làm việc cho nhiều ứng dụng. Rẽ vào để tiết kiệm tham khảo."</string>
     <string name="caching_summary_on">"Tiết kiệm các bản dịch ngoại tuyến để tăng tốc độ dịch và sử dụng dữ liệu. Tắt để vô hiệu hóa nếu ứng dụng của bạn không bắt đầu."</string>
-    <string name="delay">"Sự chậm trễ trước khi dịch"</string>
-    <string name="delay_summary">"Thiết lập thời gian trong mili giây để chờ đợi trước khi dịch. Giá trị mặc định là 0, đặt 1000-5000 nếu các ứng dụng dịch rơi."</string>
+    <string name="delay">"Sự chậm trễ trước khi thay thế bằng dịch văn bản"</string>
+    <string name="delay_summary">"Thiết lập thời gian trong mili giây để chờ đợi trước khi thay thế với văn bản dịch. Giá trị mặc định là 0. Đặt 1000-5000 nếu các ứng dụng dịch rơi."</string>
+    <string name="delay_webview">"Sự chậm trễ trước khi bắt đầu dịch WebViews"</string>
+    <string name="delay_webview_summary">"Thiết lập thời gian trong mili giây để chờ đợi trước khi bắt đầu dịch WebViews. Giá trị mặc định là 500. Đặt là 0 để tăng tốc độ dịch thuật. Đặt 3000-5000 nếu một phần của web app không dịch."</string>
+    <string name="analytics">"Vụ tai nạn chưa xác định người gửi và sử dụng dữ liệu"</string>
+    <string name="analytics_summary_off">"Vụ tai nạn chưa xác định người gửi không và dữ liệu sử dụng. Cách gửi dữ liệu tai nạn chưa xác định người sẽ giúp các nhà phát triển làm cho các ứng dụng tốt hơn."</string>
+    <string name="analytics_summary_on">"Gửi các dữ liệu ẩn danh của vụ tai nạn và cách sử dụng. Không có thông tin cá nhân được truyền đi. Chưa xác định người tai nạn dữ liệu giúp các nhà phát triển làm cho các ứng dụng tốt hơn"</string>
+    <string name="debug">"Nâng cao: Bật chế độ gỡ lỗi."</string>
+    <string name="debug_summary_off">"Debug chế độ là off. Không viết gỡ lỗi dữ liệu để logcat. Bật điều này trước khi gửi báo cáo lỗi"</string>
+    <string name="debug_summary_on">"Debug chế độ là ngày. Văn bản các bản ghi để logcat. Điều này làm giảm hiệu suất - tắt đi nếu không cần thiết."</string>
+    <string name="local_on_off">"Dịch ứng dụng này"</string>
+    <string name="local_on_off_summary">"Tắt để ngăn chặn dịch ứng dụng này"</string>
+    <string name="local_on_off_summary_off">"Ứng dụng này sẽ không dịch. Biến trên để bắt đầu sử dụng auto-dịch!"</string>
+    <string name="local_on_off_summary_on">"Điều này sẽ được dịch. Tắt hoàn toàn vô hiệu hoá dịch ứng dụng này."</string>
     <string name="overRide_global">"Ghi đè cài đặt toàn cầu"</string>
     <string name="overRide_global_summary_off">"Dùng thiết đặt toàn cầu cho các ứng dụng này lần lượt vào để thay đổi cài đặt cho các ứng dụng này."</string>
     <string name="overRide_global_summary_on">"Sử dụng cài đặt địa phương cho về ứng dụng này lần lượt ra để sử dụng toàn cầu cài đặt."</string>

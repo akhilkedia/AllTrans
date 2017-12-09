@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">תוכן עניינים</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">מה AllTrans עושה</a></li>
+        <li><a href="#videos">קטעי וידאו</a></li>
+        <li><a href="#how-to-use-alltrans">כיצד להשתמש AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">איך להגיע יאנדקס לתרגם את המפתח</a></li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">איך להגיע Microsoft Azure לתרגם את
+            המפתח</a></li>
+        <li><a href="#troubleshooting">פתרון בעיות</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">App אין הוא מתורגם ב- app
+                    כל</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">האפליקציה המתורגמת תקוע
+                    במסך הפתיחה</a></li>
+                <li><a href="#the-translated-app-is-force-close">האפליקציה תורגם הוא חיל סגור</a>
+                </li>
+                <li><a href="#a-particular-app-is-not-being-translated">יישום מסוים לא מתורגם</a>
+                </li>
+                <li><a href="#a-game-app-is-not-being-translated">המשחק app לא מתורגם</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">אם
+                        אתה עדיין נתקל בבעיות כמו חיל סגור או חלקים של אפליקציה לא מתורגם</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">תרומות</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">מה AllTrans עושה</h2>
+
+    <p>היא מחליפה את <strong>כל הטקסט ב- app</strong> בשפה משפה אחת לאחרת בזמן ריצה.</p>
+
+    <p>אומרים לדוגמה אפליקציה בגרמנית. כשמשתמש בוחר את שם האפליקציה, ואת ההמרה השפה הדרושים (נגיד
+        גרמנית לאנגלית).</p>
+
+    <p>אז בכל פעם שהמשתמש משתמש את היישום הנדרש, כל הטקסט, <strong>ANYWHERE</strong> באפליקציה,
+        מוחלפים על-ידי המקבילים באנגלית.</p>
+
+    <p>זה משהו בדומה לאופן ש-google Translate עובד ב- Chrome.</p>
+
+    <p><strong>הערה</strong> - עקב מגבלה טכנית, זה לא יעבוד עם משחקים רבים. ניתן לעשות דבר בקשר לזה.
+    </p>
+
+    <h2 id="videos">קטעי וידאו
+
+        <p>וידאו (באנגלית) המדגימה את השימוש AllTrans על ידי פריצות גאדג'ט-Youtube <a
+                href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+        </p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">כיצד להשתמש AllTrans</h2>
+
+        <p>יישום זה <strong>מחייב</strong> אותך להירשם <strong>חינם</strong> מפתח מ- Microsoft או
+            יאנדקס תרגם. עיין בהוראות להלן כיצד להביא את המפתחות.</p>
+
+        <p>יאנדקס תרגם תומך שפות נוספות, יש תהליך הרבה יותר קל ההצטרפות, והוא דורש <strong>כרטיס
+            אשראי. לא</strong>.</p>
+
+        <p>Microsoft תרגם נותן <strong>תרגום טוב יותר</strong>, אך דורש כרטיס אשראי כדי להירשם. (אבל
+            אל תדאג, שום דבר לא יהיה מחויב.)</p>
+
+        <ol>
+            <li>ודא AllTrans האפליקציה זמינה ב- Xposed Installer -> מודולים.</li>
+            <li>השקת האפליקציה AllTrans. בכרטיסייה "הגדרות כלליות", לאפשר "להשתמש יאנדקס במקום
+                Microsoft", אם ברצונך להשתמש יאנדקס. הפוך את השימוש ב- Microsoft.
+            </li>
+            <li>בחר את "לתרגם משפה" ואת "תרגם לשפה".</li>
+            <li>בכרטיסיה "יישומים כדי לתרגם", למצוא את היישום שברצונך לתרגם, לחץ על תיבת הסימון
+                שלצידו. אם תיבת הסימון אינה גלויה, נסה לסובב את הטלפון שלך לצדדים למצב נוף.
+            </li>
+            <li>סגור והפעל מחדש את היישום שאתה רוצה מתורגמים - זה צריך להיות מתורגם!</li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">איך להגיע יאנדקס לתרגם את המפתח</h2>
+
+        <ol>
+            <li>ללכת <a href="https://tech.yandex.com/keys/get/?service=trnsl">יאנדקס תרגם API
+                באתר</a></li>
+            <li>אם עדיין אין לך חשבון, לחץ על "רשום", להירשם לקבלת חשבון חדש.</li>
+            <li>לאחר ההרשמה, מסכים להסכם המשתמש ולחץ על "לקבל API מפתח".</li>
+            <li>בהצלחה קבלת המפתח שלך!</li>
+        </ol>
+
+        <p>המפתח המנוי הוא משהו כמו "trnsl.1.1.201701."</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">איך להגיע Microsoft Azure לתרגם את
+            המפתח</h2>
+
+        <ol>
+            <li>להירשם לקבלת חשבון התכלת של Microsoft.<br>אם עדיין אין לך חשבון תכולים, להירשם לקבלת
+                <a href="http://azure.com">חשבון התכלת של Microsoft</a>.
+            </li>
+            <li>לאחר, יש לך חשבון לחתום לתוך <a href="http://portal.azure.com">Azure בפורטל</a>.
+            </li>
+            <li>להוסיף "Microsoft תרגום API מנוי" חשבונך תכולים.<br>
+                <ol>
+                    <li>בחר מנוי "pay-as-you-go". ידרוש כרטיס אשראי, אבל אל תדאג, שום דבר לא
+                        יחויב.
+                    </li>
+                    <li>בחר באפשרות "+ חדש".</li>
+                    <li>בחר "אינטליגנציה" מתוך הרשימה של שירותים.</li>
+                    <li>בחר "APIs שירותי קוגניטיבית".</li>
+                    <li>בחר באפשרות 'סוג API'.</li>
+                    <li>בחר "תרגום טקסט".</li>
+                    <li>במקטע "תמחור הרמה", בחר "ללא הרמה (F0)".</li>
+                    <li>ממלאים את שאר הטופס, ולחץ על לחצן "צור".</li>
+                </ol>
+            </li>
+            <li>אחזר את "מפתח האימות".<br>
+                <ol>
+                    <li>עבור אל 'כל המשאבים' ובחר API תרגום של Microsoft, אתה מנוי.</li>
+                    <li>פתח את האפשרות "מפתחות" ו להעתיק את מפתח המנוי שלך כדי לגשת לשירות.</li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>המפתח המנוי הוא משהו כמו "321dcba."</p>
+
+
+        <h2 id="troubleshooting">פתרון בעיות</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">App אין הוא מתורגם ב- app כל</h3>
+
+        <ul>
+            <li>אם אין app המתורגם, בדיקה זו "AllTrans" מופעלת ב- Xposed Installer -> מודולים.</li>
+            <li>גם לבדוק אם את "המפתח מנוי Microsoft/יאנדקס" הוא הנכון.</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">האפליקציה המתורגמת תקוע במסך הפתיחה</h3>
+
+        <ul>
+            <li>לחץ על השם של היישום על "Apps לתרגם" טאב, ולחץ על "לחץ כדי ברור תרגום המטמון".</li>
+            <li>אם זו הפעם הראשונה שאתה התחלת לתרגם את יישום זה, לחץ על השם של היישום טאב "יישומים
+                כדי לתרגם", וכן "הגדרות אחרות" למלא "עיכוב לפני Replcaing עם טקסט מתורגם" 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">האפליקציה תורגם קרוב "כוח"</h3>
+
+        <ul>
+            <li>לחץ על השם של היישום על "Apps לתרגם" טאב, ולחץ על "לחץ כדי ברור תרגום המטמון".</li>
+            <li>לחץ על השם של היישום בלשונית "יישומים כדי לתרגם", בתוך "הגדרות אחרות" למלא "עיכוב
+                לפני Replcaing עם טקסט מתורגם" ל- 2000.
+            </li>
+            <li>לחץ על השם של היישום על "Apps לתרגם" טאב, ומלא ב- "הגדרות אחרות" "עיכוב לפני מתחיל
+                כדי לתרגם תצוגות אינטרנט של" ל- 2000.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">יישום מסוים לא מתורגם</h3>
+
+        <ul>
+            <li>לחץ על השם של היישום על "Apps לתרגם" טאב, ומלא ב- "הגדרות אחרות" "עיכוב לפני מתחיל
+                כדי לתרגם תצוגות אינטרנט של" ל- 2000.
+            </li>
+            <li>אם חלקים מסוימים של האפליקציה הן עדיין לא מתורגם, לחץ על השם של היישום על "Apps
+                לתרגם" טאב, ולאפשר את "מצב אגרסיבי".
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">המשחק app לא מתורגם</h3>
+
+        <ul>
+            <li>בשל מגבלות טכניות, "AllTrans" לא יעבוד עם משחקים רבים. ניתן לעשות דבר בקשר לזה.</li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            אם אתה עדיין נתקל בבעיות כמו "חיל סגור" או חלקים של אפליקציה לא מתורגם</h3>
+
+        <p>צרו איתי קשר לקבלת תמיכה. כאשר אתה עושה, אני צריך לפחות הפרטים הבאים-</p>
+
+        <ol>
+            <li>שם היישום, יחד עם <strong>קישור להורדת האפליקציה</strong> מהחנות APK קצת כמו Google
+                Play החנות, CoolApk, וכו '.
+            </li>
+            <li>גרסת אנדרואיד של הטלפון שלך.</li>
+            <li>"Logcat" של אתה מנסה לפתוח את היישום אשר נותן לך בעיות. באפשרותך להשתמש היישומים
+                הזמינים בחופשיות על החנות לשחק בשביל זה, כמו <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">זו</a>
+            </li>
+        </ol>
+
+        <p>ברגע שיש לך לעיל, צרו איתי קשר ב <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            לתמוך חוט</a>.<br>באפשרותך גם דיווח על בעיות ב- <a
+                href="https://github.com/akhilkedia/AllTrans">Github הפרוייקט</a>.</p>
+
+
+        <h2 id="donations">תרומות</h2>
+
+        <p>אם אתה אוהב את הפרויקט הזה, לקנות לי כוס קפה! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

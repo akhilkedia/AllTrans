@@ -23,57 +23,13 @@
     <string name="loading">"Lista betöltése alkalmazások - kérjük, várja"</string>
     <string name="clear_cache_error">"Néhány hiba. Nem sikerült törölni a fordítás cache!"</string>
     <string name="clear_cache_success">"Fordítás Cache, mert ez app törölték!"</string>
-	<string name="how_to_use">"HOGYAN KELL HASZNÁLNI AZ ALKALMAZÁS
-
-Ez az alkalmazás megköveteli, hogy iratkozzon fel egy kulcs-ból Mikroszkóp vagy Yandex fordítás.
-Yandex-fordítás támogatja a több nyelven, van egy sokkal egyszerűbb regisztrációs folyamat során, és nem hitelkártya megköveteli.
-Microsoft Translate jobb eredményt ad, de megkövetel egy hitelkártya-hoz jel megjelöl. (De ne aggódj, semmi sem lesz fizetni.)
-
-(1) a globális beállítások lapon engedélyezi használni Yandex, hanem a Microsoft ha Ön akar-hoz használ Yandex, máshol letiltásához használja a Microsoft.
-(1) a globális beállítások lapon érintse meg a adja meg a Microsoft/Yandex aláírás kulcs, bemenet a megfelelő kulcs (lásd az utasításokat alatt).
-2. Válassza ki a nyelvi fordítás és lefordítani a nyelvet.
-3. a Apps-hoz Lefordít fülre, keresse meg az alkalmazás ön akar-hoz lefordít, kattintson a mellette lévő négyzetet. Ha a jelölőnégyzet nem látható, próbálja meg a forgó oldalra a telefon a tájkép módban.
-4. zárja be és indítsa újra a kívánt fordította app - kell!
-
-Figyelem - néhány apps lehet kényszeríteni a szoros. A hibaelhárítás című részben.
-
-HOGYAN KAP A YANDEX ALÁÍRÁS KULCS LEFORDÍTANI
-
-1. megy Yandex honlapja - https://tech.yandex.com/keys/get/?service=trnsl
-2. Ha még nem rendelkezik fiókkal, kattintson a regisztráció és iratkozzon fel egy új fiókot.
-3. a bejelentkezés után fel, megállapodnak abban, hogy a felhasználói megállapodást, és kattintson az API-kulcs kap.
-4. Önnek van sikeresen elfogadott a kulcs! Ez olyasmi, mint a trnsl.1.1.201701...
-
-HOGYAN JUTHAT A MICROSOFT AZURE LEFORDÍTANI ALÁÍRÁS KULCS
-
-1. feliratkozik a Microsoft Azure-fiókot a http://azure.com
-
-(2) miután egy fiókot, jelentkezzen be az azúrkék portál: http://portal.azure.com
-
-3. a Microsoft Translator API-előfizetés felvétele azúrkék fiókját.
-Válassza ki a felosztó-kirovó előfizetés. Lesz szükség egy hitelkártya, de ne aggódj, semmi nem kerül felszámolásra.
-Válassza ki az + új lehetőség.
-A szolgáltatások listájában válassza ki intelligencia.
-Válassza ki a kognitív szolgáltatások API-k.
-Válassza ki az API-beállítást.
-Jelölje ki a szöveg fordítása
-Árképzés szint szakaszban jelölje be a szabad Tier (F0)
-Töltse ki az űrlapot a többi, és nyomja meg a Create gombra.
-
-4. a hitelesítési kulcs beolvasásához.
-Minden forrásokat, és válassza ki a Microsoft Translator API előfizetett.
-A kulcsok lehetőséget, és másolja a kulcsát, a szolgáltatás eléréséhez.
-Az előfizetés kulcs olyasmi, mint 321dcba...
-
-HIBAELHÁRÍTÁS
-
-1. Ha nincs app fordítása folyamatban van, ellenőrizze a Microsoft/Yandex aláírás kulcs kijavít.
-(2) Ha a lefordított alkalmazás erő bezárja/gets megragadt-ra berakodás után elkezdi fordítás első alkalommal, kattintson az app, Apps-hoz Lefordít fülre, és az egyéb beállítások kitölt késleltetés előtt fordítás 2000-ben.
-(3) Ha a lefordított alkalmazás hozzászokott dolgozik finom, de most elakad a kezdő, kattintson az app, Apps lefordítani lapon, és kattintson kattintson a fordítás cache memória.
-(4) Ha egyes részein az app nem fordítják, az app, Apps lefordítani lapon kattintson, és agresszív üzemmód engedélyezése.
-(5) Ha a app még hatályos bezárja, tiltsa le a fordítás ez app, és lépjen kapcsolatba velem a támogatás téma, XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Lefordítani, hogy bárhol"</string>
+    <string name="backup_pref_error">"Néhány hiba. Beállítások nem tudott hát! Tett SuperUser hozzáférést engedélyez?"</string>
+    <string name="backup_pref_success">"Beállítások készült biztonsági másolat a külső tároló!"</string>
+    <string name="wut_why_null">"Nem sikerült betölteni a Per-app beállítás lapon. Zárja be, majd újra nyissuk meg az alkalmazást újra."</string>
+    <string name="app_icon">"App ikon"</string>
+    <string name="example_application">"Példa alkalmazás"</string>
+    <string name="description">"Leírás"</string>
+    <string name="translate_anywhere">"Translate mindenhol"</string>
     <string name="apps_to_translate">"Apps-hoz Lefordít"</string>
     <string name="global_settings">"Globális beállítások"</string>
     <string name="instructions">"Utasítások"</string>
@@ -112,8 +68,20 @@ HIBAELHÁRÍTÁS
     <string name="caching">"Gyorsítótár használata"</string>
     <string name="caching_summary_off">"Nem megtakarító fordítások offline, ami lassabb lefordítani és magasabb adat -, de több alkalmazást is dolgozhat. Viszont a Mentés fordítások."</string>
     <string name="caching_summary_on">"Lefordítani és az adatok mentése fordítást offline felgyorsítása érdekében. Kapcsolja ki, hogy tiltsa le, ha a app nem indul el."</string>
-    <string name="delay">"Késleltetés előtt fordítás"</string>
-    <string name="delay_summary">"Készlet a idő ezredmásodpercben várja, lefordítása előtt. Alapértelmezett értéke 0, értéke 1000-5000, ha a lefordított alkalmazás összeomlik."</string>
+    <string name="delay">"Késés helyett a lefordított szöveg"</string>
+    <string name="delay_summary">"Készlet a idő ezredmásodpercben vár előtt a lefordított szöveg csere. Alapértelmezett értéke 0. 1000-5000 beállítása a lefordított alkalmazás összeomlik."</string>
+    <string name="delay_webview">"Késleltetés előtt összerezzenés-hoz Lefordít webnézete"</string>
+    <string name="delay_webview_summary">"Készlet a idő ezredmásodpercben webnézete lefordítani indítása előtt. Alapértelmezett értéke 500. Készlet-hoz 0-hoz növekszik sebesség-fordítás. 3000-5000 beállítása nem fordítja le a web app része."</string>
+    <string name="analytics">"Küld névtelen lezuhan és látogatottsági adatai"</string>
+    <string name="analytics_summary_off">"Nem küld névtelen lezuhan és használattal kapcsolatos adatai. Névtelen crash adatküldés segít a fejlesztő, hogy az alkalmazás jobb."</string>
+    <string name="analytics_summary_on">"Adatküldés névtelen lezuhan és használat. Semmilyen személyes információt továbbítani. Névtelen crash adatok segít jobban, hogy az app, fejlesztő"</string>
+    <string name="debug">"Speciális: Kapcsolja be a Debug mód."</string>
+    <string name="debug_summary_off">"Debug mód ki van kapcsolva. Logcat hibakeresési adatok írása nem. A hibajelentések elküldése előtt ezt bekapcsolja"</string>
+    <string name="debug_summary_on">"Debug mód be van kapcsolva. Írásban naplók logcat. Ez csökken a teljesítmény - kikapcsolása, ha nem szükséges."</string>
+    <string name="local_on_off">"Lefordít ez App"</string>
+    <string name="local_on_off_summary">"Megállítani a fordításának ez app elzár"</string>
+    <string name="local_on_off_summary_off">"Ez app nem lesz lefordítva. Kapcsolja be a elkezd használ kocsi-lefordít!"</string>
+    <string name="local_on_off_summary_on">"Ez lesz lefordítva. Kapcsolja ki-hoz teljesen megbénít ez app fordítása."</string>
     <string name="overRide_global">"Globális beállítások felülírása"</string>
     <string name="overRide_global_summary_off">"Használata globális beállítások részére ez app. viszont csak ez app vonatkozó beállítások módosítása."</string>
     <string name="overRide_global_summary_on">"Beállításokkal helyi részére ez app. Turn off globális beállításokat használ."</string>

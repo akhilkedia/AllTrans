@@ -23,56 +23,12 @@
     <string name="loading">"Fanokafana ny Lisitry ny fomba Fampiharana - andraso Kely Azafady"</string>
     <string name="clear_cache_error">"Tsy Fetezana sasany. Afaka mazava fandikana cache!"</string>
     <string name="clear_cache_success">"Handika Cache fa voafafa ny application ity!"</string>
-	<string name="how_to_use">"AHOANA NO FOMBA AMPIASANA NY FAMPIHARANA
-
-Izany fampiharana izany dia mitaky anao mba hisoratra anarana ho an' ny iray manan-danja avy amin' i Microsoft na Mandika ny Yandex.
-Manohana ny fiteny maromaro kokoa Mandika ny Yandex, dia be mora signup dingana ary mitaky KARATRA fiantohana avy ANY amin' ny TSY.
-Manome tsaratsara kokoa ireo vokatra Microsoft Translate, saingy mitaky ny karatra mba hisoratra anarana. (Saingy aza manahy, ho na inona na inona andraikitra.)
-
-1. ao amin' ny Sehatra maneran-Tany onglet, fahafahana Hampiasa Yandex fa tsy Microsoft raha toa ianao ka mampiasa Yandex, mankarary hafa hampiasa Microsoft.
-1. ao amin' ny Sehatra maneran-Tany onglet, kasiho Hiditra Microsoft/Yandex Famandrihana manan-Danja, mampiditra ireo ny fanalahidy mifandraika amin' izany (jereo etsy ambany amin' ny Toromarika).
-2. misafidy ny Handika avy amin' ny Fiteny sy Handika fiteny.
-3. ao amin' ny Application mba Mandika onglet, mahita ny application tianao mba handika teny, tsindrio ny checkbox eo akaikin' izany. Raha ny checkbox dia tsy hita maso, miezaka rotating findainao sideways amin' ny fomba fanaovana Endritany.
-4. akaiky ary averina velomina indray ny rafibaovao nadika tianao - tokony handikana izany!
-
-FAMPITANDREMANA - applications Sasany mety hanery akaiky. Jereo ny fizarana Troubleshooting.
-
-NY FOMBA MBA HAHAZOANA YANDEX HANDIKA TENY MANAN-DANJA NY FAMANDRIHANA
-
-1. mandeha any am-Tranonkalan' ny Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. raha tsy efa ny fitantarana, tsindrio hisoratra anarana sy famantarana niakatra ho an' ny tantara iray vaovao.
-3. taorian' ny sonia eo ambony, manaiky ny Fifanarahana ny Mpampiasa ary tsindrio Mahazo API manan-Danja.
-4. amim-pahombiazana nandray ny manan-danja izany! Izany no zavatra toy trnsl.1.1.201701...
-
-NY FOMBA HAKA MICROSOFT AZURE HANDIKA TENY MANAN-DANJA NY FAMANDRIHANA
-
-1. hisoratra anarana ho an' ny tantara iray Microsoft Azure amin' ny http://azure.com
-
-2. rehefa manana kaonty ianao, dia hanao sonia eo amin' ny varavarana fidirana ho an' ny Azure amin' ny http://portal.azure.com
-
-3. ampio ny famandrihana API mpandika Teny Microsoft ny kaonty Azure.
-Misafidy ny famandrihana pay-as-you-go. Mitaky ny karatra, anefa aza manahy, dia ho nandoa na inona na inona.
-Safidio ny + Vaovao safidy.
-Safidio ny faharanitan-Tsaina ao amin' ny lisitr' ireo fotoam-pivavahana.
-Safidio ny sampan-Draharahan' ny Cognitive APIs.
-Safidio ny Karazana API safidy.
-Safidio ny Fandikana ny Lahatsoratra
-Ao amin' ny fizarana Ambany Pricing, safidio ny Fianarana Malalaka (F0)
-Fenoy ny ambin' ilay taratasy, ary tsindrio ny bokotra Create.
-
-4. haka ny fanamarinana manan-danja.
-Any amin' ireo Loharano Rehetra ary safidio ny Microsoft mpandika Teny API subscribed ho anao.
-Handeha any amin' ny Fanalahidin' ny safidy ary adikao ny fanalahidy famandrihana mba hidirana ao amin' ny asa fanompoana.
-Ny fanalahidy famandrihana dia zavatra toy 321dcba...
-
-AMIN' NY TSY FAHATOMOMBANANA
-
-1. raha toa ka tsy misy application dia adika, hamarino ny Microsoft/Yandex Famandrihana Fanalahidy dia marina.
-2. raha tafahitsoka amin' ny fanokafana ny fotoana voalohany taorian' ny ianao nanomboka nandika ny application nadika Hery Faranan'/fanontanina, tsindrio ny application ao amin' ny Application mba handika teny onglet, ary amin' ny toe-Javatra Hafa fenoy hatak' Andro Alohan' ny Fandikana ny 2000.
-3. raha toa ka ampiasaina ny application nadika mba hiasa salama, saingy ankehitriny tafahitsoka amin' ny manomboka, tsindrio ny application ao amin' ny Application mba handika teny onglet ary tsindrio eo amin' ny Tsindrio ny Cache ny fandikan-Teny Mazava.
-4. raha ireo ampahany sasany ao amin' ny application dia tsy adika, tsindrio ao amin' ny application ao amin' ny Application mba handika teny onglet, ary manome fahafahana Masiaka ny fomba Fanaovana.
-5. raha mbola ny application Faranan' Hery, turn fandikan-teny an' ity application ary manatona ahy amin' ny tady ny fanohanana amin' ny XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
+    <string name="backup_pref_error">"Tsy Fetezana sasany. Mety tsy sady safidinao! Manome Fahafahana SuperUser no ianao?"</string>
+    <string name="backup_pref_success">"Safidinao izay efa vita ny Fitehirizana Ivelany!"</string>
+    <string name="wut_why_null">"Afaka namindra ny systeme pejy Isan-application. Akatony ny ary averina manokatra ny fampiharana indray."</string>
+    <string name="app_icon">"Sary Famantarana ny application"</string>
+    <string name="example_application">"Amporisiho ny fanaovana Fampiharana ohatra"</string>
+    <string name="description">"Famaritana"</string>
     <string name="translate_anywhere">"Handika teny na aiza na Aiza"</string>
     <string name="apps_to_translate">"Applications handika teny"</string>
     <string name="global_settings">"Sehatra maneran-tany"</string>
@@ -112,8 +68,20 @@ AMIN' NY TSY FAHATOMOMBANANA
     <string name="caching">"Mampiasa ny Caching"</string>
     <string name="caching_summary_off">"Tsy ny famonjena dikanteny internet intsony aza, izay niafara tamin' slower handika sy ambony kokoa ny tahirin-kevitra - Kanefa afaka miara-miasa ho an' ny application bebe kokoa. Hitodika any amin' ny afa-tsy fandikan-teny."</string>
     <string name="caching_summary_on">"Dikanteny famonjena ny internet intsony aza ny ataon' handika sy hampiasa ny tahirin-kevitra. Vonoy ny turn raha tsy hanomboka ny application."</string>
-    <string name="delay">"Hatak' andro Alohan' ny fandikan-Teny"</string>
-    <string name="delay_summary">"Nametraka ny fotoana ao amin' ny milliseconds ny miandry alohan' ny fandikana. Manan-Danja miseho ho azy dia 0, hametraka ny 1000 – 5000 raha ilay ny application voadika."</string>
+    <string name="delay">"Hatak' andro Alohan' ny Fanoloana Nandika ny Lahatsoratra"</string>
+    <string name="delay_summary">"Nametraka ny fotoana ao amin' ny milliseconds ny miandry alohan' ny soloy amin' ny lahatsoratra voadika. Dia 0 miseho ho azy manan-Danja. Nametraka ny 1000 – 5000 raha ilay ny application voadika."</string>
+    <string name="delay_webview">"Hatak' andro Alohan' ny Hanombohana ny Fandikana WebViews"</string>
+    <string name="delay_webview_summary">"Nametraka ny fotoana ao amin' ny milliseconds ny miandry alohan' ny hanombohana ny handika ny WebViews. Dia 500 miseho ho azy manan-Danja. Nametraka ny 0 hampitombo ny fandikana hafainganam-pandeha. Nametraka ny 3000-5000 raha tsy am-pandikana ny ampahany amin' ny application ao amin' ny tranonkala."</string>
+    <string name="analytics">"Handefa Crash tsy fantatra Anarana sy Fampiasana tahirin-Kevitra"</string>
+    <string name="analytics_summary_off">"Tsy fandefasana crash tsy fantatra anarana sy Fampiasana tahirin-kevitra. Fandefasana ny tahirin-kevitra crash tsy fantatra anarana manampy ny ho an' ny développeur hanao tsaratsara kokoa ny application."</string>
+    <string name="analytics_summary_on">"Fandefasana ny données crash sy ny fampiasana tsy fantatra anarana. Tsy misy fampahalalana mikasika ny tena manokana dia mifindra. Manampy ny ho an' ny développeur hanao tsaratsara kokoa ny application crash tsy fantatra anarana ireo tahirin-kevitra"</string>
+    <string name="debug">"Naroso: Hitodika Any amin' ny fomba Fanaovana mikasika ny Fanitsiana."</string>
+    <string name="debug_summary_off">"Debug no fomba hiala. Tsy nanoratra ny tahirin-kevitra mikasika ny fanitsiana ny logcat. Areheto izany talohan' ny fandefasana tatitra diso"</string>
+    <string name="debug_summary_on">"Debug no fomba. Fanoratana amin' ny logcat ny hazo fisaka. Izany decreases zava-bitany - vonoy raha tsy ilaina."</string>
+    <string name="local_on_off">"Handika ity Rindranasa Ity."</string>
+    <string name="local_on_off_summary">"Vonoy mba hanakanana ny fandikana ity rindranasa ity."</string>
+    <string name="local_on_off_summary_off">"Ity fitaovana ity dia tsy voadika. Hitodika any amin' ny fampiasana ny fanombohana auto-handika!"</string>
+    <string name="local_on_off_summary_on">"Izany dia ho voadika. Vonoy ny turn tanteraka ny fandikana ity application."</string>
     <string name="overRide_global">"Hanaisotra ny Sehatra maneran-Tany"</string>
     <string name="overRide_global_summary_off">"Fampiasana Sehatra maneran-Tany ho an' ity app. Anjara amin' ny hanova ny toe-javatra fotsiny ihany ho an' ny application ity."</string>
     <string name="overRide_global_summary_on">"Mampiasa toe-javatra Misy eo an-Toerana ho an' ity app. Anjara hiala hampiasa ny Sehatra maneran-Tany."</string>

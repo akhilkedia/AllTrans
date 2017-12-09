@@ -23,57 +23,13 @@
     <string name="loading">"Chaje lis nan aplikasyon pou - Tanpri ret tann"</string>
     <string name="clear_cache_error">"Kèk erè. Te kapab pa t ' konprann tradiksyon kache!"</string>
     <string name="clear_cache_success">"Tradwi kache pou app sa a ki te effacés!"</string>
-	<string name="how_to_use">"KIJAN POU YO ITILIZE APLIKASYON
-
-Aplikasyon sa a mande ou pou l siyen pou yon kle Microsoft oubyen Yandex Définition.
-Yandex Définition sipòte lang plis, gen yon gwo pi fasil inscription pwosesis ak egzije pou pa kat kredi.
-Microsoft Définition bay pi bon rezilta, men, mande yon kat kredi pou enskri. (Men, bat kò ou, pa gen anyen yo va akize.)
-
-1. nan onglet Global nòmal, pèmèt itilize Yandex olye de Microsoft si ou vle sèvi ak Yandex, se lòt enfim pou itilize Microsoft.
-1. nan onglet Global nòmal, frape antre Microsoft/Yandex abònman kle, D' korespondan kle a (gade sa pou nou fè depi anba).
-2. chwazi a tradwi nan lang ak tradwi pou lang.
-3. nan pou Définition onglet Applications, jwenn app a ou vle pou tradwi, klike à tou pre l. Si à la pa apab wè, eseye rotation detravè telefòn ou antre nan jaden flè mòd.
-4. fèmen ak rekòmanse app a ou vle traduit - li ta dwe ke!
-
-AVÈTI - applications kèk fòs tou pwe. Gade seksyon Dépannage a.
-
-KIJAN POU FÈ YANDEX TRADWI ABÒNMAN KLE
-
-1. ale sit entènèt Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. Si ou pa gen deja tou, klike register epi siy leve pou yon kont.
-3. Apre yo siyen leve kanpe, yo dakò pou moun kap itilize li an kontra ak klike jwenn API kle.
-4. ou te resevwa anpil siksè kle ou! Sa se yon bagay tankou trnsl.1.1.201701...
-
-KIJAN POU PRAN BLE MICROSOFT TRADWI ABÒNMAN KLE
-
-1. ka siyen yon kont Microsoft Azure nan http://azure.com
-
-2. Apre ou bezwen konnen, siyen nan ki anfas yon bèl Portal, Arizona nan http://portal.azure.com
-
-3. ajoute yon abònman Microsoft tradiktè API anfas yon bèl kont anbank ou.
-Chwazi yon abònman paiement. Yo pral mande pou yon kat kredi, men, pa bay tèt li pwoblèm, pa gen anyen ap chaje.
-Fè chwa a + nouvo opsyon.
-Fè chwa entèlijans nan lis sèvis.
-Fè chwa APIs entelektyèl sèvis.
-API tip yon opsyon pou chwazi.
-Fè chwa tradiksyon tèks
-Nan seksyon Prix Niveau, fè chwa lib Niveau (F0)
-Ranpli lòt fòm, ak lapwès bouton Créer la.
-
-4. rekipere kle D' ou.
-Ale nan tout resous yo epi chwazi a Microsoft tradiktè API ou souscrit pou yo.
-Ale nan yon kle opsyon yo ak copie ou abònman kle pou jwenn sèvis la.
-Abònman kle a se yon bagay tankou 321dcba...
-
-DÉPANNAGE
-
-1. Si pa gen app te ke, Tyeke kle abònman Microsoft/Yandex ou kòrèk.
-2. Si traduit app fòs se/pare a te kole nan chaje premye fwa a, apre ou konmanse traduction, klike sou app nan Applications tradwi onglet yo, ak nan lòt nòmal kont li nan delè devan Traduction pou lane 2000.
-3. Si app traduit a te itilize pou travay byen, men, koulye a bloke sou kòmanse, klike sou app nan Applications pou tradwi onglet ak klike sou klike pou konnen tradiksyon kache.
-4. Si gen kèk pati nan app a pa te ke, klike sou app nan Applications pou tradwi onglet pèmèt mòd agresif.
-5. Si app a toujou fòs ap fèmen nan dat, enfim tradiksyon pou app sa a e kontak m' sou sipò fil sou XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Tradwi kote"</string>
+    <string name="backup_pref_error">"Kèk erè. Te kapab pa sauvegarde préférences! Èske ou grant Superutilisateur aksè?"</string>
+    <string name="backup_pref_success">"Préférences te apiye pou depo eksteryè!"</string>
+    <string name="wut_why_null">"Te kapab pa chaje pousan-app paj gou. Fèmen ak re-louvri aplikasyon ankò."</string>
+    <string name="app_icon">"App Icône"</string>
+    <string name="example_application">"Egzanp aplikasyon"</string>
+    <string name="description">"Dekri teren"</string>
+    <string name="translate_anywhere">"Tradwi tout kote"</string>
     <string name="apps_to_translate">"Applications pou tradwi"</string>
     <string name="global_settings">"Dantèl mondyal"</string>
     <string name="instructions">"Sa pou nou fè"</string>
@@ -112,8 +68,20 @@ DÉPANNAGE
     <string name="caching">"Sèvi ak en"</string>
     <string name="caching_summary_off">"Pa enregistrement tradiksyon hors, tradwi sa plus ak pi wo done - men ka travay pou plis applications. Vire sou pou sove tradiksyon."</string>
     <string name="caching_summary_on">"Enregistrement tradiksyon hors pou li pwese tradwi ak epi itilize enfòmasyon. Fèmen pou rann enfim si app ou pa kòmanse."</string>
-    <string name="delay">"Mete anreta devan Traduction"</string>
-    <string name="delay_summary">"Mete lè a nan millisecondes pou ret tann devan traduction. Valè defo se 0, li etabli pou 1000-5000 si se traduit app a."</string>
+    <string name="delay">"Mete anreta anvan ranplase ak ke tèks"</string>
+    <string name="delay_summary">"Mete lè a nan millisecondes pou ret tann pou ranplase ak traduit tèks. Valè defo se 0. Tabli pou 1000-5000 si se traduit app a."</string>
+    <string name="delay_webview">"Mete anreta anvan pou tradwi WebViews"</string>
+    <string name="delay_webview_summary">"Mete lè a nan millisecondes pou ret tann anvan pou tradwi WebViews. Valè defo se 500. Tabli pou 0 pou ogmante vitès tradiksyon an. Tabli pou 3000-5000 si pati entènèt app pa traduction."</string>
+    <string name="analytics">"Voye anonim aksidan an ak l' done"</string>
+    <string name="analytics_summary_off">"Pa voye anonim aksidan an ak done Utilisation. Voye anonim aksidan done ede devlope fè app a pi byen."</string>
+    <string name="analytics_summary_on">"Voye anonim done aksidan an ak utilisation. Enfòmasyon prive pa transmèt travay. Done anonim aksidan an te ede devlope app a fè pi byen"</string>
+    <string name="debug">"Avanse: Vire sou Déboguer mòd."</string>
+    <string name="debug_summary_off">"Déboguer mòd se nèt. Pa ekri déboguer done pou logcat. Vire sa a sou devan voye bon rapò"</string>
+    <string name="debug_summary_on">"Déboguer mòd se sou. Ekri journaux logcat. Sa diminue pèfòmans - fèmen si se pa sa nou bezwen."</string>
+    <string name="local_on_off">"Tradwi App sa a"</string>
+    <string name="local_on_off_summary">"Fèmen pou yo sispann traduction app sa a"</string>
+    <string name="local_on_off_summary_off">"App sa a pral pa ke. Vire sou kòmanse w ap itilize oto-tradwi!"</string>
+    <string name="local_on_off_summary_on">"Sa ap fè ke. Fèmen pou nèt enfim traduction app sa a."</string>
     <string name="overRide_global">"Remplacer mondyal nòmal"</string>
     <string name="overRide_global_summary_off">"W ap itilize Global nòmal pou sa a app. vire sou pou chanje dantèl sèlman pou app sa a."</string>
     <string name="overRide_global_summary_on">"W ap itilize lokal nòmal pou sa a app. vire sou pou yo itilize Global nòmal."</string>

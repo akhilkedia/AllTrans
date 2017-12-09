@@ -23,57 +23,13 @@
     <string name="loading">"Carregando a lista de aplicações - aguarde"</string>
     <string name="clear_cache_error">"Algum erro. Pode não limpar o cache de tradução!"</string>
     <string name="clear_cache_success">"Definição da palavra Cache para este app tem sido apagado!"</string>
-	<string name="how_to_use">"COMO USAR O APLICATIVO
-
-Esta aplicação requer que você se inscrever para uma chave da Microsoft ou traduza Yandex.
-Yandex Translate suporta mais idiomas, tem um processo de inscrição muito mais fácil e requer sem cartão de crédito.
-Microsoft Translate dá melhores resultados, mas requer um cartão de crédito para se inscrever. (Mas não se preocupe, nada será cobrado.)
-
-1. na guia Configurações globais, habilite Yandex usar em vez de Microsoft, se você quiser usar o Yandex, mais desativar para usar o Microsoft.
-1. na guia Configurações globais, toque em Inserir chave de assinatura Microsoft/Yandex, introduzir a chave correspondente (ver instruções abaixo).
-2. escolher a tradução do idioma e a tradução para o idioma.
-3. os Apps para traduzir guia, encontre o app que você deseja traduzir, clique a caixa de seleção ao lado dele. Se a caixa de seleção não estiver visível, tente girar seu telefone lateralmente em modo paisagem.
-4. Feche e reinicie o aplicativo que você quer traduzida - que deve ser traduzido!
-
-ATENÇÃO - alguns apps podem forçar perto. Consulte a seção solução de problemas.
-
-COMO CONSEGUIR YANDEX DEFINIÇÃO DA PALAVRA CHAVE DE ASSINATURA
-
-1. vá ao site da Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. se você não tiver uma conta, clique em registrar e assinar acima para uma nova conta.
-3. após assinar acima, concordo com o contrato de usuário e clique em obter chave de API.
-4. você com sucesso recebeu sua chave! É algo parecido com trnsl.1.1.201701...
-
-COMO PARA OBTER O MICROSOFT AZURE TRADUZIR CHAVE DE ASSINATURA
-
-1. Cadastre-se para uma conta do Microsoft Azure no http://azure.com
-
-2. depois que você tiver uma conta, Cadastre-se no portal do Azure em http://portal.azure.com
-
-3. Adicione uma assinatura de API do Microsoft Translator para sua conta Azure.
-Escolha uma assinatura pré-paga. Exigirá um cartão de crédito, mas não se preocupe, nada será cobrado.
-Selecione a + nova opção.
-Selecione na lista de serviços de inteligência.
-Selecione serviços cognitivo APIs.
-Selecione a opção de tipo de API.
-Selecione texto Tradução
-Na seção de preços de camadas, selecione a camada livre (F0)
-Preencha o resto do formulário e pressione o botão criar.
-
-4. recupere sua chave de autenticação.
-Ir a todos os recursos e selecione a API do Microsoft Translator você inscrito.
-Vá para a opção teclas e copiar sua chave de assinatura para acessar o serviço.
-A chave de assinatura é algo como 321dcba...
-
-SOLUÇÃO DE PROBLEMAS
-
-1. se nenhum app está sendo traduzido, verifique a que sua chave de assinatura do Microsoft/Yandex está correta.
-2. se o app traduzido força fecha/Obtém preso em carregar a primeira vez depois de começar a traduzir, clique sobre o app em Apps para traduzir o guia e em outras configurações encher em atraso antes de traduzir a 2000.
-3. se o app traduzido costumava funcionar bem, mas agora ficar preso em Iniciar, clique no app apps para traduzir o guia e clique em clique para limpar Cache de tradução.
-4. se não estão sendo traduzidos algumas partes do aplicativo, clique no app apps para traduzir o guia e ativar o modo agressivo.
-5. se o app ainda força fecha, desativar a tradução para este app e entrar em contato no thread de suporte no XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Definição da palavra em qualquer lugar"</string>
+    <string name="backup_pref_error">"Algum erro. Não pode fazer backup preferências! Você conceder acesso de superusuário?"</string>
+    <string name="backup_pref_success">"As preferências têm sido apoiadas para armazenamento externo!"</string>
+    <string name="wut_why_null">"Não foi possível carregar a página de preferência Per-app. Feche e reabra o aplicativo novamente."</string>
+    <string name="app_icon">"Ícone de App"</string>
+    <string name="example_application">"Exemplo de aplicação"</string>
+    <string name="description">"Descrição"</string>
+    <string name="translate_anywhere">"Definição da palavra em todos os lugares"</string>
     <string name="apps_to_translate">"Apps para traduzir"</string>
     <string name="global_settings">"Configurações globais"</string>
     <string name="instructions">"Instruções"</string>
@@ -112,8 +68,20 @@ SOLUÇÃO DE PROBLEMAS
     <string name="caching">"Usar o cache"</string>
     <string name="caching_summary_off">"Não salvar traduções off-line, resultando em mais lento traduzir e dados mais elevados - mas pode trabalhar para mais aplicativos. Recorrer em Salvar traduções."</string>
     <string name="caching_summary_on">"Economizando traduções off-line para acelerar traduzir e usar os dados. Desliga, desativar se seu aplicativo não é iniciado."</string>
-    <string name="delay">"Atraso antes de traduzir"</string>
-    <string name="delay_summary">"Defina o tempo em milissegundos a aguardar antes de traduzir. O valor padrão é 0, definido como 1000-5000 se o app traduzido está falhando."</string>
+    <string name="delay">"Atraso antes substituindo traduziu o texto"</string>
+    <string name="delay_summary">"Defina o tempo em milissegundos a aguardar antes de substituir com o texto traduzido. O valor padrão é 0. Definido como 1000-5000 se o app traduzido está falhando."</string>
+    <string name="delay_webview">"Atraso antes de começar a traduzir WebViews"</string>
+    <string name="delay_webview_summary">"Defina o tempo em milissegundos a aguardar antes de começar a traduzir WebViews. O valor padrão é 500. Definido como 0 para aumentar a velocidade de tradução. Conjunto para 3000-5000 se parte da web app não está traduzindo."</string>
+    <string name="analytics">"Enviar Crash anônimo e dados de uso"</string>
+    <string name="analytics_summary_off">"Não envio anônimo crash e dados de uso. Envio de dados de acidente anônimo ajuda o desenvolvedor faz o app melhor."</string>
+    <string name="analytics_summary_on">"Envio de dados de crash e uso anônimos. Nenhuma informação pessoal é transmitida. Dados de acidente anônimo ajudam o desenvolvedor faz o app melhor"</string>
+    <string name="debug">"Avançado: Ative o modo Debug."</string>
+    <string name="debug_summary_off">"Depurar modo estiver desativado. Não escrever dados de depuração para logcat. Virar o jogo antes de enviar relatórios de erros"</string>
+    <string name="debug_summary_on">"Depurar o modo está ativado. Escrever os logs para logcat. Isso diminui o desempenho - desligar se não precisava."</string>
+    <string name="local_on_off">"Traduzir este App"</string>
+    <string name="local_on_off_summary">"Desligar para parar de traduzir este app"</string>
+    <string name="local_on_off_summary_off">"Este app não será traduzido. Vire para iniciar usando tradução automática!"</string>
+    <string name="local_on_off_summary_on">"Isto será traduzido. Desliga para desativar completamente a traduzir este app."</string>
     <string name="overRide_global">"Substituir as configurações globais"</string>
     <string name="overRide_global_summary_off">"Usando configurações globais para este app. vez em alterar as configurações apenas para este app."</string>
     <string name="overRide_global_summary_on">"Usando configurações de Local para este app. Turn fora usar configurações globais."</string>

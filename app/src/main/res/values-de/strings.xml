@@ -23,56 +23,12 @@
     <string name="loading">"Liste der Anwendungen - wird geladen, bitte warten"</string>
     <string name="clear_cache_error">"Einige Fehler. Übersetzung-Cache konnten nicht gelöscht werden!"</string>
     <string name="clear_cache_success">"Übersetzen Sie Cache für diese app gelöscht wurde!"</string>
-	<string name="how_to_use">"GEWUSST WIE: VERWENDEN SIE DIE ANWENDUNG
-
-Diese Anwendung erfordert, dass Sie für einen Schlüssel von Microsoft oder Yandex Translate anmelden.
-Yandex Translate unterstützt mehrere Sprachen, hat ein viel einfacher Anmeldevorgang und erfordert keine Kreditkarte.
-Microsoft Translate gibt bessere Ergebnisse, aber erfordert eine Kreditkarte zu registrieren. (Aber keine Sorge, nichts wird sein berechnet.)
-
-(1) in der Registerkarte "globale Einstellungen" verwenden Yandex anstelle von Microsoft aktivieren Sie möchten Sie verwenden, Yandex, sonst zu deaktivieren, um Microsoft zu verwenden.
-(1) in der Registerkarte "globale Einstellungen" tippen Sie auf Microsoft/Yandex Abonnement-Schlüssel eingeben, geben Sie die entsprechende Taste (siehe Anleitung unten).
-2. Wählen Sie die Sprache zu übersetzen und in Sprache übersetzt.
-(3) in den Apps zur Registerkarte "übersetzen" finden Sie die app zu übersetzen, klicken Sie auf das Kontrollkästchen neben dem gewünschten. Wenn das Kontrollkästchen nicht angezeigt wird, versuchen Sie, Ihr Telefon seitwärts ins Querformat drehen.
-(4) schließen und starten Sie die app, die übersetzt werden soll - es sollte übersetzt werden!
-
-Achtung - einige Anwendungen möglicherweise enger zwingen. Siehe Abschnitt zur Fehlerbehebung.
-
-WIE MAN ÜBERSETZEN YANDEX ABONNEMENTSCHLÜSSEL
-
-1. gehen Sie auf Yandex Website - https://tech.yandex.com/keys/get/?service=trnsl
-(2) Wenn Sie bereits ein Konto haben, klicken Sie auf registrieren und melden sich für ein neues Konto.
-(3) nach der Unterzeichnung, der allgemeinen Geschäftsbedingungen einverstanden Sie und klicken Sie API-Schlüssel zu erhalten.
-4. Sie haben erfolgreich Ihre Schlüssel erhalten! Es ist so etwas wie trnsl.1.1.201701...
-
-WIE KOMMT MAN ZU MICROSOFT AZURE ÜBERSETZEN ABONNEMENTSCHLÜSSEL
-
-1. Melden Sie sich für einen Microsoft Azure Account bei http://azure.com
-
-2. Nachdem Sie ein Konto haben, melden Sie sich bei der Azure Portal unter http://portal.azure.com
-
-(3) ein Microsoft Translator API-Abonnement zu Ihrem Azure Konto hinzufügen.
-Wählen Sie ein nutzungsbasiertes Abonnement. Benötigen Sie eine Kreditkarte, aber keine Sorge, nichts berechnet werden.
-Wählen Sie das "+" neue Option.
-Wählen Sie Intelligenz aus der Liste der Dienste.
-Wählen Sie kognitive Services-APIs.
-API-Typ die Option.
-Wählen Sie die Übersetzung des Textes
-Wählen Sie im Abschnitt Preise Tier das kostenlose Kontingent (F0)
-Füllen Sie den Rest des Formulars, und drücken Sie die Schaltfläche "erstellen".
-
-4. rufen Sie Ihre Authentifizierungs-Schlüssel.
-Gehen Sie auf alle Ressourcen, und wählen Sie Microsoft Translator API, die Sie abonniert haben.
-Gehen Sie auf die Option Schlüssel und kopieren Sie Ihren Abonnementschlüssel auf den Dienst zuzugreifen.
-Die Abonnementschlüssel ist so etwas wie 321dcba...
-
-FEHLERBEHEBUNG
-
-(1) Wenn keine app übersetzt wird, überprüfen Sie, dass Ihre Microsoft/Yandex Abonnementschlüssel korrekt ist.
-(2) wenn die übersetzten app Kraft schließt/bekommt beim Laden zum ersten Mal stecken, nachdem Sie mit der Übersetzung beginnen, klicken Sie auf die app Apps zu übersetzen Registerkarte, und andere Einstellungen ausfüllen bei der Verzögerung vor der Übersetzung bis 2000.
-(3) wenn die übersetzten app funktionieren, aber jetzt stecken am Start, klicken auf die app in Apps, Registerkarte "zu übersetzen, und klicken auf klicken Sie auf Cache löschen Übersetzung.
-4. wenn einige Teile der app nicht übersetzt sind, klicken Sie auf die app in Apps, Registerkarte "zu übersetzen, und aktivieren Sie Aggressive Mode.
-5. wenn die app Kraft schließt noch, deaktivieren Sie Übersetzung für diese app und kontaktieren Sie mich auf der Support-Thread auf XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
+    <string name="backup_pref_error">"Einige Fehler. Einstellungen konnten nicht gesichert werden! Gewähren Sie SuperUser-Zugriff?"</string>
+    <string name="backup_pref_success">"Einstellungen wurden auf externen Speicher gesichert!"</string>
+    <string name="wut_why_null">"Die pro-app-Einstellungsseite konnte nicht geladen werden. Schließen Sie und öffnen Sie erneut die Anwendung erneut."</string>
+    <string name="app_icon">"App-Symbol"</string>
+    <string name="example_application">"Beispiel-Anwendung"</string>
+    <string name="description">"Beschreibung"</string>
     <string name="translate_anywhere">"Überall zu übersetzen"</string>
     <string name="apps_to_translate">"Apps zu übersetzen"</string>
     <string name="global_settings">"Globale Einstellungen"</string>
@@ -112,8 +68,20 @@ FEHLERBEHEBUNG
     <string name="caching">"Zwischenspeichern"</string>
     <string name="caching_summary_off">"Nicht sparen Übersetzungen offline, was langsamer zu übersetzen und höhere Daten - aber auch für weitere apps arbeiten. Schalten Sie auf zu sparen Übersetzungen."</string>
     <string name="caching_summary_on">"Rettende Übersetzungen offline zu beschleunigen, übersetzen und Nutzungsdaten. Schalten Sie um zu deaktivieren, wenn die app nicht starten."</string>
-    <string name="delay">"Verzögerung vor der Übersetzung"</string>
-    <string name="delay_summary">"Stellen Sie die Zeit in Millisekunden zu warten, bevor Sie übersetzen. Standardwert ist 0, auf 1000 – 5000 festgelegt, wenn die übersetzten app abstürzt."</string>
+    <string name="delay">"Verzögerung, bevor ersetzen Textübersetzung"</string>
+    <string name="delay_summary">"Stellen Sie die Zeit in Millisekunden zu warten, bevor mit übersetzten Text ersetzen. Standardwert ist 0. Setzen Sie auf 1000 – 5000 wenn die übersetzten app abstürzt."</string>
+    <string name="delay_webview">"Verzögerung vor Beginn der WebViews übersetzen"</string>
+    <string name="delay_webview_summary">"Stellen Sie die Zeit in Millisekunden zu warten, bevor WebViews übersetzen. Standardwert ist 500. Auf 0 gesetzt, um Übersetzungsgeschwindigkeit zu erhöhen. Stellen Sie 3000-5000 wenn Teil der Web-app nicht zu übersetzen sind."</string>
+    <string name="analytics">"Senden Sie anonyme Crash und Nutzungsdaten"</string>
+    <string name="analytics_summary_off">"Nicht senden von anonymen Absturz und Nutzungsdaten. Senden von anonymen Crash-Daten hilft den Entwickler die app besser zu machen."</string>
+    <string name="analytics_summary_on">"Senden anonyme Daten zu Sturz und Nutzung. Keine persönlichen Informationen übertragen. Anonyme Crash-Daten hilft den Entwickler die app besser zu machen"</string>
+    <string name="debug">"Fortgeschritten: Debug-Modus aktivieren."</string>
+    <string name="debug_summary_off">"Debug Modus ist deaktiviert. Nicht schriftlich Debugdaten Logcat. Aktivieren Sie diese Option vor dem Senden von Fehlerberichten"</string>
+    <string name="debug_summary_on">"Debug Modus aktiviert ist. Schreiben Protokolle in Logcat. Dies verringert Leistung - ausschalten wenn nicht benötigt."</string>
+    <string name="local_on_off">"Diese App zu übersetzen"</string>
+    <string name="local_on_off_summary">"Schalten Sie um zu stoppen, diese app zu übersetzen"</string>
+    <string name="local_on_off_summary_off">"Diese app wird nicht übersetzt. Schalten Sie auf Start mit automatische Übersetzung!"</string>
+    <string name="local_on_off_summary_on">"Dies wird übersetzt. Schalten Sie vollständig zu deaktivieren, diese app zu übersetzen."</string>
     <string name="overRide_global">"Globale Einstellungen außer Kraft setzen"</string>
     <string name="overRide_global_summary_off">"Verwenden Globaleinstellungen für diese App Turn auf Einstellungen nur für diese app."</string>
     <string name="overRide_global_summary_on">"Mit lokalen Einstellungen für diese App Turn off, Globaleinstellungen zu verwenden."</string>

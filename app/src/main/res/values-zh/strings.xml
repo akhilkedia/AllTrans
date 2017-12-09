@@ -23,57 +23,13 @@
 	<string name="loading">"正在加载列表的应用程序-请稍候"</string>
 	<string name="clear_cache_error">"一些错误。无法清除翻译缓存 ！"</string>
 	<string name="clear_cache_success">"翻译缓存，因为此应用程序已被抹去 ！"</string>
-	<string name="how_to_use">"如何使用应用程序
-
-此应用程序要求您报名参加从 Microsoft 或 Yandex 翻译的关键。
-Yandex 翻译支持更多的语言，有多容易的注册过程，并且需要没有信用卡。
-微软翻译给出更好的结果，但需要一张信用卡来报名。(但别担心，什么都不会收取.)
-
-1.在全局设置选项卡，启用使用 Yandex 而不是微软，如果你想要使用 Yandex，否则禁用使用微软。
-1.在全局设置选项卡，点击输入微软/Yandex 订阅键，输入相应的键 （从下面请参阅说明）。
-2.选择从语言翻译和翻译成语言。
-3.在应用程序到翻译选项卡，找到你想要翻译，请单击它旁边的复选框的应用程序。如果该复选框不可见，请尝试旋转横盘整理您的手机变成风景模式。
-4.关闭并重新启动该应用的程序，你想要翻译 — — 它应该被翻译 ！
-
-警告-一些应用程序可能会强制关闭。请参阅疑难解答部分。
-
-如何获得 YANDEX 翻译订购密钥
-
-1.转到 Yandex 网站-https://tech.yandex.com/keys/get/?service=trnsl
-2.如果你不已经有一个帐户，单击登记和注册一个新帐户。
-3.在签署后向上，同意用户协议，单击获得 API 密钥。
-4.你已经顺利收到您的密钥 ！它有点像 trnsl.1.1.201701...
-
-如何获得微软 AZURE 翻译订购密钥
-
-1.报名参加微软 Azure 帐户在 http://azure.com
-
-2.你有一个帐户后，登录到 Azure 门户在 http://portal.azure.com
-
-3.将微软翻译 API 订阅添加到你 Azure 的帐户。
-选择现收现付的订阅。将需要一张信用卡，但别担心，没有什么将会收取。
-选择 + 新选项。
-从服务列表中选择情报。
-选择认知服务 Api。
-选择 API 类型选项。
-选择文本翻译
-在定价层部分中，选择免费的层级 (F0)
-填写表格的其它部分，然后按创建按钮。
-
-4.检索您的身份验证密钥。
-转到所有资源并选择您订阅了微软翻译 API。
-转到键选项并复制您订阅的密钥来访问服务。
-订阅关键是像 321dcba 一样的东西......
-
-疑难解答
-
-1.如果没有应用程序正在翻译，请检查你微软/Yandex 订阅密钥是否正确。
-2.如果翻译的 app 力关闭/获取卡住加载第一次在你开始翻译后，点击应用程序在应用程序翻译选项卡上，并在其他设置中填写延迟之前翻译到 2000 年。
-3.如果翻译应用程序用来做工精细，但现在卡住出发，对该应用程序在应用程序翻译选项卡上，单击，单击单击到明确翻译缓存。
-4.如果不正在翻译部分的应用程序，该应用程序在应用程序翻译选项卡上，单击并启用侵略性模式。
-5.如果应用程序仍然力关闭，禁用此应用程序的翻译和我联系上支持线程上 XDA-https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-	<string name="translate_anywhere">"翻译任何地方"</string>
+    <string name="backup_pref_error">"一些错误。无法备份的喜好 ！您授予超级用户访问权限吗？"</string>
+    <string name="backup_pref_success">"首选项已经备份到外部存储 ！"</string>
+    <string name="wut_why_null">"无法加载 %应用程序首选项页面。关闭并重新打开应用程序。"</string>
+    <string name="app_icon">"应用程序图标"</string>
+    <string name="example_application">"示例应用程序"</string>
+    <string name="description">"描述"</string>
+    <string name="translate_anywhere">"翻译无处不在"</string>
 	<string name="apps_to_translate">"翻译的应用程序"</string>
 	<string name="global_settings">"全局设置"</string>
 	<string name="instructions">"说明"</string>
@@ -112,8 +68,20 @@ Yandex 翻译支持更多的语言，有多容易的注册过程，并且需要�
 	<string name="caching">"使用高速缓存"</string>
 	<string name="caching_summary_off">"不保存脱机翻译，慢导致翻译和更高的数据-但可能更多的应用程序正常工作。转到保存翻译。"</string>
 	<string name="caching_summary_on">"保存脱机翻译加快翻译和使用数据。关闭要禁用如果您的应用程序不能启动。"</string>
-	<string name="delay">"翻译前的延迟"</string>
-	<string name="delay_summary">"设置以毫秒为单位，在翻译之前要等待的时间。默认值为 0，设置为 1000年 — — 5000，如果翻译应用程序崩溃。"</string>
+    <string name="delay">"延迟之前替换翻译的文本"</string>
+    <string name="delay_summary">"设置以毫秒为单位，在翻译后的文本替换之前要等待的时间。默认值为 0。设置为 1000年 — — 5000 如果翻译应用程序崩溃。"</string>
+    <string name="delay_webview">"之前开始翻译 WebViews 延迟"</string>
+    <string name="delay_webview_summary">"设置以毫秒为单位开始翻译 WebViews 之前要等待的时间。默认值为 500。设置为 0 以增加翻译速度。如果 web 应用程序的一部分不在翻译，设置为 3000-5000。"</string>
+    <string name="analytics">"发送匿名崩溃和使用数据"</string>
+    <string name="analytics_summary_off">"不发送匿名崩溃和使用数据。发送匿名崩溃数据有助于更好地使应用程序开发人员。"</string>
+    <string name="analytics_summary_on">"发送匿名的崩溃和使用数据。没有个人的信息传输。匿名的故障数据可以帮助开发人员更好地使应用程序"</string>
+    <string name="debug">"高级： 打开调试模式。"</string>
+    <string name="debug_summary_off">"调试模式处于关闭状态。不写入 logcat 的调试数据。打开这之前发送错误报告"</string>
+    <string name="debug_summary_on">"调试模式处于打开状态。Logcat 中写入日志。这降低了性能-关闭，如果不需要。"</string>
+    <string name="local_on_off">"翻译这个应用程序"</string>
+    <string name="local_on_off_summary">"关闭，停止翻译这个应用程序"</string>
+    <string name="local_on_off_summary_off">"这个应用程序将不被翻译。转到开始使用自动翻译 ！"</string>
+    <string name="local_on_off_summary_on">"它将被转换。关闭要完全禁用翻译这个应用程序。"</string>
 	<string name="overRide_global">"覆盖全局设置"</string>
 	<string name="overRide_global_summary_off">"全局设置打开这个应用程序在使用更改只为这个应用程序的设置。"</string>
 	<string name="overRide_global_summary_on">"使用本地设置这个应用程序打开关闭要使用全局设置。"</string>

@@ -23,57 +23,13 @@
     <string name="loading">"Laai tans lys van aansoeke - wag asseblief"</string>
     <string name="clear_cache_error">"Sommige fout. Kon nie duidelik vertaling kas!"</string>
     <string name="clear_cache_success">"Vertaal Cache vir hierdie toepassing is gewis!"</string>
-	<string name="how_to_use">"HOE GEBRUIK DIE AANSOEK
-
-Hierdie toepassing vereis dat jy inteken vir 'n sleutel van Microsoft of Yandex Translate.
-Yandex Translate ondersteun meer tale, het 'n veel makliker intekening proses en vereis geen KREDIETKAART.
-Microsoft Translate gee beter resultate, maar vereis 'n kredietkaart om in te teken. (Maar moenie bekommerd wees nie, niks sal gehef word.)
-
-1. in globale opsiesduimgids, aktiveer gebruik Yandex in plaas van Microsoft as jy wil gebruik Yandex, anders deaktiveer gebruik Microsoft.
-1. in globale opsiesduimgids, tik tik Microsoft/Yandex intekengeld sleutel, die ooreenstemmende sleutel insette (sien instruksies van onder).
-2. Kies die vertaal van taal en om taal vertaal.
-3. in die toepassings na Translate-oortjie, vind die toepassing wat jy wil vertaal, klik die merkblokkie langs dit. As die merkblokkie nie sigbaar is nie, probeer jou foon sywaarts draai in landskap modus.
-4. sluit en herbegin die program wat jy wil hê dat vertaalde - dit vertaal moet word!
-
-WAARSKUWING - sommige toepassings sluit dalk dwing. Sien die probleemoplossing artikel.
-
-HOE KRY YANDEX VERTAAL INTEKENGELD SLEUTEL
-
-1. gaan na Yandex webwerf - https://tech.yandex.com/keys/get/?service=trnsl
-2. as jy nie reeds 'n rekening, klik op register en advertensie op vir 'n nuwe rekening.
-3. na ondertekening up, stem die gebruiker ooreenkoms en kry API-sleutel geklik.
-4. jy het suksesvol jou sleutel ontvang! Dit is iets soos trnsl.1.1.201701...
-
-HOE OM MICROSOFT BLOU VERTAAL INTEKENGELD SLEUTEL
-
-1. teken vir 'n Microsoft Azure rekening by http://azure.com
-
-2. nadat jy 'n rekening het nie, teken in die diepste portaal by http://portal.azure.com
-
-3. Voeg 'n Microsoft vertaler API intekening na jou diepste rekening.
-Kies 'n pay-as-you-go inskrywing. Benodig 'n kredietkaart, maar moenie bekommerd wees nie, niks sal gehef word.
-Kies die + nuwe opsie.
-Kies intelligensie uit die lys van dienste.
-Kies kognitiewe dienste API's gereël.
-Kies die API tipe opsie.
-Kies teks vertaling
-In die pryse vlak artikel, kies die gratis vlak (F0)
-Vul die res van die vorm, en druk die skep-knoppie.
-
-4. herwin jou outentisering sleutel.
-Gaan na alle hulpbronne en die Microsoft vertaler API jy ingeteken te kies.
-Gaan na die sleutels opsie en kopieer jou subskripsie sleutel vir toegang tot die diens.
-Die intekengeld sleutel is iets soos 321dcba...
-
-PROBLEEMOPLOSSING
-
-1. Indien no-toepassing is vertaal word, kontroleer jou Microsoft/Yandex intekengeld sleutel is korrek.
-2. as die vertaalde toepassing krag sluit/kry vas op laai die eerste keer nadat jy begin vertaling, klik op die app in toepassings om oortjie vertaal, en in ander instellings vul vertraging voor vertaling 2000.
-3. as die vertaalde app gebruik om werk goed, maar nou kry vasklou te begin, klik op die app in toepassings te vertaal oortjie en klik op klik om duidelike vertaling Cache.
-4. Indien sommige dele van die app is nie vertaal word nie, klik op die app in toepassings te vertaal tab, en aggressiewe modus aktiveer.
-5. Indien die toepassing steeds krag sluit, versper vertaling vir hierdie toepassing en kontak my op die ondersteuning garing op XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Vertaal enige plek"</string>
+    <string name="backup_pref_error">"Sommige fout. Kon voorkeure rugsteun nie! Het jy supergebruiker toegang verleen?"</string>
+    <string name="backup_pref_success">"Voorkeure het gerugsteun nie aan eksterne stoor!"</string>
+    <string name="wut_why_null">"Kon nie die Per-artikels voorkeur nie bladsy laai nie. Maak toe en weer oop aansoek weer."</string>
+    <string name="app_icon">"Toepassing-ikoon"</string>
+    <string name="example_application">"Voorbeeld aansoek"</string>
+    <string name="description">"Beskrywing"</string>
+    <string name="translate_anywhere">"Vertaal oral"</string>
     <string name="apps_to_translate">"Toepassings om te vertaal"</string>
     <string name="global_settings">"Globale opsies"</string>
     <string name="instructions">"Instruksies"</string>
@@ -112,8 +68,20 @@ PROBLEEMOPLOSSING
     <string name="caching">"Gebruik Kasberging"</string>
     <string name="caching_summary_off">"Nie spaar vertalings ongekoppel, wat lei tot stadiger vertaal en hoër data - maar kan werk vir meer toepassings. Draai op te stoor vertalings."</string>
     <string name="caching_summary_on">"Stoor vertalings vanlyn te bespoedig vertaal en data gebruik. Skakel deaktiveer as jou toepassing begin nie."</string>
-    <string name="delay">"Vertraging voor vertaling"</string>
-    <string name="delay_summary">"Stel die tyd in millisekondes wag voordat vertaling. Verstek waarde is 0, stel om 1000 – 5000 as die vertaalde toepassing is gekraak."</string>
+    <string name="delay">"Vertraging voordat vervang met teks vertaal"</string>
+    <string name="delay_summary">"Stel die tyd in millisekondes wag voordat vervang met vertaalde teks. Verstek waarde is 0. Stel om 1000 – 5000 as die vertaalde toepassing is gekraak."</string>
+    <string name="delay_webview">"Vertraging voordat jy begin vertaal WebViews"</string>
+    <string name="delay_webview_summary">"Stel die tyd in millisekondes te wag voor jy begin WebViews vertaal. Verstek waarde is 500. Stel om 0 vertaling spoed toeneem. Stel om 3000-5000 as deel van web-toepassing is nie vertaling nie."</string>
+    <string name="analytics">"Stuur anoniem Crash en gebruikdata"</string>
+    <string name="analytics_summary_off">"Stuur nie anonieme crash en gebruikdata. Stuur anoniem crash data help die ontwikkelaar die app beter maak."</string>
+    <string name="analytics_summary_on">"Stuur anoniem crash en gebruik data. Geen persoonlike inligting weergegee word. Anonieme crash data help die ontwikkelaar die app beter maak"</string>
+    <string name="debug">"Gevorderde: Skakel vir foutopspoor modus."</string>
+    <string name="debug_summary_off">"Ontfout-modus is af. Skryf vir foutopspoor data nie van logcat. Skakel dit voor stuur fout verslae"</string>
+    <string name="debug_summary_on">"Ontfout-modus aangeskakel is. Skrif stompe te logcat. Dit verminder prestasie - afskakel indien nie nodig."</string>
+    <string name="local_on_off">"Vertaal hierdie toepassing"</string>
+    <string name="local_on_off_summary">"Skakel af stop vertaling hierdie toepassing"</string>
+    <string name="local_on_off_summary_off">"Hierdie toepassing sal nie vertaal nie. Skakel aan begin met Outo-vertaal!"</string>
+    <string name="local_on_off_summary_on">"Dit vertaal sal word. Skakel af heeltemal versper vertaling hierdie toepassing."</string>
     <string name="overRide_global">"Globale instellings oorheers"</string>
     <string name="overRide_global_summary_off">"Met behulp van globale instellings vir hierdie toepassing draai op om instellings slegs vir hierdie toepassing te verander."</string>
     <string name="overRide_global_summary_on">"Met behulp van plaaslike instellings vir hierdie toepassing draai af na globale instellings gebruik."</string>

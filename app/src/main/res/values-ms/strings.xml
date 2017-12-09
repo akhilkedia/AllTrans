@@ -23,57 +23,13 @@
     <string name="loading">"Memuatkan senarai permohonan - Sila tunggu"</string>
     <string name="clear_cache_error">"Beberapa ralat. Boleh Lapangkan cache terjemahan!"</string>
     <string name="clear_cache_success">"Menterjemah Cache untuk aplikasi ini telah dipadam!"</string>
-	<string name="how_to_use">"BAGAIMANA UNTUK MENGGUNAKAN APLIKASI
-
-Aplikasi ini memerlukan anda untuk mendaftar untuk kekunci dari Microsoft atau terjemahan Yandex.
-Terjemahan Yandex menyokong lebih banyak bahasa, mempunyai proses yang lebih mudah pendaftaran, dan memerlukan NO kad kredit.
-Microsoft Translate memberikan hasil yang lebih baik, tetapi memerlukan kad kredit untuk mendaftar. (Tetapi jangan risau, tiada apa-apa akan dikenakan.)
-
-1. dalam tab tetapan Global, membolehkan menggunakan Yandex daripada Microsoft jika anda ingin menggunakan Yandex, lain tidak menggunakan Microsoft.
-1. pada tab tetapan Global, tekan masukkan kekunci langganan Microsoft/Yandex, memasukkan kekunci yang sepadan (lihat arahan dari bawah).
-2. Pilih dalam menterjemah daripada bahasa dan menterjemah ke bahasa.
-3. dalam bahagian apl ke tab terjemahan, mencari aplikasi yang anda mahu untuk menterjemah, klik kotak semak bersebelahan dengannya. Jika kotak semak segerak yang tidak boleh dilihat, cuba berputar telefon anda ke arah sisi ke mod landskap.
-4. Tutup dan mulakan semula aplikasi yang hendak diterjemahkan - ia perlu diterjemah!
-
-Amaran - Some aplikasi mungkin memaksa rapat. Lihat bahagian penyelesaian.
-
-BAGAIMANA UNTUK MENDAPATKAN YANDEX MENTERJEMAH KEKUNCI LANGGANAN
-
-1. pergi ke laman web Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. Jika anda tidak mempunyai akaun, klik Daftar dan tanda sehingga satu akaun baru.
-3. selepas menandatangani sehingga, bersetuju dengan perjanjian pengguna dan klik dapatkan kunci API.
-4. anda telah berjaya menerima kunci! Ianya seakan-akan trnsl.1.1.201701...
-
-BAGAIMANA UNTUK MENDAPATKAN MICROSOFT AZURE MENTERJEMAH KEKUNCI LANGGANAN
-
-1. sign up untuk akaun Microsoft Azure di http://azure.com
-
-2. setelah anda mempunyai akaun untuk log masuk ke portal biru di http://portal.azure.com
-
-3. menambah langganan Microsoft Translator API ke akaun Hotel.
-Memilih langganan pay-as-you-go. Memerlukan kad kredit, tetapi jangan risau, tiada apa-apa akan dikenakan.
-Pilih masa + baru pilihan.
-Pilih kecerdasan daripada Senarai Perkhidmatan.
-Pilih Perkhidmatan kognitif api.
-Pilih opsyen jenis API.
-Pilih teks terjemahan
-Dalam bahagian tingkat harga, pilih peringkat percuma (F0)
-Isi borang yang lain, dan tekan butang cipta.
-
-4. membuka kekunci pengesahan anda.
-Pergi ke semua sumber dan pilih Microsoft Translator API anda melanggan.
-Pergi ke opsyen kekunci dan salinan kunci langganan untuk mengakses perkhidmatan tersebut.
-Kekunci langganan adalah seakan-akan 321dcba...
-
-PENYELESAIAN MASALAH
-
-1. Jika tiada aplikasi kini sedang diterjemah, semak kekunci langganan Microsoft/Yandex anda adalah betul.
-2. Sekiranya aplikasi diterjemahkan tentera ditutup/mendapat tersekat pada memuatkan pertama selepas anda mula menterjemah, klik pada apl dalam aplikasi untuk menterjemah tab, dan dalam persekitaran lain yang mengisi dalam kelewatan sebelum menterjemahkan hingga 2000.
-3. Jika diterjemahkan apl digunakan untuk kerja baik-baik saja, tetapi sekarang tersekat memulakan, klik pada apl dalam aplikasi untuk menterjemahkan tab dan klik pada klik untuk Cache penterjemahan yang jelas.
-4. Jika sebahagian aplikasi tidak sedang ditukar, klik pada apl dalam aplikasi untuk menterjemahkan tab dan mengaktifkan mod yang agresif.
-5. Jika aplikasi itu masih berkuat kuasa menutup, Nyahdayakan terjemahan untuk aplikasi ini dan hubungi saya di thread sokongan pada XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Menterjemahkan mana-mana sahaja"</string>
+    <string name="backup_pref_error">"Beberapa ralat. Boleh Sandarkan keutamaan! Adakah anda membenarkan akses SuperUser?"</string>
+    <string name="backup_pref_success">"Keutamaan telah disandarkan ke storan luar!"</string>
+    <string name="wut_why_null">"Tidak dapat memuatkan halaman keutamaan Per-aplikasi. Tutup dan buka semula permohonan sekali lagi."</string>
+    <string name="app_icon">"Ikon aplikasi"</string>
+    <string name="example_application">"Contoh permohonan"</string>
+    <string name="description">"Description/kawalan"</string>
+    <string name="translate_anywhere">"Menterjemah di mana-mana"</string>
     <string name="apps_to_translate">"Aplikasi untuk menterjemahkan"</string>
     <string name="global_settings">"Seting global"</string>
     <string name="instructions">"Arahan"</string>
@@ -112,8 +68,20 @@ PENYELESAIAN MASALAH
     <string name="caching">"Menggunakan cache"</string>
     <string name="caching_summary_off">"Tidak menyimpan terjemahan di luar talian, mengakibatkan perlahan menterjemah dan data yang lebih tinggi - tetapi boleh berfungsi untuk apl yang lebih banyak. Belok ke Simpan terjemahan."</string>
     <string name="caching_summary_on">"Terjemahan simpanan di luar talian untuk mempercepatkan menterjemah dan menggunakan data. Matikan untuk mematikan jika aplikasi anda tidak memulakan."</string>
-    <string name="delay">"Kelewatan sebelum menterjemah"</string>
-    <string name="delay_summary">"Tetapkan masa di milisaat menunggu sebelum menterjemah. Nilai lalai adalah 0, bakal 1000-5000 jika aplikasi diterjemahkan terhempas."</string>
+    <string name="delay">"Kelewatan sebelum menggantikan dengan teks terjemahan."</string>
+    <string name="delay_summary">"Tetapkan masa di milisaat menunggu sebelum digantikan dengan teks terjemahan. Nilai lalai adalah 0. Tetapkan untuk 1000-5000 jika aplikasi diterjemahkan terhempas."</string>
+    <string name="delay_webview">"Kelewatan sebelum memulakan untuk menterjemahkan WebViews"</string>
+    <string name="delay_webview_summary">"Tetapkan masa di milisaat menunggu sebelum mula menterjemah WebViews. Nilai lalai adalah 500. Disetkan ke 0 untuk meningkatkan kelajuan penterjemahan. Bakal 3000-5000 jika sebahagian daripada aplikasi web tidak menterjemah."</string>
+    <string name="analytics">"Hantar Anonymous Crash dan Data penggunaan"</string>
+    <string name="analytics_summary_off">"Tidak menghantar kemalangan tanpa nama dan penggunaan data. Menghantar data kemalangan anonymous membantu pemaju membuat aplikasi yang lebih baik."</string>
+    <string name="analytics_summary_on">"Menghantar data kemalangan dan penggunaan tanpa nama. Tiada maklumat peribadi yang dihantar. Data kemalangan Anonymous membantu pemaju membuat aplikasi yang lebih baik"</string>
+    <string name="debug">"Lanjutan: Hidupkan mod nyahpepijat."</string>
+    <string name="debug_summary_off">"Nyahpepijat mod dimatikan. Tidak bertulis data nyahpepijat kepada logcat. Hidupkan ini sebelum menghantar laporan ralat"</string>
+    <string name="debug_summary_on">"Nyahpepijat mod. Menulis log ke logcat. Ini mengurangkan prestasi - padamkan jika tidak diperlukan."</string>
+    <string name="local_on_off">"Menterjemah aplikasi ini"</string>
+    <string name="local_on_off_summary">"Mematikan untuk menghentikan penterjemahan aplikasi ini"</string>
+    <string name="local_on_off_summary_off">"Aplikasi ini akan diterjemahkan. Berubah untuk mula menggunakan auto-menterjemah!"</string>
+    <string name="local_on_off_summary_on">"Ini akan diterjemahkan. Matikan untuk benar-benar mematikan penterjemahan aplikasi ini."</string>
     <string name="overRide_global">"Atasi seting Global"</string>
     <string name="overRide_global_summary_off">"Menggunakan seting Global bagi mainan ini giliran terakhir untuk mengubah seting untuk aplikasi ini."</string>
     <string name="overRide_global_summary_on">"Menggunakan seting tempatan bagi mainan ini giliran untuk menggunakan seting Global."</string>

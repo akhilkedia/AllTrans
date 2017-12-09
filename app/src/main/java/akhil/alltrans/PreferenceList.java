@@ -35,17 +35,14 @@ class PreferenceList {
     public static boolean Caching;
     public static int Delay;
     public static int DelayWebView;
-    private static boolean Anon;
-    private static boolean Debug;
-    private static boolean LocalEnabled;
 
     public static void getPref(XSharedPreferences gPref, XSharedPreferences lPref, String packageName) {
         SubscriptionKey = gPref.getString("SubscriptionKey", "");
         EnableYandex = gPref.getBoolean("EnableYandex", false);
         DelayWebView = Integer.parseInt(gPref.getString("DelayWebView", "500"));
-        Anon = gPref.getBoolean("Anon", true);
-        Debug = gPref.getBoolean("Debug", false);
-        LocalEnabled = gPref.getBoolean(packageName, false);
+        //boolean anon = gPref.getBoolean("Anon", true);
+        //boolean debug = gPref.getBoolean("Debug", false);
+        //boolean localEnabled = gPref.getBoolean(packageName, false);
 
         if (lPref.contains("OverRide")) {
             if (lPref.getBoolean("OverRide", false))

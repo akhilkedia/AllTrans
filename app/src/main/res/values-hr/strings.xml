@@ -23,57 +23,13 @@
     <string name="loading">"Učitavanje popisa aplikacija - pričekajte"</string>
     <string name="clear_cache_error">"Neke pogreške. Prijevod predmemorije nije jasno!"</string>
     <string name="clear_cache_success">"Prijevod Cache za ovaj app je izbrisan!"</string>
-	<string name="how_to_use">"KAKO KORISTITI APLIKACIJU
-
-Ova aplikacija zahtijeva li se prijaviti za ključ from Microsoft ili Yandex prevoditelj.
-Yandex Prevoditelj podržava više jezika, ima mnogo lakše signup proces i zahtijeva ne kreditna kartica.
-Microsoft Translate daje bolje rezultate, ali zahtijeva kreditnu karticu da biste se prijavili. (Bez brige, ništa neće biti naplaćuje.)
-
-1. u globalne postavke kartica, omogućiti korištenje Yandex umjesto Microsoft ako želite koristiti Yandex, inače onemogućiti korištenje Microsoft.
-1. u kartici globalne postavke, dodirnite upišite Microsoft/Yandex potpisivanje ključ, ulaz na odgovarajuću tipku (vidi upute dolje).
-2. Odaberite za prevođenje iz jezika i prevesti na jezik.
-3. u aplikacije za prijevod kartica, pronaći aplikaciju koju želite prevesti, kliknite okvir uz nju. Ako potvrdni okvir nije vidljiv, pokušajte rotirajući telefon bočno u LandScape modu.
-4. Zatvorite i ponovo pokrenite aplikaciju koju želite translated - to bi trebao biti preveden!
-
-Upozorenje - neke aplikacije možda prisiliti blizu. Pogledajte odjeljak Otklanjanje poteškoća.
-
-KAKO DA BISTE DOBILI YANDEX PREVESTI POTPISIVANJE KLJUČ
-
-1. Otiđite na Yandex web stranice - https://tech.yandex.com/keys/get/?service=trnsl
-2. ako već nemate račun, kliknite registar i potpisati gore za nov račun.
-3. nakon potpisivanja gore, pristati na sporazum i klik dobiti API ključ.
-4. uspješno primite ključ! To je nešto poput trnsl.1.1.201701...
-
-KAKO SE MICROSOFT AZURE PREVESTI POTPISIVANJE KLJUČ
-
-1. Prijavite se za račun za Microsoft Azure u http://azure.com
-
-2. nakon što račun, potpisati u azurno portal u http://portal.azure.com
-
-3. dodati pretplatu na Microsoft Prevoditelj API na azurno račun.
-Odaberite pay-as-you-go pretplatu. Će zahtijevati kreditnu karticu, ali ne brinite, ništa ne naplaćuje se.
-Odaberite + nova mogućnost.
-Popisu usluga odaberite inteligencije.
-Odaberite kognitivne usluge API-ja.
-Odaberite tip API.
-Odaberite tekst prijevoda
-U odjeljku razina cijene odaberite besplatan sloj (F0)
-Ispunite ostatak obrazac i pritisnite gumb Stvori.
-
-4. vratiti ključ za provjeru autentičnosti.
-Idi na sve resurse i odaberite Microsoft Prevoditelj API ste se pretplatili na.
-Otiđite na tipke izbor i Kopiraj tvoj potpisivanje ključ za pristup usluzi.
-Potpisivanje ključ je nešto poput 321dcba...
-
-RJEŠAVANJE PROBLEMA
-
-1. ako se prevodi no aplikacija, provjeriti vaš Microsoft/Yandex potpisivanje ključ.
-2. ako prevedeno aplikacija sila zatvara/dobiva zaglavi na učitavanje prvi put nakon početka prevođenja, kliknite na app u aplikacije prevesti karticu i ostale postavke ispunite kašnjenje prije prevođenja u 2000.
-3. ako prevedeno aplikacija naviknut funkcionirati prekid, ali sada zapeti na početak, kliknite na app u aplikacije prevesti kartica i kliknite na kliknite za jasan prijevod Cache.
-4. ako neki dijelovi aplikacije su se prevodi, kliknite na app u aplikacije prevesti kartica i ovlastiti agresivan način.
-5. ako aplikacija još uvijek sila zatvara, onemogućiti prijevod za ovaj app i javite se na podršku thread na XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Prevoditi bilo gdje"</string>
+    <string name="backup_pref_error">"Neke pogreške. Postavke nisu sigurnosna kopija! Dopustite superkorisnik pristup?"</string>
+    <string name="backup_pref_success">"Postavke sigurnosno kopirane na vanjski spremnik!"</string>
+    <string name="wut_why_null">"Po želji ljepota ne može se učitati. Zatvorite i ponovno otvorite aplikaciju ponovo."</string>
+    <string name="app_icon">"Ikona aplikacije"</string>
+    <string name="example_application">"Primjer primjene"</string>
+    <string name="description">"Opis"</string>
+    <string name="translate_anywhere">"Prevesti svugdje"</string>
     <string name="apps_to_translate">"Aplikacija za prevođenje"</string>
     <string name="global_settings">"Globalne postavke"</string>
     <string name="instructions">"Upute"</string>
@@ -112,8 +68,20 @@ RJEŠAVANJE PROBLEMA
     <string name="caching">"Koristiti predmemoriju"</string>
     <string name="caching_summary_off">"Nisam spasio prijevodi izvan mreže, što je rezultiralo u sporije prevesti i više podataka - ali mogu raditi za više aplikacija. Obratiti na Spremi prijevodi."</string>
     <string name="caching_summary_on">"Spremanje prijevodi izvan mreže da biste ubrzali prevesti i korištenje podataka. Isključi to onesposobiti ako vaša aplikacija ne pokrene."</string>
-    <string name="delay">"Kašnjenje prije prevođenja"</string>
-    <string name="delay_summary">"Postavite vrijeme u milisekundama potrebno čekati prije prevođenja. Zadana vrijednost je 0, postavite na 1000 – 5000 ako prevedeno aplikacija se ruši."</string>
+    <string name="delay">"Kašnjenje prije zamjene preveden tekst"</string>
+    <string name="delay_summary">"Postavite vrijeme u milisekundama potrebno čekati prije zamijeniti prevedeni tekst. Zadana vrijednost je 0. Postavite na 1000 – 5000 ako prevedeno aplikacija se ruši."</string>
+    <string name="delay_webview">"Kašnjenje prije početka prevesti WebViews"</string>
+    <string name="delay_webview_summary">"Postavite vrijeme u milisekundama potrebno čekati prije početka prevesti WebViews. Zadana vrijednost je 500. Postavite na 0 da se poveća brzina. Postavite na 3000-5000 ako dio web aplikacija ne prevodite."</string>
+    <string name="analytics">"Slanje anonimnih sudara i podatke o korištenju"</string>
+    <string name="analytics_summary_off">"Poslati anonimni sudara i korištenje podataka. Slanje anonimnih crash podataka pomaže autor poboljšati aplikaciju."</string>
+    <string name="analytics_summary_on">"Slanje anonimnih sudara i korištenje podataka. Prenose se nikakvi osobni podaci. Anonimni crash podataka pomaže autor poboljšamo aplikaciju"</string>
+    <string name="debug">"Napredne: Uključiti Debug modu."</string>
+    <string name="debug_summary_off">"Debug način rada je isključen. Ne pišem ispravljanje podataka da logcat. Uključiti prije slanja izvješća o pogreškama"</string>
+    <string name="debug_summary_on">"Debug uključen. Pisanje dnevnika logcat. Ovo smanjuje performanse - isključiti ako nije potrebno."</string>
+    <string name="local_on_off">"Prevesti ovaj App"</string>
+    <string name="local_on_off_summary">"Isključite zaustaviti prevođenju aplikacija"</string>
+    <string name="local_on_off_summary_off">"Ovaj app će prevesti. Okrenuti na početak koristeći auto-Prevedi!"</string>
+    <string name="local_on_off_summary_on">"Ovo će biti prevedene. Isključi to potpuno onesposobiti prevođenje aplikacija."</string>
     <string name="overRide_global">"Zaobići globalne postavke"</string>
     <string name="overRide_global_summary_off">"Koristi globalne postavke za ovaj app. red na promijeniti postavke samo za ovu aplikaciju."</string>
     <string name="overRide_global_summary_on">"Koriste lokalne postavke za ovaj app. Turn off da koristi globalne postavke."</string>

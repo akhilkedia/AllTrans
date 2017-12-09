@@ -23,57 +23,13 @@
     <string name="loading">"Beetiko'on tsoolol aplicaciones - Béet espere"</string>
     <string name="clear_cache_error">"Biin ba'alo'. Je'el a despejar le caché traducción!"</string>
     <string name="clear_cache_success">"Traducir le caché utia'al u táan u ka'anatako'ob ts'o'ok sido borrada!"</string>
-	<string name="how_to_use">"CÓMO UTILIZAR LE KA'ANATAKO'OB
-
-Le ka'anatako'ob k'a'abet utia'al inscribir ti' jump'éel clave ti' Microsoft wa Yandex traducir.
-Traducir Yandex soporta asab t'aano'ob, yaan jump'éel tuukula' registro jach asab ch'a'abil yéetel k'a'abet tarjeta p'aax MA'.
-Microsoft Translate ts'aik ti' ya'ala'al máaxo'ob máano'ob, ba'ale' k'a'abet jump'éel tarjeta p'aax utia'al u inscribir. (Ba'ale' Ma'chen, mixba'al yaan u beel cargado.).
-
-1 ti' le ju'unil tu'ux Configuración Global, permiten utilizar Yandex kúuchil Microsoft wa k'áato' utilizar Yandex, desactivar láak' utia'al u utilizar Microsoft.
-1 ti' le ju'unil tu'ux Configuración Global, pulse tecla suscripción Microsoft leti' Yandex wokol, le clave correspondiente ti' yaan (wilo'obe' le t'aano'ob u kaambal).
-2 elija le traducir ti' le t'aano' ka traducir le t'aano'.
-3 ti' le aplicaciones u béeytal a traducir, kaxtik le ka'anatako'ob u k'áato' traducir, u beetik clic ti' le casilla verificación yiknal leti'. Wa u casilla verificación ma' le visible, trate u girar le sutuchi'ilt'aan ti' le tu'ux u modo ma' chéen óolal.
-4 mak yéetel reinicie yo'olal u k'áato' traducido - k'a'ana'an u traducido!
-
-ADVERTENCIA: Jayp'éel aplicaciones k'a'ana'antal forzar cierre. Consulte le sección solución toop.
-
-CÓMO IN KAXTIK YANDEX TRADUCIR CLAVE SUSCRIPCIÓN
-
-1 xi'iken le ts'ono'oto' web ti' Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2 wa mina'an teech jump'éel yilaje', beetik clic ti' registro yéetel joronts'íibtaj utia'al ka'anal utia'al jump'éel túumben yilaje'.
-3 ts'o'okok joronts'íibtaj utia'al ka'anal, táan de acuerdo con le usuario yéetel u beetik clic ti' kéen p'áatak clave API.
-4 tech ts'o'ok k'a'am belal u clave! Leti' ba'al bey je'el bix trnsl.1.1.201701...
-
-CÓMO KÉEN P'ÁATAK MICROSOFT AZURE TRADUCIR CLAVE SUSCRIPCIÓN
-
-1 registrar a utia'al jump'éel yilaje' Microsoft Azure ti' http://azure.com
-
-2 ts'o'okok u yaantal jump'éel yilaje', máaxo'ob xoknáalo'obo' ti' le portal ku Azure tu http://portal.azure.com
-
-3 ku ts'áabal jump'éel suscripción API ti' le traductor Microsoft ti' u yilaje' ch'ooj.
-Elegir jump'éel suscripción bo'ol. Requerirá jump'éel tarjeta p'aax, ba'ale' tu Ma'chen, ma' u cargará.
-Seleccionar le + túumben opción.
-Seleccione le tsoolol áantajo'ob na'at.
-Seleccione yéetel cognitivos ti' le API.
-Seleccione le opción bin yano'ob API.
-Seleccione analte'o' traducción
-Ti' le sección nivel u tojol, seleccione le nivel libre (F0).
-Llene u yaalab le formulario yéetel pulse le botón crear.
-
-4 recuperar u clave autenticación.
-Bin tu láakal le nu'ukulo'ob ka seleccione u API le traductor Microsoft tech suscrito ti'.
-Bin u opción claves yéetel copiar le clave suscripción utia'al tsáabaltio'ob áantaj le mayaj.
-Le clave suscripción le ba'al bey 321dcba...
-
-SOLUCIÓN TOOP
-
-1 wa yo'olal ma' u táan traduciendo, verifique u clave suscripción Microsoft leti' Yandex Jach ma'alob.
-2 le ka'anatako'ob traducida muuk' muuts' leti' consigue pegado te' beetiko'on le yáax ka'atéen ka' u traducir, u mentik clic yo'olal ti' aplicaciones utia'al u traducir u ju'unil tu'ux ka ti' uláak' programación Introduzca retardo bey ma' traducir 2000.
-3 wa meyajtiko'ob le ka'anatako'ob traducida ti' funcionan ma'alob, ba'ale' bejla'e' ku atascan ti' le Chúunul, beetik clic yo'olal ti' aplicaciones utia'al u traducir u ju'unil tu'ux ka beetik clic ti' beetik clic ti' Clear Cache u traducción.
-4 wa ma' u táan traduciendo Jayp'éel pak'chaje' le ka'anatako'ob, beetik clic yo'olal ti' aplicaciones utia'al u traducir u ju'unil tu'ux ka activar le modo agresivo.
-5 wa le ka'anatako'ob láayli' fuerza muuts', desactivar u traducción le ka'anatako'ob ka contactar tin yéetel ti' le suumo' bix ti' XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Traducir ti' je'el ba'ax kúuchil"</string>
+    <string name="backup_pref_error">"Biin ba'alo'. Je'el ma' ju'unil ti' seguridad preferencias! Tech ts'áaik ti' muuk' superusuario."</string>
+    <string name="backup_pref_success">"Preferencias u sido respaldadas ti' almacenamiento externo!"</string>
+    <string name="wut_why_null">"Ma' u páajchaj u kuchik u linki abas kaambal u preferencia tumen le ka'anatako'ob. Mak ka sut Je'e le ka'anatako'ob ka'a."</string>
+    <string name="app_icon">"Icono le ka'anatako'ob"</string>
+    <string name="example_application">"Ejemplo ka'anatako'ob"</string>
+    <string name="description">"Descripción"</string>
+    <string name="translate_anywhere">"Traducir ti' tuláakal tu'ux"</string>
     <string name="apps_to_translate">"Aplicaciones utia'al u traducir"</string>
     <string name="global_settings">"Configuración global"</string>
     <string name="instructions">"T'aano'ob"</string>
@@ -112,8 +68,20 @@ SOLUCIÓN TOOP
     <string name="caching">"Almacenamiento tu caché búukinta'al"</string>
     <string name="caching_summary_off">"Ma' ooks le traducciones paach internet ichil, ts'áaik tumen resultado asab lento traducir yéetel mayores datos - ba'ale' je'el meyaj utia'al u asab aplicaciones. Tak ooks le traducciones."</string>
     <string name="caching_summary_on">"Ahorro traducciones offline yo'osal traducir yéetel utilizar datos. Desactivar utia'al u desactivar wa u ka'anatako'ob ma' u Revolución."</string>
-    <string name="delay">"Ku xaantal bey ma' traducir"</string>
-    <string name="delay_summary">"Configurar k'iin ti' milisegundos pa'ta'al bey ma' traducir. Ku predeterminado le 0, ba'ax ku je'ets'el ti' 1000-5000 wa u lúubuk le ka'anatako'ob traducida."</string>
+    <string name="delay">"Ku xaantal bey ma' reemplazar yéetel analte'o' traducido"</string>
+    <string name="delay_summary">"Configurar k'iin ti' milisegundos pa'ta'al bey ma' sustituir yéetel le analte'o' traducido. Ku predeterminado le 0. Je'ets'el tu 1000-5000 wa u lúubuk le ka'anatako'ob traducida."</string>
+    <string name="delay_webview">"Ku xaantal bey ma' comenzar traducir WebViews"</string>
+    <string name="delay_webview_summary">"Configurar k'iin ti' milisegundos pa'ta'al bey ma' comenzar traducir WebViews. Le je'o' predeterminado jach 500. Je'ets'el tu 0 utia'al u ya'abtal le velocidad traducción. Je'ets'el tu 3000-5000 wa ma' táan traduciendo ti' le ka'anatako'ob web."</string>
+    <string name="analytics">"Túuxtik teech anónimo loobo' yéetel datos búukinta'al"</string>
+    <string name="analytics_summary_off">"Ma' túuxtik teech anónimo loobo' yéetel datos búukinta'al. Túuxtik datos loobo' anónimo áantaj ti' le desarrollador le ka'anatako'ob ma'alob."</string>
+    <string name="analytics_summary_on">"Túuxtik teech u datos loobo' ka takik anónimos. Mix t'aan máaxo'ob ku transmite. Anónimo loobo' data ku yáantik le desarrolladores ma'alo'obkíinsiko'ob u ka'anatako'ob"</string>
+    <string name="debug">"Avanzado: Activar modo depuración."</string>
+    <string name="debug_summary_off">"Debug mode u apagado. Ma' ts'íibtik datos depuración ti' le logcat. T'abik bey ma' túuxtik informes errores"</string>
+    <string name="debug_summary_on">"Depuración modo u activado. Ts'íibtik registros le logcat. Le ba'ala' disminuye le rendimiento - bo'otiktech wa ma' k'a'abéet."</string>
+    <string name="local_on_off">"Traducir le ka'anatako'ob"</string>
+    <string name="local_on_off_summary">"Desactivar utia'al u p'atik u traducir le ka'anatako'ob"</string>
+    <string name="local_on_off_summary_off">"Le ka'anatako'ob ma' u traducirán. Vuelta in chuun usando kiis - translate!"</string>
+    <string name="local_on_off_summary_on">"Le je'ela' ku traducirá. Desactivar utia'al u desactivar completamente u traducir le ka'anatako'ob."</string>
     <string name="overRide_global">"Invalidar le configuración Global"</string>
     <string name="overRide_global_summary_off">"Utilizando le configuración Global ti' le giro le bobina ti' utia'al k'ex le configuración chéen utia'al le ka'anatako'ob."</string>
     <string name="overRide_global_summary_on">"Parámetros locales ti' le giro u bobina u utilizar le configuración Global."</string>

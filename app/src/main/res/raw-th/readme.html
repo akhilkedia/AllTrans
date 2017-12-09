@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">สารบัญ</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">AllTrans อะไร</a></li>
+        <li><a href="#videos">วิดีโอ</a></li>
+        <li><a href="#how-to-use-alltrans">วิธีการใช้ AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">วิธีรับคีย์แปล Yandex</a></li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">วิธีรับคีย์แปลของ Microsoft
+            Azure</a></li>
+        <li><a href="#troubleshooting">การแก้ไขปัญหา</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">แอไม่มีการแปลในแอ</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">ติดอยู่ในหน้าจอเปิด app
+                    แปล</a></li>
+                <li><a href="#the-translated-app-is-force-close">แอแปลเป็น Force Close</a></li>
+                <li><a href="#a-particular-app-is-not-being-translated">ไม่มีการแปลแอปใด ๆ</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">ไม่มีการแปลเป็น app เกม</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">ถ้าคุณยังคงมีปัญหา
+                        Force Close หรือส่วนของ app ไม่ถูกแปล</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">บริจาค</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">AllTrans อะไร</h2>
+
+    <p>จะแทนที่<strong>ข้อความทั้งหมดในแอ</strong>ในภาษาจากภาษาหนึ่งไปยังอีกในขณะทำงาน</p>
+
+    <p>บอกตัวอย่างเช่น แอในเยอรมัน ผู้ใช้เลือกชื่อแอป และการแปลงภาษาต้อง
+        (พูดภาษาเยอรมันเป็นภาษาอังกฤษ)</p>
+
+    <p>แล้ว เมื่อใดก็ ตามที่ผู้ใช้ใช้แอพที่จำเป็น ข้อความทั้งหมด<strong>ได้ทุก</strong>ที่ใน app
+        จะถูกแทน โดยเทียบเท่าภาษาอังกฤษ</p>
+
+    <p>นี่คือสิ่งที่คล้ายกับวิธีการทำงานของ Google แปลภาษาใน Chrome</p>
+
+    <p><strong>หมายเหตุ</strong>- เนื่องจากข้อจำกัดทางเทคนิค นี้จะไม่ทำงานกับเกมมากมาย
+        ไม่มีอะไรสามารถทำได้เกี่ยวกับเรื่องนี้</p>
+
+    <h2 id="videos">วิดีโอ
+
+        <p>วิดีโอ (ภาษาอังกฤษ) ที่แสดงวิธีการใช้ AllTrans โดย Hacks โปรแกรมเบ็ดเตล็ดบน Youtube <a
+                href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+        </p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">วิธีการใช้ AllTrans</h2>
+
+        <p>นี้โปรแกรมประยุกต์<strong>ต้องมี</strong>คุณสมัคร<strong>ฟรี</strong>จาก Microsoft หรือ
+            Yandex แปล ดูคำแนะนำด้านล่างในการได้รับคีย์</p>
+
+        <p>แปล Yandex สนับสนุนภาษาเพิ่มเติม มีเป็นมากง่ายต่อการลงทะเบียน และต้อง<strong>ไม่มีบัตรเครดิต</strong>
+        </p>
+
+        <p>Microsoft แปลให้<strong>แปลดีกว่า</strong>แต่ต้องใช้บัตรเครดิตเพื่อลงทะเบียน
+            (แต่ไม่ต้องกังวล ไม่มีอะไรจะคิด.)</p>
+
+        <ol>
+            <li>ตรวจสอบให้แน่ใจว่า ได้เปิด app Installer ล Xposed AllTrans -> โมดู</li>
+            <li>เปิดแอพ AllTrans ในแท็บ "การตั้งค่าสากล" เปิดใช้ "ใช้ Yandex แทนที่จะ Microsoft"
+                ถ้าคุณต้องการใช้ Yandex ปิดใช้งานการใช้ Microsoft
+            </li>
+            <li>เลือก "แปลจากภาษา" และ "แปลภาษา"</li>
+            <li>ในแท็บ "แอการแปล" ค้นหาแอพที่คุณต้องการแปล คลิกกล่องกาเครื่องหมายอยู่ถัดจาก
+                ถ้ามองไม่เห็นกล่องกาเครื่องหมาย ลองหมุนไปด้านข้างของโทรศัพท์ในโหมดแนวนอน
+            </li>
+            <li>ปิด และรีสตาร์ทแอพที่ต้องการแปล - ควรแปล</li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">วิธีรับคีย์แปล Yandex</h2>
+
+        <ol>
+            <li>ไป<a href="https://tech.yandex.com/keys/get/?service=trnsl">Yandex แปลเว็บไซต์
+                API</a></li>
+            <li>ถ้าคุณไม่มีบัญชีผู้ใช้ คลิก "ลงทะเบียน" และลงชื่อสมัครใช้บัญชีใหม่</li>
+            <li>หลังจากลงทะเบียน ยอมรับข้อตกลงผู้ใช้ และคลิก "รับ API Key"</li>
+            <li>คุณได้รับรหัสของคุณเรียบร้อยแล้ว</li>
+        </ol>
+
+        <p>คีย์บอกเป็นบางอย่างเช่น "trnsl.1.1.201701..."</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">วิธีรับคีย์แปลของ Microsoft Azure</h2>
+
+        <ol>
+            <li>ลงทะเบียนสำหรับบัญชี Microsoft Azure<br>ถ้าคุณไม่มีบัญชีผู้ใช้ Azure ลงทะเบียนสำหรับ<a
+                    href="http://azure.com">บัญชี Microsoft Azure</a></li>
+            <li>หลังจากที่คุณมีบัญชีผู้ใช้ ลง<a href="http://portal.azure.com">เว็บไซต์ Azure</a>
+            </li>
+            <li>เพิ่มเป็น "Microsoft แปล API สมัครสมาชิก" ในบัญชีของ Azure<br>
+                <ol>
+                    <li>เลือกการบอกรับสมาชิก "จ่าย as-you-go" จะต้องมีบัตรเครดิต แต่ไม่ต้อง กังวล
+                        ไม่มีค่าธรรมเนียม
+                    </li>
+                    <li>เลือกตัวเลือก "+ ใหม่</li>
+                    <li>เลือก "ข้อมูลจากรายการของบริการ</li>
+                    <li>เลือก "APIs บริการองค์ความรู้"</li>
+                    <li>เลือกตัวเลือก "API ชนิด"</li>
+                    <li>เลือก "แปลข้อความ"</li>
+                    <li>ในส่วน "ระดับราคา" เลือก "ฟรีเทียร์ (F0)"</li>
+                    <li>กรอกส่วนที่เหลือของแบบฟอร์ม และกดปุ่ม</li>
+                </ol>
+            </li>
+            <li>ดึงข้อมูลของคุณ "กุญแจ"<br>
+                <ol>
+                    <li>ไปที่ "ทรัพยากรทั้งหมด" และเลือก API แปล Microsoft ที่คุณได้สมัคร</li>
+                    <li>ไปที่ "คีย์" ตัวเลือก และคัดลอกคีย์สมัครสมาชิกของคุณเพื่อเข้าถึงบริการ</li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>คีย์บอกเป็นบางอย่างเช่น "321dcba..."</p>
+
+
+        <h2 id="troubleshooting">การแก้ไขปัญหา</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">แอไม่มีการแปลในแอ</h3>
+
+        <ul>
+            <li>ถ้าไม่มี app คือการแปล การตรวจสอบการเปิดใช้งานตัวติดตั้งล Xposed "AllTrans" ->
+                โมดู
+            </li>
+            <li>ตรวจสอบว่า คีย์ของคุณ" Microsoft/Yandex บอก" ถูกต้อง</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">ติดอยู่ในหน้าจอเปิด app แปล</h3>
+
+        <ul>
+            <li>คลิกที่ชื่อแอใน "แอปที่แปล" แท็บ และคลิกที่ "คลิกเพื่อล้างแปลแค"</li>
+            <li>ถ้านี่เป็นครั้งแรกที่คุณเริ่มแปล app นี้ คลิกที่ชื่อแอ ในแท็บ "แอการแปล" และ
+                "การหน่วงเวลาก่อนที่จะ Replcaing กับแปลข้อความ" กรอก "การตั้งค่าอื่นๆ" 2000
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">แอแปลเป็น "บังคับปิด"</h3>
+
+        <ul>
+            <li>คลิกที่ชื่อแอใน "แอปที่แปล" แท็บ และคลิกที่ "คลิกเพื่อล้างแปลแค"</li>
+            <li>คลิกที่ชื่อแอในแท็บ "แอการแปล" ใน "การตั้งค่าอื่นๆ" และกรอก และ
+                "การหน่วงเวลาก่อนที่จะ Replcaing กับแปลข้อความ" 2000
+            </li>
+            <li>คลิกที่ชื่อแอใน "แอปที่แปล" แท็บ และใน "การตั้งค่าอื่นๆ" กรอกข้อมูล
+                "หน่วงเวลาก่อนที่จะเริ่มการแปล WebViews" 2000
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">ไม่มีการแปลแอปใด ๆ</h3>
+
+        <ul>
+            <li>คลิกที่ชื่อแอใน "แอปที่แปล" แท็บ และใน "การตั้งค่าอื่นๆ" กรอกข้อมูล
+                "หน่วงเวลาก่อนที่จะเริ่มการแปล WebViews" 2000
+            </li>
+            <li>หากบางส่วนของแอจะยังคงไม่มีการแปล คลิกที่ชื่อแอใน "แอปที่แปล" แท็บ และเปิดใช้งาน
+                "โหมดก้าวร้าว"
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">ไม่มีการแปลเป็น app เกม</h3>
+
+        <ul>
+            <li>เนื่องจากข้อจำกัดทางเทคนิค "AllTrans" จะไม่ทำงานกับเกมมากมาย
+                ไม่มีอะไรสามารถทำได้เกี่ยวกับเรื่องนี้
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            ถ้าคุณยังคงมีปัญหาเช่น "บังคับปิด" หรือส่วนของ app ไม่ถูกแปล</h3>
+
+        <p>ติดต่อฉันสำหรับการสนับสนุน เมื่อคุณทำ จะต้องอย่างน้อยข้อมูลต่อไปนี้-</p>
+
+        <ol>
+            <li>ชื่อของ app พร้อมกับ<strong>ลิงค์เพื่อดาวน์โหลด app</strong>จากบางร้าน APK เช่น
+                Google Play Store, CoolApk ฯลฯ
+            </li>
+            <li>ของโทรศัพท์ Android รุ่น</li>
+            <li>"Logcat" ของคุณพยายามที่จะเปิดแอพซึ่งช่วยให้ปัญหา คุณสามารถใช้แอปพลิเคชันฟรีบน Play
+                Store สำหรับนี้ เช่น<a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">นี้</a>
+            </li>
+        </ol>
+
+        <p>เมื่อคุณมีข้างต้น ติดต่อฉันบน<a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            สนับสนุนเธรด</a><br>นอกจากนี้คุณยังสามารถรายงานปัญหาใน<a
+                href="https://github.com/akhilkedia/AllTrans">Github ของโครงการ</a></p>
+
+
+        <h2 id="donations">บริจาค</h2>
+
+        <p>ถ้าคุณชอบโครงการนี้ ซื้อกาแฟ :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

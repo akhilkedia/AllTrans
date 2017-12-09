@@ -23,57 +23,13 @@
     <string name="loading">"Chaw thau khoom sau rau ntawm daim ntaub ntawv - thov tos"</string>
     <string name="clear_cache_error">"Tej kev ua yuam kev. Yuav tsis ntshiab txhais lus cache!"</string>
     <string name="clear_cache_success">"Pes Cache rau no app muaj erased lawm!"</string>
-	<string name="how_to_use">"YUAV SIV DAIM NTAWV THOV LI CAS
-
-Daim ntawv thov no yuav tsum zwm npe rau ib qhov tseem ceeb los ntawm Microsoft lossis Yandex Translate.
-Yandex Translate txhawb ntau hom lus, muaj cov tau ntau yooj yim signup neej, thiab yuav tsum tsis muaj CREDIT CARD.
-Microsoft Translate yuav qhia tau zoo, tab sis yuav tsum tau ib daim credit card mus zwm npe. (Tiam sis tsis txhob poob siab, tsis muaj dab tsi yuav tau them.)
-
-1. nyob rau hauv ntiaj teb no tej chaw tab, pab kom siv Yandex siv Microsoft yog koj xav siv Yandex, lwm lov tes taw siv Microsoft.
-1. nyob rau hauv ntiaj teb no tej chaw tab, coj mus rhaub sau Microsoft/Yandex Subscription qhov tseem ceeb, input tus yuam sij coj (saib yam lus qhia txij hauv qab no).
-2. xaiv tus txhais los ntawm lus thiab txhais lus rau hom lus.
-3. nyob rau lub Apps los mus Translate tab, nrhiav qhov app koj xav txhais, nias tus checkbox ntawm nws. Yog tus checkbox yuav tsis pom, ua tiag rotating koj xov toj mus rau hom toj roob hauv pes.
-4. kaw thiab Updated 10/22/07/f.Triplett app tus koj xav txhais - nws yuav tsum tau muab txhais losis siv!
-
-Lus ceeb toom - ib co apps yuav yuam kom zoo. Saib sab lus Troubleshooting.
-
-CAS TAU YANDEX TXHAIS YUAM SIJ SUBSCRIPTION
-
-1. mus rau lub Website Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. Yog hais tias koj tsis tau muaj tus account, nyem register thiab xee npe tuaj rau ib tus account tshiab.
-3. tom qab kos tom, tus neeg siv daim ntawv cog lus pom zoo thiab nias tau yuam API.
-4. koj ntse tau txais koj qhov tseem ceeb. Nws yog ib yam dab tsi zoo li trnsl.1.1.201701...
-
-CAS TAU MICROSOFT AZURE TXHAIS LUS YUAM SIJ SUBSCRIPTION
-
-1. npe rau ib tus account Microsoft Azure ntawm http://azure.com
-
-2. Thaum koj muaj ib tug account, kos rau hauv cov Azure portal ntawm http://portal.azure.com
-
-3. ntxiv ib Microsoft lub tshuab txhais lus API subscription rau koj tus account Azure.
-Xaiv ib subscription pay-as-you-go. Yuav kom tau credit card, tiam sis tsis txhob poob siab, tsis muaj dab tsi yuav tau them.
-Xaiv qhov + tshiab xaiv.
-Xaiv txoj kev ntse los ntawm daim ntawv teev cov kev pab.
-Xaiv cov kev txawj ntse APIs.
-Xaiv hom API qhov.
-Xaiv phau ntawv txhais lus
-Nyob rau hauv Pricing Tier, xaiv qhov Tier dawb (F0)
-Sau kom tag daim ntawv, thiab nias lub pob kom tshwmsim.
-
-4. retrieve koj authentication yawm sij.
-Mus rau cov chaw muab kev pab thiab xaiv tau ntau Microsoft lub tshuab txhais lus API koj cuv npe rau.
-Mus rau cov tuav kev xaiv thiab luam koj cov subscription yuam sij rau hauv tsev, cov kev pab cuam.
-Tus yuam sij subscription yog ib yam dab tsi zoo li 321dcba...
-
-TROUBLESHOOTING
-
-1. yog txhais ua yog thaum tsis muaj app, kos koj yuam sij Microsoft/Yandex Subscription ntawd puas muaj tseeb.
-2. Yog hais tias tus txhais app quab yuam muab kaw/heev daig rau loading tus thawj zaug tom qab koj pib txhais lus, koj nias qhov report app tus nyob Apps los txhais tab, thiab nyob rau lwm lub chaw sau qeeb ua ntej txhais lus rau 2000.
-3. Yog hais tias tus txhais app siv los ua fine, tab sis tam sim no tau daig rau pib, ndliv lub app hauv Apps los txhais tab, thiab nias rau ntawm nyem qhov tseeb txhais lus Cache.
-4. yog qee qhov chaw hauv lub yeej tsis tau txhais, nias rau lub app hauv Apps los txhais tab, thiab pab tau cov hom txhoj puab heev.
-5. yog lub tseem muab kaw Force, lov tes taw txhais lus rau no app thiab hu rau kuv ntawm kev them nyiaj yug xov rau XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Txhais nyob txhua qhov chaw"</string>
+    <string name="backup_pref_error">"Tej kev ua yuam kev. Yeej tsis backup nyiam! Koj puas tau pab SuperUser ntawv?"</string>
+    <string name="backup_pref_success">"Xav muaj tau phwj kom cia lwm!"</string>
+    <string name="wut_why_null">"Yuav tsis thauj cov nplooj ntawv Per-app nyiam. Kaw thiab rov qhib thov dua."</string>
+    <string name="app_icon">"APP Icon"</string>
+    <string name="example_application">"Piv txwv li ntawv"</string>
+    <string name="description">"Hauj lwm lawm"</string>
+    <string name="translate_anywhere">"Qhov txhia chaw txhais"</string>
     <string name="apps_to_translate">"Apps los txhais"</string>
     <string name="global_settings">"Ntiaj teb no tej chaw"</string>
     <string name="instructions">"Cov lus qhia"</string>
@@ -112,8 +68,20 @@ TROUBLESHOOTING
     <string name="caching">"Siv Caching"</string>
     <string name="caching_summary_off">"Tsis saving translations offline, uas ua rau slower txhais lus thiab ntaub ntawv ntau - tab sis tej zaum yuav ua hauj lwm rau ntau apps. Tig rau los ob leeg tuav tseg translations."</string>
     <string name="caching_summary_on">"Txuag translations offline rau kom txhais thiab siv tau cov ntaub ntawv. Xu siab mus lov tes taw yog koj app tsis pib."</string>
-    <string name="delay">"Qeeb ua ntej txhais lus"</string>
-    <string name="delay_summary">"Teem lub sij hawm nyob rau milliseconds tos ua ntej yuav txhais lus. Vim tus nqi yog 0, muab rau 1000 tauj – 5000 yog tus txhais app crashing."</string>
+    <string name="delay">"Qeeb ua ntej qhov uas txhais ua phau ntawv"</string>
+    <string name="delay_summary">"Teem lub sij hawm nyob rau milliseconds tos ua ntej yuav hloov cov kev txhais ntawv. Vim tus nqi yog 0. Teev rau 1000 tauj – 5000 yog tus txhais app crashing."</string>
+    <string name="delay_webview">"Qeeb ua ntej pib los txhais WebViews"</string>
+    <string name="delay_webview_summary">"Teem lub sij hawm nyob rau milliseconds tos ua ntej pib mus txhais lus WebViews. Vim tus nqi yog 500. Teem caij mus 0 kom ceev txhais lus. Teev rau 3000-5000 yog ib feem ntawm qhov web app no tsis txhais lus."</string>
+    <string name="analytics">"Xa Anonymous tsoo thiab ntaub ntawv pab"</string>
+    <string name="analytics_summary_off">"Tsis xa anonymous tsoo thiab pab cov ntaub ntawv. Xa anonymous tsoo cov pab tus tsim tawm lub kom zoo."</string>
+    <string name="analytics_summary_on">"Xa anonymous tsoo thiab pab cov ntaub ntawv. Tsis muaj tej ntaub ntawv uas yuav kis tau. Anonymous tsoo cov ntaub ntawv yuav pab tus tsim tawm zoo dua ua lub"</string>
+    <string name="debug">"Lawm: Tig rau hom Debug."</string>
+    <string name="debug_summary_off">"Debug hom yog rho tawm hauj lwm. Tsis sau ntaub ntawv debug rau logcat. Taws no ua ntej yuav xa cov ntawv hais txog txoj kev ua yuam kev"</string>
+    <string name="debug_summary_on">"Debug hom no nyob. Sau ntawv cav mus logcat. Qhov no decreases kev kawm - xu siab yog tsis xav tau."</string>
+    <string name="local_on_off">"Txhais lus no App"</string>
+    <string name="local_on_off_summary">"Xu siab txhais lus no app nres"</string>
+    <string name="local_on_off_summary_off">"No app yuav tsis txhais. Tig rau pib siv nws pib-txhais lus!"</string>
+    <string name="local_on_off_summary_on">"Qhov no yuav muab txhais. Xu siab mus kiag li lov tes taw txhais lus no app."</string>
     <string name="overRide_global">"OverRide ntiaj teb no tej chaw"</string>
     <string name="overRide_global_summary_off">"Siv tej chaw thoob ntiajteb no Market tig rau hloov chaw rau no app xwb."</string>
     <string name="overRide_global_summary_on">"Siv lub chaw no Market tig tuaj siv tej chaw thoob ntiajteb."</string>

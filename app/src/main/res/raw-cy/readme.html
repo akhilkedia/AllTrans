@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">Tabl cynnwys</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">Beth yw'r AllTrans</a></li>
+        <li><a href="#videos">Fideos</a></li>
+        <li><a href="#how-to-use-alltrans">Sut i ddefnyddio AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Sut i gael cyfieithu Yandex allweddol</a>
+        </li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Sut i gael allwedd Azure gyfieithu
+            Microsoft</a></li>
+        <li><a href="#troubleshooting">Datrys problemau</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">Ap dim yn cael ei gyfieithu
+                    mewn unrhyw app</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">Mae ap wedi'i gyfieithu yn
+                    sownd mewn sgrin agoriadol</a></li>
+                <li><a href="#the-translated-app-is-force-close">Ap wedi'i chyfieithu yn rym yn
+                    agos</a></li>
+                <li><a href="#a-particular-app-is-not-being-translated">Nid yw ap penodol yn cael ei
+                    gyfieithu</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">Nid yw ap gêm yn cael ei
+                    gyfieithu</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">Os
+                        ydych yn dal i fod problemau fel grym agos neu rannau o'r ap nid yn cael ei
+                        gyfieithu</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">Rhoddion</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">Beth yw'r AllTrans</h2>
+
+    <p>Mae'n disodli <strong>pob testun mewn ap</strong> mewn iaith o un iaith i'r llall wrth i'r
+        rhaglen redeg.</p>
+
+    <p>Ddweud er enghraifft mae app yn Almaeneg. Mae'r defnyddiwr yn dewis enw ap, ac addasu iaith
+        gofynnol (German ddweud i'r Saesneg).</p>
+
+    <p>Yna pryd bynnag y mae'r defnyddiwr yn defnyddio ap ofynnol, fod yr holl destun, <strong>ANYWHERE</strong>
+        yn yr ap, disodlir gan y fersiwn Saesneg gyfatebol.</p>
+
+    <p>Mae hyn yn rhywbeth tebyg i'r ffordd y mae Google Translate yn gweithio yn Chrome.</p>
+
+    <p><strong>Nodyn</strong> -oherwydd y terfynau technegol, hyn fydd gweithio gyda llawer o gemau.
+        Gall gwneud dim am hyn.</p>
+
+    <h2 id="videos">Fideos
+
+        <p>Dangos sut i ddefnyddio AllTrans gan teclyn Hacks ar Youtube <a
+                href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+            fideo (yn Saesneg)</p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">Sut i ddefnyddio AllTrans</h2>
+
+        <p>Y cais yn <strong>ei gwneud yn ofynnol</strong> i chi gofrestru ar gyfer <strong>rhad ac
+            am ddim</strong> yn allweddol gan Microsoft neu Yandex Translate. Darllenwch y
+            cyfarwyddiadau isod ar sut i gael y bysellau.</p>
+
+        <p>Mae Yandex Translate cefnogi mwy o ieithoedd, mae proses gofrestru llawer haws a gofyn am
+            <strong>gerdyn credyd Nid oes</strong>.</p>
+
+        <p>Mae Microsoft Translate yn rhoi <strong>gwell cyfieithiadau</strong>, ond gofyn am gerdyn
+            credyd i ymuno. (Ond peidiwch â phoeni, fydd dim byd yn codi.)</p>
+
+        <ol>
+            <li>Gwnewch yn siŵr mae AllTrans Mae ap wedi'i alluogi yn gosodwr Xposed-> modiwlau.
+            </li>
+            <li>Lansio ap AllTrans. Yn y tab 'Lleoliadau byd-eang', yn galluogi "Defnyddio Microsoft
+                yn lle Yandex" Os ydych am ddefnyddio Yandex. Analluogi i ddefnyddio Microsoft.
+            </li>
+            <li>Dewis "Gyfieithu o'r iaith" a "Cyfieithu i iaith".</li>
+            <li>Yn y tab "Apiau i gyfieithu", canfod ap y dymunwch ei gyfieithu, cliciwch y blwch
+                ticio wrth ei ymyl. Os nad yw'r blwch yn weladwy, geisio cylchdroi eich ffôn i'r
+                ochr i'r modd tirwedd.
+            </li>
+            <li>Cau ac ailgychwyn yr ap rydych chi am gyfieithu-dylid cyfieithu'r!</li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Sut i gael cyfieithu Yandex allweddol</h2>
+
+        <ol>
+            <li>Ewch i <a href="https://tech.yandex.com/keys/get/?service=trnsl">wefan API gyfieithu
+                Yandex</a></li>
+            <li>Os nad ydych wedi cyfrif, cliciwch "gofrestr" a gofrestru ar gyfer cyfrif newydd.
+            </li>
+            <li>Ar ôl ymuno, yn cytuno i gytundeb y defnyddiwr a chlicio "Gael allwedd API".</li>
+            <li>Yr ydych wedi llwyddo i gael eich allwedd!</li>
+        </ol>
+
+        <p>Yr allwedd tanysgrifiad yw rhywbeth fel "trnsl.1.1.201701..."</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Sut i gael allwedd Azure gyfieithu
+            Microsoft</h2>
+
+        <ol>
+            <li>Gofrestru ar gyfer cyfrif Microsoft Azure.<br>Os nad ydych wedi cyfrif Azure,
+                cofrestru ar gyfer <a href="http://azure.com">cyfrif Microsoft Azure</a>.
+            </li>
+            <li>Ar ôl gennych gyfrif, yn mewngofnodi i <a href="http://portal.azure.com">Borth
+                Azure</a>.
+            </li>
+            <li>Ychwanegu "Microsoft Translator API tanysgrifiad" at eich Cyfrif Azure.<br>
+                <ol>
+                    <li>Dewis tanysgrifiad "talu wrth alw". Bydd angen cerdyn credyd, ond peidiwch â
+                        phoeni, codir dim.
+                    </li>
+                    <li>Dewiswch yr opsiwn "+ newydd".</li>
+                    <li>Dewiswch 'Intelligence' o'r rhestr o wasanaethau.</li>
+                    <li>Dewiswch "Gwybyddol gwasanaethau APIs".</li>
+                    <li>Dewiswch yr opsiwn "API math".</li>
+                    <li>Dewiswch "Cyfieithu testun".</li>
+                    <li>Yn yr adran "Prisio haen", dewiswch "Haen am ddim (F0)".</li>
+                    <li>Llenwch weddill y ffurflen, a phwyso'r botwm "Creu".</li>
+                </ol>
+            </li>
+            <li>Adfer eich "allwedd dilysu".<br>
+                <ol>
+                    <li>Ewch i "Holl adnoddau" a dewiswch y Microsoft Translator API a Roedd rydych
+                        chi wedi tanysgrifio i.
+                    </li>
+                    <li>Ewch i'r opsiwn "Allweddi" a copïo allwedd eich tanysgrifiad i gael mynediad
+                        at y gwasanaeth.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>Yr allwedd tanysgrifiad yw rhywbeth fel "321dcba..."</p>
+
+
+        <h2 id="troubleshooting">Datrys problemau</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">Ap dim yn cael ei gyfieithu mewn unrhyw
+            app</h3>
+
+        <ul>
+            <li>Os yw unrhyw app yn cael ei gyfieithu, gwiriad yn "AllTrans" yn galluogi yn gosodwr
+                Xposed-> modiwlau.
+            </li>
+            <li>Hefyd wirio os eich "allweddol tanysgrifiad Microsoft/Yandex" yn gywir.</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">Mae ap wedi'i gyfieithu yn sownd mewn
+            sgrin agoriadol</h3>
+
+        <ul>
+            <li>Cliciwch ar enw yr ap yn "Apiau i gyfieithu" tab, a chliciwch ar "Cliciwch i glir
+                cyfieithu Cache".
+            </li>
+            <li>Os dyma'r tro cyntaf ichi ddechrau cyfieithu'r ap hwn, cliciwch ar enw yr ap yn y
+                tab "Apiau i gyfieithu", ac yn llenwi 'Lleoliadau eraill' yn "Oedi cyn Replcaing â
+                chyfieithu testun" i 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">Ap wedi'i chyfieithu yn "Agos rym"</h3>
+
+        <ul>
+            <li>Cliciwch ar enw yr ap yn "Apiau i gyfieithu" tab, a chliciwch ar "Cliciwch i glir
+                cyfieithu Cache".
+            </li>
+            <li>Cliciwch ar enw yr ap yn y tab "Apiau i gyfieithu", ac mae mewn 'lleoliadau eraill'
+                yn llenwi "Oedi cyn Replcaing â chyfieithu testun" i 2000.
+            </li>
+            <li>Cliciwch ar enw yr ap yn "Apiau i gyfieithu" tab, ac mewn 'Lleoliadau eraill' yn
+                llenwi "Oedi cyn dechrau i gyfieithu WebViews" i 2000.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">Nid yw ap penodol yn cael ei
+            gyfieithu</h3>
+
+        <ul>
+            <li>Cliciwch ar enw yr ap yn "Apiau i gyfieithu" tab, ac mewn 'Lleoliadau eraill' yn
+                llenwi "Oedi cyn dechrau i gyfieithu WebViews" i 2000.
+            </li>
+            <li>Os oes dal i fod rhai rhannau o'r app yn cael eu cyfieithu ni, cliciwch ar enw yr ap
+                yn "Apiau i gyfieithu" tab, a galluogi "Modd ymosodol".
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">Nid yw ap gêm yn cael ei gyfieithu</h3>
+
+        <ul>
+            <li>Oherwydd y cyfyngiadau technegol, "AllTrans" ddim yn gweithio gyda llawer o gemau.
+                Gall gwneud dim am hyn.
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            Os ydych yn dal i fod problemau fel "Agos rym" neu rannau o'r ap nid yn cael ei
+            gyfieithu</h3>
+
+        <p>Gysylltu â mi ar gyfer cymorth. Pan wnewch hynny, bydd angen imi atleast wybodaeth
+            ganlynol-</p>
+
+        <ol>
+            <li>Enw yr ap, ynghyd â <strong>linc i lawrlwytho'r ap</strong> o siop rhai APK fel
+                storfa Google Play, CoolApk, ac ati.
+            </li>
+            <li>Fersiwn Android eich ffôn.</li>
+            <li>"Logcat" y byddwch yn ceisio agor yr ap a rhoi eich problemau. Gallwch ddefnyddio
+                apiau ar gael yn rhwydd ar y storfa ar gyfer hyn, fel <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">yr
+                    un hwn</a></li>
+        </ol>
+
+        <p>Unwaith mae gennych uchod, gysylltu â mi ar y <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            gefnogi llinyn</a>.<br>Gallwch hefyd adrodd materion ar <a
+                href="https://github.com/akhilkedia/AllTrans">Github y prosiect</a>.</p>
+
+
+        <h2 id="donations">Rhoddion</h2>
+
+        <p>Os ydych yn hoffi y prosiect hwn, mi brynu cwpanaid o goffi! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

@@ -23,56 +23,12 @@
     <string name="loading">"Lista tat-tagħbija ta ' applikazzjonijiet - jekk jogħġbok stenna"</string>
     <string name="clear_cache_error">"Xi żball. Ma setax ċara tal-cache traduzzjoni!"</string>
     <string name="clear_cache_success">"Tittraduċi Cache għall dan app ma tħassritx!"</string>
-	<string name="how_to_use">"KIF TUŻA L-APPLIKAZZJONI
-
-Din l-applikazzjoni jeħtieġ tabbona għal tast minn Microsoft jew Yandex Translate.
-Yandex Translate jaċċetta l-aktar lingwi, tkun ħafna aktar faċli signup proċess, u teħtieġ l-karta tal-kreditu Nru.
-Translate tal-Microsoft tagħti riżultati aħjar, iżda jeħtieġ a karta tal-kreditu li tidħol. (Imma taqtax qalbek, xejn ma se jkun mitlub.)
-
-1. fit-tab ta ' l-issettjar globali, jippermettu l-użu Yandex minflok Microsoft jekk tixtieq tuża Yandex, inkella itfi jużaw Microsoft.
-1. fit-tab ta ' l-issettjar globali, tektek jidħol tal-Microsoft/Yandex sottoskrizzjoni, input il-kodiċi korrispondenti (ara l-istruzzjonijiet minn isfel).
-2. Agħżel l-jittraduċi minn lingwa u jittraduċi għal-lingwa.
-3. fl-applikazzjonijiet biex Translate tab, isibu l-app inti tixtieq tittraduċi, ikklikkja l-kaxxa fejn timmarka ħdejh. Jekk il-kaxxa fejn timmarka mhux viżibbli, ipprova li jduru tat-telefown tiegħek laġenba jidħol f ' modalità pajsaġġ.
-4. Agħlaq u rristartja l-app inti tixtieq tradotta – li għandhom jiġu tradotti!
-
-TWISSIJA - xi applikazzjonijiet jista fis-seħħ mill-qrib. Ara t-Taqsima Troubleshooting.
-
-KIF TIKSEB YANDEX JITTRADUĊI TAS-SOTTOSKRIZZJONI
-
-1. Mur fil-websajt tal-Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. jekk m ' għandekx għalfejn diġà kont, ikklikkja reġistru u sinjal sa għal kont ġdid.
-3. wara l-iffirmar sal, jaqblu li l-Ftehim ta ' l-utent u ikklikkja Ikseb API ċavetta.
-4. b ' suċċess irċevejt kodiċi tiegħek! Huwa xi ħaġa simili trnsl.1.1.201701...
-
-KIF TIKSEB MICROSOFT AZURE JITTRADUĊI TAS-SOTTOSKRIZZJONI
-
-1. Irreġistra għal kont tal-Microsoft Azure fuq http://azure.com
-
-2. wara li għandek kont, jiffirmaw fil-portal Azure fuq http://portal.azure.com
-
-3. Żid l-Microsoft traslatore API abbonament tiegħek kont Azure.
-Tagħżel abbonament pay-as-you-go. Se jeħtieġu a karta ta ' kreditu, imma taqtax qalbek, xejn irid jitħallas.
-Agħżel il- + ġodda l-għażla.
-Agħżel intelliġenza mil-lista ta ' servizzi.
-Agħżel APIs servizzi konjittiva.
-Agħżel l-għażla tat-tip API.
-Agħżel it-traduzzjoni tat-test
-Fit-Taqsima tat-tieni saff tal-prezzijiet, agħżel l-indana ħielsa (F0)
-Jimla l-kumplament tal-forma, u agħfas il-buttuna Oħloq.
-
-4. kodiċi tal-awtentikar tiegħek jirkupra.
-Mur tar-riżorsi kollha u agħżel l-API traslatore Microsoft inti sottoskritti.
-Mur l-għażla ta ' ċwievet u l-kopja tiegħek tas-sottoskrizzjoni biex jaċċessa s-servizz.
--Tas-sottoskrizzjoni hija xi ħaġa simili 321dcba...
-
-FITTEX SOLUZZJONI
-
-1. jekk l-ebda app huwa li jkunu tradotti, iċċekkja tiegħek tas-sottoskrizzjoni tal-Microsoft/Yandex hija korretta.
-2. jekk l-app tradotta seħħ jagħlaq/iġib mwaħħla fuq l-ewwel darba wara li tistartja jittraduċi tat-tagħbija, ikklikkja fuq l-app fl-applikazzjonijiet biex tittraduċi tab, u f'postijiet oħra jimlew dewmien qabel jittraduċi għall-2000.
-3. jekk l-app tradotta użati biex jaħdmu multa, imma issa ġib mwaħħla fuq tal-bidu, ikklikkja fuq l-app fl-applikazzjonijiet biex tittraduċi tab, u ikklikkja fuq Ikklikkja biex ċara traduzzjoni Cache.
-4. jekk xi partijiet tal-app huma mhux qed tradotti, ikklikkja fuq l-app fl-applikazzjonijiet biex tittraduċi tab, u jippermetti modalità aggressiv.
-5. jekk l-app li jkunu għadhom fis-seħħ jagħlaq, itfi traduzzjoni għal dan app u tikkuntattjani fuq il-ħajta tas-sostenn dwar XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
+    <string name="backup_pref_error">"Xi żball. Ma setax backup preferenzi! Kienx inti tagħti aċċess SuperUser?"</string>
+    <string name="backup_pref_success">"Preferenzi jkunu ġew ibbekkjati għal ħażna esterna!"</string>
+    <string name="wut_why_null">"Ma setax jillowdja l-paġna ta ' preferenza fil-app. Jagħlaq u jerġa ' jiftaħ applikazzjoni mill-ġdid."</string>
+    <string name="app_icon">"Ikona ta ' App"</string>
+    <string name="example_application">"Eżempju applikazzjoni"</string>
+    <string name="description">"Deskrizzjoni"</string>
     <string name="translate_anywhere">"Tittraduċi kullimkien"</string>
     <string name="apps_to_translate">"Applikazzjonijiet biex tittraduċi"</string>
     <string name="global_settings">"Issettjar globali"</string>
@@ -112,8 +68,20 @@ FITTEX SOLUZZJONI
     <string name="caching">"Użu Caching"</string>
     <string name="caching_summary_off">"Għandhiex prevja traduzzjonijiet offline, li tirriżulta fl-iktar bil-mod jittraduċi u data ogħla - iżda jistgħu jaħdmu għal applikazzjonijiet aktar. Iduru fuq li ħlief it-traduzzjonijiet."</string>
     <string name="caching_summary_on">"Issejvjar ta ' traduzzjonijiet offline biex tħaffef jittraduċi u jużaw id-dejta. Itfi tiddiżattiva jekk tiegħek app m ' għandhiex tibda."</string>
-    <string name="delay">"Dewmien qabel jittraduċi"</string>
-    <string name="delay_summary">"Issettja l-ħin f'millisekondi tistenna qabel jittraduċi. Valur tal-mankanza huwa 0, iffissat għal 1000 – 5000 jekk l-app tradotta huwa crashing."</string>
+    <string name="delay">"Dewmien qabel tissostitwixxi tradotti test"</string>
+    <string name="delay_summary">"Issettja l-ħin f'millisekondi tistenna qabel sostitwit b'test tradotta. Valur tal-mankanza huwa 0. Stabbilit għal 1000 – 5000 jekk l-app tradotta huwa crashing."</string>
+    <string name="delay_webview">"Dewmien qabel ma jibda biex tittraduċi WebViews"</string>
+    <string name="delay_webview_summary">"Issettja l-ħin f'millisekondi li tixtieq tistenna qabel ma jibda biex tittraduċi WebViews. Valur tal-mankanza huwa 500. Stabbilit għal 0 biex tiżdied il-veloċità ta ' traduzzjoni. Stabbilit għal 3000-5000 jekk ma huma jittraduċi l-parti tal-web app."</string>
+    <string name="analytics">"Ibgħat kraxx anonima u Data għall-użu"</string>
+    <string name="analytics_summary_off">"Ma tibgħat kraxx anonima u għall-użu tad-data. Bgħit informazzjoni anonima kraxx jgħin l-iżviluppatur jagħmlu l-app aħjar."</string>
+    <string name="analytics_summary_on">"Bgħit informazzjoni anonima kraxx u għall-użu. L-ebda informazzjoni personali hija trasmessa. Id-data anonima kraxx jgħin l-iżviluppatur jagħmlu l-app aħjar"</string>
+    <string name="debug">"Avvanzati: Ixgħel il-modalità ta ' l-iddibaggjar."</string>
+    <string name="debug_summary_off">"Tiddibaggja modalità mitfi. Mhux miktub informazzjoni tal-iddibaggjar biex logcat. Ixgħel dan qabel ma tibgħat rapporti ta ' l-iżball"</string>
+    <string name="debug_summary_on">"Tiddibaggja modalità huwa fuq. Miktub zkuk li logcat. Dan it-tnaqqis ta ' prestazzjoni – titfi jekk mhux meħtieġa."</string>
+    <string name="local_on_off">"Tittraduċi dan App"</string>
+    <string name="local_on_off_summary">"Itfi waqqaf jittraduċi dan app"</string>
+    <string name="local_on_off_summary_off">"Dan app mhux ser tradotti. Iduru fuq bl-użu ta ' bidu auto-jittraduċi!"</string>
+    <string name="local_on_off_summary_on">"Dan se jiġi tradott. Titfi kompletament tiddiżattiva jittraduċi dan app."</string>
     <string name="overRide_global">"Tinjora l-issettjar globali"</string>
     <string name="overRide_global_summary_off">"Bl-użu globali ta ' l-issettjar għal din app. dawra fuq biex tibdel l-issettjar biss għal dan app."</string>
     <string name="overRide_global_summary_on">"Bl-użu lokali l-issettjar għal din app. dawra barra li Uża l-issettjar globali."</string>

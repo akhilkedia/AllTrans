@@ -23,57 +23,13 @@
     <string name="loading">"Tavaraluettelo-sovelluksia - odota"</string>
     <string name="clear_cache_error">"Jokin virhe. Käännös välimuisti tyhjentäminen epäonnistui!"</string>
     <string name="clear_cache_success">"Käännä välimuisti, ja tämä app on poistettu!"</string>
-	<string name="how_to_use">"MITEN KÄYTTÄÄ HAKEMUKSEN
-
-Tämä sovellus vaatii voit kirjautua Microsoftin tai Yandex Käännä avain.
-Yandex Käännä kielelle on helpompi kirjautumisen yhteydessä, ja vaatii n luottokortin.
-Microsoft Translate antaa parempia tuloksia, mutta vaatii luottokortin rekisteröityä. (Mutta älä huoli, mikään ei ole hintaan.)
-
-1. yleiset asetukset-välilehdestä mahdollistaa käyttää Yandex sijaan Microsoft jos haluat käyttää Yandex, muuten poistaa käyttämään Microsoft.
-1. yleiset asetukset-välilehdestä napauttamalla Kirjoita Microsoft/Yandex tilauskoodi, syötä vastaavaa näppäintä (ks. ohjeet alla).
-2. Valitse kääntää kieli ja kääntää kieli.
-3. Etsi Translate-välilehti Apps app haluat kääntää, valitse sen vieressä oleva valintaruutu. Jos valintaruutu ei ole näkyvissä, kokeile puhelinta sivuttain kääntymässä vaaka-asennossa.
-4. Sulje ja Käynnistä sovellus käännettävä - olisi käännettävä!
-
-Varoitus - jotkut sovellukset voi pakottaa. Vianetsintä-kohdassa.
-
-MITEN SAADA YANDEX KÄÄNTÄÄ LISENSSIAVAIN
-
-1. Siirry Yandex verkkosivusto - https://tech.yandex.com/keys/get/?service=trnsl
-2. Jos sinulla ei vielä ole tiliä, valitse Rekisteröidy ja kirjaudu uusi tili.
-3. allekirjoituksen jälkeen ylös-hyväksyä käyttöehdot ja sitten saada API-avain.
-4. olet saanut avain! Se on jotain trnsl.1.1.201701...
-
-MITEN SAADA MICROSOFTIN AZURE KÄÄNTÄÄ LISENSSIAVAIN
-
-1. Rekisteröidy Microsoftin Azure-tiliisi osoitteessa http://azure.com
-
-2. Kun sinulla on tili, kirjaudu Azure portaalin http://portal.azure.com
-
-3. lisää Microsoft Kääntäjä API-jäsenmaksuun Azure tilillesi.
-Valitse pay-as-you-go tilaus. Edellyttää luottokorttia, mutta älä huoli, mitään ei veloiteta.
-Valitse + uusi vaihtoehto.
-Valitse palveluluettelosta älykkyyttä.
-Valitse kognitiivinen palvelujen API-liittymiä.
-API tyyppi-vaihtoehdon.
-Valitse tekstin kääntäminen
-Valitse hinnoittelu Tier-osassa Ilmainen Tier (F0)
-Täytä lomake loppuun ja paina Luo-painiketta.
-
-4. Palauta authentication avain.
-Siirry kaikki resurssit ja valitse Microsoft Kääntäjä API olet tilannut.
-Mene avaimet vaihtoehto ja kopioi tilauskoodisi palvelua.
-Tilauskoodi on jotain 321dcba...
-
-VIANMÄÄRITYS
-
-1. Jos ei ole app ei käännetä, Tarkista Microsoft/Yandex tilauskoodin oikein.
-2. Jos käännetty app voima sulkeutuu/saa jumiin lastaus ensimmäisen kerran jälkeen alkaa kääntää, klikkaa app apps kääntää välilehti ja muiden asetusten täytä viive ennen kääntää 2000.
-3. Jos käännetty app toimivat hyvin, mutta nyt juuttua alkaa, klikkaa app apps kääntää välilehti ja klikkaa Valitse Tyhjennä käännös välimuisti.
-4. Jos osa app ei ole käännetty, valitse App apps kääntää välilehti ja mahdollistaa aggressiivinen.
-5. Jos app kuitenkin voimassa sulkee tehdä kykenemättömäksi käännös ajaksi nyt kuluva app ja yhteyttä tukea säiettä XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Käännä tahansa"</string>
+    <string name="backup_pref_error">"Jokin virhe. Asetuksia ei voi varmuuskopioida! Myönnät pääkäyttäjän oikeudet?"</string>
+    <string name="backup_pref_success">"Asetukset on varmuuskopioitu ulkonaiset seikat muisti!"</string>
+    <string name="wut_why_null">"Per-app määritykset-sivulla ei voi ladata. Sulje ja avaa uudelleen sovelluksen uudelleen."</string>
+    <string name="app_icon">"Sovelluksen kuvake"</string>
+    <string name="example_application">"Esimerkiksi soveltaminen"</string>
+    <string name="description">"Kuvaus"</string>
+    <string name="translate_anywhere">"Kääntää kaikkialla"</string>
     <string name="apps_to_translate">"Apps kääntää"</string>
     <string name="global_settings">"Yleiset asetukset"</string>
     <string name="instructions">"Ohjeet"</string>
@@ -112,8 +68,20 @@ VIANMÄÄRITYS
     <string name="caching">"Käyttää välimuistia"</string>
     <string name="caching_summary_off">"Ei tallenna offline käännöksiä, jolloin hitaammin kääntää ja korkeampi tiedot - ainoastaan toukokuu aikaansaada ajaksi enemmän apps. Kääntyä paitsi käännökset."</string>
     <string name="caching_summary_on">"Tallentaminen käännökset offline nopeuttaa kääntää ja käyttää tietoja. Käytöstä poistaminen käytöstä, jos sovellus ei käynnisty."</string>
-    <string name="delay">"Viive kääntäminen"</string>
-    <string name="delay_summary">"Asettaa ajan millisekunteina ennen käännöksen aloittamista. Oletusarvo on 0, arvoksi 1000-5000, jos kääntää sovellus kaatuu."</string>
+    <string name="delay">"Viive ennen korvaamista käännetty teksti"</string>
+    <string name="delay_summary">"Asettaa ajan millisekunteina ennen korvaa käännetyn tekstin. Oletusarvo on 0. Määrittää 1000-5000 käännetty sovellus kaatuu."</string>
+    <string name="delay_webview">"Viive alkaa kääntää Web-näkymä"</string>
+    <string name="delay_webview_summary">"Asettaa ajan millisekunteina ennen kuin alkaa kääntää Web-näkymä. Oletusarvo on 500. Määritä 0 käännös nopeuden lisäämiseksi. Asettaa 3000-5000, jos osa web app ei kääntää."</string>
+    <string name="analytics">"Lähetä Nimetön kaatua ja käyttötiedot"</string>
+    <string name="analytics_summary_off">"Ei Lähetä Nimetön kaatua ja käyttötiedot. Nimetön crash lΣhettΣmistΣ auttaa parantamaan app kehittäjä."</string>
+    <string name="analytics_summary_on">"Lähettää nimettömiä kaatua ja käytön tietoja. Henkilötietoja välitetään. Nimetön kaatumistiedot auttaa parantamaan app kehittäjä"</string>
+    <string name="debug">"Advanced: Päälle Debug-tilassa."</string>
+    <string name="debug_summary_off">"Debug mode on poissa käytöstä. Ole kirjallisesti virheiden korjauksen tiedot logcat. Tämän käyttöön ennen virheraporttien lähettämistä"</string>
+    <string name="debug_summary_on">"Debug-tila on käytössä. Kirjallisesti lokit logcat. Tämä vähentää suorituskykyä - sammuttaa jos ei tarvita."</string>
+    <string name="local_on_off">"Kääntää tämän App"</string>
+    <string name="local_on_off_summary">"Lopettaa kääntää tämän app käytöstä"</string>
+    <string name="local_on_off_summary_off">"Tämä app ei käännetty. Ota kiinni alkaa käyttää automaattinen käännös!"</string>
+    <string name="local_on_off_summary_on">"Se käännetään. Sammuta kokonaan pois, kääntää tämän app."</string>
     <string name="overRide_global">"Ohittaa yleiset asetukset"</string>
     <string name="overRide_global_summary_off">"Käyttää Yleisasetukset ajaksi nyt kuluva app. puolestaan muuttaa asetuksia vain tämän app."</string>
     <string name="overRide_global_summary_on">"Käyttää paikallisia asetuksia ajaksi nyt kuluva app. puolestaan pois käyttää yleisiä asetuksia."</string>

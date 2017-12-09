@@ -26,25 +26,48 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BlankFragment extends Fragment {
+public class InstructionsFragment extends Fragment {
 
-    public BlankFragment() {
+    public InstructionsFragment() {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.readme)));
+        StringBuilder datax = new StringBuilder("");
+        try {
+            String readString = bufferedReader.readLine();
+            while (readString != null) {
+                datax.append(readString);
+                readString = bufferedReader.readLine();
+            }
+            bufferedReader.close();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
 
-        String instructions = getString(R.string.how_to_use);
-        NestedScrollingMarkDownView webView = new NestedScrollingMarkDownView(getActivity());
+        String instructions = datax.toString();
+
+        //final String instructions = getString(R.string.how_to_use);
+        final NestedScrollingMarkDownView webView = new NestedScrollingMarkDownView(getActivity());
+
         webView.setNestedScrollingEnabled(true);
+        webView.getSettings().setLoadWithOverviewMode(true);
+        webView.getSettings().setUseWideViewPort(false);
+
         webView.loadData(instructions, "text/html; charset=utf-8", "UTF-8");
 
+        //webView.loadUrl("file:///android_res/raw/readme.html");
         return webView;
     }
 

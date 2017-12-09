@@ -23,57 +23,13 @@
     <string name="loading">"Nalagam seznam aplikacij - počakajte"</string>
     <string name="clear_cache_error">"Nekaj napak. Ni bilo mogoče počistiti predpomnilnik prevod!"</string>
     <string name="clear_cache_success">"Prevajanje predpomnilnik za to app je bilo izbrisanih!"</string>
-	<string name="how_to_use">"KAKO UPORABLJATI APLIKACIJO
-
-Ta program zahteva, da se prijavite za ključ od Microsofta ali Yandex Prevedi.
-Yandex prevajalnik podpira več jezikov, je veliko lažji postopek prijave in ne kreditne kartice zahteva.
-Microsoft Translate daje boljše rezultate, vendar zahteva kreditne kartice, da se prijavite. (Vendar ne skrbite, nič bo zaračuna.)
-
-1. v globalne nastavitve zavihek, omogočajo uporabo Yandex namesto Microsoft, če želite uporabiti Yandex, drugje onemogočite za Microsoft.
-1. v zavihku globalne nastavitve tapnite vnesite Microsoft/Yandex abomna zakleniti, vhod na ustrezno tipko (glej navodila od spodaj).
-2. Izberite je prevajanje iz jezika in prevajanje v jezik.
-3. v Apps Translate kartico našli app, ki ga želite prevesti, kliknite potrditveno polje poleg nje. Če potrditveno polje ni prikazano, poskusite vrtijo telefon postrani v ležečem načinu.
-4. Zaprite in znova zaženite app naj prevedenega - je treba prevesti!
-
-Opozorilo - nekaj apps prisili tesno. Glejte razdelek za odpravljanje težav.
-
-KAKO ZADOBITI YANDEX PREVESTI ABOMNA ZAKLENITI
-
-1. iti k tkalec Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. Če še nimate računa, kliknite register in se prijavite za nov račun.
-3. po podpisu gor, se strinjajo, da uporabnik sporazuma in kliknite Get API ključ.
-4. uspešno prejmete ključ! To je nekaj podobnega trnsl.1.1.201701...
-
-KAKO PRITI MICROSOFT AZURE PREVESTI ABOMNA ZAKLENITI
-
-1. Prijavite se za Microsoft Azure račun na http://azure.com
-
-2. ko imate račun, vpišite v sinje portal na http://portal.azure.com
-
-3. Dodajanje naročnine prevajalec API-ju Microsoft Azure račun.
-Izbirate dokladnih naročnino. Mora imeti kreditno kartico, vendar ne skrbite, nič se zaračuna.
-Izberite + novo možnost.
-Izberite inteligenco iz seznam storitev.
-Izberite kognitivne storitve API.
-Izberite vrsto API.
-Izberite besedilo prevajanje
-V razdelku cen liste, izberite Free liste (F0)
-Izpolnite preostanek obrazec in pritisnite gumb Ustvari.
-
-4. pridobivanje ključ za preverjanje pristnosti.
-Pojdi na vse vire in izberite Microsoft Translator API ste naročeni na.
-Iti sklepnik predkupna pravica ter ulitek vašo naročnino ključ za dostop do storitev.
-Abomna zakleniti je nekaj podobnega 321dcba...
-
-ODPRAVLJANJE TEŽAV
-
-1. Če ni app je prevedeni, preverite vašo naročnino ključ Microsoft/Yandex pravilno.
-2. Če prevedenih app sile zapre/dobi zaljubljen na nakladanje prvič po zagonu, prevajanje, kliknite na app v Apps prevesti zanka, ter v druge nastavitve izpolnite zamude pred prevajanje 2000.
-3. Če prevedenih app za dela v redu, vendar zdaj zatakne na začetek, kliknite na app v Apps za prevajanje zanka in na kliknite jasno prevajanje predpomnilnik.
-4. Če se prevedejo ne nekateri deli app, kliknite na app v Apps za prevajanje zanka ter usposobiti agresiven način.
-5. Če app še vedno sila zapre, onemogočite prevod za to app in stik z mano na podporo nit na XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Prevajanje kjerkoli"</string>
+    <string name="backup_pref_error">"Nekaj napak. Nastavitve ni mogoče varnostno! Did vi dajete SuperUser dostop?"</string>
+    <string name="backup_pref_success">"Nastavitve so bile narejene zunanje skladiščenje!"</string>
+    <string name="wut_why_null">"Per-app prednost strani ni bilo mogoče naložiti. Zaprite in znova odprite program znova."</string>
+    <string name="app_icon">"App ikona"</string>
+    <string name="example_application">"Primer uporabe"</string>
+    <string name="description">"Opis"</string>
+    <string name="translate_anywhere">"Prevajanje povsod"</string>
     <string name="apps_to_translate">"Aplikacije za prevajanje"</string>
     <string name="global_settings">"Globalne nastavitve"</string>
     <string name="instructions">"Navodila"</string>
@@ -112,8 +68,20 @@ ODPRAVLJANJE TEŽAV
     <string name="caching">"Uporabljalo predpomnjenja"</string>
     <string name="caching_summary_off">"Ne reševanje prevodi brez povezave, zaradi česar počasneje prevesti in višje podatkov - vendar lahko delo za več apps. Obrniti na Shrani prevodi."</string>
     <string name="caching_summary_on">"Shranjevanje offline prevodi pospešiti prevajanje in uporabo podatkov. Izklopite onemogočiti, če vaš app ne zažene."</string>
-    <string name="delay">"Zakasnitev pred prevajanje"</string>
-    <string name="delay_summary">"Nastavite čas v milisekundah, čakati pred prevajanjem. Privzeta vrednost je 0, nastavljena na 1000-5000, če je treskav prevedenih app."</string>
+    <string name="delay">"Zakasnitev pred zamenjavo z prevedenega besedila"</string>
+    <string name="delay_summary">"Nastavite čas v milisekundah, čakati pred Zamenjaj z prevedenega besedila. Privzeta vrednost je 0. Nastavljena na 1000-5000, če je treskav prevedenih app."</string>
+    <string name="delay_webview">"Zakasnitev pred začetkom prevesti spletni pogledi"</string>
+    <string name="delay_webview_summary">"Nastavite čas v milisekundah, ki bo pretekel pred zagonom prevesti spletni pogledi. Privzeta vrednost je 500. Nastavljena na 0 povišati hitrost prevajanja. Nastavite na 3000-5000, če del web app ni prevedel."</string>
+    <string name="analytics">"Pošlji anonimni Crash in uporabe podatkov"</string>
+    <string name="analytics_summary_off">"Ne pošilja anonimni crash in uporabe podatkov. Pošiljanje anonimni crash podatkov pomaga izboljšati app razvijalec."</string>
+    <string name="analytics_summary_on">"Pošiljanje anonimni crash in uporabo podatkov. Se prenašajo nobenih osebnih podatkov. Anonimni crash podatkov pomaga izboljšati app razvijalec"</string>
+    <string name="debug">"Napredno: Vklopite Debug načinu."</string>
+    <string name="debug_summary_off">"Debug načinu izklopljena. Pisno logcat debug podatkov. Pa to pred pošiljanjem poročil o napakah"</string>
+    <string name="debug_summary_on">"Debug način vklopljen. Pisanje dnevnikov v logcat. To zmanjšuje učinkovitost delovanja - izklop če ne potrebno."</string>
+    <string name="local_on_off">"Prevesti to App"</string>
+    <string name="local_on_off_summary">"Zapreti zastajati prevajanje to app"</string>
+    <string name="local_on_off_summary_off">"Ta app bo niso prevedene. Pa na začetku z uporabo avto-tolmačiti!"</string>
+    <string name="local_on_off_summary_on">"To bo prevedena. Izklopite popolnoma onemogočiti prevajanje to app."</string>
     <string name="overRide_global">"Preglasi globalne nastavitve"</string>
     <string name="overRide_global_summary_off">"Uporabi globalne nastavitve za to app. pa na spremeniti nastavitve samo za to app."</string>
     <string name="overRide_global_summary_on">"Uporaba lokalne nastavitve za to app. Turn off uporabi globalne nastavitve."</string>

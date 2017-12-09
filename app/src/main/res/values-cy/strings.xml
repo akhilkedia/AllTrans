@@ -23,57 +23,13 @@
     <string name="loading">"Wrthi'n llwytho rhestr o geisiadau-Arhoswch"</string>
     <string name="clear_cache_error">"Rhai gwallau. Gallai Nid clirio storfa'r cyfieithu!"</string>
     <string name="clear_cache_success">"Gyfieithu Cache ar gyfer yr ap hwn wedi'i ddileu!"</string>
-	<string name="how_to_use">"SUT I DDEFNYDDIO Y CAIS
-
-Mae'r cais hwn yn ei gwneud yn ofynnol i chi gofrestru ar gyfer allweddol gan Microsoft neu Yandex Translate.
-Mae Yandex Translate cefnogi mwy o ieithoedd, mae proses gofrestru llawer haws a gofyn am gerdyn credyd Nid oes.
-Mae Microsoft Translate yn rhoi gwell canlyniadau, ond gofyn am gerdyn credyd i ymuno. (Ond peidiwch â phoeni, fydd dim byd yn codi.)
-
-1. mewn tab gosodiadau byd-eang, yn galluogi defnyddio Yandex yn hytrach na Microsoft os ydych am ddefnyddio Yandex, analluogi arall i ddefnyddio Microsoft.
-1. mewn tab gosodiadau byd-eang, tarwch tanysgrifiad Microsoft/Yandex Rhowch allweddol, mewnbwn allweddol cyfatebol (gweler cyfarwyddiadau islaw).
-2. dewis y gyfieithu o'r iaith a chyfieithu i iaith.
-3. yn yr apiau i'r Translate tab, canfod ap y dymunwch ei gyfieithu, cliciwch y blwch ticio wrth ei ymyl. Os nad yw'r blwch yn weladwy, geisio cylchdroi eich ffôn i'r ochr i'r modd tirwedd.
-4. cau ac ailgychwyn yr ap rydych chi am gyfieithu-dylid cyfieithu'r!
-
-RHYBUDD-gallai rhai apiau rym yn agos. Gweler adran datrys problemau.
-
-SUT I GAEL YANDEX GYFIEITHU ALLWEDDOL TANYSGRIFIAD
-
-1. Ewch i wefan Yandex-https://tech.yandex.com/keys/get/?service=trnsl
-2. Os nad ydych wedi cyfrif, cliciwch gofrestr ac arwyddion ar gyfer cyfrif newydd.
-3. ar ôl arwyddo i fyny, cytuno i gytundeb y defnyddiwr a chlicio gael allwedd API.
-4. rydych wedi cael eich allwedd llwyddiannus! Mae'n rhywbeth fel trnsl.1.1.201701...
-
-SUT I GAEL MICROSOFT AZURE GYFIEITHU ALLWEDDOL TANYSGRIFIAD
-
-1. Cofrestrwch ar gyfer cyfrif Microsoft Azure ar http://azure.com
-
-2. ar ôl gennych gyfrif, yn mewngofnodi i borth Azure ar http://portal.azure.com
-
-3. Ychwanegwch y tanysgrifiad Microsoft Translator API i'ch Cyfrif Azure.
-Dewis tanysgrifiad fesurydd. Bydd angen cerdyn credyd, ond peidiwch â phoeni, codir dim.
-Dewiswch y + newydd opsiwn.
-Dewiswch deallusrwydd o'r rhestr o wasanaethau.
-Dewiswch APIs gwasanaethau gwybyddol.
-Dewiswch yr opsiwn API math.
-Dewiswch cyfieithu testun
-Yn adran y prisiau haen, dewiswch yr haen am ddim (F0)
-Llenwch weddill y ffurflen, a phwyso'r botwm creu.
-
-4. adfer eich allwedd dilysu.
-Ewch i'r holl adnoddau a dewiswch y Microsoft Translator API a Roedd rydych chi wedi tanysgrifio i.
-Ewch i'r opsiwn allweddi a copïo allwedd eich tanysgrifiad i gael mynediad at y gwasanaeth.
-Yr allwedd tanysgrifiad yw rhywbeth fel 321dcba...
-
-DATRYS PROBLEMAU
-
-1. Os yw unrhyw app yn cael ei gyfieithu, gwirio allwedd eich tanysgrifiad Microsoft/Yandex yn gywir.
-2. Os cadwodd ap wedi'i gyfieithu rym yn dod i ben/cael ar llwytho y tro cyntaf ar ôl i chi ddechrau cyfieithu, cliciwch ar yr ap yn apiau i gyfieithu tab, ac mewn lleoliadau eraill yn llenwi oedi cyn troi i 2000.
-3. Os Defnyddiodd ap wedi'i gyfieithu i weithio'n iawn, ond erbyn hyn yn mynd yn sownd ar ddechrau, cliciwch ar yr ap yn apiau i gyfieithu tab a cliciwch ar cliciwch storfa cyfieithu clir.
-4. os yn rhai rhannau o'r ap nid cael eu cyfieithu, cliciwch ar yr ap yn apiau i gyfieithu tab, a galluogi modd ymosodol.
-5. os mae ap dal i rym yn cau, analluogi cyfieithu app hwn a gysylltu â mi ar y llinyn cymorth ar XDA-https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Gyfieithu unrhyw le"</string>
+    <string name="backup_pref_error">"Rhai gwallau. Ni allai gwneud copi wrth gefn dewisiadau! Wnaethoch chi ganiatáu mynediad SuperUser?"</string>
+    <string name="backup_pref_success">"Mae dewisiadau copi wrth gefn i storio allanol!"</string>
+    <string name="wut_why_null">"Allai ddim llwytho'r dudalen dewis y ap. Gau ac ailagor cais eto."</string>
+    <string name="app_icon">"Ap eicon"</string>
+    <string name="example_application">"Enghraifft cais"</string>
+    <string name="description">"Disgrifiad"</string>
+    <string name="translate_anywhere">"Gyfieithu ym mhobman"</string>
     <string name="apps_to_translate">"Apiau i gyfieithu"</string>
     <string name="global_settings">"Gosodiadau cyffredin"</string>
     <string name="instructions">"Cyfarwyddiadau"</string>
@@ -112,8 +68,20 @@ DATRYS PROBLEMAU
     <string name="caching">"Defnyddio ' caching '"</string>
     <string name="caching_summary_off">"Nid arbed cyfieithiadau all-lein, gan arwain at arafach gyfieithu a data uwch-ond efallai y bydd yn gweithio ar gyfer mwy o apps. Droi ar i arbed cyfieithiadau."</string>
     <string name="caching_summary_on">"Arbed cyfieithiadau all-lein i gyflymu'r gyfieithu a defnyddio data. Diffodd i analluogi os nad yw eich app yn dechrau."</string>
-    <string name="delay">"Oedi cyn troi"</string>
-    <string name="delay_summary">"Gosod amser yn milieiliad aros cyn cyfieithu. Gwerth diofyn yn 0, gosod i 1000 – 5000 os yw ap wedi'i gyfieithu yn chwalu."</string>
+    <string name="delay">"Oedi cyn yn lle eu cyfieithu testun"</string>
+    <string name="delay_summary">"Gosod amser yn milieiliad aros cyn rhoi yn ei le wedi'i gyfieithu testun. Gwerth diofyn yn 0. Yn 1000 – 5000 os yw ap wedi'i gyfieithu yn chwalu."</string>
+    <string name="delay_webview">"Oedi cyn dechrau cyfieithu WebViews"</string>
+    <string name="delay_webview_summary">"Gosod amser yn milieiliad aros cyn dechrau i gyfieithu WebViews. Gwerth diofyn yn 500. Wedi'u gosod ar 0 i gynyddu cyflymder cyfieithu. Yn 3000-5000 os yn rhan o'r we ap beidio â chyfieithu."</string>
+    <string name="analytics">"Anfon damwain dienw a defnydd Data"</string>
+    <string name="analytics_summary_off">"Beidio ag anfon damwain dienw a defnyddio data. Mae anfon data dienw damwain yn helpu datblygwr yr ap yn gwneud gwell."</string>
+    <string name="analytics_summary_on">"Anfon data dienw damwain a defnydd. Trosglwyddir unrhyw wybodaeth bersonol. Mae data dienw damwain yn helpu datblygwr yr ap yn gwneud gwell"</string>
+    <string name="debug">"Uwch: Galluogi dull difa chwilod."</string>
+    <string name="debug_summary_off">"Difa chwilod yw'r modd oddi ar. Nid difa chwilod data ysgrifennu i logcat. Galluogwch hyn cyn anfon adroddiadau gwall"</string>
+    <string name="debug_summary_on">"Difa chwilod yw'r modd ar. Cofnodion ysgrifenedig i logcat. Mae hyn yn gostwng perfformiad-diffodd os nad sydd eu hangen."</string>
+    <string name="local_on_off">"Ap hwn yn cyfieithu"</string>
+    <string name="local_on_off_summary">"Diffodd i roi'r gorau i gyfieithu ap hwn"</string>
+    <string name="local_on_off_summary_off">"Bydd yr ap hwn nid eu cyfieithu. Troi ymlaen i ddechrau defnyddio Awto-gyfieithu!"</string>
+    <string name="local_on_off_summary_on">"Bydd hyn yn eu cyfieithu. Diffodd llwyr analluogi'r gyfieithu yr ap hwn."</string>
     <string name="overRide_global">"Diystyru'r gosodiadau byd-eang"</string>
     <string name="overRide_global_summary_off">"Defnyddio gosodiadau byd-eang ar gyfer hwn app. tro ar i newid y gosodiadau ar gyfer yr ap hwn yn unig."</string>
     <string name="overRide_global_summary_on">"Defnyddio gosodiadau lleol ar gyfer hwn app. troi oddi ar i ddefnyddio'r gosodiadau byd-eang."</string>

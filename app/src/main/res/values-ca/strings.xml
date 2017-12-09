@@ -23,57 +23,13 @@
     <string name="loading">"Carregant la llista d'aplicacions - si us plau espera"</string>
     <string name="clear_cache_error">"Algun Error. No podria aclarir l'amagatall de traducció!"</string>
     <string name="clear_cache_success">"Traduir la memòria cau per a aquest app ha desaparegut!"</string>
-	<string name="how_to_use">"COM UTILITZAR L'APLICACIÓ
-
-Aquesta aplicació requereix registrar-se per a una clau de Microsoft o traductor Yandex.
-Yandex Translate suporta més idiomes, té un procés signup molt més fàcil i requereix cap targeta de crèdit.
-Microsoft Translate dóna millors resultats, però requereix una targeta de crèdit per inscriure's. (Però no et preocupis, res serà carregada.)
-
-1. en la pestanya de configuració Global, permetre utilitzar Yandex en comptes de microsuau si voleu utilitzar Yandex, més d'impossibilitar per utilitzar Microsoft.
-1. en la pestanya de configuració Global, premeu entrar clau de subscripció Microsoft/Yandex, introduïu la clau corresponent (vegeu les instruccions de sota).
-2. Trieu la traduir de l'idioma i traduir a la llengua.
-3. en els Apps al tabulador de traductor, trobar l'aplicació que voleu traduir, feu clic a la casella. Si la casella de selecció no és visible, proveu girant lateralment el seu telèfon a mode de paisatge.
-4. tancar i reiniciar l'aplicació que voleu traduccions translated - cal traduir!
-
-Advertència: alguns apps podria forçar a prop. Vegeu la secció solució de problemes.
-
-COM ACONSEGUIR YANDEX TRADUIR CLAU DE SUBSCRIPCIÓ
-
-1. aneu a Yandex web - https://tech.yandex.com/keys/get/?service=trnsl
-2. si no teniu un compte, feu clic a registre i signar cap amunt per un compte nou.
-3. després de signar cap amunt, d'acord amb l'acord d'usuari i feu clic a obtenir clau d'API.
-4. han rebut correctament la clau! És alguna cosa com trnsl.1.1.201701...
-
-COM ACONSEGUIR MICROSOFT AZURE TRADUIR CLAU DE SUBSCRIPCIÓ
-
-1. inscrigui's per un compte de Microsoft Azure a http://azure.com
-
-2. després de vostè té un compte, inicieu la sessió al portal blaves a http://portal.azure.com
-
-3. afegir una subscripció Microsoft traductor API al compte Azure.
-Trieu una subscripció comprin. Es requereix una targeta de crèdit, però no et preocupis, res no es carregarà.
-Seleccioneu el + nou opció.
-Seleccioneu la intel·ligència de la llista de serveis.
-Seleccioni serveis cognitiva APIs.
-Seleccioneu l'opció de tipus API.
-Seleccioneu la traducció de textos
-A la secció de nivell de preus, seleccioneu la graderia lliure (F0)
-Empleneu la resta de la forma i premeu el botó Crea.
-
-4. recuperar la clau d'autenticació.
-Anar a tots els recursos i seleccioneu l'API de traductor de Microsoft que subscrit.
-Anar a l'opció tecles i copiar la clau de subscripció per accedir al servei.
-La clau de subscripció és alguna cosa com 321dcba...
-
-RESOLUCIÓ DE PROBLEMES
-
-1. si s'està traduint cap app, comproveu que la clau de subscripció Microsoft/Yandex és correcta.
-2. si l'app traduït força tanca/aconsegueix encallat en carregar la primera vegada després que comenci a traduir, feu clic a l'app en aplicacions traduir tabulador, i en altres escenes omplir en retard abans de traduir a 2000.
-3. si l'aplicació traduït utilitzat funcionen bé, però ara es queda bloquejat en començar, feu clic a l'app en aplicacions traduir tabulador, i fan clic a feu clic a buida la memòria cau traducció.
-4. si algunes parts de l'app no s'estan traduint, feu clic a l'app en aplicacions traduir tabulador i activar el Mode agressiu.
-5. si l'app encara es tanca força, impossibilitar traducció aquest app i en contacte amb mi en el fil de suport en XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Traduir a qualsevol lloc"</string>
+    <string name="backup_pref_error">"Algun Error. No podia reserva preferències! Vostè atorga accés de superusuari?"</string>
+    <string name="backup_pref_success">"Preferències ha estat recolzat per emmagatzematge extern!"</string>
+    <string name="wut_why_null">"No s'ha pogut carregar la pàgina de preferències Per app. Tanqui i reobri aplicació una altra vegada."</string>
+    <string name="app_icon">"Icona d'aplicació"</string>
+    <string name="example_application">"Exemple d'aplicació"</string>
+    <string name="description">"Descripció"</string>
+    <string name="translate_anywhere">"Traduir a tot arreu"</string>
     <string name="apps_to_translate">"Apps per traduir"</string>
     <string name="global_settings">"Configuració global"</string>
     <string name="instructions">"Instruccions"</string>
@@ -112,8 +68,20 @@ RESOLUCIÓ DE PROBLEMES
     <string name="caching">"Ús de la memòria cau"</string>
     <string name="caching_summary_off">"No estalvi traduccions fora de línia, ocasionant més lent traduir i les dades més altes - però pot funcionar perquè més apps. Al seu torn per salvar les traduccions."</string>
     <string name="caching_summary_on">"Traduccions fora de línia d'estalvi per accelerar traduir i utilitzar les dades. Desviar-se per a deshabilitar si no comença el seu app."</string>
-    <string name="delay">"Retard abans de traduir"</string>
-    <string name="delay_summary">"Posar el temps en milisegons per esperar abans de traduir. Valor per defecte és 0, situat a 1000 – 5000 si traduït l'app s'està estavellant."</string>
+    <string name="delay">"Retard abans substituint per traduir Text"</string>
+    <string name="delay_summary">"Posar el temps en milisegons per esperar abans de reemplaçar amb el text traduït. Valor per defecte és 0. Situat a 1000 – 5000 si traduït l'app s'està estavellant."</string>
+    <string name="delay_webview">"Retard abans de començar a traduir WebViews"</string>
+    <string name="delay_webview_summary">"Posar el temps en milisegons per esperar abans de començar a traduir WebViews. Valor per defecte és 500. Posi a 0 per augmentar velocitat de traducció. Conjunt de 3000-5000 si no esteu traduint part de web app."</string>
+    <string name="analytics">"Enviar accident anònim i dades d'ús"</string>
+    <string name="analytics_summary_off">"Accident no enviament anònim i dades d'ús. Enviant dades anònimes accident ajuda el desenvolupador de millorar l'app."</string>
+    <string name="analytics_summary_on">"Enviant dades anònimes d'accident i l'ús. Es transmet cap informació personal. Dades de l'accident anònim ajuda el desenvolupador de millorar l'app"</string>
+    <string name="debug">"Avançat: Activar el Mode de depuració."</string>
+    <string name="debug_summary_off">"Depurar mode és fora. No escriure depuració dades a logcat. Activeu-lo abans d'enviar informes d'error"</string>
+    <string name="debug_summary_on">"Depurar mode és en. Registres d'escriptura a logcat. Això disminueix el rendiment - giri's si no necessitava."</string>
+    <string name="local_on_off">"Traduir aquest App"</string>
+    <string name="local_on_off_summary">"Giri's de deixar traduir aquest app"</string>
+    <string name="local_on_off_summary_off">"Aquest app no es tradueixen. Al seu torn a començament utilitzant auto-traduir!"</string>
+    <string name="local_on_off_summary_on">"Això es traduirà. Apagar completament impossibilitar traduir aquest app."</string>
     <string name="overRide_global">"Ignora la configuració Global"</string>
     <string name="overRide_global_summary_off">"Utilitzant la configuració Global per a aquest app. al seu torn en canviar escenes només per a aquest app."</string>
     <string name="overRide_global_summary_on">"Amb la configuració Local per a aquest app. al seu torn fora d'utilitzar la configuració Global."</string>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">"AllTrans"</string>
+    <string name="loading">"অ্যাপ্লিকেশন - তালিকা লোড করা হচ্ছে অনুগ্রহ করে অপেক্ষা করুন"</string>
+    <string name="clear_cache_error">"কিছু কিছু সমস্যা হয়েছে। অনুবাদ ক্যাশে পরিষ্কার করতে পারে না।"</string>
+    <string name="clear_cache_success">"ক্যাশ অনুবাদ জন্য এই অ্যাপ মুছে ফেলা হয়েছে।"</string>
+    <string name="backup_pref_error">"কিছু কিছু সমস্যা হয়েছে। অগ্রাধিকার ব্যাকআপ রাখা সম্ভব না। SuperUser প্রবেশ করি নি?"</string>
+    <string name="backup_pref_success">"অগ্রাধিকার বৈদেশিক সঞ্চয় থেকে পৃষ্ঠপোষকতা করা হয়েছে আছে!"</string>
+    <string name="wut_why_null">"শতাংশ অ্যাপ্লিকেশন অগ্রাধিকার পৃষ্ঠা লোড করতে পারে না। বন্ধ করুন এবং পুনরায় আবেদন আবার খুলবে।"</string>
+    <string name="app_icon">"অ্যাপ আইকন"</string>
+    <string name="example_application">"যেমন আবেদন"</string>
+    <string name="description">"বর্ণনা"</string>
+    <string name="translate_anywhere">"সব জায়গায় অনুবাদ"</string>
+    <string name="apps_to_translate">"অনুবাদ করার অ্যাপ"</string>
+    <string name="global_settings">"সার্বিক বিন্যাসনসমূহ"</string>
+    <string name="instructions">"নিয়মাবলী"</string>
+    <string name="pref_cat_translate_settings">"সেটিংস-এ অনুবাদ করুনquery"</string>
+    <string name="pref_cat_parts_of_app">"অংশের অনুবাদ করতে অ্যাপ্লিকেশন"</string>
+    <string name="pref_cat_other_settings">"অন্যান্য সেটিংস"</string>
+    <string name="master_on_off">"মাস্টার চালু/বন্ধ"</string>
+    <string name="master_on_off_summary">"পুরোপুরি এই মডিউলটি নিষ্ক্রিয় করা বন্ধ করুন"</string>
+    <string name="master_on_off_summary_off">"মডিউল বন্ধ করা, কোন অ্যাপস অনুবাদ করা হবে। ঘুরিয়ে শুরু ব্যবহার করে পরিচালিত অটো-অনুবাদ।"</string>
+    <string name="master_on_off_summary_on">"মডিউল চালু আছে, নির্বাচিত অ্যাপ্লিকেশন অনুবাদ করা হবে। পুরোপুরি এই মডিউলটি নিষ্ক্রিয় করা বন্ধ করুন।"</string>
+    <string name="enable_yandex">"ইয়ানডেক্স Microsoft-এর পরিবর্তে ব্যবহার করুন"</string>
+    <string name="enable_yandex_summary">"ইয়ানডেক্স অনুবাদক ব্যবহার করে Microsoft-এর পরিবর্তে চালু করুন"</string>
+    <string name="enable_yandex_summary_off">"বর্তমানে Microsoft-এর Azure অনুবাদ ব্যবহার করে। ইয়ানডেক্স অনুবাদক ব্যবহার চালু করেন।"</string>
+    <string name="enable_yandex_summary_on">"বর্তমানে ইয়ানডেক্স অনুবাদক ব্যবহার করে। Microsoft-এর Azure অনুবাদ ব্যবহার করা বন্ধ করুন।"</string>
+    <string name="subKey">"Microsoft / ইয়ানডেক্স সাবস্ক্রিপশন কী"</string>
+    <string name="subKey_micro">"Microsoft সদস্যতা কী"</string>
+    <string name="subKey_yandex">"ইয়ানডেক্স সাবস্ক্রিপশন কী"</string>
+    <string name="subKey_summary">"ইয়ানডেক্স অনুবাদক এপিআই বা Microsoft-এর Azure জন্য সাবস্ক্রিপশন কী প্রবেশ করান যেটা উপরে সক্রিয় করা হয়েছে"</string>
+    <string name="subKey_defaultValue">"আপনার Microsoft বা ইয়ানডেক্স সাবস্ক্রিপশন কী প্রবেশ করান"</string>
+    <string name="transFrom">"ভাষা থেকে অনুবাদ"</string>
+    <string name="transFrom_summary">"ভাষা অ্যাপ্লিকেশন আসলে আছে।"</string>
+    <string name="transTo">"ভাষা থেকে অনুবাদ"</string>
+    <string name="transTo_summary">"ভাষা হতে অনুবাদ এ অ্যাপটি চাই।"</string>
+    <string name="setText">"সাধারণ পাঠ্য অনুবাদ"</string>
+    <string name="setText_summary_off">"না অনুবাদ করা লেখা পাঠ্য বিন্যাস ব্যবহার করে লেখা। সক্রিয় করার জন্য চালু করেন।"</string>
+    <string name="setText_summary_on">"অনুবাদ পাঠ করুন লেখা - সুরক্ষিত ব্যবহার করে লেখা। নিষ্ক্রিয় করা বন্ধ করুন।"</string>
+    <string name="setHint">"অনুবাদ টেক্সট বক্স এ লেখা ইঙ্গিত (ধূসর রঙের পরামর্শ নেই)"</string>
+    <string name="setHint_summary_off">"না অনুবাদ সংকেত বিন্যাস ব্যবহার করে লেখা পাঠ্য। সক্রিয় করার জন্য চালু করেন।"</string>
+    <string name="setHint_summary_on">"বিন্যাস সঙ্কেত - নিরাপদ ব্যবহার করে লেখা পাঠ্য অনুবাদ। নিষ্ক্রিয় করা বন্ধ করুন।"</string>
+    <string name="webView">"ওয়েব পেজ, অ্যাপস-এর ভেতর লেখা অনুবাদ"</string>
+    <string name="webView_summary_off">"WebViews লেখা অনুবাদ করবে না। সক্রিয় করার জন্য চালু করেন।"</string>
+    <string name="webView_summary_on">"পাঠ্য অনুবাদ ভিতরে WebView - নিরাপদ, হয়ত কাজ করে সবসময়। নিষ্ক্রিয় করা বন্ধ করুন।"</string>
+    <string name="drawText">"আক্রমনাত্মক মোড"</string>
+    <string name="drawText_summary_off">"সহিংস না drawText এ লেখা অনুবাদ করা। সব ব্যর্থ হয় তখন উপরে ব্যবহার করুন। সক্রিয় করার জন্য চালু করেন।"</string>
+    <string name="drawText_summary_on">"সহিংস drawText ইন - টেক্সট অনুবাদ পরীক্ষামূলক, যাতে কাজ সব সময় নয়। নিষ্ক্রিয় করা বন্ধ করুন।"</string>
+    <string name="caching">"অফ-লাইন ক্যাশে ব্যবহার করুন"</string>
+    <string name="caching_summary_off">"ধীরে এর ফলে না অনুবাদ ব্যতিত অফলাইন, অনুবাদ ও উচ্চ ডাটা - কিন্তু আরও অ্যাপ্লিকেশন জন্য কাজ করতে পারে। এ অনুবাদ ছাড়া সরে।"</string>
+    <string name="caching_summary_on">"অফলাইন অনুবাদ গতি সঞ্চয় অনুবাদ এবং ডেটা ব্যবহার করি। আপনার অ্যাপ চালু না হলে নিষ্ক্রিয় করা বন্ধ করুন।"</string>
+    <string name="delay">"আগে নিয়ে আসি এই লেখাটির অনুবাদ বিলম্ব"</string>
+    <string name="delay_summary">"অনূদিত পাঠ্য দিয়ে প্রতিস্থাপন সামনে অপেক্ষা করতে মিলিসেকেন্ড সময় স্থাপন করলেন। ডিফল্ট মান 0 হয়। যদি অনুবাদ অ্যাপ্লিকেশন ক্র্যাশ হচ্ছে। 1000-5000 নম্বরে সেট করুন।"</string>
+    <string name="delay_webview">"WebViews অনুবাদ করতে শুরু করার আগে বিলম্ব"</string>
+    <string name="delay_webview_summary">"WebViews অনুবাদ শুরু করার পূর্বে অপেক্ষা করতে মিলিসেকেন্ডে সময় নির্ধারণ করুন। 500 ডিফল্ট মান আছে। ০ তে অনুবাদ গতি বাড়ানোর জন্য নির্ধারিত। 3000-5000 নম্বরে সেট যদি ওয়েব অ্যাপ্লিকেশন অংশ অনুবাদ হয় না।"</string>
+    <string name="analytics">"বেনামী বিধ্বস্ত ও ব্যবহার সংক্রান্ত ডেটা প্রেরণ করুন"</string>
+    <string name="analytics_summary_off">"বেনামী বিধ্বস্ত ও ব্যবহার সংক্রান্ত ডেটা পাঠানো হচ্ছে না। বেনামী দুর্ঘটনার তথ্য প্রেরণ করা হচ্ছে ডেভেলপার অ্যাপ্লিকেশন উন্নত করতে সাহায্য করে।"</string>
+    <string name="analytics_summary_on">"অজ্ঞাতনামা বিধ্বস্ত ও ব্যবহারের তথ্য প্রেরণ করা হচ্ছে। কোন ব্যক্তিগত তথ্য স্থানান্তরিত হয়। অজ্ঞাতনামা দুর্ঘটনার তথ্য ডেভেলপার ভাল অ্যাপ তৈরি করতে সাহায্য করে।"</string>
+    <string name="debug">"উন্নত-ডিবাগ মোড চালু করুন।"</string>
+    <string name="debug_summary_off">"ডিবাগ মোড বন্ধ রয়েছে। ডিবাগ তথ্য logcat জন্য লিখে না। এই সমস্যা প্রতিবেদন পাঠানোর আগে চালু"</string>
+    <string name="debug_summary_on">"ডিবাগ মোড চালু রয়েছে। লগ করার logcat লেখা। এই কার্যক্ষমতা কমে যায় - বন্ধ যদি না প্রয়োজন।"</string>
+    <string name="local_on_off">"এই অ্যাপ-এ অনুবাদ করুনquery"</string>
+    <string name="local_on_off_summary">"এই অ্যাপ্লিকেশন অনুবাদ বন্ধ বন্ধ"</string>
+    <string name="local_on_off_summary_off">"এই অ্যাপটি না অনুবাদ করবে। ঘুরিয়ে শুরু ব্যবহার করে পরিচালিত অটো-অনুবাদ।"</string>
+    <string name="local_on_off_summary_on">"এর অনুবাদ করা যাবে। এই অ্যাপটি অনুবাদ সম্পূর্ণ নিষ্ক্রিয় করা বন্ধ করুন।"</string>
+    <string name="overRide_global">"সার্বিক বিন্যাসনসমূহ অগ্রাহ্য করুন"</string>
+    <string name="overRide_global_summary_off">"বিশ্বব্যাপী সেটিংস এই অ্যাপ৷ পালা জন্য এ বিন্যাসন পরিবর্তন করার জন্য এই অ্যাপ ব্যবহার করে।"</string>
+    <string name="overRide_global_summary_on">"স্থানীয় সেটিংস এই অ্যাপ৷ পালা জন্য বন্ধ বিশ্বব্যাপী সেটিংস ব্যবহার করতে ব্যবহার করে।"</string>
+    <string name="clear_cache">"অনুবাদ ক্যাশে পরিষ্কার করতে ক্লিক করুন"</string>
+    <string name="clear_cache_summary">"ক্লিক করুন উপরের অ্যাপ মুছে ফেলতে ক্যাশ অনুবাদ করতে হয়। এর পর পরিবর্তন করতে/ভাষা থেকে ব্যবহার বা অ্যাপ চালু না হলে।"</string>
+    <string name="Afrikaans_yandex">"আফ্রিকানরা"</string>
+    <string name="Amharic_yandex">"আমহারিক"</string>
+    <string name="Arabic_yandex">"আরবি"</string>
+    <string name="Azerbaijani_yandex">"আজারবাইজানি"</string>
+    <string name="Bashkir_yandex">"বাশকির"</string>
+    <string name="Belarusian_yandex">"বেলারুশীয়"</string>
+    <string name="Bulgarian_yandex">"বুলগেরীয়"</string>
+    <string name="Bengali_yandex">"বাঙ্গালি"</string>
+    <string name="Bosnian_yandex">"বসনীয়"</string>
+    <string name="Catalan_yandex">"কাতালান"</string>
+    <string name="Cebuano_yandex">"সেবুয়ানো"</string>
+    <string name="Czech_yandex">"চেক"</string>
+    <string name="Welsh_yandex">"আচ্ছা তুমি জানো"</string>
+    <string name="Danish_yandex">"ড্যানিশ"</string>
+    <string name="German_yandex">"জার্মান"</string>
+    <string name="Greek_yandex">"গ্রীক"</string>
+    <string name="English_yandex">"ইংরাজি"</string>
+    <string name="Esperanto_yandex">"Esperanto"</string>
+    <string name="Spanish_yandex">"স্পেন"</string>
+    <string name="Estonian_yandex">"এস্তোনিয়ান"</string>
+    <string name="Basque_yandex">"বাস্ক"</string>
+    <string name="Persian_yandex">"গণপ্রজাতন্ত্রী চীন"</string>
+    <string name="Finnish_yandex">"ফিনিশ"</string>
+    <string name="French_yandex">"ফরাসী"</string>
+    <string name="Irish_yandex">"আয়ারল্যান্ড"</string>
+    <string name="Scottish_Gaelic_yandex">"স্কট্ স গ্যালিক ভাষা"</string>
+    <string name="Galician_yandex">"গ্যালিশীয়"</string>
+    <string name="Gujarati_yandex">"গুজরাতি"</string>
+    <string name="Hebrew_yandex">"হিব্রু"</string>
+    <string name="Hindi_yandex">"হিন্দি"</string>
+    <string name="Croatian_yandex">"ক্রোয়েশীয়"</string>
+    <string name="Haitian_yandex">"হাইতির"</string>
+    <string name="Hungarian_yandex">"রেখে দিল"</string>
+    <string name="Armenian_yandex">"আর্মেনীয়"</string>
+    <string name="Indonesian_yandex">"ইন্দোনেশিয়া"</string>
+    <string name="Icelandic_yandex">"আইসল্যান্ড"</string>
+    <string name="Italian_yandex">"এটা কাজ করছে"</string>
+    <string name="Japanese_yandex">"জাপান"</string>
+    <string name="Javanese_yandex">"যবদ্বীপ"</string>
+    <string name="Georgian_yandex">"জর্জিয়ান"</string>
+    <string name="Kazakh_yandex">"কন্নড়"</string>
+    <string name="Kannada_yandex">"আমাকে শুধু একটা ইমেল করো"</string>
+    <string name="Korean_yandex">"কোরিয়া"</string>
+    <string name="Kyrgyz_yandex">"কুয়েত"</string>
+    <string name="Latin_yandex">"লাতিন"</string>
+    <string name="Luxembourgish_yandex">"Luxembourgish"</string>
+    <string name="Lithuanian_yandex">"লিথুয়ানিয়া"</string>
+    <string name="Latvian_yandex">"ল্যাটভিয়া"</string>
+    <string name="Malagasy_yandex">"মালাগাসী"</string>
+    <string name="Mari_yandex">"মারি"</string>
+    <string name="Maori_yandex">"অনেক ধন্যবাদ"</string>
+    <string name="Macedonian_yandex">"ম্যাকাও এসএআর"</string>
+    <string name="Malayalam_yandex">"মালয়"</string>
+    <string name="Mongolian_yandex">"মঙ্গোলিয়া"</string>
+    <string name="Marathi_yandex">"মাওরি"</string>
+    <string name="Hill_Mari_yandex">"পাহাড়ের মারি"</string>
+    <string name="Malay_yandex">"নিশ্চিত করা"</string>
+    <string name="Maltese_yandex">"মাল্টা"</string>
+    <string name="Nepali_yandex">"নেপালি"</string>
+    <string name="Dutch_yandex">"ডাচ"</string>
+    <string name="Norwegian_yandex">"নরওয়ে"</string>
+    <string name="Punjabi_yandex">"পুল ওভার"</string>
+    <string name="Papiamento_yandex">"Papiamento"</string>
+    <string name="Polish_yandex">"পোল্যান্ড"</string>
+    <string name="Portuguese_yandex">"পর্তুগাল"</string>
+    <string name="Romanian_yandex">"রোমানিয়া"</string>
+    <string name="Russian_yandex">"রাশিয়া"</string>
+    <string name="Sinhalese_yandex">"সিংহলি"</string>
+    <string name="Slovak_yandex">"ভালো ঘুম"</string>
+    <string name="Slovenian_yandex">"শ্লোভেনিয়া"</string>
+    <string name="Albanian_yandex">"আলবানিয়ানরা"</string>
+    <string name="Serbian_yandex">"সার্বিয়া"</string>
+    <string name="Sundanese_yandex">"Sundanese"</string>
+    <string name="Swedish_yandex">"সুইডেন"</string>
+    <string name="Swahili_yandex">"ঠিক"</string>
+    <string name="Tamil_yandex">"তোমার সাথে পরে কথা বলবো বাই"</string>
+    <string name="Telugu_yandex">"তোমাকে কি বলি"</string>
+    <string name="Tajik_yandex">"তাজিক"</string>
+    <string name="Thai_yandex">"পাঠ্য কম্পিউটার সফটওয়্যার দ্বারা স্বয়ংক্রিয় ভাবে অনূদিত হয়ে যাবে কোনো মানুষের ছাড়াই"</string>
+    <string name="Tagalog_yandex">"ট্যাগালোগ"</string>
+    <string name="Turkish_yandex">"তুর্কি"</string>
+    <string name="Tatar_yandex">"দারুণ খেতে"</string>
+    <string name="Udmurt_yandex">"Udmurt"</string>
+    <string name="Ukrainian_yandex">"ইউক্রেন"</string>
+    <string name="Urdu_yandex">"এখন আপডেট করো"</string>
+    <string name="Uzbek_yandex">"উরুগুয়ে"</string>
+    <string name="Vietnamese_yandex">"ভিয়েতনাম"</string>
+    <string name="Xhosa_yandex">"হবে"</string>
+    <string name="Yiddish_yandex">"Yiddish"</string>
+    <string name="Chinese_yandex">"চিনা"</string>
+    <string name="Afrikaans_micro">"আফ্রিকানরা"</string>
+    <string name="Arabic_micro">"আরবি"</string>
+    <string name="Bosnian_Latin_micro">"বসনিয়ার লাতিন"</string>
+    <string name="Bulgarian_micro">"বুলগেরীয়"</string>
+    <string name="Catalan_micro">"কাতালান"</string>
+    <string name="Chinese_Simplified_micro">"চিনা সরলীকৃত"</string>
+    <string name="Chinese_Traditional_micro">"চিনা প্রথাগত"</string>
+    <string name="Croatian_micro">"ক্রোয়েশীয়"</string>
+    <string name="Czech_micro">"চেক"</string>
+    <string name="Danish_micro">"ড্যানিশ"</string>
+    <string name="Dutch_micro">"ডাচ"</string>
+    <string name="English_micro">"ইংরাজি"</string>
+    <string name="Estonian_micro">"এস্তোনিয়ান"</string>
+    <string name="Finnish_micro">"ফিনিশ"</string>
+    <string name="French_micro">"ফরাসী"</string>
+    <string name="German_micro">"জার্মান"</string>
+    <string name="Greek_micro">"গ্রীক"</string>
+    <string name="Haitian_Creole_micro">"হাইতিয়ান ক্রেওল"</string>
+    <string name="Hebrew_micro">"হিব্রু"</string>
+    <string name="Hindi_micro">"হিন্দি"</string>
+    <string name="Hmong_Daw_micro">"মঙ্গ আন্টি"</string>
+    <string name="Hungarian_micro">"রেখে দিল"</string>
+    <string name="Indonesian_micro">"ইন্দোনেশিয়া"</string>
+    <string name="Italian_micro">"এটা কাজ করছে"</string>
+    <string name="Japanese_micro">"জাপান"</string>
+    <string name="Kiswahili_micro">"কিসোয়াহিলি"</string>
+    <string name="Klingon_micro">"Klingon"</string>
+    <string name="Klingon_pIqaD_micro">"Klingon pIqaD"</string>
+    <string name="Korean_micro">"কোরিয়া"</string>
+    <string name="Latvian_micro">"ল্যাটভিয়া"</string>
+    <string name="Lithuanian_micro">"লিথুয়ানিয়া"</string>
+    <string name="Malay_micro">"নিশ্চিত করা"</string>
+    <string name="Maltese_micro">"মাল্টা"</string>
+    <string name="Norwegian_micro">"নরওয়ে"</string>
+    <string name="Persian_micro">"গণপ্রজাতন্ত্রী চীন"</string>
+    <string name="Polish_micro">"পোল্যান্ড"</string>
+    <string name="Portuguese_micro">"পর্তুগাল"</string>
+    <string name="Queretaro_Otomi_micro">"Queretaro Otomi"</string>
+    <string name="Romanian_micro">"রোমানিয়া"</string>
+    <string name="Russian_micro">"রাশিয়া"</string>
+    <string name="Serbian_Cyrillic_micro">"সার্বিয়ার মানুষ"</string>
+    <string name="Serbian_Latin_micro">"সার্বীয় লাতিনname"</string>
+    <string name="Slovak_micro">"ভালো ঘুম"</string>
+    <string name="Slovenian_micro">"শ্লোভেনিয়া"</string>
+    <string name="Spanish_micro">"স্পেন"</string>
+    <string name="Swedish_micro">"সুইডেন"</string>
+    <string name="Thai_micro">"পাঠ্য কম্পিউটার সফটওয়্যার দ্বারা স্বয়ংক্রিয় ভাবে অনূদিত হয়ে যাবে কোনো মানুষের ছাড়াই"</string>
+    <string name="Turkish_micro">"তুর্কি"</string>
+    <string name="Ukrainian_micro">"ইউক্রেন"</string>
+    <string name="Urdu_micro">"এখন আপডেট করো"</string>
+    <string name="Vietnamese_micro">"ভিয়েতনাম"</string>
+    <string name="Welsh_micro">"আচ্ছা তুমি জানো"</string>
+    <string name="Yucatec_Maya_micro">"Yucatec মায়া"</string>
+</resources>

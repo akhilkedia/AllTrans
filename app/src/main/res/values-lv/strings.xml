@@ -23,57 +23,13 @@
     <string name="loading">"Programmu - kravas sarakstu, lūdzu, pagaidiet"</string>
     <string name="clear_cache_error">"Dažas kļūdas. Nav skaidrs tulkošanas kešatmiņu!"</string>
     <string name="clear_cache_success">"Tulkot Cache, jo šis app ir jāizdzēš!"</string>
-	<string name="how_to_use">"KĀ IZMANTOT LIETOJUMPROGRAMMU
-
-Šai lietojumprogrammai ir nepieciešama atslēga no Microsoft vai Yandex Translate piereģistrēties.
-Yandex Translate atbalsta vairākas valodas, ir daudz vienkāršāku reģistrēšanās process un prasa Nr CREDIT CARD.
-Microsoft Translate dod labākus rezultātus, bet prasa pieteikties kredītkartes. (Bet neuztraucieties, nekas, būs jāmaksā.)
-
-1. jo globālie iestatījumi cilne ļauj izmantot Yandex, nevis Microsoft, izmantot Yandex, cits atspējot lietot Microsoft.
-1. Global Settings tab, pieskarieties Microsoft/Yandex ievadiet atslēga abonements, ievada atbilstošo taustiņu (skatīt instrukcijas no apakšas).
-2. izvēlēties tulkot no valodas un valodas tulkot.
-3. Translate cilnē Apps, atrast app vēlaties tulkot, atzīmējiet izvēles rūtiņu blakus tai. Ja izvēles rūtiņas nav redzams, mēģiniet pagriežot sāniski tālruni ainavas režīmā.
-4. aizvērt un restartēt app jūs vēlaties tulkot - tas būtu jātulko!
-
-BRĪDINĀJUMS - daži apps var piespiest aizvērt. Skatiet sadaļā problēmu novēršana.
-
-KĀ NOKĻŪT YANDEX TULKOT ATSLĒGA ABONEMENTS
-
-1. doties uz Yandex mājas lapā - https://tech.yandex.com/keys/get/?service=trnsl
-2. Ja jums vēl nav konta, noklikšķiniet uz reģistrs un parakstīt jaunu lietotāja kontu.
-3. pēc parakstīšanas līdz, jāpiekrīt lietotāja līgumu un noklikšķiniet uz iegūt API atslēgu.
-4. Jūs veiksmīgi saņēmis jūsu atslēga! Tas ir kaut kas līdzīgs trnsl.1.1.201701...
-
-KĀ IEGŪT MICROSOFT AZURE TULKOT ATSLĒGA ABONEMENTS
-
-1. Reģistrējieties Microsoft Azure kontam pie http://azure.com
-
-2. pēc tam, kad jums ir konts, parakstīt ar debeszils portāla pie http://portal.azure.com
-
-3. pievienot abonējams Microsoft, tulkotājam API debeszils kontā.
-Izvēlieties abonementa pay-as-you-go. Būs nepieciešama kredītkarte, bet neuztraucieties, nekas netiks iekasēta.
-Atlasiet + jauns variants.
-Pakalpojumu sarakstā izvēlieties Intelligence.
-Atlasiet izziņas pakalpojumu API.
-Atlasiet opciju API tips.
-Atlasiet tekstu tulkošana
-Cenu līmeņa sadaļā atlasiet bez otrā līmeņa (F0)
-Atlikušo veidlapu, aizpildiet un nospiediet pogu izveidot.
-
-4. izgūt autentifikācijas atslēgu.
-Iet uz visiem resursiem un atlasiet Microsoft tulkotājs API, uz kurām esat parakstījies.
-Iet uz atslēgas iespēja un kopēt jūsu abonementa taustiņu, lai piekļūtu pakalpojumu.
-Atslēga abonements ir kaut kas līdzīgs 321dcba...
-
-PROBLĒMU NOVĒRŠANA
-
-1. Ja nav app ir tulko, pārbaudiet Microsoft/Yandex abonēšanas atslēga ir pareiza.
-2. Ja tulkoto app spēkā aizver/izpaužas iestrēdzis uz iekraušanas pirmo reizi pēc tam, kad jūs sākat, tulkojot, uzklikšķiniet uz app Apps tab tulkot un citi iestatījumi aizpildiet kavēšanās pirms tulkot līdz 2000.
-3. Ja tulkoto app, kas izmantoti, lai strādā labi, bet tagad iestrēgst pie sākuma, noklikšķiniet uz app Apps tab tulkot un noklikšķiniet uz, noklikšķiniet uz tulkošanas Tīrīt kešatmiņu.
-4. Ja app dažas daļas netiek pārvērstas, noklikšķiniet uz app Apps tab tulkot un iespējot agresīvu režīmu.
-5. Ja app joprojām spēkā aizver, atspējojiet šo app tulkojums un sazinieties ar mani uz atbalstu pavedienu uz XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Tulkot jebkur"</string>
+    <string name="backup_pref_error">"Dažas kļūdas. Nevar dublēt vēlmēm! Vai jūs piešķirat galvenajam lietotājam piekļuvi"</string>
+    <string name="backup_pref_success">"Preferencēs ir dublēts ārējās atmiņas!"</string>
+    <string name="wut_why_null">"Nevarēja ielādēt Per-app preferenču lapa. Aizveriet un vēlreiz atveriet programmu vēlreiz."</string>
+    <string name="app_icon">"App ikona"</string>
+    <string name="example_application">"Piemērā programma"</string>
+    <string name="description">"Apraksts"</string>
+    <string name="translate_anywhere">"Tulkot visur"</string>
     <string name="apps_to_translate">"Lai tulkotu Apps"</string>
     <string name="global_settings">"Globālie iestatījumi"</string>
     <string name="instructions">"Instrukcijas"</string>
@@ -112,8 +68,20 @@ PROBLĒMU NOVĒRŠANA
     <string name="caching">"Izmanto kešatmiņas"</string>
     <string name="caching_summary_off">"Nav saglabāšanas bezsaistē tulkojumus, kā rezultātā lēnāk tulkot un augstāku datu - bet var strādāt vairāk progr. Savukārt uz Saglabāt tulkojumi."</string>
     <string name="caching_summary_on">"Saglabāšanas bezsaistē tulkojumus paātrināt tulkot un izmantot datus. Izslēgt atslēgt, ja jūsu app nesākas."</string>
-    <string name="delay">"Aizkavi, pirms tulkojot"</string>
-    <string name="delay_summary">"Iestatiet laiku jāgaida pirms tulkojot milisekundēs. Noklusējuma vērtība ir 0, ja tulkoto app crashing iestatīt 1000 – 5000."</string>
+    <string name="delay">"Aizkavi, pirms aizstājot ar tulkot tekstu"</string>
+    <string name="delay_summary">"Iestatīt laiku, milisekundēs jāgaida, līdz varēs aizstāt ar tulkoto tekstu. Noklusējuma vērtība ir 0. Iestatīts uz 1000 – 5000 ja tulkoto app crashing."</string>
+    <string name="delay_webview">"Aizkave, pirms sākt tulkot WebViews"</string>
+    <string name="delay_webview_summary">"Iestatīt laiku, milisekundēs, uzgaidiet, pirms sākt tulkot WebViews. Noklusētā vērtība ir 500. Iestatīts uz 0, lai palielinātu tulkošanas ātrumu. Iestatīts uz 3000-5000, ja daļa no web app ir nevis tulkojot."</string>
+    <string name="analytics">"Sūtītu anonīmu Crash un lietojuma datus"</string>
+    <string name="analytics_summary_off">"Nav nosūtīta anonīma crash un lietojuma datus. Nosūtot anonīmu crash dati palīdz uzlabot app attīstītājs."</string>
+    <string name="analytics_summary_on">"Nosūtot anonīmu crash un lietojuma datus. Nekāda personīga informācija tiek pārraidīta. Anonīmā crash dati palīdz uzlabot app attīstītājs"</string>
+    <string name="debug">"Papildu: Ieslēdziet atkļūdošanas režīmā."</string>
+    <string name="debug_summary_off">"Atkļūdošanas režīms ir izslēgts. Nav rakstu atkļūdošanas datu logcat. Šo ieslēdziet, pirms sūtīt kļūdu ziņojumus"</string>
+    <string name="debug_summary_on">"Atkļūdošanas režīms ir ieslēgts. Logcat rakstu žurnālos. Tas samazinās veiktspēja - izslēgt, ja nav nepieciešama."</string>
+    <string name="local_on_off">"Tulkot šo App"</string>
+    <string name="local_on_off_summary">"Izslēgt, lai pārtrauktu, tulkojot šo app"</string>
+    <string name="local_on_off_summary_off">"Šajā app būs translēt. Savukārt pie sākuma, izmantojot auto-tulkot!"</string>
+    <string name="local_on_off_summary_on">"Tas tiks tulkots. Izslēgt pilnībā atslēgt, tulkojot šo app."</string>
     <string name="overRide_global">"Globālie iestatījumi ignorē"</string>
     <string name="overRide_global_summary_off">"Izmantojot globālos iestatījumus šai programmai savukārt uz mainīt iestatījumus tikai šo app."</string>
     <string name="overRide_global_summary_on">"Izmantojot lokālos iestatījumus par šo app. Turn off uz Globālie iestatījumi."</string>

@@ -23,57 +23,13 @@
     <string name="loading">"Krovinio aprašo programų - prašome palaukti"</string>
     <string name="clear_cache_error">"Kai kurios klaidos. Nėra aišku vertimo talpyklos!"</string>
     <string name="clear_cache_success">"Versti talpyklos, nes ši programa bus ištrinta!"</string>
-	<string name="how_to_use">"KAIP NAUDOTIS PROGRAMA
-
-Ši programa reikalauja užsiregistruoti raktą iš "Microsoft" arba Yandex vertėjas.
-Yandex vertėjas palaikoma daugiau kalbų, turi daug lengviau registracijos procesas ir reikalauja Nr kreditinės kortelės.
-"Microsoft" Translate duoda geresnius rezultatus, tačiau reikalaujama, kad kredito kortelę, kad užsiregistruoti. (Bet nesijaudinkite, nieko bus įkrautas.)
-
-1. Visuotiniai parametrai skirtuką, leidžia naudoti Yandex vietoj "Microsoft" Jei norite naudoti Yandex, kitur uždrausti naudoti "Microsoft".
-1. Visuotiniai parametrai skirtuke, bakstelėkite įveskite "Microsoft" / Yandex prenumeratos mygtuką, įveskite atitinkamą klavišą (žiūrėkite instrukcijas iš apačios).
-2. Pasirinkite ir išversti iš kalbos ir išversti į kalbą.
-3. versti skirtuką programų, raskite programėlę, kurią norite versti, spustelėkite žymimąjį laukelį šalia jo. Jei žymimąjį langelį nesimato, pabandykite sukasi telefoną šonu į kraštovaizdžio režimu.
-4. Uždarykite ir iš naujo paleiskite norimą išversti programą - ji turėtų būti išverstas!
-
-Įspėjimas: kai kurios programos gali priversti uždaryti. Trikčių šalinimo skyriuje.
-
-KAIP GAUTI YANDEX VERSTI PASIRAŠYMO RAKTAS
-
-1. eikite į žemėlapiai svetainėje - https://tech.yandex.com/keys/get/?service=trnsl
-2. Jei dar neturite paskyros, spustelėkite registras ir pasirašyti naują sąskaitą.
-3. pasirašius aukštyn, sutikti su vartotojo sutartimi ir spustelėkite gauti API raktas.
-4. sėkmingai gavote jūsų raktas! Tai kažkas panašaus į trnsl.1.1.201701...
-
-KAIP GAUTI "MICROSOFT" AZURE VERSTI ABONEMENTO RAKTAS
-
-1. Užsiregistruokite į Microsoft Azure sąskaitą http://azure.com
-
-2. po to, kai jūs turite sąskaitą, prisijungti prie Azure portale, esančiame http://portal.azure.com
-
-3. Pridėti Microsoft Translator API prenumerata Azure abonemento.
-Pasirinkite einamųjų įmokų pensinio draudimo prenumeratą. Reikės pateikti kredito kortelę, bet nesijaudinkite, nieko mokėti.
-Pasirinkite + naujas variantas.
-Paslaugų sąraše pasirinkite žvalgybos.
-Pasirinkite pažinimo paslaugų API.
-Pasirinkite parinktį API tipo.
-Pasirinkite teksto vertimas
-Kainų lygio skiltyje pasirinkite nemokamą pakopa (F0)
-Užpildykite likusią formos, ir paspauskite mygtuką kurti.
-
-4. gauti savo autentifikavimo raktą.
-Eikite į visus išteklius ir pasirinkite Microsoft Translator API Jūs užsiregistravote.
-Eikite į parinktį raktus ir kopijuoti jūsų prenumeratos klavišą, Norėdami atidaryti paslaugos.
-Pasirašymo raktas yra kažkas panašaus į 321dcba...
-
-TRIKČIŲ ŠALINIMAS
-
-1. Jei nė viena programėlė yra išverstas, patikrinkite, ar jūsų "Microsoft" / Yandex pasirašymo raktas yra teisingas.
-2. Jei išversti programą galiojančios uždaro/gauna pakimba ant pakrovimo pirmą kartą po to, kai jums pradėti versti, spustelėkite programėlę programėlių versti tab, ir kiti parametrai užpildyti nedelsdamas prieš įgyvendinant 2000.
-3. Jei išversti programą dirbti gerai, bet dabar problemų pradedant, spustelėkite programėlę programėlių versti skirtuką ir spustelėkite spustelėkite išvalyti vertimo talpyklą.
-4. Jei kai kuriose programėlės nėra išversti, spustelėkite programėlę programėlių versti skirtuką ir įjungti taisymo režimas.
-5. Jei programa vis dar galiojančios uždaro, išjungti šią programą vertimas ir susisiekite su manimi dėl paramos siūlais ant XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Išversti bet kur"</string>
+    <string name="backup_pref_error">"Kai kurios klaidos. Nėra atsarginės pageidavimus! Ar suteikiate administratoriaus prieigą?"</string>
+    <string name="backup_pref_success">"Nuostatos buvo atsargines kopijas į išorinį saugojimo!"</string>
+    <string name="wut_why_null">"Nepavyko įkelti puslapį Per app pirmenybė. Uždarykite ir vėl atidarykite programą dar kartą."</string>
+    <string name="app_icon">"Programėlės piktogramą."</string>
+    <string name="example_application">"Pavyzdys parai"</string>
+    <string name="description">"Aprašymas"</string>
+    <string name="translate_anywhere">"Versti visur"</string>
     <string name="apps_to_translate">"Programų išversti"</string>
     <string name="global_settings">"Visuotiniai parametrai"</string>
     <string name="instructions">"Instrukcijos"</string>
@@ -112,8 +68,20 @@ TRIKČIŲ ŠALINIMAS
     <string name="caching">"Naudoti sparčiosios atminties"</string>
     <string name="caching_summary_off">"Ne taupymo vertimai autonomiškai, todėl lėčiau versti ir didesnė duomenų - bet gali veikti daugiau programėlių. Pasukti, schemą Išsaugoti vertimai."</string>
     <string name="caching_summary_on">"Taupymas vertimai neprisijungus pagreitinti versti ir naudoti duomenis. Išjungti išjungti, jei jūsų programa nepaleidžiama."</string>
-    <string name="delay">"Užlaikymas prieš verčiant"</string>
-    <string name="delay_summary">"Nustatykite laiką milisekundžių prieš verčiant laukti. Numatytoji reikšmė yra 0, nustatytas 1000 – 5000 jei išverstų app yra kritimo."</string>
+    <string name="delay">"Atidėtas iki pakeičiant išverstą tekstą"</string>
+    <string name="delay_summary">"Nustatykite laiką milisekundėmis laukti prieš pakeisti į išverstą tekstą. Numatytoji reikšmė yra 0. Nustatytas 1000 – 5000 išverstų app yra kritimo."</string>
+    <string name="delay_webview">"Užlaikymas prieš pradedant versti WebViews"</string>
+    <string name="delay_webview_summary">"Nustatykite laiką milisekundėmis palaukti prieš pradedant versti WebViews. Numatytoji vertė yra 500. Lygi 0 vertimo pagreitinti. Jei dalis web app yra ne versti nustatyti 3000-5000."</string>
+    <string name="analytics">"Siųsti anoniminius avarijos ir naudojimo duomenys"</string>
+    <string name="analytics_summary_off">"Ne siųsti anoniminius avarijos ir naudojimo duomenis. Siųsti anoniminius eismo įvykių tyrimų duomenys padeda pagerinti programos kūrėjas."</string>
+    <string name="analytics_summary_on">"Siųsti anoniminius avarijos ir naudojimo duomenis. Jokia asmeninė informacija yra perduodama. Anoniminis eismo įvykių tyrimų duomenys padeda pagerinti app kūrėjas"</string>
+    <string name="debug">"Išplėstinė: Įjungti derinimo režimu."</string>
+    <string name="debug_summary_off">"Derinimo režimas yra išjungtas. Negali derinti duomenų įrašymo į logcat. Įjungti prieš siunčiant klaidų ataskaitas"</string>
+    <string name="debug_summary_on">"Derinimo režimas įjungtas. Raštu rąstų logcat. Tai sumažina efektyvumą - išjungti jei nėra būtinas."</string>
+    <string name="local_on_off">"Išversti šią programėlę"</string>
+    <string name="local_on_off_summary">"Sustabdyti verčiant šią programą išjungti"</string>
+    <string name="local_on_off_summary_off">"Ši programa bus nėra išversta. Kreiptis į pradėti naudojant auto-versti!"</string>
+    <string name="local_on_off_summary_on">"Tai bus išverstas. Išjungti visiškai išjungti verčiant šią programėlę."</string>
     <string name="overRide_global">"Nepaisyti Visuotiniai parametrai"</string>
     <string name="overRide_global_summary_off">"Naudojant Visuotiniai parametrai šio app. posūkio ant pakeisti tik šios programos nustatymus."</string>
     <string name="overRide_global_summary_on">"Naudojant vietinių parametrų šio app. įjungti išjungti naudoti Visuotiniai parametrai."</string>

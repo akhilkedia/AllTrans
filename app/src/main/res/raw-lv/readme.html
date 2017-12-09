@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">Satura rādītājā</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">Ko dara AllTrans</a></li>
+        <li><a href="#videos">Video</a></li>
+        <li><a href="#how-to-use-alltrans">Kā lietot AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Kā nokļūt Yandex tulkot taustiņu</a></li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Kā iegūt Microsoft Azure tulkot
+            atslēgu</a></li>
+        <li><a href="#troubleshooting">Problēmu novēršana</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">Nav app tiek tulkots ar jebkuru
+                    app</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">Sākuma ekrāns ir iestrēgusi
+                    tulkoto app</a></li>
+                <li><a href="#the-translated-app-is-force-close">Translated app ir spēkā ciešā</a>
+                </li>
+                <li><a href="#a-particular-app-is-not-being-translated">Konkrētu app nav
+                    pārtulkots</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">Nav pārtulkots spēle app</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">Ja
+                        jums joprojām ir problēmas, piemēram, spēku aizvērt vai daļas app, kas nav
+                        tulkots</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">Ziedojumi</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">Ko dara AllTrans</h2>
+
+    <p>Tas aizstāj <strong>visu tekstu app</strong> valodā no vienas valodas uz otru izpildlaikā.
+    </p>
+
+    <p>Pateikt, piemēram, app ir vācu valodā. Lietotājs atlasa app nosaukumu un nepieciešamo valodu
+        konversijas (teiksim, vācu angļu valodā).</p>
+
+    <p>Pēc tam ikreiz, kad lietotājs izmanto nepieciešamo app, teksta <strong>ANYWHERE</strong> app,
+        tiek aizstātas ar to angļu ekvivalentiem.</p>
+
+    <p>Tas ir kaut kas līdzīgs tam, kā darbojas Chrome Google Translate.</p>
+
+    <p><strong>Piezīme</strong> - tehniskā ierobežojuma dēļ tas nestrādās ar daudzām spēlēm. Nekas
+        var izdarīt par to.</p>
+
+    <h2 id="videos">Video
+
+        <p>Video (angļu valodā) parāda, kā izmantot AllTrans, Gadget Hacks Youtube <a
+                href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+        </p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">Kā lietot AllTrans</h2>
+
+        <p>Šī lietojumprogramma <strong>pieprasa</strong> jūs pierakstīties uz
+            <strong>bezmaksas</strong> atslēga no Microsoft vai Yandex tulkot. Skatiet instrukcijas
+            zemāk par to, kā iegūt atslēgas.</p>
+
+        <p>Yandex Translate atbalsta vairākas valodas, ir daudz vienkāršāku reģistrēšanās process un
+            prasa <strong>Nr CREDIT CARD</strong>.</p>
+
+        <p>Microsoft Translate nodrošina <strong>labāku tulkojumu</strong>, bet prasa pieteikties
+            kredītkartes. (Bet neuztraucieties, nekas, būs jāmaksā.)</p>
+
+        <ol>
+            <li>Pārliecinieties, ka app ir iespējots Xposed Installer AllTrans -> moduļus.</li>
+            <li>Uzsākt AllTrans app. "Global Settings" TAB, ja jūs vēlaties izmantot Yandex iespēju
+                "Izmantot Yandex vietā Microsoft". Lai izmantotu Microsoft atslēgt.
+            </li>
+            <li>Izvēlieties "Tulkot no valodas" un "Tulkot valodā".</li>
+            <li>Cilnē "Progr lai tulkotu" atrast app vēlaties tulkot, atzīmējiet izvēles rūtiņu
+                blakus tai. Ja izvēles rūtiņas nav redzams, mēģiniet pagriežot sāniski tālruni
+                ainavas režīmā.
+            </li>
+            <li>Aizveriet un restartējiet app jūs vēlaties tulkot - tas būtu jātulko!</li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Kā nokļūt Yandex tulkot taustiņu</h2>
+
+        <ol>
+            <li>Doties uz <a href="https://tech.yandex.com/keys/get/?service=trnsl">Yandex Translate
+                API Website</a></li>
+            <li>Ja jums vēl nav konta, noklikšķiniet uz "reģistrēties" un parakstīties uz jaunu
+                kontu.
+            </li>
+            <li>Pēc pierakstīšanās, jāpiekrīt lietotāja līgumu un noklikšķiniet uz "Get API Key".
+            </li>
+            <li>Esat veiksmīgi saņēmis jūsu atslēgu!</li>
+        </ol>
+
+        <p>Atslēga abonements ir kaut kas līdzīgs "trnsl.1.1.201701 …"</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Kā iegūt Microsoft Azure tulkot
+            atslēgu</h2>
+
+        <ol>
+            <li>Pierakstīties Microsoft Azure kontu.<br>Ja jums vēl nav konta debeszils,
+                pierakstīties <a href="http://azure.com">Microsoft Azure kontā</a>.
+            </li>
+            <li>Pēc tam, kad jums ir konts, parakstīt ar <a href="http://portal.azure.com">Azure
+                portāls</a>.
+            </li>
+            <li>Debeszils kontam pievienot "Microsoft tulkotājs API abonementu".<br>
+                <ol>
+                    <li>Izvēlieties "pay-as-you-go" abonements. Būs nepieciešama kredītkarte, bet
+                        neuztraucieties, nekas netiks iekasēta.
+                    </li>
+                    <li>Atlasiet opciju "+ jaunu".</li>
+                    <li>Pakalpojumu sarakstā izvēlieties "Izlūkošana".</li>
+                    <li>Atlasiet "Izziņas pakalpojumu API".</li>
+                    <li>Atlasiet opciju "API tips".</li>
+                    <li>Atlasiet "Teksta tulkojums".</li>
+                    <li>Sadaļā "Cenu līmeņu" atlasiet "Bezmaksas bīstamības (F0)".</li>
+                    <li>Atlikušo veidlapu, aizpildiet un nospiediet pogu "Izveidot".</li>
+                </ol>
+            </li>
+            <li>Ielādētu jūsu "autentifikācijas atslēga".<br>
+                <ol>
+                    <li>Iet uz "Visi resursi" un izvēlieties Microsoft tulkotājs API, uz kurām esat
+                        parakstījies.
+                    </li>
+                    <li>Iet uz "Atslēgas" iespēju un kopēt jūsu abonementa taustiņu, lai piekļūtu
+                        pakalpojumu.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>Atslēga abonements ir kaut kas līdzīgs "321dcba …"</p>
+
+
+        <h2 id="troubleshooting">Problēmu novēršana</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">Nav app tiek tulkots ar jebkuru app</h3>
+
+        <ul>
+            <li>Ja nav app ir tulko, pārbaude ir "AllTrans" ir iespējots Xposed Installer ->
+                moduļus.
+            </li>
+            <li>Arī pārbaudīt, ja jūsu "Microsoft/Yandex atslēga abonements" ir pareiza.</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">Sākuma ekrāns ir iestrēgusi tulkoto
+            app</h3>
+
+        <ul>
+            <li>Noklikšķiniet uz app vārda "Progr lai tulkotu" cilni un noklikšķiniet uz
+                "Noklikšķiniet uz skaidru Translation Cache".
+            </li>
+            <li>Ja šī ir pirmā reize, kad jums sākās, tulkojot šo app, noklikšķiniet uz app
+                nosaukumu "Progr lai tulkotu" tab, un "Other Settings" aizpildīt "Aizkave pirms
+                Replcaing ar tulkot tekstu" līdz 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">Translated app ir "Force aizvērt"</h3>
+
+        <ul>
+            <li>Noklikšķiniet uz app vārda "Progr lai tulkotu" cilni un noklikšķiniet uz
+                "Noklikšķiniet uz skaidru Translation Cache".
+            </li>
+            <li>Noklikšķiniet uz app nosaukumu "Progr lai tulkotu" tab, un ir "citi iestatījumi"
+                aizpildīt "Aizkave pirms Replcaing ar tulkot tekstu" līdz 2000.
+            </li>
+            <li>Noklikšķiniet uz app vārda "Progr lai tulkotu" tab un "Other Settings" aizpildiet
+                "Aizkave pirms sākuma, lai tulkot WebViews" 2000.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">Konkrētu app nav pārtulkots</h3>
+
+        <ul>
+            <li>Noklikšķiniet uz app vārda "Progr lai tulkotu" tab un "Other Settings" aizpildiet
+                "Aizkave pirms sākuma, lai tulkot WebViews" 2000.
+            </li>
+            <li>Ja app dažas daļas netiek joprojām tiek pārvērstas, noklikšķiniet uz app nosaukumu
+                "Progr lai tulkotu" cilni un aktivizēt "Agresīvo režīmu".
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">Nav pārtulkots spēle app</h3>
+
+        <ul>
+            <li>Ņemot vērā tehniskos ierobežojumus, "AllTrans" nestrādās ar daudzām spēlēm. Nekas
+                var izdarīt par to.
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            Ja jums joprojām ir problēmas, piemēram, "Spēku aizvērt" vai daļas no app, kas nav
+            tulkots</h3>
+
+        <p>Sazināties ar mani atbalsta. Kad jūs, man būs nepieciešama vismaz šādu informāciju-</p>
+
+        <ol>
+            <li>Nosaukums app kopā ar <strong>saiti, lai lejupielādētu app</strong> no dažiem APK
+                veikals, piemēram, Google spēlēt veikalā, CoolApk utt.
+            </li>
+            <li>Jūsu tālrunī Android versiju.</li>
+            <li>"Logcat" jūs mēģināt atvērt app, kas dod jums problēmas. Var izmantot progr, kas ir
+                brīvi pieejams Play veikals, piemēram, <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">šo
+                    vienu</a></li>
+        </ol>
+
+        <p>Kad jums ir iepriekš, sazinieties ar mani uz <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            atbalstīt pavedienu</a>.<br>Jautājumus var arī ziņot par <a
+                href="https://github.com/akhilkedia/AllTrans">projekta Github</a>.</p>
+
+
+        <h2 id="donations">Ziedojumi</h2>
+
+        <p>Ja jums patīk šis projekts, nopirkt man kafiju! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

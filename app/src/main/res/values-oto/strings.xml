@@ -23,57 +23,13 @@
     <string name="loading">"Cargando ya nthuts'i aplicaciones — Jaki espere"</string>
     <string name="clear_cache_error">"'Nar Error. Ndi despejar caché traducción!"</string>
     <string name="clear_cache_success">"Gi 'rats'u̲hñä ko ar caché pa nuna nt'ot'e xi xi borrada!"</string>
-	<string name="how_to_use">"CÓMO UTILIZAR ÁR NT'OT'E
-
-Nuna ar nt'ot'e requiere pa inscribir ar ja 'nar clave Microsoft wa Yandex gi 'rats'u̲hñä ko.
-Gi 'rats'u̲hñä ko Yandex soporta mäs ya hñä, pe̲ts'i 'nar proceso registro xingu mäs hei ne requiere tarheta ar crédito HI'NÄ.
-Microsoft Translate xta mpädi mäs xi resultados, pe requiere 'nar tarheta ar crédito pa ar inscribir. (Pe ote xki beni, 'ñotho da to cargado.)
-
-1 ja ar ficha Configuración Global, permiten utilizar Yandex en lugar de Microsoft nu'bu̲ gi utilizar ar Yandex, desactivar ma 'ra ya pa utilizar Microsoft.
-1 ja ar ficha Configuración Global, pulse tecla suscripción Microsoft yá Yandex entrar, clave correspondiente entrada (vea ya instrucciones ar abajo).
-2 elija ar gi 'rats'u̲hñä ko ar ar hñä ne gi 'rats'u̲hñä ko ma ar hñä.
-3 ja ya aplicaciones nä'ä dar tsa̲ gi 'rats'u̲hñä ko, tingigi mbo jar nt'ot'e nä'ä gi gi 'rats'u̲hñä ko, 'yot'e clic jar casilla verificación ho mi 'bu̲i nä'ä. Xähmö nu'bu̲ casilla verificación hingi visible, trate ar girar teléfono nu'bu ya xe̲ni bí modo ar paisaje.
-4 cierre ne reinicie ár nt'ot'e gi traducido — gi da traducido!
-
-ADVERTENCIA: ra aplicaciones podrían forzar njot'i. Consulte ar sección njäts'i ya hñäki.
-
-CÓMO DA HYONI YANDEX GI 'RATS'U̲HÑÄ KO CLAVE SUSCRIPCIÓN
-
-1 vaya ar sitio web ar Yandex — https://tech.yandex.com/keys/get/?service=trnsl
-2 nu'bu̲ hingi gí 'ñehe 'nar nu, 'yot'e clic registro ne firmar pa mañä pa 'nar 'ra'yo nu.
-3 después firmar pa mañä, 'bu̲i ir nge ar usuario ne 'yot'e clic jar da clave ar API.
-4 nu'i xi recibido ko éxito ár clave! Ar algo nja'bu̲ komongu trnsl.1.1.201701...
-
-CÓMO DA MICROSOFT AZURE GI 'RATS'U̲HÑÄ KO CLAVE SUSCRIPCIÓN
-
-1 registrar gi pa 'nar nu Microsoft Azure jar http://azure.com
-
-2 después ar ga 'nar nu, da du'mi sesión ja ar portal Azure jar http://portal.azure.com
-
-3 agregar 'nar suscripción API ar traductor Microsoft da nu ar k'angi ár.
-Da 'ñets'i 'nar suscripción njut'i. Requerirá 'nar tarheta ar crédito, pe ote xki beni, hingi ar cargará.
-Seleccionar ar + 'ra'yo opción.
-Seleccione ar Nthuts'i ya 'befi inteligencia.
-Seleccione ya 'befi cognitivos ar API.
-Seleccione ar opción ar klase ar API.
-Seleccione texto traducción
-Ja ar sección ar precios, seleccione ar za̲ ár nthe̲ mpe̲fi (F0)
-Llene resto jar formulario ne pulse ar botón da t'ot'e.
-
-4 recuperar ár clave ar autenticación.
-Ma ya recursos ne ya seleccione ar API ar traductor Microsoft gí suscrito ma.
-Ma jar opción claves ne copiar ar clave suscripción pa acceder jar 'befi.
-Clave suscripción ar 'naxtu̲i komongu 321dcba...
-
-NJÄTS'I YA HÑÄKI
-
-1 nu'bu̲ nt'ot'e hingi ar xi traduciendo, verifique ár clave suscripción Microsoft yá Yandex ar correcta.
-2. ar nt'ot'e traducida ndu nzafi gi Kot'i yá consigue pegado jar cargando ar bes 'mefa xta 'bu̲i gi 'rats'u̲hñä ko, 'yot'e clic jar nt'ot'e jar aplicaciones pa gi 'rats'u̲hñä ko ar ficha ne gi programación Introduzca retardo 'bu̲ 'be̲tho gi 'rats'u̲hñä ko ya 2000.
-3 nu'bu̲ gi japu̲'be̲fi ya nt'ot'e traducida ma funcionan xi hño, pe nu'bya ar atascan ko ar inicio, 'yot'e clic jar nt'ot'e jar aplicaciones pa gi 'rats'u̲hñä ko ar ficha ne 'yot'e clic jar 'yot'e clic jar Clear Cache ar traducción.
-4 nu'bu̲ hingi ar gi 'bu̲hu̲ traduciendo ra ya xeni jar nt'ot'e, 'yot'e clic jar nt'ot'e jar aplicaciones pa gi 'rats'u̲hñä ko ar ficha ne activar ar modo agresivo.
-5 nu'bu̲ nt'ot'e Tobe fuerza gi Kot'i, desactivar traducción nuna ar nt'ot'e ne contactar ko ngeki jar hilo soporte jar XDA — https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Gi 'rats'u̲hñä ko jar lugar 'na"</string>
+    <string name="backup_pref_error">"'Nar Error. Ndi hingi copia ntsuni preferencias! ¿Gí otorga nthogi superusuario?"</string>
+    <string name="backup_pref_success">"Preferencias xi xi respaldadas jar almacenamiento externo!"</string>
+    <string name="wut_why_null">"Hingi ar himbí cargar ar página preferencia ya nt'ot'e. Cierre ne vuelva abrir ár nt'ot'e 'ñätho."</string>
+    <string name="app_icon">"Icono ya nt'ot'e"</string>
+    <string name="example_application">"Ejemplo ya nt'ot'e"</string>
+    <string name="description">"Descripción"</string>
+    <string name="translate_anywhere">"Gi 'rats'u̲hñä ko ga̲tho ya xeni jar"</string>
     <string name="apps_to_translate">"Aplicaciones pa gi 'rats'u̲hñä ko"</string>
     <string name="global_settings">"Configuración global"</string>
     <string name="instructions">"Instrucciones"</string>
@@ -112,8 +68,20 @@ NJÄTS'I YA HÑÄKI
     <string name="caching">"Almacenamiento jar caché njapu'befi"</string>
     <string name="caching_summary_off">"Hingi guardar ya traducciones fuera de 'ñu, di ya nt'uni mäs lento gi 'rats'u̲hñä ko ne pe̲ts'i datos — pe tsa̲ da funcionar pa mäs aplicaciones. Nu'bu guardar ya traducciones."</string>
     <string name="caching_summary_on">"Ahorro traducciones offline pa gi 'rats'u̲hñä ko ne utilizar datos. Desactivar pa desactivar nu'bu̲ ár nt'ot'e hingi ar gi du̲i."</string>
-    <string name="delay">"Demora 'bu̲ 'be̲tho gi 'rats'u̲hñä ko"</string>
-    <string name="delay_summary">"Configurar ar pa milisegundos da espera 'bu̲ 'be̲tho gi 'rats'u̲hñä ko. Hmädi predeterminado ar 0, da establece jar 1000 — 5000 nu'bu̲ ar ne da caiga ár nt'ot'e traducida."</string>
+    <string name="delay">"Demora 'bu̲ 'be̲tho reemplazar ko texto traducido"</string>
+    <string name="delay_summary">"Configurar ar pa milisegundos da espera nu'bu da hñäki guto ko ar texto traducido. Hmädi predeterminado ar 0. Establece 1000 — 5000 nu'bu̲ ar ne da caiga ár nt'ot'e traducida."</string>
+    <string name="delay_webview">"Demora 'bu̲ 'be̲tho ndi ndu̲i gi 'rats'u̲hñä ko WebViews"</string>
+    <string name="delay_webview_summary">"Configurar ar pa milisegundos da espera 'bu̲ 'be̲tho ndi ndu̲i gi 'rats'u̲hñä ko WebViews. Ár hmädi predeterminado ar 500. Establece jar 0 pa aumentar ar velocidad traducción. Establece jar 3000 — 5000 nu'bu̲ hingi xi traduciendo 'nar xe̲ni ar nt'ot'e web."</string>
+    <string name="analytics">"Envío anónimo ar accidente ne ar datos njapu'befi"</string>
+    <string name="analytics_summary_off">"Hingi envío anónimo ar accidente ne ar datos njapu'befi. Pe̲hni datos accidente anónimo mfats'i ar desarrollador ya nt'ot'e hño."</string>
+    <string name="analytics_summary_on">"Envío ar datos accidente ne uso anónimos. Ni 'na jar ungumfädi jä'i ar transmite. Anónimo accidente data ayuda ja ya desarrolladores mejorar ár nt'ot'e"</string>
+    <string name="debug">"Avanzado: Activar modo depuración."</string>
+    <string name="debug_summary_off">"Debug mode xi apagado. Hingi 'yot'i datos depuración ar logcat. Encender 'bu̲ 'be̲tho pe̲hni mfädi errores"</string>
+    <string name="debug_summary_on">"Depuración modo xi activado. 'Yot'i registros ar logcat. 'Me̲hna disminuye ar rendimiento — jwet'i nu'bu̲ Hingar mahyoni."</string>
+    <string name="local_on_off">"Gi 'rats'u̲hñä ko nuna ar nt'ot'e"</string>
+    <string name="local_on_off_summary">"Desactivar pa dejar gi 'rats'u̲hñä ko nuna ar nt'ot'e"</string>
+    <string name="local_on_off_summary_off">"Nuna ar nt'ot'e hingi ar traducirán. Vuelta 'bu̲i usando auto — translate!"</string>
+    <string name="local_on_off_summary_on">"'Me̲hna bí traducirá. Desactivar pa xi desactivar completamente ar gi 'rats'u̲hñä ko nuna ar nt'ot'e."</string>
     <string name="overRide_global">"Invalidar ar configuración Global"</string>
     <string name="overRide_global_summary_off">"Utilizando ar configuración Global pa nuna ar giro ar bobina jar da mpa̲ti ar configuración ho̲ntho pa nuna ar nt'ot'e."</string>
     <string name="overRide_global_summary_on">"Parámetros locales pa nuna ar giro ar bobina ar utilizar ar configuración Global."</string>

@@ -23,56 +23,12 @@
     <string name="loading">"Lastinimekirja taotluse - Palun oodake"</string>
     <string name="clear_cache_error">"Mõni viga. Tõlge vahemälu ei suutnud selgeks!"</string>
     <string name="clear_cache_success">"Vahemälu tõlkida, sest see app on kustutatud!"</string>
-	<string name="how_to_use">"KASUTAMISE TAOTLUS
-
-See rakendus nõuab registreerimist võti Microsoft või Yandex Tõlgi.
-Yandex Tõlgi toetab mitut keelt, on palju lihtsam registreerimisprotsess ja nr krediitkaart on vaja.
-Microsoft Translate annab paremaid tulemusi, kuid nõuab krediitkaardi logida. (Aga ärge muretsege, midagi saab maksta.)
-
-1. Global Settings vahelehel luba kasutada Yandex asemel Microsoft, kui soovite kasutada Yandex, muidu keelata kasutada Microsoft.
-1. globaalne seaded tab, toksake sisestage Microsoft/Yandex märkimise aluse, sisend vastavat klahvi (vt altpoolt).
-2. Valige selle tõlkida keelest ja keelde tõlkida.
-3. Tõlgi vahekaardi rakendustes Leidke rakendus soovite tõlkida, klõpsake kõrval olev märkeruut. Kui märkeruutu ei kuvata, proovige pöörleva telefoni külili maastikul režiimi.
-4. Sulgege ja taaskäivitage rakendus tõlgitud - tuleb ümber arvestada!
-
-Hoiatus - olla sunniti tihe. Jaotisest vigade otsimine.
-
-KUIDAS SAADA YANDEX TÕLKIDA MÄRKIMISE ALUSE
-
-1. Mine veebilehe Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. Kui teil pole veel kontot, klõpsake nuppu register ja märk uue konto.
-3. pärast allakirjutamist, lepivad kokku, et lepingu ja klõpsake nuppu saada API võti.
-4. olete edukalt saanud võti! See on midagi trnsl.1.1.201701...
-
-KUIDAS SAADA MICROSOFTI AZURE TÕLKIDA MÄRKIMISE ALUSE
-
-1. registreeru Microsoft Azure kontole aadressil http://azure.com
-
-2. pärast seda, kui teil on konto, logige Azure portaali aadressil http://portal.azure.com
-
-3. tellimuse Microsoft Translator API lisada Azure konto.
-Valige põlvkondadevahelisel tellimus. On vaja krediitkaarti, kuid ärge muretsege, midagi tuleb maksta.
-Valige + uus võimalus.
-Valige luure teenuste loetelu.
-Valige kognitiivse teenused APIs.
-API tüüp raadionuppu.
-Valige teksti tõlge
-Valige jaotises hindade taseme tasuta tasand (F0)
-Täitke ülejäänud vorm ning vajutage nuppu Loo.
-
-4. laadida autentimise võti.
-Olete liitunud Microsoft Translator API valige kõik ressurssides.
-Minge suvandi abil ja kopeerida registreerimisvõtme teenusega.
-Kordustellimuste võtmega on midagi 321dcba...
-
-TÕRKEOTSING
-
-1. Kui ükski rakendus on tõlkimisel, kontrollige Microsoft/Yandex registreerimisvõtme on õige.
-2. Kui tõlgitud rakendus sulgub/saab ummikus peale esimest korda pärast seda, kui te alustada tõlkimisest, klõpsake rakenduse rakendustes tõlkida vahekaarti, ja muud sätted täitke viivitus enne tõlkimise 2000.
-3. Kui tõlgitud app kasutada töötavat, kuid nüüd alates ei jõua, klõpsake rakenduse rakendustes tõlkida vahekaarti, ja kliki klõpsake Tühjenda tõlge.
-4. Kui mõni rakenduse osa pole on tõlgitud, klõpsa rakenduse rakendustes tõlkida vahekaarti ja agressiivse režiimi.
-5. Kui rakendus ikka jõu sulgub, tõlge selle rakenduse keelata ja minuga tugi teemat XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878 kohta
-"</string>
+    <string name="backup_pref_error">"Mõni viga. Soodustusi ei saa varundada! Kas annate superkasutaja juurdepääsu?"</string>
+    <string name="backup_pref_success">"Eelistused on varundatud välisandmekandjatele!"</string>
+    <string name="wut_why_null">"Per-app ekraanile ilmub ei saanud laadida. Sulgege ja taasavage rakendus uuesti."</string>
+    <string name="app_icon">"Rakenduse ikooni"</string>
+    <string name="example_application">"Näide taotlus"</string>
+    <string name="description">"Kirjeldus"</string>
     <string name="translate_anywhere">"Tõlkida kõikjal"</string>
     <string name="apps_to_translate">"Rakenduste tõlkida"</string>
     <string name="global_settings">"Globaalsätted"</string>
@@ -112,8 +68,20 @@ TÕRKEOTSING
     <string name="caching">"Kasutada vahemällu"</string>
     <string name="caching_summary_off">"Ei Salvesta tõlked ühenduseta režiimis, tulemuseks aeglasemalt tõlkida ja suurem andmeid - kuid võib töötada muid rakendusi. Salvesta tõlked omakorda edasi."</string>
     <string name="caching_summary_on">"Salvestamine tõlked ühenduseta kiirendamiseks tõlkida ja andmeid kasutada. Välja lülitada välja lülitada kui teie app ei käivitu."</string>
-    <string name="delay">"Viivitus enne tõlkimise"</string>
-    <string name="delay_summary">"Seadke enne tõlkimise ootab millisekundites. Vaikimisi väärtus on 0, kui tõlgitud rakenduse krahh väärtuseks 1000 – 5000."</string>
+    <string name="delay">"Viivitus enne asendades tõlgitud teksti"</string>
+    <string name="delay_summary">"Seadke enne tõlgitud tekst asendaja ootab millisekundites. Vaikeväärtus on 0. Seatud 1000 – 5000 tõlgitud rakendust krahh."</string>
+    <string name="delay_webview">"Viivitus enne tõlkida WebViews"</string>
+    <string name="delay_webview_summary">"Seadke millisekundites oodata enne tõlkida WebViews. Vaikeväärtus on 500. Määra väärtuseks 0 tõlge kiirendada. 3000-5000 seatud osa veebirakendus on tõlkimine."</string>
+    <string name="analytics">"Saada anonüümne Crash ja kasutusandmed"</string>
+    <string name="analytics_summary_off">"Ei saada anonüümne crash ja kasutusandmed. Anonüümne crash andmete saatmine aitab paremaks muuta rakenduse arendaja."</string>
+    <string name="analytics_summary_on">"Anonüümne crash ja kasutamine andmete saatmine. Isiklikku teavet edastatakse. Anonüümne krahhiandmed aitab paremaks muuta rakenduse arendaja"</string>
+    <string name="debug">"Täpsemad: Lülitage Debug režiimis."</string>
+    <string name="debug_summary_off">"Debug mode on välja lülitatud. Ei kirjuta debug andmete logcat. Enne saatmist tõrketeatisi sisse lülitada"</string>
+    <string name="debug_summary_on">"Siluda korral. Kirjutamine palke logcat. See vähendab jõudlust - välja lülitada, kui mitte vaja."</string>
+    <string name="local_on_off">"Tõlkida see App"</string>
+    <string name="local_on_off_summary">"Lõpetada see app tõlkimise väljalülitamine"</string>
+    <string name="local_on_off_summary_off">"See app on tõlkimata. Omakorda edasi start kasutades/auto-tõlkida!"</string>
+    <string name="local_on_off_summary_on">"See tõlgitakse. Täiesti keelata tõlkimise see app välja lülitada."</string>
     <string name="overRide_global">"Globaalne alistamine"</string>
     <string name="overRide_global_summary_off">"Kasutades Globaalsätted selles u omakorda ainult selle rakenduse sätete muutmine."</string>
     <string name="overRide_global_summary_on">"Kasutades kohalikud sätted selles u omakorda välja Global seadete."</string>

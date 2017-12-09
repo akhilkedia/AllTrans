@@ -23,57 +23,13 @@
     <string name="loading">"목록 로드 애플 리 케이 션-기다려 주세요"</string>
     <string name="clear_cache_error">"일부 오류가 발생 합니다. 번역 캐시를 지우지 수!"</string>
     <string name="clear_cache_success">"이 애플 리 케이이 션 삭제 되었습니다에 대 한 캐시를 번역!"</string>
-	<string name="how_to_use">"응용 프로그램을 사용 하는 방법
-
-이 응용 프로그램에서는 Microsoft 또는 Yandex 번역에서 키에 대 한 가입 해야 합니다.
-Yandex 번역 더 많은 언어를 지 원하는, 훨씬 쉽게 가입 프로세스, 및 아니오 신용 카드 필요.
-마이크로소프트 번역 더 나은 결과 제공 하지만 가입 신용 카드를 요구 한다. (하지만 걱정 하지 마세요, 아무것도 됩니다 청구.)
-
-1. 전역 설정 탭에서 Yandex를 사용 하 여, Microsoft를 사용 하 여 다른 비활성화 하려는 경우 Microsoft 대신 사용 Yandex를 사용 합니다.
-1. 전역 설정 탭에서 Microsoft/Yandex 구독 키를 입력, 해당 하는 키 입력 (아래 지침 참조).
-2. 선택 된 언어에서 번역 언어 번역.
-3. 번역 탭으로 애플 리 케이 션에서 애플 리 케이 션을 번역, 옆에 있는 확인란을 클릭 하 고 싶은 찾습니다. 확인란 표시 되지 않는 경우에, 당신의 전화를 옆으로 가로 모드로 회전 보십시오.
-4. 닫고 다시 시작 애플 리 케이 션 당신이 원하는 번역-번역 되어야 한다!
-
-경고-일부 애플 리 케이 션 가까이 강제 수도 있습니다. 문제 해결 섹션을 참조.
-
-얻으려면 YANDEX 구독 키를 번역 하는 방법
-
-1. 이동 Yandex 웹사이트-https://tech.yandex.com/keys/get/?service=trnsl
-2. 계정이 없는 경우 등록 및 로그인을 클릭 새 계정에 대 한 합니다.
-3. 로그인 후 최대 하 고 사용자 계약에 동의 얻을 API 키를 클릭 합니다.
-4. 당신이 성공적으로 키를 받았습니다! 그것은 trnsl.1.1.201701 같은 것...
-
-얻으려면 MICROSOFT AZURE 구독 키를 번역 하는 방법
-
-1. http://azure.com에서 Microsoft Azure 계정에 가입
-
-2. 계정을 후, http://portal.azure.com에서 푸른 포털 로그인
-
-3. 푸른 계정 Microsoft 번역기 API 구독을 추가 합니다.
-지불 구독을 선택 합니다. 신용 카드 필요 합니다 하지만 걱정 하지 마세요 아무것도 부과 됩니다.
-+ 새로운 선택 옵션.
-서비스 목록에서 정보를 선택 합니다.
-인식 서비스 Api를 선택 합니다.
-API 유형 옵션을 선택 합니다.
-선택 텍스트 번역
-가격 계층 섹션에서 선택 무료 계층 (F0)
-폼의 나머지를 만들기 단추를 누릅니다.
-
-4. 인증 키를 검색 합니다.
-모든 리소스에 이동 하 고 Microsoft 번역기 API에 가입을 선택 합니다.
-키 옵션에가 고 서비스에 액세스 하 여 구독 키 복사.
-구독 키를 사용 하 여 321dcba 같은 뭔가가...
-
-문제 해결
-
-1. 해당 되는 경우 아무 애플 리 케이 션 번역 되 고, 마이크로소프트/Yandex 구독 키를 올바른지 확인 하십시오.
-2. 번역된 응용 프로그램 강제 종료/되 면 번역을 시작 후 처음으로 로드에 붙어, 탭, 번역 하 고 기타 설정에서 입력 지연 전에 번역 2000 애플 리 케이 션에서 애플 리 케이 션을 클릭 합니다.
-3. 번역된 애플 리 케이 션을 잘 작동 하지만 지금 시작 계속, 탭, 번역 애플 리 케이 션에서 애플 리 케이 션에서 클릭 클릭 사용 하는 경우 번역 캐시 지우기를 클릭 합니다.
-4. 해당 되는 경우 응용 프로그램의 일부 번역 되지 않은 탭을 번역 애플 리 케이 션에서 애플 리 케이 션에서 클릭 하 고 적극적인 모드를 활성화.
-5. 응용 프로그램 강제 종료, 아직도이 애플 리 케이이 션에 대 한 번역을 사용 하지 않도록 설정 하 고 XDA-https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878에 지원 실에 문의
-"</string>
-    <string name="translate_anywhere">"어디서 나 번역"</string>
+    <string name="backup_pref_error">"일부 오류가 발생 합니다. 환경 설정 백업 하지 수! 수퍼유저 액세스 부여 했 어?"</string>
+    <string name="backup_pref_success">"환경 설정 백업 외장 스토리지!"</string>
+    <string name="wut_why_null">"당 응용 프로그램 기본 설정 페이지를 로드할 수 없습니다. 닫고 다시 응용 프로그램을 다시 엽니다."</string>
+    <string name="app_icon">"응용 프로그램 아이콘"</string>
+    <string name="example_application">"예제 응용 프로그램"</string>
+    <string name="description">"설명"</string>
+    <string name="translate_anywhere">"어디에 나 번역"</string>
     <string name="apps_to_translate">"번역 애플 리 케이 션"</string>
     <string name="global_settings">"전역 설정"</string>
     <string name="instructions">"지침"</string>
@@ -112,8 +68,20 @@ API 유형 옵션을 선택 합니다.
     <string name="caching">"캐싱 사용"</string>
     <string name="caching_summary_off">"오프 라인 번역, 절약 하지 번역 느린 결과 및 높은 데이터-하지만 더 많은 애플 리 케이 션에 대 한 작동 수 있습니다. 설정에 번역 저장."</string>
     <string name="caching_summary_on">"오프 라인 번역을 저장 하는 속도 번역 하 고 데이터를 사용 합니다. 응용 프로그램을 시작 하지 않는 경우 사용 하지 않도록 해제 합니다."</string>
-    <string name="delay">"번역 하기 전에 지연"</string>
-    <string name="delay_summary">"번역 하기 전에 대기 하는 밀리초 단위로 시간을 설정 합니다. 기본 값은 0, 번역된 애플 리 케이 션 충돌 하는 경우 1000-5000으로 설정."</string>
+    <string name="delay">"대체 텍스트를 번역 하기 전에 지연"</string>
+    <string name="delay_summary">"번역 된 텍스트 바꾸기 전에 대기 하는 밀리초 단위로 시간을 설정 합니다. 기본값은 0입니다. 1000-5000로 설정 번역된 애플 리 케이 션 충돌 합니다."</string>
+    <string name="delay_webview">"WebViews 번역을 시작 하기 전에 지연"</string>
+    <string name="delay_webview_summary">"WebViews 번역을 시작 하기 전에 대기 하는 밀리초 단위로 시간을 설정 합니다. 기본값은 500입니다. 번역 속도를 0으로 설정 합니다. 웹 응용 프로그램의 일부를 번역 하지는 3000-5000로 설정 합니다."</string>
+    <string name="analytics">"익명 충돌 및 사용 현황 데이터"</string>
+    <string name="analytics_summary_off">"아니라 익명 충돌 및 사용 현황 데이터를 보내는. 익명 충돌 데이터를 보내는 개발자는 애플 리 케이 션을 더 좋게 만드는 데 도움이 됩니다."</string>
+    <string name="analytics_summary_on">"익명 충돌 및 사용 현황 데이터를 보내는. 개인 정보 전송 됩니다. 익명 충돌 데이터 개발자는 애플 리 케이 션을 더 좋게 만드는 데 도움이 됩니다."</string>
+    <string name="debug">"고급: 디버그 모드를 켭니다."</string>
+    <string name="debug_summary_off">"디버그 모드가 꺼져. Logcat를 디버그 데이터를 작성 하지. 오류 보고서를 보내기 전에이 설정"</string>
+    <string name="debug_summary_on">"디버그 모드에는. Logcat 로그 작성. 이 성능이 저하-해제 하지 않는 경우 필요."</string>
+    <string name="local_on_off">"이 응용 프로그램을 번역"</string>
+    <string name="local_on_off_summary">"이 애플 리 케이이 션 번역 중지 해제"</string>
+    <string name="local_on_off_summary_off">"이 애플 리 케이이 션 번역 되지 않습니다. 설정에 시작 사용 하 여 자동 번역!"</string>
+    <string name="local_on_off_summary_on">"이 번역 될 것입니다. 완전히이 애플 리 케이이 션 번역 억제를 해제 합니다."</string>
     <string name="overRide_global">"전역 설정 재정의"</string>
     <string name="overRide_global_summary_off">"이 애플 리 케이이 션에 대 한 설정을 변경 하려면에이 응용 프로그램 설정에 대 한 전역 설정 사용."</string>
     <string name="overRide_global_summary_on">"전역 설정을 사용 하 여 해제 턴이이 약에 대 한 로컬 설정 사용."</string>

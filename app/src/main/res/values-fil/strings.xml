@@ -23,57 +23,13 @@
     <string name="loading">"Naglo-load ng mga listahan ng mga application - maghintay lamang"</string>
     <string name="clear_cache_error">"Ilang mga mali. Sana i-clear ang cache ng pagsasalin!"</string>
     <string name="clear_cache_success">"Isalin ang Cache sapagka nabura ang app na ito!"</string>
-	<string name="how_to_use">"PAANO GAMITIN ANG APPLICATION NA ITO
-
-Application na ito ay nangangailangan ng mong mag-sign up para sa isang susi mula sa Microsoft o Yandex Translate.
-Yandex Translate ay sumusuporta sa iba pang mga wika, ay may isang ng maraming mas madali na proseso signup, at nangangailangan ng walang CREDIT CARD.
-Microsoft Translate ay nagbibigay ng mas mahusay na mga resulta, ngunit ito ay nangangailangan ng isang credit card upang mag-sign up. (Ngunit huwag kang mag-alala, magiging walang sisingilin.)
-
-1. sa Global Settings tab, paganahin ang Yandex gamitin sa halip ng Microsoft kung gusto mong gumamit ng Yandex, i-disable pa gumamit ng Microsoft.
-1. sa Global Settings tab, i-tap ang magpasok ng Microsoft/Yandex Subscription Key, ipasok ang susi ng kaukulang (tingnan ang mga tagubilin sa ibaba).
-2. piliin ang isalin sa Tagalog at isalin sa Tagalog.
-3. sa mga Apps Translate tab, mahanap ang app na gusto mong isalin, i-klik ang mga checkbox sa tabi nito. Kung hindi nakikita ang mga checkbox, subukang umiikot ang paligid ng iyong telepono sa LandScape mode.
-4. ipikit at i-restart ang app na gusto mo ay isinalin - ito ay isalin!
-
-BABALA - ilang apps maaaring pilitin malapit. Tingnan ang bahaging Troubleshooting.
-
-PAANO UPANG MAKAKUHA NG ISALIN YANDEX SUBSCRIPTION SUSI
-
-1. pumunta sa Website ng Yandex - https://tech.yandex.com/keys/get/?service=trnsl
-2. kung wala ka na ng account, i-click ang magrehistro at mag-sign para sa isang bagong account.
-3. Matapos mag-sign up, sumasang-ayon sa mga kasunduan ng User at i-click ang kumuha ng susi ng API.
-4. ikaw ay matagumpay nakatanggap ng iyong key! Ito ay isang bagay tulad ng trnsl.1.1.201701...
-
-PAANO UPANG MAKAKUHA NG MICROSOFT AZURE ISALIN SUBSCRIPTION SUSI
-
-1. mag-sign up para sa isang account sa Microsoft Azure sa http://azure.com
-
-2. pagkatapos mong magkaroon ng account, mag-sign in sa mga Azure portal sa http://portal.azure.com
-
-3. magdagdag ng Microsoft Translator API suskrisyon sa iyong account sa Azure.
-Pumili ng isang pay-as-you-go na subscription. Ay nangangailangan ng isang credit card, ngunit huwag kang mag-alala, walang sisingilin.
-Piliin ang + New opsyon.
-Pumili ng mga katalinuhan mula sa listahan ng mga serbisyo.
-Pumili ng serbisyo ng Cognitive api.
-Piliin ang opsyon na tipo ng API.
-Pumili ng mga pagsasalin sa teksto
-Sa pagpepresyo Tier bahagi, piliin ang malayang Tier (F0)
-Mag-fill out ng form, at pindutin ang lumikha ng pindutan.
-
-4. makuha ang iyong susi ng pagpapatunay.
-Pumunta sa lahat ng tulong at piliin ang Microsoft Translator API ka nakasuskribe sa.
-Pumunta ang mga opsyon sa susi at kopyahin ang iyong subscription susi upang ma-access ang serbisyo.
-Ang mga susi ng suskrisyon ay parang 321dcba...
-
-PAG-AREGLO
-
-1. kung walang app ay isinasalin, suriin ang iyong Microsoft/Yandex Subscription susi ay tamang.
-2. kung isinalin na mga app Force nagsasara/ay makakakuha ng natigil sa paglo-load ng unang oras matapos mong simulan ang pagsasalin, i-klik ang app sa app na magsalin ng mga tab, at sa iba pang mga setting na punan sa pagkaantala bago ang pagsasalin sa 2000.
-3. kung ang mga isinalin na mga app na ginamit upang gumagana fine, pero ngayon makakuha natigil sa simula, i-click ang app sa app upang isalin ang tab at mag-click sa I-click upang I-clear ang Cache pagsasalin.
-4. kung ilang bahagi ng ang app na ito ay hindi na isinalin, i-click ang app sa app na magsalin ng mga tab, at i-enable ang Mode na agresibo.
-5. kung ang app na ito pa rin ang puwersa ay nagsasara, huwag paganahin ang pagsasalin para sa mga app na ito at makipag-ugnay sa akin sa mga suportang thread sa XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Isalin sa kahit saan"</string>
+    <string name="backup_pref_error">"Ilang mga mali. Hindi i-backup ang kagustuhan! Ipagkaloob mong ginawa ng SuperUser Access?"</string>
+    <string name="backup_pref_success">"Kagustuhan ay na-back up sa External Storage!"</string>
+    <string name="wut_why_null">"Hindi na-load ang pahina ng kagustuhan ng bawat app. Isara at muling buksan ang application na ito muli."</string>
+    <string name="app_icon">"Mga Icon ng app"</string>
+    <string name="example_application">"Halimbawa ng aplikasyon"</string>
+    <string name="description">"Description"</string>
+    <string name="translate_anywhere">"Isalin sa lahat ng dako"</string>
     <string name="apps_to_translate">"Ang mga app na magsalin"</string>
     <string name="global_settings">"Mga setting ng pandaigdigang"</string>
     <string name="instructions">"Mga tagubilin"</string>
@@ -112,8 +68,20 @@ PAG-AREGLO
     <string name="caching">"Gamitin ang Caching"</string>
     <string name="caching_summary_off">"Hindi nakapagliligtas sa mga pagsasalin ng offline, nagreresulta sa mas mabagal isalin at mas mataas na data - ngunit maaaring gumana para sa higit pang mga app. Bumaling sa maliban sa pagsasalin."</string>
     <string name="caching_summary_on">"Pag-save ng mga pagsasalin ng offline na pabilisin ang magsalin at gamitin ang mga datos. I-off upang huwag paganahin ang kung hindi magsimula ng iyong app."</string>
-    <string name="delay">"Pagkaantala bago ang Pagsasalin"</string>
-    <string name="delay_summary">"Itakda ang oras sa milliseconds maghintay bago isinasalin. Default na halaga ay 0, nakatakda sa 1000-5000 kung ang isinaling nasisira."</string>
+    <string name="delay">"Pagkaantala bago palitan ng isinalin teksto"</string>
+    <string name="delay_summary">"Magtakda ng oras sa milliseconds maghintay bago magpalit ng isinalin teksto. Default na halaga ay 0. Itakda sa 1000-5000 kung ang isinaling nasisira."</string>
+    <string name="delay_webview">"Pagkaantala bago magsimula sa pagsasalin WebViews"</string>
+    <string name="delay_webview_summary">"Magtakda ng oras sa milliseconds maghintay bago magsimula sa pagsasalin WebViews. Default na halaga ay 500. I-set 0 upang madagdagan ang bilis ng pagsasalin. Itakda sa 3000-5000 kung bahagi ng web app ay hindi na isinasalin."</string>
+    <string name="analytics">"Magpadala ng mga Anonymous Crash at Data ng paggamit"</string>
+    <string name="analytics_summary_off">"Hindi nagpapadala ng anonymous lagapak at paggamit ng data. Nagpapadala ng data sa anonymous lagapak ay tumutulong sa mga developer na gawing mas maganda ang mga app na ito."</string>
+    <string name="analytics_summary_on">"Pagpapadala ng mga anonymous lagapak at paggamit ng data. Walang personal na impormasyon na ito ay kumakalat. Data sa Anonymous lagapak ay tumutulong sa mga developer na gawing mas maganda ang mga app"</string>
+    <string name="debug">"Advanced na: Buksan ang Debug Mode."</string>
+    <string name="debug_summary_off">"Debug mode ay off. Hindi pagsulat ang debug ng data sa logcat. I-on ito bago magpadala ng mga ulat ng error"</string>
+    <string name="debug_summary_on">"Debug naka-on ang mode. Pagsusulat ng mga tala sa logcat. Ito bumababa ang pagganap - i-turn off kung hindi kailangan."</string>
+    <string name="local_on_off">"Isalin ang App na ito"</string>
+    <string name="local_on_off_summary">"I-off upang ihinto ang app na ito ay isinasalin"</string>
+    <string name="local_on_off_summary_off">"Ang app na ito ay hindi isinalin. Bumaling sa simula gamit auto-magsalin!"</string>
+    <string name="local_on_off_summary_on">"Ito ay isinalin. Patayin na lubusang i-disable ang app na ito ay isinasalin."</string>
     <string name="overRide_global">"Pawalang-bisa ang setting ng pandaigdigang"</string>
     <string name="overRide_global_summary_off">"Gamit ang mga setting ng Global para ito app. Turn sa upang baguhin ang mga setting lamang para sa mga app na ito."</string>
     <string name="overRide_global_summary_on">"Gamit ang lokal na mga setting para sa mga ito app. Turn off na gamitin ang mga setting ng Global."</string>

@@ -23,57 +23,13 @@
     <string name="loading">"Zoznam aplikácií - prosím čakajte"</string>
     <string name="clear_cache_error">"Niektoré chyby. Nepodarilo sa vymazať cache preklad!"</string>
     <string name="clear_cache_success">"Preklad Cache pre túto app bol vymazaný!"</string>
-	<string name="how_to_use">"AKO POUŽÍVAŤ APLIKÁCIU
-
-Táto aplikácia vyžaduje, aby ste sa zaregistrovať na kľúč od spoločnosti Microsoft alebo Yandex preložiť.
-Yandex Prekladač podporuje viacero jazykov, má oveľa jednoduchšie registračný proces a vyžaduje č kreditnej karty.
-Microsoft Translate dáva lepšie výsledky, ale vyžaduje kreditnú kartu zaregistrovať. (Ale nebojte sa, nič sa vám poplatok.)
-
-1. v globálne nastavenia tab, umožniť použitie Yandex namiesto Microsoft Ak chcete použiť Yandex, inak zakázať používať Microsoft.
-1. Globálne nastavenia karte, ťuknite na položku zadať kľúč predplatné Microsoft/Yandex, vstup zodpovedajúceho kľúča (pozri pokyny z nižšie).
-2. Vyberte si preložiť z jazyka a preložiť do jazyka.
-3. v zozname aplikácie Prekladač kartu nájsť aplikáciu, ktorú chcete preložiť, kliknite na políčko vedľa nej. Ak políčko nie je zobrazený, skúste rotujúce telefón nabok do režimu na šírku.
-4. Zatvorte a reštartujte aplikáciu chcete preložiť - to treba preložiť!
-
-Upozornenie: niektoré aplikácie môže vynútiť zatvorenie. Nájdete v časti riešenie problémov.
-
-AKO ZÍSKAŤ YANDEX PRELOŽIŤ KĽÚČA NA UPISOVANIE
-
-1. Prejsť na Yandex webovej stránky - https://tech.yandex.com/keys/get/?service=trnsl
-2. Ak ešte nemáte účet, kliknite na položku registrovať a prihlásiť na nový účet.
-3. po podpísaní hore, súhlasiť s dohodou používateľa a kliknite na tlačidlo získať API kľúč.
-4. ste úspešne prijali váš kľúč! Je to niečo ako trnsl.1.1.201701...
-
-AKO ZÍSKAŤ MICROSOFT AZURE PRELOŽIŤ KĽÚČA NA UPISOVANIE
-
-1. prihlásiť sa na Microsoft Azure konta http://azure.com
-
-2. keď máte účet, prihláste sa do Azure portál v http://portal.azure.com
-
-3. pridať predplatné Microsoft Translator API do účtu Azure.
-Vybrať pay-as-you-go predplatné. Bude vyžadovať kreditnú kartu, ale nebojte sa, nič sa bude účtovať.
-Vyberte položku + Nová možnosť.
-V zozname služieb vyberte inteligencie.
-Vyberte kognitívne služby API.
-Vyberte možnosť typ API.
-Vyberte Text prekladu
-V časti cenovej úrovne vyberte Voľný Tier (F0)
-Vyplňte zvyšné časti formulára a stlačte tlačidlo vytvoriť.
-
-4. získať overovací kľúč.
-Prejsť na všetky zdroje a vyberte Microsoft Translator API prihlásite na odber.
-Prejdite na možnosť kľúče a skopírovať vaše predplatné kľúč pre prístup k službe.
-Predplatné kľúč je niečo ako 321dcba...
-
-RIEŠENIE PROBLÉMOV
-
-1. Ak žiadny app sa prekladá, skontrolujte správnosť kľúča na upisovanie Microsoft/Yandex.
-2. Ak preložené aplikácie Force zavrie/dostane prilepené na načítanie prvýkrát po vás začať prekladať, kliknite na aplikáciu v aplikáciách preložiť kartu, a v ďalších nastavení vyplňte oneskorenie pred prekladom do 2000.
-3. Ak sa preložený app funguje dobre, ale teraz dostať prilepené na spustenie, kliknite na aplikáciu v aplikáciách preložiť kartu a kliknite na kliknite vymazať vyrovnávaciu pamäť preklad.
-4. Ak nie prekladajú niektoré častí aplikácie, kliknite na aplikáciu v aplikáciách preložiť kartu a agresívny režim.
-5. Ak aplikácia stále vyššej zavrie, zakázať preklad pre túto aplikáciu a kontaktujte ma na podporu závit na XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
-    <string name="translate_anywhere">"Preložiť kdekoľvek"</string>
+    <string name="backup_pref_error">"Niektoré chyby. Nepodarilo sa zálohovať nastavenia! Nemal udeliť prístup SuperUser?"</string>
+    <string name="backup_pref_success">"Preferencie boli zálohované do externého úložiska!"</string>
+    <string name="wut_why_null">"Nepodarilo sa načítať stránku preferencie Per-aplikácii. Zatvorte a znovu otvorte aplikáciu znovu."</string>
+    <string name="app_icon">"Ikonu aplikácie"</string>
+    <string name="example_application">"Príklad použitia"</string>
+    <string name="description">"Popis"</string>
+    <string name="translate_anywhere">"Preložiť všade"</string>
     <string name="apps_to_translate">"Aplikácie na preklad"</string>
     <string name="global_settings">"Globálne nastavenia"</string>
     <string name="instructions">"Pokyny"</string>
@@ -112,8 +68,20 @@ RIEŠENIE PROBLÉMOV
     <string name="caching">"Použitie Caching"</string>
     <string name="caching_summary_off">"Nie ukladanie offline preklady, následok pomalšie preložiť a vyššie údaje - ale môže pracovať pre viac aplikácií. Obrátiť na Uložiť preklady."</string>
     <string name="caching_summary_on">"Ukladanie offline preklady urýchliť preložiť a použitie údajov. Vypnúť vypnúť, ak vaša aplikácia sa nespustí."</string>
-    <string name="delay">"Oneskorenie pred prekladom"</string>
-    <string name="delay_summary">"Nastaviť čas v milisekundách čakať pred prekladom. Predvolená hodnota je 0, nastaviť 1000-5000 Ak preložené aplikácie zlyháva."</string>
+    <string name="delay">"Oneskorenie pred nahradí preložený Text"</string>
+    <string name="delay_summary">"Nastaviť čas v milisekundách Počkám nahraďte preložený text. Predvolená hodnota je 0. Nastaviť 1000-5000 Ak preložené aplikácie zlyháva."</string>
+    <string name="delay_webview">"Oneskorenie pred začatím preložiť WebViews"</string>
+    <string name="delay_webview_summary">"Nastaviť čas v milisekundách čakať pred začatím preložiť WebViews. Predvolená hodnota je 500. Nastavte 0 zvýšiť rýchlosť prekladu. Nastavená na 3000-5000 ak súčasťou web app nie sú preklady."</string>
+    <string name="analytics">"Poslať anonymný havárie a údaje o používaní"</string>
+    <string name="analytics_summary_off">"Nie posielať anonymný havárie a údaje o používaní. Posielanie anonymných crash dáta pomáha vylepšiť app vývojár."</string>
+    <string name="analytics_summary_on">"Posielanie anonymných havárie a používanie údajov. Sa neprenášajú žiadne osobné údaje. Anonymný crash údaje pomáhajú vylepšiť app vývojár"</string>
+    <string name="debug">"Rozšírené: Zapnúť režim ladenia."</string>
+    <string name="debug_summary_off">"Debug režim je vypnutý. Nenapsat debug údajov logcat. Zapnúť pred odoslaním hlásenia o chybe"</string>
+    <string name="debug_summary_on">"Debug režim zapnutý. Písomné protokoly k logcat. To znižuje výkon - vypnúť pokiaľ nie je potreba."</string>
+    <string name="local_on_off">"Túto aplikáciu Prekladač"</string>
+    <string name="local_on_off_summary">"Vypnúť prestať prekladať túto aplikáciu"</string>
+    <string name="local_on_off_summary_off">"Táto aplikácia sa neprekladajú. Zase na Štart pomocou auto-translate!"</string>
+    <string name="local_on_off_summary_on">"To bude preložený. Vypnúť úplne vypnúť preklad tejto aplikácie."</string>
     <string name="overRide_global">"Prepísať globálne nastavenia"</string>
     <string name="overRide_global_summary_off">"Pomocou globálne nastavenia pre túto app. zase na Zmena nastavenia iba pre túto aplikáciu."</string>
     <string name="overRide_global_summary_on">"Pomocou miestneho nastavenia pre túto app. Turn off použiť globálne nastavenia."</string>

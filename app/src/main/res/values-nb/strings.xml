@@ -23,56 +23,12 @@
     <string name="loading">"Lasting listen over programmer - vennligst vent"</string>
     <string name="clear_cache_error">"Noen feil. Kan ikke fjerne oversettelse cache!"</string>
     <string name="clear_cache_success">"Oversette hurtigbufferen for denne app har blitt slettet!"</string>
-	<string name="how_to_use">"HVORDAN DU BRUKER PROGRAMMET
-
-Dette programmet krever at du registrerer deg for en nøkkel fra Microsoft eller Yandex oversett.
-Yandex Translate støtter flere språk, har en mye lettere registreringsprosessen, og krever ingen kredittkort.
-Microsoft Translate gir bedre resultater, men krever kredittkort registrere. (Men ikke fortvil, ingenting blir belastet.)
-
-1. i globale innstillinger, kan du bruke Yandex istedet for Microsoft hvis du vil bruke Yandex, ellers deaktivere bruk Microsoft.
-1. i globale innstillinger, trykk inn Microsoft/Yandex medlemskontingent nøkkel, inn den tilsvarende tasten (se instruksjoner nedenfor).
-2. Velg den oversetter fra språk og oversette språk.
-3. i Apps oversett kategorien, finne programmet du vil oversette, klikker du avmerkingsboksen ved siden av. Hvis avkrysningsruten ikke er synlig, kan du prøve å rotere telefonen sidelengs i landskapsmodus.
-4. Lukk og start programmet du vil ha oversatt - det skal oversettes!
-
-Advarsel - noen apps kan fremtvinge fillukking. Se feilsøkingsdelen.
-
-HVORDAN Å FÅ YANDEX OVERSETTE MEDLEMSKONTINGENT NØKKEL
-
-1. gå til Yandex webside - https://tech.yandex.com/keys/get/?service=trnsl
-2. Hvis du ikke allerede har en konto, klikk Registrer og registrere en ny konto.
-3. etter signering opp, godtar avtalen og klikk få API-nøkkel.
-4. du har mottatt din nøkkel! Det er noe sånt trnsl.1.1.201701...
-
-HVORDAN Å FÅ MICROSOFT AZURE OVERSETTE MEDLEMSKONTINGENT NØKKEL
-
-1. Registrer deg for en Microsoft Azure konto på http://azure.com
-
-2. Når du har en konto, logge på Azure portal på http://portal.azure.com
-
-3. Legg et Microsoft Translator API abonnement kontoen Azure.
-Velg et pay-as-you-go abonnement. Krever et kredittkort, men ikke bekymre deg, vil ikke belastes.
-Velg filen + New alternativet.
-Velg Intelligence fra listen over tjenester.
-Velg kognitive ene.
-Velg API Type.
-Velg Tekstoversettelse
-Velg den gratis Tier (F0) i delen priser Tier
-Fyll ut resten av skjemaet, og trykk på Opprett-knappen.
-
-4. hente godkjenningsnøkkelen din.
-Gå til alle ressurser og velg APIEN Microsoft oversetter du abonnerer.
-Gå til alternativet nøkler og kopiere din medlemskontingent nøkkel for å få tilgang til tjenesten.
-Abonnementsprisen nøkkel er noe sånt som 321dcba...
-
-FEILSØKING
-
-1. Hvis ikke app oversettes, sjekk din Microsoft/Yandex abonnement nøkkel er riktig.
-2. Hvis programmet oversatt Force lukker/får fast på lasting første gang etter du oversette, klikk på programmet i Apps å oversette kategorien og i andre innstillinger fylle forsinkelse før oversette til 2000.
-3. Hvis oversatt programmet brukes til å fungere fint, men nå blir sittende fast på Start, klikk på app i Apps å oversette kategorien, og klikk på klikk å helt oversettelse skjulested.
-4. Hvis noen deler av programmet ikke er oversettes, klikk på app i Apps å oversette kategorien, og aktiverer aggressiv modus.
-5. Hvis programmet fremdeles Force lukkes, deaktivere oversettelse for denne app og kontakt meg på støtte tråden på XDA - https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878
-"</string>
+    <string name="backup_pref_error">"Noen feil. Kan ikke sikkerhetskopiere innstillinger! Du gi superbrukeren tilgang?"</string>
+    <string name="backup_pref_success">"Innstillinger er sikkerhetskopiert til eksternlagring!"</string>
+    <string name="wut_why_null">"Kan ikke laste på Per-app innstillinger-siden. Lukk og åpne programmet på nytt på nytt."</string>
+    <string name="app_icon">"App-ikonet"</string>
+    <string name="example_application">"Eksempel program"</string>
+    <string name="description">"Beskrivelse"</string>
     <string name="translate_anywhere">"Oversette overalt"</string>
     <string name="apps_to_translate">"Apps å oversette"</string>
     <string name="global_settings">"Globale innstillinger"</string>
@@ -112,8 +68,20 @@ FEILSØKING
     <string name="caching">"Bruke hurtigbufring"</string>
     <string name="caching_summary_off">"Ikke lagre oversettelser frakoblet, noe som resulterer i tregere oversette og høyere data - men kan arbeide for flere programmer. Slå på lagre oversettelser."</string>
     <string name="caching_summary_on">"Lagrer oversettelser frakoblet for å oversette og bruke dataene. Slå av deaktiverer hvis din app ikke starter."</string>
-    <string name="delay">"Forsinkelse før oversette"</string>
-    <string name="delay_summary">"Angi tiden i millisekunder før oversette. Standardverdien er 0, satt til 1000-5000 hvis oversatt programmet krasjer."</string>
+    <string name="delay">"Forsinkelse før erstatte med oversatt tekst"</string>
+    <string name="delay_summary">"Angi tiden i millisekunder før Erstatt med oversatt tekst. Standardverdien er 0. Satt til 1000-5000 hvis oversatt programmet krasjer."</string>
+    <string name="delay_webview">"Forsinkelse før du begynner å oversette WebViews"</string>
+    <string name="delay_webview_summary">"Angi tiden i millisekunder det skal ventes før du begynner å oversette WebViews. Standardverdien er 500. Sette å 0 å øke oversettelse hastigheten. Satt til 3000-5000 hvis en del av webprogrammet ikke er oversette."</string>
+    <string name="analytics">"Sende anonyme krasj og bruksdata"</string>
+    <string name="analytics_summary_off">"Ikke sende anonyme krasj og bruksdata. Sende anonyme crash data hjelper utvikleren gjøre app bedre."</string>
+    <string name="analytics_summary_on">"Sende anonyme krasj og bruk data. Ingen personlige opplysninger overføres. Anonym krasj hjelper utvikleren gjøre app bedre"</string>
+    <string name="debug">"Avansert: Aktivere feilsøkingsmodus."</string>
+    <string name="debug_summary_off">"Debug modus er deaktivert. Ikke skriver feilsøkingsdata til logcat. Aktivere denne før du sender feilrapporter"</string>
+    <string name="debug_summary_on">"Debug modus er på. Skrive logger til logcat. Dette reduserer ytelse - slå av hvis ikke nødvendig."</string>
+    <string name="local_on_off">"Oversette denne App"</string>
+    <string name="local_on_off_summary">"Slå av stoppe oversette denne app"</string>
+    <string name="local_on_off_summary_off">"Dette programmet vil ikke oversatt. Slå på start bruker auto-oversetter!"</string>
+    <string name="local_on_off_summary_on">"Dette vil bli oversatt. Slå av deaktivere oversette denne app."</string>
     <string name="overRide_global">"Overstyre globale innstillinger"</string>
     <string name="overRide_global_summary_off">"Bruker globale innstillinger for denne app. slå på endre innstillinger bare for denne app."</string>
     <string name="overRide_global_summary_on">"Bruker lokale innstillinger for denne app. slå av bruke globale innstillingene."</string>

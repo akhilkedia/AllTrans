@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">Mga nilalaman</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">Ano ang AllTrans</a></li>
+        <li><a href="#videos">Mga video</a></li>
+        <li><a href="#how-to-use-alltrans">Paano gamitin ang AllTrans</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Paano Kumuha ng Yandex isalin ang susi</a>
+        </li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Paano Kumuha ng Microsoft Azure
+            isalin ang susi</a></li>
+        <li><a href="#troubleshooting">Pag-areglo</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">Walang app na ito ay isinasalin
+                    sa anumang app</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">Isinalin ng app ay makaalis
+                    sa pagbubukas ng iskrin</a></li>
+                <li><a href="#the-translated-app-is-force-close">Ang Translated app ay Force
+                    malapit</a></li>
+                <li><a href="#a-particular-app-is-not-being-translated">Isang partikular na app ay
+                    hindi isinasalin</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">Isang laro app ay hindi
+                    isinasalin</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">Kung
+                        ikaw ay mayroon parin ang mga problema tulad ng Force malapit o bahagi ng
+                        isang app na hindi isinasalin</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">Ang mga donasyon</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">Ano ang AllTrans</h2>
+
+    <p>Papalitan nito ang <strong>lahat ng teksto sa isang app</strong> sa isang wika mula sa isang
+        wika na iba sa oras ng takbo.</p>
+
+    <p>Sinasabi halimbawa sa German ang isang app na ito. Pinipili ng user ang pangalan ng app, at
+        ang kailangang wika pagbabalik-loob (sinasabi Aleman sa Ingles).</p>
+
+    <p>Pagkatapos ay tuwing gumagamit ay gumagamit ng mga kinakailangang app, lahat ng mga teksto,
+        <strong>ANYWHERE</strong> sa app, ay papalitan ng kanilang katumbas na English.</p>
+
+    <p>Ito ay isang bagay na katulad ng mga paraan na gumagana ang Google Translate sa Chrome.</p>
+
+    <p><strong>Note</strong> - dahil sa isang teknikal na limitasyon, dito na hindi epektibo sa
+        maraming mga laro. Walang maaaring gawin tungkol dito.</p>
+
+    <h2 id="videos">Mga video
+
+        <p>Ang video (sa Ingles) na nagpapakita kung paano gamitin ang AllTrans ng Gadget Hacks sa
+            Youtube <a href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+        </p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">Paano gamitin ang AllTrans</h2>
+
+        <p>Ang mga aplikasyon <strong>ay nangangailangan ng</strong> mong mag-sign up para sa
+            <strong>libreng</strong> susi mula sa Microsoft o Yandex Translate. Tingnan ang mga
+            tagubilin sa ibaba kung paano makuha ang susi.</p>
+
+        <p>Yandex Translate ay sumusuporta sa iba pang mga wika, ay may isang ng maraming mas madali
+            na proseso signup, at nangangailangan ng <strong>walang CREDIT CARD</strong>.</p>
+
+        <p>Microsoft Translate ay nagbibigay ng <strong>mas mahusay na pagsasalin</strong>, ngunit
+            ito ay nangangailangan ng isang credit card upang mag-sign up. (Ngunit huwag kang
+            mag-alala, magiging walang sisingilin.)</p>
+
+        <ol>
+            <li>Tiyakin na ang mga AllTrans na app ay pinagana sa Xposed Installer-& gt; Modyul.
+            </li>
+            <li>Ilunsad ang mga app na AllTrans. Sa "Global Settings" tab, paganahin ang "Gumamit
+                Yandex halip ng Microsoft" kung gusto mong gamitin ang Yandex. Huwag paganahin ang
+                gumamit ng Microsoft.
+            </li>
+            <li>Piliin ang "Magsalin mula sa wikang" at "Isalin sa Tagalog".</li>
+            <li>Sa "Mga Apps upang isalin" tab, mahanap ang app na gusto mong isalin, i-klik ang mga
+                checkbox sa tabi nito. Kung hindi nakikita ang mga checkbox, subukang umiikot ang
+                paligid ng iyong telepono sa LandScape mode.
+            </li>
+            <li>Isara at i-restart ang app na gusto mo ay isinalin - ito ay isalin!</li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Paano Kumuha ng Yandex isalin ang susi</h2>
+
+        <ol>
+            <li>Pumunta sa <a href="https://tech.yandex.com/keys/get/?service=trnsl">Yandex isalin
+                ang Website ng API</a></li>
+            <li>Kung wala ka na ng account, i-click ang "magrehistro" at mag-sign up para sa isang
+                bagong account.
+            </li>
+            <li>Pagkatapos mag-sign up, sumasang-ayon sa mga kasunduan ng User at i-click ang
+                "Kumuha ang mga susi ng API".
+            </li>
+            <li>Matagumpay na natanggap mo ang iyong key!</li>
+        </ol>
+
+        <p>Ang mga susi ng suskrisyon ay isang bagay tulad ng "trnsl.1.1.201701..."</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Paano Kumuha ng Microsoft Azure isalin ang
+            susi</h2>
+
+        <ol>
+            <li>Mag-sign up para sa isang account sa Microsoft Azure.<br>Kung hindi ikaw ay mayroon
+                ng Azure account, mag-sign up para sa isang <a href="http://azure.com">account sa
+                    Microsoft Azure</a>.
+            </li>
+            <li>Pagkatapos mong magkaroon ng isang account, mag-sign in sa mga <a
+                    href="http://portal.azure.com">Azure Portal</a>.
+            </li>
+            <li>Magdagdag ng isang "Microsoft Translator API Subscription" sa iyong mga account sa
+                asul.<br>
+                <ol>
+                    <li>Pumili ng subscription sa "pay-as-you-go". Ay nangangailangan ng isang
+                        credit card, ngunit huwag kang mag-alala, walang sisingilin.
+                    </li>
+                    <li>Piliin ang opsyon na "+ bagong".</li>
+                    <li>Pumili ng "Katalinuhan" mula sa listahan ng mga serbisyo.</li>
+                    <li>Piliin ang "Cognitive serbisyo api".</li>
+                    <li>Piliin ang opsyon na "Tipo ng API".</li>
+                    <li>Piliin ang "Teksto pagsasalin".</li>
+                    <li>Sa bahaging "Pagpepresyo Tier", piliin ang "malayang Tier (F0)".</li>
+                    <li>Mag-fill out ng form, at pindutin ang pindutan ng "Lumikha".</li>
+                </ol>
+            </li>
+            <li>Kunin ang iyong "Key Authentication".<br>
+                <ol>
+                    <li>Pumunta sa "Lahat ng mga Resources" at piliin ang Microsoft Translator API
+                        ka nakasuskribe sa.
+                    </li>
+                    <li>Pumunta na ang "Mga susi" na opsyon at kopyahin ang iyong subscription susi
+                        upang ma-access ang serbisyo.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>Ang mga susi ng suskrisyon ay isang bagay tulad ng "321dcba..."</p>
+
+
+        <h2 id="troubleshooting">Pag-areglo</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">Walang app na ito ay isinasalin sa anumang
+            app</h3>
+
+        <ul>
+            <li>Kung walang app ay isinasalin, check ay pinagana ang "AllTrans" sa Xposed
+                Installer-& gt; Modyul.
+            </li>
+            <li>Suriin din kung tama ang iyong "Microsoft/Yandex Subscription susi".</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">Isinalin ng app ay makaalis sa pagbubukas
+            ng iskrin</h3>
+
+        <ul>
+            <li>I-klik ang pangalan ng app sa "Apps upang isalin ang" tab, at mag-klik sa "I-click
+                upang malinaw pagsasalin Cache".
+            </li>
+            <li>Kung ito ang unang pagkakataon na nagsimula kang isinasalin ang app na ito, i-click
+                ang pangalan ng app sa tab na "Mga Apps upang isalin", at "Other setting" punan
+                "Pagkaantala bago Replcaing ng isinalin teksto" na 2000.
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">Ang Translated app ay "Force malapit"</h3>
+
+        <ul>
+            <li>I-klik ang pangalan ng app sa "Apps upang isalin ang" tab, at mag-klik sa "I-click
+                upang malinaw pagsasalin Cache".
+            </li>
+            <li>Mag-click sa mga pangalan ng mga app sa tab na "Mga Apps upang isalin", at sa "Other
+                setting" punan "Pagkaantala bago Replcaing ng isinalin teksto" na 2000.
+            </li>
+            <li>I-klik ang pangalan ng app sa "Apps upang isalin ang" tab, at sa "Other setting"
+                punan "Pagkaantala bago simula upang isalin ang WebViews" sa 2000.
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">Isang partikular na app ay hindi
+            isinasalin</h3>
+
+        <ul>
+            <li>I-klik ang pangalan ng app sa "Apps upang isalin ang" tab, at sa "Other setting"
+                punan "Pagkaantala bago simula upang isalin ang WebViews" sa 2000.
+            </li>
+            <li>Kung ang ilang mga bahagi ng ang app na ito ay pa rin hindi isinasalin, mag-click sa
+                pangalan ng app sa "Apps upang isalin ang" tab, at paganahin ang "Agresibong Mode".
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">Isang laro app ay hindi isinasalin</h3>
+
+        <ul>
+            <li>Dahil sa mga teknikal na limitasyon, "AllTrans" ay hindi makikipagtulungan sa
+                maraming mga laro. Walang maaaring gawin tungkol dito.
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            Kung ikaw ay mayroon parin problemang tulad ng "Force malapit" o ang mga bahagi ng isang
+            app na hindi isinasalin</h3>
+
+        <p>Makipag-ugnay sa akin para sa suporta. Kapag ginawa ninyo ito, kailangan kong atleast ang
+            sumusunod na impormasyon-</p>
+
+        <ol>
+            <li>Ang pangalan ng app, kasama ang isang <strong>link upang i-download ang app na
+                ito</strong> mula sa ilang mga tindahan ng APK tulad ng Google Play Store, CoolApk,
+                atbp.
+            </li>
+            <li>Bersyon ng Android ng iyong telepono.</li>
+            <li>Isang "logcat" ng sinusubukan na buksan ang app na ito na nagbibigay sa iyo ng
+                problema mo. Maaari mong gamitin ang app na malayang magagamit sa Play Store para sa
+                mga ito, tulad ng <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">isang
+                    ito</a></li>
+        </ol>
+
+        <p>Sa sandaling ikaw ay may sa itaas, ang makipag-ugnay sa akin sa sa <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            suportahan ang sinulid</a>.<br>Maaari mo ring iulat ang mga isyu sa mga <a
+                href="https://github.com/akhilkedia/AllTrans">proyekto ng Github</a>.</p>
+
+
+        <h2 id="donations">Ang mga donasyon</h2>
+
+        <p>Kung gusto mo ng proyektong ito, bumili ako ng isang tasa ng kape! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>

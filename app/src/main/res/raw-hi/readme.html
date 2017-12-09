@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2017 Akhil Kedia
+  ~ This file is part of AllTrans.
+  ~
+  ~ AllTrans is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ AllTrans is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with AllTrans. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTrans!</title>
+    <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css">
+</head>
+<body>
+<div class="container"><p><a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+        src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" title=""></a></p>
+
+
+    <h2 id="table-of-contents">सामग्री की तालिका</h2>
+
+    <ul>
+        <li><a href="#what-alltrans-does">क्या AllTrans है</a></li>
+        <li><a href="#videos">वीडियो</a></li>
+        <li><a href="#how-to-use-alltrans">AllTrans का उपयोग करने के लिए कैसे</a></li>
+        <li><a href="#how-to-get-yandex-translate-key">Yandex अनुवाद कुंजी प्राप्त करने के लिए
+            कैसे</a></li>
+        <li><a href="#how-to-get-microsoft-azure-translate-key">Microsoft Azure अनुवाद कुंजी प्राप्त
+            करने के लिए कैसे</a></li>
+        <li><a href="#troubleshooting">समस्या निवारण</a><br>
+            <ul>
+                <li><a href="#no-app-is-being-translated-in-any-app">कोई ऐप किसी भी अनुप्रयोग में
+                    अनुवाद किया जा रहा है</a></li>
+                <li><a href="#translated-app-is-stuck-in-opening-screen">अनुवादित अनुप्रयोग खोलने
+                    स्क्रीन में फँस गया है</a></li>
+                <li><a href="#the-translated-app-is-force-close">अनुवादित अनुप्रयोग बंद बल है</a>
+                </li>
+                <li><a href="#a-particular-app-is-not-being-translated">एक खास ऐप अनुवाद नहीं किया
+                    जा रहा है</a></li>
+                <li><a href="#a-game-app-is-not-being-translated">एक खेल app अनुवाद नहीं किया जा रहा
+                    है</a></li>
+                <li>
+                    <a href="#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">यदि
+                        आप अभी भी समस्या बल बंद या अनुवाद नहीं किया जा रहा एक app के भागों की तरह
+                        है</a></li>
+            </ul>
+        </li>
+        <li><a href="#donations">दान</a></li>
+    </ul>
+
+
+    <h2 id="what-alltrans-does">क्या AllTrans है</h2>
+
+    <p>यह एक भाषा एक भाषा से दूसरे क्रम में करने के लिए में <strong>सभी पाठ एक app में</strong>
+        बदलता है।</p>
+
+    <p>कहते हैं कि जर्मन में उदाहरण के लिए एक app है। किसी उपयोगकर्ता अनुप्रयोग नाम, और आवश्यक भाषा
+        रूपांतरण (कहते हैं कि अंग्रेजी के लिए जर्मन) का चयन करता है।</p>
+
+    <p>उसके बाद जब भी उपयोगकर्ता आवश्यक अनुप्रयोग का उपयोग करता है, सभी पाठ, अनुप्रयोग, में <strong>कहीं
+        भी</strong> कर रहे हैं की जगह द्वारा उनके समकक्ष अंग्रेजी।</p>
+
+    <p>यह कुछ Google अनुवाद क्रोम में काम करता है जिस तरह के समान है।</p>
+
+    <p><strong>नोट</strong> - एक तकनीकी कमी के कारण, यह कई खेल के साथ काम नहीं करेगा। इस बारे में
+        कुछ नहीं किया जा सकता।</p>
+
+    <h2 id="videos">वीडियो
+
+        <p>एक वीडियो यूट्यूब पर <a href="https://www.youtube.com/watch?v=sKDtkmISi6k">https://www.youtube.com/watch?v=sKDtkmISi6k</a>
+            गैजेट हैक्स द्वारा AllTrans का उपयोग करने के लिए कैसे दिखा रहा है (अंग्रेज़ी में)</p>
+
+        <p><a href="https://www.youtube.com/watch?v=sKDtkmISi6k"><img
+                src="https://img.youtube.com/vi/sKDtkmISi6k/0.jpg" alt="Alt text" title=""
+                class="hoverZoomLink"></a></p>
+
+
+        <h2 id="how-to-use-alltrans">AllTrans का उपयोग करने के लिए कैसे</h2>
+
+        <p>इस अनुप्रयोग <strong>की आवश्यकता होती है</strong> आप एक कुंजी Microsoft या Yandex अनुवाद
+            से <strong>मुफ्त</strong> के लिए साइन अप करने के लिए। नीचे दिए गए निर्देशों पर चाबी
+            प्राप्त करने के लिए कैसे देखें।</p>
+
+        <p>Yandex अनुवाद अधिक भाषाओं का समर्थन करता है, एक बहुत आसान पंजीकरण प्रक्रिया है, और
+            <strong>कोई क्रेडिट कार्ड</strong>की आवश्यकता है।</p>
+
+        <p>Microsoft अनुवाद <strong>बेहतर अनुवाद</strong>देता है, लेकिन साइन अप करने के लिए एक
+            क्रेडिट कार्ड की आवश्यकता है। (लेकिन चिंता मत करो, कुछ नहीं होगा आरोप.)</p>
+
+        <ol>
+            <li>सुनिश्चित करें कि app Xposed इंस्टॉलर में सक्षम किया गया है AllTrans मॉड्यूल ->.
+            </li>
+            <li>AllTrans ऐप लॉन्च करें। यदि Yandex का उपयोग करने के लिए आप "वैश्विक सेटिंग्स" टैब
+                में, "Yandex के बजाय Microsoft का उपयोग करें" सक्षम करें। Microsoft का उपयोग करने के
+                लिए अक्षम करें।
+            </li>
+            <li>"अनुवाद से भाषा" और "करने के लिए भाषा का अनुवाद करें" चुनें।</li>
+            <li>"Apps का अनुवाद करने के लिए" टैब में, अनुवाद, इसके आगे चेक बॉक्स क्लिक करें करने के
+                लिए इच्छित एप्लिकेशन खोजें। चेक बॉक्स दिखाई नहीं देता है, यदि लैंडस्केप मोड में अपने
+                फोन बग़ल में घूर्णन की कोशिश करो।
+            </li>
+            <li>बंद करें और पुनरारंभ app आप अनुवाद चाहते हैं - यह अनुवाद किया जाना चाहिए!</li>
+        </ol>
+
+
+        <h2 id="how-to-get-yandex-translate-key">Yandex अनुवाद कुंजी प्राप्त करने के लिए कैसे</h2>
+
+        <ol>
+            <li><a href="https://tech.yandex.com/keys/get/?service=trnsl">Yandex API वेबसाइट
+                अनुवाद</a> करने के लिए जाओ
+            </li>
+            <li>यदि आप पहले से ही एक खाता नहीं है, क्लिक करें "रजिस्टर" और एक नए खाते के लिए साइन अप
+                करें।
+            </li>
+            <li>साइन अप, के बाद उपयोगकर्ता अनुबंध करने के लिए सहमत हैं और "एपीआई कुंजी प्राप्त करें"
+                क्लिक करें।
+            </li>
+            <li>आप सफलतापूर्वक अपने कुंजी प्राप्त हुआ है!</li>
+        </ol>
+
+        <p>"Trnsl.1.1.201701..." की तरह कुछ सदस्यता कुंजी है</p>
+
+
+        <h2 id="how-to-get-microsoft-azure-translate-key">Microsoft Azure अनुवाद कुंजी प्राप्त करने
+            के लिए कैसे</h2>
+
+        <ol>
+            <li>किसी Microsoft Azure खाते के लिए साइन अप करें।<br>यदि आप पहले से ही एक Azure खाता
+                नहीं है, एक <a href="http://azure.com">Microsoft Azure खाते</a>के लिए साइन अप करें।
+            </li>
+            <li>के बाद आप एक खाता है, <a href="http://portal.azure.com">Azure पोर्टल</a>में साइन इन
+                करें।
+            </li>
+            <li>"Microsoft अनुवादक API सदस्यता" अपने Azure खाते में जोड़ें।<br>
+                <ol>
+                    <li>एक "पे" सदस्यता चुनें। एक क्रेडिट कार्ड की आवश्यकता होगी, लेकिन चिंता मत
+                        करो, कुछ भी नहीं लगेगा।
+                    </li>
+                    <li>"+ नया" विकल्प का चयन करें।</li>
+                    <li>'खुफिया' सेवाओं की सूची में से चुनें।</li>
+                    <li>"संज्ञानात्मक सेवाएँ APIs" का चयन करें।</li>
+                    <li>"API प्रकार" विकल्प का चयन करें।</li>
+                    <li>"पाठ अनुवाद" का चयन करें।</li>
+                    <li>"स्तरीय मूल्य निर्धारण" अनुभाग में, "नि: शुल्क टियर (F0)" का चयन करें।</li>
+                    <li>प्रपत्र के बाकी बाहर भरने और "बनाएँ" बटन दबाएँ।</li>
+                </ol>
+            </li>
+            <li>अपने "प्रमाणीकरण कुंजी" को पुनः प्राप्त।<br>
+                <ol>
+                    <li>"करने के लिए सभी संसाधनों" पर जाएँ और Microsoft अनुवादक API करने के लिए
+                        सदस्यता का चयन करें।
+                    </li>
+                    <li>"कुंजी" विकल्प पर जाएँ और इस सेवा का उपयोग करने के लिए अपनी सदस्यता कुंजी की
+                        प्रतिलिपि बनाएँ।
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>"321dcba..." की तरह कुछ सदस्यता कुंजी है</p>
+
+
+        <h2 id="troubleshooting">समस्या निवारण</h2>
+
+
+        <h3 id="no-app-is-being-translated-in-any-app">कोई ऐप किसी भी अनुप्रयोग में अनुवाद किया जा
+            रहा है</h3>
+
+        <ul>
+            <li>अगर कोई ऐप अनुवाद किया जा रहा है, "AllTrans" Xposed इंस्टॉलर में सक्षम है की जाँच है
+                मॉड्यूल ->.
+            </li>
+            <li>भी यदि अपने "Microsoft/Yandex सदस्यता कुंजी" सही है की जाँच करें।</li>
+        </ul>
+
+
+        <h3 id="translated-app-is-stuck-in-opening-screen">अनुवादित अनुप्रयोग खोलने स्क्रीन में फँस
+            गया है</h3>
+
+        <ul>
+            <li>एप्लिकेशन का नाम अनुवाद करने के लिए, "ऐप्स" में पर क्लिक करें टैब, और क्लिक करें "पर
+                क्लिक करें को कैशे साफ़ करें अनुवाद पर"।
+            </li>
+            <li>एप्लिकेशन का नाम "Apps का अनुवाद करने के लिए" टैब में, और "देरी से पहले Replcaing के
+                साथ अनुवादित पाठ" में "अन्य सेटिंग्स" भरने में पर यह पहली बार आप इस app का अनुवाद
+                शुरू कर दिया है, तो 2000 करने के लिए क्लिक करें।
+            </li>
+        </ul>
+
+
+        <h3 id="the-translated-app-is-force-close">अनुवादित अनुप्रयोग "बल बंद" है</h3>
+
+        <ul>
+            <li>एप्लिकेशन का नाम अनुवाद करने के लिए, "ऐप्स" में पर क्लिक करें टैब, और क्लिक करें "पर
+                क्लिक करें को कैशे साफ़ करें अनुवाद पर"।
+            </li>
+            <li>"क्षुधा का अनुवाद करने के लिए" टैब में ऐप के नाम पर क्लिक करें, और 2000 के लिए "देरी
+                से पहले Replcaing के साथ अनुवाद में पाठ" में "अन्य सेटिंग्स" भरें।
+            </li>
+            <li>एप्लिकेशन का नाम अनुवाद करने के लिए, "ऐप्स" में पर क्लिक करें टैब, और "अन्य सेटिंग्स
+                में" भर "देरी से पहले शुरू करने के लिए अनुवाद WebViews में" 2000 के लिए।
+            </li>
+        </ul>
+
+        <h3 id="a-particular-app-is-not-being-translated">एक खास ऐप अनुवाद नहीं किया जा रहा है</h3>
+
+        <ul>
+            <li>एप्लिकेशन का नाम अनुवाद करने के लिए, "ऐप्स" में पर क्लिक करें टैब, और "अन्य सेटिंग्स
+                में" भर "देरी से पहले शुरू करने के लिए अनुवाद WebViews में" 2000 के लिए।
+            </li>
+            <li>App के कुछ भाग अभी भी अनुवाद नहीं किया जा रहा हैं, तो क्लिक करें "का अनुवाद करने के
+                लिए एप्लिकेशन" में ऐप के नाम पर टैब, और "एग्रेसिव मोड" को सक्षम करें।
+            </li>
+        </ul>
+
+
+        <h3 id="a-game-app-is-not-being-translated">एक खेल app अनुवाद नहीं किया जा रहा है</h3>
+
+        <ul>
+            <li>तकनीकी सीमाओं के कारण, 'AllTrans' के साथ कई खेल काम नहीं करेगा। इस बारे में कुछ नहीं
+                किया जा सकता।
+            </li>
+        </ul>
+
+
+        <h3 id="if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated">
+            यदि आप अभी भी समस्याओं 'बल बंद' या अनुवादित नहीं किया जा रहा एक app के भागों की तरह
+            है</h3>
+
+        <p>मुझे के लिए समर्थन से संपर्क करें। जब आप करते हैं, मैं कम से कम निम्न जानकारी की आवश्यकता
+            होगी-</p>
+
+        <ol>
+            <li>Google Play Store, CoolApk, आदि की तरह कुछ APK स्टोर से एक <strong>अनुप्रयोग डाउनलोड
+                करने के लिए लिंक</strong> के साथ, अनुप्रयोग का नाम है।
+            </li>
+            <li>आपका फ़ोन Android संस्करण।</li>
+            <li>आप जो आपको समस्या देता है एप्लिकेशन खोलने के लिए कोशिश कर के एक "logcat"। आप
+                स्वतंत्र रूप से उपलब्ध ऐप्स प्ले स्टोर पर इस के लिए, <a
+                        href="https://play.google.com/store/apps/details?id=com.nolanlawson.logcat">यह
+                    एक</a> जैसे का उपयोग कर सकते हैं
+            </li>
+        </ol>
+
+        <p>एक बार जब आप इसके बाद के संस्करण है, मुझे <a
+                href="https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878">XDA
+            धागा समर्थन</a>पर संपर्क करें।<br>आप भी <a
+                href="https://github.com/akhilkedia/AllTrans">परियोजना की Github</a>पर समस्या की
+            रिपोर्ट कर सकते हैं।</p>
+
+
+        <h2 id="donations">दान</h2>
+
+        <p>यदि आप इस परियोजना की तरह, मुझे एक कप कॉफी खरीदें! :)</p>
+
+        <p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UY6TVJXST724J"><img
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"
+                    title=""></a></p></h2>
+</div>
+</body>
+</html>
