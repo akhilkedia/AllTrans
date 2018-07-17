@@ -20,12 +20,17 @@
 package akhil.alltrans;
 
 import android.util.Log;
+import android.text.TextUtils;
 
 import java.io.StringWriter;
 import java.util.Locale;
 
 class utils {
     public static boolean Debug;
+
+    public static boolean isVirtualXposed() {
+        return !TextUtils.isEmpty(System.getProperty("vxp"));
+    }
 
     public static void debugLog(String str) {
         if (Debug) {

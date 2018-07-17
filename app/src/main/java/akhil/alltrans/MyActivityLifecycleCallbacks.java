@@ -66,7 +66,7 @@ class MyActivityLifecycleCallbacks implements Application.ActivityLifecycleCallb
                 alltrans.cacheAccess.release();
 
             } catch (Exception e) {
-                Log.e("AllTrans", "AllTrans: Got error in onActivityDestroyed: " + Log.getStackTraceString(e));
+                utils.debugLog("Got error in onActivityDestroyed: " + Log.getStackTraceString(e));
             }
         }
 

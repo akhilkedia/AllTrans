@@ -23,6 +23,7 @@ package akhil.alltrans;
 import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.Context;
+import android.content.ContextWrapper;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
@@ -66,8 +67,11 @@ public class alltrans implements IXposedHookLoadPackage {
             return;
 
         utils.Debug = globalPref.getBoolean("Debug", false);
-
         utils.debugLog("in package : " + lpparam.packageName);
+        if (utils.isVirtualXposed()) {
+            utils.debugLog("We are in virtualXposed for package : " + lpparam.packageName);
+        }
+
         XSharedPreferences localPref = new XSharedPreferences(alltrans.class.getPackage().getName(), lpparam.packageName);
         localPref.makeWorldReadable();
         localPref.reload();
@@ -80,6 +84,9 @@ public class alltrans implements IXposedHookLoadPackage {
         // Hook Application onCreate
         appOnCreateHookHandler appOnCreateHookHandler = new appOnCreateHookHandler();
         findAndHookMethod(Application.class, "onCreate", appOnCreateHookHandler);
+
+        AttachBaseContextHookHandler attachBaseContextHookHandler = new AttachBaseContextHookHandler();
+        findAndHookMethod(ContextWrapper.class, "attachBaseContext", Context.class, attachBaseContextHookHandler);
 
         //Hook WebView Constructors
         WebViewOnCreateHookHandler webViewOnCreateHookHandler = new WebViewOnCreateHookHandler();
