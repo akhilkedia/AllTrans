@@ -83,6 +83,7 @@ public class AppListFragment extends Fragment {
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
 
         SharedPreferences.Editor editor = settings.edit();
+        editor.putBoolean("codepath.apps.demointroandroid", true);
         editor.putBoolean("com.astroframe.seoulbus", true);
         editor.putBoolean("com.nhn.android.nmap", true);
         editor.putBoolean("com.kakao.taxi", true);

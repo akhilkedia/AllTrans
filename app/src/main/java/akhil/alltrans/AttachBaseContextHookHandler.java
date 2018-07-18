@@ -19,11 +19,12 @@
 
 package akhil.alltrans;
 
-import android.app.Application;
 import android.content.Context;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.HashMap;
 
 import de.robv.android.xposed.XC_MethodHook;
@@ -37,13 +38,16 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
         utils.debugLog("Successfully got context!");
 
         if (PreferenceList.Caching) {
-            if(alltrans.cache.isEmpty()) {
+            if (alltrans.cache.isEmpty()) {
+                clearCacheIfNeeded(alltrans.context, PreferenceList.CachingTime);
                 try {
                     FileInputStream fileInputStream = alltrans.context.openFileInput("AllTransCache");
                     ObjectInputStream s = new ObjectInputStream(fileInputStream);
                     alltrans.cacheAccess.acquireUninterruptibly();
                     //noinspection unchecked
-                    alltrans.cache = (HashMap<String, String>) s.readObject();
+                    if (alltrans.cache.isEmpty()) {
+                        alltrans.cache = (HashMap<String, String>) s.readObject();
+                    }
                     alltrans.cacheAccess.release();
                     utils.debugLog("Successfully read old cache");
                     s.close();
@@ -57,6 +61,44 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
                 }
             }
         }
+    }
+
+    protected void clearCacheIfNeeded(Context context, long cachingTime) {
+        // If cache never cleared, exit
+        if (cachingTime == 0)
+            return;
+
+        alltrans.cacheAccess.acquireUninterruptibly();
+
+        // Attempt to read last time successfully cleared cache if any
+        long lastClearTime = 0;
+        try {
+            FileInputStream fileInputStream = context.openFileInput("AllTransCacheClear");
+            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+            //noinspection unchecked
+            lastClearTime = (long) objectInputStream.readObject();
+            objectInputStream.close();
+        } catch (Exception e) {
+        }
+
+        // If we cache was cleared after we deleted cache last time, delete cache again
+        if (lastClearTime < cachingTime) {
+            try {
+                // Set the time cache was cleared
+                lastClearTime = System.currentTimeMillis();
+                FileOutputStream fileOutputStream = context.openFileOutput("AllTransCacheClear", 0);
+                ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+                objectOutputStream.writeObject(lastClearTime);
+                objectOutputStream.close();
+
+                // Actually clear cache
+                context.deleteFile("AllTransCache");
+            } catch (Exception e) {
+            }
+        }
+
+        alltrans.cacheAccess.release();
+        return;
     }
 
 }
