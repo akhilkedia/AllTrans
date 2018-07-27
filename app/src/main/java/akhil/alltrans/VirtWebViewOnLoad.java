@@ -23,22 +23,20 @@ import android.annotation.SuppressLint;
 import android.os.Handler;
 import android.os.Looper;
 import android.webkit.JavascriptInterface;
-import android.webkit.WebSettings;
+import android.webkit.ValueCallback;
 import android.webkit.WebView;
 
 import java.io.FileOutputStream;
 
-import de.robv.android.xposed.XC_MethodHook;
-
 import static android.content.Context.MODE_APPEND;
 
-public class WebViewHookHandler extends XC_MethodHook implements OriginalCallable {
+public class VirtWebViewOnLoad implements OriginalCallable {
 
     public void callOriginalMethod(final CharSequence translatedString, final Object userData) {
-        WebHookUserData webHookUserData = (WebHookUserData) userData;
-        final String originalString = utils.javaScriptEscape(webHookUserData.stringArgs);
+        WebHookUserData2 webHookUserData2 = (WebHookUserData2) userData;
+        WebView webView = webHookUserData2.webView;
+        final String originalString = utils.javaScriptEscape(webHookUserData2.stringArgs);
         final String newString = utils.javaScriptEscape(translatedString.toString());
-        WebView webView = webHookUserData.webView;
         utils.debugLog("In callOriginalMethod webView. Trying to replace -" + originalString + "-with-" + newString);
         String script = "var AllTransInputTypes = {\n" +
                 "  'button': 0,\n" +
@@ -106,17 +104,13 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
         myEvaluateJavaScript(webView, script);
     }
 
-    @SuppressLint("SetJavaScriptEnabled")
-    @Override
-    protected void afterHookedMethod(XC_MethodHook.MethodHookParam mParam) throws Throwable {
+    @SuppressLint({"JavascriptInterface", "AddJavascriptInterface"})
+    public void afterOnLoadMethod(WebView webView) throws Throwable {
         utils.debugLog("we are in onPageFinished!");
-
-        WebView webView = (WebView) mParam.args[0];
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
 
         String scriptFrames = "console.log(\"AllTrans: Frames is \"+window.frames.length)";
         myEvaluateJavaScript(webView, scriptFrames);
+
         // String script1 = "console.log(\" AllTrans HTMLCode \");injectedObject.WriteHTML(document.body.outerHTML);";
         // webView.evaluateJavascript(script1, null);
 
@@ -199,7 +193,7 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
         final GetTranslate getTranslate = new GetTranslate();
         getTranslate.stringToBeTrans = stringArgs;
         getTranslate.originalCallable = this;
-        getTranslate.userData = new WebHookUserData(webView, stringArgs);
+        getTranslate.userData = new WebHookUserData2(webView, stringArgs);
         getTranslate.canCallOriginal = true;
 
         if (SetTextHookHandler.isNotWhiteSpace(getTranslate.stringToBeTrans)) {
@@ -244,20 +238,25 @@ public class WebViewHookHandler extends XC_MethodHook implements OriginalCallabl
         }
     }
 
-    private void myEvaluateJavaScript(WebView webView, String script) {
+    public void myEvaluateJavaScript(WebView webView, String script) {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
-            webView.evaluateJavascript(script, null);
+            webView.evaluateJavascript(script, new ValueCallback<String>() {
+                @Override
+                public void onReceiveValue(String value) {
+                    utils.debugLog("Got result of running js script as " + value);
+                }
+            });
         } else {
             webView.loadUrl("javascript:" + script);
         }
     }
 }
 
-class WebHookUserData {
+class WebHookUserData2 {
     public final WebView webView;
     public final String stringArgs;
 
-    public WebHookUserData(WebView webViewIn, String stringArgsIn) {
+    public WebHookUserData2(WebView webViewIn, String stringArgsIn) {
         webView = webViewIn;
         stringArgs = stringArgsIn;
     }

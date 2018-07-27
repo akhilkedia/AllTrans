@@ -24,8 +24,6 @@ import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.Context;
 import android.content.ContextWrapper;
-import android.graphics.Canvas;
-import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -36,9 +34,7 @@ import java.util.Map;
 import java.util.concurrent.Semaphore;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
-import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XSharedPreferences;
-import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
 import static de.robv.android.xposed.XposedHelpers.findAndHookConstructor;
@@ -48,16 +44,18 @@ import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 public class alltrans implements IXposedHookLoadPackage {
     public static final Semaphore cacheAccess = new Semaphore(1, true);
     public static final Semaphore hookAccess = new Semaphore(1, true);
-    public static final SetTextHookHandler setTextHook = new SetTextHookHandler();
     @SuppressLint("StaticFieldLeak")
-    public static final WebViewHookHandler webViewHookHandler = new WebViewHookHandler();
     private static final DrawTextHookHandler drawTextHook = new DrawTextHookHandler();
+    @SuppressLint("StaticFieldLeak")
+    public static VirtWebViewOnLoad virtWebViewOnLoad = new VirtWebViewOnLoad();
     public static HashMap<String, String> cache = new HashMap<>();
     @SuppressLint("StaticFieldLeak")
     public static Context context;
 
 
     public void handleLoadPackage(final LoadPackageParam lpparam) throws Throwable {
+        // TODO: Comment this line later
+        utils.debugLog("in package beginning : " + lpparam.packageName);
         XSharedPreferences globalPref = new XSharedPreferences(alltrans.class.getPackage().getName(), "AllTransPref");
         globalPref.makeWorldReadable();
         globalPref.reload();
@@ -67,7 +65,7 @@ public class alltrans implements IXposedHookLoadPackage {
             return;
 
         utils.Debug = globalPref.getBoolean("Debug", false);
-        utils.debugLog("in package : " + lpparam.packageName);
+        utils.debugLog("In package : " + lpparam.packageName);
         if (utils.isVirtualXposed()) {
             utils.debugLog("We are in virtualXposed for package : " + lpparam.packageName);
         }
@@ -76,10 +74,8 @@ public class alltrans implements IXposedHookLoadPackage {
         localPref.makeWorldReadable();
         localPref.reload();
         PreferenceList.getPref(globalPref, localPref, lpparam.packageName);
+        utils.debugLog("Alltrans is Enabled for Package " + lpparam.packageName);
 
-
-        //Android System WebView - com.google.android.webview
-        XposedBridge.log("AllTrans: In Package " + lpparam.packageName);
 
         // Hook Application onCreate
         appOnCreateHookHandler appOnCreateHookHandler = new appOnCreateHookHandler();
@@ -88,59 +84,29 @@ public class alltrans implements IXposedHookLoadPackage {
         AttachBaseContextHookHandler attachBaseContextHookHandler = new AttachBaseContextHookHandler();
         findAndHookMethod(ContextWrapper.class, "attachBaseContext", Context.class, attachBaseContextHookHandler);
 
-        //Hook WebView Constructors
-        WebViewOnCreateHookHandler webViewOnCreateHookHandler = new WebViewOnCreateHookHandler();
-        findAndHookConstructor(WebView.class, Context.class, AttributeSet.class, int.class, int.class, Map.class, boolean.class, webViewOnCreateHookHandler);
-
         //Hook all Text String methods
+        SetTextHookHandler setTextHook = new SetTextHookHandler();
         if (PreferenceList.SetText)
             findAndHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, setTextHook);
         if (PreferenceList.SetHint)
             findAndHookMethod(TextView.class, "setHint", CharSequence.class, setTextHook);
 
         if (PreferenceList.LoadURL) {
-            findAndHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, webViewHookHandler);
-
-
-            findAndHookMethod(WebView.class, "loadUrl", String.class, Map.class, new XC_MethodHook() {
-                @Override
-                protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-                    utils.debugLog("we are in loadurl with headers!");
-                }
-            });
-            findAndHookMethod(WebView.class, "loadUrl", String.class, new XC_MethodHook() {
-                @Override
-                protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-                    utils.debugLog("we are in loadurl!");
-                }
-            });
-            findAndHookMethod(WebView.class, "postUrl", String.class, (new byte[1]).getClass(), new XC_MethodHook() {
-                @Override
-                protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-                    utils.debugLog("we are in posturl!");
-                }
-            });
-            findAndHookMethod(WebView.class, "loadData", String.class, String.class, String.class, new XC_MethodHook() {
-                @Override
-                protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-                    utils.debugLog("we are in loadData!");
-                }
-            });
-            findAndHookMethod(WebView.class, "loadDataWithBaseURL", String.class, String.class, String.class, String.class, String.class, new XC_MethodHook() {
-                @Override
-                protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
-                    utils.debugLog("we are in loadDataWithBaseURL! BaseURL - " + param.args[0] + "MimeType" + param.args[2] + " Data - " + param.args[1]);
-                }
-            });
-
+            // Hook WebView Constructor to inject JS object
+            findAndHookConstructor(WebView.class, Context.class, AttributeSet.class, int.class, int.class, Map.class, boolean.class, new WebViewOnCreateHookHandler());
+            if (utils.isVirtualXposed()) {
+                findAndHookMethod(WebView.class, "setWebViewClient", WebViewClient.class, new WebViewSetClientHookHandler());
+            } else {
+                findAndHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewOnLoadHookHandler());
+            }
         }
 
 
-        if (PreferenceList.DrawText) {
-            findAndHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, drawTextHook);
-            findAndHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, drawTextHook);
-            findAndHookMethod(Canvas.class, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, drawTextHook);
-        }
+//        if (PreferenceList.DrawText) {
+//            findAndHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, drawTextHook);
+//            findAndHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, drawTextHook);
+//            findAndHookMethod(Canvas.class, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, drawTextHook);
+//        }
 
 
     }
