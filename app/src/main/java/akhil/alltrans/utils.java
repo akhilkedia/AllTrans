@@ -26,7 +26,7 @@ import java.io.StringWriter;
 import java.util.Locale;
 
 class utils {
-    public static boolean Debug;
+    public static boolean Debug = true;
 
     public static boolean isVirtualXposed() {
         return !TextUtils.isEmpty(System.getProperty("vxp"));
