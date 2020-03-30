@@ -51,6 +51,7 @@ android {
 }
 
 repositories {
+    jcenter()
     jcenter({ url "http://jcenter.bintray.com/" })
     maven {
         url "http://dl.bintray.com/rovo89/de.robv.android.xposed"
@@ -63,6 +64,7 @@ dependencies {
     compileOnly 'de.robv.android.xposed:api:82:sources'
     compileOnly 'de.robv.android.xposed:api:82'
 
+    implementation 'com.crossbowffs.remotepreferences:remotepreferences:0.7'
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
 

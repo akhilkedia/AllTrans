@@ -24,10 +24,13 @@ import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.content.SharedPreferences;
 import android.util.AttributeSet;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
+
+import com.crossbowffs.remotepreferences.RemotePreferences;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,6 +38,7 @@ import java.util.concurrent.Semaphore;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.XSharedPreferences;
+import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
 import static de.robv.android.xposed.XposedHelpers.findAndHookConstructor;
@@ -51,55 +55,67 @@ public class alltrans implements IXposedHookLoadPackage {
     public static HashMap<String, String> cache = new HashMap<>();
     @SuppressLint("StaticFieldLeak")
     public static Context context;
+    public static Context systemContext;
 
 
     public void handleLoadPackage(final LoadPackageParam lpparam) throws Throwable {
         // TODO: Comment this line later
         utils.debugLog("in package beginning : " + lpparam.packageName);
-        XSharedPreferences globalPref = new XSharedPreferences(alltrans.class.getPackage().getName(), "AllTransPref");
-        globalPref.makeWorldReadable();
-        globalPref.reload();
-        if (!globalPref.getBoolean("Enabled", false))
+        if (!lpparam.packageName.equals("com.astroframe.seoulbus")){
             return;
-        if (!globalPref.getBoolean(lpparam.packageName, false))
-            return;
-
-        utils.Debug = globalPref.getBoolean("Debug", false);
-        utils.debugLog("In package : " + lpparam.packageName);
-        if (utils.isVirtualXposed()) {
-            utils.debugLog("We are in virtualXposed for package : " + lpparam.packageName);
         }
-
-        XSharedPreferences localPref = new XSharedPreferences(alltrans.class.getPackage().getName(), lpparam.packageName);
-        localPref.makeWorldReadable();
-        localPref.reload();
-        PreferenceList.getPref(globalPref, localPref, lpparam.packageName);
-        utils.debugLog("Alltrans is Enabled for Package " + lpparam.packageName);
-
-
-        // Hook Application onCreate
-        appOnCreateHookHandler appOnCreateHookHandler = new appOnCreateHookHandler();
-        findAndHookMethod(Application.class, "onCreate", appOnCreateHookHandler);
+//        systemContext = (Context) XposedHelpers.callMethod( XposedHelpers.callStaticMethod( XposedHelpers.findClass("android.app.ActivityThread", lpparam.classLoader), "currentActivityThread"), "getSystemContext" );
+//        SharedPreferences globalPref = new RemotePreferences(systemContext, "akhil.alltrans", "AllTransPref", true);
+////        int value = prefs.getInt("my_int_pref", 0);
+////        XSharedPreferences globalPref = new XSharedPreferences(alltrans.class.getPackage().getName(), "AllTransPref");
+////        globalPref.makeWorldReadable();
+////        globalPref.reload();
+//
+//        utils.debugLog("checking if global enabled in package beginning : " + lpparam.packageName);
+//        if (!globalPref.getBoolean("Enabled", false)) {
+//            utils.debugLog("Not global enabled in package beginning : " + lpparam.packageName);
+//            return;
+//        }
+//        if (!globalPref.getBoolean(lpparam.packageName, false))
+//            return;
+//
+//        utils.Debug = globalPref.getBoolean("Debug", false);
+//        utils.debugLog("In package : " + lpparam.packageName);
+//        if (utils.isVirtualXposed()) {
+//            utils.debugLog("We are in virtualXposed for package : " + lpparam.packageName);
+//        }
+//
+//        SharedPreferences localPref = new RemotePreferences(systemContext, "akhil.alltrans", lpparam.packageName, true);
+////        XSharedPreferences localPref = new XSharedPreferences(alltrans.class.getPackage().getName(), lpparam.packageName);
+////        localPref.makeWorldReadable();
+////        localPref.reload();
+//        PreferenceList.getPref(globalPref, localPref, lpparam.packageName);
+//        utils.debugLog("Alltrans is Enabled for Package " + lpparam.packageName);
+//
+//
+//        // Hook Application onCreate
+//        appOnCreateHookHandler appOnCreateHookHandler = new appOnCreateHookHandler();
+//        findAndHookMethod(Application.class, "onCreate", appOnCreateHookHandler);
 
         AttachBaseContextHookHandler attachBaseContextHookHandler = new AttachBaseContextHookHandler();
         findAndHookMethod(ContextWrapper.class, "attachBaseContext", Context.class, attachBaseContextHookHandler);
 
-        //Hook all Text String methods
-        SetTextHookHandler setTextHook = new SetTextHookHandler();
-        if (PreferenceList.SetText)
-            findAndHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, setTextHook);
-        if (PreferenceList.SetHint)
-            findAndHookMethod(TextView.class, "setHint", CharSequence.class, setTextHook);
-
-        if (PreferenceList.LoadURL) {
-            // Hook WebView Constructor to inject JS object
-            findAndHookConstructor(WebView.class, Context.class, AttributeSet.class, int.class, int.class, Map.class, boolean.class, new WebViewOnCreateHookHandler());
-            if (utils.isVirtualXposed()) {
-                findAndHookMethod(WebView.class, "setWebViewClient", WebViewClient.class, new WebViewSetClientHookHandler());
-            } else {
-                findAndHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewOnLoadHookHandler());
-            }
-        }
+//        //Hook all Text String methods
+//        SetTextHookHandler setTextHook = new SetTextHookHandler();
+//        if (PreferenceList.SetText)
+//            findAndHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, setTextHook);
+//        if (PreferenceList.SetHint)
+//            findAndHookMethod(TextView.class, "setHint", CharSequence.class, setTextHook);
+//
+//        if (PreferenceList.LoadURL) {
+//            // Hook WebView Constructor to inject JS object
+//            findAndHookConstructor(WebView.class, Context.class, AttributeSet.class, int.class, int.class, Map.class, boolean.class, new WebViewOnCreateHookHandler());
+//            if (utils.isVirtualXposed()) {
+//                findAndHookMethod(WebView.class, "setWebViewClient", WebViewClient.class, new WebViewSetClientHookHandler());
+//            } else {
+//                findAndHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewOnLoadHookHandler());
+//            }
+//        }
 
 
 //        if (PreferenceList.DrawText) {

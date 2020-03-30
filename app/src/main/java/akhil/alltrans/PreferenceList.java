@@ -19,6 +19,8 @@
 
 package akhil.alltrans;
 
+import android.content.SharedPreferences;
+
 import de.robv.android.xposed.XSharedPreferences;
 
 class PreferenceList {
@@ -37,7 +39,7 @@ class PreferenceList {
     public static int Delay;
     public static int DelayWebView;
 
-    public static void getPref(XSharedPreferences gPref, XSharedPreferences lPref, String packageName) {
+    public static void getPref(SharedPreferences gPref, SharedPreferences lPref, String packageName) {
         SubscriptionKey = gPref.getString("SubscriptionKey", "");
         EnableYandex = gPref.getBoolean("EnableYandex", false);
         //TODO: why is DelayWebView being read from gPref and not lPref?!

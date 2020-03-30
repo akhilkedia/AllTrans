@@ -20,12 +20,23 @@
 package akhil.alltrans;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.os.UserHandle;
+
+import com.crossbowffs.remotepreferences.RemotePreferences;
+import com.google.gson.Gson;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedBridge;
@@ -37,30 +48,62 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
         alltrans.context = (Context) methodHookParam.args[0];
         utils.debugLog("Successfully got context!");
 
-        if (PreferenceList.Caching) {
-            if (alltrans.cache.isEmpty()) {
-                clearCacheIfNeeded(alltrans.context, PreferenceList.CachingTime);
-                try {
-                    FileInputStream fileInputStream = alltrans.context.openFileInput("AllTransCache");
-                    ObjectInputStream s = new ObjectInputStream(fileInputStream);
-                    alltrans.cacheAccess.acquireUninterruptibly();
-                    //noinspection unchecked
-                    if (alltrans.cache.isEmpty()) {
-                        alltrans.cache = (HashMap<String, String>) s.readObject();
-                    }
-                    alltrans.cacheAccess.release();
-                    utils.debugLog("Successfully read old cache");
-                    s.close();
-                } catch (Exception e) {
-                    utils.debugLog("Could not read cache ");
-                    utils.debugLog(e.toString());
-                    alltrans.cacheAccess.acquireUninterruptibly();
-                    alltrans.cache = new HashMap<>(10000);
-                    alltrans.cache.put("ThisIsAPlaceHolderStringYouWillNeverEncounter", "ThisIsAPlaceHolderStringYouWillNeverEncounter");
-                    alltrans.cacheAccess.release();
-                }
-            }
+//        PackageManager packageManager = alltrans.context.getPackageManager();
+////        try {
+////            String applicationId = String.valueOf(packageManager.getPackageUid("com.astroframe.seoulbus", 0));
+//        List<PackageInfo> allpkgs = packageManager.getInstalledPackages(0);
+////            String[] applicationIds = packageManager.getPackagesForUid(10380);
+////            String[] applicationIds = packageManager.getPackagesForUid(10002);
+//            String userhandle1 = UserHandle.getUserHandleForUid(10002);
+////            String userhandle2 = UserHandle.getUserHandleForUid(10380).getUserId();
+////            utils.debugLog("Successfully got uid!" + applicationId);
+////            utils.debugLog("uids for 10380 are - " + Arrays.toString(applicationIds));
+//        for (int i = 0; i< allpkgs.size(); i++){
+//            Gson gson = new Gson();
+//            String json = gson.toJson(allpkgs.get(i));
+//            utils.debugLog("User handles are " + json);
+//        }
+//            utils.debugLog("User handles are " + allpkgs.toString());
+////        } catch (PackageManager.NameNotFoundException e) {
+////            utils.debugLog("NameNotFoundException");
+////            e.printStackTrace();
+////        }
+        try {
+            SharedPreferences globalPref = new RemotePreferences(alltrans.context, "akhil.alltrans", "AllTransPref", true);
+            String SubscriptionKey = globalPref.getString("SubscriptionKey", "");
+            utils.debugLog("Alltrans Got Subscription Key!" + SubscriptionKey);
+        } catch (Exception e){
+            StringWriter sw = new StringWriter();
+            PrintWriter pw = new PrintWriter(sw);
+            e.printStackTrace(pw);
+            utils.debugLog(sw.toString());
+//            e.printStackTrace();
         }
+
+//        if (PreferenceList.Caching) {
+//            if (alltrans.cache.isEmpty()) {
+//                clearCacheIfNeeded(alltrans.context, PreferenceList.CachingTime);
+//                try {
+//                    FileInputStream fileInputStream = alltrans.context.openFileInput("AllTransCache");
+//                    ObjectInputStream s = new ObjectInputStream(fileInputStream);
+//                    alltrans.cacheAccess.acquireUninterruptibly();
+//                    //noinspection unchecked
+//                    if (alltrans.cache.isEmpty()) {
+//                        alltrans.cache = (HashMap<String, String>) s.readObject();
+//                    }
+//                    alltrans.cacheAccess.release();
+//                    utils.debugLog("Successfully read old cache");
+//                    s.close();
+//                } catch (Exception e) {
+//                    utils.debugLog("Could not read cache ");
+//                    utils.debugLog(e.toString());
+//                    alltrans.cacheAccess.acquireUninterruptibly();
+//                    alltrans.cache = new HashMap<>(10000);
+//                    alltrans.cache.put("ThisIsAPlaceHolderStringYouWillNeverEncounter", "ThisIsAPlaceHolderStringYouWillNeverEncounter");
+//                    alltrans.cacheAccess.release();
+//                }
+//            }
+//        }
     }
 
     protected void clearCacheIfNeeded(Context context, long cachingTime) {

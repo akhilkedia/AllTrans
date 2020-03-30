@@ -53,6 +53,11 @@
             </intent-filter>
         </activity>
 
+        <provider
+            android:name=".AllTransPreferenceProvider"
+            android:authorities="akhil.alltrans"
+            android:exported="true"/>
+
         <meta-data
             android:name="firebase_analytics_collection_enabled"
             android:value="false" />
