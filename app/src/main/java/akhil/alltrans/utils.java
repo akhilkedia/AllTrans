@@ -34,7 +34,12 @@ class utils {
 
     public static void debugLog(String str) {
         if (Debug) {
-            Log.i("AllTrans", "AllTrans: " + str);
+            if (str.length() > 3900) {
+                Log.i("AllTrans", "AllTrans: " + str.substring(0, 3900));
+                debugLog(str.substring(3900));
+            } else {
+                Log.i("AllTrans", "AllTrans: " + str);
+            }
         }
     }
 
