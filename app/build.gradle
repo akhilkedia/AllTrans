@@ -39,8 +39,8 @@ android {
         minSdkVersion 14
         //noinspection ExpiredTargetSdkVersion,OldTargetApi
         targetSdkVersion 23
-        versionCode 8
-        versionName "1.4.0"
+        versionCode 10
+        versionName "1.5.0"
     }
     buildTypes {
         release {
