@@ -1,0 +1,2 @@
+#pattern  filter=crypt diff=crypt
+android_sign_key.jks  filter=crypt diff=crypt
