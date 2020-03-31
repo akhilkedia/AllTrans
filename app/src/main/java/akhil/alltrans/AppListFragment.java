@@ -82,22 +82,24 @@ public class AppListFragment extends Fragment {
         settings = this.getActivity().getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
 
-        SharedPreferences.Editor editor = settings.edit();
-        editor.putBoolean("codepath.apps.demointroandroid", true);
-        editor.putBoolean("com.astroframe.seoulbus", true);
-        editor.putBoolean("com.nhn.android.nmap", true);
-        editor.putBoolean("com.kakao.taxi", true);
-        editor.putBoolean("com.fineapp.yogiyo", true);
-        editor.putBoolean("com.cgv.android.movieapp", true);
-        editor.putBoolean("com.wooricard.smartapp", true);
-        editor.putBoolean("com.google.android.talk", true);
-        editor.putBoolean("com.ebay.global.gmarket", true);
-        editor.putBoolean("com.foodfly.gcm", true);
-        editor.putBoolean("com.ktcs.whowho", true);
-        editor.putString("SubscriptionKey", "ae608169335b4667ad3681d8c939b8fe");
+        if( BuildConfig.DEBUG ){
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putBoolean("codepath.apps.demointroandroid", true);
+            editor.putBoolean("com.astroframe.seoulbus", true);
+            editor.putBoolean("com.nhn.android.nmap", true);
+            editor.putBoolean("com.kakao.taxi", true);
+            editor.putBoolean("com.fineapp.yogiyo", true);
+            editor.putBoolean("com.cgv.android.movieapp", true);
+            editor.putBoolean("com.wooricard.smartapp", true);
+            editor.putBoolean("com.google.android.talk", true);
+            editor.putBoolean("com.ebay.global.gmarket", true);
+            editor.putBoolean("com.foodfly.gcm", true);
+            editor.putBoolean("com.ktcs.whowho", true);
+            editor.putString("SubscriptionKey", getString(R.string.microsoft_key));
 //        editor.putBoolean("EnableYandex", true);
 //        editor.putString("SubscriptionKey", "trnsl.1.1.20170118T002434Z.95dd93bf09dbc8d4.04554b9aac2c1bcfee17ee76bc9979236ea2c2d4");
-        editor.apply();
+            editor.apply();
+        }
 
         //noinspection ConstantConditions
         listview = (NestedScrollingListView) getView().findViewById(R.id.AppsList);

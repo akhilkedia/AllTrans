@@ -1,2 +1,3 @@
 #pattern  filter=crypt diff=crypt
 android_sign_key.jks  filter=crypt diff=crypt
+app/src/main/res/values/keys.xml  filter=crypt diff=crypt
