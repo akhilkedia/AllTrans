@@ -30,7 +30,6 @@ public class WebViewSetClientHookHandler extends XC_MethodHook {
     @Override
     protected void beforeHookedMethod(MethodHookParam methodHookParam) {
         utils.debugLog("we are setting WebViewClient!");
-        WebView webView = (WebView) methodHookParam.thisObject;
         WebViewClient ori = (WebViewClient) methodHookParam.args[0];
         methodHookParam.args[0] = new WebViewClientWrapper(ori);
     }
