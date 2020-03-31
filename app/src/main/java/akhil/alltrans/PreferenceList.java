@@ -33,16 +33,20 @@ class PreferenceList {
     public static boolean DrawText;
 
     public static boolean Caching;
+    public static long CachingTime;
     public static int Delay;
     public static int DelayWebView;
 
     public static void getPref(XSharedPreferences gPref, XSharedPreferences lPref, String packageName) {
         SubscriptionKey = gPref.getString("SubscriptionKey", "");
         EnableYandex = gPref.getBoolean("EnableYandex", false);
+        //TODO: why is DelayWebView being read from gPref and not lPref?!
         DelayWebView = Integer.parseInt(gPref.getString("DelayWebView", "500"));
         //boolean anon = gPref.getBoolean("Anon", true);
         //boolean debug = gPref.getBoolean("Debug", false);
         //boolean localEnabled = gPref.getBoolean(packageName, false);
+
+        CachingTime = lPref.getLong("ClearCacheTime", 0L);
 
         if (lPref.contains("OverRide")) {
             if (lPref.getBoolean("OverRide", false))

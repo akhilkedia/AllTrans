@@ -20,16 +20,26 @@
 package akhil.alltrans;
 
 import android.util.Log;
+import android.text.TextUtils;
 
 import java.io.StringWriter;
 import java.util.Locale;
 
 class utils {
-    public static boolean Debug;
+    public static boolean Debug = true;
+
+    public static boolean isVirtualXposed() {
+        return !TextUtils.isEmpty(System.getProperty("vxp"));
+    }
 
     public static void debugLog(String str) {
         if (Debug) {
-            Log.i("AllTrans", "AllTrans: " + str);
+            if (str.length() > 3900) {
+                Log.i("AllTrans", "AllTrans: " + str.substring(0, 3900));
+                debugLog(str.substring(3900));
+            } else {
+                Log.i("AllTrans", "AllTrans: " + str);
+            }
         }
     }
 

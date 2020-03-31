@@ -46,7 +46,7 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(Bundle bundle, String rootKey) {
         settings = this.getActivity().getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
-        PreferenceManager preferenceManager = getPreferenceManager();
+        final PreferenceManager preferenceManager = getPreferenceManager();
         preferenceManager.setSharedPreferencesName(applicationInfo.packageName);
         preferenceManager.setSharedPreferencesMode(MODE_WORLD_READABLE);
 
@@ -87,37 +87,13 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
         clearCache.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
-                try {
-                    Process su = Runtime.getRuntime().exec("su");
-                    DataOutputStream outputStream = new DataOutputStream(su.getOutputStream());
-                    @SuppressLint("SdCardPath") String path = "/data/data/" + applicationInfo.packageName + "/files/AllTransCache";
+                preferenceManager.getSharedPreferences().edit().putLong("ClearCacheTime", System.currentTimeMillis()).apply();
 
-                    outputStream.writeBytes("am force-stop " + applicationInfo.packageName + "\n");
-                    outputStream.flush();
-
-                    outputStream.writeBytes("rm " + path + "\n");
-                    outputStream.flush();
-
-                    outputStream.writeBytes("am force-stop " + applicationInfo.packageName + "\n");
-                    outputStream.flush();
-
-                    outputStream.writeBytes("exit\n");
-                    outputStream.flush();
-                    outputStream.close();
-                    su.waitFor();
-
-                    Context context = preference.getContext();
-                    CharSequence text = getString(R.string.clear_cache_success);
-                    int duration = Toast.LENGTH_SHORT;
-                    Toast toast = Toast.makeText(context, text, duration);
-                    toast.show();
-                } catch (Exception e) {
-                    Context context = preference.getContext();
-                    CharSequence text = getString(R.string.clear_cache_error);
-                    int duration = Toast.LENGTH_SHORT;
-                    Toast toast = Toast.makeText(context, text, duration);
-                    toast.show();
-                }
+                Context context = preference.getContext();
+                CharSequence text = getString(R.string.clear_cache_success);
+                int duration = Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
 
                 return false;
             }

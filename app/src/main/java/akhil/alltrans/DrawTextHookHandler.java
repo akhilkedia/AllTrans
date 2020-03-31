@@ -32,6 +32,7 @@ import java.lang.reflect.Method;
 import java.nio.CharBuffer;
 
 import de.robv.android.xposed.XC_MethodReplacement;
+import de.robv.android.xposed.XposedBridge;
 
 import static de.robv.android.xposed.XposedBridge.hookMethod;
 import static de.robv.android.xposed.XposedBridge.unhookMethod;
@@ -113,17 +114,17 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
             myArgs[1] = 0;
             myArgs[2] = translatedString.length();
         }
-
-        alltrans.hookAccess.acquireUninterruptibly();
-        unhookMethod(methodHookParam.method, alltrans.setTextHook);
+//
+//        alltrans.hookAccess.acquireUninterruptibly();
+//        unhookMethod(methodHookParam.method, alltrans.setTextHook);
         try {
             utils.debugLog("In Thread " + Thread.currentThread().getId() + " Invoking original function " + methodHookParam.method.getName() + " and setting text to " + myArgs[0].toString());
-            myMethod.invoke(methodHookParam.thisObject, myArgs);
+            XposedBridge.invokeOriginalMethod(myMethod, methodHookParam.thisObject, myArgs);
         } catch (Exception e) {
             Log.e("AllTrans", "AllTrans: Got error in invoking method as : " + Log.getStackTraceString(e));
         }
-        hookMethod(methodHookParam.method, alltrans.setTextHook);
-        alltrans.hookAccess.release();
+//        hookMethod(methodHookParam.method, alltrans.setTextHook);
+//        alltrans.hookAccess.release();
     }
 
     @Override

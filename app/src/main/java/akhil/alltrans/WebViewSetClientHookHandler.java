@@ -19,30 +19,19 @@
 
 package akhil.alltrans;
 
-import android.annotation.SuppressLint;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import de.robv.android.xposed.XC_MethodHook;
 
-class WebViewOnCreateHookHandler extends XC_MethodHook {
-    @SuppressLint({"JavascriptInterface", "AddJavascriptInterface"})
+
+public class WebViewSetClientHookHandler extends XC_MethodHook {
+
     @Override
-    protected void afterHookedMethod(MethodHookParam methodHookParam) {
-        utils.debugLog("we are after webview Constructor!");
-
+    protected void beforeHookedMethod(MethodHookParam methodHookParam) {
+        utils.debugLog("we are setting WebViewClient!");
         WebView webView = (WebView) methodHookParam.thisObject;
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-
-        webView.addJavascriptInterface(alltrans.virtWebViewOnLoad, "injectedObject");
-        webView.addJavascriptInterface(webView, "webView");
-
-        if (utils.isVirtualXposed()) {
-            webView.setWebViewClient(new WebViewClient());
-        }
-
+        WebViewClient ori = (WebViewClient) methodHookParam.args[0];
+        methodHookParam.args[0] = new WebViewClientWrapper(ori);
     }
 }
-

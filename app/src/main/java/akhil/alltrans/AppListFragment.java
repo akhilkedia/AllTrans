@@ -83,6 +83,7 @@ public class AppListFragment extends Fragment {
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
 
         SharedPreferences.Editor editor = settings.edit();
+        editor.putBoolean("codepath.apps.demointroandroid", true);
         editor.putBoolean("com.astroframe.seoulbus", true);
         editor.putBoolean("com.nhn.android.nmap", true);
         editor.putBoolean("com.kakao.taxi", true);
@@ -93,7 +94,7 @@ public class AppListFragment extends Fragment {
         editor.putBoolean("com.ebay.global.gmarket", true);
         editor.putBoolean("com.foodfly.gcm", true);
         editor.putBoolean("com.ktcs.whowho", true);
-        editor.putString("SubscriptionKey", "65044997b4194b8f8c181a15166fcb46");
+        editor.putString("SubscriptionKey", "ae608169335b4667ad3681d8c939b8fe");
 //        editor.putBoolean("EnableYandex", true);
 //        editor.putString("SubscriptionKey", "trnsl.1.1.20170118T002434Z.95dd93bf09dbc8d4.04554b9aac2c1bcfee17ee76bc9979236ea2c2d4");
         editor.apply();

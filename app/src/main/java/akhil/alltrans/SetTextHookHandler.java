@@ -32,6 +32,7 @@ import java.lang.reflect.Method;
 import java.nio.CharBuffer;
 
 import de.robv.android.xposed.XC_MethodReplacement;
+import de.robv.android.xposed.XposedBridge;
 
 import static de.robv.android.xposed.XposedBridge.hookMethod;
 import static de.robv.android.xposed.XposedBridge.unhookMethod;
@@ -41,7 +42,7 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
 
 
     public static boolean isNotWhiteSpace(String abc) {
-        return !(abc == null || "".equals(abc)) && !abc.matches("^\\s*$");
+       return !(abc == null || "".equals(abc)) && !abc.matches("^\\s*$");
     }
 
     public void callOriginalMethod(CharSequence translatedString, Object userData) {
@@ -76,16 +77,15 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
             myArgs[0] = TextUtils.stringOrSpannedString(translatedString);
         }
 
-        alltrans.hookAccess.acquireUninterruptibly();
-        unhookMethod(methodHookParam.method, alltrans.setTextHook);
         try {
             utils.debugLog("In Thread " + Thread.currentThread().getId() + " Invoking original function " + methodHookParam.method.getName() + " and setting text to " + myArgs[0].toString());
-            myMethod.invoke(methodHookParam.thisObject, myArgs);
+            XposedBridge.invokeOriginalMethod(myMethod, methodHookParam.thisObject, myArgs);
+
+            utils.debugLog("In Thread " + Thread.currentThread().getId() + " Finished invoking original function " + methodHookParam.method.getName() + " and setting text to " + myArgs[0].toString());
+
         } catch (Exception e) {
             Log.e("AllTrans", "AllTrans: Got error in invoking method as : " + Log.getStackTraceString(e));
         }
-        hookMethod(methodHookParam.method, alltrans.setTextHook);
-        alltrans.hookAccess.release();
     }
 
     @Override
