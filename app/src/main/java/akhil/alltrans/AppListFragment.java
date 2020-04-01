@@ -95,6 +95,7 @@ public class AppListFragment extends Fragment {
             editor.putBoolean("com.ebay.global.gmarket", true);
             editor.putBoolean("com.foodfly.gcm", true);
             editor.putBoolean("com.ktcs.whowho", true);
+            editor.putBoolean("Debug", true);
             editor.putString("SubscriptionKey", getString(R.string.microsoft_key));
 //        editor.putBoolean("EnableYandex", true);
 //        editor.putString("SubscriptionKey", "trnsl.1.1.20170118T002434Z.95dd93bf09dbc8d4.04554b9aac2c1bcfee17ee76bc9979236ea2c2d4");

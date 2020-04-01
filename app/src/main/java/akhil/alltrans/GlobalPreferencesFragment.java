@@ -31,12 +31,29 @@ import static android.content.Context.MODE_WORLD_READABLE;
 
 public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
 
+    private void fixNotRooted(){
+        SwitchPreference rooted = (SwitchPreference) findPreference("Rooted");
+        SwitchPreference drawText = (SwitchPreference) findPreference("DrawText");
+        rooted.setVisible(false);
+        if (utils.check_not_xposed(getActivity())) {
+            utils.debugLog("This is Not Xposed, this is VirtualXposed or Taichi!");
+            rooted.setChecked(false);
+            drawText.setChecked(false);
+            drawText.setVisible(false);
+        } else {
+            utils.debugLog("This is actual Xposed, not VirtualXposed or Taichi!");
+            rooted.setChecked(true);
+        }
+    }
+
     @Override
     public void onCreatePreferences(Bundle bundle, String rootKey) {
         PreferenceManager preferenceManager = getPreferenceManager();
         preferenceManager.setSharedPreferencesName("AllTransPref");
         preferenceManager.setSharedPreferencesMode(MODE_WORLD_READABLE);
         addPreferencesFromResource(R.xml.preferences);
+
+        fixNotRooted();
 
         SwitchPreference enableYandex = (SwitchPreference) findPreference("EnableYandex");
         String subscriptionKey1 = getPreferenceManager().getSharedPreferences().getString("SubscriptionKey","Enter");

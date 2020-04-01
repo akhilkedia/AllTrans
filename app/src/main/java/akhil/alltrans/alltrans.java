@@ -67,9 +67,10 @@ public class alltrans implements IXposedHookLoadPackage {
             return;
 
         utils.Debug = globalPref.getBoolean("Debug", false);
+        utils.Rooted = globalPref.getBoolean("Rooted", false);
         utils.debugLog("In package : " + lpparam.packageName);
-        if (utils.isVirtualXposed()) {
-            utils.debugLog("We are in virtualXposed for package : " + lpparam.packageName);
+        if (!utils.Rooted) {
+            utils.debugLog("We are in Taichi/VirtualXposed for package : " + lpparam.packageName);
         }
 
         XSharedPreferences localPref = new XSharedPreferences(alltrans.class.getPackage().getName(), lpparam.packageName);
@@ -96,7 +97,7 @@ public class alltrans implements IXposedHookLoadPackage {
         if (PreferenceList.LoadURL) {
             // Hook WebView Constructor to inject JS object
             findAndHookConstructor(WebView.class, Context.class, AttributeSet.class, int.class, int.class, Map.class, boolean.class, new WebViewOnCreateHookHandler());
-            if (utils.isVirtualXposed()) {
+            if (!utils.Rooted) {
                 findAndHookMethod(WebView.class, "setWebViewClient", WebViewClient.class, new WebViewSetClientHookHandler());
             } else {
                 findAndHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewOnLoadHookHandler());

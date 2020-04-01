@@ -86,7 +86,12 @@
             android:key="DrawText"
             android:summaryOff="@string/drawText_summary_off"
             android:summaryOn="@string/drawText_summary_on"
-            android:title="@string/drawText" />
+            android:title="@string/drawText"
+            android:dependency="Rooted"/>
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="Rooted" />
+
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_cat_other_settings">
 

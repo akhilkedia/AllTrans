@@ -39,7 +39,7 @@ class WebViewOnCreateHookHandler extends XC_MethodHook {
         webView.addJavascriptInterface(alltrans.virtWebViewOnLoad, "injectedObject");
         webView.addJavascriptInterface(webView, "webView");
 
-        if (utils.isVirtualXposed()) {
+        if (!utils.Rooted) {
             webView.setWebViewClient(new WebViewClient());
         }
 
