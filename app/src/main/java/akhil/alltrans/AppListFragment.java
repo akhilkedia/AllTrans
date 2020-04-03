@@ -78,7 +78,6 @@ public class AppListFragment extends Fragment {
         super.onStart();
         context = this.getActivity();
         //noinspection deprecation,deprecation
-        BackupSharedPreferences.backupSharedPreferences(this.getActivity());
         settings = this.getActivity().getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
 
