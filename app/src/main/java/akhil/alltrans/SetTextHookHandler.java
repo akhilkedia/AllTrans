@@ -36,6 +36,7 @@ import de.robv.android.xposed.XposedBridge;
 
 import static de.robv.android.xposed.XposedBridge.hookMethod;
 import static de.robv.android.xposed.XposedBridge.unhookMethod;
+import static de.robv.android.xposed.XposedHelpers.callMethod;
 
 
 public class SetTextHookHandler extends XC_MethodReplacement implements OriginalCallable {
@@ -90,47 +91,61 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
 
     @Override
     protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
-        if (methodHookParam.args[0] != null) {
-            String stringArgs = methodHookParam.args[0].toString();
 
-            if (isNotWhiteSpace(stringArgs)) {
-
-                utils.debugLog("In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
-                GetTranslate getTranslate = new GetTranslate();
-                getTranslate.stringToBeTrans = stringArgs;
-                getTranslate.originalCallable = this;
-                getTranslate.userData = methodHookParam;
-                getTranslate.canCallOriginal = true;
-
-                GetTranslateToken getTranslateToken = new GetTranslateToken();
-                getTranslateToken.getTranslate = getTranslate;
-
-                callOriginalMethod(stringArgs, methodHookParam);
-
-                alltrans.cacheAccess.acquireUninterruptibly();
-                if (PreferenceList.Caching && alltrans.cache.containsKey(stringArgs)) {
-                    String translatedString = alltrans.cache.get(stringArgs);
-                    utils.debugLog("In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
-                    alltrans.cacheAccess.release();
-                    final String finalString = translatedString;
-                    final MethodHookParam finalMethodHookParam = methodHookParam;
-                    new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                callOriginalMethod(finalString, finalMethodHookParam);
-                            }
-                    }, PreferenceList.Delay);
-
-                    return null;
-                } else {
-                    alltrans.cacheAccess.release();
-                }
-
-                getTranslateToken.doAll();
-            } else {
-                callOriginalMethod(stringArgs, methodHookParam);
-            }
+        if (methodHookParam.args[0] == null) {
+            return null;
         }
+
+        String stringArgs = methodHookParam.args[0].toString();
+        try {
+            Boolean editable = (Boolean) callMethod(methodHookParam.thisObject, "getDefaultEditable");
+            utils.debugLog("Is this Object is editable - " + editable);
+            if (editable && !methodHookParam.method.getName().equals("setHint")) {
+                utils.debugLog("Not translating " + stringArgs + " for editable TextView");
+                callOriginalMethod(stringArgs, methodHookParam);
+                return null;
+            }
+        } catch (Exception e) {
+            Log.e("AllTrans", "AllTrans: Got error in checking editable TextView : " + Log.getStackTraceString(e));
+        }
+
+        if(!isNotWhiteSpace(stringArgs)){
+            callOriginalMethod(stringArgs, methodHookParam);
+            return null;
+        }
+
+        utils.debugLog("In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
+        GetTranslate getTranslate = new GetTranslate();
+        getTranslate.stringToBeTrans = stringArgs;
+        getTranslate.originalCallable = this;
+        getTranslate.userData = methodHookParam;
+        getTranslate.canCallOriginal = true;
+
+        GetTranslateToken getTranslateToken = new GetTranslateToken();
+        getTranslateToken.getTranslate = getTranslate;
+
+        callOriginalMethod(stringArgs, methodHookParam);
+
+        alltrans.cacheAccess.acquireUninterruptibly();
+        if (PreferenceList.Caching && alltrans.cache.containsKey(stringArgs)) {
+            String translatedString = alltrans.cache.get(stringArgs);
+            utils.debugLog("In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
+            alltrans.cacheAccess.release();
+            final String finalString = translatedString;
+            final MethodHookParam finalMethodHookParam = methodHookParam;
+            new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        callOriginalMethod(finalString, finalMethodHookParam);
+                    }
+            }, PreferenceList.Delay);
+
+            return null;
+        } else {
+            alltrans.cacheAccess.release();
+        }
+
+        getTranslateToken.doAll();
         return null;
     }
 
