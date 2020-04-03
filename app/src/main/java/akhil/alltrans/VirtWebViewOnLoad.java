@@ -38,13 +38,25 @@ public class VirtWebViewOnLoad implements OriginalCallable {
         final String originalString = utils.javaScriptEscape(webHookUserData2.stringArgs);
         final String newString = utils.javaScriptEscape(translatedString.toString());
         utils.debugLog("In callOriginalMethod webView. Trying to replace -" + originalString + "-with-" + newString);
-        String script = "var AllTransInputTypes = {\n" +
+        String script = "var AllTransPlaceholderTypes = {\n" +
+                "    'date': 0,\n" +
+                "    'datetime-local': 0,\n" +
+                "    'email': 0,\n" +
+                "    'month': 0,\n" +
+                "    'number': 0,\n" +
+                "    'password': 0,\n" +
+                "    'tel': 0,\n" +
+                "    'time': 0,\n" +
+                "    'url': 0,\n" +
+                "    'week': 0,\n" +
+                "    'search': 0,\n" +
+                "    'text': 0,\n" +
+                "};\n" +
+                "\n" +
+                "var AllTransInputTypes = {\n" +
                 "  'button': 0,\n" +
                 "  'reset': 0,\n" +
                 "  'submit': 0,\n" +
-                "  'text': 0,\n" +
-                "  'password': 0,\n" +
-                "  'hidden': 0,\n" +
                 "};\n" +
                 "\n" +
                 "function allTransGetAllTextNodes(tempDocument) {\n" +
@@ -60,7 +72,7 @@ public class VirtWebViewOnLoad implements OriginalCallable {
                 "    if (node.tagName in ignore) {\n" +
                 "      return;\n" +
                 "    }\n" +
-                "    if (node.tagName && node.tagName.toLowerCase() == 'input' && (node.type in AllTransInputTypes)) {\n" +
+                "    if (node.tagName && node.tagName.toLowerCase() == 'input' && (node.type in AllTransInputTypes || node.type in AllTransPlaceholderTypes)) {\n" +
                 "      result.push(node);\n" +
                 "    }\n" +
                 "    if (node.childNodes.length) {\n" +
@@ -76,6 +88,12 @@ public class VirtWebViewOnLoad implements OriginalCallable {
                 "\n" +
                 "function allTransDoReplaceAll(all) {\n" +
                 "  for (var i = 0, max = all.length; i < max; i++) {\n" +
+                "    if (all[i].tagName && all[i].tagName.toLowerCase() == 'input' && all[i].type in AllTransPlaceholderTypes) {\n" +
+                "      if (all[i].placeholder == \"" + originalString + "\") {\n" +
+                "        all[i].placeholder = \"" + newString + "\";\n" +
+                "      continue;\n" +
+                "      }\n" +
+                "    }\n" +
                 "    if (all[i].nodeType == 1 && all[i].childNodes.length == 0) {\n" +
                 "      if (all[i].nodeValue == \"" + originalString + "\") {\n" +
                 "        all[i].nodeValue = \"" + newString + "\";\n" +
@@ -116,66 +134,82 @@ public class VirtWebViewOnLoad implements OriginalCallable {
 
         String script = "console.log('AllTrans: JavaScript is Indeed Enabled');\n" +
                 "\n" +
+                "var AllTransPlaceholderTypes = {\n" +
+                "    'date': 0,\n" +
+                "    'datetime-local': 0,\n" +
+                "    'email': 0,\n" +
+                "    'month': 0,\n" +
+                "    'number': 0,\n" +
+                "    'password': 0,\n" +
+                "    'tel': 0,\n" +
+                "    'time': 0,\n" +
+                "    'url': 0,\n" +
+                "    'week': 0,\n" +
+                "    'search': 0,\n" +
+                "    'text': 0,\n" +
+                "};\n" +
+                "\n" +
                 "var AllTransInputTypes = {\n" +
-                " 'button': 0,\n" +
-                " 'reset': 0,\n" +
-                " 'submit': 0,\n" +
-                " 'text': 0,\n" +
-                " 'password': 0,\n" +
-                " 'hidden': 0,\n" +
+                "    'button': 0,\n" +
+                "    'reset': 0,\n" +
+                "    'submit': 0,\n" +
                 "};\n" +
                 "\n" +
                 "function allTransGetAllTextNodes(tempDocument) {\n" +
-                " var result = [];\n" +
-                " var ignore = {\n" +
-                " 'STYLE': 0,\n" +
-                " 'SCRIPT': 0,\n" +
-                " 'NOSCRIPT': 0,\n" +
-                " 'IFRAME': 0,\n" +
-                " 'OBJECT': 0,\n" +
-                " };\n" +
-                " (function scanSubTree(node) {\n" +
-                " if (node.tagName in ignore) {\n" +
-                " return;\n" +
-                " }\n" +
-                " if (node.tagName && node.tagName.toLowerCase() == 'input' && (node.type in AllTransInputTypes)) {\n" +
-                " result.push(node);\n" +
-                " }\n" +
-                " if (node.childNodes.length) {\n" +
-                " for (var i = 0; i < node.childNodes.length; i++) {\n" +
-                " scanSubTree(node.childNodes[i]);\n" +
-                " }\n" +
-                " } else if (node.nodeType == 3 || node.nodeType == 1) {\n" +
-                " result.push(node);\n" +
-                " }\n" +
-                " })(tempDocument);\n" +
-                " return result;\n" +
+                "    var result = [];\n" +
+                "    var ignore = {\n" +
+                "        'STYLE': 0,\n" +
+                "        'SCRIPT': 0,\n" +
+                "        'NOSCRIPT': 0,\n" +
+                "        'IFRAME': 0,\n" +
+                "        'OBJECT': 0,\n" +
+                "    };\n" +
+                "    (function scanSubTree(node) {\n" +
+                "        if (node.tagName in ignore) {\n" +
+                "            return;\n" +
+                "        }\n" +
+                "        if (node.tagName && node.tagName.toLowerCase() == 'input' && (node.type in AllTransInputTypes || node.type in AllTransPlaceholderTypes)) {\n" +
+                "            result.push(node);\n" +
+                "        }\n" +
+                "        if (node.childNodes.length) {\n" +
+                "            for (var i = 0; i < node.childNodes.length; i++) {\n" +
+                "                scanSubTree(node.childNodes[i]);\n" +
+                "            }\n" +
+                "        } else if (node.nodeType == 3 || node.nodeType == 1) {\n" +
+                "            result.push(node);\n" +
+                "        }\n" +
+                "    })(tempDocument);\n" +
+                "    return result;\n" +
                 "}\n" +
                 "\n" +
                 "function allTransDoReplaceAll(all) {\n" +
-                " for (var i = 0, max = all.length; i < max; i++) {\n" +
-                " if (all[i].nodeType == 1 && all[i].childNodes.length == 0) {\n" +
-                " injectedObject.showLog(all[i].nodeValue, webView);\n" +
-                " } else if (all[i].nodeType == 3 && all[i].nodeValue.trim() != '') {\n" +
-                " injectedObject.showLog(all[i].nodeValue, webView);\n" +
-                " }\n" +
-                " if (all[i].tagName && all[i].tagName.toLowerCase() == 'input' && all[i].type in AllTransInputTypes) {\n" +
-                " injectedObject.showLog(all[i].value, webView);\n" +
-                " }\n" +
-                " }\n" +
+                "    for (var i = 0, max = all.length; i < max; i++) {\n" +
+                "        if (all[i].tagName && all[i].tagName.toLowerCase() == 'input' && all[i].type in AllTransPlaceholderTypes) {\n" +
+                "            injectedObject.showLog(all[i].placeholder, webView);\n" +
+                "            continue;\n" +
+                "        }\n" +
+                "        if (all[i].nodeType == 1 && all[i].childNodes.length == 0) {\n" +
+                "            injectedObject.showLog(all[i].nodeValue, webView);\n" +
+                "        } else if (all[i].nodeType == 3 && all[i].nodeValue.trim() != '') {\n" +
+                "            injectedObject.showLog(all[i].nodeValue, webView);\n" +
+                "        }\n" +
+                "        if (all[i].tagName && all[i].tagName.toLowerCase() == 'input' && all[i].type in AllTransInputTypes) {\n" +
+                "            injectedObject.showLog(all[i].value, webView);\n" +
+                "        }\n" +
+                "    }\n" +
                 "}\n" +
                 "\n" +
-                "function doAll(){\n" +
-                " for (var j = 0; j < window.frames.length; j++) {\n" +
-                "  all = allTransGetAllTextNodes(window.frames[j].document);\n" +
-                "  allTransDoReplaceAll(all);\n" +
-                " }\n" +
+                "function doAll() {\n" +
+                "    for (var j = 0; j < window.frames.length; j++) {\n" +
+                "        all = allTransGetAllTextNodes(window.frames[j].document);\n" +
+                "        allTransDoReplaceAll(all);\n" +
+                "    }\n" +
                 "\n" +
-                " all = allTransGetAllTextNodes(window.document);\n" +
-                " allTransDoReplaceAll(all);\n" +
+                "    all = allTransGetAllTextNodes(window.document);\n" +
+                "    allTransDoReplaceAll(all);\n" +
                 "}\n" +
                 "\n" +
-                "setTimeout(doAll," + PreferenceList.DelayWebView + ");";
+                "setTimeout(doAll, \" + PreferenceList.DelayWebView + \");";
 
         myEvaluateJavaScript(webView, script);
 //        "\n" +
