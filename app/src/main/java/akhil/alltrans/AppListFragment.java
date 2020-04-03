@@ -39,6 +39,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -59,7 +60,7 @@ public class AppListFragment extends Fragment {
 
     private static SharedPreferences settings;
     private FragmentActivity context;
-    private NestedScrollingListView listview;
+    private android.widget.ListView listview;
     private FirebaseAnalytics mFirebaseAnalytics;
 
 
@@ -102,12 +103,11 @@ public class AppListFragment extends Fragment {
         }
 
         //noinspection ConstantConditions
-        listview = (NestedScrollingListView) getView().findViewById(R.id.AppsList);
+        listview = (ListView) getView().findViewById(R.id.AppsList);
 
         new PrepareAdapter().execute();
 
-        listview.setChoiceMode(NestedScrollingListView.CHOICE_MODE_MULTIPLE);
-        listview.setNestedScrollingEnabled(true);
+        listview.setChoiceMode(android.widget.ListView.CHOICE_MODE_MULTIPLE);
         listview.setFastScrollEnabled(true);
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {

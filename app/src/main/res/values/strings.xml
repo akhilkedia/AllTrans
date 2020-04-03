@@ -25,8 +25,8 @@
     <string name="loading">"Loading List of Applications - Please Wait"</string>
     <string name="clear_cache_success">"Please force-close the translated app! Translate Cache for this app will be erased next time the app starts!!"</string>
     <string name="clear_cache_error">""</string>
-    <string name="backup_pref_error">"Some Error. Could not backup preferences! Did you grant SuperUser Access?"</string>
-    <string name="backup_pref_success">"Preferences have been backed up to External Storage!"</string>
+    <string name="backup_pref_error">""</string>
+    <string name="backup_pref_success">""</string>
     <string name="wut_why_null">"Could not load the Per-app preference page. Close and re-open application again."</string>
 
     <string name="app_icon">"App Icon"</string>

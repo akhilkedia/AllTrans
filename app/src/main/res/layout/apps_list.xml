@@ -24,11 +24,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <akhil.alltrans.NestedScrollingListView
+    <android.widget.ListView
         android:id="@+id/AppsList"
         style="@android:style/Widget.DeviceDefault.Light.ListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:headerDividersEnabled="false"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:headerDividersEnabled="false" />
 </LinearLayout>

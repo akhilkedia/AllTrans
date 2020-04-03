@@ -25,6 +25,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -59,9 +60,8 @@ public class InstructionsFragment extends Fragment {
         String instructions = datax.toString();
 
         //final String instructions = getString(R.string.how_to_use);
-        final NestedScrollingMarkDownView webView = new NestedScrollingMarkDownView(getActivity());
+        final WebView webView = new WebView(getActivity());
 
-        webView.setNestedScrollingEnabled(true);
         webView.getSettings().setLoadWithOverviewMode(true);
         webView.getSettings().setUseWideViewPort(false);
 
