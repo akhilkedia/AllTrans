@@ -45,14 +45,7 @@ class GetTranslateToken implements Callback {
     private static String userCredentials;
     private static long lastExpireTime = 0;
     private static OkHttpClient httpsClient;
-    private static OkHttpClient httpClient;
     public GetTranslate getTranslate;
-
-    private static Cache createHttpClientCache() {
-        int cacheSize = 1024 * 1024; // 1 MiB
-        File cacheDirectory = new File(alltrans.context.getCacheDir(), "AllTransHTTPCache");
-        return new Cache(cacheDirectory, cacheSize);
-    }
 
     private static Cache createHttpsClientCache() {
         int cacheSize = 1024 * 1024; // 1 MiB
@@ -62,12 +55,6 @@ class GetTranslateToken implements Callback {
 
     public void doAll() {
         available.acquireUninterruptibly();
-        if (httpClient == null) {
-            Cache cache = createHttpClientCache();
-            httpClient = new OkHttpClient.Builder()
-                    .cache(cache)
-                    .connectionSpecs(Collections.singletonList(ConnectionSpec.CLEARTEXT)).build();
-        }
         if (httpsClient == null) {
             Cache cache = createHttpsClientCache();
             httpsClient = new OkHttpClient.Builder()
@@ -127,7 +114,7 @@ class GetTranslateToken implements Callback {
                 utils.debugLog("In Thread " + Thread.currentThread().getId() + "  Enqueuing Request for new translation for : " + getTranslate.stringToBeTrans);
                 httpsClient.newCall(request).enqueue(getTranslate);
             } else {
-                String baseURL = "http://api.microsofttranslator.com/v2/Http.svc/Translate?text=";
+                String baseURL = "https://api.microsofttranslator.com/v2/Http.svc/Translate?text=";
                 String languageURL = "&from=" + PreferenceList.TranslateFromLanguage + "&to=" + PreferenceList.TranslateToLanguage;
                 String fullURL = baseURL + URLEncoder.encode(getTranslate.stringToBeTrans, "UTF-8") + languageURL;
 
@@ -138,7 +125,7 @@ class GetTranslateToken implements Callback {
                         .build();
 
                 utils.debugLog("In Thread " + Thread.currentThread().getId() + "  Enqueuing Request for new translation for : " + getTranslate.stringToBeTrans);
-                httpClient.newCall(request).enqueue(getTranslate);
+                httpsClient.newCall(request).enqueue(getTranslate);
             }
         } catch (java.io.IOException e) {
             Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
