@@ -63,8 +63,8 @@ dependencies {
     compileOnly 'de.robv.android.xposed:api:82:sources'
     compileOnly 'de.robv.android.xposed:api:82'
 
-    implementation 'com.google.code.gson:gson:2.8.5'
-    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.okhttp3:okhttp:4.5.0'
 
     implementation 'com.android.support:appcompat-v7:25.4.0'
     implementation 'com.android.support:design:25.4.0'
@@ -72,8 +72,8 @@ dependencies {
     implementation 'com.android.support:support-v4:25.4.0'
     implementation 'com.android.support:percent:25.4.0'
 
-    implementation 'com.google.firebase:firebase-core:10.0.1'
-    implementation 'com.google.firebase:firebase-crash:10.0.1'
+    implementation 'com.google.firebase:firebase-core:11.0.4'
+    implementation 'com.google.firebase:firebase-crash:11.0.4'
     implementation('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
         transitive = true;
     }
@@ -82,10 +82,10 @@ apply plugin: 'com.google.gms.google-services'
 
 afterEvaluate {
     installDebug.doLast {
-        updateVirtualXposedAPP.exec()
-        clearLog.exec()
-        rebootVirtualXposedAPP.exec()
-        launchVirtualXposedAPP.exec()
+//        updateVirtualXposedAPP.exec()
+//        clearLog.exec()
+//        rebootVirtualXposedAPP.exec()
+//        launchVirtualXposedAPP.exec()
     }
 }
 

@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <style name="AppTheme" parent="Theme.AppCompat">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -13,14 +13,14 @@
     <style name="SettingsTheme" parent="Theme.AppCompat.NoActionBar" />
 
     <style name="MyActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="ToolBarStyle" parent="ToolBarStyle.Base" />
 
     <style name="ToolBarStyle.Base" parent="">
-        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
-        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
     </style>
 
     <style name="ToolBarStyle.Event" parent="ToolBarStyle">
@@ -28,17 +28,18 @@
     </style>
 
     <style name="TextAppearance.Widget.Event.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
 
     <style name="CustomTabLayoutStyle" parent="Base.Widget.Design.TabLayout">
-        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/black</item>
         <item name="tabTextAppearance">@style/CustomTabTexStyle</item>
     </style>
 
     <style name="CustomTabTexStyle" parent="TextAppearance.Design.Tab">
-        <item name="android:textColor">@color/whiteblue</item>
+        <item name="android:textColor">@color/darkerBlack</item>
         <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 </resources>
