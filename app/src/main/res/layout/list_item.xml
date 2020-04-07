@@ -24,6 +24,16 @@
     android:descendantFocusability="blocksDescendants"
     android:padding="6dip">
 
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill"
+        app:layout_marginEndPercent="90%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="10%" />
+
     <ImageView
         android:id="@+id/icon"
         android:layout_width="match_parent"
@@ -31,7 +41,8 @@
         android:contentDescription="@string/app_icon"
         android:gravity="fill"
         android:src="@drawable/ic_launcher"
-        app:layout_marginEndPercent="85%"
+        app:layout_marginStartPercent="10%"
+        app:layout_marginEndPercent="75%"
         app:layout_widthPercent="15%" />
 
     <TextView
@@ -43,10 +54,13 @@
         android:text="@string/example_application"
         android:textSize="16sp"
         app:layout_heightPercent="50%"
-        app:layout_marginEndPercent="12%"
-        app:layout_marginStartPercent="18%"
+        app:layout_marginEndPercent="2%"
+        app:layout_marginStartPercent="28%"
         app:layout_marginTopPercent="5%"
-        app:layout_widthPercent="70%" />
+        app:layout_widthPercent="70%"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="false" />
 
     <TextView
         android:id="@+id/secondLine"
@@ -57,20 +71,13 @@
         android:text="@string/description"
         android:textSize="12sp"
         app:layout_heightPercent="35%"
-        app:layout_marginEndPercent="12%"
-        app:layout_marginStartPercent="18%"
+        app:layout_marginEndPercent="2%"
+        app:layout_marginStartPercent="28%"
         app:layout_marginTopPercent="60%"
-        app:layout_widthPercent="70%" />
+        app:layout_widthPercent="70%"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="false"/>
 
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="fill"
-        app:layout_marginEndPercent="0%"
-        app:layout_marginStartPercent="90%"
-        app:layout_marginTopPercent="10%"
-        app:layout_widthPercent="10%" />
 
 </android.support.percent.PercentRelativeLayout>

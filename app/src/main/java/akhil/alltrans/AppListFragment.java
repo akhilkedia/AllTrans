@@ -212,7 +212,9 @@ public class AppListFragment extends Fragment {
             Drawable icon = pm.getApplicationIcon(values.get(position));
 
             viewHolder.textView.setText(label);
+            viewHolder.textView.setSelected(true);
             viewHolder.textView2.setText(packageName);
+            viewHolder.textView2.setSelected(true);
             viewHolder.imageView.setImageDrawable(icon);
 
             viewHolder.checkBox.setTag(position);
