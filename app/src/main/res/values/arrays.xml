@@ -22,112 +22,146 @@
     <string-array name="languageCodes" translatable="false">
         <item>af</item>
         <item>ar</item>
-        <item>bs-Latn</item>
         <item>bg</item>
+        <item>bn</item>
+        <item>bs</item>
         <item>ca</item>
-        <item>zh-CHS</item>
-        <item>zh-CHT</item>
-        <item>hr</item>
         <item>cs</item>
+        <item>cy</item>
         <item>da</item>
-        <item>nl</item>
-        <item>en</item>
-        <item>et</item>
-        <item>fi</item>
-        <item>fr</item>
         <item>de</item>
         <item>el</item>
-        <item>ht</item>
+        <item>en</item>
+        <item>es</item>
+        <item>et</item>
+        <item>fa</item>
+        <item>fi</item>
+        <item>fil</item>
+        <item>fj</item>
+        <item>fr</item>
+        <item>ga</item>
         <item>he</item>
         <item>hi</item>
-        <item>mww</item>
+        <item>hr</item>
+        <item>ht</item>
         <item>hu</item>
         <item>id</item>
+        <item>is</item>
         <item>it</item>
         <item>ja</item>
-        <item>sw</item>
-        <item>tlh</item>
-        <item>tlh-Qaak</item>
+        <item>kn</item>
         <item>ko</item>
-        <item>lv</item>
         <item>lt</item>
+        <item>lv</item>
+        <item>mg</item>
+        <item>mi</item>
+        <item>ml</item>
         <item>ms</item>
         <item>mt</item>
-        <item>no</item>
-        <item>fa</item>
+        <item>mww</item>
+        <item>nb</item>
+        <item>nl</item>
+        <item>otq</item>
+        <item>pa</item>
         <item>pl</item>
         <item>pt</item>
-        <item>otq</item>
+        <item>pt-pt</item>
         <item>ro</item>
         <item>ru</item>
-        <item>sr-Cyrl</item>
-        <item>sr-Latn</item>
         <item>sk</item>
         <item>sl</item>
-        <item>es</item>
+        <item>sm</item>
+        <item>sr-Cyrl</item>
+        <item>sr-Latn</item>
         <item>sv</item>
+        <item>sw</item>
+        <item>ta</item>
+        <item>te</item>
         <item>th</item>
+        <item>tlh-Latn</item>
+        <item>tlh-Piqd</item>
+        <item>to</item>
         <item>tr</item>
+        <item>ty</item>
         <item>uk</item>
         <item>ur</item>
         <item>vi</item>
-        <item>cy</item>
         <item>yua</item>
+        <item>yue</item>
+        <item>zh-Hans</item>
+        <item>zh-Hant</item>
     </string-array>
     <string-array name="languageNames" translatable="false">
         <item>@string/Afrikaans_micro</item>
         <item>@string/Arabic_micro</item>
-        <item>@string/Bosnian_Latin_micro</item>
         <item>@string/Bulgarian_micro</item>
+        <item>@string/Bangla_micro</item>
+        <item>@string/Bosnian_micro</item>
         <item>@string/Catalan_micro</item>
-        <item>@string/Chinese_Simplified_micro</item>
-        <item>@string/Chinese_Traditional_micro</item>
-        <item>@string/Croatian_micro</item>
         <item>@string/Czech_micro</item>
+        <item>@string/Welsh_micro</item>
         <item>@string/Danish_micro</item>
-        <item>@string/Dutch_micro</item>
-        <item>@string/English_micro</item>
-        <item>@string/Estonian_micro</item>
-        <item>@string/Finnish_micro</item>
-        <item>@string/French_micro</item>
         <item>@string/German_micro</item>
         <item>@string/Greek_micro</item>
-        <item>@string/Haitian_Creole_micro</item>
+        <item>@string/English_micro</item>
+        <item>@string/Spanish_micro</item>
+        <item>@string/Estonian_micro</item>
+        <item>@string/Persian_micro</item>
+        <item>@string/Finnish_micro</item>
+        <item>@string/Filipino_micro</item>
+        <item>@string/Fijian_micro</item>
+        <item>@string/French_micro</item>
+        <item>@string/Irish_micro</item>
         <item>@string/Hebrew_micro</item>
         <item>@string/Hindi_micro</item>
-        <item>@string/Hmong_Daw_micro</item>
+        <item>@string/Croatian_micro</item>
+        <item>@string/Haitian_Creole_micro</item>
         <item>@string/Hungarian_micro</item>
         <item>@string/Indonesian_micro</item>
+        <item>@string/Icelandic_micro</item>
         <item>@string/Italian_micro</item>
         <item>@string/Japanese_micro</item>
-        <item>@string/Kiswahili_micro</item>
-        <item>@string/Klingon_micro</item>
-        <item>@string/Klingon_micro</item>
+        <item>@string/Kannada_micro</item>
         <item>@string/Korean_micro</item>
-        <item>@string/Latvian_micro</item>
         <item>@string/Lithuanian_micro</item>
+        <item>@string/Latvian_micro</item>
+        <item>@string/Malagasy_micro</item>
+        <item>@string/Maori_micro</item>
+        <item>@string/Malayalam_micro</item>
         <item>@string/Malay_micro</item>
         <item>@string/Maltese_micro</item>
+        <item>@string/Hmong_Daw_micro</item>
         <item>@string/Norwegian_micro</item>
-        <item>@string/Persian_micro</item>
+        <item>@string/Dutch_micro</item>
+        <item>@string/Querétaro_Otomi_micro</item>
+        <item>@string/Punjabi_micro</item>
         <item>@string/Polish_micro</item>
-        <item>@string/Portuguese_micro</item>
-        <item>@string/Queretaro_Otomi_micro</item>
+        <item>@string/Portuguese_Brazil_micro</item>
+        <item>@string/Portuguese_Portugal_micro</item>
         <item>@string/Romanian_micro</item>
         <item>@string/Russian_micro</item>
-        <item>@string/Serbian_Cyrillic_micro</item>
-        <item>@string/Serbian_Latin_micro</item>
         <item>@string/Slovak_micro</item>
         <item>@string/Slovenian_micro</item>
-        <item>@string/Spanish_micro</item>
+        <item>@string/Samoan_micro</item>
+        <item>@string/Serbian_Cyrillic_micro</item>
+        <item>@string/Serbian_Latin_micro</item>
         <item>@string/Swedish_micro</item>
+        <item>@string/Swahili_micro</item>
+        <item>@string/Tamil_micro</item>
+        <item>@string/Telugu_micro</item>
         <item>@string/Thai_micro</item>
+        <item>@string/Klingon_Latin_micro</item>
+        <item>@string/Klingon_pIqaD_micro</item>
+        <item>@string/Tongan_micro</item>
         <item>@string/Turkish_micro</item>
+        <item>@string/Tahitian_micro</item>
         <item>@string/Ukrainian_micro</item>
         <item>@string/Urdu_micro</item>
         <item>@string/Vietnamese_micro</item>
-        <item>@string/Welsh_micro</item>
         <item>@string/Yucatec_Maya_micro</item>
+        <item>@string/Cantonese_Traditional_micro</item>
+        <item>@string/Chinese_Simplified_micro</item>
+        <item>@string/Chinese_Traditional_micro</item>
     </string-array>
     <string-array name="languageCodesYandex" translatable="false">
         <item>af</item>
