@@ -67,6 +67,8 @@ public class GetTranslate implements Callback {
                     }
                     else {
                         translatedString = new JSONArray(result).getJSONObject(0).getJSONArray("translations").getJSONObject(0).getString("text");
+//                        Ideally we don't need to do this, but Microsoft return these escape sequences sometimes..
+                        translatedString = utils.XMLUnescape(translatedString);
                     }
                 } catch (Exception e) {
                     Log.e("AllTrans", "AllTrans: Got error in getting string from translation as : " + Log.getStackTraceString(e));
