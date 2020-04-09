@@ -105,6 +105,11 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
                 callOriginalMethod(stringArgs, methodHookParam);
                 return null;
             }
+            if (!editable) {
+                callMethod(methodHookParam.thisObject, "setEllipsize", TextUtils.TruncateAt.MARQUEE);
+                callMethod(methodHookParam.thisObject, "setSelected", true);
+                callMethod(methodHookParam.thisObject, "setMarqueeRepeatLimit", -1);
+            }
         } catch (Exception e) {
             Log.e("AllTrans", "AllTrans: Got error in checking editable TextView : " + Log.getStackTraceString(e));
         }
