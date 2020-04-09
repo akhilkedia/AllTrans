@@ -25,8 +25,11 @@ import android.text.AlteredCharSequence;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
 import android.text.SpannedString;
+import android.text.StaticLayout;
+import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.Log;
+import android.widget.TextView;
 
 import java.lang.reflect.Method;
 import java.nio.CharBuffer;
@@ -40,7 +43,6 @@ import static de.robv.android.xposed.XposedHelpers.callMethod;
 
 
 public class SetTextHookHandler extends XC_MethodReplacement implements OriginalCallable {
-
 
     public static boolean isNotWhiteSpace(String abc) {
        return !(abc == null || "".equals(abc)) && !abc.matches("^\\s*$");
@@ -83,11 +85,20 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
             XposedBridge.invokeOriginalMethod(myMethod, methodHookParam.thisObject, myArgs);
 
             utils.debugLog("In Thread " + Thread.currentThread().getId() + " Finished invoking original function " + methodHookParam.method.getName() + " and setting text to " + myArgs[0].toString());
+            final TextView tv = (TextView) methodHookParam.thisObject;
+            final String finalTranslatedString = translatedString.toString();
+            tv.post(new Runnable() {
+                @Override
+                public void run() {
+                    AutoResizeTextView.adjustTextSize(tv, finalTranslatedString);
+                }
+            });
 
         } catch (Exception e) {
             Log.e("AllTrans", "AllTrans: Got error in invoking method as : " + Log.getStackTraceString(e));
         }
     }
+
 
     @Override
     protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
