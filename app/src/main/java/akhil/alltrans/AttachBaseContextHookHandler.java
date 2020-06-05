@@ -40,25 +40,23 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
         if (PreferenceList.Caching) {
             if (alltrans.cache.isEmpty()) {
                 clearCacheIfNeeded(alltrans.context, PreferenceList.CachingTime);
+                alltrans.cacheAccess.acquireUninterruptibly();
                 try {
                     FileInputStream fileInputStream = alltrans.context.openFileInput("AllTransCache");
                     ObjectInputStream s = new ObjectInputStream(fileInputStream);
-                    alltrans.cacheAccess.acquireUninterruptibly();
                     //noinspection unchecked
                     if (alltrans.cache.isEmpty()) {
                         alltrans.cache = (HashMap<String, String>) s.readObject();
                     }
-                    alltrans.cacheAccess.release();
                     utils.debugLog("Successfully read old cache");
                     s.close();
                 } catch (Exception e) {
                     utils.debugLog("Could not read cache ");
                     utils.debugLog(e.toString());
-                    alltrans.cacheAccess.acquireUninterruptibly();
                     alltrans.cache = new HashMap<>(10000);
                     alltrans.cache.put("ThisIsAPlaceHolderStringYouWillNeverEncounter", "ThisIsAPlaceHolderStringYouWillNeverEncounter");
-                    alltrans.cacheAccess.release();
                 }
+                alltrans.cacheAccess.release();
             }
         }
     }
