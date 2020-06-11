@@ -19,7 +19,7 @@
           "client_type": 1,
           "android_info": {
             "package_name": "akhil.alltrans",
-            "certificate_hash": "F098530C99B05AF64CF145C91F9A5A721CBFCBB6"
+            "certificate_hash": "f098530c99b05af64cf145c91f9a5a721cbfcbb6"
           }
         },
         {
@@ -33,20 +33,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
               "client_id": "825103961890-90ce9gmd85r473jcm92sn8ie54kj0ddt.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

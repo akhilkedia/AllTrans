@@ -26,10 +26,8 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.crashlytics.android.Crashlytics;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
-import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
     //public static String TAG = "alltrans";
@@ -42,12 +40,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         SharedPreferences settings = this.getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
         utils.Debug = settings.getBoolean("Debug", false);
 
+        boolean anonCollection = settings.getBoolean("Anon", true);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
-        utils.debugLog("Is Debug Logging enabled" + settings.getBoolean("Anon", true));
-        mFirebaseAnalytics.setAnalyticsCollectionEnabled(settings.getBoolean("Anon", true));
-        if (settings.getBoolean("Anon", true)) {
-            Fabric.with(this, new Crashlytics());
-        }
+        utils.debugLog("Is Debug Logging enabled" + anonCollection);
+        mFirebaseAnalytics.setAnalyticsCollectionEnabled(anonCollection);
 
         setContentView(R.layout.activity_main);
         getSupportFragmentManager().beginTransaction()

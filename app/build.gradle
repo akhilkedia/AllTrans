@@ -17,18 +17,9 @@
  *
  */
 
-buildscript {
-    repositories {
-        maven { url 'https://maven.fabric.io/public' }
-    }
 
-    dependencies {
-        classpath 'io.fabric.tools:gradle:1.28.0'
-    }
-}
 
 apply plugin: 'com.android.application'
-apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 25
@@ -56,7 +47,6 @@ repositories {
         url "http://dl.bintray.com/rovo89/de.robv.android.xposed"
     }
     maven { url "https://jitpack.io" }
-    maven { url 'https://maven.fabric.io/public' }
 }
 
 dependencies {
@@ -72,10 +62,8 @@ dependencies {
     implementation 'com.android.support:support-v4:25.4.0'
     implementation 'com.android.support:percent:25.4.0'
 
-    implementation 'com.google.firebase:firebase-core:11.0.4'
-    implementation 'com.google.firebase:firebase-crash:11.0.4'
-    implementation('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
-        transitive = true;
+    implementation('com.google.firebase:firebase-analytics:16.5.0'){
+        exclude group: 'com.android.support'
     }
 }
 apply plugin: 'com.google.gms.google-services'
