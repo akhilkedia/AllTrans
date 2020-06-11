@@ -36,6 +36,7 @@ class PreferenceList {
     public static long CachingTime;
     public static int Delay;
     public static int DelayWebView;
+    public static boolean Scroll;
 
     public static void getPref(XSharedPreferences gPref, XSharedPreferences lPref, String packageName) {
         SubscriptionKey = gPref.getString("SubscriptionKey", "");
@@ -56,12 +57,13 @@ class PreferenceList {
         TranslateFromLanguage = gPref.getString("TranslateFromLanguage", "");
         TranslateToLanguage = gPref.getString("TranslateToLanguage", "");
 
-        SetText = gPref.getBoolean("SetText", false);
-        SetHint = gPref.getBoolean("SetHint", false);
-        LoadURL = gPref.getBoolean("LoadURL", false);
+        SetText = gPref.getBoolean("SetText", true);
+        SetHint = gPref.getBoolean("SetHint", true);
+        LoadURL = gPref.getBoolean("LoadURL", true);
         DrawText = gPref.getBoolean("DrawText", false);
 
-        Caching = gPref.getBoolean("Cache", false);
+        Caching = gPref.getBoolean("Cache", true);
         Delay = Integer.parseInt(gPref.getString("Delay", "0"));
+        Scroll = gPref.getBoolean("Scroll", true);
     }
 }

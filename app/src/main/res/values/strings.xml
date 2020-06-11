@@ -113,6 +113,11 @@
     <string name="delay_webview">"Delay Before Starting to Translate WebViews"</string>
     <string name="delay_webview_summary">"Set the time in milliseconds to wait before starting to translate WebViews. Default Value is 500. Set to 0 to increase translation speed. Set to 3000-5000 if part of web app are not translating."</string>
 
+    <!-- Scroll -->
+    <string name="scroll">"Scroll Long Translated Text"</string>
+    <string name="scroll_summary_off">"Not scrolling translated text if it is too long. Text may be truncated, but will not interfere with the app&apos;s scrolling/clicking. Turn on to scroll long translations."</string>
+    <string name="scroll_summary_on">"Scrolling translated text if it is too long. This may interfere with the app&apos;s scrolling/clicking. Turn off to disable this scrolling."</string>
+
     <!-- Anonymous Usage and Crash Data -->
     <string name="analytics">"Send Anonymous Crash and Usage Data"</string>
     <string name="analytics_summary_off">"Not sending anonymous crash and Usage data. Sending anonymous crash data helps the developer make the app better."</string>

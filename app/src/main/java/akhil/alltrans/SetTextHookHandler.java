@@ -19,6 +19,7 @@
 
 package akhil.alltrans;
 
+import android.annotation.SuppressLint;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.AlteredCharSequence;
@@ -26,7 +27,12 @@ import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
 import android.text.SpannedString;
 import android.text.TextUtils;
+import android.text.method.MovementMethod;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.TextView;
 
 import java.lang.reflect.Method;
 import java.nio.CharBuffer;
@@ -105,10 +111,24 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
                 callOriginalMethod(stringArgs, methodHookParam);
                 return null;
             }
-            if (!editable) {
-                callMethod(methodHookParam.thisObject, "setEllipsize", TextUtils.TruncateAt.MARQUEE);
-                callMethod(methodHookParam.thisObject, "setSelected", true);
-                callMethod(methodHookParam.thisObject, "setMarqueeRepeatLimit", -1);
+            if (!editable && PreferenceList.Scroll) {
+                final TextView textView = (TextView) methodHookParam.thisObject;
+                textView.setEllipsize(TextUtils.TruncateAt.MARQUEE);
+                textView.setSelected(true);
+                textView.setMarqueeRepeatLimit(-1);
+                MovementMethod alreadyScrolling = textView.getMovementMethod();
+                if (alreadyScrolling == null){
+                    textView.setVerticalScrollBarEnabled(true);
+                    textView.setMovementMethod(new ScrollingMovementMethod());
+                    textView.setOnTouchListener(new View.OnTouchListener() {
+                        @SuppressLint("ClickableViewAccessibility")
+                        @Override
+                        public boolean onTouch(View v, MotionEvent event) {
+                            v.getParent().requestDisallowInterceptTouchEvent(true);
+                            return false;
+                        }
+                    });
+                }
             }
         } catch (Exception e) {
             Log.e("AllTrans", "AllTrans: Got error in checking editable TextView : " + Log.getStackTraceString(e));

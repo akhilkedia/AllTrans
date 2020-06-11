@@ -107,5 +107,11 @@
             android:singleLine="true"
             android:summary="@string/delay_webview_summary"
             android:title="@string/delay_webview" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="Scroll"
+            android:summaryOff="@string/scroll_summary_off"
+            android:summaryOn="@string/scroll_summary_on"
+            android:title="@string/scroll" />
     </PreferenceCategory>
 </PreferenceScreen>

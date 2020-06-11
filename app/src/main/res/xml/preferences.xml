@@ -117,6 +117,12 @@
             android:title="@string/delay_webview" />
         <SwitchPreference
             android:defaultValue="true"
+            android:key="Scroll"
+            android:summaryOff="@string/scroll_summary_off"
+            android:summaryOn="@string/scroll_summary_on"
+            android:title="@string/scroll" />
+        <SwitchPreference
+            android:defaultValue="true"
             android:key="Anon"
             android:summaryOff="@string/analytics_summary_off"
             android:summaryOn="@string/analytics_summary_on"
