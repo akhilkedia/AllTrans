@@ -18,8 +18,10 @@
   ~
   -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <SwitchPreference
+        app:iconSpaceReserved="false"
         android:defaultValue="false"
         android:key="LocalEnabled"
         android:summary="@string/local_on_off_summary"
@@ -27,12 +29,14 @@
         android:summaryOn="@string/local_on_off_summary_on"
         android:title="@string/local_on_off" />
     <SwitchPreference
+        app:iconSpaceReserved="false"
         android:defaultValue="false"
         android:key="OverRide"
         android:summaryOff="@string/overRide_global_summary_off"
         android:summaryOn="@string/overRide_global_summary_on"
         android:title="@string/overRide_global" />
     <SwitchPreference
+        app:iconSpaceReserved="false"
         android:defaultValue="false"
         android:key="ClearCache"
         android:persistent="false"
@@ -40,9 +44,10 @@
         android:summaryOff="@string/clear_cache_summary"
         android:title="@string/clear_cache" />
 
-    <PreferenceCategory android:title="@string/pref_cat_translate_settings">
+    <PreferenceCategory android:title="@string/pref_cat_translate_settings" app:iconSpaceReserved="false">
 
         <ListPreference
+            app:iconSpaceReserved="false"
             android:defaultValue="ko"
             android:entries="@array/languageNames"
             android:entryValues="@array/languageCodes"
@@ -50,6 +55,7 @@
             android:summary="@string/transFrom_summary"
             android:title="@string/transFrom" />
         <ListPreference
+            app:iconSpaceReserved="false"
             android:defaultValue="en"
             android:entries="@array/languageNames"
             android:entryValues="@array/languageCodes"
@@ -58,42 +64,48 @@
             android:title="@string/transTo" />
 
     </PreferenceCategory>
-    <PreferenceCategory android:title="@string/pref_cat_parts_of_app">
+    <PreferenceCategory android:title="@string/pref_cat_parts_of_app" app:iconSpaceReserved="false">
 
         <SwitchPreference
+            app:iconSpaceReserved="false"
             android:defaultValue="true"
             android:key="SetText"
             android:summaryOff="@string/setText_summary_off"
             android:summaryOn="@string/setText_summary_on"
             android:title="@string/setText" />
         <SwitchPreference
+            app:iconSpaceReserved="false"
             android:defaultValue="true"
             android:key="SetHint"
             android:summaryOff="@string/setHint_summary_off"
             android:summaryOn="@string/setHint_summary_on"
             android:title="@string/setHint" />
         <SwitchPreference
+            app:iconSpaceReserved="false"
             android:defaultValue="true"
             android:key="LoadURL"
             android:summaryOff="@string/webView_summary_off"
             android:summaryOn="@string/webView_summary_on"
             android:title="@string/webView" />
         <SwitchPreference
+            app:iconSpaceReserved="false"
             android:defaultValue="false"
             android:key="DrawText"
             android:summaryOff="@string/drawText_summary_off"
             android:summaryOn="@string/drawText_summary_on"
             android:title="@string/drawText" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="@string/pref_cat_other_settings">
+    <PreferenceCategory android:title="@string/pref_cat_other_settings" app:iconSpaceReserved="false">
 
         <SwitchPreference
+            app:iconSpaceReserved="false"
             android:defaultValue="true"
             android:key="Cache"
             android:summaryOff="@string/caching_summary_off"
             android:summaryOn="@string/caching_summary_on"
             android:title="@string/caching" />
         <EditTextPreference
+            app:iconSpaceReserved="false"
             android:defaultValue="@integer/default_delay"
             android:key="Delay"
             android:selectAllOnFocus="true"
@@ -101,6 +113,7 @@
             android:summary="@string/delay_summary"
             android:title="@string/delay" />
         <EditTextPreference
+            app:iconSpaceReserved="false"
             android:defaultValue="@integer/default_delay_webview"
             android:key="DelayWebView"
             android:selectAllOnFocus="true"
@@ -108,6 +121,7 @@
             android:summary="@string/delay_webview_summary"
             android:title="@string/delay_webview" />
         <SwitchPreference
+            app:iconSpaceReserved="false"
             android:defaultValue="true"
             android:key="Scroll"
             android:summaryOff="@string/scroll_summary_off"

@@ -21,9 +21,9 @@ package akhil.alltrans;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.FragmentActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
