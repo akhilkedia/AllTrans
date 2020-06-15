@@ -31,11 +31,9 @@ import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 import android.widget.Toast;
 
-import static android.content.Context.MODE_WORLD_READABLE;
 
 public class LocalPreferenceFragment extends PreferenceFragmentCompat {
     public ApplicationInfo applicationInfo;
-    @SuppressLint("WorldReadableFiles")
     private SharedPreferences settings;
 
     public LocalPreferenceFragment() {
@@ -44,10 +42,9 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
 
     @Override
     public void onCreatePreferences(Bundle bundle, String rootKey) {
-        settings = this.getActivity().getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
+        settings = this.getActivity().getSharedPreferences("AllTransPref", Context.MODE_PRIVATE);
         final PreferenceManager preferenceManager = getPreferenceManager();
         preferenceManager.setSharedPreferencesName(applicationInfo.packageName);
-        preferenceManager.setSharedPreferencesMode(MODE_WORLD_READABLE);
 
         utils.debugLog("Is it enabled for package " + applicationInfo.packageName + " answer -" + settings.contains(applicationInfo.packageName));
         if (settings.contains(applicationInfo.packageName)) {

@@ -59,15 +59,14 @@ public class InstructionsFragment extends Fragment {
 
         String instructions = datax.toString();
 
-        //final String instructions = getString(R.string.how_to_use);
+//        final String instructions = getString(R.string.how_to_use);
         final WebView webView = new WebView(getActivity());
-
         webView.getSettings().setLoadWithOverviewMode(true);
         webView.getSettings().setUseWideViewPort(false);
 
-        webView.loadData(instructions, "text/html; charset=utf-8", "UTF-8");
+        webView.loadDataWithBaseURL(null, instructions, "text/html; charset=utf-8", "UTF-8", null);
 
-        //webView.loadUrl("file:///android_res/raw/readme.html");
+//        webView.loadUrl("file:///android_res/raw/readme.html");
         return webView;
     }
 

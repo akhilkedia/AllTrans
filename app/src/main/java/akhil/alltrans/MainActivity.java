@@ -37,7 +37,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        SharedPreferences settings = this.getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
+        SharedPreferences settings = this.getSharedPreferences("AllTransPref", MODE_PRIVATE);
         utils.Debug = settings.getBoolean("Debug", false);
 
         boolean anonCollection = settings.getBoolean("Anon", true);

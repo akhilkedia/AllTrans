@@ -26,7 +26,6 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 
-import static android.content.Context.MODE_WORLD_READABLE;
 
 
 public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
@@ -50,7 +49,6 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
     public void onCreatePreferences(Bundle bundle, String rootKey) {
         PreferenceManager preferenceManager = getPreferenceManager();
         preferenceManager.setSharedPreferencesName("AllTransPref");
-        preferenceManager.setSharedPreferencesMode(MODE_WORLD_READABLE);
         addPreferencesFromResource(R.xml.preferences);
 
         fixNotRooted();

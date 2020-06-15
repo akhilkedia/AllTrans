@@ -54,8 +54,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-import static android.content.Context.MODE_WORLD_READABLE;
-
 public class AppListFragment extends Fragment {
 
     private static SharedPreferences settings;
@@ -73,13 +71,12 @@ public class AppListFragment extends Fragment {
         return inflater.inflate(R.layout.apps_list, container, false);
     }
 
-    @SuppressLint("WorldReadableFiles")
     @Override
     public void onStart() {
         super.onStart();
         context = this.getActivity();
         //noinspection deprecation,deprecation
-        settings = this.getActivity().getSharedPreferences("AllTransPref", MODE_WORLD_READABLE);
+        settings = this.getActivity().getSharedPreferences("AllTransPref", Context.MODE_PRIVATE);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
 
         if( BuildConfig.DEBUG ){
@@ -236,12 +233,12 @@ public class AppListFragment extends Fragment {
                     if (checkBox1.isChecked()) {
                         settings.edit().putBoolean(packageName, true).apply();
 
-                        SharedPreferences localSettings = context.getSharedPreferences(packageName, MODE_WORLD_READABLE);
+                        SharedPreferences localSettings = context.getSharedPreferences(packageName, Context.MODE_PRIVATE);
                         localSettings.edit().putBoolean("LocalEnabled", true).apply();
                     } else if (settings.contains(packageName)) {
                         settings.edit().remove(packageName).apply();
 
-                        SharedPreferences localSettings = context.getSharedPreferences(packageName, MODE_WORLD_READABLE);
+                        SharedPreferences localSettings = context.getSharedPreferences(packageName, Context.MODE_PRIVATE);
                         localSettings.edit().putBoolean("LocalEnabled", false).apply();
                     }
                 }

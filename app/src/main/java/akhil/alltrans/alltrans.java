@@ -59,7 +59,6 @@ public class alltrans implements IXposedHookLoadPackage {
         // TODO: Comment this line later
         utils.debugLog("in package beginning : " + lpparam.packageName);
         XSharedPreferences globalPref = new XSharedPreferences(alltrans.class.getPackage().getName(), "AllTransPref");
-        globalPref.makeWorldReadable();
         globalPref.reload();
         if (!globalPref.getBoolean("Enabled", false))
             return;
@@ -74,7 +73,6 @@ public class alltrans implements IXposedHookLoadPackage {
         }
 
         XSharedPreferences localPref = new XSharedPreferences(alltrans.class.getPackage().getName(), lpparam.packageName);
-        localPref.makeWorldReadable();
         localPref.reload();
         PreferenceList.getPref(globalPref, localPref, lpparam.packageName);
         utils.debugLog("Alltrans is Enabled for Package " + lpparam.packageName);
