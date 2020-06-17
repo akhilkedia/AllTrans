@@ -20,6 +20,8 @@
 package akhil.alltrans;
 
 import android.content.Context;
+import android.database.Cursor;
+import android.net.Uri;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -30,13 +32,79 @@ import java.util.HashMap;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedBridge;
 
+import android.app.AndroidAppHelper;
+import android.app.Application;
+import android.content.Context;
+import android.content.ContextWrapper;
+import android.database.Cursor;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.net.Uri;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.TextView;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.Semaphore;
+
+import de.robv.android.xposed.IXposedHookLoadPackage;
+import de.robv.android.xposed.XSharedPreferences;
+import de.robv.android.xposed.XposedHelpers;
+import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
+
+import static de.robv.android.xposed.XposedHelpers.findAndHookConstructor;
+import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
+
 class AttachBaseContextHookHandler extends XC_MethodHook {
     @Override
     protected void beforeHookedMethod(MethodHookParam methodHookParam) {
-        XposedBridge.log("AllTrans: in attachBaseContext of ContextWrapper");
-        alltrans.context = (Context) methodHookParam.args[0];
-        utils.debugLog("Successfully got context!");
+        Context context = (Context) methodHookParam.args[0];
+        String packageName = context.getPackageName();
+        XposedBridge.log("AllTrans: in attachBaseContext of ContextWrapper for package " + packageName);
+        if (context.getApplicationContext() == null){
+            return;
+        }
+//        TODO: Verify using this context is fine.
+        if(alltrans.context != null){
+            return;
+        }
+        alltrans.context = ((Context) methodHookParam.args[0]).getApplicationContext();
+        utils.debugLog("Successfully got context for package " + packageName);
 
+        utils.debugLog(alltrans.context.getPackageName());
+        Cursor cursor = alltrans.context.getContentResolver().query(Uri.parse("content://akhil.alltrans.sharedPrefProvider/" + packageName),null,null,null,null);
+        if (cursor == null || !cursor.moveToFirst()){
+            return;
+        }
+        String globalPref = cursor.getString(cursor.getColumnIndex("sharedPreferences"));
+        String localPref = null;
+        if (!cursor.moveToNext()){
+            localPref = globalPref;
+        } else{
+            localPref = cursor.getString(cursor.getColumnIndex("sharedPreferences"));
+        }
+        cursor.close();
+        utils.debugLog(globalPref);
+        utils.debugLog(localPref);
+        PreferenceList.getPref(globalPref, localPref, packageName);
+
+        if (!PreferenceList.Enabled)
+            return;
+        if (!PreferenceList.LocalEnabled)
+            return;
+
+        utils.Debug = PreferenceList.Debug;
+        utils.Rooted = PreferenceList.Rooted;
+        if (!utils.Rooted) {
+            utils.debugLog("We are in Taichi/VirtualXposed for package : " + packageName);
+        }
+
+        utils.debugLog("Alltrans is Enabled for Package " + packageName);
+
+//        Delete Cache if needed
         if (PreferenceList.Caching) {
             if (alltrans.cache.isEmpty()) {
                 clearCacheIfNeeded(alltrans.context, PreferenceList.CachingTime);
@@ -44,7 +112,7 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
                 try {
                     FileInputStream fileInputStream = alltrans.context.openFileInput("AllTransCache");
                     ObjectInputStream s = new ObjectInputStream(fileInputStream);
-                    //noinspection unchecked
+                    //noinspection
                     if (alltrans.cache.isEmpty()) {
                         alltrans.cache = (HashMap<String, String>) s.readObject();
                     }
@@ -59,6 +127,32 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
                 alltrans.cacheAccess.release();
             }
         }
+
+
+        //Hook all Text String methods
+        SetTextHookHandler setTextHook = new SetTextHookHandler();
+        if (PreferenceList.SetText)
+            findAndHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, setTextHook);
+        if (PreferenceList.SetHint)
+            findAndHookMethod(TextView.class, "setHint", CharSequence.class, setTextHook);
+
+        if (PreferenceList.LoadURL) {
+            // Hook WebView Constructor to inject JS object
+            findAndHookConstructor(WebView.class, Context.class, AttributeSet.class, int.class, int.class, Map.class, boolean.class, new WebViewOnCreateHookHandler());
+            if (!utils.Rooted) {
+                findAndHookMethod(WebView.class, "setWebViewClient", WebViewClient.class, new WebViewSetClientHookHandler());
+            } else {
+                findAndHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewOnLoadHookHandler());
+            }
+        }
+
+
+        if (PreferenceList.DrawText) {
+            findAndHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            findAndHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            findAndHookMethod(Canvas.class, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+        }
+
     }
 
     protected void clearCacheIfNeeded(Context context, long cachingTime) {

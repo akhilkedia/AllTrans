@@ -19,9 +19,17 @@
 
 package akhil.alltrans;
 
-import de.robv.android.xposed.XSharedPreferences;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.util.Map;
 
 class PreferenceList {
+    public static boolean Enabled;
+    public static boolean LocalEnabled;
+    public static boolean Debug;
+    public static boolean Rooted;
+
     public static String SubscriptionKey;
     public static String TranslateFromLanguage;
     public static String TranslateToLanguage;
@@ -38,32 +46,39 @@ class PreferenceList {
     public static int DelayWebView;
     public static boolean Scroll;
 
-    public static void getPref(XSharedPreferences gPref, XSharedPreferences lPref, String packageName) {
-        SubscriptionKey = gPref.getString("SubscriptionKey", "");
-        EnableYandex = gPref.getBoolean("EnableYandex", false);
-        //TODO: why is DelayWebView being read from gPref and not lPref?!
-        DelayWebView = Integer.parseInt(gPref.getString("DelayWebView", "500"));
-        //boolean anon = gPref.getBoolean("Anon", true);
-        //boolean debug = gPref.getBoolean("Debug", false);
-        //boolean localEnabled = gPref.getBoolean(packageName, false);
+    public static Object getValue(Map<String, Object> pref, String key, Object defValue){
+        return pref.containsKey(key) ? pref.get(key) : defValue;
+    }
 
-        CachingTime = lPref.getLong("ClearCacheTime", 0L);
+    public static void getPref(String globalPref, String localPref, String packageName) {
+        Map<String, Object> gPref = new Gson().fromJson(globalPref, new TypeToken<Map<String, Object>>() { }.getType());
+        Map<String, Object> lPref = new Gson().fromJson(localPref, new TypeToken<Map<String, Object>>() { }.getType());
 
-        if (lPref.contains("OverRide")) {
-            if (lPref.getBoolean("OverRide", false))
-                gPref = lPref;
+        Enabled = (boolean) getValue(gPref,"Enabled", false);
+        LocalEnabled = (boolean) getValue(gPref,packageName, false);
+        Debug = (boolean) getValue(gPref,"Debug", false);
+        Rooted = (boolean) getValue(gPref,"Rooted", false);
+
+        SubscriptionKey = (String) getValue(gPref,"SubscriptionKey", "");
+        EnableYandex = (boolean) getValue(gPref,"EnableYandex", false);
+
+        CachingTime = (long) getValue(lPref,"ClearCacheTime", 0L);
+
+        if ((boolean) getValue(lPref,"OverRide", false)) {
+            gPref = lPref;
         }
 
-        TranslateFromLanguage = gPref.getString("TranslateFromLanguage", "");
-        TranslateToLanguage = gPref.getString("TranslateToLanguage", "");
+        TranslateFromLanguage = (String) getValue(gPref,"TranslateFromLanguage", "");
+        TranslateToLanguage = (String) getValue(gPref,"TranslateToLanguage", "");
 
-        SetText = gPref.getBoolean("SetText", true);
-        SetHint = gPref.getBoolean("SetHint", true);
-        LoadURL = gPref.getBoolean("LoadURL", true);
-        DrawText = gPref.getBoolean("DrawText", false);
+        SetText = (boolean) getValue(gPref,"SetText", true);
+        SetHint = (boolean) getValue(gPref,"SetHint", true);
+        LoadURL = (boolean) getValue(gPref,"LoadURL", true);
+        DrawText = (boolean) getValue(gPref,"DrawText", false);
 
-        Caching = gPref.getBoolean("Cache", true);
-        Delay = Integer.parseInt(gPref.getString("Delay", "0"));
-        Scroll = gPref.getBoolean("Scroll", true);
+        Caching = (boolean) getValue(gPref,"Cache", true);
+        Delay = Integer.parseInt((String) getValue(gPref,"Delay", "0"));
+        Scroll = (boolean) getValue(gPref,"Scroll", false);
+        DelayWebView = Integer.parseInt((String) getValue(gPref,"DelayWebView", "500"));
     }
 }

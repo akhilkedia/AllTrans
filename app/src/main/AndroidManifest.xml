@@ -53,6 +53,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:authorities="akhil.alltrans.sharedPrefProvider"
+            android:name="akhil.alltrans.sharedPrefProvider"
+            android:exported="true"/>
     </application>
 
 </manifest>
