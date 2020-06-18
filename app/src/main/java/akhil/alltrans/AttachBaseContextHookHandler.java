@@ -151,7 +151,6 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
         try {
             FileInputStream fileInputStream = context.openFileInput("AllTransCacheClear");
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-            //noinspection unchecked
             lastClearTime = (long) objectInputStream.readObject();
             objectInputStream.close();
         } catch (Exception e) {

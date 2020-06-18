@@ -75,7 +75,7 @@ public class AppListFragment extends Fragment {
     public void onStart() {
         super.onStart();
         context = this.getActivity();
-        //noinspection deprecation,deprecation
+        //noinspection deprecation
         settings = this.getActivity().getSharedPreferences("AllTransPref", Context.MODE_PRIVATE);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
 

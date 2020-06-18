@@ -54,7 +54,8 @@
         <provider
             android:authorities="akhil.alltrans.sharedPrefProvider"
             android:name="akhil.alltrans.sharedPrefProvider"
-            android:exported="true"/>
+            android:exported="true"
+            tools:ignore="ExportedContentProvider" />
     </application>
 
 </manifest>

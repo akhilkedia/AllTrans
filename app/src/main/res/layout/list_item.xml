@@ -40,7 +40,7 @@
         android:layout_height="match_parent"
         android:contentDescription="@string/app_icon"
         android:gravity="fill"
-        android:src="@drawable/ic_launcher"
+        android:src="@drawable/ic_list_icon_placeholder"
         app:layout_marginStartPercent="10%"
         app:layout_marginEndPercent="75%"
         app:layout_widthPercent="15%" />
