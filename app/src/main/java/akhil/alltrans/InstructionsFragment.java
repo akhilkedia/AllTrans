@@ -45,7 +45,7 @@ public class InstructionsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.readme)));
-        StringBuilder datax = new StringBuilder("");
+        StringBuilder datax = new StringBuilder();
         try {
             String readString = bufferedReader.readLine();
             while (readString != null) {
