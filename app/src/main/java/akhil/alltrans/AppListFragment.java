@@ -19,7 +19,6 @@
 
 package akhil.alltrans;
 
-import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -28,10 +27,6 @@ import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,6 +48,11 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 public class AppListFragment extends Fragment {
 
@@ -79,7 +79,7 @@ public class AppListFragment extends Fragment {
         settings = this.getActivity().getSharedPreferences("AllTransPref", Context.MODE_PRIVATE);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
 
-        if( BuildConfig.DEBUG ){
+        if (BuildConfig.DEBUG) {
             SharedPreferences.Editor editor = settings.edit();
             editor.putBoolean("codepath.apps.demointroandroid", true);
             editor.putBoolean("com.astroframe.seoulbus", true);

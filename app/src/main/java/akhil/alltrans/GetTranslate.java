@@ -21,13 +21,13 @@ package akhil.alltrans;
 
 import android.os.Handler;
 import android.os.Looper;
-import androidx.annotation.NonNull;
 import android.util.Log;
 
 import org.json.JSONArray;
 
 import java.io.IOException;
 
+import androidx.annotation.NonNull;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
@@ -44,17 +44,16 @@ public class GetTranslate implements Callback {
     public void onResponse(@NonNull Call call, Response response) {
         try {
 //            Error in Response
-            if(response.code() != 200){
+            if (response.code() != 200) {
                 utils.debugLog("Got response code as : " + response.code());
                 translatedString = stringToBeTrans;
-                try{
+                try {
                     String result = response.body().string();
                     response.body().close();
                     utils.debugLog("Got response body as : " + result);
                 } catch (NullPointerException | IOException ignored) {
                 }
-            }
-            else {
+            } else {
 //            Successful http call
                 String result = response.body().string();
                 response.body().close();
@@ -64,8 +63,7 @@ public class GetTranslate implements Callback {
                     if (PreferenceList.EnableYandex) {
                         translatedString = result.substring(result.indexOf("<text>") + 6, result.lastIndexOf("</text>"));
                         translatedString = utils.XMLUnescape(translatedString);
-                    }
-                    else {
+                    } else {
                         translatedString = new JSONArray(result).getJSONObject(0).getJSONArray("translations").getJSONObject(0).getString("text");
 //                        Ideally we don't need to do this, but Microsoft return these escape sequences sometimes..
                         translatedString = utils.XMLUnescape(translatedString);

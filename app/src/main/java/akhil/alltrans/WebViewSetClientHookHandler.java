@@ -19,7 +19,6 @@
 
 package akhil.alltrans;
 
-import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import de.robv.android.xposed.XC_MethodHook;

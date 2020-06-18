@@ -34,9 +34,6 @@ import java.nio.CharBuffer;
 import de.robv.android.xposed.XC_MethodReplacement;
 import de.robv.android.xposed.XposedBridge;
 
-import static de.robv.android.xposed.XposedBridge.hookMethod;
-import static de.robv.android.xposed.XposedBridge.unhookMethod;
-
 public class DrawTextHookHandler extends XC_MethodReplacement implements OriginalCallable {
 
     /**
@@ -90,8 +87,8 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
         if (myArgs[0].getClass().equals(AlteredCharSequence.class)) {
             myArgs[0] = AlteredCharSequence.make(translatedString, null, 0, 0);
         } else if (myArgs[0].getClass().equals(CharBuffer.class)) {
-                CharBuffer charBuffer = CharBuffer.allocate(translatedString.length() + 1);
-                charBuffer.append(translatedString);
+            CharBuffer charBuffer = CharBuffer.allocate(translatedString.length() + 1);
+            charBuffer.append(translatedString);
             myArgs[0] = charBuffer;
         } else if (myArgs[0].getClass().equals(SpannableString.class)) {
             myArgs[0] = new SpannableString(translatedString);
@@ -103,9 +100,9 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
             myArgs[0] = new StringBuffer(translatedString);
         } else if (myArgs[0].getClass().equals(StringBuilder.class)) {
             myArgs[0] = new StringBuilder(translatedString);
-            } else {
+        } else {
             myArgs[0] = new SpannableStringBuilder(translatedString);
-            }
+        }
 
         Paint tempPaint = (Paint) myArgs[myArgs.length - 1];
         Canvas tempCanvas = (Canvas) methodHookParam.thisObject;

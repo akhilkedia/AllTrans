@@ -21,30 +21,16 @@ package akhil.alltrans;
 
 
 import android.annotation.SuppressLint;
-import android.app.AndroidAppHelper;
 import android.app.Application;
 import android.content.Context;
 import android.content.ContextWrapper;
-import android.database.Cursor;
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.net.Uri;
-import android.util.AttributeSet;
-import android.util.Log;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.TextView;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.Semaphore;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
-import de.robv.android.xposed.XSharedPreferences;
-import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
-import static de.robv.android.xposed.XposedHelpers.findAndHookConstructor;
 import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 
 

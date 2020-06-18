@@ -20,17 +20,17 @@
 package akhil.alltrans;
 
 import android.os.Bundle;
-import androidx.preference.SwitchPreference;
+
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
-
+import androidx.preference.SwitchPreference;
 
 
 public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
 
-    private void fixNotRooted(){
+    private void fixNotRooted() {
         SwitchPreference rooted = (SwitchPreference) findPreference("Rooted");
         SwitchPreference drawText = (SwitchPreference) findPreference("DrawText");
         rooted.setVisible(false);
@@ -54,7 +54,7 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
         fixNotRooted();
 
         SwitchPreference enableYandex = (SwitchPreference) findPreference("EnableYandex");
-        String subscriptionKey1 = getPreferenceManager().getSharedPreferences().getString("SubscriptionKey","Enter");
+        String subscriptionKey1 = getPreferenceManager().getSharedPreferences().getString("SubscriptionKey", "Enter");
         if (subscriptionKey1.startsWith("Enter") || subscriptionKey1.equals(getString(R.string.subKey_defaultValue)))
             enableYandex.setChecked(true);
 

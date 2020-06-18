@@ -21,7 +21,6 @@ package akhil.alltrans;
 
 
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +29,8 @@ import android.webkit.WebView;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
+import androidx.fragment.app.Fragment;
 
 
 /**

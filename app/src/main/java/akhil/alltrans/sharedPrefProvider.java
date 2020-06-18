@@ -29,9 +29,6 @@ import android.net.Uri;
 
 import com.google.gson.Gson;
 
-import java.util.Collections;
-import java.util.Map;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -51,10 +48,10 @@ public class sharedPrefProvider extends ContentProvider {
 
         SharedPreferences globalPref = this.getContext().getSharedPreferences("AllTransPref", Context.MODE_PRIVATE);
         MatrixCursor.RowBuilder builder = cursor.newRow();
-        String globalPrefGson =  new Gson().toJson(globalPref.getAll());
+        String globalPrefGson = new Gson().toJson(globalPref.getAll());
         builder.add(globalPrefGson);
-        if (globalPref.getBoolean(packageName, false)){
-            String localPrefGson =  new Gson().toJson(this.getContext().getSharedPreferences(packageName, Context.MODE_PRIVATE).getAll());
+        if (globalPref.getBoolean(packageName, false)) {
+            String localPrefGson = new Gson().toJson(this.getContext().getSharedPreferences(packageName, Context.MODE_PRIVATE).getAll());
             builder = cursor.newRow();
             builder.add(localPrefGson);
         }

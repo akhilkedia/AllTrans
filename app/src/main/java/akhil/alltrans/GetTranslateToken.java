@@ -30,24 +30,18 @@ import org.json.JSONObject;
 import java.io.File;
 import java.io.IOException;
 import java.net.URLEncoder;
-import java.util.Collections;
 import java.util.concurrent.Semaphore;
 
 import okhttp3.Cache;
-import okhttp3.CacheControl;
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.ConnectionSpec;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
-import okhttp3.Response;
 
 //class GetTranslateToken implements Callback {
 class GetTranslateToken {
     private static final Semaphore available = new Semaphore(1, true);
-//    private static String userCredentials;
+    //    private static String userCredentials;
 //    private static long lastExpireTime = 0;
     private static OkHttpClient httpsClient;
     private static final MediaType JSON_MEDIA_TYPE = MediaType.parse("application/json; charset=utf-8");

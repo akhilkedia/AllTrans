@@ -46,39 +46,41 @@ class PreferenceList {
     public static int DelayWebView;
     public static boolean Scroll;
 
-    public static Object getValue(Map<String, Object> pref, String key, Object defValue){
+    public static Object getValue(Map<String, Object> pref, String key, Object defValue) {
         return pref.containsKey(key) ? pref.get(key) : defValue;
     }
 
     public static void getPref(String globalPref, String localPref, String packageName) {
-        Map<String, Object> gPref = new Gson().fromJson(globalPref, new TypeToken<Map<String, Object>>() { }.getType());
-        Map<String, Object> lPref = new Gson().fromJson(localPref, new TypeToken<Map<String, Object>>() { }.getType());
+        Map<String, Object> gPref = new Gson().fromJson(globalPref, new TypeToken<Map<String, Object>>() {
+        }.getType());
+        Map<String, Object> lPref = new Gson().fromJson(localPref, new TypeToken<Map<String, Object>>() {
+        }.getType());
 
-        Enabled = (boolean) getValue(gPref,"Enabled", false);
-        LocalEnabled = (boolean) getValue(gPref,packageName, false);
-        Debug = (boolean) getValue(gPref,"Debug", false);
-        Rooted = (boolean) getValue(gPref,"Rooted", false);
+        Enabled = (boolean) getValue(gPref, "Enabled", false);
+        LocalEnabled = (boolean) getValue(gPref, packageName, false);
+        Debug = (boolean) getValue(gPref, "Debug", false);
+        Rooted = (boolean) getValue(gPref, "Rooted", false);
 
-        SubscriptionKey = (String) getValue(gPref,"SubscriptionKey", "");
-        EnableYandex = (boolean) getValue(gPref,"EnableYandex", false);
+        SubscriptionKey = (String) getValue(gPref, "SubscriptionKey", "");
+        EnableYandex = (boolean) getValue(gPref, "EnableYandex", false);
 
-        CachingTime = Long.parseLong((String) getValue(lPref,"ClearCacheTime", "0"));
+        CachingTime = Long.parseLong((String) getValue(lPref, "ClearCacheTime", "0"));
 
-        if ((boolean) getValue(lPref,"OverRide", false)) {
+        if ((boolean) getValue(lPref, "OverRide", false)) {
             gPref = lPref;
         }
 
-        TranslateFromLanguage = (String) getValue(gPref,"TranslateFromLanguage", "");
-        TranslateToLanguage = (String) getValue(gPref,"TranslateToLanguage", "");
+        TranslateFromLanguage = (String) getValue(gPref, "TranslateFromLanguage", "");
+        TranslateToLanguage = (String) getValue(gPref, "TranslateToLanguage", "");
 
-        SetText = (boolean) getValue(gPref,"SetText", true);
-        SetHint = (boolean) getValue(gPref,"SetHint", true);
-        LoadURL = (boolean) getValue(gPref,"LoadURL", true);
-        DrawText = (boolean) getValue(gPref,"DrawText", false);
+        SetText = (boolean) getValue(gPref, "SetText", true);
+        SetHint = (boolean) getValue(gPref, "SetHint", true);
+        LoadURL = (boolean) getValue(gPref, "LoadURL", true);
+        DrawText = (boolean) getValue(gPref, "DrawText", false);
 
-        Caching = (boolean) getValue(gPref,"Cache", true);
-        Delay = Integer.parseInt((String) getValue(gPref,"Delay", "0"));
-        Scroll = (boolean) getValue(gPref,"Scroll", false);
-        DelayWebView = Integer.parseInt((String) getValue(gPref,"DelayWebView", "500"));
+        Caching = (boolean) getValue(gPref, "Cache", true);
+        Delay = Integer.parseInt((String) getValue(gPref, "Delay", "0"));
+        Scroll = (boolean) getValue(gPref, "Scroll", false);
+        DelayWebView = Integer.parseInt((String) getValue(gPref, "DelayWebView", "500"));
     }
 }

@@ -21,39 +21,23 @@ package akhil.alltrans;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.net.Uri;
+import android.util.AttributeSet;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.TextView;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.HashMap;
+import java.util.Map;
 
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedBridge;
-
-import android.app.AndroidAppHelper;
-import android.app.Application;
-import android.content.Context;
-import android.content.ContextWrapper;
-import android.database.Cursor;
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.net.Uri;
-import android.util.AttributeSet;
-import android.util.Log;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.TextView;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.Semaphore;
-
-import de.robv.android.xposed.IXposedHookLoadPackage;
-import de.robv.android.xposed.XSharedPreferences;
-import de.robv.android.xposed.XposedHelpers;
-import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
 import static de.robv.android.xposed.XposedHelpers.findAndHookConstructor;
 import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
@@ -64,26 +48,26 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
         Context context = (Context) methodHookParam.args[0];
         String packageName = context.getPackageName();
         XposedBridge.log("AllTrans: in attachBaseContext of ContextWrapper for package " + packageName);
-        if (context.getApplicationContext() == null){
+        if (context.getApplicationContext() == null) {
             return;
         }
 //        TODO: Verify using this context is fine.
-        if(alltrans.context != null){
+        if (alltrans.context != null) {
             return;
         }
         alltrans.context = ((Context) methodHookParam.args[0]).getApplicationContext();
         utils.debugLog("Successfully got context for package " + packageName);
 
         utils.debugLog(alltrans.context.getPackageName());
-        Cursor cursor = alltrans.context.getContentResolver().query(Uri.parse("content://akhil.alltrans.sharedPrefProvider/" + packageName),null,null,null,null);
-        if (cursor == null || !cursor.moveToFirst()){
+        Cursor cursor = alltrans.context.getContentResolver().query(Uri.parse("content://akhil.alltrans.sharedPrefProvider/" + packageName), null, null, null, null);
+        if (cursor == null || !cursor.moveToFirst()) {
             return;
         }
         String globalPref = cursor.getString(cursor.getColumnIndex("sharedPreferences"));
         String localPref = null;
-        if (!cursor.moveToNext()){
+        if (!cursor.moveToNext()) {
             localPref = globalPref;
-        } else{
+        } else {
             localPref = cursor.getString(cursor.getColumnIndex("sharedPreferences"));
         }
         cursor.close();

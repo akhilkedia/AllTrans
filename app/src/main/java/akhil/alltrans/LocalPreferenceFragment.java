@@ -19,17 +19,17 @@
 
 package akhil.alltrans;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.os.Bundle;
-import androidx.preference.SwitchPreference;
+import android.widget.Toast;
+
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
-import android.widget.Toast;
+import androidx.preference.SwitchPreference;
 
 
 public class LocalPreferenceFragment extends PreferenceFragmentCompat {

@@ -21,18 +21,20 @@ package akhil.alltrans;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import com.google.android.material.tabs.TabLayout;
-import androidx.fragment.app.FragmentActivity;
-import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
+import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.analytics.FirebaseAnalytics;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentActivity;
 
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
     //public static String TAG = "alltrans";
     @SuppressWarnings({"FieldCanBeLocal", "unused"})
     private FirebaseAnalytics mFirebaseAnalytics;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

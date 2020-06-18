@@ -24,8 +24,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.text.TextUtils;
+import android.util.Log;
 
 import java.io.StringWriter;
 import java.util.Locale;
@@ -34,8 +34,8 @@ class utils {
     public static boolean Debug = true;
     public static boolean Rooted = false;
 
-    public static boolean check_not_xposed(Context context){
-        if (isVirtualXposed()){
+    public static boolean check_not_xposed(Context context) {
+        if (isVirtualXposed()) {
             return true;
         }
         return isExpModuleActive(context);

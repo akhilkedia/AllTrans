@@ -40,8 +40,6 @@ import java.nio.CharBuffer;
 import de.robv.android.xposed.XC_MethodReplacement;
 import de.robv.android.xposed.XposedBridge;
 
-import static de.robv.android.xposed.XposedBridge.hookMethod;
-import static de.robv.android.xposed.XposedBridge.unhookMethod;
 import static de.robv.android.xposed.XposedHelpers.callMethod;
 
 
@@ -49,7 +47,7 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
 
 
     public static boolean isNotWhiteSpace(String abc) {
-       return !(abc == null || "".equals(abc)) && !abc.matches("^\\s*$");
+        return !(abc == null || "".equals(abc)) && !abc.matches("^\\s*$");
     }
 
     public void callOriginalMethod(CharSequence translatedString, Object userData) {
@@ -117,7 +115,7 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
                 textView.setSelected(true);
                 textView.setMarqueeRepeatLimit(-1);
                 MovementMethod alreadyScrolling = textView.getMovementMethod();
-                if (alreadyScrolling == null){
+                if (alreadyScrolling == null) {
                     textView.setVerticalScrollBarEnabled(true);
                     textView.setMovementMethod(new ScrollingMovementMethod());
                     textView.setOnTouchListener(new View.OnTouchListener() {
@@ -134,7 +132,7 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
             Log.e("AllTrans", "AllTrans: Got error in checking editable TextView : " + Log.getStackTraceString(e));
         }
 
-        if(!isNotWhiteSpace(stringArgs)){
+        if (!isNotWhiteSpace(stringArgs)) {
             callOriginalMethod(stringArgs, methodHookParam);
             return null;
         }
@@ -159,10 +157,10 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
             final String finalString = translatedString;
             final MethodHookParam finalMethodHookParam = methodHookParam;
             new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        callOriginalMethod(finalString, finalMethodHookParam);
-                    }
+                @Override
+                public void run() {
+                    callOriginalMethod(finalString, finalMethodHookParam);
+                }
             }, PreferenceList.Delay);
 
             return null;
