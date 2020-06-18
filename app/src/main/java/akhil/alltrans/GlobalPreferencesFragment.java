@@ -21,6 +21,7 @@ package akhil.alltrans;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
@@ -31,8 +32,10 @@ import androidx.preference.SwitchPreference;
 public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
 
     private void fixNotRooted() {
-        SwitchPreference rooted = (SwitchPreference) findPreference("Rooted");
-        SwitchPreference drawText = (SwitchPreference) findPreference("DrawText");
+        SwitchPreference rooted = findPreference("Rooted");
+        SwitchPreference drawText = findPreference("DrawText");
+        assert rooted != null;
+        assert drawText != null;
         rooted.setVisible(false);
         if (utils.check_not_xposed(getActivity())) {
             utils.debugLog("This is Not Xposed, this is VirtualXposed or Taichi!");
@@ -53,19 +56,25 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
 
         fixNotRooted();
 
-        SwitchPreference enableYandex = (SwitchPreference) findPreference("EnableYandex");
+        SwitchPreference enableYandex = findPreference("EnableYandex");
         String subscriptionKey1 = getPreferenceManager().getSharedPreferences().getString("SubscriptionKey", "Enter");
-        if (subscriptionKey1.startsWith("Enter") || subscriptionKey1.equals(getString(R.string.subKey_defaultValue)))
+        assert subscriptionKey1 != null;
+        assert enableYandex != null;
+        if (subscriptionKey1.startsWith("Enter") || subscriptionKey1.equals(getString(R.string.subKey_defaultValue))) {
             enableYandex.setChecked(true);
+        }
 
         if (enableYandex.isChecked()) {
-            ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
+            ListPreference translateFromLanguage = findPreference("TranslateFromLanguage");
+            assert translateFromLanguage != null;
             translateFromLanguage.setEntries(R.array.languageNamesYandex);
             translateFromLanguage.setEntryValues(R.array.languageCodesYandex);
-            ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
+            ListPreference translateToLanguage = findPreference("TranslateToLanguage");
+            assert translateToLanguage != null;
             translateToLanguage.setEntries(R.array.languageNamesYandex);
             translateToLanguage.setEntryValues(R.array.languageCodesYandex);
             Preference subscriptionKey = findPreference("SubscriptionKey");
+            assert subscriptionKey != null;
             subscriptionKey.setTitle(getString(R.string.subKey_yandex));
         }
 
@@ -73,22 +82,28 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 if ((Boolean) newValue) {
-                    ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
+                    ListPreference translateFromLanguage = findPreference("TranslateFromLanguage");
+                    assert translateFromLanguage != null;
                     translateFromLanguage.setEntries(R.array.languageNamesYandex);
                     translateFromLanguage.setEntryValues(R.array.languageCodesYandex);
-                    ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
+                    ListPreference translateToLanguage = findPreference("TranslateToLanguage");
+                    assert translateToLanguage != null;
                     translateToLanguage.setEntries(R.array.languageNamesYandex);
                     translateToLanguage.setEntryValues(R.array.languageCodesYandex);
                     Preference subscriptionKey = findPreference("SubscriptionKey");
+                    assert subscriptionKey != null;
                     subscriptionKey.setTitle(getString(R.string.subKey_yandex));
                 } else {
-                    ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
+                    ListPreference translateFromLanguage = findPreference("TranslateFromLanguage");
+                    assert translateFromLanguage != null;
                     translateFromLanguage.setEntries(R.array.languageNames);
                     translateFromLanguage.setEntryValues(R.array.languageCodes);
-                    ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
+                    ListPreference translateToLanguage = findPreference("TranslateToLanguage");
+                    assert translateToLanguage != null;
                     translateToLanguage.setEntries(R.array.languageNames);
                     translateToLanguage.setEntryValues(R.array.languageCodes);
                     Preference subscriptionKey = findPreference("SubscriptionKey");
+                    assert subscriptionKey != null;
                     subscriptionKey.setTitle(getString(R.string.subKey_micro));
                 }
                 return true;
@@ -98,7 +113,7 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
 
     //TODO: Check this does not mess things up.
     @Override
-    public void onSaveInstanceState(final Bundle outState) {
+    public void onSaveInstanceState(@NonNull final Bundle outState) {
         setTargetFragment(null, -1);
     }
 }

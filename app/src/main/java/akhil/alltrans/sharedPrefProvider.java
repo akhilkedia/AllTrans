@@ -46,6 +46,7 @@ public class sharedPrefProvider extends ContentProvider {
         String[] cols = {"sharedPreferences"};
         MatrixCursor cursor = new MatrixCursor(cols);
 
+        //noinspection ConstantConditions
         SharedPreferences globalPref = this.getContext().getSharedPreferences("AllTransPref", Context.MODE_PRIVATE);
         MatrixCursor.RowBuilder builder = cursor.newRow();
         String globalPrefGson = new Gson().toJson(globalPref.getAll());

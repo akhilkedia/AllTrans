@@ -25,6 +25,7 @@ import android.content.pm.ApplicationInfo;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
@@ -36,12 +37,9 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
     public ApplicationInfo applicationInfo;
     private SharedPreferences settings;
 
-    public LocalPreferenceFragment() {
-
-    }
-
     @Override
     public void onCreatePreferences(Bundle bundle, String rootKey) {
+        //noinspection ConstantConditions
         settings = this.getActivity().getSharedPreferences("AllTransPref", Context.MODE_PRIVATE);
         final PreferenceManager preferenceManager = getPreferenceManager();
         preferenceManager.setSharedPreferencesName(applicationInfo.packageName);
@@ -63,29 +61,35 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
         }
         addPreferencesFromResource(R.xml.perappprefs);
 
-        SwitchPreference drawText = (SwitchPreference) findPreference("DrawText");
+        SwitchPreference drawText = findPreference("DrawText");
         if (utils.check_not_xposed(getActivity())) {
+            assert drawText != null;
             drawText.setChecked(false);
             drawText.setVisible(false);
         }
 
         if (enabledYandex) {
-            ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
+            ListPreference translateFromLanguage = findPreference("TranslateFromLanguage");
+            assert translateFromLanguage != null;
             translateFromLanguage.setEntries(R.array.languageNamesYandex);
             translateFromLanguage.setEntryValues(R.array.languageCodesYandex);
-            ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
+            ListPreference translateToLanguage = findPreference("TranslateToLanguage");
+            assert translateToLanguage != null;
             translateToLanguage.setEntries(R.array.languageNamesYandex);
             translateToLanguage.setEntryValues(R.array.languageCodesYandex);
         } else {
-            ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
+            ListPreference translateFromLanguage = findPreference("TranslateFromLanguage");
+            assert translateFromLanguage != null;
             translateFromLanguage.setEntries(R.array.languageNames);
             translateFromLanguage.setEntryValues(R.array.languageCodes);
-            ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
+            ListPreference translateToLanguage = findPreference("TranslateToLanguage");
+            assert translateToLanguage != null;
             translateToLanguage.setEntries(R.array.languageNames);
             translateToLanguage.setEntryValues(R.array.languageCodes);
         }
 
         Preference clearCache = findPreference("ClearCache");
+        assert clearCache != null;
         clearCache.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
@@ -102,6 +106,7 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
         });
 
         Preference localEnabled = findPreference("LocalEnabled");
+        assert localEnabled != null;
         localEnabled.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -121,7 +126,7 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
 
     //TODO: Check this does not mess things up.
     @Override
-    public void onSaveInstanceState(final Bundle outState) {
+    public void onSaveInstanceState(@NonNull final Bundle outState) {
         setTargetFragment(null, -1);
     }
 

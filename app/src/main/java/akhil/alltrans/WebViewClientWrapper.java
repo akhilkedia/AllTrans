@@ -37,7 +37,7 @@ import android.webkit.WebViewClient;
 
 
 public class WebViewClientWrapper extends WebViewClient {
-    private WebViewClient oriClient;
+    private final WebViewClient oriClient;
 
     public WebViewClientWrapper(WebViewClient ori) {
         super();
@@ -46,12 +46,14 @@ public class WebViewClientWrapper extends WebViewClient {
 
     @Override
     public int hashCode() {
+        //noinspection ResultOfMethodCallIgnored
         super.hashCode();
         return oriClient.hashCode();
     }
 
     @Override
     public boolean equals(Object obj) {
+        //noinspection ResultOfMethodCallIgnored
         super.equals(obj);
         return oriClient.equals(obj);
     }
@@ -63,13 +65,9 @@ public class WebViewClientWrapper extends WebViewClient {
 
     @Override
     public String toString() {
+        //noinspection ResultOfMethodCallIgnored
         super.toString();
         return oriClient.toString();
-    }
-
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
     }
 
     @Override

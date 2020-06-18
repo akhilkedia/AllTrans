@@ -209,7 +209,7 @@ public class VirtWebViewOnLoad implements OriginalCallable {
                 "    allTransDoReplaceAll(all);\n" +
                 "}\n" +
                 "\n" +
-                "setTimeout(doAll, \" + PreferenceList.DelayWebView + \");";
+                "setTimeout(doAll, " + PreferenceList.DelayWebView + ");";
 
         myEvaluateJavaScript(webView, script);
 //        "\n" +
@@ -237,7 +237,7 @@ public class VirtWebViewOnLoad implements OriginalCallable {
 
             if (PreferenceList.Caching) {
                 alltrans.cacheAccess.acquireUninterruptibly();
-                if (alltrans.cache.containsKey(stringArgs)) {
+                if (alltrans.cache.containsKey(stringArgs) && alltrans.cache.get(stringArgs) != null) {
                     final String translatedString = alltrans.cache.get(stringArgs);
                     utils.debugLog("In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
                     alltrans.cacheAccess.release();
@@ -245,6 +245,7 @@ public class VirtWebViewOnLoad implements OriginalCallable {
                     new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                         @Override
                         public void run() {
+                            assert translatedString != null;
                             callOriginalMethod(translatedString, getTranslate.userData);
                         }
                     }, PreferenceList.Delay);

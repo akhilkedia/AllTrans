@@ -30,6 +30,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 
@@ -38,12 +39,8 @@ import androidx.fragment.app.Fragment;
  */
 public class InstructionsFragment extends Fragment {
 
-    public InstructionsFragment() {
-        // Required empty public constructor
-    }
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.readme)));
         StringBuilder datax = new StringBuilder();
@@ -61,6 +58,7 @@ public class InstructionsFragment extends Fragment {
         String instructions = datax.toString();
 
 //        final String instructions = getString(R.string.how_to_use);
+        //noinspection ConstantConditions
         final WebView webView = new WebView(getActivity());
         webView.getSettings().setLoadWithOverviewMode(true);
         webView.getSettings().setUseWideViewPort(false);

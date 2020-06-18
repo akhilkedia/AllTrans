@@ -52,10 +52,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 .replace(R.id.toReplace, new AppListFragment())
                 .commitAllowingStateLoss();
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.titleBar);
+        Toolbar toolbar = findViewById(R.id.titleBar);
         toolbar.setTitle(getString(R.string.app_name) + " - " + getString(R.string.translate_anywhere));
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        TabLayout tabLayout = findViewById(R.id.tabs);
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

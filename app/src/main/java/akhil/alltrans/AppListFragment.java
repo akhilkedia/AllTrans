@@ -39,6 +39,7 @@ import android.widget.TextView;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
 
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -54,16 +55,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
+@SuppressWarnings("ALL")
 public class AppListFragment extends Fragment {
 
     private static SharedPreferences settings;
     private FragmentActivity context;
     private android.widget.ListView listview;
     private FirebaseAnalytics mFirebaseAnalytics;
-
-
-    public AppListFragment() {
-    }
 
     @Nullable
     @Override
@@ -75,7 +73,7 @@ public class AppListFragment extends Fragment {
     public void onStart() {
         super.onStart();
         context = this.getActivity();
-        //noinspection deprecation
+        //noinspection ConstantConditions
         settings = this.getActivity().getSharedPreferences("AllTransPref", Context.MODE_PRIVATE);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
 
@@ -100,7 +98,7 @@ public class AppListFragment extends Fragment {
         }
 
         //noinspection ConstantConditions
-        listview = (ListView) getView().findViewById(R.id.AppsList);
+        listview = getView().findViewById(R.id.AppsList);
 
         new PrepareAdapter().execute();
 
@@ -143,7 +141,7 @@ public class AppListFragment extends Fragment {
 
     //TODO: Check this does not mess things up.
     @Override
-    public void onSaveInstanceState(final Bundle outState) {
+    public void onSaveInstanceState(@NonNull final Bundle outState) {
         setTargetFragment(null, -1);
     }
 
@@ -178,6 +176,7 @@ public class AppListFragment extends Fragment {
         @Override
         public long getItemId(int position) {
             ApplicationInfo item = getItem(position);
+            //noinspection ConstantConditions
             return mIdMap.get(item);
         }
 
@@ -193,19 +192,16 @@ public class AppListFragment extends Fragment {
             if (convertView == null) {
                 convertView = inflater.inflate(R.layout.list_item, parent, false);
                 viewHolder = new ViewHolder();
-                viewHolder.textView = (TextView) convertView.findViewById(R.id.firstLine);
-                viewHolder.textView2 = (TextView) convertView.findViewById(R.id.secondLine);
-                viewHolder.imageView = (ImageView) convertView.findViewById(R.id.icon);
-                viewHolder.checkBox = (CheckBox) convertView.findViewById(R.id.checkBox);
+                viewHolder.textView = convertView.findViewById(R.id.firstLine);
+                viewHolder.textView2 = convertView.findViewById(R.id.secondLine);
+                viewHolder.imageView = convertView.findViewById(R.id.icon);
+                viewHolder.checkBox = convertView.findViewById(R.id.checkBox);
                 convertView.setTag(viewHolder);
             } else {
                 viewHolder = (ViewHolder) convertView.getTag();
             }
             String packageName = values.get(position).packageName;
             String label = (String) pm.getApplicationLabel(values.get(position));
-            if (label == null) {
-                label = packageName;
-            }
             Drawable icon = pm.getApplicationIcon(values.get(position));
 
             viewHolder.textView.setText(label);

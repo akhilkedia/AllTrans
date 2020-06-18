@@ -48,26 +48,29 @@ public class GetTranslate implements Callback {
                 utils.debugLog("Got response code as : " + response.code());
                 translatedString = stringToBeTrans;
                 try {
+                    //noinspection ConstantConditions
                     String result = response.body().string();
+                    //noinspection ConstantConditions
                     response.body().close();
                     utils.debugLog("Got response body as : " + result);
                 } catch (NullPointerException | IOException ignored) {
                 }
             } else {
-//            Successful http call
-                String result = response.body().string();
-                response.body().close();
-
-                utils.debugLog("In Thread " + Thread.currentThread().getId() + " In GetTranslate, setting: " + stringToBeTrans + "got response as " + result);
                 try {
+//                    Successful http call
+                    //noinspection ConstantConditions
+                    String result = response.body().string();
+                    //noinspection ConstantConditions
+                    response.body().close();
+
+                    utils.debugLog("In Thread " + Thread.currentThread().getId() + " In GetTranslate, setting: " + stringToBeTrans + "got response as " + result);
                     if (PreferenceList.EnableYandex) {
                         translatedString = result.substring(result.indexOf("<text>") + 6, result.lastIndexOf("</text>"));
-                        translatedString = utils.XMLUnescape(translatedString);
                     } else {
                         translatedString = new JSONArray(result).getJSONObject(0).getJSONArray("translations").getJSONObject(0).getString("text");
-//                        Ideally we don't need to do this, but Microsoft return these escape sequences sometimes..
-                        translatedString = utils.XMLUnescape(translatedString);
                     }
+//                    Ideally we don't need to do this, but Microsoft return these escape sequences sometimes..
+                    translatedString = utils.XMLUnescape(translatedString);
                 } catch (Exception e) {
                     Log.e("AllTrans", "AllTrans: Got error in getting string from translation as : " + Log.getStackTraceString(e));
                     translatedString = stringToBeTrans;
@@ -87,7 +90,7 @@ public class GetTranslate implements Callback {
                 utils.debugLog("In Thread " + Thread.currentThread().getId() + " In GetTranslate, setting: " + stringToBeTrans + " to :" + translatedString);
             }
 
-        } catch (java.io.IOException e) {
+        } catch (Exception e) {
             Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
             translatedString = stringToBeTrans;
         } finally {
@@ -112,7 +115,7 @@ public class GetTranslate implements Callback {
     }
 
     @Override
-    public void onFailure(Call call, IOException e) {
+    public void onFailure(@NonNull Call call, @NonNull IOException e) {
         Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
         translatedString = stringToBeTrans;
 

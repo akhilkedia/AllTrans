@@ -40,7 +40,7 @@ public class alltrans implements IXposedHookLoadPackage {
     @SuppressLint("StaticFieldLeak")
     public static final DrawTextHookHandler drawTextHook = new DrawTextHookHandler();
     @SuppressLint("StaticFieldLeak")
-    public static VirtWebViewOnLoad virtWebViewOnLoad = new VirtWebViewOnLoad();
+    public static final VirtWebViewOnLoad virtWebViewOnLoad = new VirtWebViewOnLoad();
     public static HashMap<String, String> cache = new HashMap<>();
     @SuppressLint("StaticFieldLeak")
 //    TODO: Maybe change to using WeakReference?

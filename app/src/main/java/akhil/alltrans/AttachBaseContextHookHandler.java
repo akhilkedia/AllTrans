@@ -64,7 +64,7 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
             return;
         }
         String globalPref = cursor.getString(cursor.getColumnIndex("sharedPreferences"));
-        String localPref = null;
+        String localPref;
         if (!cursor.moveToNext()) {
             localPref = globalPref;
         } else {
@@ -153,7 +153,7 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
             lastClearTime = (long) objectInputStream.readObject();
             objectInputStream.close();
-        } catch (Exception e) {
+        } catch (Exception ignored) {
         }
 
         // If we cache was cleared after we deleted cache last time, delete cache again
@@ -168,12 +168,11 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
 
                 // Actually clear cache
                 context.deleteFile("AllTransCache");
-            } catch (Exception e) {
+            } catch (Exception ignored) {
             }
         }
 
         alltrans.cacheAccess.release();
-        return;
     }
 
 }
