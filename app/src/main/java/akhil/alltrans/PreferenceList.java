@@ -62,7 +62,7 @@ class PreferenceList {
         SubscriptionKey = (String) getValue(gPref,"SubscriptionKey", "");
         EnableYandex = (boolean) getValue(gPref,"EnableYandex", false);
 
-        CachingTime = (long) getValue(lPref,"ClearCacheTime", 0L);
+        CachingTime = Long.parseLong((String) getValue(lPref,"ClearCacheTime", "0"));
 
         if ((boolean) getValue(lPref,"OverRide", false)) {
             gPref = lPref;

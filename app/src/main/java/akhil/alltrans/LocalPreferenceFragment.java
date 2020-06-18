@@ -89,7 +89,7 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
         clearCache.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
-                preferenceManager.getSharedPreferences().edit().putLong("ClearCacheTime", System.currentTimeMillis()).apply();
+                preferenceManager.getSharedPreferences().edit().putString("ClearCacheTime", System.currentTimeMillis() + "").apply();
 
                 Context context = preference.getContext();
                 CharSequence text = getString(R.string.clear_cache_success);
