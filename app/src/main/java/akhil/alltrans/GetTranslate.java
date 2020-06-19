@@ -41,7 +41,7 @@ public class GetTranslate implements Callback {
     private String translatedString;
 
     @Override
-    public void onResponse(@NonNull Call call, Response response) {
+    public void onResponse(@NonNull Call call, @NonNull Response response) {
         try {
 //            Error in Response
             if (response.code() != 200) {

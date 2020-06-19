@@ -37,6 +37,9 @@ public class VirtWebViewOnLoad implements OriginalCallable {
         WebView webView = webHookUserData2.webView;
         final String originalString = utils.javaScriptEscape(webHookUserData2.stringArgs);
         final String newString = utils.javaScriptEscape(translatedString.toString());
+        if (newString == null || newString.equals(originalString)){
+            return;
+        }
         utils.debugLog("In callOriginalMethod webView. Trying to replace -" + originalString + "-with-" + newString);
         String script = "var AllTransPlaceholderTypes = {\n" +
                 "    'date': 0,\n" +
@@ -86,7 +89,7 @@ public class VirtWebViewOnLoad implements OriginalCallable {
                 "  return result;\n" +
                 "}\n" +
                 "\n" +
-                "function allTransDoReplaceAll(all) {\n" +
+                "function allTransDoReplaceAllFinal(all) {\n" +
                 "  for (var i = 0, max = all.length; i < max; i++) {\n" +
                 "    if (all[i].tagName && all[i].tagName.toLowerCase() == 'input' && all[i].type in AllTransPlaceholderTypes) {\n" +
                 "      if (all[i].placeholder == \"" + originalString + "\") {\n" +
@@ -113,11 +116,11 @@ public class VirtWebViewOnLoad implements OriginalCallable {
                 "\n" +
                 "for (var j = 0; j < window.frames.length; j++) {\n" +
                 "  all = allTransGetAllTextNodes(window.frames[j].document);\n" +
-                "  allTransDoReplaceAll(all);\n" +
+                "  allTransDoReplaceAllFinal(all);\n" +
                 "}\n" +
                 "\n" +
                 "all = allTransGetAllTextNodes(window.document);\n" +
-                "allTransDoReplaceAll(all);";
+                "allTransDoReplaceAllFinal(all);";
 
         myEvaluateJavaScript(webView, script);
     }
@@ -207,8 +210,22 @@ public class VirtWebViewOnLoad implements OriginalCallable {
                 "\n" +
                 "    all = allTransGetAllTextNodes(window.document);\n" +
                 "    allTransDoReplaceAll(all);\n" +
+                "    window.alreadyTranslating = false\n" +
                 "}\n" +
                 "\n" +
+                "MutationObserver = window.MutationObserver || window.WebKitMutationObserver;\n" +
+                "\n" +
+                "var observer = new MutationObserver(function(mutations, observer) {\n" +
+                "    if (window.alreadyTranslating != true){\n" +
+                "        window.alreadyTranslating = true;\n" +
+                "        setTimeout(doAll, 500);\n" +
+                "    }\n" +
+                "});\n" +
+                "\n" +
+                "observer.observe(document, {\n" +
+                "  subtree: true,\n" +
+                "  childList: true\n" +
+                "});\n" +
                 "setTimeout(doAll, " + PreferenceList.DelayWebView + ");";
 
         myEvaluateJavaScript(webView, script);
@@ -221,6 +238,9 @@ public class VirtWebViewOnLoad implements OriginalCallable {
     @SuppressWarnings("unused")
     @JavascriptInterface
     public void showLog(final String stringArgs, WebView webView) {
+        if (stringArgs == null){
+            return;
+        }
         utils.debugLog("in WebView Showlog " + stringArgs);
         utils.debugLog("In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
 

@@ -92,11 +92,46 @@ public class WebViewClientWrapper extends WebViewClient {
         oriClient.onPageStarted(view, url, favicon);
     }
 
+//    private static void writeToSDFile(String html){
+//
+//        // Find the root of the external storage.
+//        // See http://developer.android.com/guide/topics/data/data-  storage.html#filesExternal
+//
+//        File root = android.os.Environment.getExternalStorageDirectory();
+//
+//        // See http://stackoverflow.com/questions/3551821/android-write-to-sd-card-folder
+//
+//        File dir = new File (root.getAbsolutePath() + "/download");
+//        dir.mkdirs();
+//        File file = new File(dir, "webview.html");
+//
+//        try {
+//            FileOutputStream f = new FileOutputStream(file);
+//            PrintWriter pw = new PrintWriter(f);
+//            pw.println(html);
+//            pw.flush();
+//            pw.close();
+//            f.close();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
+
     @SuppressLint({"JavascriptInterface", "AddJavascriptInterface"})
     @Override
     public void onPageFinished(WebView view, String url) {
         super.onPageFinished(view, url);
         oriClient.onPageFinished(view, url);
+//        view.evaluateJavascript(
+//                "(function() { return new XMLSerializer().serializeToString(document); })();",
+//                new ValueCallback<String>() {
+//                    @Override
+//                    public void onReceiveValue(String html) {
+//                        writeToSDFile(html);
+//                        utils.debugLog(html);
+//                        // code here
+//                    }
+//                });
         try {
             alltrans.virtWebViewOnLoad.afterOnLoadMethod(view);
         } catch (Throwable e) {
