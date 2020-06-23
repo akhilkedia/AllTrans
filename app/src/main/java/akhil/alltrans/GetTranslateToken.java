@@ -116,7 +116,10 @@ class GetTranslateToken {
                 httpsClient.newCall(request).enqueue(getTranslate);
             } else {
                 String baseURL = "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0";
-                String languageURL = "&from=" + PreferenceList.TranslateFromLanguage + "&to=" + PreferenceList.TranslateToLanguage;
+                String languageURL = "&to=" + PreferenceList.TranslateToLanguage;
+                if (!PreferenceList.TranslateFromLanguage.equals("auto")){
+                    languageURL += "&from=" + PreferenceList.TranslateFromLanguage;
+                }
                 String fullURL = baseURL + languageURL;
 
                 String requestBodyJson = new JSONArray().put(new JSONObject().put("Text", getTranslate.stringToBeTrans)).toString();

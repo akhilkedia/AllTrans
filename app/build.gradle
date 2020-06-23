@@ -71,10 +71,10 @@ apply plugin: 'com.google.firebase.crashlytics'
 
 afterEvaluate {
     installDebug.doLast {
-//        updateVirtualXposedAPP.exec()
-//        clearLog.exec()
-//        rebootVirtualXposedAPP.exec()
-//        launchVirtualXposedAPP.exec()
+        updateVirtualXposedAPP.exec()
+        clearLog.exec()
+        rebootVirtualXposedAPP.exec()
+        launchVirtualXposedAPP.exec()
     }
 }
 
@@ -92,6 +92,6 @@ task rebootVirtualXposedAPP(type: Exec) {
 }
 
 task launchVirtualXposedAPP(type: Exec) {
-    def pkg = "il.co.netix.webviewtest" // for example: com.tencent.mm
+    def pkg = "com.megabox.mop" // for example: com.tencent.mm
     commandLine android.adbExecutable, 'shell', 'am', 'broadcast', '-a', 'io.va.exposed.CMD', '-e', 'cmd', 'launch', '-e', 'pkg', pkg
 }

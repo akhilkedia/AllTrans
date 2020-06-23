@@ -20,6 +20,7 @@
 
 <resources>
     <string-array name="languageCodes" translatable="false">
+        <item>auto</item>
         <item>af</item>
         <item>ar</item>
         <item>bg</item>
@@ -92,6 +93,7 @@
         <item>zh-Hant</item>
     </string-array>
     <string-array name="languageNames" translatable="false">
+        <item>@string/Auto_detect_micro</item>
         <item>@string/Afrikaans_micro</item>
         <item>@string/Arabic_micro</item>
         <item>@string/Bulgarian_micro</item>

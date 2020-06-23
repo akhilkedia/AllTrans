@@ -93,6 +93,7 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
         }
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
 
@@ -119,7 +120,6 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
                     textView.setVerticalScrollBarEnabled(true);
                     textView.setMovementMethod(new ScrollingMovementMethod());
                     textView.setOnTouchListener(new View.OnTouchListener() {
-                        @SuppressLint("ClickableViewAccessibility")
                         @Override
                         public boolean onTouch(View v, MotionEvent event) {
                             v.getParent().requestDisallowInterceptTouchEvent(true);

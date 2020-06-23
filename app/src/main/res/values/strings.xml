@@ -238,6 +238,7 @@
 
 
     <!-- Microsoft Language Names -->
+    <string name="Auto_detect_micro">"Auto-detect language"</string>
     <string name="Afrikaans_micro">"Afrikaans"</string>
     <string name="Arabic_micro">"Arabic"</string>
     <string name="Bulgarian_micro">"Bulgarian"</string>
