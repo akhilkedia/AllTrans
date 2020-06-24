@@ -65,24 +65,26 @@ A video (in English) showing how to use AllTrans by Gadget Hacks on Youtube [htt
 
 ## How to install AllTrans
 
-1. This application requires android version 4.0.1 or later (Android IceCreamSandwich or later - so far JellyBean, Kitkat, Lollipop and MarshMallow).
-Until official Xposed for Android 7.0 Nougat is released, Nougat will not be released.
-1. Make sure your android phone is [rooted](https://en.wikipedia.org/wiki/Rooting_(Android_OS)).
-If you don't know what rooting is, this app won't work for you.
-1. Make sure you have [Xposed Framework](https://forum.xda-developers.com/showthread.php?t=3034811) installed and running.
-1. Build this project in Android studio and install the produced AllTrans apk.
-You can also get the latest release of the APK from the [Xposed Module Repository](http://repo.xposed.info/module/akhil.alltrans)
+1. This application requires android version 4.1 or later. You probably already have it. (Android JellyBean or later - so far JellyBean, Kitkat, Lollipop, MarshMallow, Nougat, Oreo, Pie and Q.).
+1. Make sure you have [Xposed Framework](https://forum.xda-developers.com/showthread.php?t=3034811) installed and running. If there is not an official version of Xposed for your Android, [EdXposed](https://forum.xda-developers.com/xposed/development/official-edxposed-successor-xposed-t4070199) is recommended. <!-- 1. If you do not have Xposed, AllTrans is now fully compatible with [VirtualXposed](https://virtualxposed.com/) and [Taichi](https://taichi.cool/), so AllTrans can now be used on all devices!!! No need of root, no need of Magisk, etc.! -->
+1. Get the latest release of the APK from the [Xposed Module Repository](http://repo.xposed.info/module/akhil.alltrans)
 1. Reboot your phone.
 
 ## How to use AllTrans
 
 This application **requires** you to sign up for **free** a key from Microsoft Translate. See instructions below on how to get the keys.
 
-1. Make sure `AllTrans` app is enabled in `Xposed Installer -> Modules`.
-1. Launch `AllTrans` app.
-1. Choose the `"Translate from Language"` and `"Translate to Language"`.
-1. In the `"Apps to Translate"` tab, find the app you want to translate, click the checkbox next to it.
+1. Make sure "AllTrans" app is enabled in "Xposed Installer -> Modules".
+1. Launch "AllTrans" app.
+1. Choose the "Translate from Language" and "Translate to Language".
+1. In the "Apps to Translate" tab, find the app you want to translate, click the checkbox next to it.
 1. Close and restart the app you want translated - it should be translated!
+
+<!-- ### Note - If you are using VirtualXposed or Taichi
+
+- This application will only works for apps installed inside Taichi or VirtualXposed, not for other apps. This means it will not work for any system apps.
+- Sometimes some apps will fail to install/run inside Taichi/VirtualXposed. This is not a problem of AllTrans, just some limitations of Taichi/VirtualXposed.
+- Some apps work on Taichi, some work on VirtualXposed, some on neither. I recommend you try using both if some app does not install/open inside VirtualXposed/Taichi. -->
 
 ## How to get Microsoft Azure Translate Key
 
@@ -91,28 +93,28 @@ Microsoft Translate requires a credit card to sign up. (But don't worry, nothing
 1. Sign up for a Microsoft Azure account.
 If you don't already have an Azure account, sign up for a [Microsoft Azure account](http://azure.com).
 1. After you have an account, sign into the [Azure Portal](http://portal.azure.com). Sign up for a subcription by following the steps below.
-   1. Click `"Subscriptions"`. It has a key icon.
-   1. Click the `"+ Add"` at the top
-   1. Choose a `"pay-as-you-go"` subscription. Will require a credit card, but don't worry, nothing will be charged.
+   1. Click "Subscriptions". It has a key icon.
+   1. Click the "+ Add" at the top
+   1. Choose a "pay-as-you-go" subscription. Will require a credit card, but don't worry, nothing will be charged.
    1. Verify your identity, add in the credit card information. You will not be charged.
-   1. In `"Add Technical Support"`, select `"No technical support"`. **You will have to pay if you select any other**. Accept the `"Agreement"`, and click `"Sign up"`.
-   1. Click `"Home"` at the top after you finish signing up.
+   1. In "Add Technical Support", select "No technical support". **You will have to pay if you select any other**. Accept the "Agreement", and click "Sign up".
+   1. Click "Home" at the top after you finish signing up.
 1. Add a translate API resource by following the steps below.
-   1. Select the `"+ Create a resource"` option.
-   1. In the search box saying `"Search the Marketplace"` type `"translator"` on the left, and select `"Translator"` from the search results.
-   1. Click the blue `"Create"` button.
-   1. In the `"Resource group"` field, type in any name, it does not matter.
-   1. **In the `"Region"` Section, select `"Global"`**
-   1. Type in any name in `"Name"` field, type in any name, it does not matter.
-   1. In the `"Pricing Tier"` section, select the `"F0 (2M Up to 2M characters translated per month)"`. **You will have to pay if you select any other**.
-   1. Click `"Next: Tags"`, then click `"Next: Review + Create"`, then click `"Create"`.
-   1. Wait 1 minute for Microsoft to process your request, then go to `"Home"`.
+   1. Select the "+ Create a resource" option.
+   1. In the search box saying "Search the Marketplace" type "translator" on the left, and select "Translator" from the search results.
+   1. Click the blue "Create" button.
+   1. In the "Resource group" field, type in any name, it does not matter.
+   1. **In the "Region" Section, select "Global"**
+   1. Type in any name in "Name" field, type in any name, it does not matter.
+   1. In the "Pricing Tier" section, select the "F0 (2M Up to 2M characters translated per month)". **You will have to pay if you select any other**.
+   1. Click "Next: Tags", then click "Next: Review + Create", then click "Create".
+   1. Wait 1 minute for Microsoft to process your request, then go to "Home".
 1. Copy your key from Microsoft and add it to AllTrans by following the steps below.
-   1. Under the `"Recent Resource"` section, click the name of the resource you just created.
-   1. Click `"Keys and Endpoint"` on the left. It has a key icon.
-   1. Copy `"KEY 1"`. This is the key you need to add to AllTrans.
+   1. Under the "Recent Resource" section, click the name of the resource you just created.
+   1. Click "Keys and Endpoint" on the left. It has a key icon.
+   1. Copy "KEY 1". This is the key you need to add to AllTrans.
 
-The subscription key is something like `"3d2c..."` (some english numbers and alphabets).
+The subscription key is something like "3d2c..." (some english numbers and alphabets).
 
 ## Note - No New Yandex Translate Keys
 
@@ -122,37 +124,37 @@ A previous version of this application encouraged use of Yandex API keys. Yandex
 
 ### No app is being translated in any app
 
-- If no app is being translated, check is `"AllTrans"` is enabled in `Xposed Installer -> Modules`.
-- Also check if your `"Microsoft Subscription Key"` is correct.
+- If no app is being translated, check is "AllTrans" is enabled in "Xposed Installer -> Modules".
+- Also check if your "Microsoft Subscription Key" is correct.
 
 ### Translated app is stuck in opening screen
 
-- If this is the first time you started translating this app, click on the app's name in `"Apps to Translate"` tab, and in `"Other Settings"` fill in `"Delay Before Replcaing With Translated Text"` to `2000`.
+- If this is the first time you started translating this app, click on the app's name in "Apps to Translate" tab, and in "Other Settings" fill in "Delay Before Replcaing With Translated Text" to "2000".
 
 ### The Translated app is "Force Close"
 
-- Click on the app's name in `"Apps to Translate"` tab, and in `"Other Settings"` fill in `"Delay Before Replcaing With Translated Text"` to `2000`.
-- Click on the app's name in `"Apps to translate"` tab, and in `"Other Settings"` fill in `"Delay Before Starting to Translate WebViews"` to `2000`.
+- Click on the app's name in "Apps to Translate" tab, and in "Other Settings" fill in "Delay Before Replcaing With Translated Text" to "2000".
+- Click on the app's name in "Apps to translate" tab, and in "Other Settings" fill in "Delay Before Starting to Translate WebViews" to "2000".
 
 ### A particular app is not being translated
 
-- Click on the app's name in `"Apps to translate"` tab, and in `"Other Settings"` fill in `"Delay Before Starting to Translate WebViews"` to `2000`.
-- If some parts of the app are still not being translated, click on the app's name in `"Apps to translate"` tab, and enable `"Aggressive Mode"`.
+- Click on the app's name in "Apps to translate" tab, and in "Other Settings" fill in "Delay Before Starting to Translate WebViews" to "2000".
+- If some parts of the app are still not being translated, click on the app's name in "Apps to translate" tab, and enable "Aggressive Mode".
 
 ### A game app is not being translated
 
-- Due to technical limitations, `"AllTrans"` will not work with many games. Nothing can be done about this.
+- Due to technical limitations, "AllTrans" will not work with many games. Nothing can be done about this.
 
 ### If you still have problems like "Force Close" or parts of an app not being translated
 
 Contact me for support. When you do, I will need atleast the following information -
 
-1. The name of the app, along with a **link to download the app** from some APK store like `Google Play Store`, `CoolApk`, etc.
+1. The name of the app, along with a **link to download the app** from some APK store like "Google Play Store", "CoolApk", etc.
 1. Your phone's Android version.
-1. A `"logcat"` of you trying to open the app which gives you problems. You can use apps freely available on the Play Store for this, such as [This one](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat)
+1. A "logcat" of you trying to open the app which gives you problems. You can use apps freely available on the Play Store for this, such as [This one](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat)
 
 Once you have the above, contact me on the  [XDA support thread](https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878).
-You can also report issues on the  [Project's `Github`](https://github.com/akhilkedia/AllTrans).
+You can also report issues on the  [Project's "Github"](https://github.com/akhilkedia/AllTrans).
 
 ## Donations
 
