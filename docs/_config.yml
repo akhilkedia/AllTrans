@@ -22,12 +22,12 @@ title: AllTrans
 email: akhilkedia94@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Like Chrome's translation of webpages, but for Android apps.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/AllTrans" # the subpath of your site, e.g. /blog
+url: "https://akhilkedia.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: akhilkedia
 
 # Build settings
-remote_theme: jekyll/minima
+remote_theme: "jekyll/minima@master"
 minima:
   skin: dark
 header_pages: ['']
