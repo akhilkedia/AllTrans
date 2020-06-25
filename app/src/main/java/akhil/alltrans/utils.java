@@ -28,6 +28,8 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import java.io.StringWriter;
+import java.util.Collections;
+import java.util.List;
 import java.util.Locale;
 
 class utils {
@@ -45,7 +47,7 @@ class utils {
         return !TextUtils.isEmpty(System.getProperty("vxp"));
     }
 
-    private static boolean isExpModuleActive(Context context) {
+    public static boolean isExpModuleActive(Context context) {
 
         boolean isExp = false;
         if (context == null) {
@@ -79,6 +81,24 @@ class utils {
         } catch (Throwable ignored) {
         }
         return isExp;
+    }
+
+    public static List<String> getExpApps(Context context) {
+        Bundle result;
+        try {
+            result = context.getContentResolver().call(Uri.parse("content://me.weishu.exposed.CP/"), "apps", null, null);
+        } catch (Throwable e) {
+            return Collections.emptyList();
+        }
+
+        if (result == null) {
+            return Collections.emptyList();
+        }
+        List<String> list = result.getStringArrayList("apps");
+        if (list == null) {
+            return Collections.emptyList();
+        }
+        return list;
     }
 
     public static void debugLog(String str) {

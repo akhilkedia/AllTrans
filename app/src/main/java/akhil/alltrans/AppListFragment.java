@@ -48,6 +48,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -91,8 +92,6 @@ public class AppListFragment extends Fragment {
             editor.putBoolean("com.ktcs.whowho", true);
             editor.putBoolean("Debug", true);
             editor.putString("SubscriptionKey", getString(R.string.microsoft_key));
-//        editor.putBoolean("EnableYandex", true);
-//        editor.putString("SubscriptionKey", "trnsl.1.1.20170118T002434Z.95dd93bf09dbc8d4.04554b9aac2c1bcfee17ee76bc9979236ea2c2d4");
             editor.apply();
         }
 
@@ -263,6 +262,16 @@ public class AppListFragment extends Fragment {
             final PackageManager pm = context.getPackageManager();
             //get a list of installed apps.
             final List<ApplicationInfo> packages = getInstalledApplications(context);
+            if (utils.isExpModuleActive(getContext())){
+                List<String> packagNames = utils.getExpApps(getContext());
+                utils.debugLog(packagNames + "");
+                ListIterator<ApplicationInfo> iter = packages.listIterator();
+                while(iter.hasNext()){
+                    if(!packagNames.contains(iter.next().packageName)){
+                        iter.remove();
+                    }
+                }
+            }
             Collections.sort(packages, new Comparator<ApplicationInfo>() {
                 public int compare(ApplicationInfo a, ApplicationInfo b) {
                     if (settings.contains(a.packageName) && !settings.contains(b.packageName))

@@ -20,15 +20,20 @@
 package akhil.alltrans;
 
 
+import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Locale;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -39,33 +44,39 @@ import androidx.fragment.app.Fragment;
  */
 public class InstructionsFragment extends Fragment {
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.readme)));
-        StringBuilder datax = new StringBuilder();
-        try {
-            String readString = bufferedReader.readLine();
-            while (readString != null) {
-                datax.append(readString);
-                readString = bufferedReader.readLine();
-            }
-            bufferedReader.close();
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-        }
 
-        String instructions = datax.toString();
-
-//        final String instructions = getString(R.string.how_to_use);
         //noinspection ConstantConditions
         final WebView webView = new WebView(getActivity());
         webView.getSettings().setLoadWithOverviewMode(true);
         webView.getSettings().setUseWideViewPort(false);
+        webView.getSettings().setJavaScriptEnabled(true);
 
-        webView.loadDataWithBaseURL(null, instructions, "text/html; charset=utf-8", "UTF-8", null);
+        final ProgressDialog progressDialog = new ProgressDialog(getContext());
+        progressDialog.setMessage("");
+        progressDialog.show();
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                if (progressDialog.isShowing()) {
+                    progressDialog.dismiss();
+                }
+            }
+        });
 
-//        webView.loadUrl("file:///android_res/raw/readme.html");
+        String versionName = BuildConfig.VERSION_NAME;
+        String system_language = Locale.getDefault().getLanguage();
+        String url = "";
+        String[] allowed_languages = {"hi", "ko", "af", "sq", "am", "ar", "hy", "az", "eu", "be", "bn", "bs", "bg", "ca", "ceb", "ny", "zh", "zh-CN", "zh-TW", "co", "hr", "cs", "da", "nl", "eo", "et", "tl", "fi", "fr", "fy", "gl", "ka", "de", "el", "gu", "ht", "ha", "haw", "iw", "hi", "hmn", "hu", "is", "ig", "id", "ga", "it", "ja", "jw", "kn", "kk", "km", "rw", "ko", "ku", "ky", "lo", "la", "lv", "lt", "lb", "mk", "mg", "ms", "ml", "mt", "mi", "mr", "mn", "my", "ne", "no", "or", "ps", "fa", "pl", "pt", "pa", "ro", "ru", "sm", "gd", "sr", "st", "sn", "sd", "si", "sk", "sl", "so", "es", "su", "sw", "sv", "tg", "ta", "tt", "te", "th", "tr", "tk", "uk", "ur", "ug", "uz", "vi", "cy", "xh", "yi", "yo", "zu"};
+        if (Arrays.asList(allowed_languages).contains(system_language)) {
+            url = "https://translate.google.com/translate?sl=en&tl=" + system_language + "&u=https%3A%2F%2Fakhilkedia.github.io%2FAllTrans%2F" + versionName;
+        } else {
+            url = "https://akhilkedia.github.io/AllTrans/" + versionName;
+        }
+        webView.loadUrl(url);
         return webView;
     }
 
