@@ -62,7 +62,7 @@ dependencies {
     implementation 'androidx.percentlayout:percentlayout:1.0.0'
 
     implementation 'com.google.firebase:firebase-analytics:17.4.3'
-    implementation 'com.google.firebase:firebase-crashlytics:17.0.1'
+    implementation 'com.google.firebase:firebase-crashlytics:17.1.0'
 
 }
 apply plugin: 'com.google.gms.google-services'
@@ -74,7 +74,7 @@ afterEvaluate {
         updateVirtualXposedAPP.exec()
         clearLog.exec()
         rebootVirtualXposedAPP.exec()
-        launchVirtualXposedAPP.exec()
+//        launchVirtualXposedAPP.exec()
     }
 }
 

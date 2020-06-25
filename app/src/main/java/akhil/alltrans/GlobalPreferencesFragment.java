@@ -60,9 +60,9 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
         String subscriptionKey1 = getPreferenceManager().getSharedPreferences().getString("SubscriptionKey", "Enter");
         assert subscriptionKey1 != null;
         assert enableYandex != null;
-        if (subscriptionKey1.startsWith("Enter") || subscriptionKey1.equals(getString(R.string.subKey_defaultValue))) {
-            enableYandex.setChecked(true);
-        }
+//        if (subscriptionKey1.startsWith("Enter") || subscriptionKey1.equals(getString(R.string.subKey_defaultValue))) {
+//            enableYandex.setChecked(true);
+//        }
 
         if (enableYandex.isChecked()) {
             ListPreference translateFromLanguage = findPreference("TranslateFromLanguage");
