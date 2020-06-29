@@ -1,3 +1,10 @@
+---
+layout: default
+title: null
+description: null
+permalink: /1.7.0/
+---
+
 <!-- omit in toc -->
 # ![AllTrans](https://raw.githubusercontent.com/akhilkedia/AllTrans/master/app/src/main/res/mipmap-hdpi/ic_launcher.png)AllTrans - Completely Translate Apps
 

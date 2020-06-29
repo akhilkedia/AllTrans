@@ -110,6 +110,7 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
             translateToLanguage.setEntries(R.array.languageNamesYandex);
             translateToLanguage.setEntryValues(R.array.languageCodesYandex);
             subscriptionKey.setTitle(getString(R.string.subKey_yandex));
+            subscriptionKey.setEnabled(true);
         } else if (translatorProviderSelected.equals("m")){
             ListPreference translateFromLanguage = findPreference("TranslateFromLanguage");
             ListPreference translateToLanguage = findPreference("TranslateToLanguage");
@@ -122,6 +123,7 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
             translateToLanguage.setEntries(R.array.languageNames);
             translateToLanguage.setEntryValues(R.array.languageCodes);
             subscriptionKey.setTitle(getString(R.string.subKey_micro));
+            subscriptionKey.setEnabled(true);
         } else {
             ListPreference translateFromLanguage = findPreference("TranslateFromLanguage");
             ListPreference translateToLanguage = findPreference("TranslateToLanguage");
