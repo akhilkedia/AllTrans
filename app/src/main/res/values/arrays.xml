@@ -19,6 +19,142 @@
   -->
 
 <resources>
+    <string-array name="translatorProviderCodes" translatable="false">
+        <item>g</item>
+        <item>m</item>
+        <item>y</item>
+    </string-array>
+
+    <string-array name="translatorProviderNames" translatable="false">
+        <item>@string/translator_provider_google</item>
+        <item>@string/translator_provider_microsoft</item>
+        <item>@string/translator_provider_yandex</item>
+    </string-array>
+
+    <string-array name="languageCodesGoogle" translatable="false">
+        <item>af</item>
+        <item>ar</item>
+        <item>be</item>
+        <item>bg</item>
+        <item>bn</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>cy</item>
+        <item>da</item>
+        <item>de</item>
+        <item>el</item>
+        <item>en</item>
+        <item>eo</item>
+        <item>es</item>
+        <item>et</item>
+        <item>fa</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>ga</item>
+        <item>gl</item>
+        <item>gu</item>
+        <item>he</item>
+        <item>hi</item>
+        <item>hr</item>
+        <item>ht</item>
+        <item>hu</item>
+        <item>id</item>
+        <item>is</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>ka</item>
+        <item>kn</item>
+        <item>ko</item>
+        <item>lt</item>
+        <item>lv</item>
+        <item>mk</item>
+        <item>mr</item>
+        <item>ms</item>
+        <item>mt</item>
+        <item>nl</item>
+        <item>no</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>sq</item>
+        <item>sv</item>
+        <item>sw</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>th</item>
+        <item>tl</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>vi</item>
+        <item>zh</item>
+    </string-array>
+
+    <string-array name="languageNamesGoogle" translatable="false">
+        <item>@string/Afrikaans_google</item>
+        <item>@string/Arabic_google</item>
+        <item>@string/Belarusian_google</item>
+        <item>@string/Bulgarian_google</item>
+        <item>@string/Bengali_google</item>
+        <item>@string/Catalan_google</item>
+        <item>@string/Czech_google</item>
+        <item>@string/Welsh_google</item>
+        <item>@string/Danish_google</item>
+        <item>@string/German_google</item>
+        <item>@string/Greek_google</item>
+        <item>@string/English_google</item>
+        <item>@string/Esperanto_google</item>
+        <item>@string/Spanish_google</item>
+        <item>@string/Estonian_google</item>
+        <item>@string/Persian_google</item>
+        <item>@string/Finnish_google</item>
+        <item>@string/French_google</item>
+        <item>@string/Irish_google</item>
+        <item>@string/Galician_google</item>
+        <item>@string/Gujarati_google</item>
+        <item>@string/Hebrew_google</item>
+        <item>@string/Hindi_google</item>
+        <item>@string/Croatian_google</item>
+        <item>@string/Haitian_google</item>
+        <item>@string/Hungarian_google</item>
+        <item>@string/Indonesian_google</item>
+        <item>@string/Icelandic_google</item>
+        <item>@string/Italian_google</item>
+        <item>@string/Japanese_google</item>
+        <item>@string/Georgian_google</item>
+        <item>@string/Kannada_google</item>
+        <item>@string/Korean_google</item>
+        <item>@string/Lithuanian_google</item>
+        <item>@string/Latvian_google</item>
+        <item>@string/Macedonian_google</item>
+        <item>@string/Marathi_google</item>
+        <item>@string/Malay_google</item>
+        <item>@string/Maltese_google</item>
+        <item>@string/Dutch_google</item>
+        <item>@string/Norwegian_google</item>
+        <item>@string/Polish_google</item>
+        <item>@string/Portuguese_google</item>
+        <item>@string/Romanian_google</item>
+        <item>@string/Russian_google</item>
+        <item>@string/Slovak_google</item>
+        <item>@string/Slovenian_google</item>
+        <item>@string/Albanian_google</item>
+        <item>@string/Swedish_google</item>
+        <item>@string/Swahili_google</item>
+        <item>@string/Tamil_google</item>
+        <item>@string/Telugu_google</item>
+        <item>@string/Thai_google</item>
+        <item>@string/Tagalog_google</item>
+        <item>@string/Turkish_google</item>
+        <item>@string/Ukrainian_google</item>
+        <item>@string/Urdu_google</item>
+        <item>@string/Vietnamese_google</item>
+        <item>@string/Chinese_google</item>
+    </string-array>
+
     <string-array name="languageCodes" translatable="false">
         <item>auto</item>
         <item>af</item>
@@ -92,6 +228,7 @@
         <item>zh-Hans</item>
         <item>zh-Hant</item>
     </string-array>
+
     <string-array name="languageNames" translatable="false">
         <item>@string/Auto_detect_micro</item>
         <item>@string/Afrikaans_micro</item>
@@ -165,6 +302,7 @@
         <item>@string/Chinese_Simplified_micro</item>
         <item>@string/Chinese_Traditional_micro</item>
     </string-array>
+
     <string-array name="languageCodesYandex" translatable="false">
         <item>af</item>
         <item>am</item>
@@ -257,6 +395,7 @@
         <item>yi</item>
         <item>zh</item>
     </string-array>
+
     <string-array name="languageNamesYandex" translatable="false">
         <item>@string/Afrikaans_yandex</item>
         <item>@string/Amharic_yandex</item>

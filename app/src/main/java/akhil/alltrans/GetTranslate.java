@@ -41,7 +41,7 @@ public class GetTranslate implements Callback {
     private String translatedString;
 
     @Override
-    public void onResponse(@NonNull Call call, @NonNull Response response) {
+    public void onResponse(Call call, @NonNull Response response) {
         try {
 //            Error in Response
             if (response.code() != 200) {
@@ -64,9 +64,10 @@ public class GetTranslate implements Callback {
                     response.body().close();
 
                     utils.debugLog("In Thread " + Thread.currentThread().getId() + " In GetTranslate, setting: " + stringToBeTrans + "got response as " + result);
-                    if (PreferenceList.EnableYandex) {
+                    translatedString = result;
+                    if (PreferenceList.TranslatorProvider.equals("y")) {
                         translatedString = result.substring(result.indexOf("<text>") + 6, result.lastIndexOf("</text>"));
-                    } else {
+                    } else if (PreferenceList.TranslatorProvider.equals("m")) {
                         translatedString = new JSONArray(result).getJSONObject(0).getJSONArray("translations").getJSONObject(0).getString("text");
                     }
 //                    Ideally we don't need to do this, but Microsoft return these escape sequences sometimes..

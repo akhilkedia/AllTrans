@@ -19,6 +19,8 @@
 
 package akhil.alltrans;
 
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
@@ -33,10 +35,14 @@ import java.net.URLEncoder;
 import java.util.concurrent.Semaphore;
 
 import okhttp3.Cache;
+import okhttp3.Call;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
+import okhttp3.Protocol;
 import okhttp3.Request;
 import okhttp3.RequestBody;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
 
 //class GetTranslateToken implements Callback {
 class GetTranslateToken {
@@ -99,8 +105,38 @@ class GetTranslateToken {
 //    }
 
     private void doInBackground() {
+
         try {
-            if (PreferenceList.EnableYandex) {
+            if (PreferenceList.TranslatorProvider.equals("g")){
+
+                Uri uri = new Uri.Builder().scheme("content")
+                        .authority("akhil.alltrans.gtransProvider")
+                        .appendQueryParameter("from", PreferenceList.TranslateFromLanguage)
+                        .appendQueryParameter("to", PreferenceList.TranslateToLanguage)
+                        .appendQueryParameter("text", getTranslate.stringToBeTrans).build();
+
+                Cursor cursor = alltrans.context.getContentResolver().query(uri, null, null, null, null);
+                if (cursor == null || !cursor.moveToFirst()) {
+                    if (cursor != null) {
+                        cursor.close();
+                    }
+                    throw new JSONException("Null or Empty Cursor from Google");
+                }
+
+                final String translatedSring = cursor.getString(cursor.getColumnIndex("translate"));
+                Request mockRequest = new Request.Builder().url("https://some-url.com").build();
+                Response response = new Response.Builder()
+                        .request(mockRequest)
+                        .code(200)
+                        .message("")
+                        .protocol(Protocol.HTTP_2)
+                        .body(ResponseBody.create(translatedSring, null))
+                        .build();
+                getTranslate.onResponse(null, response);
+
+                cursor.close();
+            }
+            else if (PreferenceList.TranslatorProvider.equals("y")) {
                 String baseURL = "https://translate.yandex.net/api/v1.5/tr/translate?";
                 String keyURL = "key=" + PreferenceList.SubscriptionKey;
                 String textURL = "&text=" + URLEncoder.encode(getTranslate.stringToBeTrans, "UTF-8");

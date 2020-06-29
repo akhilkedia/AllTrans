@@ -52,11 +52,20 @@
 
 
     <!-- Categories Translate Settings -->
-    <!-- enable_yandex -->
-    <string name="enable_yandex">"Use Yandex instead of Microsoft"</string>
-    <string name="enable_yandex_summary">"Turn on to use Yandex Translation instead of Microsoft"</string>
-    <string name="enable_yandex_summary_off">"Currently using Microsoft Azure Translation. Turn on to use Yandex Translation."</string>
-    <string name="enable_yandex_summary_on">"Currently using Yandex Translation. Turn off to use Microsoft Azure Translation."</string>
+     translator_provider
+    <string name="translator_provider">"Translation Service Provider"</string>
+    <string name="translator_provider_summary">"Select which Translation Service to use - Google, Microsoft, or Yandex"</string>
+    <string name="translator_provider_google">"\nGoogle - This translation works offline, after initial download of around 30-60 MB. Translations are slow, makes apps \"lag\" or \"hang\" a bit. No need for any API key. Free.\n"</string>
+    <string name="translator_provider_microsoft">"\nMicrosoft - Best translation, only works with Internet, requires a \"FREE\" API key. The process to get API keys is complicated, see Instructions.\n"</string>
+    <string name="translator_provider_yandex">"\nYandex - Requires a \"PAID\" api key. If you already have a free API key, it may work, it may not. Not recommended.\n "</string>
+
+    <string name="ask_download">"We need to download the translation files if not previously downloaded, around 30 MB. Translation will not work without downloading. Download now?"</string>
+    <string name="download_now">"Download now"</string>
+    <string name="cancel">"Cancel"</string>
+    <string name="downloading">"Downloading the translation files. Please wait"</string>
+    <string name="download_sucess">"Successfully Downloaded Translation Files"</string>
+    <string name="download_failure">"Some Error in Downloading Translation Files"</string>
+
 
     <!--subscription key -->
     <string name="subKey">"Microsoft / Yandex Subscription Key"</string>
@@ -143,6 +152,66 @@
     <string name="clear_cache">"Click to clear Translation Cache"</string>
     <string name="clear_cache_summary">"Click the above to clear the app&apos;s translate cache. Use this after changing to/from languages, or if the app does not start."</string>
 
+    <!--- Google Language Names -->
+    <string name="Afrikaans_google">"Afrikaans"</string>
+    <string name="Arabic_google">"Arabic"</string>
+    <string name="Belarusian_google">"Belarusian"</string>
+    <string name="Bulgarian_google">"Bulgarian"</string>
+    <string name="Bengali_google">"Bengali"</string>
+    <string name="Catalan_google">"Catalan"</string>
+    <string name="Czech_google">"Czech"</string>
+    <string name="Welsh_google">"Welsh"</string>
+    <string name="Danish_google">"Danish"</string>
+    <string name="German_google">"German"</string>
+    <string name="Greek_google">"Greek"</string>
+    <string name="English_google">"English"</string>
+    <string name="Esperanto_google">"Esperanto"</string>
+    <string name="Spanish_google">"Spanish"</string>
+    <string name="Estonian_google">"Estonian"</string>
+    <string name="Persian_google">"Persian"</string>
+    <string name="Finnish_google">"Finnish"</string>
+    <string name="French_google">"French"</string>
+    <string name="Irish_google">"Irish"</string>
+    <string name="Galician_google">"Galician"</string>
+    <string name="Gujarati_google">"Gujarati"</string>
+    <string name="Hebrew_google">"Hebrew"</string>
+    <string name="Hindi_google">"Hindi"</string>
+    <string name="Croatian_google">"Croatian"</string>
+    <string name="Haitian_google">"Haitian"</string>
+    <string name="Hungarian_google">"Hungarian"</string>
+    <string name="Indonesian_google">"Indonesian"</string>
+    <string name="Icelandic_google">"Icelandic"</string>
+    <string name="Italian_google">"Italian"</string>
+    <string name="Japanese_google">"Japanese"</string>
+    <string name="Georgian_google">"Georgian"</string>
+    <string name="Kannada_google">"Kannada"</string>
+    <string name="Korean_google">"Korean"</string>
+    <string name="Lithuanian_google">"Lithuanian"</string>
+    <string name="Latvian_google">"Latvian"</string>
+    <string name="Macedonian_google">"Macedonian"</string>
+    <string name="Marathi_google">"Marathi"</string>
+    <string name="Malay_google">"Malay"</string>
+    <string name="Maltese_google">"Maltese"</string>
+    <string name="Dutch_google">"Dutch"</string>
+    <string name="Norwegian_google">"Norwegian"</string>
+    <string name="Polish_google">"Polish"</string>
+    <string name="Portuguese_google">"Portuguese"</string>
+    <string name="Romanian_google">"Romanian"</string>
+    <string name="Russian_google">"Russian"</string>
+    <string name="Slovak_google">"Slovak"</string>
+    <string name="Slovenian_google">"Slovenian"</string>
+    <string name="Albanian_google">"Albanian"</string>
+    <string name="Swedish_google">"Swedish"</string>
+    <string name="Swahili_google">"Swahili"</string>
+    <string name="Tamil_google">"Tamil"</string>
+    <string name="Telugu_google">"Telugu"</string>
+    <string name="Thai_google">"Thai"</string>
+    <string name="Tagalog_google">"Tagalog"</string>
+    <string name="Turkish_google">"Turkish"</string>
+    <string name="Ukrainian_google">"Ukrainian"</string>
+    <string name="Urdu_google">"Urdu"</string>
+    <string name="Vietnamese_google">"Vietnamese"</string>
+    <string name="Chinese_google">"Chinese"</string>
 
     <!--- Yandex Language Names -->
     <string name="Afrikaans_yandex">"Afrikaans"</string>

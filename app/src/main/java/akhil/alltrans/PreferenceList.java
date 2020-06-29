@@ -33,7 +33,7 @@ class PreferenceList {
     public static String SubscriptionKey;
     public static String TranslateFromLanguage;
     public static String TranslateToLanguage;
-    public static boolean EnableYandex;
+    public static String TranslatorProvider;
 
     public static boolean SetText;
     public static boolean SetHint;
@@ -62,7 +62,7 @@ class PreferenceList {
         Rooted = (boolean) getValue(gPref, "Rooted", false);
 
         SubscriptionKey = (String) getValue(gPref, "SubscriptionKey", "");
-        EnableYandex = (boolean) getValue(gPref, "EnableYandex", false);
+        TranslatorProvider = (String) getValue(gPref, "TranslatorProvider", "g");
 
         CachingTime = Long.parseLong((String) getValue(lPref, "ClearCacheTime", "0"));
 

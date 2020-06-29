@@ -31,6 +31,7 @@ android {
         targetSdkVersion 30
         versionCode 11
         versionName "1.6.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -63,6 +64,9 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-analytics:17.4.3'
     implementation 'com.google.firebase:firebase-crashlytics:17.1.0'
+    implementation 'com.google.mlkit:translate:16.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
 
 }
 apply plugin: 'com.google.gms.google-services'
@@ -71,9 +75,9 @@ apply plugin: 'com.google.firebase.crashlytics'
 
 afterEvaluate {
     installDebug.doLast {
-        updateVirtualXposedAPP.exec()
-        clearLog.exec()
-        rebootVirtualXposedAPP.exec()
+//        updateVirtualXposedAPP.exec()
+//        clearLog.exec()
+//        rebootVirtualXposedAPP.exec()
 //        launchVirtualXposedAPP.exec()
     }
 }

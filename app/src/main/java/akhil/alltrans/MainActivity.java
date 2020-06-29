@@ -19,6 +19,7 @@
 
 package akhil.alltrans;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -28,12 +29,20 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentActivity;
+import androidx.multidex.MultiDex;
 
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
     //public static String TAG = "alltrans";
     @SuppressWarnings({"FieldCanBeLocal", "unused"})
     private FirebaseAnalytics mFirebaseAnalytics;
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -25,8 +25,10 @@ import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +38,16 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.mlkit.common.model.DownloadConditions;
+import com.google.mlkit.common.model.RemoteModelManager;
+import com.google.mlkit.nl.translate.TranslateLanguage;
+import com.google.mlkit.nl.translate.TranslateRemoteModel;
+import com.google.mlkit.nl.translate.Translation;
+import com.google.mlkit.nl.translate.Translator;
+import com.google.mlkit.nl.translate.TranslatorOptions;
 
 
 import java.io.BufferedReader;
@@ -121,9 +132,9 @@ public class AppListFragment extends Fragment {
 
     private void fireBaseAnalytics() {
         mFirebaseAnalytics.setUserProperty("Enabled", String.valueOf(settings.getBoolean("Enabled", false)));
-        mFirebaseAnalytics.setUserProperty("EnableYandex", String.valueOf(settings.getBoolean("EnableYandex", false)));
+        mFirebaseAnalytics.setUserProperty("TranslatorProvider", settings.getString("TranslatorProvider", "g"));
         mFirebaseAnalytics.setUserProperty("TranslateFromLanguage", settings.getString("TranslateFromLanguage", "ko"));
-        mFirebaseAnalytics.setUserProperty("TranslateToLanguage", settings.getString("TranslateToLanguage", "ko"));
+        mFirebaseAnalytics.setUserProperty("TranslateToLanguage", settings.getString("TranslateToLanguage", "en"));
     }
 
     private void fireBaseEnabledApps(List<ApplicationInfo> packages) {
