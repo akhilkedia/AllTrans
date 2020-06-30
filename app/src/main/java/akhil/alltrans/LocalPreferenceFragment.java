@@ -114,10 +114,11 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
     }
 
     private void downloadModel(String translateLanguageSelected, boolean isFromLanguage){
-        ListPreference translatorProvider1 = findPreference("TranslatorProvider");
-        assert translatorProvider1 != null;
-        String translatorProviderSelected1 = translatorProvider1.getValue();
-        if (!translatorProviderSelected1.equals("g")) {
+
+        settings = getContext().getSharedPreferences("AllTransPref", Context.MODE_PRIVATE);
+        String translatorProvider = settings.getString("TranslatorProvider", "g");
+        assert translatorProvider != null;
+        if (!translatorProvider.equals("g")) {
             return;
         }
         utils.debugLog("Downloading Translation model for Language " + translateLanguageSelected + " isFromLanguage " + isFromLanguage);
@@ -187,6 +188,14 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
     public void onCreatePreferences(Bundle bundle, String rootKey) {
         //noinspection ConstantConditions
         settings = this.getActivity().getSharedPreferences("AllTransPref", Context.MODE_PRIVATE);
+        if (applicationInfo == null) {
+            Context context = getContext();
+            CharSequence text = getString(R.string.wut_why_null);
+            int duration = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+            return;
+        }
         final PreferenceManager preferenceManager = getPreferenceManager();
         preferenceManager.setSharedPreferencesName(applicationInfo.packageName);
 
@@ -195,14 +204,6 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
             preferenceManager.getSharedPreferences().edit().putBoolean("LocalEnabled", true).apply();
         } else {
             preferenceManager.getSharedPreferences().edit().putBoolean("LocalEnabled", false).apply();
-        }
-        if (applicationInfo == null) {
-            Context context = getContext();
-            CharSequence text = getString(R.string.wut_why_null);
-            int duration = Toast.LENGTH_SHORT;
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-            return;
         }
         addPreferencesFromResource(R.xml.perappprefs);
 

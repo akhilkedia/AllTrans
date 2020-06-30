@@ -133,6 +133,8 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
 
         if (PreferenceList.DrawText) {
             findAndHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            findAndHookMethod(Canvas.class, "drawText", char[].class, int.class, int.class, float.class,
+                    float.class, Paint.class, alltrans.drawTextHook);
             findAndHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
             findAndHookMethod(Canvas.class, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
         }

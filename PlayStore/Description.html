@@ -1,52 +1,19 @@
 <u><b>AllTrans - Completely Translate Apps</b></u>
-<br>a la Chrome translation of webpages, but for Android apps.
-<br>
-<br><u><b>What AllTrans does</b></u>
-<br>It replaces <b>all text in an app</b> in a language from one language to another at runtime.
-<br>Say for example an app you want to use is in German, but you know only English.
-<br>Then whenever you open the required app, all the text in the app, <b>anywhere</b>, will be replaced by its English equivalents.
-<br>This is something similar to the way Automatic Translate works in Chrome.
-<br>
-<br><u><b>Requirements</b></u>
-<br>• Android 4.1 or later.
-<br>• <b>Xposed Framework</b> or <b>VirtualXposed</b> installed and running.
-<br><b>IF YOU DON'T KNOW WHAT XPOSED OR VIRTUALXPOSED IS, THIS APP IS NOT FOR YOU</b>
-<br>
-<br><u><b>How to use AllTrans</b></u>
-<br>• In "Global Settings" tab, tap "Enter Microsoft/Yandex Subscription Key", input the corresponding key (see Instructions from below).
-<br>• Choose the "Translate from Language" and "Translate to Language".
-<br>• In the "Apps to Translate" tab, find the app you want to translate, click the checkbox next to it.
-<br>• Close and restart the app you want translated - it should be translated!
-<br>
-<br><u><b>How to sign up for Microsoft Azure Translate</b></u>
-<br>Microsoft Translate requires a credit card to sign up. (But don’t worry, nothing will be charged.)</p>
-<br>• Sign up for a Microsoft Azure account.
-If you don’t already have an Azure account, sign up for a Microsoft Azure
-account at azure.com
-<br>     • After you have an account, sign into portal.azure.com. Sign up for a
-subcription by following the steps below.
-<br>     • Click “Subscriptions”. It has a key icon.
-<br>     • Click the “+ Add” at the top
-<br>     • Choose a “pay-as-you-go” subscription. Will require a credit card, but don’t worry, nothing will be
-charged.
-<br>     • Verify your identity, add in the credit card information. You will not be charged.
-<br>     • In “Add Technical Support”, select “No technical support”. <b>You will have to pay if you select
-    any other</b>. Accept the “Agreement”, and click “Sign up”.
-<br>     • Click “Home” at the top after you finish signing up.
-<br>• Add a translate API resource by following the steps below.
-<br>     • Select the “+ Create a resource” option.
-<br>     • In the search box saying “Search the Marketplace” type “translator” on the left, and select “Translator”
-from the search results.
-<br>     • Click the blue “Create” button.
-<br>     • In the “Resource group” field, type in any name, it does not matter.
-<br>     • <b>In the “Region” Section, select “Global”</b>
-<br>     • Type in any name in “Name” field, type in any name, it does not matter.
-<br>     • In the “Pricing Tier” section, select the “F0 (2M Up to 2M characters translated per month)”. <b>You will have to
-    pay if you select any other</b>.
-<br>     • Click “Next: Tags”, then click “Next: Review + Create”, then click “Create”.
-<br>     • Wait 1 minute for Microsoft to process your request, then go to “Home”.
-<br>• Copy your key from Microsoft and add it to AllTrans by following the steps below.
-<br>     • Under the “Recent Resource” section, click the name of the resource you just created.
-<br>     • Click “Keys and Endpoint” on the left. It has a key icon.
-<br>     • Copy “KEY 1”. This is the key you need to add to AllTrans.
-<br>
+Like translation of webpages, but for Android apps.
+<u><b>What AllTrans does</b></u>
+It replaces <b>all text in an app</b> in a language from one language to another at runtime.
+Say for example an app you want to use is in German, but you know only English.
+Then whenever you open the required app, all the text in the app, <b>anywhere</b>, will be replaced by its English
+equivalents.
+This is something similar to the way Automatic Translate works in browsers.
+<u><b>Requirements</b></u>
+• <b>Xposed Framework</b> or <b>VirtualXposed</b> or <b>Taichi</b> installed and running.
+<b>If you don't know what Xposed or Virtualxposed is, this app is probably not for you</b>
+<u><b>If you have a locked BootLoader or a non-rooted phone</b></u>
+You can download Taichi (an xposed emulator) from https://github.com/taichi-framework/TaiChi/releases/
+Alternatively you can download VirtualXposed (an xposed emulator like parallel space, dual apps) from https://github.com/android-hacker/VirtualXposed/releases
+<u><b>How to use AllTrans</b></u>
+• Make sure AllTrans is turned on in XposedInstaller / Taichi.
+• In "Global Settings" tab, choose the "Translate from Language" and "Translate to Language".
+• In the "Apps to Translate" tab, find the app you want to translate, click the checkbox next to it.
+• Close and restart the app you want translated - it should be translated!
