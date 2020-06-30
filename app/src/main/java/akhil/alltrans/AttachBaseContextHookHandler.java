@@ -19,6 +19,7 @@
 
 package akhil.alltrans;
 
+import android.app.NotificationManager;
 import android.content.Context;
 import android.database.Cursor;
 import android.graphics.Canvas;
@@ -27,6 +28,7 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.RemoteViews;
 import android.widget.TextView;
 
 import java.io.FileInputStream;
@@ -39,6 +41,7 @@ import java.util.Map;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedBridge;
 
+import static de.robv.android.xposed.XposedBridge.hookAllMethods;
 import static de.robv.android.xposed.XposedHelpers.findAndHookConstructor;
 import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 
@@ -115,8 +118,10 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
 
         //Hook all Text String methods
         SetTextHookHandler setTextHook = new SetTextHookHandler();
-        if (PreferenceList.SetText)
+        if (PreferenceList.SetText){
             findAndHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, setTextHook);
+            hookAllMethods(NotificationManager.class, "notify", alltrans.notifyHook);
+        }
         if (PreferenceList.SetHint)
             findAndHookMethod(TextView.class, "setHint", CharSequence.class, setTextHook);
 
@@ -138,6 +143,8 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
             findAndHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
             findAndHookMethod(Canvas.class, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
         }
+
+        // hookAllConstructors(RemoteViews.class, alltrans.notifyHook);
 
     }
 

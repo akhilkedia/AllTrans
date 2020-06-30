@@ -40,6 +40,8 @@ public class alltrans implements IXposedHookLoadPackage {
     @SuppressLint("StaticFieldLeak")
     public static final DrawTextHookHandler drawTextHook = new DrawTextHookHandler();
     @SuppressLint("StaticFieldLeak")
+    public static final NotificationHookHandler notifyHook = new NotificationHookHandler();
+    @SuppressLint("StaticFieldLeak")
     public static final VirtWebViewOnLoad virtWebViewOnLoad = new VirtWebViewOnLoad();
     public static HashMap<String, String> cache = new HashMap<>();
     @SuppressLint("StaticFieldLeak")
