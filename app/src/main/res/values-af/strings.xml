@@ -12,8 +12,8 @@
 	<string name="global_settings">"Globale instellings"</string>
 	<string name="instructions">"Instruksies"</string>
 	<string name="pref_cat_translate_settings">"Vertaal instellings"</string>
-	<string name="pref_cat_parts_of_app">"Dele van die app te vertaal"</string>
-	<string name="pref_cat_other_settings">"Ander instellings"</string>
+	<string name="pref_cat_troubleshooting_info">"Vertaal instellings om toepassings in duie te stel of nie te vertaal nie"</string>
+	<string name="pref_cat_advanced_settings">"Gevorderde instellings"</string>
 	<string name="master_on_off">"Meester aan/af"</string>
 	<string name="master_on_off_summary">"Skakel af om hierdie module heeltemal te deaktiveer"</string>
 	<string name="master_on_off_summary_off">"Die module afgeskakel is, sal geen programme vertaal word nie. Skakel aan om te begin met outomatiese vertaal!"</string>
@@ -266,7 +266,7 @@
 	<string name="Hmong_Daw_micro">"Hmong Daw"</string>
 	<string name="Norwegian_micro">"Noorweegse"</string>
 	<string name="Dutch_micro">"Hollands"</string>
-	<string name="Querétaro_Otomi_micro">"null"</string>
+	<string name="Querétaro_Otomi_micro">"Queretaro Otomi"</string>
 	<string name="Punjabi_micro">"Punjabi"</string>
 	<string name="Polish_micro">"Pools"</string>
 	<string name="Portuguese_Brazil_micro">"Portugees (Brasilië)"</string>
