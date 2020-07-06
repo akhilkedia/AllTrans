@@ -24,9 +24,11 @@ Like Chrome translation of webpages, but for Android apps.
   - [No app is being translated in any app](#no-app-is-being-translated-in-any-app)
   - [Translated app is stuck in opening screen](#translated-app-is-stuck-in-opening-screen)
   - [The Translated app is "Force Close"](#the-translated-app-is-force-close)
-  - [A particular app is not being translated](#a-particular-app-is-not-being-translated)
+  - [Other apps are being translated, but some particular app is not](#other-apps-are-being-translated-but-some-particular-app-is-not)
   - [A game app is not being translated](#a-game-app-is-not-being-translated)
+  - [The app "Telegram" is not being translated](#the-app-telegram-is-not-being-translated)
   - [If you still have problems like "Force Close" or parts of an app not being translated](#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated)
+- [Featured In](#featured-in)
 - [Donations](#donations)
 - [License](#license)
 
@@ -69,7 +71,9 @@ A video (in English) showing how to use AllTrans by Gadget Hacks on Youtube [htt
 ## How to install AllTrans
 
 1. This application requires android version 4.1 or later. You probably already have it. (Android JellyBean or later - so far JellyBean, Kitkat, Lollipop, MarshMallow, Nougat, Oreo, Pie and Q.).
-1. Make sure you have [Xposed Framework](https://forum.xda-developers.com/showthread.php?t=3034811) installed and running. If there is not an official version of Xposed for your Android, [EdXposed](https://forum.xda-developers.com/xposed/development/official-edxposed-successor-xposed-t4070199) is recommended. If you do not have an unlocked bootloader or Magisk, AllTrans is now fully compatible with [VirtualXposed](https://virtualxposed.com/) and [Taichi](https://github.com/taichi-framework/TaiChi/releases), so AllTrans can now be used on all devices!!! No need of unlocked bootloader, no need of Magisk, etc.!
+1. Make sure you have [Xposed Framework](https://forum.xda-developers.com/showthread.php?t=3034811) installed and running.
+   - If there is not an official version of Xposed for your Android, [EdXposed](https://forum.xda-developers.com/xposed/development/official-edxposed-successor-xposed-t4070199) is recommended.
+   - **If you do not have an unlocked bootloader or Magisk, AllTrans is now fully compatible with [VirtualXposed](https://virtualxposed.com/) and [Taichi](https://github.com/taichi-framework/TaiChi/releases), so AllTrans can now be used on all devices!!! No need of unlocked bootloader, no need of Magisk, etc.!**
 1. Install the latest version of AllTrans from [Google Play Store](https://play.google.com/store/apps/details?id=akhil.alltrans). You can alternatively download the apk from [Xposed Module Repository](http://repo.xposed.info/module/akhil.alltrans)
 1. Reboot your phone.
 
@@ -84,7 +88,7 @@ A video (in English) showing how to use AllTrans by Gadget Hacks on Youtube [htt
 ### Note - If you are using VirtualXposed or Taichi
 
 - This application will only work for apps installed inside Taichi or VirtualXposed, not for other apps. This means it will not work for any system apps.
-- Sometimes some apps will fail to install/run inside Taichi/VirtualXposed. This is not a problem of AllTrans, just some limitations of Taichi/VirtualXposed.
+**- Sometimes some apps will fail to install/run inside Taichi/VirtualXposed. This is not a problem of AllTrans, just some limitations of Taichi/VirtualXposed.**
 - Some apps work on Taichi, some work on VirtualXposed, some on neither. I recommend you try using both if some app does not install/open inside VirtualXposed/Taichi.
 
 ## How to get Microsoft Azure Translate Key
@@ -126,8 +130,11 @@ A previous version of this application encouraged use of Yandex API keys. Yandex
 
 ### No app is being translated in any app
 
-- If no app is being translated, check is "AllTrans" is enabled in "Xposed Installer -> Modules".
-- Also check if your "Microsoft Subscription Key" is correct.
+- If no app is being translated, check if "AllTrans" is enabled in "Xposed Installer -> Modules"
+  - If you are using "Taichi", check "AllTrans" is enabled in "+ -> Manage Modules".
+  - If you are using "Taichi"/"VirtualXposed", also make sure the app to be translated in installed using "Taichi"/"VirtualXposed".
+- If you are using "Google" to translate (the default), make sure you have set "Translate From Langauge" and "Translate To Language" and downloaded the translation files.
+- If you are using "Microsoft" to translate, make sure "Microsoft Subscription Key" is correct, and the "Resource Region" setting is "Global" when you made the key.
 
 ### Translated app is stuck in opening screen
 
@@ -138,7 +145,7 @@ A previous version of this application encouraged use of Yandex API keys. Yandex
 - Click on the app's name in "Apps to Translate" tab, and in "Other Settings" fill in "Delay Before Replcaing With Translated Text" to "2000".
 - Click on the app's name in "Apps to translate" tab, and in "Other Settings" fill in "Delay Before Starting to Translate WebViews" to "2000".
 
-### A particular app is not being translated
+### Other apps are being translated, but some particular app is not
 
 - Click on the app's name in "Apps to translate" tab, and in "Other Settings" fill in "Delay Before Starting to Translate WebViews" to "2000".
 - If some parts of the app are still not being translated, click on the app's name in "Apps to translate" tab, and enable "Aggressive Mode".
@@ -146,6 +153,10 @@ A previous version of this application encouraged use of Yandex API keys. Yandex
 ### A game app is not being translated
 
 - Due to technical limitations, "AllTrans" will not work with many games. Nothing can be done about this.
+
+### The app "Telegram" is not being translated
+
+- In "Apps to Translate", click on "Telegram", click "OverRide Global Settings", set "Translate From Langauge" and "Translate To Language", and **Enable "Aggresive Mode"**
 
 ### If you still have problems like "Force Close" or parts of an app not being translated
 
@@ -157,6 +168,18 @@ Contact me for support. When you do, I will need atleast the following informati
 
 Once you have the above, contact me on the  [XDA support thread](https://forum.xda-developers.com/xposed/modules/xposed-alltrans-completely-translate-t3539878).
 You can also report issues on the  [Project's "Github"](https://github.com/akhilkedia/AllTrans).
+
+## Featured In
+
+AllTrans has been featured by many outlets, in many languages. AllTrans has been covered in English by -
+
+- [XDA Developers](https://www.xda-developers.com/alltrans-is-an-xposed-module-that-completely-translates-apps/)
+- [Android Police](https://www.youtube.com/watch?v=LFTH5PCZygs)
+- [Gadget Hacks](https://android.gadgethacks.com/how-to/automatically-translate-any-android-app-into-any-language-0176033/)
+- [DroidViews](https://www.droidviews.com/auto-translate-apps-on-your-android-into-any-language/)
+- [Mi News](http://in.c.mi.com/thread-259647-1-0.html?mobile=no)
+- [GetDroidTips](https://www.getdroidtips.com/translating-android-apps-language/)
+- [steemit](https://steemit.com/alltrans/@vishalsingh4997/alltrans-module-that-changes-languages-in-real-time-12c241bfd79f7est)
 
 ## Donations
 

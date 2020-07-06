@@ -89,10 +89,6 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
                 return;
 
             utils.Debug = PreferenceList.Debug;
-            utils.Rooted = PreferenceList.Rooted;
-            if (!utils.Rooted) {
-                utils.debugLog("We are in Taichi/VirtualXposed for package : " + packageName);
-            }
 
             utils.debugLog("Alltrans is Enabled for Package " + packageName);
 
@@ -133,12 +129,8 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
             if (PreferenceList.LoadURL) {
                 // Hook WebView Constructor to inject JS object
                 findAndHookConstructor(WebView.class, Context.class, AttributeSet.class, int.class, int.class, Map.class, boolean.class, new WebViewOnCreateHookHandler());
-                if (!utils.Rooted) {
-                    utils.tryHookMethod(WebView.class, "setWebViewClient", WebViewClient.class, new WebViewSetClientHookHandler());
-                } else {
-//                    TODO: Check if this needs to be removed in favour of above. Probably does.
-                    utils.tryHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewOnLoadHookHandler());
-                }
+                utils.tryHookMethod(WebView.class, "setWebViewClient", WebViewClient.class, new WebViewSetClientHookHandler());
+                utils.tryHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewOnLoadHookHandler());
             }
 
             if (PreferenceList.DrawText) {

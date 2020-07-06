@@ -28,7 +28,6 @@ class PreferenceList {
     public static boolean Enabled;
     public static boolean LocalEnabled;
     public static boolean Debug;
-    public static boolean Rooted;
 
     public static String SubscriptionKey;
     public static String TranslateFromLanguage;
@@ -59,7 +58,6 @@ class PreferenceList {
         Enabled = (boolean) getValue(gPref, "Enabled", false);
         LocalEnabled = (boolean) getValue(gPref, packageName, false);
         Debug = (boolean) getValue(gPref, "Debug", false);
-        Rooted = (boolean) getValue(gPref, "Rooted", false);
 
         SubscriptionKey = (String) getValue(gPref, "SubscriptionKey", "");
         TranslatorProvider = (String) getValue(gPref, "TranslatorProvider", "g");

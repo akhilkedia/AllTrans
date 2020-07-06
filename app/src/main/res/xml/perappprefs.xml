@@ -64,7 +64,41 @@
             android:title="@string/transTo" />
 
     </PreferenceCategory>
-    <PreferenceCategory android:title="@string/pref_cat_parts_of_app" app:iconSpaceReserved="false">
+    <PreferenceCategory android:title="@string/pref_cat_troubleshooting_info" app:iconSpaceReserved="false">
+
+        <SwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            android:key="DrawText"
+            android:summaryOff="@string/drawText_summary_off"
+            android:summaryOn="@string/drawText_summary_on"
+            android:title="@string/drawText"/>
+        <SwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            android:key="Scroll"
+            android:summaryOff="@string/scroll_summary_off"
+            android:summaryOn="@string/scroll_summary_on"
+            android:title="@string/scroll" />
+        <EditTextPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="@integer/default_delay"
+            android:key="Delay"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/delay_summary"
+            android:title="@string/delay" />
+        <EditTextPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="@integer/default_delay_webview"
+            android:key="DelayWebView"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/delay_webview_summary"
+            android:title="@string/delay_webview" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_cat_advanced_settings" app:iconSpaceReserved="false">
 
         <SwitchPreference
             app:iconSpaceReserved="false"
@@ -89,43 +123,10 @@
             android:title="@string/webView" />
         <SwitchPreference
             app:iconSpaceReserved="false"
-            android:defaultValue="false"
-            android:key="DrawText"
-            android:summaryOff="@string/drawText_summary_off"
-            android:summaryOn="@string/drawText_summary_on"
-            android:title="@string/drawText" />
-    </PreferenceCategory>
-    <PreferenceCategory android:title="@string/pref_cat_other_settings" app:iconSpaceReserved="false">
-
-        <SwitchPreference
-            app:iconSpaceReserved="false"
             android:defaultValue="true"
             android:key="Cache"
             android:summaryOff="@string/caching_summary_off"
             android:summaryOn="@string/caching_summary_on"
             android:title="@string/caching" />
-        <EditTextPreference
-            app:iconSpaceReserved="false"
-            android:defaultValue="@integer/default_delay"
-            android:key="Delay"
-            android:selectAllOnFocus="true"
-            android:singleLine="true"
-            android:summary="@string/delay_summary"
-            android:title="@string/delay" />
-        <EditTextPreference
-            app:iconSpaceReserved="false"
-            android:defaultValue="@integer/default_delay_webview"
-            android:key="DelayWebView"
-            android:selectAllOnFocus="true"
-            android:singleLine="true"
-            android:summary="@string/delay_webview_summary"
-            android:title="@string/delay_webview" />
-        <SwitchPreference
-            app:iconSpaceReserved="false"
-            android:defaultValue="false"
-            android:key="Scroll"
-            android:summaryOff="@string/scroll_summary_off"
-            android:summaryOn="@string/scroll_summary_on"
-            android:title="@string/scroll" />
     </PreferenceCategory>
 </PreferenceScreen>

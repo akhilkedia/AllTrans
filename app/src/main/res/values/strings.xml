@@ -41,8 +41,8 @@
 
     <!-- Preference Categories -->
     <string name="pref_cat_translate_settings">"Translate Settings"</string>
-    <string name="pref_cat_parts_of_app">"Parts of App to Translate"</string>
-    <string name="pref_cat_other_settings">"Other Settings"</string>
+    <string name="pref_cat_troubleshooting_info">"Translate Settings to Fix Apps Crashing or Not Translating"</string>
+    <string name="pref_cat_advanced_settings">"Advanced Settings"</string>
 
     <!-- master on off -->
     <string name="master_on_off">"Master On/Off"</string>

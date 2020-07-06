@@ -36,7 +36,6 @@ import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 
 class utils {
     public static boolean Debug = true;
-    public static boolean Rooted = false;
 
     public static boolean check_not_xposed(Context context) {
         if (isVirtualXposed()) {

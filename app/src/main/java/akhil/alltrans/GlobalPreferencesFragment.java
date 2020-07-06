@@ -55,21 +55,6 @@ import androidx.preference.SwitchPreference;
 
 public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
 
-    private void fixNotRooted() {
-        SwitchPreference rooted = findPreference("Rooted");
-        SwitchPreference drawText = findPreference("DrawText");
-        assert rooted != null;
-        assert drawText != null;
-        rooted.setVisible(false);
-        if (utils.check_not_xposed(getActivity())) {
-            utils.debugLog("This is Not Xposed, this is VirtualXposed or Taichi!");
-            rooted.setChecked(false);
-        } else {
-            utils.debugLog("This is actual Xposed, not VirtualXposed or Taichi!");
-            rooted.setChecked(true);
-        }
-    }
-
     @SuppressLint("ApplySharedPref")
     private void handleSubProviderChange() {
         ListPreference translatorProvider = findPreference("TranslatorProvider");
@@ -240,7 +225,6 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
         preferenceManager.setSharedPreferencesName("AllTransPref");
         addPreferencesFromResource(R.xml.preferences);
 
-        fixNotRooted();
         handleSubProviderChange();
         ListPreference translatorProvider = findPreference("TranslatorProvider");
         assert translatorProvider != null;
