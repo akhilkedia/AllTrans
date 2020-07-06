@@ -34,6 +34,7 @@ Like Chrome translation of webpages, but for Android apps.
   - [The app "Telegram" is not being translated](#the-app-telegram-is-not-being-translated)
   - [If you still have problems like "Force Close" or parts of an app not being translated](#if-you-still-have-problems-like-force-close-or-parts-of-an-app-not-being-translated)
 - [Featured In](#featured-in)
+- [Play Store](#play-store)
 - [Donations](#donations)
 - [License](#license)
 
@@ -185,6 +186,8 @@ AllTrans has been featured by many outlets, in many languages. AllTrans has been
 - [Mi News](http://in.c.mi.com/thread-259647-1-0.html?mobile=no)
 - [GetDroidTips](https://www.getdroidtips.com/translating-android-apps-language/)
 - [steemit](https://steemit.com/alltrans/@vishalsingh4997/alltrans-module-that-changes-languages-in-real-time-12c241bfd79f7est)
+
+## Play Store
 
 [![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=akhil.alltrans&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
 
