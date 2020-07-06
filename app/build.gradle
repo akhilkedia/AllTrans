@@ -23,14 +23,14 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "29.0.2"
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "akhil.alltrans"
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 18
-        versionName "1.8.0"
+        versionCode 19
+        versionName "1.9.0"
         multiDexEnabled true
     }
     buildTypes {
@@ -64,7 +64,7 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-analytics:17.4.3'
     implementation 'com.google.firebase:firebase-crashlytics:17.1.0'
-    implementation 'com.google.mlkit:translate:16.0.0'
+    implementation 'com.google.mlkit:translate:16.1.0'
     implementation 'com.android.support:multidex:1.0.3'
 
 
