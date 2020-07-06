@@ -22,17 +22,23 @@ package akhil.alltrans;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.graphics.text.MeasuredText;
 import android.text.AlteredCharSequence;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
 import android.text.SpannedString;
 import android.util.Log;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.lang.reflect.Method;
 import java.nio.CharBuffer;
 
 import de.robv.android.xposed.XC_MethodReplacement;
 import de.robv.android.xposed.XposedBridge;
+
+import static de.robv.android.xposed.XposedBridge.hookMethod;
+import static de.robv.android.xposed.XposedBridge.unhookMethod;
 
 public class DrawTextHookHandler extends XC_MethodReplacement implements OriginalCallable {
 
@@ -46,25 +52,14 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
      */
     private static void setTextSizeForWidth(Paint paint, float originalSize, float desiredWidth,
                                             String text) {
-
-        // Pick a reasonably large value for the test. Larger values produce
-        // more accurate results, but may cause problems with hardware
-        // acceleration. But there are workarounds for that, too; refer to
-        // http://stackoverflow.com/questions/6253528/font-size-too-large-to-fit-in-cache
-
         // Get the bounds of the text, using our testTextSize.
-        paint.setTextSize(originalSize);
+        float desiredTextSize = originalSize;
         Rect bounds = new Rect();
         paint.getTextBounds(text, 0, text.length(), bounds);
-
-        if (desiredWidth < bounds.width()) {
-            // Calculate the desired size as a proportion of our testTextSize.
-            float desiredTextSize = originalSize * desiredWidth / bounds.width();
-
-            // Set the paint for that size.
+        while(bounds.width() > desiredWidth) {
+            desiredTextSize -= 1;
             paint.setTextSize(desiredTextSize);
-        } else {
-            paint.setTextSize(originalSize);
+            paint.getTextBounds(text, 0, text.length(), bounds);
         }
     }
 
@@ -84,81 +79,130 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
         myMethod.setAccessible(true);
         Object[] myArgs = methodHookParam.args;
 
-        if (myArgs[0].getClass().equals(AlteredCharSequence.class)) {
-            myArgs[0] = AlteredCharSequence.make(translatedString, null, 0, 0);
-        } else if (myArgs[0].getClass().equals(CharBuffer.class)) {
-            CharBuffer charBuffer = CharBuffer.allocate(translatedString.length() + 1);
-            charBuffer.append(translatedString);
-            myArgs[0] = charBuffer;
-        } else if (myArgs[0].getClass().equals(SpannableString.class)) {
-            myArgs[0] = new SpannableString(translatedString);
-        } else if (myArgs[0].getClass().equals(SpannedString.class)) {
-            myArgs[0] = new SpannedString(translatedString);
-        } else if (myArgs[0].getClass().equals(String.class)) {
-            myArgs[0] = translatedString.toString();
-        } else if (myArgs[0].getClass().equals(StringBuffer.class)) {
-            myArgs[0] = new StringBuffer(translatedString);
-        } else if (myArgs[0].getClass().equals(StringBuilder.class)) {
-            myArgs[0] = new StringBuilder(translatedString);
-        } else {
-            myArgs[0] = new SpannableStringBuilder(translatedString);
+        if (myArgs.length != 0 && myArgs[0]!= null) {
+            if (myArgs[0].getClass().equals(char[].class)) {
+                myArgs[0] = translatedString.toString().toCharArray();
+            } else if (myArgs[0].getClass().equals(AlteredCharSequence.class)) {
+                myArgs[0] = AlteredCharSequence.make(translatedString, null, 0, 0);
+            } else if (myArgs[0].getClass().equals(CharBuffer.class)) {
+                CharBuffer charBuffer = CharBuffer.allocate(translatedString.length() + 1);
+                charBuffer.append(translatedString);
+                myArgs[0] = charBuffer;
+            } else if (myArgs[0].getClass().equals(SpannableString.class)) {
+                myArgs[0] = new SpannableString(translatedString);
+            } else if (myArgs[0].getClass().equals(SpannedString.class)) {
+                myArgs[0] = new SpannedString(translatedString);
+            } else if (myArgs[0].getClass().equals(String.class)) {
+                myArgs[0] = translatedString.toString();
+            } else if (myArgs[0].getClass().equals(StringBuffer.class)) {
+                myArgs[0] = new StringBuffer(translatedString);
+            } else if (myArgs[0].getClass().equals(StringBuilder.class)) {
+                myArgs[0] = new StringBuilder(translatedString);
+            } else if (myArgs[0].getClass().equals(MeasuredText.class)) {
+                myArgs[0] = new MeasuredText.Builder(translatedString.toString().toCharArray()).build();
+            } else {
+                myArgs[0] = translatedString;
+            }
         }
 
         Paint tempPaint = (Paint) myArgs[myArgs.length - 1];
         Canvas tempCanvas = (Canvas) methodHookParam.thisObject;
-        myArgs[myArgs.length - 1] = copyPaint(tempPaint, tempCanvas, myArgs[0].toString());
-        if (myArgs[1].getClass().equals(int.class)) {
+        if (myArgs[0]!= null) {
+            myArgs[myArgs.length - 1] = copyPaint(tempPaint, tempCanvas, myArgs[0].toString());
+        }
+        if (myArgs[1].getClass().equals(int.class) || myArgs[1].getClass().equals(Integer.class) ) {
             myArgs[1] = 0;
             myArgs[2] = translatedString.length();
         }
-//
-//        alltrans.hookAccess.acquireUninterruptibly();
-//        unhookMethod(methodHookParam.method, alltrans.setTextHook);
-        try {
-            utils.debugLog("In Thread " + Thread.currentThread().getId() + " Invoking original function " + methodHookParam.method.getName() + " and setting text to " + myArgs[0].toString());
-            XposedBridge.invokeOriginalMethod(myMethod, methodHookParam.thisObject, myArgs);
-        } catch (Exception e) {
-            Log.e("AllTrans", "AllTrans: Got error in invoking method as : " + Log.getStackTraceString(e));
+        if (myArgs.length >= 5 && myArgs[3].getClass().equals(int.class) || myArgs[1].getClass().equals(Integer.class)) {
+            myArgs[3] = 0;
+            myArgs[4] = translatedString.length();
         }
-//        hookMethod(methodHookParam.method, alltrans.setTextHook);
-//        alltrans.hookAccess.release();
+//
+        alltrans.hookAccess.acquireUninterruptibly();
+        boolean unhookedSuccessfully = false;
+        try {
+            unhookMethod(methodHookParam.method, alltrans.drawTextHook);
+            unhookedSuccessfully = true;
+            try {
+                utils.debugLog("In Thread " + Thread.currentThread().getId() + " Invoking original function " + methodHookParam.method.getName() + " and setting text to " + myArgs[0].toString());
+                XposedBridge.invokeOriginalMethod(myMethod, methodHookParam.thisObject, myArgs);
+            } catch (Throwable e) {
+                StringWriter sw = new StringWriter();
+                e.printStackTrace(new PrintWriter(sw));
+                utils.debugLog("Got error in invoking method as : " + sw);
+                String classTypes = "";
+                for (int i = 0; i < myArgs.length; i++) {
+                    classTypes = classTypes + "Class:" + myArgs[i].getClass().getCanonicalName() + "Value:" + myArgs[i];
+                }
+                utils.debugLog("Params for above error are - " + classTypes);
+            }
+        } catch (Throwable e) {
+            utils.debugLog("Cannot unhook drawtext for some reason" + Log.getStackTraceString(e));
+        }
+        if (unhookedSuccessfully) {
+            try {
+                hookMethod(methodHookParam.method, alltrans.drawTextHook);
+            } catch (Throwable e) {
+                utils.debugLog("Cannot re-hook drawtext for some reason" + Log.getStackTraceString(e));
+            }
+        }
+        alltrans.hookAccess.release();
     }
 
     @Override
-    protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
-        if (methodHookParam.args[0] != null) {
-            String stringArgs = methodHookParam.args[0].toString();
-
-            if (SetTextHookHandler.isNotWhiteSpace(stringArgs)) {
-                utils.debugLog("Canvas: Found string for canvas drawText : " + methodHookParam.args[0].toString());
-
-                utils.debugLog("In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
-                GetTranslate getTranslate = new GetTranslate();
-                getTranslate.stringToBeTrans = stringArgs;
-                getTranslate.originalCallable = this;
-                getTranslate.userData = methodHookParam;
-                getTranslate.canCallOriginal = false;
-
-                GetTranslateToken getTranslateToken = new GetTranslateToken();
-                getTranslateToken.getTranslate = getTranslate;
-
-                alltrans.cacheAccess.acquireUninterruptibly();
-                if (PreferenceList.Caching && alltrans.cache.containsKey(stringArgs)) {
-                    String translatedString = alltrans.cache.get(stringArgs);
-                    utils.debugLog("In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
-                    alltrans.cacheAccess.release();
-                    callOriginalMethod(translatedString, methodHookParam);
-                    return null;
-                } else {
-                    alltrans.cacheAccess.release();
-                    callOriginalMethod(stringArgs, methodHookParam);
-                }
-                getTranslateToken.doAll();
+    protected Object replaceHookedMethod(MethodHookParam methodHookParam) {
+        try {
+            if (methodHookParam.args[0] == null) {
+                callOriginalMethod(null, methodHookParam);
+                return null;
+            }
+            String stringArgs = "";
+            if (methodHookParam.args[0].getClass() == char[].class) {
+                stringArgs = new String((char[]) methodHookParam.args[0]);
             } else {
+                stringArgs = methodHookParam.args[0].toString();
+                if (methodHookParam.args[1].getClass().equals(int.class) || methodHookParam.args[1].getClass().equals(Integer.class)) {
+                    if (methodHookParam.args[0].getClass() == char[].class) {
+                        stringArgs = stringArgs.substring((int) methodHookParam.args[1], (int) methodHookParam.args[1] + (int) methodHookParam.args[2]);
+                    } else {
+                        stringArgs = stringArgs.substring((int) methodHookParam.args[1], (int) methodHookParam.args[2]);
+                    }
+                }
+            }
+
+            if (!SetTextHookHandler.isNotWhiteSpace(stringArgs)) {
+                callOriginalMethod(stringArgs, methodHookParam);
+                return null;
+            }
+            utils.debugLog("Canvas: Found string for canvas drawText : " + methodHookParam.args[0].toString());
+
+            utils.debugLog("In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
+            GetTranslate getTranslate = new GetTranslate();
+            getTranslate.stringToBeTrans = stringArgs;
+            getTranslate.originalCallable = this;
+            getTranslate.userData = methodHookParam;
+            getTranslate.canCallOriginal = false;
+
+            GetTranslateToken getTranslateToken = new GetTranslateToken();
+            getTranslateToken.getTranslate = getTranslate;
+
+            alltrans.cacheAccess.acquireUninterruptibly();
+            if (PreferenceList.Caching && alltrans.cache.containsKey(stringArgs)) {
+                String translatedString = alltrans.cache.get(stringArgs);
+                utils.debugLog("In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
+                alltrans.cacheAccess.release();
+                callOriginalMethod(translatedString, methodHookParam);
+                return null;
+            } else {
+                alltrans.cacheAccess.release();
                 callOriginalMethod(stringArgs, methodHookParam);
             }
+            getTranslateToken.doAll();
+            return null;
+        } catch (Throwable e) {
+            utils.debugLog("Some Exception in drawText replaceHook - " + Log.getStackTraceString(e));
+            return null;
         }
-        return null;
     }
-
 }

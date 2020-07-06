@@ -312,7 +312,7 @@ public class AppListFragment extends Fragment {
             final PackageManager pm = context.getPackageManager();
             try {
                 return pm.getInstalledApplications(PackageManager.GET_META_DATA);
-            } catch (Exception ignored) {
+            } catch (Throwable ignored) {
                 //we don't care why it didn't succeed. We'll do it using an alternative way instead
             }
             // use fallback:
@@ -329,7 +329,7 @@ public class AppListFragment extends Fragment {
                     result.add(applicationInfo);
                 }
                 process.waitFor();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 e.printStackTrace();
             } finally {
                 if (bufferedReader != null)

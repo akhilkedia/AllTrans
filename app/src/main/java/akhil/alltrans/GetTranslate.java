@@ -72,7 +72,7 @@ public class GetTranslate implements Callback {
                     }
 //                    Ideally we don't need to do this, but Microsoft return these escape sequences sometimes..
                     translatedString = utils.XMLUnescape(translatedString);
-                } catch (Exception e) {
+                } catch (Throwable e) {
                     Log.e("AllTrans", "AllTrans: Got error in getting string from translation as : " + Log.getStackTraceString(e));
                     translatedString = stringToBeTrans;
                 }
@@ -91,7 +91,7 @@ public class GetTranslate implements Callback {
                 utils.debugLog("In Thread " + Thread.currentThread().getId() + " In GetTranslate, setting: " + stringToBeTrans + " to :" + translatedString);
             }
 
-        } catch (Exception e) {
+        } catch (Throwable e) {
             Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
             translatedString = stringToBeTrans;
         } finally {

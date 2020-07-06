@@ -112,7 +112,7 @@ public class WebViewClientWrapper extends WebViewClient {
 //            pw.flush();
 //            pw.close();
 //            f.close();
-//        } catch (Exception e) {
+//        } catch (Throwable e) {
 //            e.printStackTrace();
 //        }
 //    }

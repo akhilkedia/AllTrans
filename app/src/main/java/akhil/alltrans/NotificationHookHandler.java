@@ -24,8 +24,6 @@ import android.app.Notification.MessagingStyle.Message;
 import android.app.Person;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.os.Parcelable;
 import android.util.Log;
 
@@ -36,6 +34,7 @@ import java.util.List;
 import java.util.Objects;
 
 import androidx.annotation.RequiresApi;
+import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XC_MethodReplacement;
 import de.robv.android.xposed.XposedBridge;
 
@@ -45,9 +44,9 @@ import static akhil.alltrans.SetTextHookHandler.isNotWhiteSpace;
 public class NotificationHookHandler extends XC_MethodReplacement implements OriginalCallable {
 
     public void callOriginalMethod(CharSequence translatedString, Object userData) {
-        Object[] userDataArr = (Object[]) userData;
-        MethodHookParam methodHookParam = (MethodHookParam) userDataArr[0];
-        String originalString = (String) userDataArr[1];
+        NotificationHookUserData notificationHookUserData = (NotificationHookUserData) userData;
+        MethodHookParam methodHookParam = notificationHookUserData.methodHookParam;
+        String originalString = notificationHookUserData.originalString;
         Method myMethod = (Method) methodHookParam.method;
         myMethod.setAccessible(true);
         Object[] myArgs = methodHookParam.args;
@@ -59,7 +58,7 @@ public class NotificationHookHandler extends XC_MethodReplacement implements Ori
         try {
             utils.debugLog("In Thread " + Thread.currentThread().getId() + " Invoking original function " + methodHookParam.method.getName());
             XposedBridge.invokeOriginalMethod(myMethod, methodHookParam.thisObject, myArgs);
-        } catch (Exception e) {
+        } catch (Throwable e) {
             Log.e("AllTrans", "AllTrans: Got error in invoking method as : " + Log.getStackTraceString(e));
         }
     }
@@ -300,9 +299,7 @@ public class NotificationHookHandler extends XC_MethodReplacement implements Ori
                 }
                 String stringArgs = text.toString();
                 utils.debugLog("In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
-                Object[] userData = new Object[3];
-                userData[0] = methodHookParam;
-                userData[1] = text.toString();
+                NotificationHookUserData userData = new NotificationHookUserData(methodHookParam, text.toString());
 
                 alltrans.cacheAccess.acquireUninterruptibly();
                 if (PreferenceList.Caching && alltrans.cache.containsKey(stringArgs)) {
@@ -328,4 +325,14 @@ public class NotificationHookHandler extends XC_MethodReplacement implements Ori
         return null;
     }
 
+}
+
+class NotificationHookUserData {
+    public final XC_MethodHook.MethodHookParam methodHookParam;
+    public final String originalString;
+
+    NotificationHookUserData(XC_MethodHook.MethodHookParam methodHookParam, String originalString) {
+        this.methodHookParam = methodHookParam;
+        this.originalString = originalString;
+    }
 }

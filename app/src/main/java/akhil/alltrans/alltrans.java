@@ -32,6 +32,7 @@ import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
 import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
+import static de.robv.android.xposed.XposedHelpers.findClass;
 
 
 public class alltrans implements IXposedHookLoadPackage {
@@ -47,19 +48,26 @@ public class alltrans implements IXposedHookLoadPackage {
     @SuppressLint("StaticFieldLeak")
 //    TODO: Maybe change to using WeakReference?
     public static Context context = null;
+    public static Class baseRecordingCanvas = null;
 
 
     public void handleLoadPackage(final LoadPackageParam lpparam) throws Throwable {
         // TODO: Comment this line later
         utils.debugLog("in package beginning : " + lpparam.packageName);
 
+        try {
+            baseRecordingCanvas = findClass("android.graphics.BaseRecordingCanvas", lpparam.classLoader);
+        } catch (Throwable e){
+            utils.debugLog("Cannot find baseRecordingCanvas");
+        }
+
 //        Hook Application onCreate
         appOnCreateHookHandler appOnCreateHookHandler = new appOnCreateHookHandler();
-        findAndHookMethod(Application.class, "onCreate", appOnCreateHookHandler);
+        utils.tryHookMethod(Application.class, "onCreate", appOnCreateHookHandler);
 
 //        Possibly change to android.app.Instrumentation.newActivity()
         AttachBaseContextHookHandler attachBaseContextHookHandler = new AttachBaseContextHookHandler();
-        findAndHookMethod(ContextWrapper.class, "attachBaseContext", Context.class, attachBaseContextHookHandler);
+        utils.tryHookMethod(ContextWrapper.class, "attachBaseContext", Context.class, attachBaseContextHookHandler);
 
     }
 }

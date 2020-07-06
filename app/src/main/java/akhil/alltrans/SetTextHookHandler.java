@@ -88,7 +88,7 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
 
             utils.debugLog("In Thread " + Thread.currentThread().getId() + " Finished invoking original function " + methodHookParam.method.getName() + " and setting text to " + myArgs[0].toString());
 
-        } catch (Exception e) {
+        } catch (Throwable e) {
             Log.e("AllTrans", "AllTrans: Got error in invoking method as : " + Log.getStackTraceString(e));
         }
     }
@@ -128,7 +128,7 @@ public class SetTextHookHandler extends XC_MethodReplacement implements Original
                     });
                 }
             }
-        } catch (Exception e) {
+        } catch (Throwable e) {
             Log.e("AllTrans", "AllTrans: Got error in checking editable TextView : " + Log.getStackTraceString(e));
         }
 

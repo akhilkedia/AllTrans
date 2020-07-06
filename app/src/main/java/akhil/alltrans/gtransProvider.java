@@ -78,7 +78,7 @@ public class gtransProvider extends ContentProvider {
         String translatedString = tobeTrans;
         try {
             translatedString = Tasks.await(task);
-        } catch (Exception e) {
+        } catch (Throwable e) {
             utils.debugLog(Log.getStackTraceString(e));
         }
 //        translatorClient.close();

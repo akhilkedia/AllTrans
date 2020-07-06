@@ -32,6 +32,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
+import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
+
 class utils {
     public static boolean Debug = true;
     public static boolean Rooted = false;
@@ -109,6 +111,22 @@ class utils {
             } else {
                 Log.i("AllTrans", "AllTrans: " + str);
             }
+        }
+    }
+
+    public static void tryHookMethod(Class<?> clazz, String methodName, Object... parameterTypesAndCallback){
+        try{
+            findAndHookMethod(clazz, methodName, parameterTypesAndCallback);
+        } catch (Throwable e){
+            utils.debugLog("Cannot hook method - " + clazz.getCanonicalName() + " - " + methodName + Log.getStackTraceString(e));
+        }
+    }
+
+    public static void tryHookMethod(String className, ClassLoader classLoader, String methodName, Object... parameterTypesAndCallback){
+        try{
+            findAndHookMethod(className, classLoader, methodName, parameterTypesAndCallback);
+        } catch (Throwable e){
+            utils.debugLog("Cannot hook method - " + className + " - " + methodName + Log.getStackTraceString(e));
         }
     }
 

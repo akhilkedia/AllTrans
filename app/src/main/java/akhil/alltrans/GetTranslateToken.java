@@ -99,7 +99,7 @@ class GetTranslateToken {
 //
 //            httpsClient.newCall(request).enqueue(this);
 //
-//        } catch (Exception e) {
+//        } catch (Throwable e) {
 //            Log.e("AllTrans", "AllTrans: Got error in getting new token as : " + Log.getStackTraceString(e));
 //        }
 //    }

@@ -207,12 +207,6 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
         }
         addPreferencesFromResource(R.xml.perappprefs);
 
-        SwitchPreference drawText = findPreference("DrawText");
-        if (utils.check_not_xposed(getActivity())) {
-            assert drawText != null;
-            drawText.setChecked(false);
-            drawText.setVisible(false);
-        }
 
         String translatorProvider = settings.getString("TranslatorProvider", "g");
         assert translatorProvider != null;

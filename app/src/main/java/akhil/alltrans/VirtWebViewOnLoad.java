@@ -288,7 +288,7 @@ public class VirtWebViewOnLoad implements OriginalCallable {
             fileOutputStream.write(html.getBytes());
             fileOutputStream.close();
             alltrans.cacheAccess.release();
-        } catch (Exception e) {
+        } catch (Throwable e) {
             utils.debugLog("Exception while writing HTML" + e);
         }
     }

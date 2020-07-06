@@ -64,8 +64,6 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
         if (utils.check_not_xposed(getActivity())) {
             utils.debugLog("This is Not Xposed, this is VirtualXposed or Taichi!");
             rooted.setChecked(false);
-            drawText.setChecked(false);
-            drawText.setVisible(false);
         } else {
             utils.debugLog("This is actual Xposed, not VirtualXposed or Taichi!");
             rooted.setChecked(true);

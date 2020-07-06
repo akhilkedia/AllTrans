@@ -66,7 +66,7 @@ class MyActivityLifecycleCallbacks implements Application.ActivityLifecycleCallb
                 objectOutputStream.writeObject(alltrans.cache);
                 objectOutputStream.close();
 
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 utils.debugLog("Got error in onActivityDestroyed: " + Log.getStackTraceString(e));
             } finally {
                 alltrans.cacheAccess.release();
