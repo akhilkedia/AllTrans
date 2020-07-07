@@ -88,23 +88,23 @@ public class AppListFragment extends Fragment {
         settings = this.getActivity().getSharedPreferences("AllTransPref", Context.MODE_PRIVATE);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
 
-        if (BuildConfig.DEBUG) {
-            SharedPreferences.Editor editor = settings.edit();
-            editor.putBoolean("codepath.apps.demointroandroid", true);
-            editor.putBoolean("com.astroframe.seoulbus", true);
-            editor.putBoolean("com.nhn.android.nmap", true);
-            editor.putBoolean("com.kakao.taxi", true);
-            editor.putBoolean("com.fineapp.yogiyo", true);
-            editor.putBoolean("com.cgv.android.movieapp", true);
-            editor.putBoolean("com.wooricard.smartapp", true);
-            editor.putBoolean("com.google.android.talk", true);
-            editor.putBoolean("com.ebay.global.gmarket", true);
-            editor.putBoolean("com.foodfly.gcm", true);
-            editor.putBoolean("com.ktcs.whowho", true);
-            editor.putBoolean("Debug", true);
-            editor.putString("SubscriptionKey", getString(R.string.microsoft_key));
-            editor.apply();
-        }
+//        if (BuildConfig.DEBUG) {
+//            SharedPreferences.Editor editor = settings.edit();
+//            editor.putBoolean("codepath.apps.demointroandroid", true);
+//            editor.putBoolean("com.astroframe.seoulbus", true);
+//            editor.putBoolean("com.nhn.android.nmap", true);
+//            editor.putBoolean("com.kakao.taxi", true);
+//            editor.putBoolean("com.fineapp.yogiyo", true);
+//            editor.putBoolean("com.cgv.android.movieapp", true);
+//            editor.putBoolean("com.wooricard.smartapp", true);
+//            editor.putBoolean("com.google.android.talk", true);
+//            editor.putBoolean("com.ebay.global.gmarket", true);
+//            editor.putBoolean("com.foodfly.gcm", true);
+//            editor.putBoolean("com.ktcs.whowho", true);
+//            editor.putBoolean("Debug", true);
+//            editor.putString("SubscriptionKey", getString(R.string.microsoft_key));
+//            editor.apply();
+//        }
 
         //noinspection ConstantConditions
         listview = getView().findViewById(R.id.AppsList);
