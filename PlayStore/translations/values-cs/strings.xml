@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Přeložit další aplikace"</string>
+	<string name="short_desc">"Modul Xposed, který překládá *all* text v aplikaci do jiného jazyka"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Zcela přeložit aplikace&lt;/b&gt;&lt;/u&gt;
+Stejně jako překlad webových stránek, ale pro aplikace pro Android.
+&lt;u&gt;&lt;b&gt;Co AllTrans dělá&lt;/b&gt;&lt;/u&gt;
+Nahrazuje &lt;b&gt;veškerý text v aplikaci&lt;/b&gt; v jazyce z jednoho jazyka do druhého za běhu.
+Řekněme například, že aplikace, kterou chcete použít, je v němčině, ale umíte pouze anglicky.
+Pak vždy, když otevřete požadovanou aplikaci, veškerý text v aplikaci, &lt;b&gt;kdekoliv&lt;/b&gt;, bude nahrazen jeho anglické
+Ekvivalenty.
+To je něco podobného způsobu, jakým automatický překlad funguje v prohlížečích.
+&lt;u&gt;&lt;b&gt;Požadavky&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; nebo &lt;b&gt;VirtualXposed&lt;/b&gt; nebo &lt;b&gt;Taichi&lt;/b&gt; nainstalován a spuštěn.
+&lt;u&gt;&lt;b&gt;Pokud máte uzamčený bootloader nebo nezakořeněný telefon&lt;/b&gt;&lt;/u&gt;
+Taichi (xposed emulátor) si můžete stáhnout z https://github.com/taichi-framework/TaiChi/releases/
+Alternativně si můžete stáhnout VirtualXposed (xposed emulátor jako paralelní prostor, duální aplikace) z https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Pokud nevíte, co Xposed nebo Virtualxposed je, tato aplikace je pravděpodobně není pro vás&lt;/b&gt;Jak používat&lt;u&gt;&lt;b&gt;AllTrans&lt;/b&gt;&lt;/u&gt;
+? Ujistěte se, že AllTrans je zapnutý v XposedInstaller / Taichi.
+? Na kartě Globální nastavení zvolte Přeložit z jazyka a Přeložit do jazyka.
+? Na kartě Aplikace k překladu najděte aplikaci, kterou chcete přeložit, a klikněte na zaškrtávací políčko vedle ní.
+? Zavřete a restartujte aplikaci, kterou chcete přeložit - to by mělo být přeloženo!
+"</string>
+</resources>

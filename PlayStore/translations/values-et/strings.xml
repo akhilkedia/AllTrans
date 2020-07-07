@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Tõlgi muud rakendused"</string>
+	<string name="short_desc">"Xposed moodul, mis tõlgib * kõik * teksti rakenduses teise keelde"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - täielikult tõlkida apps&lt;/b&gt;&lt;/u&gt;
+Nagu veebilehtede tõlkimine, kuid Androidi rakenduste puhul.
+&lt;u&gt;&lt;b&gt;Mida AllTrans teeb?&lt;/b&gt;&lt;/u&gt;
+See asendab &lt;b&gt;kogu rakenduses sisalduva teksti&lt;/b&gt; ühes keeles ühest keelest teise käitusajal.
+Oletame näiteks, et rakendus, mida soovite kasutada, on saksa keeles, kuid teate ainult inglise keelt.
+Siis, kui avate vajaliku rakenduse, asendatakse kogu rakenduse tekst &lt;b&gt;kõikjal&lt;/b&gt;selle inglise keelega.
+Ekvivalendid.
+See on midagi sarnast, kuidas Automaatne tõlkimine töötab brauserid.
+&lt;u&gt;&lt;b&gt;Nõuded&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; või &lt;b&gt;VirtualXposed&lt;/b&gt; või &lt;b&gt;Taichi&lt;/b&gt; installitud ja töötab.
+&lt;u&gt;&lt;b&gt;Kui teil on lukustatud BootLoader või mitte-juurdunud telefon&lt;/b&gt;&lt;/u&gt;
+Võite alla laadida Taichi (xposed emulaator) alates https://github.com/taichi-framework/TaiChi/releases/
+Teise saate alla laadida VirtualXposed (xposed emulaator nagu paralleelne ruum, dual apps) https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Kui te ei tea, mida Xposed või Virtualxposed on, see rakendus ei ole ilmselt teie jaoks&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;Kuidas kasutada AllTrans&lt;/b&gt;&lt;/u&gt;
+? Veenduge, et AllTrans on xposedInstalleris / Taichis sisse lülitatud.
+? Valige vahekaardil Globaalsätted käsk Tõlgi keelest ja Tõlgi keelde.
+? Leidke vahekaardil Tõlgitavad rakendused rakendus, mida soovite tõlkida, klõpsake selle kõrval olevat märkeruutu.
+? Sulgege ja taaskäivitage rakendus, mida soovite tõlkida - see tuleks tõlkida!"</string>
+</resources>

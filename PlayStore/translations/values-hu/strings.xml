@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Más alkalmazások fordítása"</string>
+	<string name="short_desc">"Egy Xposed modul, amely lefordítja * az összes * szöveget egy alkalmazás egy másik nyelvre"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Teljesen lefordítani Alkalmazások&lt;/b&gt;&lt;/u&gt;
+Mint a weboldalak fordítása, de az Android-alkalmazások.
+&lt;u&gt;&lt;b&gt;Mit tesz az AllTrans?&lt;/b&gt;&lt;/u&gt;
+Az &lt;b&gt;alkalmazás összes szövegét&lt;/b&gt; lecseréli egy nyelvben az egyik nyelvről a másikra futásidőben.
+Tegyük fel például, hogy egy használni kívánt alkalmazás német nyelvű, de csak angolul tud.
+Ezután, amikor megnyitja a szükséges alkalmazást, az alkalmazás teljes szövegét, &lt;b&gt;bárhol&lt;/b&gt;, felváltja az angol
+Egyenértékű.
+Ez valami hasonló ahhoz, ahogy az Automatikus fordítás működik a böngészőkben.
+&lt;u&gt;&lt;b&gt;Követelmények&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; vagy &lt;b&gt;VirtualXposed&lt;/b&gt; vagy &lt;b&gt;Taichi&lt;/b&gt; telepítve és fut.
+&lt;u&gt;&lt;b&gt;Ha zárolt BootLoader vagy nem gyökerező telefonja van&lt;/b&gt;&lt;/u&gt;
+A Taichi (xposed emulátor) letölthető https://github.com/taichi-framework/TaiChi/releases/
+Alternatív megoldásként letöltheti VirtualXposed (egy xposed emulátor, mint a párhuzamos tér, kettős alkalmazások) https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Ha nem tudod, mi Xposed vagy Virtualxposed van, ez az alkalmazás valószínűleg nem az Ön számára&lt;/b&gt;Hogyan kell használni&lt;u&gt;&lt;b&gt;AllTrans&lt;/b&gt;&lt;/u&gt;
+? Győződjön meg róla, AllTrans be van kapcsolva xposedinstaller / Taichi.
+? A Globális beállítások lapon válassza a Fordítás nyelvről és fordítás nyelvre lehetőséget.
+? A Fordításhoz alkalmazások lapon keresse meg a lefordítani kívánt alkalmazást, kattintson mellette a jelölőnégyzetre.
+? Zárja be és indítsa újra a kívánt alkalmazást lefordítani - le kell fordítani!
+"</string>
+</resources>

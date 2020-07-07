@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-þýða önnur forrit"</string>
+	<string name="short_desc">"Xstafar eining sem þýðir * allt * texti í forriti á annað tungumál"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;Alltrans-algjörlega þýða forrit&lt;/b&gt;&lt;/u&gt;
+Eins og þýðingar á vefsíðum, en fyrir Android Apps.
+&lt;u&gt;&lt;b&gt;Hvað AllTrans gerir&lt;/b&gt;&lt;/u&gt;
+Það kemur &lt;b&gt;í stað allra texta í forriti&lt;/b&gt; á tungumáli frá einu tungumáli til annars á keyrslutíma.
+Segðu til dæmis App sem þú vilt nota er á þýsku, en þú veist aðeins ensku.
+Þá þegar þú opnar nauðsynlega app, verður allur textinn í forritinu, &lt;b&gt;hvar&lt;/b&gt;sem er, skipt út fyrir ensku
+Fé.
+Þetta er eitthvað svipað og hvernig sjálfvirk þýðing virkar í vafra.
+&lt;u&gt;&lt;b&gt;Kröfur um&lt;/b&gt;&lt;/u&gt;
+? Sem stafar af &lt;b&gt;ramma&lt;/b&gt; eða &lt;b&gt;Sýndarjöfnun&lt;/b&gt; eða &lt;b&gt;taichi&lt;/b&gt; uppsett og keyrt.
+&lt;u&gt;&lt;b&gt;Ef þú ert með læst BootLoader eða óræstan síma&lt;/b&gt;&lt;/u&gt;
+Hægt er að hlaða niður Taichi (
+Einnig er hægt að hlaða niður Virtualxposum (xí keppinautur eins og samsíða rúm, Dual apps) frá https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Ef þú veist ekki hvað xsitja eða Virtualxposi er, þetta App er líklega ekki fyrir þig&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;hvernig á að nota alltrans&lt;/b&gt;&lt;/u&gt;
+? Gakktu úr skugga um að AllTrans sé kveikt í XposedInstaller/Taichi.
+? Í Global Settings flipi, Veldu þýða úr tungumáli og þýða á tungumál.
+? Í forrit til að þýða flipann skaltu finna forritið sem þú vilt þýða, smelltu á gátreitinn við hliðina á því.
+? Lokaðu og endurræstu forritið sem þú vilt þýða-það ætti að þýða!"</string>
+</resources>

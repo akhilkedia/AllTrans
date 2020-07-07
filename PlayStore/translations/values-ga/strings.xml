@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Aistrigh Feidhmchláir Eile"</string>
+	<string name="short_desc">"Modúl Xposed a aistríonn *gach* téacs i bhfeidhmchlár go teanga eile"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Feidhmchláir Aistrithe go hiomlán&lt;/b&gt;&lt;/u&gt;
+Cosúil le haistriúchán ar leathanaigh Ghréasáin, ach le haghaidh apps Android.
+&lt;u&gt;&lt;b&gt;Cad a dhéanann AllTrans&lt;/b&gt;&lt;/u&gt;
+Tagann sé in ionad &lt;b&gt;gach téacs in aip&lt;/b&gt; i dteanga ó theanga amháin go teanga eile ag am reatha.
+Abair, mar shampla, app is mian leat a úsáid i nGearmáinis, ach tá a fhios agat ach Béarla.
+Ansin, aon uair a osclaíonn tú an feidhmchlár is gá, cuirfear a Bhéarla in ionad an téacs go léir san fheidhmchlár, &lt;b&gt;áit ar bith,&lt;/b&gt;
+coibhéiseacha coibhéiseacha.
+&apos;Tá sé seo rud éigin cosúil leis an mbealach Oibríonn Aistriú Uathoibríoch i brabhsálaithe.
+&lt;u&gt;&lt;b&gt;Ceanglais&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Creat&lt;/b&gt; nó &lt;b&gt;VirtualXposed&lt;/b&gt; nó &lt;b&gt;Taichi&lt;/b&gt; suiteáilte agus a reáchtáil.
+&lt;u&gt;&lt;b&gt;Má tá BootLoader faoi ghlas nó fón neamhfhréamhaithe agat&lt;/b&gt;&lt;/u&gt;
+Is féidir leat Taichi (aithriseoir xposed) a íoslódáil ó https://github.com/taichi-framework/TaiChi/releases/
+De rogha air sin, is féidir leat VirtualXposed a íoslódáil (aithriseoir xposed cosúil le spás comhthreomhar, dé-apps) ó https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Mura bhfuil a fhios agat cad é Xposed nó Virtualxposed, is dócha nach bhfuil an t-iarratas seo duit&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;Conas AllTrans a úsáid&lt;/b&gt;&lt;/u&gt;
+? Déan cinnte go bhfuil AllTrans casta air i XposedInstaller / Taichi.
+? &apos;I cluaisín Socruithe Domhanda, roghnaigh an Aistriú ó Theanga agus Aistriú go Teanga.
+? Sna Feidhmchláir chun cluaisín a Aistriú, faigh an feidhmchlár is mian leat a aistriú, cliceáil ar an ticbhosca in aice leis.
+? Dún agus atosaigh an feidhmchlár is mian leat a aistriú - ba chóir é a aistriú!"</string>
+</resources>

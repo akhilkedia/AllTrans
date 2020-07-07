@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Перевод других приложений"</string>
+	<string name="short_desc">"Модуль Xposed, который переводит текст «все» в приложении на другой язык"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Полностью переводить приложения&lt;/b&gt;&lt;/u&gt;
+Как перевод веб-страниц, но для приложений для Android.
+&lt;u&gt;&lt;b&gt;Что делает AllTrans&lt;/b&gt;&lt;/u&gt;
+Он заменяет &lt;b&gt;весь текст в приложении&lt;/b&gt; на языке от одного языка к другому во время выполнения.
+Скажем, например, приложение, которое вы хотите использовать на немецком языке, но вы знаете только английский язык.
+Затем всякий раз, когда вы открываете необходимое приложение, весь текст в приложении, в &lt;b&gt;любом месте,&lt;/b&gt;будет заменен на его английский
+Эквиваленты.
+Это что-то похожее на то, как автоматический перевод работает в браузерах.
+&lt;u&gt;&lt;b&gt;Требования&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; или &lt;b&gt;VirtualXposed&lt;/b&gt; или &lt;b&gt;Taichi&lt;/b&gt; установлен и запущен.
+&lt;u&gt;&lt;b&gt;Если у вас заблокирована BootLoader или некоренный телефон&lt;/b&gt;&lt;/u&gt;
+Вы можете скачать Taichi (эмулятор xposed) от https://github.com/taichi-framework/TaiChi/releases/
+Кроме того, вы можете скачать VirtualXposed (эмулятор xposed, как параллельное пространство, двойные приложения) из https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Если вы не знаете, что Xposed или Virtualxposed есть, это приложение, вероятно, не для вас&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;Как использовать AllTrans&lt;/b&gt;&lt;/u&gt;
+? Убедитесь, что AllTrans включен в XposedInstaller / Taichi.
+? Во вкладке Global Settings выберите перевод с языка и перевод на язык.
+? На вкладке Apps to Translate найдите приложение, которое вы хотите перевести, нажмите на флажок рядом с ним.
+? Закройте и перезапустите приложение, которое вы хотите перевести - оно должно быть переведено!"</string>
+</resources>

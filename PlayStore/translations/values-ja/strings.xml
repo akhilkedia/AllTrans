@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - 他のアプリを翻訳"</string>
+	<string name="short_desc">"アプリ内の *すべて* テキストを別の言語に翻訳する Xposed モジュール"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - 完全にアプリを翻訳&lt;/b&gt;&lt;/u&gt;
+ウェブページの翻訳のように、しかし、Androidアプリ用。
+&lt;u&gt;&lt;b&gt;オールトランスが行うこと&lt;/b&gt;&lt;/u&gt;
+ある言語&lt;b&gt;のアプリ内のすべてのテキストを&lt;/b&gt;、実行時に別の言語に置き換えます。
+たとえば、使用したいアプリがドイツ語ですが、英語しか知らない場合などです。
+その後、必要なアプリを開くたびに、アプリ内のすべてのテキスト、&lt;b&gt;どこでも&lt;/b&gt;、その英語に置き換えられます
+同等 物。
+これは、ブラウザでの自動翻訳の動作に似ています。
+&lt;u&gt;&lt;b&gt;要件&lt;/b&gt;&lt;/u&gt;
+?&lt;b&gt;Xposedフレームワーク&lt;/b&gt;または&lt;b&gt;仮想Xposed&lt;/b&gt;または&lt;b&gt;太一&lt;/b&gt;がインストールされ、実行されています。
+&lt;u&gt;&lt;b&gt;ロックされた BootLoader またはルート化されていない電話がある場合&lt;/b&gt;&lt;/u&gt;
+あなたはhttps://github.com/taichi-framework/TaiChi/releases/から太一(xposedエミュレータ)をダウンロードすることができます
+または、VirtualXposed(パラレルスペースのようなxposedエミュレータ、デュアルアプリ)をhttps://github.com/android-hacker/VirtualXposed/releasesからダウンロードすることもできます
+&lt;b&gt;あなたはXposedまたはVirtualxposedが何であるかわからない場合は、このアプリはおそらくあなたのためです&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;AllTransを使用する方法&lt;/b&gt;&lt;/u&gt;
+?Xposedインストーラ/太一でオールトランスがオンになっていることを確認してください。
+?[グローバル設定] タブで、[言語から翻訳し、言語に翻訳] を選択します。
+?[翻訳するアプリ] タブで、翻訳するアプリを見つけ、その横にあるチェックボックスをクリックします。
+?あなたが翻訳したいアプリを閉じて再起動 - それは翻訳する必要があります!"</string>
+</resources>

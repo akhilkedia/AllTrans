@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Traduzione di altre applicazioni"</string>
+	<string name="short_desc">"Un modulo Xposed che traduce tutto il testo di un&apos;app in un&apos;altra lingua"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Tradurre completamente applicazioni&lt;/b&gt;&lt;/u&gt;
+Come la traduzione di pagine web, ma per le applicazioni Android.
+&lt;u&gt;&lt;b&gt;Cosa fa AllTrans&lt;/b&gt;&lt;/u&gt;
+Sostituisce &lt;b&gt;tutto il testo in un&apos;app&lt;/b&gt; in una lingua da una lingua a un&apos;altra in fase di esecuzione.
+Supponiamo ad esempio che un&apos;app che vuoi usare sia in tedesco, ma conosci solo l&apos;inglese.
+Quindi ogni volta che si apre l&apos;applicazione richiesta, tutto il testo nell&apos;applicazione, &lt;b&gt;ovunque&lt;/b&gt;, sarà sostituito dal suo inglese
+Equivalenti.
+Questo è qualcosa di simile al modo in cui la traduzione automatica funziona nei browser.
+&lt;u&gt;&lt;b&gt;Requisiti&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; o &lt;b&gt;VirtualXposed&lt;/b&gt; o &lt;b&gt;Taichi&lt;/b&gt; installato e in esecuzione.
+Se si dispone di &lt;u&gt;&lt;b&gt;un BootLoader bloccato o di un telefono non&lt;/b&gt;&lt;/u&gt;
+È possibile scaricare Taichi (un emulatore xposed) da https://github.com/taichi-framework/TaiChi/releases/
+In alternativa è possibile scaricare VirtualXposed (un emulatore xposed come spazio parallelo, doppie applicazioni) da https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Se non sai che cosa Xposed o Virtualxposed è, questa applicazione probabilmente non è per voi&lt;/b&gt;Come utilizzare&lt;u&gt;&lt;b&gt;AllTrans&lt;/b&gt;&lt;/u&gt;
+? Assicurarsi che AllTrans sia attivato in XposedInstaller / Taichi.
+? Nella scheda Impostazioni globali scegliere Traduci da lingua e Traduci in lingua.
+? Nella scheda App da tradurre, trova l&apos;app che vuoi tradurre, fai clic sulla casella di controllo accanto ad essa.
+? Chiudi e riavvia l&apos;app che vuoi tradurre - dovrebbe essere tradotta!
+"</string>
+</resources>

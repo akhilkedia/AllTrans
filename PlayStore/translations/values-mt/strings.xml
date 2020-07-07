@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Ittraduċi Applikazzjonijiet Oħra"</string>
+	<string name="short_desc">"Modulu Xposed li jittraduċi *kollha* test f&apos;applikazzjoni għal lingwa oħra"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Applikazzjonijiet kompletament Tradotti&lt;/b&gt;&lt;/u&gt;
+Bħat-traduzzjoni tal-paġni tal-web, iżda għall-apps Android.
+&lt;u&gt;&lt;b&gt;X&apos;jagħmel AllTrans&lt;/b&gt;&lt;/u&gt;
+Jissostitwixxi &lt;b&gt;t-test kollu f&apos;applikazzjoni&lt;/b&gt; f&apos;lingwa minn lingwa għal oħra fil-ħin tar-runtime.
+Għid pereżempju applikazzjoni li trid tuża hija bil-Ġermaniż, iżda taf biss l-Ingliż.
+Imbagħad kull meta tiftaħ l-applikazzjoni meħtieġa, it-test kollu fl-applikazzjoni, &lt;b&gt;kullimkien,&lt;/b&gt;jiġi sostitwit bl-Ingliż
+Ekwivalenti.
+Din hija xi ħaġa simili għall-mod kif it-Tradiment Awtomatiku jaħdem fil-brawżers.
+&lt;u&gt;&lt;b&gt;Rekwiżiti&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Qafas Xposed jew&lt;/b&gt; &lt;b&gt;VirtualXposed jew&lt;/b&gt; &lt;b&gt;Taichi&lt;/b&gt; installati u jaħdmu.
+&lt;u&gt;&lt;b&gt;Jekk għandek BootLoader imsakkar jew telefown mhux bl-għeruq&lt;/b&gt;&lt;/u&gt;
+Tista&apos; tniżżel Taichi (emulatur xpost) mill-https://github.com/taichi-framework/TaiChi/releases/
+Inkella tista &apos;tniżżel VirtualXposed (emulatur xposed bħal spazju parallel, applikazzjonijiet doppji) mill-https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Jekk ma tafx x&apos;inhu Xposed jew Virtualxposed, din l-app probabbilment mhix għalik&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;Kif tuża AllTrans&lt;/b&gt;&lt;/u&gt;
+? Kun żgur li AllTrans jinxtegħel f&apos;XposedInstaller / Taichi.
+? Fit-tab settings Globali, agħżel it-Tradiment mil-Lingwa u Tittraduċi għal-Lingwa.
+? Fl-Applikazzjonijiet biex Tittraduċi tab, sib l-applikazzjoni li tixtieq tittraduċi, ikklikkja l-kaxxa fejn timmarka ħdejha.
+? Agħlaq u rristartja l-app li trid tradott - għandha tiġi tradotta!"</string>
+</resources>

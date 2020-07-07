@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-isalin ang iba pang mga app"</string>
+	<string name="short_desc">"Isang Xginamitan na modulo kung saan isinasalin * lahat * teksto sa isang app sa ibang wika"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans-ganap na isalin ang Apps&lt;/b&gt;&lt;/u&gt;
+Tulad ng pagsasalin ng mga webpage, ngunit para sa Android Apps.
+&lt;u&gt;&lt;b&gt;Ano ang AllTrans&lt;/b&gt;&lt;/u&gt;
+Pinapalitan nito ang &lt;b&gt;lahat ng teksto sa isang app&lt;/b&gt; sa isang wika mula sa isang wika sa isa pa sa takbo.
+Sabihin halimbawa ang isang app na gusto mong gamitin ay sa Aleman, ngunit alam mo lamang Ingles.
+Pagkatapos sa tuwing buksan mo ang kinakailangang app, ang lahat ng mga teksto sa app, &lt;b&gt;kahit saan&lt;/b&gt;, ay papalitan sa pamamagitan ng Ingles nito
+mga katumbas.
+Ito ay isang bagay na katulad ng paraan awtomatikong isalin ang mga gumagana sa mga browser.
+&lt;u&gt;&lt;b&gt;Requirement&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xginamitan framework&lt;/b&gt; o &lt;b&gt;VirtualXposed&lt;/b&gt; o &lt;b&gt;taichi&lt;/b&gt; na naka-install at tumatakbo.
+&lt;u&gt;&lt;b&gt;Kung ikaw ay may naka-lock BootLoader o isang di-nakaugat na telepono&lt;/b&gt;&lt;/u&gt;
+Maaari kang mag-download ng taichi (isang xginamitan emulator) mula sa https://github.com/taichi-framework/TaiChi/releases/
+Bilang kahalili maaari mong i-download ang VirtualXposed (isang xginamitan emulator tulad ng kahilera space, dual Apps) mula sa https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Kung hindi mo alam kung ano ang Xginamitan o Virtualxposed ay, ang app na ito ay marahil hindi para sa iyo&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;kung paano gamitin ang AllTrans&lt;/b&gt;&lt;/u&gt;
+? Siguraduhin na ang AllTrans ay nakabukas sa XposedInstaller/taichi.
+? Sa Global settings tab, piliin ang isalin mula sa wika at isalin sa wika.
+? Sa Apps upang isalin ang tab, hanapin ang app na nais mong isalin, i-click ang checkbox sa tabi nito.
+? Isara at i-restart ang app na gusto mo isinalin-ito ay dapat na isinalin!"</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Muunna muut sovellukset"</string>
+	<string name="short_desc">"Xposed moduuli, joka kääntää * kaikki * teksti app toiselle kielelle"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Täysin kääntää sovellukset&lt;/b&gt;&lt;/u&gt;
+Kuten verkkosivujen kääntäminen, mutta Android-sovelluksille.
+&lt;u&gt;&lt;b&gt;Mitä AllTrans tekee&lt;/b&gt;&lt;/u&gt;
+Se korvaa &lt;b&gt;kaikki sovelluksen tekstit&lt;/b&gt; kielellä kielestä toiseen suorituksen aikana.
+Sano esimerkiksi sovellus, jota haluat käyttää, on saksaksi, mutta tiedät vain englantia.
+Sitten kun avaat haluamasi sovelluksen, kaikki sovelluksen teksti, &lt;b&gt;missä tahansa,&lt;/b&gt;korvataan sen englanniksi
+Vastineet.
+Tämä on jotain vastaavaa, miten Automaattinen käännä toimii selaimissa.
+&lt;u&gt;&lt;b&gt;Vaatimukset&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; tai &lt;b&gt;VirtualXposed&lt;/b&gt; tai &lt;b&gt;Taichi&lt;/b&gt; asennettu ja käynnissä.
+&lt;u&gt;&lt;b&gt;Jos sinulla on lukittu BootLoader tai ei-juurtunut puhelin&lt;/b&gt;&lt;/u&gt;
+Voit ladata Taichi (xposed emulaattori) https://github.com/taichi-framework/TaiChi/releases/
+Vaihtoehtoisesti voit ladata VirtualXposed (xposed emulaattori kuten rinnakkaistilaa, dual apps) https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Jos et tiedä, mitä Xposed tai Virtualxposed on, tämä sovellus ei todennäköisesti ole sinua&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;Varten Kuinka käyttää AllTrans&lt;/b&gt;&lt;/u&gt;
+? Varmista, että AllTrans on päällä XposedInstaller / Taichi.
+? Valitse Yleiset asetukset -välilehdessä Käännä kielestä ja Käännä kielelle.
+? Etsi Käännettävät sovellukset -välilehdessä sovellus, jonka haluat kääntää, ja napsauta sen vieressä olevaa valintaruutua.
+? Sulje ja käynnistä sovellus, jonka haluat kääntää - se olisi käännettävä!"</string>
+</resources>

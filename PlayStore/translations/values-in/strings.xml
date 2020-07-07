@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-Terjemahkan aplikasi lain"</string>
+	<string name="short_desc">"Modul Xposed yang menerjemahkan * semua * teks dalam aplikasi ke bahasa lain"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;Alltrans-Completely Translate Apps&lt;/b&gt;&lt;/u&gt;
+Seperti terjemahan halaman web, tetapi untuk aplikasi Android.
+&lt;u&gt;&lt;b&gt;Apa AllTrans tidak&lt;/b&gt;&lt;/u&gt;
+Ini menggantikan &lt;b&gt;semua teks dalam sebuah aplikasi&lt;/b&gt; dalam bahasa dari satu bahasa ke yang lain pada saat runtime.
+Katakanlah misalnya sebuah aplikasi yang ingin Anda gunakan adalah dalam bahasa Jerman, tetapi Anda hanya tahu bahasa Inggris.
+Kemudian setiap kali Anda membuka aplikasi yang diperlukan, Semua teks di App, di &lt;b&gt;mana saja&lt;/b&gt;, akan digantikan oleh bahasa Inggris
+Setara.
+Ini adalah sesuatu yang mirip dengan cara otomatis menerjemahkan bekerja di browser.
+&lt;u&gt;&lt;b&gt;Persyaratan&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; atau &lt;b&gt;virtualxposed&lt;/b&gt; atau di &lt;b&gt;-install dan&lt;/b&gt; Running.
+&lt;u&gt;&lt;b&gt;Jika Anda memiliki BootLoader yang terkunci atau telepon yang tidak berakar&lt;/b&gt;&lt;/u&gt;
+Anda dapat men-download (emulator xposed) dari https://github.com/taichi-framework/TaiChi/releases/
+Atau Anda dapat men-download VirtualXposed (sebuah emulator xposed seperti ruang paralel, dual Apps) dari https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Jika Anda tidak tahu apa Xposed atau Virtualxposed adalah, aplikasi ini mungkin tidak untuk Anda&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;bagaimana menggunakan alltrans&lt;/b&gt;&lt;/u&gt;
+? Pastikan AllTrans dihidupkan di XposedInstaller/Cang.
+? Di tab Setelan global, pilih Terjemahkan dari bahasa dan Terjemahkan ke bahasa.
+? Di tab aplikasi untuk Terjemahkan, Cari aplikasi yang ingin diterjemahkan, klik kotak centang di sampingnya.
+? Tutup dan restart aplikasi yang Anda inginkan diterjemahkan-itu harus diterjemahkan!"</string>
+</resources>

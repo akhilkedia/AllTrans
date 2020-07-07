@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-tradui lot Apps"</string>
+	<string name="short_desc">"Yon modil Xposed ki tradui * tout * teks nan yon app nan yon lot lang"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans-konpletman tradui Apps&lt;/b&gt;&lt;/u&gt;
+Tankou tradiksyon nan paj, men pou apps Android.
+&lt;u&gt;&lt;b&gt;Ki sa ki AllTrans fe&lt;/b&gt;&lt;/u&gt;
+Li ranplase &lt;b&gt;tout teks nan yon app&lt;/b&gt; nan yon lang ki soti nan yon lang nan yon lot nan egzekutabl.
+Di pou egzanp yon app ou vle itilize se nan Alman, men ou konnen selman Angle.
+Le sa a, chak fwa ou louvri app a mande, tout teks la nan app a, &lt;b&gt;nenpot kote&lt;/b&gt;, yo pral ranplase pa Angle li yo
+equivalents.
+Sa a se yon bagay menm jan ak wout la otomatik tradui travay nan navigate.
+&lt;u&gt;&lt;b&gt;Kondisyon&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed chapant&lt;/b&gt; oswa &lt;b&gt;VirtualXposed&lt;/b&gt; oswa &lt;b&gt;Taichi&lt;/b&gt; enstale ak kouri.
+&lt;u&gt;&lt;b&gt;Si ou gen yon charjeur femen oswa yon telefon ki pa rasin&lt;/b&gt;&lt;/u&gt;
+Ou kapab telechaje Taichi (yon emulation xposed) soti nan https://github.com/taichi-framework/TaiChi/releases/
+Altenativman ou ka telechaje VirtualXposed (yon emulation xposed tankou espas paralel, apps doub) soti nan https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Si ou pa konnen ki sa Xposed oswa Virtualxposed se, app sa a se pwobableman pa pou ou&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;ki jan yo sevi ak AllTrans&lt;/b&gt;&lt;/u&gt;
+? Asire ou ke AllTrans se vire sou nan XposedInstaller/Taichi.
+? Nan anviwonman global tab, chwazi tradui a soti nan lang ak tradui nan lang.
+? Nan Apps yo tradui tab, jwenn app a ou vle tradui, klike sou kazye a akote li.
+? Femen ak Rekomanse app a ou vle tradui-li ta dwe tradui!"</string>
+</resources>

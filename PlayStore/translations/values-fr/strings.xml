@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Traduire d’autres applications"</string>
+	<string name="short_desc">"Un module Xposed qui traduit *tout* texte d’une application vers une autre langue"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Traduire complètement les applications&lt;/b&gt;&lt;/u&gt;
+Comme la traduction des pages Web, mais pour les applications Android.
+&lt;u&gt;&lt;b&gt;Ce que fait AllTrans&lt;/b&gt;&lt;/u&gt;
+Il remplace &lt;b&gt;tout le texte d’une application&lt;/b&gt; dans une langue d’une langue à l’autre au moment de l’exécution.
+Disons par exemple qu’une application que vous souhaitez utiliser est en allemand, mais vous ne connaissez que l’anglais.
+Ensuite, chaque fois que vous ouvrez l’application requise, tout le texte de l’application, &lt;b&gt;n’importe où,&lt;/b&gt;sera remplacé par son anglais
+Équivalents.
+C’est quelque chose de similaire à la façon dont la traduction automatique fonctionne dans les navigateurs.
+&lt;u&gt;&lt;b&gt;Exigences&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; ou &lt;b&gt;VirtualXposed&lt;/b&gt; ou &lt;b&gt;Taichi&lt;/b&gt; installé et en cours d’exécution.
+&lt;u&gt;&lt;b&gt;Si vous avez un BootLoader verrouillé ou un téléphone non enraciné&lt;/b&gt;&lt;/u&gt;
+Vous pouvez télécharger Taichi (un émulateur xposed) à partir de https://github.com/taichi-framework/TaiChi/releases/
+Vous pouvez également télécharger VirtualXposed (un émulateur xposed comme l’espace parallèle, double applications) à partir de https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Si vous ne savez pas ce que Xposed ou Virtualxposed est, cette application n’est probablement pas pour vous&lt;/b&gt;Comment utiliser&lt;u&gt;&lt;b&gt;AllTrans&lt;/b&gt;&lt;/u&gt;
+? Assurez-vous que AllTrans est activé dans XposedInstaller / Taichi.
+? Sous l’onglet Paramètres globaux, choisissez la traduction dans la langue et la traduction en langue.
+? Dans l’onglet Applications à traduire, recherchez l’application à traduire, cliquez sur la case à cocher à côté.
+? Fermez et redémarrez l’application que vous souhaitez traduire - il doit être traduit!
+"</string>
+</resources>

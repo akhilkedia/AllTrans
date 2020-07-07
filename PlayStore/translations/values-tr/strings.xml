@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Diğer Uygulamaları Çevir"</string>
+	<string name="short_desc">"Uygulamadaki *tümü* metni başka bir dile çeviren Xposed modülü"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Uygulamaları Tamamen Çevir&lt;/b&gt;&lt;/u&gt;
+Web sayfalarının çevirisi gibi, ancak Android uygulamaları için.
+&lt;u&gt;&lt;b&gt;AllTrans ne yapar&lt;/b&gt;&lt;/u&gt;
+Çalışma zamanında bir dildeki &lt;b&gt;bir dildeki tüm metinlerin&lt;/b&gt; yerini alır.
+Örneğin kullanmak istediğiniz bir uygulamanın Almanca olduğunu, ancak yalnızca İngilizce bildiğinizi söyleyin.
+Daha sonra gerekli uygulamayı her açtığınızda, uygulamadaki tüm metin, &lt;b&gt;herhangi bir yerde&lt;/b&gt;, İngilizce ile değiştirilecektir
+Eşdeğer.
+Bu, Otomatik Çeviri&apos;nin tarayıcılarda çalışma şekline benzer bir şeydir.
+&lt;u&gt;&lt;b&gt;Gereksinimler&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; veya &lt;b&gt;VirtualXposed&lt;/b&gt; veya &lt;b&gt;Taichi&lt;/b&gt; yüklü ve çalışıyor.
+&lt;u&gt;&lt;b&gt;Kilitli bir BootLoader&apos;ınz veya köklü olmayan bir telefonunuz varsa&lt;/b&gt;&lt;/u&gt;
+Sen Taichi indirebilirsiniz (xposed emülatör) https://github.com/taichi-framework/TaiChi/releases/
+Alternatif olarak VirtualXposed &apos;ı (paralel alan, çift uygulamalar gibi xposed emülatörü) https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Xposed veya Virtualxposed ne olduğunu bilmiyorsanız, bu uygulama muhtemelen alltrans&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;nasıl kullanılacağı için&lt;/b&gt;&lt;/u&gt; değil
+? AllTrans XposedInstaller / Taichi açık olduğundan emin olun.
+? Genel Ayarlar sekmesinde, Dilden Çevir&apos;i ve Dile Çevir&apos;i seçin.
+? Çevirmeye Giriş Uygulamaları sekmesinde, çevirmek istediğiniz uygulamayı bulun, yanındaki onay kutusunu tıklatın.
+? Çevrilmesini istediğiniz uygulamayı kapatın ve yeniden başlatın - çevrilmelidir!"</string>
+</resources>

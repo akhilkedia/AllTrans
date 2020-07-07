@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans Whakamāoritia Ētahi Atu Taupānga"</string>
+	<string name="short_desc">"He kōwae Xposed e takataungia ana i ngā kupu katoa ki tētahi taupānga ki tētahi atu reo"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans-Ka Whakawhiti Ngā Taupānga katoa&lt;/b&gt;&lt;/u&gt;
+Pēnei i te whakawhitinga whārangi tukutuku, engari mō ngā taupānga Android.
+&lt;u&gt;&lt;b&gt;He Aha AllTrans&lt;/b&gt;&lt;/u&gt;
+Ka whakahōu i &lt;b&gt;ngā kupu katoa i tētahi taupānga&lt;/b&gt; i tētahi reo mai i te reo kotahi ki tētahi atu wāhaere taunoa.
+Kī atu ki te tauira i tētahi taupānga e hiahia ana koe ki te whakamahi, engari e mōhio ana koe ki te Ingarihi anake.
+Kātahi ka huakina e koe te taupānga e hiahiatia ana, te kupu katoa i te taupānga, ka &lt;b&gt;noho, ka&lt;/b&gt;whakahōutia e tōna ingarihi
+equivalents.
+He rite tonu tēnei ki te huarahi e Whakawhiti Aunoa ana i ngā pūtirotiro.
+&lt;u&gt;&lt;b&gt;Whakaritenga&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed anga&lt;/b&gt; , &lt;b&gt;VirtualXposed&lt;/b&gt; rānei &lt;b&gt;kua tāuta&lt;/b&gt; me te whakahaere rānei.
+&lt;u&gt;&lt;b&gt;Mēnā He BootLoader maukati, he waea hutia atu-kore rānei&lt;/b&gt;&lt;/u&gt;
+Ka taea te tikiake Taichi (he xposed emulator) mai i https://github.com/taichi-framework/TaiChi/releases/
+Otiia ka taea e koe te tikiake VirtualXposed (he xposed emulator pēnei i te mokowā wātea, ngā taupānga takirua) mai i https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Ki te kore koe e Mōhio ki Te Xposed, ki Te Virtualxposed rānei, kāore tēnei taupānga i te pēnei&lt;/b&gt;i te&lt;u&gt;&lt;b&gt;Whakamahi i te AllTrans&lt;/b&gt;&lt;/u&gt;
+? Āta titiro kua whakakāngia AllTrans te XposedInstaller/Taichi.
+? I te ripa Tautuhinga ā-Ao, kōwhiria te Takatau i te Reo, ka Whakawhiti ki te Reo.
+? I roto i Ngā Taupānga hei Whakawhiti i te ripa, kimihia te taupānga e hiahia ana koe ki te takatau, pāwhiritia te pouakataki ki te taha.
+? Katia, ka tīmata anō i te taupānga e hiahia ana koe ki te whakamāori!
+"</string>
+</resources>

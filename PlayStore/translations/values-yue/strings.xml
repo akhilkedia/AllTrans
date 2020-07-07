@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans -翻譯其他應用程序"</string>
+	<string name="short_desc">"將應用中嘅*所有*文本轉換為其他語言嘅Xposed糢塊"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans -完全翻譯應用&lt;/b&gt;&lt;/u&gt;
+鐘意網頁嘅翻譯,但對於Android應用程序。
+&lt;u&gt;&lt;b&gt;Alltrans做乜&lt;/b&gt;&lt;/u&gt;
+它在運行時&lt;b&gt;將應用中嘅語言中嘅所有&lt;/b&gt;文本由一種語言替換到另一種語言。
+例如,你要使用的應用是德語,但您只知道英語。
+然後,每當你打開所需嘅應用程序,所有文本喺應用程序&lt;b&gt;,&lt;/b&gt;任何地方,將被替換為它的英文
+等價物。
+與自動翻譯喺瀏覽器中嘅工作方式類似。
+&lt;u&gt;&lt;b&gt;要求&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed&lt;/b&gt;框架&lt;b&gt;或虛擬Xposed&lt;/b&gt;&lt;b&gt;或太極安裝&lt;/b&gt;並運行。
+&lt;u&gt;&lt;b&gt;如果你有鎖定嘅引導加载程序或非根手機&lt;/b&gt;&lt;/u&gt;
+你可以從一個應用程序下載太極(xposed https://github.com/taichi-framework/TaiChi/releases/
+或者,您都可以從虛擬空間下載VirtualXposed(一個xposed模擬器,如並行空間、https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;如果你唔知乜嘢係Xposed或Virtualxposed,呢個程序可能唔為你&lt;/b&gt;&lt;u&gt;&lt;b&gt;如何使用Alltrans&lt;/b&gt;&lt;/u&gt;
+? 確保Alltrans喺XposedInstaller / Taichi中已打開。
+? 在&quot;全局設置&quot;選項卡中,選擇&quot;從語言翻譯&quot;和&quot;翻譯為語言&quot;。
+? 喺唻要翻譯嘅應用桎梏選項卡中,查找要翻譯嘅應用,單擊其旁邊嘅複選框。
+? 關閉並重新啟動要翻譯嘅應用程序-它應該被翻譯!
+"</string>
+</resources>

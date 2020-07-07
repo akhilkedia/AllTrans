@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-traduir altres aplicacions"</string>
+	<string name="short_desc">"Un mòdul Xposed que tradueix * All * text en una aplicació a un altre idioma"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;Alltrans-traduïu completament les aplicacions&lt;/b&gt;&lt;/u&gt;
+Com la traducció de pàgines web, però per a aplicacions d&apos;Android.
+&lt;u&gt;&lt;b&gt;El que AllTrans fa&lt;/b&gt;&lt;/u&gt;
+Substitueix &lt;b&gt;tot el text&lt;/b&gt; d&apos;una aplicació en una llengua d&apos;un idioma a un altre en temps d&apos;execució.
+Diguem per exemple, una aplicació que voleu utilitzar és en alemany, però només sabeu anglès.
+Llavors quan obri l&apos;app exigida, tot el text en l&apos;app, a &lt;b&gt;qualsevol lloc&lt;/b&gt;, serà reemplaçat pel seu English
+equivalents.
+Això és una cosa similar a la forma en què el traductor automàtic funciona en els navegadors.
+&lt;u&gt;&lt;b&gt;Requeriments&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; o &lt;b&gt;Virtualxposed&lt;/b&gt; o &lt;b&gt;Taichi&lt;/b&gt; instal·lats i funcionant.
+&lt;u&gt;&lt;b&gt;Si teniu un BootLoader bloquejat o un telèfon no arrelat&lt;/b&gt;&lt;/u&gt;
+Pot descarregar Taichi (un emulador xposed) de https://github.com/taichi-framework/TaiChi/releases/
+Alternativament pot descarregar VirtualXposed (un emulador xposed com espai paral·lel, apps dobles) des de https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Si vostè no sap el que xposed o Virtualxposed és, aquesta aplicació probablement no és per a vostè&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;com utilitzar alltrans&lt;/b&gt;&lt;/u&gt;
+? Assegureu-vos que AllTrans està activat en XposedInstaller/Taichi.
+? A la pestanya configuració global, trieu el traduir del llenguatge i traduïu a l&apos;idioma.
+? A la pestanya aplicacions per traduir, cerqueu l&apos;aplicació que voleu traduir, feu clic a la casella de selecció que hi ha al costat.
+? Tanqui i reprengui l&apos;app que vol traduït-hauria de ser traduït!"</string>
+</resources>

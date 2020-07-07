@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-cyfieithu apps eraill"</string>
+	<string name="short_desc">"Modiwl Xtable sy&apos;n cyfieithu * yr holl * destun mewn ap i iaith arall"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;Alltrans-cyfieithu apps yn llwyr&lt;/b&gt;&lt;/u&gt;
+Fel cyfieithu tudalennau gwe, ond ar gyfer apps Android.
+&lt;u&gt;&lt;b&gt;Beth mae AllTrans yn ei wneud&lt;/b&gt;&lt;/u&gt;
+Mae&apos;n disodli &lt;b&gt;&apos;r holl destun mewn ap&lt;/b&gt; mewn iaith o un iaith i&apos;r llall ar amser rhedeg.
+Dywedwch er enghraifft bod ap rydych chi am ei ddefnyddio mewn Almaeneg, ond dim ond Saesneg rydych chi&apos;n ei wybod.
+Yna, pryd bynnag y byddwch yn agor yr app gofynnol, bydd yr holl destun yn yr app, &lt;b&gt;Beth bynnag&lt;/b&gt;, yn cael ei ddisodli gan ei Saesneg
+Cyfatebol.
+Mae hyn yn rhywbeth tebyg i&apos;r ffordd y mae cyfieithu awtomatig yn gweithio mewn porwyr.
+&lt;u&gt;&lt;b&gt;Gofynion&lt;/b&gt;&lt;/u&gt;
+? Y &lt;b&gt;fframwaith xif&lt;/b&gt; neu &lt;b&gt;virtualxinstalled&lt;/b&gt; neu &lt;b&gt;taichi&lt;/b&gt; gosod a rhedeg.
+&lt;u&gt;&lt;b&gt;Os oes gennych chi BootLoader dan glo neu ffôn heb ei wreiddio&lt;/b&gt;&lt;/u&gt;
+Gallwch lawrlwytho Taichi (efelychydd xator) o https://github.com/taichi-framework/TaiChi/releases/
+Fel arall, gallwch lawrlwytho Virtualxator (efelychydd xynnwr fel gofod cyfochrog, apps deuol) o https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Os nad ydych chi&apos;n gwybod beth yw xperi neu Virtualxperi, mae&apos;n debyg nad yw app hwn ar gyfer chi&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;sut i ddefnyddio alltrans&lt;/b&gt;&lt;/u&gt;
+? Gwnewch yn siŵr bod AllTrans yn cael ei droi ymlaen yn XposedInstaller/Taichi.
+? Yn y tab gosodiadau byd-eang, dewiswch y cyfieithu o&apos;r iaith a chyfieithu i&apos;r iaith.
+? Yn y apps i gyfieithu tab, darganfyddwch yr app rydych chi am ei gyfieithu, cliciwch y blwch gwirio nesaf ato.
+? Caewch ac ailgychwyn yr ap rydych chi am ei gyfieithu-dylai gael ei gyfieithu!"</string>
+</resources>

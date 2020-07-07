@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-Applications Hafa"</string>
+	<string name="short_desc">"Xposed module iray izay takelaky * ny lahatsoratra rehetra * mba ho fitaovana mankany amin&apos; ny fiteny iray hafa"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans Ny Fandikana tanteraka Ny applications&lt;/b&gt;&lt;/u&gt;
+Toy ny fandikana ny webpages, fa ho an&apos; Android applications.
+&lt;u&gt;&lt;b&gt;Inona No AllTrans&lt;/b&gt;&lt;/u&gt;
+Izany dia manolo ny &lt;b&gt;lahatsoratra rehetra amin&apos; ny application&lt;/b&gt; amin&apos; ny fiteny iray amin&apos; ny fiteny iray any amin&apos; ny runtime.
+Lazao amin&apos; ny ohatra iray izay tianao ho ampiasaina ny hoe any Alemana, kanefa fantatrao ihany.
+Avy eo rehefa manokatra ny application ilaina ianao, ny lahatsoratra rehetra ao amin&apos; ny application, &lt;b&gt;na aiza na aiza&lt;/b&gt;, dia ho nosoloina Amin&apos; Ny teny anglisy.
+equivalents.
+Izany dia zavatra mitovy amin&apos; ny fomba Automatique ny Teny fijerena.
+&lt;u&gt;&lt;b&gt;Zavatra takiana&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed rafitra&lt;/b&gt; na &lt;b&gt;VirtualXposed&lt;/b&gt; na &lt;b&gt;Taichi&lt;/b&gt; izay nampidirina sy nihazakazaka.
+&lt;u&gt;&lt;b&gt;Raha misy Mihidy BootLoader na finday tsy misy&lt;/b&gt;&lt;/u&gt;
+Azonao atao ny misintona Taichi (xposed-emulator) avy any https://github.com/taichi-framework/TaiChi/releases/
+Fomba ahafahana afaka misintona VirtualXposed ianao (xposed emulator toy ny toerana araky, roa applications) avy any https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Raha tsy fantatrao izay Zavatra Xposed Na Virtualxposed dia mety tsy ho anao&lt;/b&gt;ny&lt;u&gt;&lt;b&gt;Fomba fampiasana ny AllTrans&lt;/b&gt;&lt;/u&gt;
+? Ataovy izay AllTrans ao amin&apos; ny XposedInstaller/Taichi.
+? Rehefa rantsana ny Toe-Javatra amin&apos; ny Ankapobeny dia safidio ny Teny nalaina avy amin&apos; ny Fiteny sy ny Teny hoe Mandika teny.
+? Ao amin&apos; ny Applications ny Fandikana ny rantsana dia tadiavo ny application tianao handikana teny, tsindrio ny checkbox eo akaikin&apos; izany.
+? Hidio sy averina velomina indray ny application izay tianao ho adika!
+"</string>
+</resources>

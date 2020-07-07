@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-prevajanje druge aplikacije"</string>
+	<string name="short_desc">"Xposed modul, ki prevede * vse * besedilo v aplikaciji v drug jezik"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;Alltrans-popolnoma prevajanje apps&lt;/b&gt;&lt;/u&gt;
+Tako kot prevajanje spletnih strani, ampak za aplikacije za Android.
+&lt;u&gt;&lt;b&gt;Kaj AllTrans ne&lt;/b&gt;&lt;/u&gt;
+Nadomešča &lt;b&gt;celotno besedilo v aplikaciji&lt;/b&gt; v jeziku iz enega jezika v drugega med izvajanjem.
+Recimo, da je aplikacija, ki jo želite uporabiti, v nemščini, vendar poznate samo angleščino.
+Potem, ko odprete zahtevano aplikacijo, vse besedilo v aplikaciji, &lt;b&gt;kjerkoli&lt;/b&gt;, bo nadomestil njegov angleški
+Ekvivalenti.
+To je nekaj podobnega načinu samodejnega prevajanja deluje v brskalnikih.
+&lt;u&gt;&lt;b&gt;Zahteve glede&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed tramovje&lt;/b&gt; ali &lt;b&gt;Virtualxposed&lt;/b&gt; ali &lt;b&gt;taichi&lt;/b&gt; umestiti ter tekmovanje v teku.
+&lt;u&gt;&lt;b&gt;Če imate zaklenjen BootLoader ali nezakoreninjeni telefon&lt;/b&gt;&lt;/u&gt;
+Lahko prenesete Taichi (xposed emulator) iz https://github.com/taichi-framework/TaiChi/releases/
+Izmeničen vi moči travnato gričevje stvaren (xposed tekmec všeč biti vzporeden prostor, dvojina apps) s https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Če vi dont &apos; znanje kakšen xposed ali Virtualxposed je, to app je verjetno ne zakaj vi&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;kako rabiti alltrans&lt;/b&gt;&lt;/u&gt;
+? Izdelovanje varen AllTrans je obrnjen naprej v XposedInstaller/Taichi.
+? Na zavihku globalne nastavitve izberite Prevedi iz jezika in Prevedi v jezik.
+? V zavihku aplikacije za prevajanje poiščite aplikacijo, ki jo želite prevesti, kliknite potrditveno polje poleg nje.
+? Zaprite in znova zaženite aplikacijo, ki jo želite prevesti-je treba prevesti!"</string>
+</resources>

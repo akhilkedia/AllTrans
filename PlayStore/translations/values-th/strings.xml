@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - แปลแอปอื่น ๆ"</string>
+	<string name="short_desc">"โมดูล Xposed ที่แปล * ข้อความทั้งหมดในแอปเป็นภาษาอื่น"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - แปลสมบูรณ์ Apps&lt;/b&gt;&lt;/u&gt;
+เช่นเดียวกับการแปลหน้าเว็บ แต่สําหรับแอป Android
+&lt;u&gt;&lt;b&gt;สิ่งที่ AllTrans ทํา&lt;/b&gt;&lt;/u&gt;
+มันแทนที่&lt;b&gt;ข้อความทั้งหมดในแอป&lt;/b&gt;ในภาษาจากภาษาหนึ่งไปยังอีกภาษาหนึ่งที่รันไทม์
+พูดตัวอย่างเช่นแอปที่คุณต้องการใช้เป็นภาษาเยอรมัน แต่คุณทราบภาษาอังกฤษเท่านั้น
+จากนั้นเมื่อใดก็ตามที่คุณเปิด app ที่จําเป็นข้อความทั้งหมดใน app&lt;b&gt;ที่ใดก็ได้&lt;/b&gt;จะถูกแทนที่ด้วยภาษาอังกฤษ
+เทียบเท่า
+นี่คือสิ่งที่คล้ายกับวิธีการทํางานแปลอัตโนมัติในเบราว์เซอร์
+&lt;u&gt;&lt;b&gt;ข้อกําหนด&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;กรอบ Xposed&lt;/b&gt;หรือ&lt;b&gt;VirtualXposed&lt;/b&gt;หรือ&lt;b&gt;Taichi&lt;/b&gt;ติดตั้งและทํางาน
+&lt;u&gt;&lt;b&gt;หากคุณมี BootLoader ที่ถูกล็อกหรือโทรศัพท์ที่ไม่ได้ฝังราก&lt;/b&gt;&lt;/u&gt;
+คุณสามารถดาวน์โหลด Taichi (จําลอง xposed) จากhttps://github.com/taichi-framework/TaiChi/releases/
+หรือคุณสามารถดาวน์โหลด VirtualXposed (จําลอง xposed เช่นพื้นที่ขนาน, ปพลิเคชันคู่) จากhttps://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;หากคุณไม่ทราบว่า Xposed หรือ Virtualxposed คือ app นี้อาจจะไม่ได้สําหรับคุณ&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;วิธีการใช้ AllTrans&lt;/b&gt;&lt;/u&gt;
+? ตรวจสอบให้แน่ใจว่า AllTrans ถูกเปิดใน Xposedอินสตาลเลอร์ / ไทจิ.
+? ในแท็บ การตั้งค่าส่วนกลาง ให้เลือกแปลจากภาษาและแปลเป็นภาษา
+? ในแท็บแอปเพื่อแปล ให้ค้นหาแอปที่คุณต้องการแปล ให้คลิกที่ช่องทําเครื่องหมายที่อยู่ข้างๆ
+? ปิดและรีสตาร์ทแอปที่คุณต้องการแปล - มันควรจะแปล!"</string>
+</resources>

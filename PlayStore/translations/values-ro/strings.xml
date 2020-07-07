@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Traducere alte aplicații"</string>
+	<string name="short_desc">"Un modul Xposed care traduce *tot* textul dintr-o aplicație într-o altă limbă"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Traduceți complet aplicațiile&lt;/b&gt;&lt;/u&gt;
+ar fi traducerea paginilor web, dar pentru aplicațiile Android.
+&lt;u&gt;&lt;b&gt;Ce face AllTrans&lt;/b&gt;&lt;/u&gt;
+Acesta înlocuiește &lt;b&gt;tot textul dintr-o aplicație într-o&lt;/b&gt; limbă dintr-o limbă în alta la momentul execuției.
+Să presupunem, de exemplu, că o aplicație pe care doriți să o utilizați este în limba germană, dar știți doar limba engleză.
+Apoi, ori de câte ori deschideți aplicația necesară, tot textul din aplicație, &lt;b&gt;oriunde&lt;/b&gt;, va fi înlocuit cu limba engleză
+Echivalente.
+Acest lucru este ceva similar cu modul în care automat traduce funcționează în browsere.
+&lt;u&gt;&lt;b&gt;Cerințe&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; sau &lt;b&gt;VirtualXposed&lt;/b&gt; sau &lt;b&gt;Taichi&lt;/b&gt; instalat și rulează.
+&lt;u&gt;&lt;b&gt;Dacă aveți un BootLoader blocat sau un telefon neînrădăcinat&lt;/b&gt;&lt;/u&gt;
+Puteți descărca Taichi (un emulator xposed) de la https://github.com/taichi-framework/TaiChi/releases/
+Alternativ, puteți descărca VirtualXposed (un emulator xposed ar fi spațiu paralel, aplicații duale) de la https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Dacă nu știți ce este Xposed sau Virtualxposed, această aplicație nu este, probabil, pentru tine&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;Cum să utilizați AllTrans&lt;/b&gt;&lt;/u&gt;
+? Asigurați-vă că AllTrans este activat în XposedInstaller / Taichi.
+? În fila Setări globale, alegeți traducerea din limbă și traducerea în limbă.
+? În fila Aplicații de tradus, găsiți aplicația pe care doriți să o traduceți, faceți clic pe caseta de selectare de lângă ea.
+? Închideți și reporniți aplicația pe care doriți tradus - ar trebui să fie tradus!"</string>
+</resources>

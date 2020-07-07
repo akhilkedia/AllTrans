@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-vakadewataka na apps"</string>
+	<string name="short_desc">"E dua na Xposed module ka vakadewataka na kena itukutuku taucoko ena dua na app ki na dua tale na vosa"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans na vakavakadewa taucoko apps&lt;/b&gt;&lt;/u&gt;
+Me vaka na iVakadewa ni webpages, ia me baleta na apps ni Android.
+&lt;u&gt;&lt;b&gt;Na cava AllTrans&lt;/b&gt;&lt;/u&gt;
+E a sosomitaka na &lt;b&gt;itukutuku kece ena dua na app&lt;/b&gt; ena dua na vosa mai na dua na vosa ki na dua tale ena runtime.
+Tukuna me ivakaraitaki na app o vinakata mo vakayagataka e Jamani, ia o kila ga na vosa Vakavalagi.
+Ena gauna ga o sa na dolava kina na app, na itukutuku kece ena app, ena &lt;b&gt;dua na vanua&lt;/b&gt;, ena vakaisosomitaki ena kena Vakavalagi
+ivakatautauvata.
+Oqo e dua na ka e tautauvata kei na sala e cakacaka kina na vakavakadewa ena barausa.
+&lt;u&gt;&lt;b&gt;Veika e gadrevi&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed suitu&lt;/b&gt; se &lt;b&gt;VirtualXposed&lt;/b&gt; se &lt;b&gt;taichi&lt;/b&gt; ka cici yani.
+&lt;u&gt;&lt;b&gt;Kevaka e dua na nomu talevoni BootLoader se sega ni vakaiyalayala&lt;/b&gt;&lt;/u&gt;
+Sa rawa mo lavetaka na taichi (xposed emulator) mai vei https://github.com/taichi-framework/TaiChi/releases/
+Alternatively sa rawa mo lavetaka VirtualXposed (e dua na xposed emulator me vaka na vakatauvatani, tikimu apps) mai vei https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Kevaka o sega ni kila na Xposed se Virtualxposed, na app oqo ena sega beka ni o iko&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;mo vakayagataka na AllTrans&lt;/b&gt;&lt;/u&gt;
+? Raica me sa vagolei na AllTrans e XposedInstaller/taichi.
+? Ena bulukau ni vanua e vuravura raraba, digitaka na vakavakadewa mai na vosa kei na vakavakadewa ki na vosa.
+? Ena apps ni vakavakadewa me vakadewataki, raica na app o gadreva mo vakadewataka, kiliki ena lomanibai toqai tarava.
+? Sogota ka restart na app o vinakata mo vakadewataka-e dodonu me vakadewataki!"</string>
+</resources>

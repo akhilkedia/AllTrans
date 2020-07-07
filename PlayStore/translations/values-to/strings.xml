@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-liliu ʻo e ngaahi polokalama kehe"</string>
+	<string name="short_desc">"Ko ha Xposed module ʻoku ne liliu ʻa e ngaahi fakamatala kotoa ʻi he app ki ha lea fakafonua kehe"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans-liliu kakato e Apps&lt;/b&gt;&lt;/u&gt;
+Hange ko hono liliu ʻo e webpages, ka ki he polokalama Android.
+&lt;u&gt;&lt;b&gt;Ko e ha ʻoku AllTrans&lt;/b&gt;&lt;/u&gt;
+ʻoku ne fetongi ʻa e &lt;b&gt;fakamatala kotoa pe ʻi ha app&lt;/b&gt; ʻi ha lea fakafonua mei he lea fakafonua ʻe taha ʻi he runtime.
+Lea ʻaki ʻa e polokalama ko e app ʻoku ke fie fakaʻaongaʻi, ʻoku ʻi Siamane, ka ʻoku ke ʻiloʻi pe ʻa e lea faka-Pilitania.
+Pea ʻi he taimi pe te ke fakaava ai ʻa e app ʻoku fiemaʻu, ʻe fetongi kotoa ʻa e ngaahi fakamatala ʻi he app, ʻi ha &lt;b&gt;feituʻu&lt;/b&gt;pe, pea ʻe fakafetongi ia ʻe he lea faka-Pilitania
+ʻi onopooni.
+ʻoku tatau ʻeni mo e founga ngaue ʻa e liliu lea ʻi he browsers.
+&lt;u&gt;&lt;b&gt;Fie&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed e palani&lt;/b&gt; pe &lt;b&gt;VirtualXposed&lt;/b&gt; pe &lt;b&gt;taichi&lt;/b&gt; fola pea lele.
+&lt;u&gt;&lt;b&gt;Kapau ʻoku ʻi ai Haʻo BootLoader kuo loka pe ko ha telefoni ʻoku ʻikai makatuʻunga&lt;/b&gt;&lt;/u&gt;
+Te ke lava ʻo download ʻa e taichi (a xposed emulator) mei he https://github.com/taichi-framework/TaiChi/releases/
+Pe te ke lava ʻo download ʻa e VirtualXposed (ko ha xposed emulator hange ko e feituʻu ʻoku faitatau ai, Apps ʻe ua) mei he https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Kapau ʻoku ʻikai ke ke ʻilo ʻa e Meʻa Xposed pe Virtualxposed, mahalo ʻoku ʻikai ko e app ʻeni ia kiate koe ʻi&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;hono fakaʻaongaʻi e AllTrans&lt;/b&gt;&lt;/u&gt;
+? Fakapapauʻi ʻoku fakamoʻui ʻa e AllTrans ʻi XposedInstaller/taichi.
+? ʻi he konga ki he settings fakamamani lahi, fili e liliu mei he lea fakafonua mo e lea liliu ki he lea fakafonua.
+? ʻi he Apps ke liliu e peesi, kumi e polokalama ʻoku ke loto ke liliu, lomiʻi ʻi he puha ke fakaʻilongaʻi hoko ki ai.
+? Tapuni pea toe tamateʻi e app ʻoku ke fie liliu-ʻoku totonu ke liliu ia!"</string>
+</resources>

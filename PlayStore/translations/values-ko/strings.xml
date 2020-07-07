@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - 다른 앱 번역"</string>
+	<string name="short_desc">"앱에서 *all* 텍스트를 다른 언어로 변환하는 Xposed 모듈"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - 앱을 완전히 번역&lt;/b&gt;&lt;/u&gt;
+웹 페이지의 번역처럼,하지만 안드로이드 애플 리케이션.
+&lt;u&gt;&lt;b&gt;AllTrans가 하는 일&lt;/b&gt;&lt;/u&gt;
+런타임에 한 언어에서 다른 언어로 &lt;b&gt;앱의 모든 텍스트를&lt;/b&gt; 대체합니다.
+예를 들어 사용하려는 앱은 독일어로 만 사용한다고 가정해 보겠습니다.
+그런 다음 필요한 앱을 열 때마다 앱의 모든 텍스트가 &lt;b&gt;어디서나&lt;/b&gt;영어로 대체됩니다.
+등가물.
+이것은 자동 번역 브라우저에서 작동하는 방식과 유사합니다.
+&lt;u&gt;&lt;b&gt;요구 사항&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed 프레임 워크&lt;/b&gt; 또는 &lt;b&gt;버추얼 Xposed&lt;/b&gt; 또는 &lt;b&gt;태극권&lt;/b&gt; 설치 및 실행.
+&lt;u&gt;&lt;b&gt;잠긴 부트 로더 또는 비뿌리성 전화가 있는 경우&lt;/b&gt;&lt;/u&gt;
+https://github.com/taichi-framework/TaiChi/releases/ 태극권(xposed 에뮬레이터)을 다운로드할 수 있습니다.
+또는 https://github.com/android-hacker/VirtualXposed/releases 에서 VirtualXposed (병렬 공간, 듀얼 앱과 같은 xposed 에뮬레이터)를 다운로드 할 수 있습니다.
+&lt;b&gt;당신은 Xposed 또는 버추얼 xposed무엇인지 모르는 경우,이 응용 프로그램은 아마 AllTrans를&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;사용하는 방법을&lt;/b&gt;&lt;/u&gt; 위해 하지 않습니다
+? XposedInstaller / 태극권에서 AllTrans가 켜져 있는지 확인하십시오.
+? 전역 설정 탭에서 언어에서 번역을 선택하고 언어로 번역합니다.
+? 번역할 앱 탭에서 번역할 앱을 찾아 옆에 있는 확인란을 클릭합니다.
+? 닫고 번역하려는 응용 프로그램을 다시 시작 - 그것은 번역되어야한다!"</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Übersetze andere Apps"</string>
+	<string name="short_desc">"Ein Xposed-Modul, das *alle* Text in einer App in eine andere Sprache übersetzt"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Apps komplett übersetzen&lt;/b&gt;&lt;/u&gt;
+Wie die Übersetzung von Webseiten, aber für Android-Apps.
+&lt;u&gt;&lt;b&gt;Was AllTrans tut&lt;/b&gt;&lt;/u&gt;
+Zur Laufzeit wird &lt;b&gt;der gesamte Text in einer App&lt;/b&gt; in einer Sprache von einer Sprache in eine andere ersetzt.
+Angenommen, eine App, die Sie verwenden möchten, ist auf Deutsch, aber Sie kennen nur Englisch.
+Wenn Sie dann die erforderliche App öffnen, wird der gesamte Text in der App &lt;b&gt;an einer beliebigen&lt;/b&gt;Stelle durch das Englische ersetzt.
+Entsprechungen.
+Dies ist etwas ähnliches wie Automatic Translate funktioniert in Browsern.
+&lt;u&gt;&lt;b&gt;Anforderungen&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; oder &lt;b&gt;VirtualXposed&lt;/b&gt; oder &lt;b&gt;Taichi&lt;/b&gt; installiert und ausgeführt.
+&lt;u&gt;&lt;b&gt;Wenn Sie über einen gesperrten BootLoader oder ein nicht gerootetes Telefon verfügen&lt;/b&gt;&lt;/u&gt;
+Sie können Taichi (einen xposed Emulator) von https://github.com/taichi-framework/TaiChi/releases/
+Alternativ können Sie VirtualXposed (ein xposed Emulator wie paralleler Speicherplatz, Dual-Apps) von https://github.com/android-hacker/VirtualXposed/releases herunterladen.
+&lt;b&gt;Wenn Sie nicht wissen, was Xposed oder Virtualxposed ist, ist diese App wahrscheinlich nicht für Sie&lt;/b&gt;Wie Sie&lt;u&gt;&lt;b&gt;AllTrans verwenden&lt;/b&gt;&lt;/u&gt;
+? Stellen Sie sicher, dass AllTrans in XposedInstaller / Taichi aktiviert ist.
+? Wählen Sie auf der Registerkarte Globale Einstellungen die Option Aus Sprache übersetzen und in Sprache übersetzen aus.
+? Suchen Sie auf der Registerkarte Apps zu übersetzen die App, die Sie übersetzen möchten, und klicken Sie auf das Kontrollkästchen daneben.
+? Schließen Sie und starten Sie die App, die Sie übersetzen möchten - es sollte übersetzt werden!
+"</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Oversett andre apper"</string>
+	<string name="short_desc">"En Xposed-modul som oversetter *all* tekst i en app til et annet språk"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Oversett apper fullstendig&lt;/b&gt;&lt;/u&gt;
+Som oversettelse av nettsider, men for Android-apper.
+&lt;u&gt;&lt;b&gt;Hva AllTrans gjør&lt;/b&gt;&lt;/u&gt;
+Den erstatter &lt;b&gt;all tekst i en app på&lt;/b&gt; et språk fra ett språk til et annet under kjøring.
+Si for eksempel at en app du vil bruke, er på tysk, men du vet bare engelsk.
+Så når du åpner den nødvendige appen, vil all teksten i appen, &lt;b&gt;hvor som helst,&lt;/b&gt;bli erstattet av engelsk
+Ekvivalenter.
+Dette er noe som ligner på måten Automatisk oversett fungerer i nettlesere.
+&lt;u&gt;&lt;b&gt;Krav til&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; eller &lt;b&gt;VirtualXposed&lt;/b&gt; eller &lt;b&gt;Taichi&lt;/b&gt; installert og kjører.
+&lt;u&gt;&lt;b&gt;Hvis du har en låst BootLoader eller en ikke-rotfestet telefon&lt;/b&gt;&lt;/u&gt;
+Du kan laste ned Taichi (en xposed emulator) fra https://github.com/taichi-framework/TaiChi/releases/
+Alternativt kan du laste ned VirtualXposed (en xposed emulator som parallell plass, doble apps) fra https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Hvis du ikke vet hva Xposed eller Virtualxposed er, er dette programmet sannsynligvis ikke for deg&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;Hvordan du bruker AllTrans&lt;/b&gt;&lt;/u&gt;
+? Kontroller at AllTrans er slått på i XposedInstaller / Taichi.
+? I kategorien Globale innstillinger velger du Knappen Oversett fra språk og Oversett til språk.
+? Finn appen du vil oversette, i kategorien Apper som skal oversettes, klikk i avmerkingsboksen ved siden av den.
+? Lukk og start appen du vil oversette - den skal oversettes!"</string>
+</resources>

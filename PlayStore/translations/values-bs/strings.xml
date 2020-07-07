@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-prevođenje drugih aplikacija"</string>
+	<string name="short_desc">"Xpozni modul koji prevodi * sve * tekst u aplikaciji na drugi jezik"</string>
+	<string name="long_desc">"Sve &lt;u&gt;&lt;b&gt;u potpunosti prevođenje aplikacija&lt;/b&gt;&lt;/u&gt;
+Kao Prevod web stranica, ali za Androidove aplikacije.
+&lt;u&gt;&lt;b&gt;Što AllTrans radi&lt;/b&gt;&lt;/u&gt;
+Ona zamenjuje &lt;b&gt;sav tekst u aplikaciji&lt;/b&gt; na jeziku od jednog jezika do drugog u Runtime.
+Recimo na primjer aplikaciju koju želite koristiti je na njemačkom, ali znate samo engleski.
+Zatim kada otvorite zahtijevanu aplikaciju, sav tekst u aplikaciji, &lt;b&gt;bilo gdje&lt;/b&gt;, bit će zamijenjen svojim engleskim
+To je to.
+Ovo je nešto slično načinu na koji automatsko prevođenje radi u preglednicima.
+&lt;u&gt;&lt;b&gt;Zahtjeve&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xpozirani okvir&lt;/b&gt; ili &lt;b&gt;Virtualksista&lt;/b&gt; ili &lt;b&gt;Taichi&lt;/b&gt; instaliran i pokrenut.
+&lt;u&gt;&lt;b&gt;Ako imate zaključani punjac ili neukorijenjeni telefon&lt;/b&gt;&lt;/u&gt;
+Možete preuzeti Taichi (xpozan emulator) iz https://github.com/taichi-framework/TaiChi/releases/
+Alternativno možete preuzeti Virtualksiste (ksipozirajući emulator kao paralelni prostor, dvostruke aplikacije) iz https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Ako ne znate šta je xpozno ili Virtualksizirao, ova aplikacija vjerovatno nije za vas&lt;/b&gt;&lt;u&gt;&lt;b&gt;kako koristiti alltrans&lt;/b&gt;&lt;/u&gt;
+? Uvjerite se da je AllTrans uključen u Xpozdinstaller/Taichi.
+? U tabulatoru globalnih postavki Odaberite prevođenje jezika i Prevedite na jezik.
+? U aplikacijama za prevođenje tabulatora, pronađite aplikaciju koju želite prevesti, kliknite na okvir za potvrdu pored nje.
+? Zatvorite i ponovo pokrenite aplikaciju koju želite prevesti-trebao bi biti preveden!
+"</string>
+</resources>

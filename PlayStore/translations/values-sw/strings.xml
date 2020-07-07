@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-tafsiri programu zingine"</string>
+	<string name="short_desc">"Moduli ya Xulizwa ambayo inatafsiri * yote * maandishi katika programu kwa lugha nyingine"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;Alltrans-kabisa kutafsiri programu&lt;/b&gt;&lt;/u&gt;
+Kama tafsiri ya kurasa za wavuti, lakini kwa programu za Android.
+&lt;u&gt;&lt;b&gt;Nini AllTrans&lt;/b&gt;&lt;/u&gt;
+Inachukua nafasi &lt;b&gt;ya maandishi yote katika programu&lt;/b&gt; katika lugha kutoka lugha moja hadi nyingine wakati wa kukimbia.
+Sema kwa mfano programu unayotaka kutumia ni Kijerumani, lakini unajua Kiingereza tu.
+Kisha wakati wowote unapofungua programu inayohitajika, maandishi yote katika programu, &lt;b&gt;mahali popote&lt;/b&gt;, yatabadilishwa na Kiingereza chake
+EQUIVALENTS.
+Hii ni kitu sawa na njia ya tafsiri ya kiotomatiki kazi katika vivinjari.
+&lt;u&gt;&lt;b&gt;Mahitaji&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xvinavyotokana mfumo&lt;/b&gt; au &lt;b&gt;Virtualxor&lt;/b&gt; &lt;b&gt;Taichi&lt;/b&gt; imewekwa na kukimbia.
+&lt;u&gt;&lt;b&gt;Kama una BootLoader funge au simu isiyokuwa na mizizi&lt;/b&gt;&lt;/u&gt;
+Unaweza kushusha Taichi (ya xvinavyotokana emulator) kutoka https://github.com/taichi-framework/TaiChi/releases/
+Vinginevyo unaweza kushusha Virtualxvinavyotokana (emulator xvinavyotokana kama nafasi sambamba, programu mbili) kutoka https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Ikiwa hujui nini xulizwa au Virtualxulizwa ni, programu hii pengine sio&lt;/b&gt;kwako&lt;u&gt;&lt;b&gt;jinsi ya kutumia alltrans&lt;/b&gt;&lt;/u&gt;
+? Hakikisha kuwa AllTrans imewashwa katika Xposedkisakinishaji/Taichi.
+? Katika kichupo cha mipangilio ya Global tab, chagua tafsiri kutoka lugha na tafsiri kwa lugha.
+? Katika programu ya kutafsiri tab, Tafuta programu unayotaka kutafsiri, bofya sanduku la hundi karibu na hilo.
+? Funga na uanze upya programu unayotaka kutafsiriwa-inapaswa kutafsiriwa!
+"</string>
+</resources>

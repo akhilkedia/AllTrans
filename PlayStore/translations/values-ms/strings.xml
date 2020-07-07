@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-Terjemah aplikasi lain"</string>
+	<string name="short_desc">"Modul ringkas yang menterjemahkan semua teks dalam aplikasi kepada bahasa lain"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;Alltrans-benar-benar menterjemah aplikasi&lt;/b&gt;&lt;/u&gt;
+Seperti terjemahan Laman web, tetapi untuk aplikasi Android.
+&lt;u&gt;&lt;b&gt;Apa AllTrans Adakah&lt;/b&gt;&lt;/u&gt;
+Ia menggantikan &lt;b&gt;semua teks dalam aplikasi&lt;/b&gt; dalam bahasa dari satu bahasa kepada yang lain pada Runtime.
+Katakan sebagai contoh aplikasi yang anda mahu gunakan adalah dalam Bahasa Jerman, tetapi anda hanya tahu Bahasa Inggeris.
+Kemudian apabila anda membuka aplikasi yang diperlukan, Semua teks dalam aplikasi, &lt;b&gt;di mana sahaja&lt;/b&gt;, akan digantikan dengan Bahasa Inggeris
+Setara.
+Ini adalah sesuatu yang serupa dengan cara menterjemah automatik kerja dalam pelayar.
+&lt;u&gt;&lt;b&gt;Keperluan&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Kerja Xditimbulkan&lt;/b&gt; atau &lt;b&gt;VirtualXposed&lt;/b&gt; atau &lt;b&gt;taichi&lt;/b&gt; dipasang dan berjalan.
+&lt;u&gt;&lt;b&gt;Jika anda mempunyai indd terkunci atau telefon tidak berakar umbi&lt;/b&gt;&lt;/u&gt;
+Anda boleh muat turun Taichi (a xmenimbulkan emulator) dari https://github.com/taichi-framework/TaiChi/releases/
+Atau anda boleh memuat turun VirtualXposed (yang xmenimbulkan Pelagak seperti ruang selari, dwi Apps) daripada https://GitHub.com/Android-hacker/VirtualXposed/releases
+&lt;b&gt;Jika anda tidak tahu apa yang Xditimbulkan atau Virtualxposed, aplikasi ini mungkin bukan untuk anda&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;cara menggunakan alltrans&lt;/b&gt;&lt;/u&gt;
+? Pastikan AllTrans dihidupkan dalam XposedInstaller/Taichi.
+? Dalam tab tetapan global, pilih Terjemah daripada bahasa dan terjemahkan ke bahasa.
+? Dalam aplikasi untuk menterjemah tab, Cari apl yang anda ingin terjemahkan, klik kotak semak di sebelahnya.
+? Tutup dan mulakan semula aplikasi yang anda mahu diterjemah-ia harus diterjemahkan!"</string>
+</resources>

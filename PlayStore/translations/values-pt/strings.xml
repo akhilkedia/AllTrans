@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Traduzir outros aplicativos"</string>
+	<string name="short_desc">"Um módulo Xposed que traduz *tudo* texto em um aplicativo para outro idioma"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans -&lt;/b&gt;&lt;/u&gt; Aplicativos de tradução completa
+Como tradução de páginas da web, mas para aplicativos Android.
+&lt;u&gt;&lt;b&gt;O que a AllTrans faz&lt;/b&gt;&lt;/u&gt;
+Ele substitui &lt;b&gt;todo o texto em um aplicativo&lt;/b&gt; em um idioma de um idioma para outro em tempo de execução.
+Digamos, por exemplo, que um aplicativo que você quer usar é em alemão, mas você sabe apenas inglês.
+Em seguida, sempre que você abrir o aplicativo necessário, todo o texto no aplicativo, em &lt;b&gt;qualquer lugar&lt;/b&gt;, será substituído por seu inglês
+Equivalentes.
+Isso é algo semelhante à forma como o Automatic Translate funciona nos navegadores.
+&lt;u&gt;&lt;b&gt;Requisitos&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; ou &lt;b&gt;VirtualXposed&lt;/b&gt; ou &lt;b&gt;Taichi&lt;/b&gt; instalados e em execução.
+&lt;u&gt;&lt;b&gt;Se você tiver um BootLoader bloqueado ou um telefone não enraizado&lt;/b&gt;&lt;/u&gt;
+Você pode baixar Taichi (um emulador xposed) de https://github.com/taichi-framework/TaiChi/releases/
+Alternativamente, você pode baixar VirtualXposed (um emulador xposed como espaço paralelo, aplicativos duplos) de https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Se você não sabe o que é Xposed ou Virtualxposed, este aplicativo provavelmente não é para você&lt;/b&gt;como usar&lt;u&gt;&lt;b&gt;AllTrans&lt;/b&gt;&lt;/u&gt;
+? Certifique-se de que a AllTrans está ligada em XposedInstaller / Taichi.
+? Na guia Configurações globais, escolha a tradução da linguagem e traduza para idioma.
+? Na guia Aplicativos para Traduzir, encontre o aplicativo que deseja traduzir, clique na caixa de seleção ao lado.
+? Feche e reinicie o aplicativo que você quer traduzido - ele deve ser traduzido!
+"</string>
+</resources>

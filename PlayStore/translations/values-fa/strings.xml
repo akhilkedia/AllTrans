@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-ترجمه برنامه های دیگر"</string>
+	<string name="short_desc">"یک ماژول Xposed که ترجمه می کند * تمام متن * در یک برنامه به زبان دیگر"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;Alltrans-به طور کامل ترجمه برنامه ها&lt;/b&gt;&lt;/u&gt;
+مانند ترجمه صفحات وب ، اما برای برنامه های Android.
+&lt;u&gt;&lt;b&gt;چه AllTrans می کند&lt;/b&gt;&lt;/u&gt;
+این &lt;b&gt;همه متن را در یک برنامه&lt;/b&gt; به زبان از یک زبان به یک دیگر در زمان اجرا جایگزین می کند.
+مثلا یک برنامه ای که می خواهید استفاده کنید به زبان آلمانی می گویند اما فقط انگلیسی را می شناسید.
+سپس هر زمان که برنامه مورد نیاز را باز کنید ، تمام متن در برنامه ، &lt;b&gt;هر کجا&lt;/b&gt;، توسط انگلیسی آن جایگزین خواهد شد
+معادل.
+این چیزی شبیه به راه خودکار ترجمه در مرورگرها کار می کند.
+&lt;u&gt;&lt;b&gt;الزامات&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;چارچوب Xposed&lt;/b&gt; یا &lt;b&gt;Virtualxposed&lt;/b&gt; یا &lt;b&gt;Taichi&lt;/b&gt; نصب و در حال اجرا.
+&lt;u&gt;&lt;b&gt;اگر یک بوت لودر قفل شده یا یک گوشی غیر ریشه داشته&lt;/b&gt;&lt;/u&gt; باشید
+شما می توانید دانلود Taichi (یک شبیه ساز xposed) از https://github.com/taichi-framework/TaiChi/releases/
+متناوبا شما می توانید VirtualXposed (شبیه ساز xposed مانند فضای موازی ، برنامه های دوگانه) را از https://github.com/android-hacker/VirtualXposed/releases دانلود کنید
+&lt;b&gt;اگر شما نمی دانید که چه xposed یا Virtualxposed است ، این برنامه احتمالا برای شما نیست&lt;/b&gt;که&lt;u&gt;&lt;b&gt;چگونه از alltrans استفاده کنید&lt;/b&gt;&lt;/u&gt;
+? اطمینان حاصل کنید که AllTrans است که در XposedInstaller/Taichi تبدیل شده است.
+? در زبانه تنظیمات جهانی ، انتخاب کنید ترجمه از زبان و ترجمه به زبان.
+? در برنامه ها برای ترجمه برگه ، برنامه ای را که می خواهید ترجمه شود پیدا کنید ، روی آن کلیک کنید چک باکس در کنار آن.
+? برنامه ای را که میخواهید ترجمه کنید را ببندید و مجددا راه اندازی کنید-این باید ترجمه شود!
+"</string>
+</resources>

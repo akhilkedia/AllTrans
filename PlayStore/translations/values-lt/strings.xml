@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Versti Kitas programas"</string>
+	<string name="short_desc">"Xposed modulis, kuris verčia * visi * tekstą programoje į kitą kalbą"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Visiškai Išversti Programos&lt;/b&gt;&lt;/u&gt;
+Kaip ir tinklalapių vertimas, bet &quot;Android&quot; programoms.
+&lt;u&gt;&lt;b&gt;Ką daro AllTrans&lt;/b&gt;&lt;/u&gt;
+Jis pakeičia &lt;b&gt;visą programos tekstą&lt;/b&gt; kalba iš vienos kalbos į kitą vykdymo metu.
+Tarkime, kad programa, kuria norite naudoti, yra vokiečių kalba, bet žinote tik anglų kalbą.
+Tada, kai atidarysite reikiamą programą, visas programos &lt;b&gt;tekstas, bet kur,&lt;/b&gt;bus pakeistas anglų kalba
+Ekvivalentai.
+Tai yra kažkas panašaus į tai, kaip automatinis vertimas veikia naršyklėse.
+&lt;u&gt;&lt;b&gt;Reikalavimai&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; arba &lt;b&gt;VirtualXposed&lt;/b&gt; arba &lt;b&gt;Taichi&lt;/b&gt; įdiegta ir veikia.
+&lt;u&gt;&lt;b&gt;Jei turite užrakintą &quot;BootLoader&quot; arba neįsišaknijusį telefoną&lt;/b&gt;&lt;/u&gt;
+Galite atsisiųsti Taichi (xposed emuliatorius) iš https://github.com/taichi-framework/TaiChi/releases/
+Arba galite atsisiųsti VirtualXposed (xposed emuliatorius kaip lygiagrečios erdvės, dvigubos programos) iš https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Jei nežinote, ką Xposed arba Virtualxposed yra, ši programa tikriausiai ne jums&lt;/b&gt;Kaip naudoti&lt;u&gt;&lt;b&gt;AllTrans&lt;/b&gt;&lt;/u&gt;
+? Įsitikinkite, kad &quot;AllTrans&quot; yra įjungtas XposedInstaller / Taichi.
+? Skirtuke Visuotiniai parametrai pasirinkite Versti iš kalbos ir Versti į kalbą.
+? Skirtuke Versti skirtos programos raskite norimą versti programą, spustelėkite šalia jos esantį žymės langelį.
+? Uždarykite ir iš naujo paleiskite programą, kurią norite išversti - ji turėtų būti išversta!
+"</string>
+</resources>

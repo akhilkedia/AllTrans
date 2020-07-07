@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Превод на други приложения"</string>
+	<string name="short_desc">"Xposed модул, който превежда * всички * текст в приложение на друг език"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;AllTrans - Напълно превод на приложения&lt;/b&gt;&lt;/u&gt;
+Например превод на уеб страници, но за приложения за Android.
+&lt;u&gt;&lt;b&gt;Какво прави AllTrans&lt;/b&gt;&lt;/u&gt;
+Той замества &lt;b&gt;целия текст в дадено приложение&lt;/b&gt; на език от един на друг по време на изпълнение.
+Да речем например, че приложение, което искате да използвате, е на немски език, но знаете само английски.
+След това, когато отворите необходимото приложение, целият текст в приложението, &lt;b&gt;навсякъде,&lt;/b&gt;ще бъде заменен от английски
+Еквиваленти.
+Това е нещо подобно на начина, по който Automatic Translate работи в браузърите.
+&lt;u&gt;&lt;b&gt;Изисквания&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Рамка&lt;/b&gt; или &lt;b&gt;VirtualXposed&lt;/b&gt; или &lt;b&gt;Taichi&lt;/b&gt; инсталиран и работи.
+&lt;u&gt;&lt;b&gt;Ако имате заключен BootLoader или не-вкоренен телефон&lt;/b&gt;&lt;/u&gt;
+Можете да изтеглите Taichi (xposed емулатор) от https://github.com/taichi-framework/TaiChi/releases/
+Като алтернатива можете да изтеглите VirtualXposed (xposed емулатор като паралелно пространство, двойни приложения) от https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Ако не знаете какво е Xposed или Virtualxposed, това приложение вероятно не е за вас&lt;/b&gt;Как да използвате&lt;u&gt;&lt;b&gt;AllTrans&lt;/b&gt;&lt;/u&gt;
+? Уверете се, че AllTrans е включен в XposedInstaller / Taichi.
+? В раздела &amp;quot;Глобални настройки&amp;quot; изберете &amp;quot;Преводач от език&amp;quot; и &amp;quot;Превеждане на език&amp;quot;.
+? В раздела Приложения за превод намерете приложението, което искате да преведете, кликнете върху квадратчето за отметка до него.
+? Затвори и рестартирай приложението, което искате преведено - то трябва да бъде преведено!
+"</string>
+</resources>

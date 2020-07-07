@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"אלטרנס-תרגם אפליקציות אחרות"</string>
+	<string name="short_desc">"מודול Xposed ציג אשר מתרגמת * כל * טקסט באפליקציה לשפה אחרת"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;Alltrans-לחלוטין לתרגם Apps&lt;/b&gt;&lt;/u&gt;
+כמו תרגום של דפי אינטרנט, אבל עבור יישומים אנדרואיד.
+&lt;u&gt;&lt;b&gt;מה שטרנס עושה&lt;/b&gt;&lt;/u&gt;
+היא מחליפה &lt;b&gt;את כל הטקסט ביישום&lt;/b&gt; בשפה משפה אחת לשניה בזמן ריצה.
+נניח לדוגמה אפליקציה שברצונך להשתמש בה היא בגרמנית, אך אתה יודע רק אנגלית.
+אז בכל פעם שאתה פותח את האפליקציה הנדרשת, כל הטקסט באפליקציה, &lt;b&gt;בכל מקום&lt;/b&gt;, יוחלפו על ידי האנגלית שלה
+מקבילות.
+זהו משהו דומה לאופן שבו תרגום אוטומטי עובד בדפדפנים.
+&lt;u&gt;&lt;b&gt;דרישות&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;מסגרת xposed ציג&lt;/b&gt; או &lt;b&gt;Virtualxposed ציג&lt;/b&gt; או &lt;b&gt;taichi&lt;/b&gt; מותקן ופועל.
+&lt;u&gt;&lt;b&gt;אם ברשותך מטען אתחול נעול או טלפון לא מושרש&lt;/b&gt;&lt;/u&gt;
+אתה יכול להוריד טאיצ&apos;י (אמולטור xposed ציג) מ https://github.com/taichi-framework/TaiChi/releases/
+לחילופין אתה יכול להוריד VirtualXposed ציג (אמולטור xהציג כמו חלל מקביל, כפול apps) מ https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;אם אתה לא יודע מה xposed ציג או Virtualxposed ציג, יישום זה הוא כנראה לא בשבילך&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;כיצד להשתמש alltrans&lt;/b&gt;&lt;/u&gt;
+? ודא כי כל הטרנסג מופעלת ב-Xפוסק Dinstaller/טאיצ&apos;י.
+? בכרטיסיה הגדרות כלליות, בחר באפשרות תרגום משפה ותרגם לשפה.
+? ב Apps לתרגם את הכרטיסייה, למצוא את האפליקציה שאתה רוצה לתרגם, לחץ על תיבת הסימון לידו.
+? סגור והפעל מחדש את האפליקציה שאתה רוצה תורגם-זה צריך להיות מתורגם!"</string>
+</resources>

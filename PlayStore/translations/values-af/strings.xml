@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans-vertaal ander programme"</string>
+	<string name="short_desc">"&apos;N Xhet-module wat * alle * teks in &apos;n program na &apos;n ander taal vertaal"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;Alltrans-heeltemal vertaal programme&lt;/b&gt;&lt;/u&gt;
+Soos vertaling van webbladsye, maar vir Android-programme.
+&lt;u&gt;&lt;b&gt;Wat AllTrans&lt;/b&gt;&lt;/u&gt;
+Dit vervang &lt;b&gt;alle teks in &apos;n program&lt;/b&gt; in &apos;n taal van een taal na &apos;n ander by looptyd.
+Sê byvoorbeeld &apos;n program wat jy wil gebruik, is in Duits, maar jy weet net Engels.
+Dan wanneer jy die vereiste program oopmaak, sal al die teks in die program, &lt;b&gt;enige plek&lt;/b&gt;, vervang word deur sy Engelse
+kontantekwivalente.
+Dit is iets soortgelyks aan die manier om outomatiese vertaal werk in blaaiers.
+&lt;u&gt;&lt;b&gt;Vereistes&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xhet Framework&lt;/b&gt; of &lt;b&gt;VirtualXposed&lt;/b&gt; of &lt;b&gt;taichi&lt;/b&gt; geïnstalleer en hardloop.
+&lt;u&gt;&lt;b&gt;As jy &apos;n geslote Selflaaiprogram of &apos;n nie-gewortel selfoon&lt;/b&gt;&lt;/u&gt;
+Jy kan aflaai Taichi (&apos;n xhet emulator) van https://github.com/taichi-framework/TaiChi/releases/
+Alternatiewelik kan jy VirtualXposed aflaai (&apos;n xhet emulator soos parallelle ruimte, dubbele programme) van https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;As jy nie weet wat Xgestel of Virtualxposed is nie, is hierdie inligting waarskynlik nie vir jou&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;Hoe om alltrans te gebruik&lt;/b&gt;&lt;/u&gt; nie
+? Maak seker dat AllTrans aangeskakel is in XposedInstaller/Taichi.
+? In Global Settings oortjie, kies die vertaal van taal en vertaal na taal.
+? In die toepassings om oortjie te vertaal, vind die program wat jy wil vertaal, klik die merkblokkie langs dit.
+? Sluit en herbegin die program wat jy wil vertaal-dit moet vertaal word!"</string>
+</resources>

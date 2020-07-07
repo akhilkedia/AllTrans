@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"AllTrans - Translate Citas apps"</string>
+	<string name="short_desc">"Xposed modulis, kas tulko * visu * tekstu app uz citu valodu"</string>
+	<string name="long_desc">"&lt;u&gt;&lt;b&gt;Alltrans - Pilnībā tulkot Apps&lt;/b&gt;&lt;/u&gt;
+Tāpat kā tīmekļa lapu tulkošana, bet Gan Android lietotnēm.
+&lt;u&gt;&lt;b&gt;Ko dara AllTrans&lt;/b&gt;&lt;/u&gt;
+Tas aizstāj &lt;b&gt;visu tekstu programmā valodā&lt;/b&gt; no vienas valodas uz citu izpildlaikā.
+Piemēram, lietojumprogramma, kuru vēlaties izmantot, ir vācu valodā, bet jūs zināt tikai angļu valodu.
+Tad, kad jūs atverat nepieciešamo lietotni, viss teksts lietotnē, &lt;b&gt;jebkurā vietā,&lt;/b&gt;tiks aizstāts ar tās angļu
+Ekvivalentiem.
+Tas ir kaut kas līdzīgs tam, kā automātiskā tulkošana darbojas pārlūkprogrammās.
+&lt;u&gt;&lt;b&gt;Prasības attiecībā uz&lt;/b&gt;&lt;/u&gt;
+? &lt;b&gt;Xposed Framework&lt;/b&gt; vai &lt;b&gt;VirtualXposed&lt;/b&gt; vai &lt;b&gt;Taichi uzstādītas&lt;/b&gt; un darbojas.
+&lt;u&gt;&lt;b&gt;Ja jums ir bloķēta BootLoader vai bez sakņojas tālrunis&lt;/b&gt;&lt;/u&gt;
+Jūs varat lejupielādēt Taichi (xposed emulatora) no https://github.com/taichi-framework/TaiChi/releases/
+Alternatīvi jūs varat lejupielādēt VirtualXposed (xposed emulators, piemēram, paralēlā telpa, dual apps) no https://github.com/android-hacker/VirtualXposed/releases
+&lt;b&gt;Ja jūs nezināt, kas Xposed vai Virtualxposed ir, šī app, iespējams, nav jums&lt;/b&gt;
+&lt;u&gt;&lt;b&gt;Kā lietot AllTrans&lt;/b&gt;&lt;/u&gt;
+? Pārliecinieties, ka AllTrans ir ieslēgts XposedInstaller / Taichi.
+? Cilnē Globālie iestatījumi izvēlieties Tulkot no valodas un Tulkot uz valodu.
+? Cilnē Tulkojamās programmas atrodiet programmu, kuru vēlaties tulkot, noklikšķiniet uz tās izvēles rūtiņas.
+? Aizveriet un restartējiet lietotni, kuru vēlaties tulkot - tas ir jātulko!"</string>
+</resources>
