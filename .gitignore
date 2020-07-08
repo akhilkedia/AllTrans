@@ -7,4 +7,5 @@
 /build
 /captures
 /app/debug/
-/PlayStore/android-play-publisher-api/androidpublisher.dat
+/app/release/
+/PlayStore/androidpublisher.dat

@@ -20,7 +20,7 @@ def main(argv):
 	package_name = 'akhil.alltrans'
 	import os
 
-	d = '../translations'
+	d = './translations'
 	folders = [os.path.join(d, o) for o in os.listdir(d)
 										if os.path.isdir(os.path.join(d,o))]
 	print(folders)
