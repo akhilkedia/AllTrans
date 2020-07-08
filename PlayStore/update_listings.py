@@ -25,8 +25,7 @@ def main(argv):
 										if os.path.isdir(os.path.join(d,o))]
 	print(folders)
 
-	allowed_languages = ['af', 'am', 'ar', 'az-AZ', 'be', 'bg', 'bn-BD', 'ca', 'cs-CZ', 'da-DK', 'de-DE', 'en-AU', 'en-CA', 'en-GB', 'en-IN', 'en-SG', 'en-ZA', 'es-419', 'es-ES', 'es-US', 'et', 'eu-ES', 'fa', 'fa-AE', 'fa-AF', 'fa-IR', 'fi-FI', 'fr-CA', 'fr-FR', 'gl-ES', 'gu', 'hi-IN', 'hr', 'hu-HU', 'hy-AM', 'id', 'is-IS', 'it-IT', 'iw-IL', 'ja-JP', 'ka-GE', 'kk', 'km-KH', 'kn-IN', 'ko-KR', 'ky-KG', 'lo-LA', 'lt', 'lv', 'mk-MK', 'ml-IN', 'mn-MN', 'mr-IN', 'ms', 'ms-MY', 'my-MM', 'ne-NP', 'nl-NL', 'no-NO', 'pa', 'pl-PL', 'pt-BR', 'pt-PT', 'rm', 'ro', 'ru-RU', 'si-LK', 'sk', 'sl', 'sq', 'sr', 'sv-SE', 'sw', 'ta-IN', 'te-IN', 'th', 'tr-TR', 'uk', 'ur', 'vi', 'zh-CN', 'zh-HK', 'zh-TW', 'zu']
-	# 'el-GR'
+	allowed_languages = ['af', 'am', 'ar', 'az-AZ', 'be', 'bg', 'bn-BD', 'ca', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-AU', 'en-CA', 'en-GB', 'en-IN', 'en-SG', 'en-ZA', 'es-419', 'es-ES', 'es-US', 'et', 'eu-ES', 'fa', 'fa-AE', 'fa-AF', 'fa-IR', 'fi-FI', 'fr-CA', 'fr-FR', 'gl-ES', 'gu', 'hi-IN', 'hr', 'hu-HU', 'hy-AM', 'id', 'is-IS', 'it-IT', 'iw-IL', 'ja-JP', 'ka-GE', 'kk', 'km-KH', 'kn-IN', 'ko-KR', 'ky-KG', 'lo-LA', 'lt', 'lv', 'mk-MK', 'ml-IN', 'mn-MN', 'mr-IN', 'ms', 'ms-MY', 'my-MM', 'ne-NP', 'nl-NL', 'no-NO', 'pa', 'pl-PL', 'pt-BR', 'pt-PT', 'rm', 'ro', 'ru-RU', 'si-LK', 'sk', 'sl', 'sq', 'sr', 'sv-SE', 'sw', 'ta-IN', 'te-IN', 'th', 'tr-TR', 'uk', 'ur', 'vi', 'zh-CN', 'zh-HK', 'zh-TW', 'zu']
 
 	to_be_skipped = True
 
@@ -54,7 +53,7 @@ def main(argv):
 						if child.tag =='string' and child.attrib['name'] == 'app_name':
 							app_name = cur_text
 						if child.tag =='string' and child.attrib['name'] == 'short_desc':
-							short_desc = cur_text
+							short_desc = cur_text[:80]
 						if child.tag =='string' and child.attrib['name'] == 'long_desc':
 							long_desc = cur_text
 					# print(app_name, short_desc, long_desc)
