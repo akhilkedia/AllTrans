@@ -72,7 +72,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
         final RatingDialog ratingDialog = new RatingDialog.Builder(this)
                 .threshold(4)
-                .session(2)
+                .session(6)
                 .title(getString(R.string.feedback_title))
                 .positiveButtonText(getString(R.string.feedback_positiveButtonText))
                 .negativeButtonText(getString(R.string.feedback_negativeButtonText))

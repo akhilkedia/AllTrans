@@ -29,8 +29,8 @@ android {
         applicationId "akhil.alltrans"
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 191
-        versionName "1.9.1"
+        versionCode 192
+        versionName "1.9.2"
         multiDexEnabled true
     }
     buildTypes {
