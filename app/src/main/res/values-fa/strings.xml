@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"برنامه ها برای ترجمه"</string>
 	<string name="global_settings">"تنظیمات جهانی"</string>
 	<string name="instructions">"دستورالعمل"</string>
+	<string name="feedback_title">"آیا مایلید که این برنامه را ارزیابی کنید ؟"</string>
+	<string name="feedback_positiveButtonText">"الان نه"</string>
+	<string name="feedback_negativeButtonText">"هرگز"</string>
+	<string name="feedback_formTitle">"ارسال بازخورد"</string>
+	<string name="feedback_formHint">"به ما بگویید که ما می توانیم بهبود بخشیم"</string>
+	<string name="feedback_formSubmitText">"ارسال"</string>
+	<string name="feedback_formCancelText">"لغو"</string>
 	<string name="pref_cat_translate_settings">"ترجمه تنظیمات"</string>
 	<string name="pref_cat_troubleshooting_info">"ترجمه تنظیمات برای رفع برنامه های توفنده یا نه ترجمه"</string>
 	<string name="pref_cat_advanced_settings">"تنظیمات پیشرفته"</string>

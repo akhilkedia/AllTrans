@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Apps לתרגם"</string>
 	<string name="global_settings">"הגדרות כלליות"</string>
 	<string name="instructions">"וראות"</string>
+	<string name="feedback_title">"האם ברצונך לדרג יישום זה?"</string>
+	<string name="feedback_positiveButtonText">"לא עכשיו"</string>
+	<string name="feedback_negativeButtonText">"עולם לא"</string>
+	<string name="feedback_formTitle">"שלח משוב"</string>
+	<string name="feedback_formHint">"ספר לנו היכן נוכל לשפר"</string>
+	<string name="feedback_formSubmitText">"הגיש"</string>
+	<string name="feedback_formCancelText">"בטל"</string>
 	<string name="pref_cat_translate_settings">"תרגם הגדרות"</string>
 	<string name="pref_cat_troubleshooting_info">"תרגם הגדרות לתקן אפליקציות מתרסקת או לא תרגום"</string>
 	<string name="pref_cat_advanced_settings">"הגדרות מתקדמות"</string>
@@ -81,7 +88,7 @@
 	<string name="Bulgarian_google">"בולגרית"</string>
 	<string name="Bengali_google">"בנגלית"</string>
 	<string name="Catalan_google">"קטלונית"</string>
-	<string name="Czech_google">"צ\'כית"</string>
+	<string name="Czech_google">"צ\&apos;כית"</string>
 	<string name="Welsh_google">"וולשית"</string>
 	<string name="Danish_google">"דנית"</string>
 	<string name="German_google">"גרמנית"</string>
@@ -95,7 +102,7 @@
 	<string name="French_google">"צרפתית"</string>
 	<string name="Irish_google">"אירית"</string>
 	<string name="Galician_google">"גליציאנית"</string>
-	<string name="Gujarati_google">"גוג\'ארטי"</string>
+	<string name="Gujarati_google">"גוג\&apos;ארטי"</string>
 	<string name="Hebrew_google">"עברית"</string>
 	<string name="Hindi_google">"הינדי"</string>
 	<string name="Croatian_google">"קרואטית"</string>
@@ -145,7 +152,7 @@
 	<string name="Bosnian_yandex">"בוסנית"</string>
 	<string name="Catalan_yandex">"קטלונית"</string>
 	<string name="Cebuano_yandex">"צעב״אנ״"</string>
-	<string name="Czech_yandex">"צ\'כית"</string>
+	<string name="Czech_yandex">"צ\&apos;כית"</string>
 	<string name="Welsh_yandex">"וולשית"</string>
 	<string name="Danish_yandex">"דנית"</string>
 	<string name="German_yandex">"גרמנית"</string>
@@ -161,7 +168,7 @@
 	<string name="Irish_yandex">"אירית"</string>
 	<string name="Scottish_Gaelic_yandex">"גאלית סקוטית"</string>
 	<string name="Galician_yandex">"גליציאנית"</string>
-	<string name="Gujarati_yandex">"גוג\'ארטי"</string>
+	<string name="Gujarati_yandex">"גוג\&apos;ארטי"</string>
 	<string name="Hebrew_yandex">"עברית"</string>
 	<string name="Hindi_yandex">"הינדי"</string>
 	<string name="Croatian_yandex">"קרואטית"</string>
@@ -195,7 +202,7 @@
 	<string name="Nepali_yandex">"נפאלית"</string>
 	<string name="Dutch_yandex">"הולנדית"</string>
 	<string name="Norwegian_yandex">"נורווגית"</string>
-	<string name="Punjabi_yandex">"פנג\'בית"</string>
+	<string name="Punjabi_yandex">"פנג\&apos;בית"</string>
 	<string name="Papiamento_yandex">"פאפימבורג"</string>
 	<string name="Polish_yandex">"פולנית"</string>
 	<string name="Portuguese_yandex">"פורטוגזית"</string>
@@ -231,7 +238,7 @@
 	<string name="Bangla_micro">"אנגלה"</string>
 	<string name="Bosnian_micro">"בוסנית"</string>
 	<string name="Catalan_micro">"קטלונית"</string>
-	<string name="Czech_micro">"צ\'כית"</string>
+	<string name="Czech_micro">"צ\&apos;כית"</string>
 	<string name="Welsh_micro">"וולשית"</string>
 	<string name="Danish_micro">"דנית"</string>
 	<string name="German_micro">"גרמנית"</string>
@@ -267,7 +274,7 @@
 	<string name="Norwegian_micro">"נורווגית"</string>
 	<string name="Dutch_micro">"הולנדית"</string>
 	<string name="Querétaro_Otomi_micro">"קוורטארו אוטומי"</string>
-	<string name="Punjabi_micro">"פנג\'בית"</string>
+	<string name="Punjabi_micro">"פנג\&apos;בית"</string>
 	<string name="Polish_micro">"פולנית"</string>
 	<string name="Portuguese_Brazil_micro">"פורטוגזית (ברזיל)"</string>
 	<string name="Portuguese_Portugal_micro">"פורטוגזית (פורטוגל)"</string>

@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"अनुवादित करण्यासाठी अॅप्स"</string>
 	<string name="global_settings">"जागतिक संयोजना"</string>
 	<string name="instructions">"सूचना"</string>
+	<string name="feedback_title">"तुम्हाला हे अॅप रेटकरायला आवडेल का?"</string>
+	<string name="feedback_positiveButtonText">"आता नाही"</string>
+	<string name="feedback_negativeButtonText">"कधीही"</string>
+	<string name="feedback_formTitle">"अभिप्राय सादर करा"</string>
+	<string name="feedback_formHint">"आपण कुठे सुधारू शकतो ते सांगा"</string>
+	<string name="feedback_formSubmitText">"प्रस्तुत करा"</string>
+	<string name="feedback_formCancelText">"रद्द करा"</string>
 	<string name="pref_cat_translate_settings">"संयोजना अनुवादित करा"</string>
 	<string name="pref_cat_troubleshooting_info">"फिक्स अॅप्स क्रॅश िंग किंवा भाषांतर न करण्यासाठी संयोजना भाषांतरकरा"</string>
 	<string name="pref_cat_advanced_settings">"प्रगत संयोजना"</string>

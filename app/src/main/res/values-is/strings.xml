@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Forrit til að þýða"</string>
 	<string name="global_settings">"Altækar stillingar"</string>
 	<string name="instructions">"Leiðbeiningar"</string>
+	<string name="feedback_title">"Langar þig að taxa þetta App?"</string>
+	<string name="feedback_positiveButtonText">"Ekki núna"</string>
+	<string name="feedback_negativeButtonText">"Aldrei"</string>
+	<string name="feedback_formTitle">"Senda inn endurgjöf"</string>
+	<string name="feedback_formHint">"Segðu okkur hvar við getum bætt"</string>
+	<string name="feedback_formSubmitText">"Leggja inn"</string>
+	<string name="feedback_formCancelText">"Afturkalla"</string>
 	<string name="pref_cat_translate_settings">"Þýða stillingar"</string>
 	<string name="pref_cat_troubleshooting_info">"Þýða stillingar til að laga forrit hrun eða ekki þýða"</string>
 	<string name="pref_cat_advanced_settings">"Ítarlegar stillingar"</string>

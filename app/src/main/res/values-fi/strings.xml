@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Käännettävät sovellukset"</string>
 	<string name="global_settings">"Yleiset asetukset"</string>
 	<string name="instructions">"Ohjeet"</string>
+	<string name="feedback_title">"Haluatko arvostella tämän sovelluksen?"</string>
+	<string name="feedback_positiveButtonText">"Ei nyt"</string>
+	<string name="feedback_negativeButtonText">"Koskaan"</string>
+	<string name="feedback_formTitle">"Lähetä palautetta"</string>
+	<string name="feedback_formHint">"Kerro meille, missä voimme parantaa"</string>
+	<string name="feedback_formSubmitText">"Lähetä"</string>
+	<string name="feedback_formCancelText">"Peruuta"</string>
 	<string name="pref_cat_translate_settings">"Käännä asetukset"</string>
 	<string name="pref_cat_troubleshooting_info">"Käännä asetukset korjaa sovellukset kaatuu tai ei kääntää"</string>
 	<string name="pref_cat_advanced_settings">"Lisäasetukset"</string>

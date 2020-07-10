@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Tõlgitud rakendused"</string>
 	<string name="global_settings">"Globaalsed sätted"</string>
 	<string name="instructions">"Juhiseid"</string>
+	<string name="feedback_title">"Kas soovite seda rakendust hinnata?"</string>
+	<string name="feedback_positiveButtonText">"Mitte praegu"</string>
+	<string name="feedback_negativeButtonText">"Kunagi"</string>
+	<string name="feedback_formTitle">"Tagasiside edastamine"</string>
+	<string name="feedback_formHint">"Ütle meile, kus me saame parandada"</string>
+	<string name="feedback_formSubmitText">"Esitada"</string>
+	<string name="feedback_formCancelText">"Tühistada"</string>
 	<string name="pref_cat_translate_settings">"Tõlgi sätted"</string>
 	<string name="pref_cat_troubleshooting_info">"Tõlgi seaded Fix Apps krahh või mitte tõlkimine"</string>
 	<string name="pref_cat_advanced_settings">"Täpsemad sätted"</string>
@@ -32,7 +39,7 @@
 	<string name="subKey">"Microsoft / Yandex tellimuse võti"</string>
 	<string name="subKey_micro">"Microsofti tellimuse võti"</string>
 	<string name="subKey_yandex">"Yandex i tellimuse võti"</string>
-	<string name="subKey_summary">"Sisestage microsoft Azure'i või Yandex translation API tellimuse võti, olenevalt sellest, kumb on ülallubatud"</string>
+	<string name="subKey_summary">"Sisestage microsoft Azure&apos;i või Yandex translation API tellimuse võti, olenevalt sellest, kumb on ülallubatud"</string>
 	<string name="subKey_defaultValue">"Sisestage oma Microsofti või Yandexi tellimuse võti"</string>
 	<string name="transFrom">"Tõlgi keelest"</string>
 	<string name="transFrom_summary">"Keel, kus rakendus algselt asub."</string>
@@ -45,7 +52,7 @@
 	<string name="setHint_summary_off">"Funktsiooni Sea vihje abil kirjutatud teksti mittetõlkimine. Sisselülitamiseks lülitage sisse."</string>
 	<string name="setHint_summary_on">"Teksti tõlkimine, mis on kirjutatud käsuga Määra vihje - Turvaline. Väljalülitamiseks lülitage välja."</string>
 	<string name="webView">"Tõlgi tekst veebilehtedel sees Apps"</string>
-	<string name="webView_summary_off">"Teksti ei tõlgita webViews'is. Sisselülitamiseks lülitage sisse."</string>
+	<string name="webView_summary_off">"Teksti ei tõlgita webViews&apos;is. Sisselülitamiseks lülitage sisse."</string>
 	<string name="webView_summary_on">"Teksti tõlkimine WebView sees - ohutu, ei pruugi alati töötada. Väljalülitamiseks lülitage välja."</string>
 	<string name="drawText">"Agressiivne režiim"</string>
 	<string name="drawText_summary_off">"Teksti agressiivset tõlkimist drawTextis. Kasutage, kui kõik eespool ei õnnestu. Sisselülitamiseks lülitage sisse."</string>
@@ -55,8 +62,8 @@
 	<string name="caching_summary_on">"Tõlgete salvestamine ühenduseta, et kiirendada andmete tõlkimist ja kasutamist. Välja lülitage, et keelata, kui teie rakendus ei käivitu."</string>
 	<string name="delay">"Viivitamine enne tõlgitud tekstiga asendamist"</string>
 	<string name="delay_summary">"Määrake aeg millisekundites, et oodata enne tõlgitud tekstiga asendamist. Vaikeväärtus on 0. Seatud 1000?5000 kui tõlgitud rakendus on krahh."</string>
-	<string name="delay_webview">"Viivitus enne WebViews'i tõlkimist"</string>
-	<string name="delay_webview_summary">"Määrake aeg millisekundites, et oodata enne WebViews'i tõlkimist. Vaikeväärtus on 500. Tõlkekiiruse suurendamiseks seadke väärtuseks 0. Kui osa veebirakendusest ei tõlgi, seadke väärtuseks 3000-5000."</string>
+	<string name="delay_webview">"Viivitus enne WebViews&apos;i tõlkimist"</string>
+	<string name="delay_webview_summary">"Määrake aeg millisekundites, et oodata enne WebViews&apos;i tõlkimist. Vaikeväärtus on 500. Tõlkekiiruse suurendamiseks seadke väärtuseks 0. Kui osa veebirakendusest ei tõlgi, seadke väärtuseks 3000-5000."</string>
 	<string name="scroll">"Keri pika tõlgitud teksti ga"</string>
 	<string name="scroll_summary_off">"Tõlgitud teksti mittekerimine, kui see on liiga pikk. Teksti võib kärbida, kuid see ei häiri rakenduse kerimist/klõpsamist. Pikkade tõlgete kerimiseks lülitage sisse."</string>
 	<string name="scroll_summary_on">"Tõlgitud teksti kerimine, kui see on liiga pikk. See võib häirida rakenduse kerimist/klõpsamist. Kerimise keelamiseks lülitage see välja."</string>

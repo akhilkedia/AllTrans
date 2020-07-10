@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Apps om te vertalen"</string>
 	<string name="global_settings">"Globale instellingen"</string>
 	<string name="instructions">"Instructies"</string>
+	<string name="feedback_title">"Wilt u deze app beoordelen?"</string>
+	<string name="feedback_positiveButtonText">"Niet nu"</string>
+	<string name="feedback_negativeButtonText">"Nooit"</string>
+	<string name="feedback_formTitle">"Feedback verzenden"</string>
+	<string name="feedback_formHint">"Vertel ons waar we ons kunnen verbeteren"</string>
+	<string name="feedback_formSubmitText">"Opslaan"</string>
+	<string name="feedback_formCancelText">"Annuleren"</string>
 	<string name="pref_cat_translate_settings">"Instellingen vertalen"</string>
 	<string name="pref_cat_troubleshooting_info">"Instellingen vertalen om vastlopen apps op te lossen of niet te vertalen"</string>
 	<string name="pref_cat_advanced_settings">"Geavanceerde instellingen"</string>
@@ -44,7 +51,7 @@
 	<string name="setHint">"Teksthints vertalen (grijsgekleurde suggesties) in tekstvakken"</string>
 	<string name="setHint_summary_off">"Tekst niet vertalen geschreven met sethint. Inschakelen om in te schakelen."</string>
 	<string name="setHint_summary_on">"Tekst vertalen geschreven met Set Hint - Safe. Uitschakelen om uit te schakelen."</string>
-	<string name="webView">"Tekst vertalen in webpagina's in apps"</string>
+	<string name="webView">"Tekst vertalen in webpagina&apos;s in apps"</string>
 	<string name="webView_summary_off">"Tekst niet vertalen in WebViews. Inschakelen om in te schakelen."</string>
 	<string name="webView_summary_on">"Tekst vertalen in WebView - Veilig, werkt mogelijk niet altijd. Uitschakelen om uit te schakelen."</string>
 	<string name="drawText">"Agressieve modus"</string>

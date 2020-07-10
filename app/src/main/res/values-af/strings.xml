@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Toepassings om te vertaal"</string>
 	<string name="global_settings">"Globale instellings"</string>
 	<string name="instructions">"Instruksies"</string>
+	<string name="feedback_title">"Wil jy hierdie toepassing beoordeel?"</string>
+	<string name="feedback_positiveButtonText">"Nie nou nie"</string>
+	<string name="feedback_negativeButtonText">"Nooit"</string>
+	<string name="feedback_formTitle">"Stuur terugvoer"</string>
+	<string name="feedback_formHint">"Vertel ons waar ons kan verbeter"</string>
+	<string name="feedback_formSubmitText">"Dien in"</string>
+	<string name="feedback_formCancelText">"Kanselleer"</string>
 	<string name="pref_cat_translate_settings">"Vertaal instellings"</string>
 	<string name="pref_cat_troubleshooting_info">"Vertaal instellings om toepassings in duie te stel of nie te vertaal nie"</string>
 	<string name="pref_cat_advanced_settings">"Gevorderde instellings"</string>
@@ -20,9 +27,9 @@
 	<string name="master_on_off_summary_on">"Module aangeskakel is, sal geselekteerde programme vertaal word. Skakel af om hierdie module heeltemal te deaktiveer."</string>
 	<string name="translator_provider">"Vertaaldiensverskaffer"</string>
 	<string name="translator_provider_summary">"Kies watter Vertaaldiens om te gebruik-Google, Microsoft, of Yandex"</string>
-	<string name="translator_provider_google">"\nGoogle-hierdie vertaling werk vanlyn, na aanvanklike aflaai van ongeveer 30-60 MB. Vertalings is stadig, maak programme \lag\ of \hang\ 'n bietjie. Geen behoefte vir enige API-sleutel nie. Gratis. \ n"</string>
-	<string name="translator_provider_microsoft">"\nMicrosoft-beste vertaling, werk net met die Internet, vereis 'n \FREE\ API-sleutel. Die proses om API-sleutels te kry, is ingewikkeld, sien instruksies. \ n"</string>
-	<string name="translator_provider_yandex">"\nYandex-vereis 'n \PAID\ API-sleutel. As jy reeds 'n gratis API-sleutel het, kan dit werk, dit kan nie. Nie aanbeveel nie. \ n "</string>
+	<string name="translator_provider_google">"\nGoogle-hierdie vertaling werk vanlyn, na aanvanklike aflaai van ongeveer 30-60 MB. Vertalings is stadig, maak programme \lag\ of \hang\ &apos;n bietjie. Geen behoefte vir enige API-sleutel nie. Gratis. \ n"</string>
+	<string name="translator_provider_microsoft">"\nMicrosoft-beste vertaling, werk net met die Internet, vereis &apos;n \FREE\ API-sleutel. Die proses om API-sleutels te kry, is ingewikkeld, sien instruksies. \ n"</string>
+	<string name="translator_provider_yandex">"\nYandex-vereis &apos;n \PAID\ API-sleutel. As jy reeds &apos;n gratis API-sleutel het, kan dit werk, dit kan nie. Nie aanbeveel nie. \ n "</string>
 	<string name="ask_download">"Ons moet die vertaling lêers af te laai indien nie voorheen afgelaai, rondom 30 MB. Vertaling sal nie werk sonder om af te laai nie. Aflaai nou?"</string>
 	<string name="download_now">"Laai nou af"</string>
 	<string name="cancel">"Kanselleer"</string>
@@ -56,7 +63,7 @@
 	<string name="delay">"Vertraging voor vervang met vertaalde teks"</string>
 	<string name="delay_summary">"Stel die tyd in millisekondes om te wag voordat dit met vertaalde teks vervang word. Verstekwaarde is 0. Stel op 1000? 5000 as die vertaalde program gekraak word."</string>
 	<string name="delay_webview">"Vertraging voor jy begin om Webaansigte te vertaal"</string>
-	<string name="delay_webview_summary">"Stel die tyd in millisekondes om te wag voor jy begin om Webaansigte te vertaal. Standaardwaarde is 500. Stel na 0 om vertaalspoed te verhoog. Stel op 3000-5000 indien 'n deel van die web-program nie vertaal word nie."</string>
+	<string name="delay_webview_summary">"Stel die tyd in millisekondes om te wag voor jy begin om Webaansigte te vertaal. Standaardwaarde is 500. Stel na 0 om vertaalspoed te verhoog. Stel op 3000-5000 indien &apos;n deel van die web-program nie vertaal word nie."</string>
 	<string name="scroll">"Rol lank vertaalde teks"</string>
 	<string name="scroll_summary_off">"Moenie die vertaalde teks Blaai as dit te lank is nie. Teks kan dalk afgesny wees, maar sal nie inmeng met die program se Blaai/klik nie. Skakel aan om lang vertalings te rol."</string>
 	<string name="scroll_summary_on">"Blaai vertaal teks as dit te lank is. Dit kan inmeng met die program se rol/klik. Skakel af om hierdie Blaai te versper."</string>

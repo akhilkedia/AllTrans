@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"అనువదించడానికి అనువర్తనాలు"</string>
 	<string name="global_settings">"గ్లోబల్ అమర్పులు"</string>
 	<string name="instructions">"సూచనలు"</string>
+	<string name="feedback_title">"ఈ యాప్ కు మీరు రేటింగ్ ఇవ్వాలని అనుకుంటున్నారా?"</string>
+	<string name="feedback_positiveButtonText">"ఇప్పుడు కాదు"</string>
+	<string name="feedback_negativeButtonText">"ఎన్నడూ"</string>
+	<string name="feedback_formTitle">"ఫీడ్ బ్యాక్ సబ్మిట్ చేయండి"</string>
+	<string name="feedback_formHint">"ఎక్కడ మెరుగుపరచవచ్చో మాకు చెప్పండి"</string>
+	<string name="feedback_formSubmitText">"సమర్పించు"</string>
+	<string name="feedback_formCancelText">"రద్దు"</string>
 	<string name="pref_cat_translate_settings">"అమర్పులను అనువదించు"</string>
 	<string name="pref_cat_troubleshooting_info">"అనువర్తనాలు క్రాష్ లేదా అనువాదం కాని వాటిని పరిష్కరించడానికి సెట్టింగ్ లను అనువదించండి"</string>
 	<string name="pref_cat_advanced_settings">"ఆధునిక అమర్పులు"</string>

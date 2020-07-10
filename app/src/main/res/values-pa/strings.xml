@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਐਪਾਂ"</string>
 	<string name="global_settings">"ਗਲੋਬਲ ਸੈਟਿੰਗ"</string>
 	<string name="instructions">"ਹਿਦਾਇਤਾਂ"</string>
+	<string name="feedback_title">"ਕੀ ਤੁਸੀਂ ਇਸ ਐਪ ਨੂੰ ਦਰਜਾ ਦੇਣਾ ਚਾਹੋਂਗੇ?"</string>
+	<string name="feedback_positiveButtonText">"ਹਾਲੇ ਨਹੀਂ"</string>
+	<string name="feedback_negativeButtonText">"ਕਦੇ ਵੀ ਨਹੀਂ"</string>
+	<string name="feedback_formTitle">"ਫੀਡਬੈਕ ਸਪੁਰਦ ਕਰੋ"</string>
+	<string name="feedback_formHint">"ਸਾਨੂੰ ਦੱਸੋ ਕਿ ਅਸੀਂ ਕਿੱਥੇ ਸੁਧਾਰ ਕਰ ਸਕਦੇ ਹਾਂ"</string>
+	<string name="feedback_formSubmitText">"ਸਪੁਰਦ ਕਰੋ"</string>
+	<string name="feedback_formCancelText">"ਰੱਦ ਕਰੋ"</string>
 	<string name="pref_cat_translate_settings">"ਅਨੁਵਾਦ ਸੈਟਿੰਗ"</string>
 	<string name="pref_cat_troubleshooting_info">"ਸੈਟਿੰਗਾਂ ਨੂੰ ਅਨੁਵਾਦ ਕਰਨ ਜਾਂ ਅਨੁਵਾਦ ਨਾ ਕਰਨ ਲਈ ਸੈਟਿੰਗਾਂ ਦਾ ਅਨੁਵਾਦ ਕਰੋ"</string>
 	<string name="pref_cat_advanced_settings">"ਅਡਵਾਂਸਡ ਸੈਟਿੰਗ"</string>
@@ -54,9 +61,9 @@
 	<string name="caching_summary_off">"ਅਨੁਵਾਦਾਂ ਨੂੰ ਔਫਲਾਈਨ ਨਾ ਬਚਾਉਣਾ, ਜਿਸਦਾ ਸਿੱਟਾ ਹੌਲੀ ਅਨੁਵਾਦ ਅਤੇ ਵਧੇਰੇ ਡੇਟਾ ਦੇ ਰੂਪ ਵਿੱਚ ਨਿਕਲਦਾ ਹੈ – ਪਰ ਇਹ ਵਧੇਰੇ ਐਪਾਂ ਵਾਸਤੇ ਕੰਮ ਕਰ ਸਕਦਾ ਹੈ। ਅਨੁਵਾਦ ਸੰਭਾਲਣ ਲਈ ਚਾਲੂ ਕਰੋ ।"</string>
 	<string name="caching_summary_on">"ਅਨੁਵਾਦ ਨੂੰ ਤੇਜ਼ ਕਰਨ ਅਤੇ ਡੇਟਾ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਅਨੁਵਾਦਾਂ ਨੂੰ ਔਫਲਾਈਨ ਰੱਖਿਅਤ ਕਰਨਾ। ਜੇ ਤੁਹਾਡੀ ਐਪ ਸ਼ੁਰੂ ਨਹੀਂ ਹੁੰਦੀ ਤਾਂ ਅਸਮਰੱਥ ਕਰਨ ਲਈ ਬੰਦ ਕਰੋ।"</string>
 	<string name="delay">"ਅਨੁਵਾਦ ਪਾਠ ਨਾਲ ਬਦਲਣ ਤੋਂ ਪਹਿਲਾਂ ਦੇਰੀ"</string>
-	<string name="delay_summary">"ਅਨੁਵਾਦ ਕੀਤੇ ਪਾਠ ਦੀ ਥਾਂ ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਉਡੀਕ ਕਰਨ ਲਈ ਸਮਾਂ ਮਿਲੀਸਕਿੰਟਾਂ ਵਿੱਚ ਸੈੱਟ ਕਰੋ। ਡਿਫਾਲਟ ਮੁੱਲ 0 ਹੈ। ਜੇ ਅਨੁਵਾਦ ਐਪ ਕਰੈਸ਼ ਹੋ ਰਹੀ ਹੈ ਤਾਂ 1000?5000 'ਤੇ ਸੈੱਟ ਕਰੋ।"</string>
+	<string name="delay_summary">"ਅਨੁਵਾਦ ਕੀਤੇ ਪਾਠ ਦੀ ਥਾਂ ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਉਡੀਕ ਕਰਨ ਲਈ ਸਮਾਂ ਮਿਲੀਸਕਿੰਟਾਂ ਵਿੱਚ ਸੈੱਟ ਕਰੋ। ਡਿਫਾਲਟ ਮੁੱਲ 0 ਹੈ। ਜੇ ਅਨੁਵਾਦ ਐਪ ਕਰੈਸ਼ ਹੋ ਰਹੀ ਹੈ ਤਾਂ 1000?5000 &apos;ਤੇ ਸੈੱਟ ਕਰੋ।"</string>
 	<string name="delay_webview">"ਵੈੱਬਵਿਊ ਦਾ ਅਨੁਵਾਦ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਦੇਰੀ"</string>
-	<string name="delay_webview_summary">"ਵੈੱਬਵਿਊ ਅਨੁਵਾਦ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਉਡੀਕ ਕਰਨ ਲਈ ਸਮਾਂ ਮਿਲਸਕਿੰਟਾਂ ਵਿੱਚ ਸੈੱਟ ਕਰੋ। ਡਿਫਾਲਟ ਮੁੱਲ 500 ਹੈ। ਅਨੁਵਾਦ ਦੀ ਗਤੀ ਵਧਾਉਣ ਲਈ 0 'ਤੇ ਸੈੱਟ ਕਰੋ। ਜੇ ਵੈੱਬ ਐਪ ਦਾ ਕੁਝ ਹਿੱਸਾ ਅਨੁਵਾਦ ਨਹੀਂ ਕਰ ਰਿਹਾ ਹੈ ਤਾਂ 3000-5000 'ਤੇ ਸੈੱਟ ਕਰੋ।"</string>
+	<string name="delay_webview_summary">"ਵੈੱਬਵਿਊ ਅਨੁਵਾਦ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਉਡੀਕ ਕਰਨ ਲਈ ਸਮਾਂ ਮਿਲਸਕਿੰਟਾਂ ਵਿੱਚ ਸੈੱਟ ਕਰੋ। ਡਿਫਾਲਟ ਮੁੱਲ 500 ਹੈ। ਅਨੁਵਾਦ ਦੀ ਗਤੀ ਵਧਾਉਣ ਲਈ 0 &apos;ਤੇ ਸੈੱਟ ਕਰੋ। ਜੇ ਵੈੱਬ ਐਪ ਦਾ ਕੁਝ ਹਿੱਸਾ ਅਨੁਵਾਦ ਨਹੀਂ ਕਰ ਰਿਹਾ ਹੈ ਤਾਂ 3000-5000 &apos;ਤੇ ਸੈੱਟ ਕਰੋ।"</string>
 	<string name="scroll">"ਲੰਮਾ ਅਨੁਵਾਦ ਪਾਠ ਸਕਰੋਲ ਕਰੋ"</string>
 	<string name="scroll_summary_off">"ਅਨੁਵਾਦ ਕੀਤੇ ਟੈਕਸਟ ਨੂੰ ਸਕਰੋਲ ਨਾ ਕਰਨਾ ਜੇ ਇਹ ਬਹੁਤ ਲੰਬਾ ਹੈ। ਟੈਕਸਟ ਨੂੰ ਛੋਟਾ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ, ਪਰ ਇਹ ਐਪ ਦੀ ਸਕਰੋਲਿੰਗ/ਕਲਿੱਕ ਕਰਨ ਵਿੱਚ ਦਖਲ ਨਹੀਂ ਦੇਵੇਗਾ। ਲੰਬੇ ਅਨੁਵਾਦਾਂ ਨੂੰ ਸਕਰੋਲ ਕਰਨ ਲਈ ਚਾਲੂ ਕਰੋ।"</string>
 	<string name="scroll_summary_on">"ਅਨੁਵਾਦ ਪਾਠ ਨੂੰ ਸਕਰੋਲ ਕਰਨਾ ਜੇਕਰ ਇਹ ਬਹੁਤ ਲੰਬਾ ਹੈ। ਇਹ ਐਪ ਦੀ ਸਕਰੋਲਿੰਗ/ਕਲਿੱਕ ਕਰਨ ਵਿੱਚ ਦਖਲ ਅੰਦਾਜ਼ੀ ਕਰ ਸਕਦਾ ਹੈ। ਇਸ ਸਕਰੋਲਿੰਗ ਨੂੰ ਅਸਮਰੱਥ ਕਰਨ ਲਈ ਬੰਦ ਕਰੋ।"</string>
@@ -74,7 +81,7 @@
 	<string name="overRide_global_summary_off">"ਇਸ ਐਪ ਲਈ ਗਲੋਬਲ ਸੈਟਿੰਗਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ। ਇਸ ਐਪ ਲਈ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲਣ ਲਈ ਚਾਲੂ ਕਰੋ।"</string>
 	<string name="overRide_global_summary_on">"ਇਸ ਐਪ ਲਈ ਲੋਕਲ ਸੈਟਿੰਗਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ। ਗਲੋਬਲ ਸੈਟਿੰਗਾਂ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਬੰਦ ਕਰੋ।"</string>
 	<string name="clear_cache">"ਅਨੁਵਾਦ ਕੈਸ਼ ਨੂੰ ਸਾਫ਼ ਕਰਨ ਲਈ ਕਲਿੱਕ ਕਰੋ"</string>
-	<string name="clear_cache_summary">"ਐਪ ਦੇ ਅਨੁਵਾਦ ਕੈਸ਼ ਨੂੰ ਸਾਫ਼ ਕਰਨ ਲਈ ਉੱਪਰ ਦਿੱਤੇ 'ਤੇ ਕਲਿੱਕ ਕਰੋ। ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ/ਤੋਂ ਬਦਲਣ ਤੋਂ ਬਾਅਦ, ਜਾਂ ਜੇ ਐਪ ਸ਼ੁਰੂ ਨਹੀਂ ਹੁੰਦੀ ਹੈ ਤਾਂ ਇਹ ਵਰਤੋ।"</string>
+	<string name="clear_cache_summary">"ਐਪ ਦੇ ਅਨੁਵਾਦ ਕੈਸ਼ ਨੂੰ ਸਾਫ਼ ਕਰਨ ਲਈ ਉੱਪਰ ਦਿੱਤੇ &apos;ਤੇ ਕਲਿੱਕ ਕਰੋ। ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ/ਤੋਂ ਬਦਲਣ ਤੋਂ ਬਾਅਦ, ਜਾਂ ਜੇ ਐਪ ਸ਼ੁਰੂ ਨਹੀਂ ਹੁੰਦੀ ਹੈ ਤਾਂ ਇਹ ਵਰਤੋ।"</string>
 	<string name="Afrikaans_google">"ਐਫਰੀਕਾਂਸ"</string>
 	<string name="Arabic_google">"ਅਰਬੀ"</string>
 	<string name="Belarusian_google">"ਬੇਲਾਰੂਸੀ"</string>

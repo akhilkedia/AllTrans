@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Apps na vakavakadewa"</string>
 	<string name="global_settings">"Veivanua e vuravura raraba"</string>
 	<string name="instructions">"IDusidusi"</string>
+	<string name="feedback_title">"Ko na vinakata beka mo vakarautaka na app oqo?"</string>
+	<string name="feedback_positiveButtonText">"Sega ni gauna oqo"</string>
+	<string name="feedback_negativeButtonText">"Sega ni"</string>
+	<string name="feedback_formTitle">"Vakauta na railesu"</string>
+	<string name="feedback_formHint">"Tukuna vei keda na vanua e rawa ni da vakavinakataka kina"</string>
+	<string name="feedback_formSubmitText">"Vakauta"</string>
+	<string name="feedback_formCancelText">"Bokoca"</string>
 	<string name="pref_cat_translate_settings">"Vanua ni vakavakadewa"</string>
 	<string name="pref_cat_troubleshooting_info">"Vanua ni vakavakadewa me vakavinakataki kina na apps caroba se sega ni vakadewataki"</string>
 	<string name="pref_cat_advanced_settings">"Veivanua Torocake"</string>

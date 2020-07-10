@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"अनुवाद करने के लिए ऐप्स"</string>
 	<string name="global_settings">"ग्लोबल सेटिंग्स"</string>
 	<string name="instructions">"निर्देश"</string>
+	<string name="feedback_title">"क्या आप इस ऐप को रेट करना चाहेंगे?"</string>
+	<string name="feedback_positiveButtonText">"अभी नहीं"</string>
+	<string name="feedback_negativeButtonText">"कभी नहीं"</string>
+	<string name="feedback_formTitle">"प्रतिक्रिया सबमिट करें"</string>
+	<string name="feedback_formHint">"हमें बताएं कि हम कहां सुधार कर सकते हैं"</string>
+	<string name="feedback_formSubmitText">"जमा करें"</string>
+	<string name="feedback_formCancelText">"रद्द करना"</string>
 	<string name="pref_cat_translate_settings">"सेटिंग का अनुवाद करें"</string>
 	<string name="pref_cat_troubleshooting_info">"ऐप्स क्रैश करने या अनुवाद न करने के लिए सेटिंग्स का अनुवाद करें"</string>
 	<string name="pref_cat_advanced_settings">"एडवांस्ड सेटिंग्स"</string>

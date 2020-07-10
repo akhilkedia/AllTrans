@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Polokalama ke liliu"</string>
 	<string name="global_settings">"ʻatakai fakaemamani lahi"</string>
 	<string name="instructions">"Ngaahi fakahinohino"</string>
+	<string name="feedback_title">"Oku ke fie fakafuofuaʻi a e app ko eni?"</string>
+	<string name="feedback_positiveButtonText">"ʻikai ʻi he taimi ni"</string>
+	<string name="feedback_negativeButtonText">"ʻIkai"</string>
+	<string name="feedback_formTitle">"Fakahu ʻa e fakamatala"</string>
+	<string name="feedback_formHint">"Fakaha mai e feituʻu ʻe lava ke toe lelei ange ai"</string>
+	<string name="feedback_formSubmitText">"Fakahu"</string>
+	<string name="feedback_formCancelText">"Kaniseli"</string>
 	<string name="pref_cat_translate_settings">"Liliu e settings"</string>
 	<string name="pref_cat_troubleshooting_info">"Liliu ʻo e settings ke Fakaleleiʻi e ngaahi polokalama fasi pe ʻikai liliu"</string>
 	<string name="pref_cat_advanced_settings">"Fokotuʻutuʻu fakalakalaka"</string>

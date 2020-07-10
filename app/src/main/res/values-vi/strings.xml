@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Ứng dụng dịch"</string>
 	<string name="global_settings">"Thiết đặt toàn cầu"</string>
 	<string name="instructions">"Hướng dẫn"</string>
+	<string name="feedback_title">"Bạn có muốn tỷ lệ ứng dụng này?"</string>
+	<string name="feedback_positiveButtonText">"Không phải bây giờ"</string>
+	<string name="feedback_negativeButtonText">"Không bao giờ"</string>
+	<string name="feedback_formTitle">"Gửi phản hồi"</string>
+	<string name="feedback_formHint">"Cho chúng tôi biết nơi chúng tôi có thể cải thiện"</string>
+	<string name="feedback_formSubmitText">"Gửi"</string>
+	<string name="feedback_formCancelText">"Hủy bỏ"</string>
 	<string name="pref_cat_translate_settings">"Dịch cài đặt"</string>
 	<string name="pref_cat_troubleshooting_info">"Dịch cài đặt để sửa chữa Apps đâm hoặc không dịch"</string>
 	<string name="pref_cat_advanced_settings">"Cài đặt nâng cao"</string>

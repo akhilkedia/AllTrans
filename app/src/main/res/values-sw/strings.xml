@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Programu za kutafsiri"</string>
 	<string name="global_settings">"Mipangilio ya jumla"</string>
 	<string name="instructions">"Maelekezo"</string>
+	<string name="feedback_title">"Je, utapenda kiwango cha programu hii? &quot;"</string>
+	<string name="feedback_positiveButtonText">"Sio sasa"</string>
+	<string name="feedback_negativeButtonText">"Kamwe"</string>
+	<string name="feedback_formTitle">"Wasilisha maoni"</string>
+	<string name="feedback_formHint">"Tuambie ambapo tunaweza kuboresha"</string>
+	<string name="feedback_formSubmitText">"Wasilisha"</string>
+	<string name="feedback_formCancelText">"Katisha"</string>
 	<string name="pref_cat_translate_settings">"Tafsiri mipangilio"</string>
 	<string name="pref_cat_troubleshooting_info">"Tafsiri mipangilio ya kurekebisha programu crashing au sio kutafsiri"</string>
 	<string name="pref_cat_advanced_settings">"Mipangilio mahiri"</string>

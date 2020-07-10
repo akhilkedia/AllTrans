@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"کا ترجمہ کرنے کے لئے اطلاقات"</string>
 	<string name="global_settings">"ہمہ گیر سیٹنگیں"</string>
 	<string name="instructions">"ہدایات"</string>
+	<string name="feedback_title">"کیا آپ اس ایپ کی درجہ بندی کرنا چاہیں گے ؟"</string>
+	<string name="feedback_positiveButtonText">"ابھی نہيں"</string>
+	<string name="feedback_negativeButtonText">"کبھی"</string>
+	<string name="feedback_formTitle">"تاثرات جمع کرائیں"</string>
+	<string name="feedback_formHint">"ہمیں بتائیں کہ ہم کہاں بہتر بنا سکتے ہیں"</string>
+	<string name="feedback_formSubmitText">"جمع کروائیں"</string>
+	<string name="feedback_formCancelText">"منسوخ"</string>
 	<string name="pref_cat_translate_settings">"سیٹنگیں ترجمہ کریں"</string>
 	<string name="pref_cat_troubleshooting_info">"یا ترجمہ کرنے والی ایپس کو درست کرنے کے لیے ترتیبات کا ترجمہ کریں"</string>
 	<string name="pref_cat_advanced_settings">"اعلی سیٹنگیں"</string>

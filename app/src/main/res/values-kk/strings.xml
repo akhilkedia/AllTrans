@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Аударуға арналған бағдарламалар"</string>
 	<string name="global_settings">"Глобалдық параметрлер"</string>
 	<string name="instructions">"Нұсқаулар"</string>
+	<string name="feedback_title">"Осы бағдарламаны бағалайсыз ба?"</string>
+	<string name="feedback_positiveButtonText">"Қазір емес"</string>
+	<string name="feedback_negativeButtonText">"Ешқашан да"</string>
+	<string name="feedback_formTitle">"Пікірді жіберу"</string>
+	<string name="feedback_formHint">"Қай жерде жақсарта алатынымызды айтыңыз"</string>
+	<string name="feedback_formSubmitText">"Жіберу"</string>
+	<string name="feedback_formCancelText">"Болдырмау"</string>
 	<string name="pref_cat_translate_settings">"Параметрлерді аудару"</string>
 	<string name="pref_cat_troubleshooting_info">"Параметрлерді Параметрлерді түзету үшін аудару Жаңылысу немесе Аудармау"</string>
 	<string name="pref_cat_advanced_settings">"Қосымша параметрлер"</string>

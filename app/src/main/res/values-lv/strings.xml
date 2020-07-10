@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Tulkojamās programmas"</string>
 	<string name="global_settings">"Globālie iestatījumi"</string>
 	<string name="instructions">"Instrukcijas"</string>
+	<string name="feedback_title">"Vai vēlaties novērtēt šo lietotni?"</string>
+	<string name="feedback_positiveButtonText">"ne tagad"</string>
+	<string name="feedback_negativeButtonText">"Nekad"</string>
+	<string name="feedback_formTitle">"Iesniegt atsauksmes"</string>
+	<string name="feedback_formHint">"Pastāstiet mums , kur mēs varam uzlabot"</string>
+	<string name="feedback_formSubmitText">"Iesniegt"</string>
+	<string name="feedback_formCancelText">"Atcelt"</string>
 	<string name="pref_cat_translate_settings">"Tulkot iestatījumus"</string>
 	<string name="pref_cat_troubleshooting_info">"Translate Settings to Fix Apps Crashing or Not Translating"</string>
 	<string name="pref_cat_advanced_settings">"Papildu iestatījumi"</string>

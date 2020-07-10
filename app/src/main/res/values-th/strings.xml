@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"แอปที่จะแปล"</string>
 	<string name="global_settings">"การตั้งค่าส่วนกลาง"</string>
 	<string name="instructions">"คำ แนะ นำ"</string>
+	<string name="feedback_title">"คุณต้องการให้คะแนนแอปนี้หรือไม่"</string>
+	<string name="feedback_positiveButtonText">"อย่าเพิ่ง"</string>
+	<string name="feedback_negativeButtonText">"ไม่"</string>
+	<string name="feedback_formTitle">"ส่งคําติชม"</string>
+	<string name="feedback_formHint">"บอกเราว่าเราจะสามารถปรับปรุงได้ที่ไหน"</string>
+	<string name="feedback_formSubmitText">"ส่ง"</string>
+	<string name="feedback_formCancelText">"ยกเลิก"</string>
 	<string name="pref_cat_translate_settings">"การตั้งค่าการแปล"</string>
 	<string name="pref_cat_troubleshooting_info">"แปลการตั้งค่าเพื่อแก้ไขปพลิเคชัน crashing หรือไม่แปล"</string>
 	<string name="pref_cat_advanced_settings">"การตั้งค่าขั้นสูง"</string>

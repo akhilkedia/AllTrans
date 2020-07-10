@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Aplikasi untuk Terjemahkan"</string>
 	<string name="global_settings">"Pengaturan global"</string>
 	<string name="instructions">"Petunjuk"</string>
+	<string name="feedback_title">"Apakah Anda ingin menilai aplikasi ini?"</string>
+	<string name="feedback_positiveButtonText">"Jangan sekarang"</string>
+	<string name="feedback_negativeButtonText">"Pernah"</string>
+	<string name="feedback_formTitle">"Kirimkan umpan balik"</string>
+	<string name="feedback_formHint">"Beritahu kami di mana kami dapat meningkatkan"</string>
+	<string name="feedback_formSubmitText">"Kirim"</string>
+	<string name="feedback_formCancelText">"Membatalkan"</string>
 	<string name="pref_cat_translate_settings">"Terjemahkan pengaturan"</string>
 	<string name="pref_cat_troubleshooting_info">"Terjemahkan pengaturan untuk Perbaiki aplikasi menabrak atau tidak menerjemahkan"</string>
 	<string name="pref_cat_advanced_settings">"Pengaturan lanjutan"</string>

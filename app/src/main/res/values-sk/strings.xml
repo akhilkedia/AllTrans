@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Aplikácie, ktoré sa majú preložiť"</string>
 	<string name="global_settings">"Globálne nastavenia"</string>
 	<string name="instructions">"Pokyny"</string>
+	<string name="feedback_title">"Chcete hodnotiť túto aplikáciu?"</string>
+	<string name="feedback_positiveButtonText">"teraz nie"</string>
+	<string name="feedback_negativeButtonText">"Nikdy"</string>
+	<string name="feedback_formTitle">"Odoslať spätnú väzbu"</string>
+	<string name="feedback_formHint">"Povedzte nám, kde môžeme zlepšiť"</string>
+	<string name="feedback_formSubmitText">"Predložiť"</string>
+	<string name="feedback_formCancelText">"Zrušiť"</string>
 	<string name="pref_cat_translate_settings">"Preložiť nastavenia"</string>
 	<string name="pref_cat_troubleshooting_info">"Preložiť nastavenia opraviť aplikácie burácanie alebo nie preklad"</string>
 	<string name="pref_cat_advanced_settings">"Rozšírené nastavenia"</string>

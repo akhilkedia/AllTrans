@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Applications à traduire"</string>
 	<string name="global_settings">"Paramètres globaux"</string>
 	<string name="instructions">"Instructions"</string>
+	<string name="feedback_title">"Souhaitez-vous évaluer cette application?"</string>
+	<string name="feedback_positiveButtonText">"Pas maintenant"</string>
+	<string name="feedback_negativeButtonText">"Jamais"</string>
+	<string name="feedback_formTitle">"Soumettre vos commentaires"</string>
+	<string name="feedback_formHint">"Dites-nous où nous pouvons nous améliorer"</string>
+	<string name="feedback_formSubmitText">"Envoyer"</string>
+	<string name="feedback_formCancelText">"Annuler"</string>
 	<string name="pref_cat_translate_settings">"Définition des paramètres"</string>
 	<string name="pref_cat_troubleshooting_info">"Définition des paramètres pour corriger l’effondrement ou la non-traduction d’applications"</string>
 	<string name="pref_cat_advanced_settings">"Paramètres avancés"</string>

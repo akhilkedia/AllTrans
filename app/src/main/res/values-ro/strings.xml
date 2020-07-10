@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Aplicații de tradus"</string>
 	<string name="global_settings">"Setări globale"</string>
 	<string name="instructions">"Instrucţiuni"</string>
+	<string name="feedback_title">"Evaluați această aplicație?"</string>
+	<string name="feedback_positiveButtonText">"nu acum"</string>
+	<string name="feedback_negativeButtonText">"Niciodată"</string>
+	<string name="feedback_formTitle">"Remitere feedback"</string>
+	<string name="feedback_formHint">"Spuneți-ne unde ne putem îmbunătăți"</string>
+	<string name="feedback_formSubmitText">"Prezinte"</string>
+	<string name="feedback_formCancelText">"Anula"</string>
 	<string name="pref_cat_translate_settings">"Traducere setări"</string>
 	<string name="pref_cat_troubleshooting_info">"Traducere setări pentru remedierea căderii aplicațiilor sau ne traducerii"</string>
 	<string name="pref_cat_advanced_settings">"Setări complexe"</string>

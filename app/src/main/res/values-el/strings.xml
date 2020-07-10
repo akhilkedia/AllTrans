@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Εφαρμογές για μετάφραση"</string>
 	<string name="global_settings">"Καθολικές ρυθμίσεις"</string>
 	<string name="instructions">"Οδηγίες"</string>
+	<string name="feedback_title">"Θέλετε να αξιολογήσετε αυτήν την εφαρμογή;"</string>
+	<string name="feedback_positiveButtonText">"Όχι τώρα"</string>
+	<string name="feedback_negativeButtonText">"Ποτέ"</string>
+	<string name="feedback_formTitle">"Υποβολή σχολίων"</string>
+	<string name="feedback_formHint">"Πείτε μας πού μπορούμε να βελτιωθούμε"</string>
+	<string name="feedback_formSubmitText">"Υποβάλει"</string>
+	<string name="feedback_formCancelText">"Ακυρώσετε"</string>
 	<string name="pref_cat_translate_settings">"Μετάφραση ρυθμίσεων"</string>
 	<string name="pref_cat_troubleshooting_info">"Μετάφραση ρυθμίσεων για την επιδιόρθωση εφαρμογών που διακόπτονται ή δεν μεταφράζονται"</string>
 	<string name="pref_cat_advanced_settings">"Ρυθμίσεις για προχωρημένους"</string>

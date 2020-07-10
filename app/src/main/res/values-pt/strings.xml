@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Aplicativos para traduzir"</string>
 	<string name="global_settings">"Configurações globais"</string>
 	<string name="instructions">"Instruções"</string>
+	<string name="feedback_title">"Gostaria de classificar este aplicativo?"</string>
+	<string name="feedback_positiveButtonText">"Agora não"</string>
+	<string name="feedback_negativeButtonText">"Nunca"</string>
+	<string name="feedback_formTitle">"Enviar feedback"</string>
+	<string name="feedback_formHint">"Diga-nos onde podemos melhorar"</string>
+	<string name="feedback_formSubmitText">"Enviar"</string>
+	<string name="feedback_formCancelText">"Cancelar"</string>
 	<string name="pref_cat_translate_settings">"Traduzir configurações"</string>
 	<string name="pref_cat_troubleshooting_info">"Traduzir configurações para corrigir aplicativos que travam ou não traduzem"</string>
 	<string name="pref_cat_advanced_settings">"Configurações avançadas"</string>
@@ -42,7 +49,7 @@
 	<string name="setText_summary_off">"Não traduzindo texto escrito usando texto definido. Ligue para habilitar."</string>
 	<string name="setText_summary_on">"Tradução texto escrito usando texto definido - Seguro. Desligue para desativar."</string>
 	<string name="setHint">"Traduzir dicas de texto (sugestões cor-de-cinza) em caixas de texto"</string>
-	<string name="setHint_summary_off">"Não traduzindo texto escrito usando 'Definir dica'. Ligue para habilitar."</string>
+	<string name="setHint_summary_off">"Não traduzindo texto escrito usando &apos;Definir dica&apos;. Ligue para habilitar."</string>
 	<string name="setHint_summary_on">"Traduzindo texto escrito usando Set Hint - Seguro. Desligue para desativar."</string>
 	<string name="webView">"Traduzir texto em páginas da Web dentro de aplicativos"</string>
 	<string name="webView_summary_off">"Não traduzindo texto em WebViews. Ligue para habilitar."</string>

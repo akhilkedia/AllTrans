@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"번역할 앱"</string>
 	<string name="global_settings">"글로벌 설정"</string>
 	<string name="instructions">"지침"</string>
+	<string name="feedback_title">"이 응용 프로그램을 평가하고 싶습니까?"</string>
+	<string name="feedback_positiveButtonText">"지금은 아니에요"</string>
+	<string name="feedback_negativeButtonText">"결코"</string>
+	<string name="feedback_formTitle">"피드백 제출"</string>
+	<string name="feedback_formHint">"우리가 개선 할 수있는 곳을 알려주십시오."</string>
+	<string name="feedback_formSubmitText">"전송"</string>
+	<string name="feedback_formCancelText">"취소"</string>
 	<string name="pref_cat_translate_settings">"설정 번역"</string>
 	<string name="pref_cat_troubleshooting_info">"앱이 충돌하거나 번역되지 않도록 설정을 번역합니다."</string>
 	<string name="pref_cat_advanced_settings">"고급 설정"</string>

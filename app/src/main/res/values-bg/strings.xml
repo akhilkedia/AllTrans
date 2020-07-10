@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Приложения за превод"</string>
 	<string name="global_settings">"Глобални настройки"</string>
 	<string name="instructions">"Инструкции"</string>
+	<string name="feedback_title">"Искате ли да оцените това приложение?"</string>
+	<string name="feedback_positiveButtonText">"Не сега"</string>
+	<string name="feedback_negativeButtonText">"Никога не"</string>
+	<string name="feedback_formTitle">"Изпращане на обратна връзка"</string>
+	<string name="feedback_formHint">"Кажете ни къде можем да подобрим"</string>
+	<string name="feedback_formSubmitText">"Представят"</string>
+	<string name="feedback_formCancelText">"Отмените"</string>
 	<string name="pref_cat_translate_settings">"Настройки за превод"</string>
 	<string name="pref_cat_troubleshooting_info">"Превод на настройки за коригиране на приложения, които се срива или не превеждат"</string>
 	<string name="pref_cat_advanced_settings">"Разширени настройки"</string>

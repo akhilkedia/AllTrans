@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Aplicaciones para traducir"</string>
 	<string name="global_settings">"Configuración global"</string>
 	<string name="instructions">"Instrucciones"</string>
+	<string name="feedback_title">"¿Te gustaría calificar esta aplicación?"</string>
+	<string name="feedback_positiveButtonText">"Ahora no"</string>
+	<string name="feedback_negativeButtonText">"Nunca"</string>
+	<string name="feedback_formTitle">"Enviar comentarios"</string>
+	<string name="feedback_formHint">"Díganos dónde podemos mejorar"</string>
+	<string name="feedback_formSubmitText">"Enviar"</string>
+	<string name="feedback_formCancelText">"Cancelar"</string>
 	<string name="pref_cat_translate_settings">"Traducir ajustes"</string>
 	<string name="pref_cat_troubleshooting_info">"Traducir la configuración para corregir aplicaciones que se bloquean o no se traducen"</string>
 	<string name="pref_cat_advanced_settings">"Configuración avanzada"</string>
@@ -20,7 +27,7 @@
 	<string name="master_on_off_summary_on">"El módulo está activado, las aplicaciones seleccionadas se traducirán. Desactive esta opción para desactivar completamente este módulo."</string>
 	<string name="translator_provider">"Proveedor de servicios de traducción"</string>
 	<string name="translator_provider_summary">"Seleccione qué servicio de traducción usar: Google, Microsoft o Yandex"</string>
-	<string name="translator_provider_google">"NGoogle - Esta traducción funciona sin conexión, después de la descarga inicial de alrededor de 30-60 MB. Las traducciones son lentas, hace que las aplicaciones "lag" o "hang" sean un poco. No hay necesidad de ninguna clave de API. Gratis."</string>
+	<string name="translator_provider_google">"NGoogle - Esta traducción funciona sin conexión, después de la descarga inicial de alrededor de 30-60 MB. Las traducciones son lentas, hace que las aplicaciones &quot;lag&quot; o &quot;hang&quot; sean un poco. No hay necesidad de ninguna clave de API. Gratis."</string>
 	<string name="translator_provider_microsoft">"•nMicrosoft - La mejor traducción, sólo funciona con Internet, requiere una clave de API GRATUITA. El proceso para obtener claves de API es complicado, consulte Instrucciones."</string>
 	<string name="translator_provider_yandex">"•nYandex - Requiere una clave api de pago. Si ya tiene una clave de API gratuita, puede funcionar, puede que no. No se recomienda. "</string>
 	<string name="ask_download">"Necesitamos descargar los archivos de traducción si no se han descargado previamente, alrededor de 30 MB. La traducción no funcionará sin descargar. ¿Descargar ahora?"</string>

@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Apper som skal oversettes"</string>
 	<string name="global_settings">"Globale innstillinger"</string>
 	<string name="instructions">"Instruksjoner"</string>
+	<string name="feedback_title">"Vil du vurdere dette programmet?"</string>
+	<string name="feedback_positiveButtonText">"ikke nå"</string>
+	<string name="feedback_negativeButtonText">"Aldri"</string>
+	<string name="feedback_formTitle">"Send inn tilbakemelding"</string>
+	<string name="feedback_formHint">"Fortell oss hvor vi kan forbedre"</string>
+	<string name="feedback_formSubmitText">"Sende"</string>
+	<string name="feedback_formCancelText">"Avbryte"</string>
 	<string name="pref_cat_translate_settings">"Oversett innstillinger"</string>
 	<string name="pref_cat_troubleshooting_info">"Oversett innstillinger for å fikse apps krasjer eller ikke oversette"</string>
 	<string name="pref_cat_advanced_settings">"Avanserte innstillinger"</string>

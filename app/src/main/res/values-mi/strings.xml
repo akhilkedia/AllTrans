@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Ngā taupānga kia Whakawhiti"</string>
 	<string name="global_settings">"Tautuhinga ā-Ao"</string>
 	<string name="instructions">"Ngā tohutohu"</string>
+	<string name="feedback_title">"E hiahia ana koe ki te whakatau i tēnei taupānga?"</string>
+	<string name="feedback_positiveButtonText">"Kāore i tēnei wā"</string>
+	<string name="feedback_negativeButtonText">"Kaua rawa e"</string>
+	<string name="feedback_formTitle">"Tuku Urupare"</string>
+	<string name="feedback_formHint">"Kōrero mai ki te wāhi e taea e mātou te whakapai ake"</string>
+	<string name="feedback_formSubmitText">"Whakaurungia"</string>
+	<string name="feedback_formCancelText">"Whakakore"</string>
 	<string name="pref_cat_translate_settings">"Ngā Tautuhinga whakawhiti"</string>
 	<string name="pref_cat_troubleshooting_info">"Whakamāoritia Ngā Tautuhinga hei Whakatika i Ngā Taupānga Pao, Kāore rānei i Whakamāori ana"</string>
 	<string name="pref_cat_advanced_settings">"Ngā tautuhinga arā atu anō:"</string>

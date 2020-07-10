@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"மொழிபெயர்க்க வேண்டிய பயன்பாடுகள்"</string>
 	<string name="global_settings">"உலகளாவிய அமைப்புகள்"</string>
 	<string name="instructions">"செயல்துறைக்கட்டளை"</string>
+	<string name="feedback_title">"இந்தப் பயன்பாட்டை மதிப்பிட விரும்புகிறீர்களா?"</string>
+	<string name="feedback_positiveButtonText">"இப்போது இல்லை"</string>
+	<string name="feedback_negativeButtonText">"ஒருபோதுமில்லா நிலையில்"</string>
+	<string name="feedback_formTitle">"கருத்து சமர்ப்பிக்கவும்"</string>
+	<string name="feedback_formHint">"நாங்கள் எங்கு மேம்படுத்த லாம் என்று சொல்லுங்கள்"</string>
+	<string name="feedback_formSubmitText">"சமர்ப்பிக்க"</string>
+	<string name="feedback_formCancelText">"எதிராணை"</string>
 	<string name="pref_cat_translate_settings">"அமைப்புகள் மொழிபெயர்க்க"</string>
 	<string name="pref_cat_troubleshooting_info">"பயன்பாடுகள் கிராசிங் அல்லது மொழிபெயர்ப்பதை சரிசெய்ய அமைப்புகள் மொழிபெயர்க்க"</string>
 	<string name="pref_cat_advanced_settings">"மேம்பட்ட அமைப்புகள்"</string>

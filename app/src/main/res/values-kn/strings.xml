@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"ಅನುವಾದಿಸಲು ಅಪ್ಲಿಗಳು"</string>
 	<string name="global_settings">"ಜಾಗತಿಕ ಸೆಟ್ಟಿಂಗ್ ಗಳು"</string>
 	<string name="instructions">"ಸೂಚನೆಗಳು"</string>
+	<string name="feedback_title">"ಈ ಅಪ್ಲಿಯನ್ನು ನೀವು ರೇಟ್ ಮಾಡಲು ಬಯಸುವಿರಾ?"</string>
+	<string name="feedback_positiveButtonText">"ಈಗಲ್ಲ"</string>
+	<string name="feedback_negativeButtonText">"ಎಂದಿಗೂ ಇಲ್ಲ"</string>
+	<string name="feedback_formTitle">"ಪ್ರತಿಕ್ರಿಯೆ ಸಲ್ಲಿಸಿ"</string>
+	<string name="feedback_formHint">"ನಾವು ಎಲ್ಲಿ ಸುಧಾರಿಸಬಹುದು ಎಂದು ನಮಗೆ ತಿಳಿಸಿ"</string>
+	<string name="feedback_formSubmitText">"ಸಲ್ಲಿಸು"</string>
+	<string name="feedback_formCancelText">"ರದ್ದುಮಾಡಿ"</string>
 	<string name="pref_cat_translate_settings">"ಸೆಟ್ಟಿಂಗ್ ಗಳನ್ನು ಅನುವಾದಿಸು"</string>
 	<string name="pref_cat_troubleshooting_info">"ಅಪ್ಲಿಗಳನ್ನು ಕ್ರ್ಯಾಶ್ ಮಾಡಲು ಅಥವಾ ಅನುವಾದಿಸದಿರಲು ಸೆಟ್ಟಿಂಗ್ ಗಳನ್ನು ಅನುವಾದಿಸು"</string>
 	<string name="pref_cat_advanced_settings">"ಆಧುನೀಕೃತ ಸೆಟ್ಟಿಂಗ್ ಗಳು"</string>

@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"تطبيقات إلى ترجمة"</string>
 	<string name="global_settings">"إعدادات عمومية"</string>
 	<string name="instructions">"تعليمات"</string>
+	<string name="feedback_title">"هل ترغب في تقييم هذا التطبيق؟"</string>
+	<string name="feedback_positiveButtonText">"ليس الآن"</string>
+	<string name="feedback_negativeButtonText">"ابدا"</string>
+	<string name="feedback_formTitle">"إرسال ملاحظات"</string>
+	<string name="feedback_formHint">"أخبرنا أين يمكننا تحسين"</string>
+	<string name="feedback_formSubmitText">"إرسال"</string>
+	<string name="feedback_formCancelText">"إلغاء الأمر"</string>
 	<string name="pref_cat_translate_settings">"ترجمة الإعدادات"</string>
 	<string name="pref_cat_troubleshooting_info">"ترجمة الإعدادات إلى إصلاح التطبيقات تحطمها أو عدم الترجمة"</string>
 	<string name="pref_cat_advanced_settings">"إعدادات متقدمة"</string>
@@ -71,7 +78,7 @@
 	<string name="local_on_off_summary_off">"هذا التطبيق لن يترجم. تشغيل لبدء استخدام الترجمة التلقائية!"</string>
 	<string name="local_on_off_summary_on">"سيتم ترجمة هذا. إيقاف تعطيل تماما ترجمة هذا التطبيق."</string>
 	<string name="overRide_global">"إعدادات تجاوز التوقعات العالمية"</string>
-	<string name="overRide_global_summary_off">"استخدام "الإعدادات العمومية" لهذا التطبيق."</string>
+	<string name="overRide_global_summary_off">"استخدام &quot;الإعدادات العمومية&quot; لهذا التطبيق."</string>
 	<string name="overRide_global_summary_on">"استخدام الإعدادات المحلية لهذا التطبيق."</string>
 	<string name="clear_cache">"انقر لمسح ذاكرة التخزين المؤقت للترجمة"</string>
 	<string name="clear_cache_summary">"انقر فوق أعلاه لمسح ذاكرة التخزين المؤقت لترجمة التطبيق. استخدم هذا بعد تغيير إلى/من اللغات، أو إذا لم يبدأ التطبيق."</string>

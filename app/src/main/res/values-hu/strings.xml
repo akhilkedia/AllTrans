@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Lefordítandó alkalmazások"</string>
 	<string name="global_settings">"Globális beállítások"</string>
 	<string name="instructions">"Utasításokat"</string>
+	<string name="feedback_title">"Szeretné értékelni ezt az alkalmazást?"</string>
+	<string name="feedback_positiveButtonText">"ne most"</string>
+	<string name="feedback_negativeButtonText">"Soha nem"</string>
+	<string name="feedback_formTitle">"Visszajelzés küldése"</string>
+	<string name="feedback_formHint">"Mondja el, hol tudunk fejlődni"</string>
+	<string name="feedback_formSubmitText">"Benyújtja"</string>
+	<string name="feedback_formCancelText">"Mégse gombra"</string>
 	<string name="pref_cat_translate_settings">"Beállítások fordítása"</string>
 	<string name="pref_cat_troubleshooting_info">"Beállítások fordítása az összeomló vagy nem fordítási alkalmazások javításához"</string>
 	<string name="pref_cat_advanced_settings">"Speciális beállítások"</string>

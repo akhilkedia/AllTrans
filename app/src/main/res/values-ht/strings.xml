@@ -3,7 +3,7 @@
 	<string name="app_name">"AllTrans"</string>
 	<string name="loading">"Lis Loading nan aplikasyon pou-Tanpri tann"</string>
 	<string name="clear_cache_success">"Tanpri fose-femen app a tradui! Tradwi kachet pou app sa a pral efasman pwochen fwa app a komanse!!"</string>
-	<string name="wut_why_null">"Pa t ' kapab chaje paj la chak-app preferans. Femen ak re-louvri aplikasyon anko."</string>
+	<string name="wut_why_null">"Pa t &apos; kapab chaje paj la chak-app preferans. Femen ak re-louvri aplikasyon anko."</string>
 	<string name="app_icon">"App Icon"</string>
 	<string name="example_application">"Egzanp aplikasyon"</string>
 	<string name="description">"Deskripsyon"</string>
@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Apps tradui"</string>
 	<string name="global_settings">"Anviwonman global"</string>
 	<string name="instructions">"Enstriksyon"</string>
+	<string name="feedback_title">"Eske ou ta renmen nan pousantaj app sa a?"</string>
+	<string name="feedback_positiveButtonText">"Pa kounye-a"</string>
+	<string name="feedback_negativeButtonText">"Janm"</string>
+	<string name="feedback_formTitle">"Soumet Commentaires"</string>
+	<string name="feedback_formHint">"Di nou ki kote nou ka amelyore"</string>
+	<string name="feedback_formSubmitText">"Soumet"</string>
+	<string name="feedback_formCancelText">"Anile"</string>
 	<string name="pref_cat_translate_settings">"Tradwi anviwonman"</string>
 	<string name="pref_cat_troubleshooting_info">"Tradwi anviwonman pou ranje Apps ekraze oswa pa tradui"</string>
 	<string name="pref_cat_advanced_settings">"Anviwonman avanse"</string>
@@ -61,8 +68,8 @@
 	<string name="scroll_summary_off">"Pa defile tradui teks si li two lontan. Teks ka tronkonik, men yo pa pral entefere ak defile app a/klike. Vire sou nan woulo liv tradiksyon lontan."</string>
 	<string name="scroll_summary_on">"Defile tradui teks si li two lontan. Sa a ka entefere ak defile app a/klike sou. Femen nan enfim sa a defile."</string>
 	<string name="analytics">"Voye anonim aksidan ak done li"</string>
-	<string name="analytics_summary_off">"Pa voye aksidan anonim ak done li '. Voye anonim aksidan done ede pwomote a fe app a pi byen."</string>
-	<string name="analytics_summary_on">"Voye aksidan anonim ak done li '. Pa gen enfomasyon pesonel transmet. Anonim aksidan done ede pwomote a fe app a pi byen"</string>
+	<string name="analytics_summary_off">"Pa voye aksidan anonim ak done li &apos;. Voye anonim aksidan done ede pwomote a fe app a pi byen."</string>
+	<string name="analytics_summary_on">"Voye aksidan anonim ak done li &apos;. Pa gen enfomasyon pesonel transmet. Anonim aksidan done ede pwomote a fe app a pi byen"</string>
 	<string name="debug">"Avanse: vire sou Dbug mode."</string>
 	<string name="debug_summary_off">"Dbug mod se koupe. Pa ekri done dbug logcat. Vire sa a sou anvan ou voye rapo ere"</string>
 	<string name="debug_summary_on">"Dbug mod se sou. Ekri moso bwa yo logcat. Sa a diminye pefomans-femen si pa nesese."</string>

@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Aplikacije za prevajanje"</string>
 	<string name="global_settings">"Globalne nastavitve"</string>
 	<string name="instructions">"Navodila"</string>
+	<string name="feedback_title">"Ali želite to aplikacijo Rate?"</string>
+	<string name="feedback_positiveButtonText">"ne zdaj"</string>
+	<string name="feedback_negativeButtonText">"Nikoli"</string>
+	<string name="feedback_formTitle">"Pošiljanje povratnih informacij"</string>
+	<string name="feedback_formHint">"Povejte nam, kje lahko izboljšamo"</string>
+	<string name="feedback_formSubmitText">"Predloži"</string>
+	<string name="feedback_formCancelText">"Preklicati"</string>
 	<string name="pref_cat_translate_settings">"Prevajanje nastavitev"</string>
 	<string name="pref_cat_troubleshooting_info">"Prevajanje nastavitev, da odpravite aplikacije treskav ali ne prevajanje"</string>
 	<string name="pref_cat_advanced_settings">"Napredne nastavitve"</string>

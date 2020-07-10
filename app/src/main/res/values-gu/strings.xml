@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"ભાષાંતર કરવા માટેની એપ્લિકેશનો"</string>
 	<string name="global_settings">"વૈશ્વિક સુયોજનો"</string>
 	<string name="instructions">"સૂચનાઓ"</string>
+	<string name="feedback_title">"શું તમે આ એપને રેટ કરવા માંગો છો?"</string>
+	<string name="feedback_positiveButtonText">"હવે નથી"</string>
+	<string name="feedback_negativeButtonText">"ક્યારેય નહિં"</string>
+	<string name="feedback_formTitle">"પ્રતિસાદ સબમિટ કરો"</string>
+	<string name="feedback_formHint">"અમને જણાવો કે આપણે ક્યાં સુધારી શકીએ"</string>
+	<string name="feedback_formSubmitText">"મોકલો"</string>
+	<string name="feedback_formCancelText">"રદ્દ"</string>
 	<string name="pref_cat_translate_settings">"સુયોજનોનો અનુવાદ કરો"</string>
 	<string name="pref_cat_troubleshooting_info">"એપ્લિકેશનક્રેશિંગ અથવા ભાષાંતર કરવા માટે સુયોજનોનો અનુવાદ કરો"</string>
 	<string name="pref_cat_advanced_settings">"ઉન્નત સુયોજનો"</string>

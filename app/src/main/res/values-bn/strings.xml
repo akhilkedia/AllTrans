@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"অনুবাদ করতে অ্যাপস"</string>
 	<string name="global_settings">"বৈশ্বিক সেটিংস"</string>
 	<string name="instructions">"নির্দেশাবলী"</string>
+	<string name="feedback_title">"আপনি কি এই অ্যাপটি মূল্যায়ন করতে চান?"</string>
+	<string name="feedback_positiveButtonText">"এখন না"</string>
+	<string name="feedback_negativeButtonText">"কখনও"</string>
+	<string name="feedback_formTitle">"মতামত জমা দিন"</string>
+	<string name="feedback_formHint">"আমাদের বলুন কোথায় আমরা উন্নতি করতে পারি"</string>
+	<string name="feedback_formSubmitText">"জমা"</string>
+	<string name="feedback_formCancelText">"বাতিল"</string>
 	<string name="pref_cat_translate_settings">"সেটিংস অনুবাদ করুন"</string>
 	<string name="pref_cat_troubleshooting_info">"অ্যাপস ক্র্যাশিং বা অনুবাদ না করতে সেটিংস অনুবাদ করুন"</string>
 	<string name="pref_cat_advanced_settings">"উন্নত সেটিংস"</string>

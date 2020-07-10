@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Apps zum Übersetzen"</string>
 	<string name="global_settings">"Globale Einstellungen"</string>
 	<string name="instructions">"Anweisungen"</string>
+	<string name="feedback_title">"Möchten Sie diese App bewerten?"</string>
+	<string name="feedback_positiveButtonText">"Jetzt nicht"</string>
+	<string name="feedback_negativeButtonText">"Nie"</string>
+	<string name="feedback_formTitle">"Feedback einreichen"</string>
+	<string name="feedback_formHint">"Sagen Sie uns, wo wir uns verbessern können"</string>
+	<string name="feedback_formSubmitText">"Senden"</string>
+	<string name="feedback_formCancelText">"Abbrechen"</string>
 	<string name="pref_cat_translate_settings">"Übersende Einstellungen"</string>
 	<string name="pref_cat_troubleshooting_info">"Übersetzen von Einstellungen zum Fix-Apps-Absturz oder Nicht-Übersetzen"</string>
 	<string name="pref_cat_advanced_settings">"Erweiterte Einstellungen"</string>
@@ -20,7 +27,7 @@
 	<string name="master_on_off_summary_on">"Modul aktiviert ist, ausgewählte Apps werden übersetzt. Deaktivieren Sie diese Option, um dieses Modul vollständig zu deaktivieren."</string>
 	<string name="translator_provider">"Übersetzungsdienstleister"</string>
 	<string name="translator_provider_summary">"Auswählen des zu verwendenden Übersetzungsdienstes – Google, Microsoft oder Yandex"</string>
-	<string name="translator_provider_google">"nGoogle - Diese Übersetzung funktioniert offline, nach dem ersten Download von etwa 30-60 MB. Übersetzungen sind langsam, machen Apps "lag" oder "hang" ein wenig. Keine Notwendigkeit für einen API-Schlüssel. Kostenlos."</string>
+	<string name="translator_provider_google">"nGoogle - Diese Übersetzung funktioniert offline, nach dem ersten Download von etwa 30-60 MB. Übersetzungen sind langsam, machen Apps &quot;lag&quot; oder &quot;hang&quot; ein wenig. Keine Notwendigkeit für einen API-Schlüssel. Kostenlos."</string>
 	<string name="translator_provider_microsoft">"Microsoft - Die beste Übersetzung, funktioniert nur mit dem Internet, erfordert einen API-Schlüssel für die KOSTENLOSE. Der Prozess zum Abrufen von API-Schlüsseln ist kompliziert, siehe Anweisungen."</string>
 	<string name="translator_provider_yandex">"nYandex - Erfordert einen API-Schlüssel für die Datei . Wenn Sie bereits über einen freien API-Schlüssel verfügen, funktioniert er möglicherweise nicht. Nicht empfohlen. "</string>
 	<string name="ask_download">"Wir müssen die Übersetzungsdateien herunterladen, wenn nicht zuvor heruntergeladen, etwa 30 MB. Die Übersetzung funktioniert nicht ohne Download. Jetzt herunterladen?"</string>

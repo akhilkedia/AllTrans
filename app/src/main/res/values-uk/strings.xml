@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Програми для перекладу"</string>
 	<string name="global_settings">"Глобальні параметри"</string>
 	<string name="instructions">"Інструкції"</string>
+	<string name="feedback_title">"Ви хочете оцінити цю програму?"</string>
+	<string name="feedback_positiveButtonText">"Не зараз"</string>
+	<string name="feedback_negativeButtonText">"Ніколи не"</string>
+	<string name="feedback_formTitle">"Надіслати відгук"</string>
+	<string name="feedback_formHint">"Розкажіть нам, де ми можемо покращити"</string>
+	<string name="feedback_formSubmitText">"Представити"</string>
+	<string name="feedback_formCancelText">"Скасувати"</string>
 	<string name="pref_cat_translate_settings">"Налаштування перекладу"</string>
 	<string name="pref_cat_troubleshooting_info">"Перекладайте налаштування, щоб виправити застосунки, які не переводять або не перекладаючи"</string>
 	<string name="pref_cat_advanced_settings">"Розширені налаштування"</string>
@@ -132,7 +139,7 @@
 	<string name="Turkish_google">"турецька"</string>
 	<string name="Ukrainian_google">"українська"</string>
 	<string name="Urdu_google">"урду"</string>
-	<string name="Vietnamese_google">"в\'єтнамська"</string>
+	<string name="Vietnamese_google">"в\&apos;єтнамська"</string>
 	<string name="Chinese_google">"китайська"</string>
 	<string name="Afrikaans_yandex">"африкаанс"</string>
 	<string name="Amharic_yandex">"Амхарську"</string>
@@ -196,7 +203,7 @@
 	<string name="Dutch_yandex">"нідерландська"</string>
 	<string name="Norwegian_yandex">"норвезька"</string>
 	<string name="Punjabi_yandex">"панджабі"</string>
-	<string name="Papiamento_yandex">"Пап'яменто"</string>
+	<string name="Papiamento_yandex">"Пап&apos;яменто"</string>
 	<string name="Polish_yandex">"польська"</string>
 	<string name="Portuguese_yandex">"португальська"</string>
 	<string name="Romanian_yandex">"румунська"</string>
@@ -220,7 +227,7 @@
 	<string name="Ukrainian_yandex">"українська"</string>
 	<string name="Urdu_yandex">"урду"</string>
 	<string name="Uzbek_yandex">"Узбецька"</string>
-	<string name="Vietnamese_yandex">"в\'єтнамська"</string>
+	<string name="Vietnamese_yandex">"в\&apos;єтнамська"</string>
 	<string name="Xhosa_yandex">"коса"</string>
 	<string name="Yiddish_yandex">"Ідиш"</string>
 	<string name="Chinese_yandex">"китайська"</string>
@@ -290,7 +297,7 @@
 	<string name="Tahitian_micro">"Tahitian"</string>
 	<string name="Ukrainian_micro">"українська"</string>
 	<string name="Urdu_micro">"урду"</string>
-	<string name="Vietnamese_micro">"в\'єтнамська"</string>
+	<string name="Vietnamese_micro">"в\&apos;єтнамська"</string>
 	<string name="Yucatec_Maya_micro">"Югатець майя"</string>
 	<string name="Cantonese_Traditional_micro">"Кантонська (традиційна)"</string>
 	<string name="Chinese_Simplified_micro">"китайська (спрощене письмо)"</string>

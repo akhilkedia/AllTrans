@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"പരിഭാഷാ-ആപ്ലിക്കേഷനുകൾ"</string>
 	<string name="global_settings">"ആഗോള സജ്ജീകരണങ്ങള്"</string>
 	<string name="instructions">"നിർദ്ദേശങ്ങൾ"</string>
+	<string name="feedback_title">"ഈ ആപ്പ് റേറ്റുചെയ്യാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ?"</string>
+	<string name="feedback_positiveButtonText">"ഇപ്പോഴല്ല"</string>
+	<string name="feedback_negativeButtonText">"ഒരിക്കലും"</string>
+	<string name="feedback_formTitle">"ഫീഡ്ബാക്ക് സമർപ്പിക്കുക"</string>
+	<string name="feedback_formHint">"നമുക്ക് എവിടെ മെച്ചപ്പെടുത്താൻ കഴിയും എന്ന് ഞങ്ങളോട് പറയുക"</string>
+	<string name="feedback_formSubmitText">"സമർപ്പിക്കുക"</string>
+	<string name="feedback_formCancelText">"ക്യാൻസൽ ചെയ്യ്"</string>
 	<string name="pref_cat_translate_settings">"സജ്ജീകരണങ്ങൾ പരിഭാഷപ്പെടുത്തുക"</string>
 	<string name="pref_cat_troubleshooting_info">"ആപ്ലിക്കേഷനുകൾ ക്രാഷിംഗ് അല്ലെങ്കിൽ വിവർത്തനം ചെയ്യാത്തത് ഫിക്സ് ചെയ്യുന്നതിന് ക്രമീകരണങ്ങൾ പരിഭാഷപ്പെടുത്തുക"</string>
 	<string name="pref_cat_advanced_settings">"വിപുലമായ സജ്ജീകരണങ്ങൾ"</string>

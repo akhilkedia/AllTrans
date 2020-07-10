@@ -11,6 +11,13 @@
 	<string name="apps_to_translate">"Apps sa isalin"</string>
 	<string name="global_settings">"Mga global setting"</string>
 	<string name="instructions">"Mga tagubilin"</string>
+	<string name="feedback_title">"Gusto mo bang markahan ang app na ito?"</string>
+	<string name="feedback_positiveButtonText">"Hindi ngayon"</string>
+	<string name="feedback_negativeButtonText">"Hindi kailanman"</string>
+	<string name="feedback_formTitle">"Isumite ang feedback"</string>
+	<string name="feedback_formHint">"Sabihin sa amin kung saan namin mapagbubuti ang"</string>
+	<string name="feedback_formSubmitText">"Magsumite"</string>
+	<string name="feedback_formCancelText">"Magkansela"</string>
 	<string name="pref_cat_translate_settings">"Isalin ang mga setting"</string>
 	<string name="pref_cat_troubleshooting_info">"Isalin ang mga setting upang ayusin ang Apps pag-crash o hindi pagsasalin"</string>
 	<string name="pref_cat_advanced_settings">"Naunang mga setting"</string>
