@@ -62,10 +62,12 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.percentlayout:percentlayout:1.0.0'
 
-    implementation 'com.google.firebase:firebase-analytics:17.4.3'
-    implementation 'com.google.firebase:firebase-crashlytics:17.1.0'
+    implementation 'com.google.firebase:firebase-analytics:17.4.4'
+    implementation 'com.google.firebase:firebase-crashlytics:17.1.1'
     implementation 'com.google.mlkit:translate:16.1.0'
     implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'com.github.hansemannn:smart-app-rate:1.1.1'
 
 
 }

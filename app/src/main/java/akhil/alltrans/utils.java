@@ -37,17 +37,6 @@ import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 class utils {
     public static boolean Debug = true;
 
-    public static boolean check_not_xposed(Context context) {
-        if (isVirtualXposed()) {
-            return true;
-        }
-        return isExpModuleActive(context);
-    }
-
-    private static boolean isVirtualXposed() {
-        return !TextUtils.isEmpty(System.getProperty("vxp"));
-    }
-
     public static boolean isExpModuleActive(Context context) {
 
         boolean isExp = false;

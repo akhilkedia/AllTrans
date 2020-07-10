@@ -36,6 +36,15 @@
     <string name="global_settings">"Global Settings"</string>
     <string name="instructions">"Instructions"</string>
 
+    <!-- Feedback Dialog -->
+    <string name="feedback_title">"Would you like to rate this app?"</string>
+    <string name="feedback_positiveButtonText">"Not now"</string>
+    <string name="feedback_negativeButtonText">"Never"</string>
+    <string name="feedback_formTitle">"Submit Feedback"</string>
+    <string name="feedback_formHint">"Tell us where we can improve"</string>
+    <string name="feedback_formSubmitText">"Submit"</string>
+    <string name="feedback_formCancelText">"Cancel"</string>
+
 
     <!-- Global Preferences -->
 
