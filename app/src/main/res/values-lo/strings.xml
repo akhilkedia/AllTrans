@@ -29,7 +29,7 @@
 	<string name="translator_provider_summary">"ເລືອກວ່າບໍລິການແປພາສາໃດທີ່ຈະໃຊ້ - Google, Microsoft, ຫຼື Yandex"</string>
 	<string name="translator_provider_google">"\nGoogle - ການແປນີ້ເຮັດວຽກoffline, ຫຼັງຈາກການດາວໂຫລດໃນເບື້ອງຕົ້ນປະມານ 30-60 MB. ການແປແມ່ນຊັກຊ້າ, ເຮັດໃຫ້apps\lag\ຫຼື\hang\a bit. ບໍ່ຈໍາເປັນຕ້ອງມີຂໍກະແຈ API ໃດໆ. ຟຣີ.\n"</string>
 	<string name="translator_provider_microsoft">"\nMicrosoft - ການແປທີ່ດີທີ່ສຸດ, ພຽງແຕ່ເຮັດວຽກກັບອິນເຕີເນັດ, ຮຽກຮ້ອງໃຫ້ມີ\FREE\API key. ຂັ້ນຕອນໃນການຮັບກະແຈ API ແມ່ນສັບຊ້ອນ, ເບິ່ງຄໍາແນະນໍາ.\n"</string>
-	<string name="translator_provider_yandex">"ທ\nYandex - ຮຽກຮ\u0001\fາ\U0001\u0001\u0001\u0001\u000 ຖ້າຫາກວ່າທ່ານມີກະແຈ API ຟຣີແລ້ວ, ມັນອາດຈະເຮັດວຽກ, ມັນອາດຈະບໍ່. ບໍ່ແນະນໍາ.\n "</string>
+	<string name="translator_provider_yandex">"ທ\nYandex - ຮຽກຮຖ້າຫາກວ່າທ່ານມີກະແຈ API ຟຣີແລ້ວ, ມັນອາດຈະເຮັດວຽກ, ມັນອາດຈະບໍ່. ບໍ່ແນະນໍາ.\n "</string>
 	<string name="ask_download">"ພວກເຮົາຈໍາເປັນຕ້ອງດາວນ໌ໂຫລດໄຟລ໌ການແປຖ້າບໍ່ໄດ້ດາວໂຫລດກ່ອນຫນ້ານີ້, ປະມານ 30 MB. ການແປຈະບໍ່ເຮັດວຽກໂດຍບໍ່ມີການດາວໂຫລດ. ດາວໂຫລດຕອນນີ້?"</string>
 	<string name="download_now">"ດາວໂຫລດຕອນນີ້"</string>
 	<string name="cancel">"ຍົກເລີກ"</string>

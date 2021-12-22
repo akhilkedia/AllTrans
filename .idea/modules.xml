@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AllTrans.iml" filepath="$PROJECT_DIR$/AllTrans.iml" group="AllTrans" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="AllTrans/app" />
+      <module fileurl="file://$PROJECT_DIR$/AllTrans.iml" filepath="$PROJECT_DIR$/AllTrans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AllTrans.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AllTrans.app.iml" />
     </modules>
   </component>
 </project>
