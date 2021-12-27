@@ -43,6 +43,10 @@ android {
         signingConfig signingConfigs.publish
     }
     buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -51,12 +55,9 @@ android {
 }
 
 repositories {
-    jcenter({ url "https://jcenter.bintray.com/" })
+//    jcenter({ url "https://jcenter.bintray.com/" })
     google()
     mavenCentral()
-//    maven {
-//        url "http://dl.bintray.com/rovo89/de.robv.android.xposed"
-//    }
     maven { url "https://jitpack.io" }
 }
 
