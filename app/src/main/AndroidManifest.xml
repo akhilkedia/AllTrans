@@ -35,7 +35,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:targetApi="r">
         <meta-data
             android:name="xposedmodule"
             android:value="true" />
