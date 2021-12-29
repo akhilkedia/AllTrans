@@ -54,6 +54,9 @@
 	<string name="webView">"Tradurre testo nelle pagine Web all&apos;interno di app"</string>
 	<string name="webView_summary_off">"Non tradurre testo in WebViews. Attivare per abilitare."</string>
 	<string name="webView_summary_on">"Traduzione di testo all&apos;interno di WebView - Sicuro, potrebbe non funzionare sempre. Disattivare per disattivare."</string>
+	<string name="notif">"Traduci notifiche"</string>
+	<string name="notif_summary_off">"Non tradurre il testo nelle notifiche. Attiva per abilitare."</string>
+	<string name="notif_summary_on">"Traduzione di testo all&apos;interno delle notifiche - Sicuro, a volte può bloccare le app. Disattiva per disabilitare."</string>
 	<string name="drawText">"Modalità aggressiva"</string>
 	<string name="drawText_summary_off">"Non traduzione aggressiva di Text in drawText. Utilizzare quando tutto sopra fallisce. Attivare per abilitare."</string>
 	<string name="drawText_summary_on">"Traduzione aggressiva di Text in drawText - Sperimentale, potrebbe non funzionare sempre. Disattivare per disattivare."</string>

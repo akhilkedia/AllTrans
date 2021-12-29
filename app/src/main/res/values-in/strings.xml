@@ -54,6 +54,9 @@
 	<string name="webView">"Terjemahkan teks di halaman web dalam aplikasi"</string>
 	<string name="webView_summary_off">"Tidak menerjemahkan teks di WebViews. Aktifkan untuk mengaktifkan."</string>
 	<string name="webView_summary_on">"Menerjemahkan teks dalam WebView-aman, mungkin tidak bekerja selalu. Matikan untuk menonaktifkan."</string>
+	<string name="notif">"Terjemahkan Pemberitahuan"</string>
+	<string name="notif_summary_off">"Tidak Menerjemahkan Teks dalam Pemberitahuan. Nyalakan untuk mengaktifkan."</string>
+	<string name="notif_summary_on">"Menerjemahkan Teks di dalam Pemberitahuan - Aman, terkadang dapat merusak aplikasi. Matikan untuk menonaktifkan."</string>
 	<string name="drawText">"Mode agresif"</string>
 	<string name="drawText_summary_off">"Tidak secara agresif menerjemahkan teks dalam drawText. Gunakan ketika semua di atas gagal. Aktifkan untuk mengaktifkan."</string>
 	<string name="drawText_summary_on">"Secara agresif menerjemahkan teks dalam drawText-eksperimental, mungkin tidak bekerja selalu. Matikan untuk menonaktifkan."</string>

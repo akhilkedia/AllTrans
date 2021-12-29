@@ -54,6 +54,9 @@
 	<string name="webView">"Whakamāoritia Ngā Kuputuhi i roto i Ngā Whārangi Tukutuku i roto i Ngā Taupānga"</string>
 	<string name="webView_summary_off">"Ehara i te Whakamāori ana Kuputuhi i WebViews. Whakakā hei whakahohe."</string>
 	<string name="webView_summary_on">"Whakamāori ana Te Kuputuhi i roto i Tirotukutuku-Haumaru, Kāore Pea e Mahi Tonu. Whakaweto hei mono."</string>
+	<string name="notif">"Whakamōhiotanga Whakamāori"</string>
+	<string name="notif_summary_off">"Kāore i te Whakamāori Kuputuhi i Ngā Whakamōhiotanga. Whakakāngia kia whakahohe."</string>
+	<string name="notif_summary_on">"Te whakamāori Kuputuhi i roto i Ngā Whakamōhiotanga - Haumaru, I ētahi wā ka hinga ngā taupānga. Whakawetohia kia mono."</string>
 	<string name="drawText">"Aratau whakatuki"</string>
 	<string name="drawText_summary_off">"Ehara i te pūngoi whakamāori ana Kupu i drawText. Whakamahia inā hinga katoa. Whakakā hei whakahohe."</string>
 	<string name="drawText_summary_on">"Pūngoi whakamāori ana Kuputuhi i drawText-Whakamātautau, Kāore Pea e Mahi Tonu. Whakaweto hei mono."</string>

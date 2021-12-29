@@ -54,6 +54,9 @@
 	<string name="webView">"在應用內翻譯網頁中文本"</string>
 	<string name="webView_summary_off">"唔翻譯 webviews 中文本。 打開以啟用。"</string>
 	<string name="webView_summary_on">"在 webview 中翻譯文本-安全, 可能無法始終工作。 關閉以禁用。"</string>
+	<string name="notif">"翻譯通知"</string>
+	<string name="notif_summary_off">"唔翻譯通知中嘅文本。 打開以啟用。"</string>
+	<string name="notif_summary_on">"翻譯通知中嘅文本-安全，有時可能會令應用程序崩潰。 關閉以禁用。"</string>
 	<string name="drawText">"攻擊性模式"</string>
 	<string name="drawText_summary_off">"唔積極翻譯繪製文本中文本。 當上述所有方法都失敗時使用。 打開以啟用。"</string>
 	<string name="drawText_summary_on">"積極翻譯文本在繪製文本-實驗, 可能唔做嘢永遠。 關閉以禁用。"</string>

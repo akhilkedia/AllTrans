@@ -54,6 +54,9 @@
 	<string name="webView">"Tradwi teks nan paj Web anndan Apps"</string>
 	<string name="webView_summary_off">"Pa tradui teks nan WebViews. Vire sou yo ki ap pemet."</string>
 	<string name="webView_summary_on">"Tradui teks anndan WebView-SAFE, pa ka travay toujou. Femen nan enfim."</string>
+	<string name="notif">"Tradui Notifikasyon"</string>
+	<string name="notif_summary_off">"Pa traduire teks nan Notifikasyon. Vire sou yo ki ap pemet."</string>
+	<string name="notif_summary_on">"Traduire teks andedan Notifikasyon-san danje, ka pafwa aksidan apps. Femen nan enfim."</string>
 	<string name="drawText">"Agresif mode"</string>
 	<string name="drawText_summary_off">"Pa agresif tradui teks nan drawText. Sevi ak le tout pi wo a echwe. Vire sou yo ki ap pemet."</string>
 	<string name="drawText_summary_on">"Agresif tradui teks nan drawText-Eksperimantal, pa gen dwa travay toujou. Femen nan enfim."</string>

@@ -54,6 +54,9 @@
 	<string name="webView">"Liliu lea ʻi he ngaahi peesi ʻinitaneti ʻi loto he Apps"</string>
 	<string name="webView_summary_off">"ʻikai liliu e fakalea ʻi he WebViews. Fakamoʻui ke lava."</string>
 	<string name="webView_summary_on">"Liliu lea ʻi loto ʻiate WebView-ʻoku ʻikai lava ke ngaue Maʻu pe. Tamateʻi ke ke ʻa."</string>
+	<string name="notif">"Liliu ʻo e Fanongonongó"</string>
+	<string name="notif_summary_off">"ʻIkai Ko Hono Liliu ʻo e Fakamatalá ʻi he Ngaahi Fanongonongó. Fakamoʻui ke malava."</string>
+	<string name="notif_summary_on">"Ko hono liliu ʻo e fakamatala ʻi loto ʻi he fanongonongo-malu, ʻe ʻi ai e taimi ʻe niʻihi ʻe to ai e apps. Tamateʻi ke toʻo."</string>
 	<string name="drawText">"Founga heliaki"</string>
 	<string name="drawText_summary_off">"ʻikai fefeka e liliu lea ʻi he drawText. Fakaʻaongaʻi ʻa e taimi ʻoku ʻikai ke ʻi ai ha fehalaaki ai. Fakamoʻui ke lava."</string>
 	<string name="drawText_summary_on">"Tohi liliu lea ʻi he drawText-Experimental, ʻikai lava ʻo ngaue Maʻu pe. Tamateʻi ke ke ʻa."</string>

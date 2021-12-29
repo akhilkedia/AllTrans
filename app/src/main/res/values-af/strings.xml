@@ -54,6 +54,9 @@
 	<string name="webView">"Vertaal teks in webbladsye binne programme"</string>
 	<string name="webView_summary_off">"Nie teks in Webaansigte vertaal nie. Skakel aan aktiveer."</string>
 	<string name="webView_summary_on">"Vertaling van teks binne WebView-safe, kan nie altyd werk nie. Skakel af om te deaktiveer."</string>
+	<string name="notif">"Vertaal Kennisgewings"</string>
+	<string name="notif_summary_off">"Nie die vertaling van teks in kennisgewings nie. Skakel aan om te aktiveer."</string>
+	<string name="notif_summary_on">"Vertaling van teks binne kennisgewings - Veilig, kan soms programme ineenstort. Skakel af om te deaktiveer."</string>
 	<string name="drawText">"Aggressiewe modus"</string>
 	<string name="drawText_summary_off">"Nie aggressief vertaal teks in die Valteks. Gebruik wanneer al hierbo misluk. Skakel aan aktiveer."</string>
 	<string name="drawText_summary_on">"Aggressief vertaling teks in Valteks-eksperimentele, kan nie altyd werk nie. Skakel af om te deaktiveer."</string>

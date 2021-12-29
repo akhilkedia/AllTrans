@@ -54,6 +54,9 @@
 	<string name="webView">"Mandika ny Lahatsoratra ao amin&apos; ny Tranonkala ao amin&apos; ny Applications"</string>
 	<string name="webView_summary_off">"Tsy Mandika ny Lahatsoratra ao amin&apos; ny WebViews. Mitodiha any amin&apos; ny fahafahana manao izany."</string>
 	<string name="webView_summary_on">"Ny fandikana ny Lahatsoratra ao anatin&apos; ny WebView-Doza, dia Tsy Afaka Miasa Mandrakariva. Vonoy ny hanakana."</string>
+	<string name="notif">"Fandikana ireo Fampahafantarana"</string>
+	<string name="notif_summary_off">"Tsy fandikana lahatsoratra amin&apos;ny fampahafantarana. Todiho ny fahafahana."</string>
+	<string name="notif_summary_on">"Fandikana lahatsoratra ao anatin&apos;ny Fampahafantarana - Safe, Mey indraindray dia fampiharana fianjerana. Vonoy ny kilemaina."</string>
 	<string name="drawText">"Fomba masiaka"</string>
 	<string name="drawText_summary_off">"Tsy masiaka ny fandikana ny Lahatsoratra ao amin&apos; ny drawText. Ampiasao rehefa tsy misy izany. Mitodiha any amin&apos; ny fahafahana manao izany."</string>
 	<string name="drawText_summary_on">"Masiaka ny fandikana ny Lahatsoratra ao amin&apos; ny drawText-Experimental, dia Tsy Azo Atao Mandrakariva. Vonoy ny hanakana."</string>

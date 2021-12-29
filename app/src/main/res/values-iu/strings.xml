@@ -54,6 +54,9 @@
 	<string name="webView">"ᑐᑭᓕᐅᕐᓗᒋᑦ ᑎᑎᕋᖅᓯᒪᔪᑦ ᐃᑭᐊᖅᑭᕕᒃᑯᑦ ᒪᒃᐱᖅᑐᒐᐃᑦ ᐃᓗᐊᓂ Apps"</string>
 	<string name="webView_summary_off">"ᑐᑭᓕᐅᕆᓯᒪᙱᑦᑐᑦ ᑎᑎᕋᖅᓯᒪᔪᑦ ᐃᑭᐊᖅᑭᕕᒃᑯᑦ. ᐊᓯᐊᓅᕐᒥᓗᑕ."</string>
 	<string name="webView_summary_on">"ᑐᑭᓕᐅᕆᓂᖅ ᑎᑎᕋᖅᓯᒪᔪᓂᑦ ᐃᓗᐊᓂᑦ ᐃᑭᐊᖅᑭᕕᒃᑯᑦ − ᐊᑦᑕᖕᓇᙱᑦᑐᖅ, ᐊᔪᐃᓐᓇᐅᔭᕈᓐᓇᙱᓚᖅ. ᖃᒥᕐᓗᒍ ᐱᓚᒡᕕᒃ."</string>
+	<string name="notif">"ᑐᑭᓕᐅᕐᓗᒋᑦ ᖃᐅᔨᒃᑲᐃᔾᔪᑎᑦ"</string>
+	<string name="notif_summary_off">"ᑐᑭᓕᐅᖅᓯᒪᙱᑦᑐᑦ ᑎᑎᕋᖅᓯᒪᔪᑦ ᖃᐅᔨᒃᑲᐃᔾᔪᑎᓂᒃ. ᒪᑉᐱᕐᓗᒍ."</string>
+	<string name="notif_summary_on">"ᑐᑭᓕᐅᕆᓂᖅ ᑎᑎᖅᑲᓂᑦ ᐃᓗᐊᓂ ᖃᐅᔨᒃᑲᐃᔾᔪᑎᓂᑦ - ᐊᑦᑕᕐᓇᖏᑦᑐᖅ, ᐃᓛᓐᓂᒃᑯᑦ ᑲᑕᑦᓱᓂ. ᖃᒥᓪᓗᒍ ᑎᒥᒥᒍᑦ ᐊᔪᕈᑎᓕᖕᓄᑦ."</string>
 	<string name="drawText">"ᓲᖑᓴᒃᑐᖃᕐᔪᐊᖅᑐᖅ"</string>
 	<string name="drawText_summary_off">"ᑐᑭᓕᐅᕆᓪᓚᕆᙱᖦᖢᓂ ᐊᒧᔭᒃᓴᓂᑦ. ᐊᑐᕐᓗᒋᑦ ᖁᓛᓃᑦᑐᑦ ᐊᔪᓕᕌᖓᑕ. ᐊᓯᐊᓅᕐᒥᓗᑕ."</string>
 	<string name="drawText_summary_on">"ᑐᑭᓕᐅᕆᓂᖅ ᑎᑎᕋᖅᓯᒪᔪᓂᑦ ᐊᒧᔭᐅᔪᒃᓴᓄᑦ − ᐆᒃᑐᕋᕐᓂᖅ, ᐊᔪᐃᓐᓇᐅᔭᕈᓐᓇᙱᑐᐃᓐᓇᕆᐊᓕᒃ. ᖃᒥᕐᓗᒍ ᐱᓚᒡᕕᒃ."</string>

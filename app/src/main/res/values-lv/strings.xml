@@ -54,6 +54,9 @@
 	<string name="webView">"Teksta tulkošana tīmekļa lapās lietotnēs"</string>
 	<string name="webView_summary_off">"Netulkojot tekstu WebViews. Ieslēdziet, lai iespējotu."</string>
 	<string name="webView_summary_on">"Teksta tulkošana webview - droši, var nedarboties vienmēr. Izslēdziet, lai atspējotu."</string>
+	<string name="notif">"Tulkot paziņojumus"</string>
+	<string name="notif_summary_off">"Netiek tulkots teksts paziņojumos. Ieslēdziet, lai iespējotu."</string>
+	<string name="notif_summary_on">"Teksta tulkošana sadaļā Paziņojumi - droši, dažreiz var avarēt lietotnes. Izslēdziet, lai atspējotu."</string>
 	<string name="drawText">"Agresīvs režīms"</string>
 	<string name="drawText_summary_off">"Nav agresīvi tulkojot teksts izdarītTeksts. Izmantot, ja viss iepriekš neizdodas. Ieslēdziet, lai iespējotu."</string>
 	<string name="drawText_summary_on">"Agresīvi tulkojot teksts izdarītTeksts - Eksperimentāls, var nedarboties vienmēr. Izslēdziet, lai atspējotu."</string>

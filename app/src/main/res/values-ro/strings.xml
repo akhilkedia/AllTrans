@@ -54,6 +54,9 @@
 	<string name="webView">"Traducerea textului în paginile Web din aplicații"</string>
 	<string name="webView_summary_off">"Nu se traduce text în WebViews. Activați pentru activare."</string>
 	<string name="webView_summary_on">"Traducerea textului în WebView - Sigur, poate să nu funcționeze întotdeauna. Dezactivați pentru a dezactiva."</string>
+	<string name="notif">"Traduceți notificările"</string>
+	<string name="notif_summary_off">"Nu traducerea textului în notificări. Activați pentru a activa."</string>
+	<string name="notif_summary_on">"Traducerea textului în notificări - Aplicații sigure, uneori pot bloca. Dezactivați pentru a dezactiva."</string>
 	<string name="drawText">"Mod agresiv"</string>
 	<string name="drawText_summary_off">"Nu se traduce agresiv Textul în drawText. Utilizați atunci când toate de mai sus nu reușește. Activați pentru activare."</string>
 	<string name="drawText_summary_on">"Traducerea agresivă a textului în drawText - Experimental, poate să nu funcționeze întotdeauna. Dezactivați pentru a dezactiva."</string>

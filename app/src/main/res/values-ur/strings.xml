@@ -54,6 +54,9 @@
 	<string name="webView">"ایپس کے اندر ویب صفحات میں متن کا ترجمہ کریں"</string>
 	<string name="webView_summary_off">"WebViews میں متن کا ترجمہ نہیں. اہل بنانے کے لیے آن کریں ۔"</string>
 	<string name="webView_summary_on">"WebView کے اندر متن کا ترجمہ-محفوظ ہو سکتا ہے ، ہمیشہ کام نہ کرے ۔ غیر فعال کرنے کے لیے آف کریں ۔"</string>
+	<string name="notif">"نوٹیفکیشن ترجمہ کریں"</string>
+	<string name="notif_summary_off">"نوٹیفکیشن میں متن کا ترجمہ نہیں کر رہا۔ فعال کرنے کے لیے آن کریں۔"</string>
+	<string name="notif_summary_on">"نوٹیفکیشن کے اندر متن کا ترجمہ - محفوظ، مئی کبھی کبھی کریش ایپس. نااہل کرنے کے لیے بند کریں۔"</string>
 	<string name="drawText">"جارحانہ موڈ"</string>
 	<string name="drawText_summary_off">"دراوٹیاٹ میں کوئی جارحانہ متن ترجمہ نہیں ۔ جب سب سے اوپر ناکام ہوجاتا ہے تو استعمال کریں. اہل بنانے کے لیے آن کریں ۔"</string>
 	<string name="drawText_summary_on">"دراوٹیاٹ تجرباتی میں متن کا ترجمہ جارحانہ ہے ، ہمیشہ کام نہیں کر سکتا. غیر فعال کرنے کے لیے آف کریں ۔"</string>

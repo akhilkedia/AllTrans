@@ -54,6 +54,9 @@
 	<string name="webView">"Uygulamalar İçindeki Web Sayfalarında Metni Çevir"</string>
 	<string name="webView_summary_off">"Web Görünümlerinde Metni Çevirmeyin. Etkinleştirmek için açın."</string>
 	<string name="webView_summary_on">"WebView içinde Metin Çevirme - Güvenli, Her Zaman Çalışmayabilir. Devre dışı kalmak için kapatın."</string>
+	<string name="notif">"Bildirimleri Çevir"</string>
+	<string name="notif_summary_off">"Bildirimlerdeki Metni Çevirmeme. Etkinleştirmek için açın."</string>
+	<string name="notif_summary_on">"Bildirimlerin İçinde Metin Çevirme - Güvenli, Bazen uygulamaları çökertebilir. Devre dışı bırakmak için kapatın."</string>
 	<string name="drawText">"Agresif Mod"</string>
 	<string name="drawText_summary_off">"Metin&apos;i çekmecemetninde agresif bir şekilde çevirmeyin. Yukarıdakiler başarısız olduğunda kullanın. Etkinleştirmek için açın."</string>
 	<string name="drawText_summary_on">"Agresif drawText Metin çeviri - Deneysel, Her Zaman Çalışmayabilir. Devre dışı kalmak için kapatın."</string>

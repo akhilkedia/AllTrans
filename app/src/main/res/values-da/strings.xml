@@ -54,6 +54,9 @@
 	<string name="webView">"Oversætte tekst på websider i apps"</string>
 	<string name="webView_summary_off">"Der er ikke oversat tekst i WebViews. Slå til for at aktivere."</string>
 	<string name="webView_summary_on">"Oversættelse af tekst i WebView - Sikker, kan ikke arbejde altid. Sluk for at deaktivere."</string>
+	<string name="notif">"Oversæt meddelelser"</string>
+	<string name="notif_summary_off">"Oversættelse af tekst i meddelelser. Slå til for at aktivere."</string>
+	<string name="notif_summary_on">"Oversættelse af tekst i meddelelser - Sikker, kan nogle gange gå ned apps. Sluk for at deaktivere."</string>
 	<string name="drawText">"Aggressiv tilstand"</string>
 	<string name="drawText_summary_off">"Ikke aggressivt oversætte tekst i drawText. Bruges, når alt ovenfor mislykkes. Slå til for at aktivere."</string>
 	<string name="drawText_summary_on">"Aggressivt oversætte tekst i drawText - Eksperimentel, kan ikke arbejde altid. Sluk for at deaktivere."</string>

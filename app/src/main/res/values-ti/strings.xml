@@ -54,6 +54,9 @@
 	<string name="webView">"ኣብ ውሽጢ ኣፕሊኬሽን ዚርከብ ጽሑፍ ኣብ ወብ ሳይት ተርጕሞ"</string>
 	<string name="webView_summary_off">"ነቲ ጽሑፍ ኣብ ወብ ሳይት ኣይትርጕምን። ምእንቲ ኸተኽእሎ ገንጽሎ።"</string>
 	<string name="webView_summary_on">"ኣብ ውሽጢ ወብ ሳይት - ሴፍ ጽሑፍ ምትርጓም ኵሉ ሳዕ ኣይዓዪን ይኸውን ። ስንኩል ንኹን።"</string>
+	<string name="notif">"መጠንቀቕታታት ተርጕም"</string>
+	<string name="notif_summary_off">"ንጽሑፍ ኣብ ምልክታ ኣይትርጕምን ። ምእንቲ ኸተኽእሎ ገንጽሎ።"</string>
+	<string name="notif_summary_on">"ኣብ ውሽጢ ምልክታታት - Safe ሓድሓደ ግዜ ኣፕሊኬሽን ኪበላሽ ይኽእል እዩ ። ስንኩል ንኹን።"</string>
 	<string name="drawText">"ቍጡዕ ኣገባብ"</string>
 	<string name="drawText_summary_off">"ንጽሑፍ ብጽሑፍ ብሃወኽ ኣይትርጕሞምን። እዚ ዅሉ ምስ ዚፈሽል ተጠቐመሉ ። ምእንቲ ኸተኽእሎ ገንጽሎ።"</string>
 	<string name="drawText_summary_on">"ነቲ ጽሑፍ ብድራክቴክስ - ኤክስፐሪመንታል ብጽንዓት ምትርጓም ወትሩ ኣይትዕየየሉ ። ስንኩል ንኹን።"</string>

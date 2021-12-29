@@ -54,6 +54,9 @@
 	<string name="webView">"Þýða texta í vefsíðum innan apps"</string>
 	<string name="webView_summary_off">"Ekki þýða texta í WebViews. Kveikja á til að virkja."</string>
 	<string name="webView_summary_on">"Þýða texta inni WebView-Safe, má ekki virka alltaf. Slökkva á til að gera óvirkt."</string>
+	<string name="notif">"Þýða tilkynningar"</string>
+	<string name="notif_summary_off">"Texti ekki þýddur í tilkynningum. Kveikja á til að virkja."</string>
+	<string name="notif_summary_on">"Þýðing texta inni í tilkynningum - Öruggt, Getur stundum hrunið forrit. Slökktu á þér til að gera óvirkt."</string>
 	<string name="drawText">"Árásargjarn háttur"</string>
 	<string name="drawText_summary_off">"Ekki árásarlega þýða texta í drawText. Nota þegar allt ofangreint bregst. Kveikja á til að virkja."</string>
 	<string name="drawText_summary_on">"Samanlagt þýða texta í drawText-tilrauna, mega ekki virka alltaf. Slökkva á til að gera óvirkt."</string>

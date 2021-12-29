@@ -54,6 +54,9 @@
 	<string name="webView">"ترجمه متن در صفحات وب در داخل برنامه ها"</string>
 	<string name="webView_summary_off">"متن ترجمه نشده است در WebViews. فعال کردن را روشن کنید."</string>
 	<string name="webView_summary_on">"ترجمه متن در داخل WebView-امن, ممکن است همیشه کار نمی کند. غیرفعال کنید."</string>
+	<string name="notif">"ترجمه اعلان ها"</string>
+	<string name="notif_summary_off">"ترجمه ن کردن متن در اعلان ها. روشن کنید تا فعال شود."</string>
+	<string name="notif_summary_on">"ترجمه متن در داخل اعلان ها -- امن ، ممکن است گاهی اوقات برنامه های سقوط. خاموش کردن برای غیر فعال کردن."</string>
 	<string name="drawText">"حالت تهاجمی"</string>
 	<string name="drawText_summary_off">"به شدت ترجمه متن در drawText. استفاده از زمانی که همه بالا ناکام شود. فعال کردن را روشن کنید."</string>
 	<string name="drawText_summary_on">"به شدت ترجمه متن در drawText-آزمایشی ، ممکن است همیشه کار کند. غیرفعال کنید."</string>

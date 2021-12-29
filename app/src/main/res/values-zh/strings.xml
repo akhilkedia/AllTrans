@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">全部翻译</string>
+	<string name="app_name">"全部转轨"</string>
 	<string name="loading">"加载应用程序列表 - 请稍候"</string>
-	<string name="clear_cache_success">请强制关闭待翻译的应用程序！这个程序的翻译缓存将在下次启动时被清除！！</string>
-	<string name="wut_why_null">无法加载单个应用程序设置页。请尝试关闭然后重新打开应用程序。</string>
+	<string name="clear_cache_success">"请强制关闭翻译的应用程序！翻译缓存这个程序将被擦除下一次应用程序开始！！"</string>
+	<string name="wut_why_null">"无法加载&quot;每个应用首选项&quot;页。再次关闭并重新打开应用程序。"</string>
 	<string name="app_icon">"应用图标"</string>
 	<string name="example_application">"示例应用程序"</string>
 	<string name="description">"描述"</string>
@@ -12,6 +12,8 @@
 	<string name="global_settings">"全局设置"</string>
 	<string name="instructions">"指示"</string>
 	<string name="feedback_title">"您想给这个程序进行评价吗？"</string>
+	<string name="feedback_positiveButtonText">"不是现在"</string>
+	<string name="feedback_negativeButtonText">"从来 没有"</string>
 	<string name="feedback_formTitle">"提交反馈"</string>
 	<string name="feedback_formHint">"告诉我们在哪里可以改进"</string>
 	<string name="feedback_formSubmitText">"提交"</string>
@@ -21,24 +23,25 @@
 	<string name="pref_cat_advanced_settings">"高级设置"</string>
 	<string name="master_on_off">"主开/关"</string>
 	<string name="master_on_off_summary">"关闭以完全禁用此模块"</string>
-	<string name="master_on_off_summary_off">模块已关闭，不会翻译任何应用。若要使用自动翻译请打开此开关！</string>
+	<string name="master_on_off_summary_off">"模块已关闭，不会翻译任何应用。打开开始使用自动翻译！"</string>
 	<string name="master_on_off_summary_on">"模块已打开，所选应用将被翻译。关闭以完全禁用此模块。"</string>
 	<string name="translator_provider">"翻译服务提供商"</string>
 	<string name="translator_provider_summary">"选择要使用的翻译服务 - 谷歌、微软或 Yandex"</string>
 	<string name="translator_provider_google">"\nGoogle - 此翻译在初始下载约 30-60 MB 后脱机工作。翻译速度很慢，使应用程序[滞后]或[挂起]位。无需任何 API 密钥。免费。"</string>
 	<string name="translator_provider_microsoft">"\n微软 - 最佳翻译，仅适用于互联网，需要一个[免费]API密钥。获取 API 密钥的过程很复杂，请参阅说明。"</string>
 	<string name="translator_provider_yandex">"\nYandex - 需要一个 [已付] api 密钥。如果您已经有一个免费的 API 密钥，它可能工作，它可能不会。不推荐。"</string>
-	<string name="ask_download">我们需要下载翻译文件（如果之前没有下载的话），约30MB。不下载翻译将不起作用。立即下载？</string>
+	<string name="ask_download">"我们需要下载翻译文件，如果没有以前下载，约30MB。不下载翻译将不起作用。立即下载？"</string>
 	<string name="download_now">"立即下载"</string>
 	<string name="cancel">"取消"</string>
-	<string name="downloading">正在下载翻译文件，请稍候</string>
-	<string name="download_sucess">翻译文件下载成功</string>
+	<string name="downloading">"下载翻译文件。请稍候"</string>
+	<string name="download_sucess">"成功下载的翻译文件"</string>
 	<string name="download_failure">"下载翻译文件时出现一些错误"</string>
 	<string name="subKey">"微软 /Yandex 订阅密钥"</string>
 	<string name="subKey_micro">"微软订阅密钥"</string>
 	<string name="subKey_yandex">"Yandex 订阅密钥"</string>
-	<string name="subKey_summary">输入 Microsoft Azure 或 Yandex 翻译 API 的订阅密钥，以上面启用开关为准</string>
+	<string name="subKey_summary">"输入 Microsoft Azure 或 Yandex 翻译 API 的订阅密钥，以上述启用者为准"</string>
 	<string name="subKey_defaultValue">"输入您的微软或 Yandex 订阅密钥"</string>
+	<string name="transFrom">"从语言翻译"</string>
 	<string name="transFrom_summary">"应用最初使用的语言。"</string>
 	<string name="transTo">"翻译成语言"</string>
 	<string name="transTo_summary">"您希望将应用翻译成的语言。"</string>
@@ -51,7 +54,10 @@
 	<string name="webView">"在应用内翻译网页中的文本"</string>
 	<string name="webView_summary_off">"不翻译 WebViews 中的文本。打开以启用。"</string>
 	<string name="webView_summary_on">"在 WebView 中翻译文本 - 安全，可能无法始终工作。关闭以禁用。"</string>
-	<string name="drawText">激进模式</string>
+	<string name="notif">"翻译通知"</string>
+	<string name="notif_summary_off">"不翻译通知中的文本。打开以启用。"</string>
+	<string name="notif_summary_on">"翻译通知中的文本 - 安全，有时可能会使应用程序崩溃。关闭以禁用。"</string>
+	<string name="drawText">"攻击性模式"</string>
 	<string name="drawText_summary_off">"不积极翻译绘制文本中的文本。当上述所有方法都失败时使用。打开以启用。"</string>
 	<string name="drawText_summary_on">"积极翻译文本在绘制文本 - 实验，可能不工作永远。关闭以禁用。"</string>
 	<string name="caching">"使用缓存"</string>
@@ -299,7 +305,4 @@
 	<string name="Cantonese_Traditional_micro">"粤语（传统）"</string>
 	<string name="Chinese_Simplified_micro">"简体中文"</string>
 	<string name="Chinese_Traditional_micro">"繁体中文"</string>
-	<string name="feedback_positiveButtonText">现在不</string>
-	<string name="feedback_negativeButtonText">不再显示</string>
-	<string name="transFrom">源语言（从什么语言翻译）</string>
 </resources>

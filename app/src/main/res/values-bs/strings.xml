@@ -54,6 +54,9 @@
 	<string name="webView">"Prevedi tekst na web stranicama unutar aplikacija"</string>
 	<string name="webView_summary_off">"Nije prevođenje teksta u web pogledima. Uključite na omogućavanje."</string>
 	<string name="webView_summary_on">"Prevođenje teksta unutar web View-sefa, možda neće uvijek raditi. Skreni na onesposobljavanje."</string>
+	<string name="notif">"Prevedi obavijesti"</string>
+	<string name="notif_summary_off">"Not Translating Text in Notifications. Uključi da omogućiš."</string>
+	<string name="notif_summary_on">"Translating Text inside Notifications - Safe, May sometimes crash apps. Isključi da onesposobiš."</string>
 	<string name="drawText">"Agresivan način"</string>
 	<string name="drawText_summary_off">"Ne agresivno prevođenje teksta u tekstu teksta. Koristi kada sve iznad sebe propadne. Uključite na omogućavanje."</string>
 	<string name="drawText_summary_on">"Agresivno prevođenje teksta u tekstu-eksperimentalno, možda neće uvijek raditi. Skreni na onesposobljavanje."</string>

@@ -54,6 +54,9 @@
 	<string name="webView">"Aistrigh Téacs i Leathanaigh Ghréasáin taobh istigh d&apos;Fheidhmchláir"</string>
 	<string name="webView_summary_off">"Gan Téacs a Aistriú i WebViews. Cas air chun é a chumasú."</string>
 	<string name="webView_summary_on">"Téacs a aistriú taobh istigh de WebView - Sábháilte, b&apos;fhéidir nach n-oibreoidh sé i gcónaí. Múch é a dhíchumasú."</string>
+	<string name="notif">"Aistrigh Fógraí"</string>
+	<string name="notif_summary_off">"Gan Téacs a Aistriú i bhFógraí. Cas air le cumasú."</string>
+	<string name="notif_summary_on">"Téacs a Aistriú taobh istigh d&apos;Fhógraí - Sábháilte, uaireanta tuairteála aipeanna. Cas as le díchumasaiú."</string>
 	<string name="drawText">"Mód Ionsaitheach"</string>
 	<string name="drawText_summary_off">"Gan téacs a aistriú go ionsaitheach i dtarraingtText. Bain úsáid as nuair a theipeann ar fad thuas. Cas air chun é a chumasú."</string>
 	<string name="drawText_summary_on">"Téacs a aistriú go ionsaitheach i dtarraingtText - Turgnamhach, B&apos;fhéidir nach n-oibreoidh sé i gcónaí. Múch é a dhíchumasú."</string>

@@ -54,6 +54,9 @@
 	<string name="webView">"Prevajanje besedila na spletnih straneh znotraj aplikacij"</string>
 	<string name="webView_summary_off">"Ne prevajanje besedila v spletnih pogledih. Vklopite, da omogočite."</string>
 	<string name="webView_summary_on">"Prevajanje besedila znotraj WebView-Safe, maj ne opus zmeraj. Izklopi, da onemogočite."</string>
+	<string name="notif">"Prevajanje obvestil"</string>
+	<string name="notif_summary_off">"Ne prevajanje besedila v obvestilih. Vklopite, da omogočite."</string>
+	<string name="notif_summary_on">"Prevajanje besedila znotraj obvestil - Varno, lahko včasih zruši aplikacije. Izklopite, da onemogočite."</string>
 	<string name="drawText">"Agresivni način"</string>
 	<string name="drawText_summary_off">"Ne agresivno prevajanje besedilo v drawText. Uporabite, ko vse zgoraj spodleti. Vklopite, da omogočite."</string>
 	<string name="drawText_summary_on">"Agresivno prevajanje besedilo v drawText-eksperimentalni, maj ne deluje vedno. Izklopi, da onemogočite."</string>

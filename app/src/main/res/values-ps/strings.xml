@@ -54,6 +54,9 @@
 	<string name="webView">"په ایپس کې دننه د ویب پاڼې متن وژباړئ"</string>
 	<string name="webView_summary_off">"په ویب نظرونو کې متن نه ژباړی. د فعالولو لپاره چالان کړئ."</string>
 	<string name="webView_summary_on">"د ویب ویو په دننه کې د متن ژباړنه - خوندی، ممکن تل کار ونه کړی. د غیر فعالکولو لپاره بند کړئ."</string>
+	<string name="notif">"خبرتیاوې وژباړئ"</string>
+	<string name="notif_summary_off">"په خبرتیاوو کې متن نه ژباړی. د فعالولو لپاره چالان کړئ."</string>
+	<string name="notif_summary_on">"د خبرتیاوو دننه د متن ژباړنه - خوندی، می کله کله د ټکر اپلیکېشنونه. د غیر فعالکولو لپاره بند کړئ."</string>
 	<string name="drawText">"د پرهېزکارۍ حالت"</string>
 	<string name="drawText_summary_off">"په رسم متن کې په پرله پسی توګه متن نه ژباړی. کله چې پورته ټول ناکام شی نو وکاروئ. د فعالولو لپاره چالان کړئ."</string>
 	<string name="drawText_summary_on">"په پرله پسی توګه متن په رسم متن کی ژباړی - تجربی، می تل کار نه کوی. د غیر فعالکولو لپاره بند کړئ."</string>

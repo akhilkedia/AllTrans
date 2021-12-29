@@ -54,6 +54,9 @@
 	<string name="webView">"ترجمة النص في صفحات ويب داخل التطبيقات"</string>
 	<string name="webView_summary_off">"لا ترجمة النص في WebViews. تشغيل تمكين."</string>
 	<string name="webView_summary_on">"ترجمة النص داخل WebView - آمن، قد لا تعمل دائما. إيقاف تعطيل."</string>
+	<string name="notif">"ترجمة الإشعارات"</string>
+	<string name="notif_summary_off">"عدم ترجمة النص في الإعلامات. قم بتشغيل لتمكين."</string>
+	<string name="notif_summary_on">"ترجمة النص داخل الإخطارات - آمنة، قد تعطل التطبيقات في بعض الأحيان. إيقاف تشغيل لتعطيل."</string>
 	<string name="drawText">"وضع العدوانية"</string>
 	<string name="drawText_summary_off">"لا ترجمة النص بقوة في drawText. استخدم عند فشل كل ما سبق. تشغيل تمكين."</string>
 	<string name="drawText_summary_on">"ترجمة بقوة النص في drawText -- التجريبية ، قد لا تعمل دائما. إيقاف تعطيل."</string>

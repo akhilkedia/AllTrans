@@ -54,6 +54,9 @@
 	<string name="webView">"Übersetzen von Text in Webseiten in Apps"</string>
 	<string name="webView_summary_off">"Nicht übersetzen von Text in WebViews. Aktivieren Sie diese Option, um die Aktivierung zu aktivieren."</string>
 	<string name="webView_summary_on">"Übersetzen von Text in WebView - Sicher, kann nicht immer funktionieren. Deaktivieren Sie diese Option, um zu deaktivieren."</string>
+	<string name="notif">"Benachrichtigungen übersetzen"</string>
+	<string name="notif_summary_off">"Text in Benachrichtigungen wird nicht übersetzt. Schalten Sie das Gerät ein, um es zu aktivieren."</string>
+	<string name="notif_summary_on">"Übersetzen von Text in Benachrichtigungen - Sicher, kann manchmal Apps zum Absturz bringen. Zum Deaktivieren ausschalten."</string>
 	<string name="drawText">"Aggressiver Modus"</string>
 	<string name="drawText_summary_off">"Nicht aggressiv Text in drawText übersetzen. Verwenden Sie, wenn alle oben fehlschlägt. Aktivieren Sie diese Option, um die Aktivierung zu aktivieren."</string>
 	<string name="drawText_summary_on">"Aggressiv übersetzen Text in drawText - Experimental, May Not Work Always. Deaktivieren Sie diese Option, um zu deaktivieren."</string>

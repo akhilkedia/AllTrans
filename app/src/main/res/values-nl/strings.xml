@@ -54,6 +54,9 @@
 	<string name="webView">"Tekst vertalen in webpagina&apos;s in apps"</string>
 	<string name="webView_summary_off">"Tekst niet vertalen in WebViews. Inschakelen om in te schakelen."</string>
 	<string name="webView_summary_on">"Tekst vertalen in WebView - Veilig, werkt mogelijk niet altijd. Uitschakelen om uit te schakelen."</string>
+	<string name="notif">"Meldingen vertalen"</string>
+	<string name="notif_summary_off">"Tekst niet vertalen in meldingen. Schakel in om in te schakelen."</string>
+	<string name="notif_summary_on">"Tekst vertalen in meldingen - Veilig, kan apps soms crashen. Schakel uit om uit te schakelen."</string>
 	<string name="drawText">"Agressieve modus"</string>
 	<string name="drawText_summary_off">"Niet agressief vertalen Tekst in drawText. Gebruik wanneer al het bovenstaande mislukt. Inschakelen om in te schakelen."</string>
 	<string name="drawText_summary_on">"Agressief vertalen tekst in drawText - Experimenteel, kan niet altijd werken. Uitschakelen om uit te schakelen."</string>

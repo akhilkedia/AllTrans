@@ -54,6 +54,9 @@
 	<string name="webView">"Перевод текста в веб-страницы внутри приложений"</string>
 	<string name="webView_summary_off">"Не переводить текст в WebViews. Включите включить."</string>
 	<string name="webView_summary_on">"Перевод текста внутри WebView - Безопасный, может работать не всегда. Выключите, чтобы отключить."</string>
+	<string name="notif">"Перевод уведомлений"</string>
+	<string name="notif_summary_off">"Не переводить текст в уведомлениях. Включите, чтобы включить."</string>
+	<string name="notif_summary_on">"Перевод текста внутри уведомлений - Безопасно, иногда могут привести к сбою приложений. Выключите, чтобы отключить."</string>
 	<string name="drawText">"Агрессивный режим"</string>
 	<string name="drawText_summary_off">"Не агрессивно переводить текст в drawText. Используйте, когда все выше не удается. Включите включить."</string>
 	<string name="drawText_summary_on">"Агрессивное перевод текста в drawText - Экспериментальное, Может не всегда работать. Выключите, чтобы отключить."</string>

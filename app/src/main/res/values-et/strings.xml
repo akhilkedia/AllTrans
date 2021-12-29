@@ -54,6 +54,9 @@
 	<string name="webView">"Tõlgi tekst veebilehtedel sees Apps"</string>
 	<string name="webView_summary_off">"Teksti ei tõlgita webViews&apos;is. Sisselülitamiseks lülitage sisse."</string>
 	<string name="webView_summary_on">"Teksti tõlkimine WebView sees - ohutu, ei pruugi alati töötada. Väljalülitamiseks lülitage välja."</string>
+	<string name="notif">"Teatiste tõlkimine"</string>
+	<string name="notif_summary_off">"Teatistes teksti ei tõlgita. Lubamiseks lülitage sisse."</string>
+	<string name="notif_summary_on">"Teksti tõlkimine teatiste sees – turvaline, võib mõnikord rakendusi krahhida. Keelamiseks lülitage välja."</string>
 	<string name="drawText">"Agressiivne režiim"</string>
 	<string name="drawText_summary_off">"Teksti agressiivset tõlkimist drawTextis. Kasutage, kui kõik eespool ei õnnestu. Sisselülitamiseks lülitage sisse."</string>
 	<string name="drawText_summary_on">"Agressiivne teksti tõlkimine drawText - Eksperimentaalne, ei pruugi alati töötada. Väljalülitamiseks lülitage välja."</string>

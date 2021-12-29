@@ -54,6 +54,9 @@
 	<string name="webView">"Traduir text a les pàgines web dins de les aplicacions"</string>
 	<string name="webView_summary_off">"No es tradueix el text a les visualitzacions web. Activeu-la per activar-la."</string>
 	<string name="webView_summary_on">"Traduir text dins de WebView-Safe, pot no funcionar sempre. Desactiveu-la per inhabilitar-la."</string>
+	<string name="notif">"Tradueix notificacions"</string>
+	<string name="notif_summary_off">"No traduir text a les notificacions. Activa-ho per habilitar-ho."</string>
+	<string name="notif_summary_on">"Traduir text dins de notificacions: segur, de vegades pot ser que fallin les aplicacions. Desactiveu-ho per inhabilitar-lo."</string>
 	<string name="drawText">"Mode agressiu"</string>
 	<string name="drawText_summary_off">"No traduïu agressivament text en el text de la disposició. Utilitzar quan tot l&apos;anterior falla. Activeu-la per activar-la."</string>
 	<string name="drawText_summary_on">"Traduir de manera agressiva el text a drawText-experimental, pot no funcionar sempre. Desactiveu-la per inhabilitar-la."</string>

@@ -54,6 +54,9 @@
 	<string name="webView">"Превод на текст в уеб страници в приложения"</string>
 	<string name="webView_summary_off">"Не превежда текст в WebViews. Включете, за да активирате."</string>
 	<string name="webView_summary_on">"Превеждане на текст в WebView - безопасно, може да не работи винаги. Изключете, за да забраните."</string>
+	<string name="notif">"Превод на известия"</string>
+	<string name="notif_summary_off">"Не превод на текст в известия. Включете, за да разрешите."</string>
+	<string name="notif_summary_on">"Превод на текст вътре Известия - Безопасни, Май понякога се срива приложения. Изключете, за да забраните."</string>
 	<string name="drawText">"Агресивен режим"</string>
 	<string name="drawText_summary_off">"Не агресивно превеждане на текст в drawText. Използвайте, когато всичко по-горе е неуспешно. Включете, за да активирате."</string>
 	<string name="drawText_summary_on">"Агресивно превод на текст в drawText - Експериментален, може да не работи винаги. Изключете, за да забраните."</string>

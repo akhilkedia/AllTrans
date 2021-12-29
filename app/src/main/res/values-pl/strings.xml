@@ -54,6 +54,9 @@
 	<string name="webView">"Tłumaczenie tekstu na stronach sieci Web wewnątrz aplikacji"</string>
 	<string name="webView_summary_off">"Nie tłumaczenie tekstu w WebViews. Włącz, aby włączyć."</string>
 	<string name="webView_summary_on">"Tłumaczenie tekstu wewnątrz WebView - Bezpieczne, może nie działać zawsze. Wyłącz, aby wyłączyć."</string>
+	<string name="notif">"Tłumaczenie powiadomień"</string>
+	<string name="notif_summary_off">"Nie tłumaczy tekstu w powiadomieniach. Włącz, aby włączyć."</string>
+	<string name="notif_summary_on">"Tłumaczenie tekstu w powiadomieniach - Bezpieczne, może czasami powodować awarie aplikacji. Wyłącz, aby wyłączyć."</string>
 	<string name="drawText">"Tryb agresywny"</string>
 	<string name="drawText_summary_off">"Nie agresywnie tłumaczenia tekstu w drawText. Użyj, gdy wszystko powyższe nie powiedzie się. Włącz, aby włączyć."</string>
 	<string name="drawText_summary_on">"Agresywnie tłumacząc tekst w drawText - Eksperymentalny, może nie działać zawsze. Wyłącz, aby wyłączyć."</string>

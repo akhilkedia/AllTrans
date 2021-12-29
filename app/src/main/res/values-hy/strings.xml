@@ -54,6 +54,9 @@
 	<string name="webView">"Տեքստը թարգմանել հավելվածների ներսում գտնվող վեբ էջերում"</string>
 	<string name="webView_summary_off">"Տեքստը webViews-ում չթարգմանելը: Մի՛ միացր, որ հնարավորություն տա։"</string>
 	<string name="webView_summary_on">"Տեքստի թարգմանությունը webView - Ապահով, թող չաշխատի միշտ: Անջատել անջատել:"</string>
+	<string name="notif">"Թարգմանեք ծանուցումներ"</string>
+	<string name="notif_summary_off">"Ծանուցումներում տեքստ չթարգմանելը: Մի՛ միացր, որ հնարավորություն տա։"</string>
+	<string name="notif_summary_on">"Տեքստի թարգմանությունը ծանուցումների ներսում - Ապահով, May sometimes crash apps. Անջատել անջատել:"</string>
 	<string name="drawText">"Ագրեգատային ռեժիմ"</string>
 	<string name="drawText_summary_off">"Ոչ ագրեսիվորեն տեքստ թարգմանելը drawText-ում: Օգտագործիր, երբ վերեւում ամեն բան ձախողվում է ։ Մի՛ միացր, որ հնարավորություն տա։"</string>
 	<string name="drawText_summary_on">"Ագրեգատային թարգմանությամբ Տեքստը drawText - Experimental, May Not Work Always. Անջատել անջատել:"</string>

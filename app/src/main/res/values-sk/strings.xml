@@ -54,6 +54,9 @@
 	<string name="webView">"Preklad textu na webových stránkach v aplikáciách"</string>
 	<string name="webView_summary_off">"Neprekladá sa text vo webových zobrazeniach. Zapnite možnosť."</string>
 	<string name="webView_summary_on">"Preklad textu vnútri WebView - Bezpečné, nemusí fungovať vždy. Ak chcete vypnúť, vypnite ho."</string>
+	<string name="notif">"Preložiť upozornenia"</string>
+	<string name="notif_summary_off">"Nepremietne sa text v oznámeniach. Zapnite, ak chcete zapnúť."</string>
+	<string name="notif_summary_on">"Preklad textu vo vnútri oznámení - Bezpečné, niekedy môže zlyhať aplikácie. Vypnite, vypnite, aby ste ho zakázali."</string>
 	<string name="drawText">"Agresívny režim"</string>
 	<string name="drawText_summary_off">"Nie agresívne preklad textu v drawText. Použiť, keď všetky vyššie uvedené zlyhá. Zapnite možnosť."</string>
 	<string name="drawText_summary_on">"Agresívne preklad textu v drawText - Experimentálne, nemusí fungovať vždy. Ak chcete vypnúť, vypnite ho."</string>

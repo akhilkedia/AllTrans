@@ -54,6 +54,9 @@
 	<string name="webView">"Tafsiri matini katika kurasa wavuti ndani ya programu"</string>
 	<string name="webView_summary_off">"Sio kutafsiri nakala katika Webmioneko. Washa ili kuwezesha."</string>
 	<string name="webView_summary_on">"Kutafsiri matini ndani ya WebView-salama, Mei si kazi daima. Zima ili kulemaza."</string>
+	<string name="notif">"Tafsiri Arifa"</string>
+	<string name="notif_summary_off">"Kutotafsiri Matini katika Arifa. Washa ili kuwezesha."</string>
+	<string name="notif_summary_on">"Kutafsiri Matini ndani ya Arifa - Salama, Wakati mwingine programu za ajali. Zima kulemaza."</string>
 	<string name="drawText">"Hali ya fujo"</string>
 	<string name="drawText_summary_off">"Si uadui kutafsiri nakala katika drawText. Tumia wakati wote wanaposhindwa. Washa ili kuwezesha."</string>
 	<string name="drawText_summary_on">"Uadui kutafsiri nakala katika drawText-majaribio, Mei si kazi daima. Zima ili kulemaza."</string>

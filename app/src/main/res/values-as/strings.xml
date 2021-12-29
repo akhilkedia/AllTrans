@@ -34,7 +34,7 @@
 	<string name="download_now">"এতিয়া ডাউনলোড কৰক"</string>
 	<string name="cancel">"বাতিল কৰা"</string>
 	<string name="downloading">"অনুবাদ ফাইলসমূহ ডাউনলোড কৰা হৈছে। অনুগ্ৰহ কৰি ৰওক"</string>
-	<string name="download_sucess">"null"</string>
+	<string name="download_sucess">"সফলতাৰে ডাউনলোড কৰা অনুবাদ ফাইলসমূহ"</string>
 	<string name="download_failure">"অনুবাদ ফাইলসমূহ ডাউনলোড কৰাত কিছুত্ৰু"</string>
 	<string name="subKey">"মাইক্ৰছফ্ট / Yyenex সদস্যতা কী"</string>
 	<string name="subKey_micro">"মাইক্ৰছফ্ট সদস্যতা কী"</string>
@@ -54,6 +54,9 @@
 	<string name="webView">"এপ্পৰ ভিতৰত ৱেব পৃষ্ঠাত পাঠ অনুবাদ কৰক"</string>
 	<string name="webView_summary_off">"ৱেবভিউজত পাঠ অনুবাদ কৰা হোৱা নাই। সক্ষম কৰিবলৈ অন কৰক।"</string>
 	<string name="webView_summary_on">"WebViewৰ ভিতৰত পাঠ অনুবাদ কৰা - সুৰক্ষিত, সদায় কাম নকৰিব পাৰে। অসামৰ্থবান কৰিবলৈ অফ কৰক।"</string>
+	<string name="notif">"অধিসূচনাসমূহ অনুবাদ কৰক"</string>
+	<string name="notif_summary_off">"অধিসূচনাসমূহত পাঠ অনুবাদ কৰা নাই। সক্ষম কৰিবলৈ অন কৰক।"</string>
+	<string name="notif_summary_on">"অধিসূচনাৰ ভিতৰত পাঠ অনুবাদ কৰা - সুৰক্ষিত, কেতিয়াবা ক্ৰেছ এপ্পসমূহ ক্ৰেছ কৰিব পাৰে। অক্ষম কৰিবলৈ অফ কৰক।"</string>
 	<string name="drawText">"আক্ৰমণাত্মক মোড"</string>
 	<string name="drawText_summary_off">"ড্ৰটেক্সটত আগ্ৰাসীভাৱে পাঠ অনুবাদ কৰা নহয়। ওপৰৰ সকলো বোৰ বিফল হ&apos;লে ব্যৱহাৰ কৰক। সক্ষম কৰিবলৈ অন কৰক।"</string>
 	<string name="drawText_summary_on">"ড্ৰটেক্সটত আগ্ৰাসীভাৱে পাঠ অনুবাদ কৰা - পৰীক্ষামূলক, সদায় কাম নকৰিব পাৰে। অসামৰ্থবান কৰিবলৈ অফ কৰক।"</string>

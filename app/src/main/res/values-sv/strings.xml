@@ -54,6 +54,9 @@
 	<string name="webView">"Översätt text på webbsidor i appar"</string>
 	<string name="webView_summary_off">"Inte översätta text i WebViews. Aktivera för att aktivera."</string>
 	<string name="webView_summary_on">"Översätta text inuti WebView - Säker, kanske inte fungerar alltid. Stäng av för att inaktivera."</string>
+	<string name="notif">"Översätt meddelanden"</string>
+	<string name="notif_summary_off">"Inte översätta text i meddelanden. Aktivera för att aktivera."</string>
+	<string name="notif_summary_on">"Översätta text i aviseringar – Säkra, kan ibland krascha appar. Inaktivera för att inaktivera."</string>
 	<string name="drawText">"Aggressivt läge"</string>
 	<string name="drawText_summary_off">"Inte aggressivt översätta text i drawText. Använd när alla ovanstående misslyckas. Aktivera för att aktivera."</string>
 	<string name="drawText_summary_on">"Aggressivt översätta text i drawText - Experimentell, kanske inte fungerar alltid. Stäng av för att inaktivera."</string>

@@ -54,6 +54,9 @@
 	<string name="webView">"Бағдарламалар ішіндегі веб-беттердегі мәтінді аудару"</string>
 	<string name="webView_summary_off">"ВебViews- дағы мәтінді аудармау. Қосу үшін қосыңыз."</string>
 	<string name="webView_summary_on">"WebView ішіндегі мәтінді аудару - Қауіпсіз, әрқашан жұмыс істемеуі мүмкін. Өшіру үшін өшірілді."</string>
+	<string name="notif">"Хабарландыруларды аудару"</string>
+	<string name="notif_summary_off">"Хабарландырулардағы мәтінді аудармау. Қосу үшін қосыңыз."</string>
+	<string name="notif_summary_on">"Хабарландырулар ішіндегі мәтінді аудару - Қауіпсіз, мамыр кейде бағдарламалар жаңылысы. Өшіру үшін өшіру."</string>
 	<string name="drawText">"Агрессивті режім"</string>
 	<string name="drawText_summary_off">"Сурет салу мәтініндегі мәтінді агрессивті аударылмайды. Жоғарыдағы барлық істен шыққан кезде пайдаланыңыз. Қосу үшін қосыңыз."</string>
 	<string name="drawText_summary_on">"Мәтінді drawText - Эксперименттік, әрқашан жұмыс істемеуі мүмкін. Өшіру үшін өшірілді."</string>

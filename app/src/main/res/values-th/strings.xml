@@ -54,6 +54,9 @@
 	<string name="webView">"แปลข้อความในเว็บเพจภายในแอป"</string>
 	<string name="webView_summary_off">"ไม่แปลข้อความใน WebViews เปิดเพื่อเปิดใช้งาน"</string>
 	<string name="webView_summary_on">"การแปลข้อความภายใน WebView - ปลอดภัย, อาจไม่ทํางานเสมอ. ปิดเพื่อปิดใช้งาน"</string>
+	<string name="notif">"แปลการแจ้งเตือน"</string>
+	<string name="notif_summary_off">"ไม่ได้แปลข้อความในการแจ้งเตือน เปิดเพื่อเปิดใช้งาน"</string>
+	<string name="notif_summary_on">"การแปลข้อความภายในการแจ้งเตือน - ปลอดภัยบางครั้งอาจทําให้แอปล่ม ปิดเพื่อปิดใช้งาน"</string>
 	<string name="drawText">"โหมดก้าวร้าว"</string>
 	<string name="drawText_summary_off">"ไม่แปลข้อความใน drawText ใช้เมื่อทั้งหมดข้างต้นล้มเหลว เปิดเพื่อเปิดใช้งาน"</string>
 	<string name="drawText_summary_on">"แปลข้อความใน drawText - ทดลอง, อาจไม่ทํางานเสมอ. ปิดเพื่อปิดใช้งาน"</string>

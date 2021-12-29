@@ -54,6 +54,9 @@
 	<string name="webView">"Tekstin kääntäminen web-sivuilla sovellusten sisällä"</string>
 	<string name="webView_summary_off">"Ei käännetä tekstiä WebViews.Not Translating Text in WebViews. Ota käyttöön ota käyttöön."</string>
 	<string name="webView_summary_on">"Tekstin kääntäminen WebView-näkymän sisällä - Turvallinen, ei välttämättä toimi aina. Poista käytöstä poista käytöstä."</string>
+	<string name="notif">"Ilmoitusten kääntäminen"</string>
+	<string name="notif_summary_off">"Ei käännetä tekstiä ilmoituksissa. Ota käyttöön."</string>
+	<string name="notif_summary_on">"Tekstin kääntäminen ilmoitusten sisällä - Turvallinen, voi joskus kaatua sovelluksia. Poista käytöstä poistamalla käytöstä."</string>
 	<string name="drawText">"Aggressiivinen tila"</string>
 	<string name="drawText_summary_off">"Ei aggressiivisesti kääntää tekstiä drawText. Käytä, kun kaikki edellä epäonnistuu. Ota käyttöön ota käyttöön."</string>
 	<string name="drawText_summary_on">"Aggressiivisesti kääntää tekstin drawText - Kokeellinen, ei välttämättä toimi aina. Poista käytöstä poista käytöstä."</string>

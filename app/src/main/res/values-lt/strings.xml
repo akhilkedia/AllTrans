@@ -54,6 +54,9 @@
 	<string name="webView">"Teksto vertimas į tinklalapius programose"</string>
 	<string name="webView_summary_off">"Neversti teksto žiniatinklio rodiniuose. Įjunkite, kad įjungtumėte."</string>
 	<string name="webView_summary_on">"Teksto vertimas &quot;WebView&quot; viduje - saugus, gali neveikti visada. Išjunkite, kad išjungtumėte."</string>
+	<string name="notif">"Versti pranešimus"</string>
+	<string name="notif_summary_off">"Teksto neverčia pranešimais. Įjunkite, kad įjungtumėte."</string>
+	<string name="notif_summary_on">"Teksto vertimas pranešimų viduje - saugus, kartais gali sugadinti programas. Išjunkite, kad išjungtumėte."</string>
 	<string name="drawText">"Agresyvusis režimas"</string>
 	<string name="drawText_summary_off">"Ne agresyviai verčia tekstą drawText. Naudokite, kai visi aukščiau nepavyksta. Įjunkite, kad įjungtumėte."</string>
 	<string name="drawText_summary_on">"Agresyviai verčiant tekstą drawText - eksperimentinis, gali neveikti visada. Išjunkite, kad išjungtumėte."</string>

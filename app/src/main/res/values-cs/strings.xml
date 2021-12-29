@@ -54,6 +54,9 @@
 	<string name="webView">"Překlad textu na webových stránkách v aplikacích"</string>
 	<string name="webView_summary_off">"Nepřekládáme text ve webových zobrazeních. Zapnutím povolíte."</string>
 	<string name="webView_summary_on">"Překlad textu uvnitř WebView - Bezpečné, nemusí fungovat vždy. Vypnutím zakážete."</string>
+	<string name="notif">"Překlad oznámení"</string>
+	<string name="notif_summary_off">"Nepřekládání textu v oznámeních. Zapněte povolit."</string>
+	<string name="notif_summary_on">"Překlad textu uvnitř oznámení - Bezpečné, může někdy selhat aplikace. Vypněte, chcete-li zakázat."</string>
 	<string name="drawText">"Agresivní režim"</string>
 	<string name="drawText_summary_off">"Není agresivně překládat text v drawText. Použijte, když všechny výše uvedené selže. Zapnutím povolíte."</string>
 	<string name="drawText_summary_on">"Agresivně překládání textu v kreslicí text - experimentální, nemusí fungovat vždy. Vypnutím zakážete."</string>

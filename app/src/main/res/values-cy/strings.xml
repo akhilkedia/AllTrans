@@ -54,6 +54,9 @@
 	<string name="webView">"Cyfieithu testun mewn tudalennau gwe y tu mewn i apps"</string>
 	<string name="webView_summary_off">"Ddim yn cyfieithu testun yn WebViews. Troi ymlaen i alluogi."</string>
 	<string name="webView_summary_on">"Efallai na fydd cyfieithu testun y tu mewn i WebView-Safe yn gweithio bob amser. Diffoddwch nhw i analluogi."</string>
+	<string name="notif">"Trosi Hysbysiadau"</string>
+	<string name="notif_summary_off">"Peidio â Chyfieithu Testun mewn Hysbysiadau. Trowch ymlaen i alluogi."</string>
+	<string name="notif_summary_on">"Cyfieithu Testun y tu mewn i Hysbysiadau - Diogel, Gall weithiau chwalu apiau. Diffoddwch i analluogi."</string>
 	<string name="drawText">"Modd ymosodol"</string>
 	<string name="drawText_summary_off">"Ddim yn ymosodol yn cyfieithu testun mewn testun tynnu. Defnyddio pan fydd yr holl uchod yn methu. Troi ymlaen i alluogi."</string>
 	<string name="drawText_summary_on">"Efallai na fydd testun sy&apos;n cyfieithu&apos;n ymosodol ar ffurf testun-arbrofol, yn gweithio bob amser. Diffoddwch nhw i analluogi."</string>

@@ -54,6 +54,9 @@
 	<string name="webView">"وەرگێڕانی دەق لە لاپەڕەکانی وێب لەناو کاربەرنامەکان"</string>
 	<string name="webView_summary_off">"وەرگێڕانی دەق لە WebViews. هەڵکردن بۆ چالاککردن."</string>
 	<string name="webView_summary_on">"وەرگێڕانی دەق لەناو WebView - Safe، لەوانەیە هەمیشە کار بکات. کوژاندنەوە بۆ لەکارخستنی."</string>
+	<string name="notif">"وەرگێڕانی ئاگانامەکان"</string>
+	<string name="notif_summary_off">"وەرگێڕانی دەق لە ئاگانامەکاندا. هەڵکردن بۆ چالاککردن."</string>
+	<string name="notif_summary_on">"وەرگێڕانی دەق لەناو ئاگانامەکان - سەلامەت، لەوانەیە هەندێک جار کاربەرنامەکانی تێکشکان. کوژاندنەوە بۆ ناچالاک کردن."</string>
 	<string name="drawText">"دۆخی شەڕانگێز"</string>
 	<string name="drawText_summary_off">"وەرگێڕانی دەق بە شێوەێکی توندوتیژ لە drawText. کاتێک هەموو سەرنەکەوتن بەکاربهێنە. هەڵکردن بۆ چالاککردن."</string>
 	<string name="drawText_summary_on">"وەرگێڕانی دەق بە شێوەێکی شەڕانگێزانە لە drawText - ئەزموونی, لەوانەیە کار ناکات هەمیشە. کوژاندنەوە بۆ لەکارخستنی."</string>

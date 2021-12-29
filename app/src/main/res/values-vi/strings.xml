@@ -54,6 +54,9 @@
 	<string name="webView">"Dịch văn bản trong các trang web bên trong ứng dụng"</string>
 	<string name="webView_summary_off">"Không dịch văn bản trong WebViews. Bật để bật."</string>
 	<string name="webView_summary_on">"Dịch văn bản bên trong WebView-an toàn, có thể không làm việc luôn. Tắt để tắt."</string>
+	<string name="notif">"Dịch Thông báo"</string>
+	<string name="notif_summary_off">"Không dịch văn bản trong Thông báo. Bật để bật."</string>
+	<string name="notif_summary_on">"Dịch Văn bản bên trong Thông báo - An toàn, đôi khi có thể gặp sự cố ứng dụng. Tắt để vô hiệu hóa."</string>
 	<string name="drawText">"Chế độ hung hăng"</string>
 	<string name="drawText_summary_off">"Không tích cực dịch văn bản trong drawText. Sử dụng khi tất cả ở trên không thành công. Bật để bật."</string>
 	<string name="drawText_summary_on">"Tích cực dịch văn bản trong drawText-thử nghiệm, có thể không làm việc luôn. Tắt để tắt."</string>

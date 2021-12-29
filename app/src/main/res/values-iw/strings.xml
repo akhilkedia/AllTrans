@@ -54,6 +54,9 @@
 	<string name="webView">"תרגום טקסט בדפי אינטרנט בתוך אפליקציות"</string>
 	<string name="webView_summary_off">"לא לתרגם טקסט ב-WebViews. הפעל כדי להפוך לזמין."</string>
 	<string name="webView_summary_on">"תרגום טקסט בתוך תצוגת אינטרנט-בטוח, אולי לא יעבוד תמיד. בטל כדי להפוך ללא זמין."</string>
+	<string name="notif">"תרגם הודעות"</string>
+	<string name="notif_summary_off">"לא תרגום טקסט בהודעות. הפעל כדי להפוך לזמין."</string>
+	<string name="notif_summary_on">"תרגום טקסט בתוך התראות - בטוח, עלול לפעמים לקרוס אפליקציות. כבה כדי להפוך ללא זמין."</string>
 	<string name="drawText">"מצב אגרסיבי"</string>
 	<string name="drawText_summary_off">"לא באגרסיביות לתרגם טקסט לצייר. השתמש כאשר כל האמור לעיל נכשל. הפעל כדי להפוך לזמין."</string>
 	<string name="drawText_summary_on">"תרגום באגרסיביות טקסט שרוך טקסט-ניסיוני, לא יעבוד תמיד. בטל כדי להפוך ללא זמין."</string>

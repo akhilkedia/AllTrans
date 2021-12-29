@@ -54,6 +54,9 @@
 	<string name="webView">"Përktheu Tekstin në Faqet e Internetit brenda Apps"</string>
 	<string name="webView_summary_off">"Jo përkthimi i tekstit në WebViews. Ndize për të bërë të mundur."</string>
 	<string name="webView_summary_on">"Përkthimi i tekstit brenda WebView - Safe, May Not Work Always. Fiku për të çaktivizuar."</string>
+	<string name="notif">"Përkthe njoftimet"</string>
+	<string name="notif_summary_off">"Nuk përkthen tekst në njoftime. Ndize për të aktivizuar."</string>
+	<string name="notif_summary_on">"Përkthimi i Tekstit brenda Notifications - Safe, May ndonjëherë crash apps. Fiku për të çaktivizuar."</string>
 	<string name="drawText">"Mënyra agresive"</string>
 	<string name="drawText_summary_off">"Nuk e përkthe në mënyrë agresive Tekstin në drawText. Përdore kur gjithçka më sipër dështon. Ndize për të bërë të mundur."</string>
 	<string name="drawText_summary_on">"Përkthimi agresiv i tekstit në drawText - Experimental, May Not Work Always. Fiku për të çaktivizuar."</string>

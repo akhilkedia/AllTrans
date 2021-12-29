@@ -54,6 +54,9 @@
 	<string name="webView">"Oversett tekst på websider i apper"</string>
 	<string name="webView_summary_off">"Ikke oversette tekst i WebViews. Slå på for å aktivere."</string>
 	<string name="webView_summary_on">"Oversette tekst i WebView - Trygt, kan ikke fungere alltid. Slå av for å deaktivere."</string>
+	<string name="notif">"Oversett varsler"</string>
+	<string name="notif_summary_off">"Ikke oversette tekst i varslinger. Slå på for å aktivere."</string>
+	<string name="notif_summary_on">"Oversette tekst inne i varsler - Trygt, kan noen ganger krasje apper. Slå av for å deaktivere."</string>
 	<string name="drawText">"Aggressiv modus"</string>
 	<string name="drawText_summary_off">"Ikke aggressivt oversette tekst i drawText. Brukes når alt ovenfor mislykkes. Slå på for å aktivere."</string>
 	<string name="drawText_summary_on">"Aggressivt oversette tekst i drawText - Eksperimentell, kan ikke fungere alltid. Slå av for å deaktivere."</string>

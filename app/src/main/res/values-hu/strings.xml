@@ -54,6 +54,9 @@
 	<string name="webView">"Szöveg fordítása weblapokon alkalmazásokban"</string>
 	<string name="webView_summary_off">"Nem fordítja le a szöveget a WebNézetek ben. Kapcsolja be az engedélyezéshez."</string>
 	<string name="webView_summary_on">"Szöveg fordítása a WebView nézeten belül - Biztonságos, lehet, hogy nem működik mindig. Kapcsolja ki a letiltáshoz."</string>
+	<string name="notif">"Értesítések fordítása"</string>
+	<string name="notif_summary_off">"Nem fordítja le a szöveget az értesítésekben. Kapcsolja be az engedélyezést."</string>
+	<string name="notif_summary_on">"Szöveg fordítása az értesítéseken belül - Biztonságos, néha összeomlik az alkalmazások. Kapcsolja ki a letiltáshoz."</string>
 	<string name="drawText">"Agresszív mód"</string>
 	<string name="drawText_summary_off">"Nem agresszíven fordítás szöveg drawText. Akkor használja, ha a fenti sikertelen. Kapcsolja be az engedélyezéshez."</string>
 	<string name="drawText_summary_on">"A szöveg agresszív fordítása a drawText - Experimental, May Not Work Always (Szöveg rajzolása közbenszöveg – Kísérleti, lehet, hogy nem működik). Kapcsolja ki a letiltáshoz."</string>

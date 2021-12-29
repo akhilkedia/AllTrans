@@ -54,6 +54,9 @@
 	<string name="webView">"Ittraduċi t-Test fil-Paġni tal-Web ġewwa l-Applikazzjonijiet"</string>
 	<string name="webView_summary_off">"Mhux Qed Jittraduċi t-Test fil-WebViews. Ixgħel biex tattiva."</string>
 	<string name="webView_summary_on">"It-Traduzzjoni tat-Test ġewwa WebView - Bla periklu, ma tistax taħdem dejjem. Itfi biex tiddiżattiva."</string>
+	<string name="notif">"Ittraduċi n-Notifiki"</string>
+	<string name="notif_summary_off">"Ma Jittraduċix It-Test fin-Notifiki. Ixgħel biex tattiva."</string>
+	<string name="notif_summary_on">"Traduzzjoni tat-Test ġewwa Notifiki - Sikur, Jista &apos;xi kultant jikkraxxja applikazzjonijiet. Itfi biex tiddiżattiva."</string>
 	<string name="drawText">"Modalità Aggressiva"</string>
 	<string name="drawText_summary_off">"Mhux tradott aggressivament Test fil-drawText. Uża meta dan kollu ta&apos; hawn fuq ma jirnexxix. Ixgħel biex tattiva."</string>
 	<string name="drawText_summary_on">"Test transduttiv b&apos;mod aggressiv fil-pinġi - Sperimentali, Ma Jistax Jaħdem Dejjem. Itfi biex tiddiżattiva."</string>

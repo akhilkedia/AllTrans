@@ -54,6 +54,9 @@
 	<string name="webView">"በመተግበሪያዎች ውስጥ በዌብ ገጾች ውስጥ ጽሑፍ ይተረጉሙ"</string>
 	<string name="webView_summary_off">"በ WebViews ውስጥ ጽሑፍ መተርጎም አይደለም. ለማስቻል ጥረት ማድረግ።"</string>
 	<string name="webView_summary_on">"በ WebView ውስጥ ጽሑፍ መተርጎም - ደህንነቱ የተጠበቀ, ሁልጊዜ አይሰራም ይሆናል. ወደ ኋላ ዞር በሉ።"</string>
+	<string name="notif">"ማሳወቂያዎችን ተርጉሙ"</string>
+	<string name="notif_summary_off">"ጽሑፎችን በማስታወቂያዎች ላይ አተረጓጎም። ለማስቻል ጥረት ማድረግ።"</string>
+	<string name="notif_summary_on">"Translating Text ውስጠ -Safe, አንዳንድ ጊዜ የውድቀት መተግበሪያዎች. ወደ ኋላ ዞር በሉ።"</string>
 	<string name="drawText">"የጠበኝነት ዘዴ"</string>
 	<string name="drawText_summary_off">"ጽሑፉን በስዕል ቴክስት አጥብቆ መተርጎም አይደለም። ከላይ የተጠቀሱት ሁሉ ሳይሳኩ ሲቀሩ ተጠቀሙበት ። ለማስቻል ጥረት ማድረግ።"</string>
 	<string name="drawText_summary_on">"በአጥብቆ መተርጎም Text in drawText - Experimental, ሁልጊዜ አይሰራም. ወደ ኋላ ዞር በሉ።"</string>

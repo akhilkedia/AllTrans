@@ -54,6 +54,9 @@
 	<string name="webView">"アプリ内の Web ページ内のテキストを翻訳する"</string>
 	<string name="webView_summary_off">"Web ビューでテキストを翻訳しない。有効にする。"</string>
 	<string name="webView_summary_on">"WebView内のテキストを翻訳する - 安全、常に動作しない可能性があります。無効にする場合はオフにします。"</string>
+	<string name="notif">"通知の翻訳"</string>
+	<string name="notif_summary_off">"通知内のテキストを翻訳しない。有効にする。"</string>
+	<string name="notif_summary_on">"通知内のテキストを翻訳する - 安全、時々アプリをクラッシュする可能性があります。無効にする場合はオフにします。"</string>
 	<string name="drawText">"アグレッシブモード"</string>
 	<string name="drawText_summary_off">"drawText でテキストを積極的に翻訳しません。上記のすべてが失敗した場合に使用します。有効にする。"</string>
 	<string name="drawText_summary_on">"drawTextで積極的にテキストを翻訳する - 実験的な、常に動作しない可能性があります。無効にする場合はオフにします。"</string>

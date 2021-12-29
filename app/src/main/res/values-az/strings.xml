@@ -54,6 +54,9 @@
 	<string name="webView">"Web Səhifələrdə Mətni Proqramlar daxilində tərcümə et"</string>
 	<string name="webView_summary_off">"WebViews-də mətni tərcümə etmək olmaz. Fəal olmaq üçün fəallaşdır."</string>
 	<string name="webView_summary_on">"WebView daxilində Mətn Tərcümə - Təhlükəsiz, May İş Həmişə Deyil. Söndürmək üçün söndürün."</string>
+	<string name="notif">"Bildirişləri tərcümə et"</string>
+	<string name="notif_summary_off">"Bildirişlərdəki Mətni Tərcümə Etmək Olmur. Fəal olmaq üçün fəallaşdır."</string>
+	<string name="notif_summary_on">"Bildirişlər daxilində Mətn Tərcümə - Təhlükəsiz, May bəzən crash apps. Söndürmək üçün söndürün."</string>
 	<string name="drawText">"Agressiv Rejim"</string>
 	<string name="drawText_summary_off">"Text in drawText-də aqressiv tərcümə etmək olmaz. Yuxarıdakıların hamısı uğursuz olduqda istifadə edin. Fəal olmaq üçün fəallaşdır."</string>
 	<string name="drawText_summary_on">"DrawText -də Mətni aqressiv tərcümə etmək - Eksperimental, May İş Hər Zaman Yoxdur. Söndürmək üçün söndürün."</string>

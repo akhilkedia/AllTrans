@@ -54,6 +54,9 @@
 	<string name="webView">"Itukutuku ni vakavakadewa ena tabana ni mataveilawa ena loma ni apps"</string>
 	<string name="webView_summary_off">"Sega na itukutuku ni vakavakadewa mai WebViews. Goleva na kena rawati."</string>
 	<string name="webView_summary_on">"Lavetaki ni itukutuku ena loma ni WebView-maroroi, ena sega ni rawa ni cakacaka tikoga. Gole yani ki na disable."</string>
+	<string name="notif">"Vakadewataki ni Notisi"</string>
+	<string name="notif_summary_off">"Sega ni Vakadewataki na iTukutuku ena Notisi. Tabaka mo bula tiko."</string>
+	<string name="notif_summary_on">"Vakadewataki ni iTukutuku e loma ni Notisi - Taqomaki, Me so na gauna e dau voca na apps. Bokoca me bokoci laivi."</string>
 	<string name="drawText">"Yalokaukauwa kena ivakarau"</string>
 	<string name="drawText_summary_off">"Sega ni aggressively na itukutuku ni vakavakadewa mai drawText. Vakayagataka ni sega ni sega taucoko. Goleva na kena rawati."</string>
 	<string name="drawText_summary_on">"Aggressively itukutuku ena drawText-laboratori, me kakua ni dau cakacaka tikoga. Gole yani ki na disable."</string>

@@ -54,6 +54,9 @@
 	<string name="webView">"Isalin ang teksto sa mga pahina ng web sa loob ng mga app"</string>
 	<string name="webView_summary_off">"Hindi isalin ang teksto sa Webview. Turn sa paganahin."</string>
 	<string name="webView_summary_on">"Isinasalin ang teksto sa loob ng WebView-ligtas, hindi maaaring magtrabaho palagi. Magpatay ng hindi paganahin."</string>
+	<string name="notif">"Isalin ang mga Notification"</string>
+	<string name="notif_summary_off">"Hindi Pagsasalin ng Teksto sa mga Notification. Magbukas para paganahin ito."</string>
+	<string name="notif_summary_on">"Pagsasalin text inside Notifications - Ligtas, Mayo minsan crash apps. Magpatay para huwag paganahin."</string>
 	<string name="drawText">"Agresibo mode"</string>
 	<string name="drawText_summary_off">"Hindi agresibo ang Pagsasalin ng teksto sa drawText. Gamitin kapag bigo ang lahat. Turn sa paganahin."</string>
 	<string name="drawText_summary_on">"Agresibo pagsasalin ng teksto sa drawText-pang-eksperimento, maaaring hindi gumana palagi. Magpatay ng hindi paganahin."</string>
