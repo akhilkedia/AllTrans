@@ -72,7 +72,7 @@ A video (in English) showing how to use AllTrans by Gadget Hacks on Youtube [htt
 
 1. This application requires android version 4.1 or later. You probably already have it. (Android JellyBean or later - so far JellyBean, Kitkat, Lollipop, MarshMallow, Nougat, Oreo, Pie and Q.).
 1. Make sure you have [Xposed Framework](https://forum.xda-developers.com/showthread.php?t=3034811) installed and running.
-   - If there is not an official version of Xposed for your Android, [EdXposed](https://forum.xda-developers.com/xposed/development/official-edxposed-successor-xposed-t4070199) is recommended.
+   - [LSPosed](https://github.com/LSPosed/LSPosed) and [EdXposed](https://forum.xda-developers.com/xposed/development/official-edxposed-successor-xposed-t4070199) are recommended.
    - **If you do not have an unlocked bootloader or Magisk, AllTrans is now fully compatible with [VirtualXposed](https://virtualxposed.com/) and [Taichi](https://github.com/taichi-framework/TaiChi/releases), so AllTrans can now be used on all devices!!! No need of unlocked bootloader, no need of Magisk, etc.!**
 1. Install the latest version of AllTrans from [Google Play Store](https://play.google.com/store/apps/details?id=akhil.alltrans). You can alternatively download the apk from [Xposed Module Repository](http://repo.xposed.info/module/akhil.alltrans)
 1. Reboot your phone.
@@ -109,6 +109,8 @@ If you don't already have an Azure account, sign up for a [Microsoft Azure accou
    1. Select the "+ Create a resource" option.
    1. In the search box saying "Search the Marketplace" type "translator" on the left, and select "Translator" from the search results.
    1. Click the blue "Create" button.
+   1. Under the "Resource group" field, click "Create new", then type in any name, it does not matter.
+   1. **In the "Resource group region" field, select any region, it does not matter**
    1. In the "Resource group" field, type in any name, it does not matter.
    1. **In the "Region" Section, select "Global"**
    1. Type in any name in "Name" field, type in any name, it does not matter.
