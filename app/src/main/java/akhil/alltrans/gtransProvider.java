@@ -28,7 +28,6 @@ import android.util.Log;
 
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.Tasks;
-import com.google.mlkit.nl.translate.TranslateLanguage;
 import com.google.mlkit.nl.translate.Translation;
 import com.google.mlkit.nl.translate.Translator;
 import com.google.mlkit.nl.translate.TranslatorOptions;
@@ -46,7 +45,7 @@ public class gtransProvider extends ContentProvider {
     @Override
     public boolean onCreate() {
         utils.debugLog("Creating new Content Provider for gTrans!!");
-        translatorClients = Collections.synchronizedMap(new HashMap<String, Translator> ());
+        translatorClients = Collections.synchronizedMap(new HashMap<>());
         return true;
     }
 

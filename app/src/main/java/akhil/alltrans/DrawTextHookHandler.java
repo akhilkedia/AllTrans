@@ -23,9 +23,9 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.text.MeasuredText;
+import android.os.Build;
 import android.text.AlteredCharSequence;
 import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
 import android.text.SpannedString;
 import android.util.Log;
 
@@ -98,8 +98,10 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
                 myArgs[0] = new StringBuffer(translatedString);
             } else if (myArgs[0].getClass().equals(StringBuilder.class)) {
                 myArgs[0] = new StringBuilder(translatedString);
-            } else if (myArgs[0].getClass().equals(MeasuredText.class)) {
-                myArgs[0] = new MeasuredText.Builder(translatedString.toString().toCharArray()).build();
+            } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                if (myArgs[0].getClass().equals(MeasuredText.class)) {
+                    myArgs[0] = new MeasuredText.Builder(translatedString.toString().toCharArray()).build();
+                }
             } else {
                 myArgs[0] = translatedString;
             }
@@ -131,9 +133,9 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
                 StringWriter sw = new StringWriter();
                 e.printStackTrace(new PrintWriter(sw));
                 utils.debugLog("Got error in invoking method as : " + sw);
-                String classTypes = "";
-                for (int i = 0; i < myArgs.length; i++) {
-                    classTypes = classTypes + "Class:" + myArgs[i].getClass().getCanonicalName() + "Value:" + myArgs[i];
+                StringBuilder classTypes = new StringBuilder();
+                for (Object myArg : myArgs) {
+                    classTypes.append("Class:").append(myArg.getClass().getCanonicalName()).append("Value:").append(myArg);
                 }
                 utils.debugLog("Params for above error are - " + classTypes);
             }
@@ -157,7 +159,7 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
                 callOriginalMethod(null, methodHookParam);
                 return null;
             }
-            String stringArgs = "";
+            String stringArgs;
             if (methodHookParam.args[0].getClass() == char[].class) {
                 stringArgs = new String((char[]) methodHookParam.args[0]);
             } else {

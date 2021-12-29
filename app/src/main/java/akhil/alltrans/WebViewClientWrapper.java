@@ -35,6 +35,8 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import androidx.annotation.NonNull;
+
 
 public class WebViewClientWrapper extends WebViewClient {
     private final WebViewClient oriClient;
@@ -58,11 +60,13 @@ public class WebViewClientWrapper extends WebViewClient {
         return oriClient.equals(obj);
     }
 
+    @NonNull
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return new WebViewClientWrapper(oriClient);
     }
 
+    @NonNull
     @Override
     public String toString() {
         //noinspection ResultOfMethodCallIgnored

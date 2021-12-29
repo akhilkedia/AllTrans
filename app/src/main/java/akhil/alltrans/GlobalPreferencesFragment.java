@@ -30,10 +30,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.mlkit.common.model.DownloadConditions;
-import com.google.mlkit.common.model.RemoteModelManager;
 import com.google.mlkit.nl.translate.TranslateLanguage;
-import com.google.mlkit.nl.translate.TranslateRemoteModel;
 import com.google.mlkit.nl.translate.Translation;
 import com.google.mlkit.nl.translate.Translator;
 import com.google.mlkit.nl.translate.TranslatorOptions;
@@ -50,7 +47,6 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
-import androidx.preference.SwitchPreference;
 
 
 public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
@@ -123,7 +119,7 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
     }
 
     private void sortListPreferenceByEntries(String preferenceKey) {
-        ListPreference preference = (ListPreference) findPreference(preferenceKey);
+        ListPreference preference = findPreference(preferenceKey);
         assert preference != null;
         Iterator<CharSequence> labels = Arrays.asList(preference.getEntries()).iterator();
         Iterator<CharSequence> keys = Arrays.asList(preference.getEntryValues()).iterator();
@@ -157,8 +153,8 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
             return;
         }
         utils.debugLog("Downloading Translation model for Language " + translateLanguageSelected + " isFromLanguage " + isFromLanguage);
-        String sourceLanguage = "";
-        String targetLanguage = "";
+        String sourceLanguage;
+        String targetLanguage;
         if (isFromLanguage) {
             sourceLanguage = translateLanguageSelected;
             targetLanguage = TranslateLanguage.ENGLISH;
@@ -244,8 +240,8 @@ public class GlobalPreferencesFragment extends PreferenceFragmentCompat {
             }
         });
 
-        ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
-        ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
+        ListPreference translateFromLanguage = findPreference("TranslateFromLanguage");
+        ListPreference translateToLanguage = findPreference("TranslateToLanguage");
         assert translateFromLanguage != null;
         assert translateToLanguage != null;
         translateFromLanguage.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {

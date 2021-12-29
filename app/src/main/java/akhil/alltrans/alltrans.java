@@ -27,19 +27,11 @@ import android.content.ContextWrapper;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Binder;
-import android.os.Build;
-import android.os.Bundle;
-import android.os.Parcel;
-import android.os.UserHandle;
-import android.util.ArraySet;
 import android.util.Log;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.concurrent.Semaphore;
-import java.util.stream.Collectors;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.XC_MethodHook;
@@ -47,11 +39,7 @@ import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
-import static de.robv.android.xposed.XposedBridge.hookAllConstructors;
-import static de.robv.android.xposed.XposedBridge.unhookMethod;
-import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 import static de.robv.android.xposed.XposedHelpers.findClass;
-import static de.robv.android.xposed.XposedHelpers.findField;
 
 
 public class alltrans implements IXposedHookLoadPackage {
@@ -104,7 +92,7 @@ public class alltrans implements IXposedHookLoadPackage {
 
         utils.debugLog("AllTrans: Trying to hook settings ");
         // https://android.googlesource.com/platform/frameworks/base/+/master/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java
-        Class<?> clsSet = Class.forName("com.android.providers.settings.SettingsProvider", false, lpparam.classLoader);
+        @SuppressLint("PrivateApi") Class<?> clsSet = Class.forName("com.android.providers.settings.SettingsProvider", false, lpparam.classLoader);
 
         utils.debugLog("AllTrans: Got method to hook settings ");
         // Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder)

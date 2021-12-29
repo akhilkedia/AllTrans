@@ -43,12 +43,10 @@ import java.util.TreeMap;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
-import androidx.preference.EditTextPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
-import androidx.preference.SwitchPreference;
 
 
 public class LocalPreferenceFragment extends PreferenceFragmentCompat {
@@ -87,7 +85,7 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
     }
 
     private void sortListPreferenceByEntries(String preferenceKey) {
-        ListPreference preference = (ListPreference) findPreference(preferenceKey);
+        ListPreference preference = findPreference(preferenceKey);
         assert preference != null;
         Iterator<CharSequence> labels = Arrays.asList(preference.getEntries()).iterator();
         Iterator<CharSequence> keys = Arrays.asList(preference.getEntryValues()).iterator();
@@ -122,8 +120,8 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
             return;
         }
         utils.debugLog("Downloading Translation model for Language " + translateLanguageSelected + " isFromLanguage " + isFromLanguage);
-        String sourceLanguage = "";
-        String targetLanguage = "";
+        String sourceLanguage;
+        String targetLanguage;
         if (isFromLanguage) {
             sourceLanguage = translateLanguageSelected;
             targetLanguage = TranslateLanguage.ENGLISH;
@@ -214,8 +212,8 @@ public class LocalPreferenceFragment extends PreferenceFragmentCompat {
         sortListPreferenceByEntries("TranslateFromLanguage");
         sortListPreferenceByEntries("TranslateToLanguage");
 
-        ListPreference translateFromLanguage = (ListPreference) findPreference("TranslateFromLanguage");
-        ListPreference translateToLanguage = (ListPreference) findPreference("TranslateToLanguage");
+        ListPreference translateFromLanguage = findPreference("TranslateFromLanguage");
+        ListPreference translateToLanguage = findPreference("TranslateToLanguage");
         assert translateFromLanguage != null;
         assert translateToLanguage != null;
         translateFromLanguage.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {

@@ -294,16 +294,12 @@ public class VirtWebViewOnLoad implements OriginalCallable {
     }
 
     public void myEvaluateJavaScript(WebView webView, String script) {
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
-            webView.evaluateJavascript(script, new ValueCallback<String>() {
-                @Override
-                public void onReceiveValue(String value) {
-                    utils.debugLog("Got result of running js script as " + value);
-                }
-            });
-        } else {
-            webView.loadUrl("javascript:" + script);
-        }
+        webView.evaluateJavascript(script, new ValueCallback<String>() {
+            @Override
+            public void onReceiveValue(String value) {
+                utils.debugLog("Got result of running js script as " + value);
+            }
+        });
     }
 }
 

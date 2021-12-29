@@ -52,7 +52,7 @@ public class NotificationHookHandler extends XC_MethodReplacement implements Ori
         Object[] myArgs = methodHookParam.args;
         Notification notification = (Notification) methodHookParam.args[methodHookParam.args.length - 1];
 
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && translatedString != null) {
+        if (translatedString != null) {
             changeText(notification, originalString, translatedString.toString());
         }
         try {
@@ -164,15 +164,15 @@ public class NotificationHookHandler extends XC_MethodReplacement implements Ori
             for (String key : messageArr) {
                 if (notification.extras.containsKey(key) && notification.extras.getParcelableArray(key) != null) {
                     Parcelable[] histMessages = notification.extras.getParcelableArray(key);
-                    List<Message> messages = Message.getMessagesFromBundleArray(histMessages);
-                    for (Message message : messages) {
-                        if (message == null) {
-                            continue;
-                        }
-                        if (message.getText() != null) {
-                            allNotificationText.add(message.getText());
-                        }
-                        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+                        List<Message> messages = Message.getMessagesFromBundleArray(histMessages);
+                        for (Message message : messages) {
+                            if (message == null) {
+                                continue;
+                            }
+                            if (message.getText() != null) {
+                                allNotificationText.add(message.getText());
+                            }
                             if (message.getSenderPerson() != null) {
                                 allNotificationText.add(message.getSenderPerson().getName());
                             }
@@ -290,37 +290,35 @@ public class NotificationHookHandler extends XC_MethodReplacement implements Ori
         userDataOut[1] = "";
         callOriginalMethod("", userDataOut);
 
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            CharSequence[] allNotificationTexts = getAllText(notification);
+        CharSequence[] allNotificationTexts = getAllText(notification);
 
-            for (CharSequence text : allNotificationTexts) {
-                if (text == null || !isNotWhiteSpace(text.toString())) {
-                    continue;
-                }
-                String stringArgs = text.toString();
-                utils.debugLog("In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
-                NotificationHookUserData userData = new NotificationHookUserData(methodHookParam, text.toString());
-
-                alltrans.cacheAccess.acquireUninterruptibly();
-                if (PreferenceList.Caching && alltrans.cache.containsKey(stringArgs)) {
-                    String translatedString = alltrans.cache.get(stringArgs);
-                    utils.debugLog("In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
-                    alltrans.cacheAccess.release();
-                    callOriginalMethod(translatedString, userData);
-                    continue;
-                } else {
-                    alltrans.cacheAccess.release();
-                }
-
-                GetTranslate getTranslate = new GetTranslate();
-                getTranslate.stringToBeTrans = stringArgs;
-                getTranslate.originalCallable = this;
-                getTranslate.userData = userData;
-                getTranslate.canCallOriginal = true;
-                GetTranslateToken getTranslateToken = new GetTranslateToken();
-                getTranslateToken.getTranslate = getTranslate;
-                getTranslateToken.doAll();
+        for (CharSequence text : allNotificationTexts) {
+            if (text == null || !isNotWhiteSpace(text.toString())) {
+                continue;
             }
+            String stringArgs = text.toString();
+            utils.debugLog("In Thread " + Thread.currentThread().getId() + " Recognized non-english string: " + stringArgs);
+            NotificationHookUserData userData = new NotificationHookUserData(methodHookParam, text.toString());
+
+            alltrans.cacheAccess.acquireUninterruptibly();
+            if (PreferenceList.Caching && alltrans.cache.containsKey(stringArgs)) {
+                String translatedString = alltrans.cache.get(stringArgs);
+                utils.debugLog("In Thread " + Thread.currentThread().getId() + " found string in cache: " + stringArgs + " as " + translatedString);
+                alltrans.cacheAccess.release();
+                callOriginalMethod(translatedString, userData);
+                continue;
+            } else {
+                alltrans.cacheAccess.release();
+            }
+
+            GetTranslate getTranslate = new GetTranslate();
+            getTranslate.stringToBeTrans = stringArgs;
+            getTranslate.originalCallable = this;
+            getTranslate.userData = userData;
+            getTranslate.canCallOriginal = true;
+            GetTranslateToken getTranslateToken = new GetTranslateToken();
+            getTranslateToken.getTranslate = getTranslate;
+            getTranslateToken.doAll();
         }
         return null;
     }

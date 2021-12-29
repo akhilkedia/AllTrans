@@ -23,7 +23,6 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
-import android.provider.Settings;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -36,7 +35,6 @@ import java.net.URLEncoder;
 import java.util.concurrent.Semaphore;
 
 import okhttp3.Cache;
-import okhttp3.Call;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Protocol;
@@ -126,7 +124,11 @@ class GetTranslateToken {
                     throw new JSONException("Null or Empty Cursor from Google");
                 }
 
-                final String translatedSring = cursor.getString(cursor.getColumnIndex("translate"));
+                int columnIndex = cursor.getColumnIndex("translate");
+                if (columnIndex < 0) {
+                    return;
+                }
+                final String translatedSring = cursor.getString(columnIndex);
                 Request mockRequest = new Request.Builder().url("https://some-url.com").build();
                 Response response = new Response.Builder()
                         .request(mockRequest)
@@ -177,12 +179,7 @@ class GetTranslateToken {
         } catch (IOException | JSONException e) {
             Log.e("AllTrans", "AllTrans: Got error in getting translation as : " + Log.getStackTraceString(e));
             if (getTranslate.canCallOriginal) {
-                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        getTranslate.originalCallable.callOriginalMethod(getTranslate.stringToBeTrans, getTranslate.userData);
-                    }
-                }, PreferenceList.Delay);
+                new Handler(Looper.getMainLooper()).postDelayed(() -> getTranslate.originalCallable.callOriginalMethod(getTranslate.stringToBeTrans, getTranslate.userData), PreferenceList.Delay);
             }
         }
     }

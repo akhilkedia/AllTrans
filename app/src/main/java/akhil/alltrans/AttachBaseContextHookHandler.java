@@ -27,9 +27,7 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.text.MeasuredText;
 import android.net.Uri;
-import android.os.Bundle;
-import android.os.UserHandle;
-import android.provider.Settings;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.webkit.WebView;
@@ -40,8 +38,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -49,7 +45,6 @@ import de.robv.android.xposed.XC_MethodHook;
 
 import static de.robv.android.xposed.XposedBridge.hookAllMethods;
 import static de.robv.android.xposed.XposedHelpers.findAndHookConstructor;
-import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 
 class AttachBaseContextHookHandler extends XC_MethodHook {
 
@@ -79,12 +74,20 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
             if (cursor == null || !cursor.moveToFirst()) {
                 return;
             }
-            String globalPref = cursor.getString(cursor.getColumnIndex("sharedPreferences"));
+            int columnIndex = cursor.getColumnIndex("sharedPreferences");
+            if (columnIndex < 0) {
+                return;
+            }
+            String globalPref = cursor.getString(columnIndex);
             String localPref;
             if (!cursor.moveToNext()) {
                 localPref = globalPref;
             } else {
-                localPref = cursor.getString(cursor.getColumnIndex("sharedPreferences"));
+                columnIndex = cursor.getColumnIndex("sharedPreferences");
+                if (columnIndex < 0) {
+                    return;
+                }
+                localPref = cursor.getString(columnIndex);
             }
             cursor.close();
             utils.debugLog(globalPref);
@@ -110,6 +113,7 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
                         ObjectInputStream s = new ObjectInputStream(fileInputStream);
                         //noinspection
                         if (alltrans.cache.isEmpty()) {
+                            //noinspection unchecked
                             alltrans.cache = (HashMap<String, String>) s.readObject();
                         }
                         utils.debugLog("Successfully read old cache");
@@ -150,7 +154,9 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
                 utils.tryHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
                 utils.tryHookMethod(Canvas.class, "drawTextOnPath", String.class, Path.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
                 utils.tryHookMethod(Canvas.class, "drawTextRun", CharSequence.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(Canvas.class, "drawTextRun", MeasuredText.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                    utils.tryHookMethod(Canvas.class, "drawTextRun", MeasuredText.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
+                }
 
                 utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawText", char[].class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
                 utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextOnPath", char[].class, int.class, int.class, Path.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
@@ -160,7 +166,9 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
                 utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
                 utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextOnPath", String.class, Path.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
                 utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextRun", CharSequence.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextRun", MeasuredText.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                    utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextRun", MeasuredText.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
+                }
             }
 
             // hookAllConstructors(RemoteViews.class, alltrans.notifyHook);
