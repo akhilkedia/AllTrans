@@ -26,8 +26,10 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Binder;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Parcel;
 import android.os.UserHandle;
 import android.util.ArraySet;
 import android.util.Log;
@@ -42,9 +44,11 @@ import java.util.stream.Collectors;
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedBridge;
+import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
 import static de.robv.android.xposed.XposedBridge.hookAllConstructors;
+import static de.robv.android.xposed.XposedBridge.unhookMethod;
 import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 import static de.robv.android.xposed.XposedHelpers.findClass;
 import static de.robv.android.xposed.XposedHelpers.findField;
@@ -134,7 +138,7 @@ public class alltrans implements IXposedHookLoadPackage {
         XposedBridge.hookMethod(mCall, new XC_MethodHook() {
             @Override
             protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
-                XposedBridge.log("AllTrans: beforeHookedMethod call Settings: ");
+//                XposedBridge.log("AllTrans: beforeHookedMethod call Settings: ");
                 try {
                     String method = (String) param.args[0];
                     String arg = (String) param.args[1];
@@ -142,6 +146,7 @@ public class alltrans implements IXposedHookLoadPackage {
 
                     if ("xlua".equals(method)) {
                         XposedBridge.log("got method xlua ");
+                        long ident = Binder.clearCallingIdentity();
                         try {
                             Method mGetContext = param.thisObject.getClass().getMethod("getContext");
                             Context context = (Context) mGetContext.invoke(param.thisObject);
@@ -149,12 +154,42 @@ public class alltrans implements IXposedHookLoadPackage {
 //                            Context newContext = createContextForUser(context, 10160);
 //                            utils.debugLog(newContext.getPackageName());
                             String packageName = "com.towneers.www";
+//                            Binder.allowBlockingForCurrentThread();
+
+
+                            XposedBridge.log("AllTrans: Trying to allow blocking ");
+                            XposedHelpers.callStaticMethod(Binder.class, "allowBlockingForCurrentThread");
+//                            XposedBridge.log("AllTrans: Trying to hook BinderProxy ");
+//                            Method allowBlocking = XposedHelpers.findMethodExact(Binder.class.getCanonicalName(), lpparam.classLoader, "allowBlockingForCurrentThread");
+//                            // https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/os/BinderProxy.java
+//                            Class<?> clsSet1 = Class.forName("android.os.BinderProxy", false, lpparam.classLoader);
+//
+//                            Method mCall1 = Binder.getMethod("transact", int.class, Parcel.class, Parcel.class, int.class);
+//                            XposedBridge.log("AllTrans: Got method to hook transact ");
+//                            XC_MethodHook binderHook = new XC_MethodHook() {
+//                                @Override
+//                                protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+//                                    XposedBridge.log("AllTrans: beforeHookedMethod transact ");
+//                                    int flags = (int) param.args[3];
+//                                    XposedBridge.log("AllTrans: beforeHookedMethod original flags " + flags);
+//                                    param.args[3] = (Integer) 1;
+//                                    XposedBridge.log("AllTrans: beforeHookedMethod transact set args to 1");
+//                                }
+//                            };
+//                            XposedBridge.hookMethod(mCall1, binderHook);
                             Cursor cursor = context.getContentResolver().query(Uri.parse("content://akhil.alltrans.sharedPrefProvider/" + packageName), null, null, null, null);
+//                            unhookMethod(mCall1, binderHook);
+
+                            XposedBridge.log("AllTrans: Trying to disallow blocking ");
                             utils.debugLog("Successfully got getContentResolver for package " + packageName);
 
                             Bundle result = new Bundle();
+                            if (cursor == null || !cursor.moveToFirst()) {
+                                XposedBridge.log("Cursor cannot move to first");
+                            }
                             result.putString("value", cursor.getString(cursor.getColumnIndex("sharedPreferences")));
                             param.setResult(result);
+                            XposedHelpers.callStaticMethod(Binder.class, "defaultBlockingForCurrentThread");
                             XposedBridge.log("AllTrans: setting call result");
 //                            param.setResult(XProvider.call(context, arg, extras));
                         } catch (IllegalArgumentException ex) {
@@ -165,6 +200,7 @@ public class alltrans implements IXposedHookLoadPackage {
                             XposedBridge.log(ex);
                             param.setResult(null);
                         }
+                        Binder.restoreCallingIdentity(ident);
                     }
                 } catch (Throwable ex) {
                     XposedBridge.log(Log.getStackTraceString(ex));
