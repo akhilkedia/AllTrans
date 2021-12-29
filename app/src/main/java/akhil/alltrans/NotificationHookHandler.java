@@ -285,9 +285,7 @@ public class NotificationHookHandler extends XC_MethodReplacement implements Ori
     protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
         utils.debugLog("Notification : in notificationhook ");
         Notification notification = (Notification) methodHookParam.args[methodHookParam.args.length - 1];
-        Object[] userDataOut = new Object[3];
-        userDataOut[0] = methodHookParam;
-        userDataOut[1] = "";
+        NotificationHookUserData userDataOut = new NotificationHookUserData(methodHookParam, "");
         callOriginalMethod("", userDataOut);
 
         CharSequence[] allNotificationTexts = getAllText(notification);

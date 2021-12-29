@@ -130,7 +130,7 @@
             android:title="@string/caching" />
         <SwitchPreference
             app:iconSpaceReserved="false"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="Notif"
             android:summaryOff="@string/notif_summary_off"
             android:summaryOn="@string/notif_summary_on"
