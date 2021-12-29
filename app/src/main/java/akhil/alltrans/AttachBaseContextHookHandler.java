@@ -71,25 +71,11 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
             alltrans.context = ((Context) methodHookParam.args[0]).getApplicationContext();
             utils.debugLog("Successfully got context for package " + packageName);
 
-            if(packageName.equals("com.towneers.www")){
-                utils.debugLog("Calling Settings");
-//                Bundle result = context.getContentResolver()
-//                        .call(Settings.System.CONTENT_URI, "xlua", "getVersion", new Bundle());
-//                utils.debugLog("Got Result Settings");
-//                utils.debugLog(result.toString());
-//                utils.debugLog(result.getString("value")+ "");
-                Cursor cursor = context.getContentResolver().query(Uri.parse(Settings.System.CONTENT_URI.toString() + "/alltransuri"), null, null, null, null, null);
-                utils.debugLog("Got Result Settings");
-                if (cursor == null || !cursor.moveToFirst()) {
-                    return;
-                }
-                String globalPref = cursor.getString(cursor.getColumnIndex("sharedPreferences"));
-                utils.debugLog("Got globalPref Settings" + globalPref);
-
-            }
-
             utils.debugLog(alltrans.context.getPackageName());
-            Cursor cursor = alltrans.context.getContentResolver().query(Uri.parse("content://akhil.alltrans.sharedPrefProvider/" + packageName), null, null, null, null);
+            Uri old_uri = Uri.parse("content://akhil.alltrans.sharedPrefProvider/" + packageName);
+            String new_uri_string = old_uri.toString().replace("content://akhil.alltrans.", "content://settings/system/alltransProxyProviderURI/");
+
+            Cursor cursor = alltrans.context.getContentResolver().query(Uri.parse(new_uri_string), null, null, null, null);
             if (cursor == null || !cursor.moveToFirst()) {
                 return;
             }

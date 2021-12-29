@@ -23,6 +23,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
+import android.provider.Settings;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -109,13 +110,15 @@ class GetTranslateToken {
         try {
             if (PreferenceList.TranslatorProvider.equals("g")){
 
+
                 Uri uri = new Uri.Builder().scheme("content")
                         .authority("akhil.alltrans.gtransProvider")
                         .appendQueryParameter("from", PreferenceList.TranslateFromLanguage)
                         .appendQueryParameter("to", PreferenceList.TranslateToLanguage)
                         .appendQueryParameter("text", getTranslate.stringToBeTrans).build();
+                String new_uri_string = uri.toString().replace("content://akhil.alltrans.", "content://settings/system/alltransProxyProviderURI/");
 
-                Cursor cursor = alltrans.context.getContentResolver().query(uri, null, null, null, null);
+                Cursor cursor = alltrans.context.getContentResolver().query(Uri.parse(new_uri_string), null, null, null, null);
                 if (cursor == null || !cursor.moveToFirst()) {
                     if (cursor != null) {
                         cursor.close();
