@@ -37,8 +37,8 @@ android {
         applicationId "akhil.alltrans"
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 193
-        versionName "1.9.3"
+        versionCode 194
+        versionName "1.9.4"
         multiDexEnabled true
         signingConfig signingConfigs.publish
     }
