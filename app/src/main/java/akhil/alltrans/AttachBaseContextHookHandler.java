@@ -27,6 +27,9 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.text.MeasuredText;
 import android.net.Uri;
+import android.os.Bundle;
+import android.os.UserHandle;
+import android.provider.Settings;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.webkit.WebView;
@@ -37,6 +40,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -65,6 +70,16 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
             }
             alltrans.context = ((Context) methodHookParam.args[0]).getApplicationContext();
             utils.debugLog("Successfully got context for package " + packageName);
+
+            if(packageName.equals("com.towneers.www")){
+                utils.debugLog("Calling Settings");
+                Bundle result = context.getContentResolver()
+                        .call(Settings.System.CONTENT_URI, "xlua", "getVersion", new Bundle());
+                utils.debugLog("Got Result Settings");
+                utils.debugLog(result.toString());
+                utils.debugLog(result.getString("value")+ "");
+
+            }
 
             utils.debugLog(alltrans.context.getPackageName());
             Cursor cursor = alltrans.context.getContentResolver().query(Uri.parse("content://akhil.alltrans.sharedPrefProvider/" + packageName), null, null, null, null);
