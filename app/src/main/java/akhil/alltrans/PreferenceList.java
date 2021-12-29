@@ -38,6 +38,7 @@ class PreferenceList {
     public static boolean SetHint;
     public static boolean LoadURL;
     public static boolean DrawText;
+    public static boolean Notif;
 
     public static boolean Caching;
     public static long CachingTime;
@@ -75,6 +76,7 @@ class PreferenceList {
         SetHint = (boolean) getValue(gPref, "SetHint", true);
         LoadURL = (boolean) getValue(gPref, "LoadURL", true);
         DrawText = (boolean) getValue(gPref, "DrawText", false);
+        Notif = (boolean) getValue(gPref, "Notif", false);
 
         Caching = (boolean) getValue(gPref, "Cache", true);
         Delay = Integer.parseInt((String) getValue(gPref, "Delay", "0"));

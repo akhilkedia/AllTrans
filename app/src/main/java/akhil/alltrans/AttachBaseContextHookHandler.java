@@ -90,8 +90,8 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
                 localPref = cursor.getString(columnIndex);
             }
             cursor.close();
-            utils.debugLog(globalPref);
-            utils.debugLog(localPref);
+            utils.debugLog("Got Global Prefs in the app as" + globalPref);
+            utils.debugLog("Got local Prefs in the app as" + localPref);
             PreferenceList.getPref(globalPref, localPref, packageName);
 
             if (!PreferenceList.Enabled)
@@ -133,7 +133,6 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
             SetTextHookHandler setTextHook = new SetTextHookHandler();
             if (PreferenceList.SetText) {
                 utils.tryHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, setTextHook);
-                hookAllMethods(NotificationManager.class, "notify", alltrans.notifyHook);
             }
             if (PreferenceList.SetHint)
                 utils.tryHookMethod(TextView.class, "setHint", CharSequence.class, setTextHook);
@@ -169,6 +168,10 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                     utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextRun", MeasuredText.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
                 }
+            }
+
+            if (PreferenceList.Notif) {
+                hookAllMethods(NotificationManager.class, "notify", alltrans.notifyHook);
             }
 
             // hookAllConstructors(RemoteViews.class, alltrans.notifyHook);

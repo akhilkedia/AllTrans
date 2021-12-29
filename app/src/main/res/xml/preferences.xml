@@ -126,6 +126,13 @@
             android:title="@string/webView" />
         <SwitchPreference
             app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            android:key="Notif"
+            android:summaryOff="@string/notif_summary_off"
+            android:summaryOn="@string/notif_summary_on"
+            android:title="@string/notif" />
+        <SwitchPreference
+            app:iconSpaceReserved="false"
             android:defaultValue="true"
             android:key="Cache"
             android:summaryOff="@string/caching_summary_off"

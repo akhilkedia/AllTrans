@@ -62,7 +62,7 @@ public class alltrans implements IXposedHookLoadPackage {
     public void handleLoadPackage(final LoadPackageParam lpparam) throws Throwable {
 
         if ("com.android.providers.settings".equals(lpparam.packageName)) {
-            utils.debugLog("AllTrans: got settings provider package ");
+            XposedBridge.log("AllTrans: got settings provider package ");
             if (!settingsHooked) {
                 hookSettings(lpparam);
                 settingsHooked = true;
@@ -70,12 +70,12 @@ public class alltrans implements IXposedHookLoadPackage {
         }
 
         // TODO: Comment this line later
-        utils.debugLog("in package beginning : " + lpparam.packageName);
+        XposedBridge.log("in package beginning : " + lpparam.packageName);
 
         try {
             baseRecordingCanvas = findClass("android.graphics.BaseRecordingCanvas", lpparam.classLoader);
         } catch (Throwable e){
-            utils.debugLog("Cannot find baseRecordingCanvas");
+            XposedBridge.log("Cannot find baseRecordingCanvas");
         }
 
 //        Hook Application onCreate
@@ -90,48 +90,48 @@ public class alltrans implements IXposedHookLoadPackage {
 
     private void hookSettings(final LoadPackageParam lpparam) throws Throwable {
 
-        utils.debugLog("AllTrans: Trying to hook settings ");
+        XposedBridge.log("AllTrans: Trying to hook settings ");
         // https://android.googlesource.com/platform/frameworks/base/+/master/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java
         @SuppressLint("PrivateApi") Class<?> clsSet = Class.forName("com.android.providers.settings.SettingsProvider", false, lpparam.classLoader);
 
-        utils.debugLog("AllTrans: Got method to hook settings ");
+        XposedBridge.log("AllTrans: Got method to hook settings ");
         // Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder)
         Method mQuery = clsSet.getMethod("query", Uri.class, String[].class, String.class, String[].class, String.class);
         XposedBridge.hookMethod(mQuery, new XC_MethodHook() {
             @Override
             protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
-                utils.debugLog("beforeHookedMethod mQuery Settings: ");
+                XposedBridge.log("beforeHookedMethod mQuery Settings: ");
                 try {
                     Uri uri = (Uri) param.args[0];
                     if (uri.toString().contains("alltransProxyProviderURI")){
 
-                        utils.debugLog("AllTrans: got projection xlua ");
+                        XposedBridge.log("AllTrans: got projection xlua ");
                         long ident = Binder.clearCallingIdentity();
                         try {
                             Method mGetContext = param.thisObject.getClass().getMethod("getContext");
                             Context context = (Context) mGetContext.invoke(param.thisObject);
 
-                            utils.debugLog("AllTrans: Trying to allow blocking ");
+                            XposedBridge.log("AllTrans: Trying to allow blocking ");
                             XposedHelpers.callStaticMethod(Binder.class, "allowBlockingForCurrentThread");
 
-                            utils.debugLog("AllTrans: Old URI " + uri.toString());
+                            XposedBridge.log("AllTrans: Old URI " + uri.toString());
                             String new_uri_string = uri.toString().replace("content://settings/system/alltransProxyProviderURI/", "content://akhil.alltrans.");
                             Uri new_uri = Uri.parse(new_uri_string);
-                            utils.debugLog("AllTrans: New URI " + new_uri.toString());
+                            XposedBridge.log("AllTrans: New URI " + new_uri.toString());
                             
                             Cursor cursor = context.getContentResolver().query(new_uri, null, null, null, null);
                             param.setResult(cursor);
 
                             XposedHelpers.callStaticMethod(Binder.class, "defaultBlockingForCurrentThread");
-                            utils.debugLog("AllTrans: setting query result");
+                            XposedBridge.log("AllTrans: setting query result");
                         } catch (Throwable ex) {
-                            utils.debugLog(Log.getStackTraceString(ex));
+                            XposedBridge.log(Log.getStackTraceString(ex));
                             param.setResult(null);
                             Binder.restoreCallingIdentity(ident);
                         }
                     }
                 } catch (Throwable ex) {
-                    utils.debugLog(Log.getStackTraceString(ex));
+                    XposedBridge.log(Log.getStackTraceString(ex));
                 }
             }
         });

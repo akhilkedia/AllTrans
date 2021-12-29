@@ -108,6 +108,11 @@
     <string name="webView_summary_off">"Not Translating Text in WebViews. Turn on to enable."</string>
     <string name="webView_summary_on">"Translating Text inside WebView - Safe, May Not Work Always. Turn off to disable."</string>
 
+    <!-- notif -->
+    <string name="notif">"Translate Notifications (Unstable, May Crash)"</string>
+    <string name="notif_summary_off">"Not Translating Text in Notifications. Turn on to enable."</string>
+    <string name="notif_summary_on">"Translating Text inside Notifications - Unstable, May Crash Apps. Turn off to disable."</string>
+
     <!-- drawText -->
     <string name="drawText">"Aggressive Mode"</string>
     <string name="drawText_summary_off">"Not aggressively translating Text in drawText. Use when all above fails. Turn on to enable."</string>

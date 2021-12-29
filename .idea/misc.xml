@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-anydpi/ic_list_icon_placeholder.xml" value="0.2265625" />
+        <entry key="app/src/main/res/xml/perappprefs.xml" value="0.375" />
+        <entry key="app/src/main/res/xml/preferences.xml" value="0.375" />
       </map>
     </option>
   </component>

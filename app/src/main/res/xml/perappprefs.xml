@@ -128,5 +128,12 @@
             android:summaryOff="@string/caching_summary_off"
             android:summaryOn="@string/caching_summary_on"
             android:title="@string/caching" />
+        <SwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            android:key="Notif"
+            android:summaryOff="@string/notif_summary_off"
+            android:summaryOn="@string/notif_summary_on"
+            android:title="@string/notif" />
     </PreferenceCategory>
 </PreferenceScreen>
