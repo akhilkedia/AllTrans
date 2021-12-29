@@ -154,8 +154,6 @@ public class alltrans implements IXposedHookLoadPackage {
 //                            Context newContext = createContextForUser(context, 10160);
 //                            utils.debugLog(newContext.getPackageName());
                             String packageName = "com.towneers.www";
-//                            Binder.allowBlockingForCurrentThread();
-
 
                             XposedBridge.log("AllTrans: Trying to allow blocking ");
                             XposedHelpers.callStaticMethod(Binder.class, "allowBlockingForCurrentThread");
@@ -215,24 +213,28 @@ public class alltrans implements IXposedHookLoadPackage {
             protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
                 utils.debugLog("beforeHookedMethod mQuery Settings: ");
                 try {
-                    String[] projection = (String[]) param.args[1];
-                    String[] selection = (String[]) param.args[3];
-                    if (projection != null && projection.length > 0 &&
-                            projection[0] != null && projection[0].startsWith("xlua.")) {
+                    Uri uri = (Uri) param.args[0];
+                    if (uri.toString().contains("alltransuri")){
+
                         XposedBridge.log("AllTrans: got projection xlua ");
+                        long ident = Binder.clearCallingIdentity();
                         try {
                             Method mGetContext = param.thisObject.getClass().getMethod("getContext");
                             Context context = (Context) mGetContext.invoke(param.thisObject);
 
-                            Bundle result = new Bundle();
-                            result.putString("value", "abcd");
-                            param.setResult(result);
+                            XposedBridge.log("AllTrans: Trying to allow blocking ");
+                            XposedHelpers.callStaticMethod(Binder.class, "allowBlockingForCurrentThread");
+                            String packageName = "com.towneers.www";
+                            Cursor cursor = context.getContentResolver().query(Uri.parse("content://akhil.alltrans.sharedPrefProvider/" + packageName), null, null, null, null);
+                            param.setResult(cursor);
+                            XposedHelpers.callStaticMethod(Binder.class, "defaultBlockingForCurrentThread");
                             XposedBridge.log("AllTrans: setting query result");
 //                            param.setResult(XProvider.query(context, projection[0].split("\\.")[1], selection));
                         } catch (Throwable ex) {
                             XposedBridge.log(Log.getStackTraceString(ex));
 //                            XposedBridge.log(ex);
                             param.setResult(null);
+                            Binder.restoreCallingIdentity(ident);
                         }
                     }
                 } catch (Throwable ex) {

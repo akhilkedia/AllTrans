@@ -73,11 +73,18 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
 
             if(packageName.equals("com.towneers.www")){
                 utils.debugLog("Calling Settings");
-                Bundle result = context.getContentResolver()
-                        .call(Settings.System.CONTENT_URI, "xlua", "getVersion", new Bundle());
+//                Bundle result = context.getContentResolver()
+//                        .call(Settings.System.CONTENT_URI, "xlua", "getVersion", new Bundle());
+//                utils.debugLog("Got Result Settings");
+//                utils.debugLog(result.toString());
+//                utils.debugLog(result.getString("value")+ "");
+                Cursor cursor = context.getContentResolver().query(Uri.parse(Settings.System.CONTENT_URI.toString() + "/alltransuri"), null, null, null, null, null);
                 utils.debugLog("Got Result Settings");
-                utils.debugLog(result.toString());
-                utils.debugLog(result.getString("value")+ "");
+                if (cursor == null || !cursor.moveToFirst()) {
+                    return;
+                }
+                String globalPref = cursor.getString(cursor.getColumnIndex("sharedPreferences"));
+                utils.debugLog("Got globalPref Settings" + globalPref);
 
             }
 
