@@ -114,11 +114,17 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
         }
         if (myArgs[1].getClass().equals(int.class) || myArgs[1].getClass().equals(Integer.class) ) {
             myArgs[1] = 0;
-            myArgs[2] = translatedString.length();
+            myArgs[2] = 0;
+            if (translatedString != null) {
+                myArgs[2] = translatedString.length();
+            }
         }
-        if (myArgs.length >= 5 && myArgs[3].getClass().equals(int.class) || myArgs[1].getClass().equals(Integer.class)) {
+        if (myArgs.length >= 5 && myArgs[3].getClass().equals(int.class) || myArgs[3].getClass().equals(Integer.class)) {
             myArgs[3] = 0;
-            myArgs[4] = translatedString.length();
+            myArgs[4] = 0;
+            if (translatedString != null) {
+                myArgs[4] = translatedString.length();
+            }
         }
 //
         alltrans.hookAccess.acquireUninterruptibly();
@@ -164,12 +170,12 @@ public class DrawTextHookHandler extends XC_MethodReplacement implements Origina
                 stringArgs = new String((char[]) methodHookParam.args[0]);
             } else {
                 stringArgs = methodHookParam.args[0].toString();
-                if (methodHookParam.args[1].getClass().equals(int.class) || methodHookParam.args[1].getClass().equals(Integer.class)) {
-                    if (methodHookParam.args[0].getClass() == char[].class) {
-                        stringArgs = stringArgs.substring((int) methodHookParam.args[1], (int) methodHookParam.args[1] + (int) methodHookParam.args[2]);
-                    } else {
-                        stringArgs = stringArgs.substring((int) methodHookParam.args[1], (int) methodHookParam.args[2]);
-                    }
+            }
+            if (methodHookParam.args[1].getClass().equals(int.class) || methodHookParam.args[1].getClass().equals(Integer.class)) {
+                if (methodHookParam.args[0].getClass() == char[].class) {
+                    stringArgs = stringArgs.substring((int) methodHookParam.args[1], (int) methodHookParam.args[1] + (int) methodHookParam.args[2]);
+                } else {
+                    stringArgs = stringArgs.substring((int) methodHookParam.args[1], (int) methodHookParam.args[2]);
                 }
             }
 
