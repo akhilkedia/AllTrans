@@ -63,125 +63,132 @@ class AttachBaseContextHookHandler extends XC_MethodHook {
                 utils.debugLog("AllTrans: returning because context already not null for package " + packageName);
                 return;
             }
-            alltrans.context = ((Context) methodHookParam.args[0]).getApplicationContext();
-            utils.debugLog("Successfully got context for package " + packageName);
 
-            utils.debugLog(alltrans.context.getPackageName());
-            Uri old_uri = Uri.parse("content://akhil.alltrans.sharedPrefProvider/" + packageName);
-            String new_uri_string = old_uri.toString().replace("content://akhil.alltrans.", "content://settings/system/alltransProxyProviderURI/");
-
-            Cursor cursor = alltrans.context.getContentResolver().query(Uri.parse(new_uri_string), null, null, null, null);
-            if (cursor == null || !cursor.moveToFirst()) {
-                return;
-            }
-            int columnIndex = cursor.getColumnIndex("sharedPreferences");
-            if (columnIndex < 0) {
-                return;
-            }
-            String globalPref = cursor.getString(columnIndex);
-            String localPref;
-            if (!cursor.moveToNext()) {
-                localPref = globalPref;
-            } else {
-                columnIndex = cursor.getColumnIndex("sharedPreferences");
-                if (columnIndex < 0) {
-                    return;
-                }
-                localPref = cursor.getString(columnIndex);
-            }
-            cursor.close();
-            utils.debugLog("Got Global Prefs in the app as" + globalPref);
-            utils.debugLog("Got local Prefs in the app as" + localPref);
-            PreferenceList.getPref(globalPref, localPref, packageName);
-
-            if (!PreferenceList.Enabled)
-                return;
-            if (!PreferenceList.LocalEnabled)
-                return;
-
-            utils.Debug = PreferenceList.Debug;
-
-            utils.debugLog("Alltrans is Enabled for Package " + packageName);
-
-//        Delete Cache if needed
-            if (PreferenceList.Caching) {
-                if (alltrans.cache.isEmpty()) {
-                    clearCacheIfNeeded(alltrans.context, PreferenceList.CachingTime);
-                    alltrans.cacheAccess.acquireUninterruptibly();
-                    try {
-                        FileInputStream fileInputStream = alltrans.context.openFileInput("AllTransCache");
-                        ObjectInputStream s = new ObjectInputStream(fileInputStream);
-                        //noinspection
-                        if (alltrans.cache.isEmpty()) {
-                            //noinspection unchecked
-                            alltrans.cache = (HashMap<String, String>) s.readObject();
-                        }
-                        utils.debugLog("Successfully read old cache");
-                        s.close();
-                    } catch (Throwable e) {
-                        utils.debugLog("Could not read cache ");
-                        utils.debugLog(e.toString());
-                        alltrans.cache = new HashMap<>(10000);
-                        alltrans.cache.put("ThisIsAPlaceHolderStringYouWillNeverEncounter", "ThisIsAPlaceHolderStringYouWillNeverEncounter");
-                    }
-                    alltrans.cacheAccess.release();
-                }
-            }
-
-
-            //Hook all Text String methods
-            SetTextHookHandler setTextHook = new SetTextHookHandler();
-            if (PreferenceList.SetText) {
-                utils.tryHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, setTextHook);
-            }
-            if (PreferenceList.SetHint)
-                utils.tryHookMethod(TextView.class, "setHint", CharSequence.class, setTextHook);
-
-            if (PreferenceList.LoadURL) {
-                // Hook WebView Constructor to inject JS object
-                findAndHookConstructor(WebView.class, Context.class, AttributeSet.class, int.class, int.class, Map.class, boolean.class, new WebViewOnCreateHookHandler());
-                utils.tryHookMethod(WebView.class, "setWebViewClient", WebViewClient.class, new WebViewSetClientHookHandler());
-                utils.tryHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewOnLoadHookHandler());
-            }
-
-            if (PreferenceList.DrawText) {
-                utils.tryHookMethod(Canvas.class, "drawText", char[].class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(Canvas.class, "drawTextOnPath", char[].class, int.class, int.class, Path.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(Canvas.class, "drawTextRun", char[].class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(Canvas.class, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(Canvas.class, "drawTextOnPath", String.class, Path.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(Canvas.class, "drawTextRun", CharSequence.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                    utils.tryHookMethod(Canvas.class, "drawTextRun", MeasuredText.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
-                }
-
-                utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawText", char[].class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextOnPath", char[].class, int.class, int.class, Path.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextRun", char[].class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawText", String.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextOnPath", String.class, Path.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
-                utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextRun", CharSequence.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                    utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextRun", MeasuredText.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
-                }
-            }
-
-            if (PreferenceList.Notif) {
-                hookAllMethods(NotificationManager.class, "notify", alltrans.notifyHook);
-            }
-
-            // hookAllConstructors(RemoteViews.class, alltrans.notifyHook);
+            Context applicationContext = ((Context) methodHookParam.args[0]).getApplicationContext();
+            readPrefAndHook(applicationContext);
         } catch (Throwable e){
             utils.debugLog("Caught Exception in attachBaseContext " + Log.getStackTraceString(e));
         }
 
     }
 
-    protected void clearCacheIfNeeded(Context context, long cachingTime) {
+    public static void readPrefAndHook(Context context){
+        String packageName = context.getPackageName();
+        alltrans.context = context;
+        utils.debugLog("Successfully got context for package " + packageName);
+
+        utils.debugLog(alltrans.context.getPackageName());
+        Uri old_uri = Uri.parse("content://akhil.alltrans.sharedPrefProvider/" + packageName);
+//            old_uri = Uri.parse(old_uri.toString().replace("content://akhil.alltrans.", "content://settings/system/alltransProxyProviderURI/"));
+
+        Cursor cursor = alltrans.context.getContentResolver().query(old_uri, null, null, null, null);
+        if (cursor == null || !cursor.moveToFirst()) {
+            return;
+        }
+        int columnIndex = cursor.getColumnIndex("sharedPreferences");
+        if (columnIndex < 0) {
+            return;
+        }
+        String globalPref = cursor.getString(columnIndex);
+        String localPref;
+        if (!cursor.moveToNext()) {
+            localPref = globalPref;
+        } else {
+            columnIndex = cursor.getColumnIndex("sharedPreferences");
+            if (columnIndex < 0) {
+                return;
+            }
+            localPref = cursor.getString(columnIndex);
+        }
+        cursor.close();
+        utils.debugLog("Got Global Prefs in the app as" + globalPref);
+        utils.debugLog("Got local Prefs in the app as" + localPref);
+        PreferenceList.getPref(globalPref, localPref, packageName);
+
+        if (!PreferenceList.Enabled)
+            return;
+        if (!PreferenceList.LocalEnabled)
+            return;
+
+        utils.Debug = PreferenceList.Debug;
+
+        utils.debugLog("Alltrans is Enabled for Package " + packageName);
+
+//        Delete Cache if needed
+        if (PreferenceList.Caching) {
+            if (alltrans.cache.isEmpty()) {
+                clearCacheIfNeeded(alltrans.context, PreferenceList.CachingTime);
+                alltrans.cacheAccess.acquireUninterruptibly();
+                try {
+                    FileInputStream fileInputStream = alltrans.context.openFileInput("AllTransCache");
+                    ObjectInputStream s = new ObjectInputStream(fileInputStream);
+                    //noinspection
+                    if (alltrans.cache.isEmpty()) {
+                        //noinspection unchecked
+                        alltrans.cache = (HashMap<String, String>) s.readObject();
+                    }
+                    utils.debugLog("Successfully read old cache");
+                    s.close();
+                } catch (Throwable e) {
+                    utils.debugLog("Could not read cache ");
+                    utils.debugLog(e.toString());
+                    alltrans.cache = new HashMap<>(10000);
+                    alltrans.cache.put("ThisIsAPlaceHolderStringYouWillNeverEncounter", "ThisIsAPlaceHolderStringYouWillNeverEncounter");
+                }
+                alltrans.cacheAccess.release();
+            }
+        }
+
+
+        //Hook all Text String methods
+        SetTextHookHandler setTextHook = new SetTextHookHandler();
+        if (PreferenceList.SetText) {
+            utils.tryHookMethod(TextView.class, "setText", CharSequence.class, TextView.BufferType.class, boolean.class, int.class, setTextHook);
+        }
+        if (PreferenceList.SetHint)
+            utils.tryHookMethod(TextView.class, "setHint", CharSequence.class, setTextHook);
+
+        if (PreferenceList.LoadURL) {
+            // Hook WebView Constructor to inject JS object
+            findAndHookConstructor(WebView.class, Context.class, AttributeSet.class, int.class, int.class, Map.class, boolean.class, new WebViewOnCreateHookHandler());
+            utils.tryHookMethod(WebView.class, "setWebViewClient", WebViewClient.class, new WebViewSetClientHookHandler());
+            utils.tryHookMethod(WebViewClient.class, "onPageFinished", WebView.class, String.class, new WebViewOnLoadHookHandler());
+        }
+
+        if (PreferenceList.DrawText) {
+            utils.tryHookMethod(Canvas.class, "drawText", char[].class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(Canvas.class, "drawTextOnPath", char[].class, int.class, int.class, Path.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(Canvas.class, "drawTextRun", char[].class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(Canvas.class, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(Canvas.class, "drawText", String.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(Canvas.class, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(Canvas.class, "drawTextOnPath", String.class, Path.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(Canvas.class, "drawTextRun", CharSequence.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                utils.tryHookMethod(Canvas.class, "drawTextRun", MeasuredText.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
+            }
+
+            utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawText", char[].class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextOnPath", char[].class, int.class, int.class, Path.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextRun", char[].class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawText", String.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawText", String.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawText", CharSequence.class, int.class, int.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextOnPath", String.class, Path.class, float.class, float.class, Paint.class, alltrans.drawTextHook);
+            utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextRun", CharSequence.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                utils.tryHookMethod(alltrans.baseRecordingCanvas, "drawTextRun", MeasuredText.class, int.class, int.class, int.class, int.class, float.class, float.class, boolean.class, Paint.class, alltrans.drawTextHook);
+            }
+        }
+
+        if (PreferenceList.Notif) {
+            hookAllMethods(NotificationManager.class, "notify", alltrans.notifyHook);
+        }
+        // hookAllConstructors(RemoteViews.class, alltrans.notifyHook);
+
+    }
+
+    public static void clearCacheIfNeeded(Context context, long cachingTime) {
         // If cache never cleared, exit
         if (cachingTime == 0)
             return;

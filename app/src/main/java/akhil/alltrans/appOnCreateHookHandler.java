@@ -20,15 +20,25 @@
 package akhil.alltrans;
 
 import android.app.Application;
+import android.util.Log;
 
 import de.robv.android.xposed.XC_MethodHook;
-import de.robv.android.xposed.XposedBridge;
 
 class appOnCreateHookHandler extends XC_MethodHook {
     @Override
     protected void beforeHookedMethod(MethodHookParam methodHookParam) {
-        XposedBridge.log("AllTrans: in OnCreate of Application");
+        utils.debugLog("AllTrans: in OnCreate of Application");
         Application application = (Application) methodHookParam.thisObject;
+
+        try {
+            if (alltrans.context != null) {
+                utils.debugLog("AllTrans: returning because context already not null in appOnCreateHookHandler");
+                return;
+            }
+            AttachBaseContextHookHandler.readPrefAndHook(application);
+        } catch (Throwable e){
+            utils.debugLog("Caught Exception in appOnCreateHookHandler " + Log.getStackTraceString(e));
+        }
 
         MyActivityLifecycleCallbacks myActivityLifecycleCallbacks = new MyActivityLifecycleCallbacks();
         application.registerActivityLifecycleCallbacks(myActivityLifecycleCallbacks);

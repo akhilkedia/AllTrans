@@ -83,6 +83,7 @@ public class alltrans implements IXposedHookLoadPackage {
         utils.tryHookMethod(Application.class, "onCreate", appOnCreateHookHandler);
 
 //        Possibly change to android.app.Instrumentation.newActivity()
+//        or XposedHelpers.findAndHookMethod(Instrumentation.class, "callApplicationOnCreate", Application.class, new XC_MethodHook()
         AttachBaseContextHookHandler attachBaseContextHookHandler = new AttachBaseContextHookHandler();
         utils.tryHookMethod(ContextWrapper.class, "attachBaseContext", Context.class, attachBaseContextHookHandler);
 
