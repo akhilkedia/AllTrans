@@ -7,7 +7,7 @@ Say for example an app is in German. A user selects the app name, and the requir
 Then whenever the user uses the required app, all the text, **ANYWHERE** in the app, are replaced by their English equivalents.
 This is something similar to the way Google Translate works in Chrome.
 
-Works with Android 11!
+Works with Android 13!
 
 [![LicenseGPLv3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UY6TVJXST724J) ![GitHub All Releases](https://img.shields.io/github/downloads/akhilkedia/AllTrans/total?style=social) [![Play](https://img.shields.io/endpoint?color=green&logo=google-play&logoColor=green&url=https%3A%2F%2Fplayshields.herokuapp.com%2Fplay%3Fi%3Dakhil.alltrans%26l%3DInstalls%26m%3D%24installs)](https://play.google.com/store/apps/details?id=akhil.alltrans)
 
