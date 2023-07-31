@@ -30,8 +30,8 @@ android {
             keyPassword RELEASE_KEY_PASSWORD
         }
     }
-    compileSdkVersion 31
-    buildToolsVersion "30.0.3"
+    compileSdk 33
+//    buildToolsVersion '32.0.0'
 
     defaultConfig {
         applicationId "akhil.alltrans"
@@ -52,6 +52,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'akhil.alltrans'
 }
 
 repositories {
@@ -73,9 +74,9 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.percentlayout:percentlayout:1.0.0'
 
-    implementation 'com.google.firebase:firebase-analytics:20.0.2'
-    implementation 'com.google.firebase:firebase-crashlytics:18.2.6'
-    implementation 'com.google.mlkit:translate:16.1.2'
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.4.0'
+    implementation 'com.google.mlkit:translate:17.0.1'
     implementation 'com.android.support:multidex:1.0.3'
 
     implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
